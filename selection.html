@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Select Your Test Options</h1>
+    <div class="selection-container">
+        <label>Number of Questions (1-100):</label>
+        <input type="range" id="questionCount" min="1" max="100" value="10">
+        <span id="questionCountValue">10</span>
+
+        <label>Time (1-180 minutes):</label>
+        <input type="range" id="timeLimit" min="1" max="180" value="30">
+        <span id="timeLimitValue">30</span>
+
+        <div id="subjectSelection" class="subject-selection">
+            <label><input type="checkbox" name="subject" value="math"> Math</label>
+            <label><input type="checkbox" name="subject" value="opt_math"> Opt Math</label>
+            <label><input type="checkbox" name="subject" value="science"> Science</label>
+            <label><input type="checkbox" name="subject" value="social"> Social</label>
+        </div>
+
+        <p id="priceNote"></p>
+        <button id="startTest">Start Test</button>
+        <p id="quantityError" class="error"></p>
+    </div>
+
+    <div class="popup" id="popup"></div>
+    <audio id="clickSound" src="/click.mp3"></audio>
+
+    <script src="/script.js"></script>
+</body>
+</html>
