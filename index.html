@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Test</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Choose Your Test Level</h1>
+    <div class="level-container">
+        <div class="level-card" data-level="see">SEE NEB Questions</div>
+        <div class="level-card" data-level="basic">Basic Entrance Questions</div>
+        <div class="level-card" data-level="ktm">KTM Entrance Questions</div>
+    </div>
+
+    <div class="modal" id="codeModal">
+        <div class="modal-content">
+            <h2>Enter Code for <span id="levelName"></span></h2>
+            <p>Price: <span id="levelPrice"></span></p>
+            <input type="text" id="codeInput" placeholder="Enter code">
+            <button id="submitCode">Submit</button>
+            <button id="closeModal">Close</button>
+        </div>
+    </div>
+
+    <div class="popup" id="popup"></div>
+    <audio id="clickSound" src="/click.mp3"></audio>
+
+    <script src="/script.js"></script>
+</body>
+</html>
