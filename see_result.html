@@ -3,39 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Results - SEE NEB</title>
-    <link rel="stylesheet" href="css/style.css">
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>SEE Quiz Results</title>
+    <link rel="stylesheet" href="see_result.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container results-container">
+    <div class="container">
         <header>
-            <h1>Quiz Results: SEE NEB</h1>
-            <a href="index.html" class="back-link">← Back to Home</a>
+            <h1>Quiz Results</h1>
         </header>
 
-        <section id="results-summary" class="results-summary">
-            <h2>Summary</h2>
-            <p id="feedback-message" class="feedback-message">Calculating feedback...</p>
-            <p><strong>Time Taken:</strong> <span id="time-taken">--</span></p>
-            <p><strong>Final Score:</strong> <span id="final-score">-- / --</span></p>
-            <p><strong>Percentage:</strong> <span id="percentage">--</span>%</p>
-            <button id="show-details-btn" class="button button-secondary">Show Full Details</button>
-        </section>
+        <div id="results-summary" class="summary-section">
+            <div id="loading-results" class="loading">Loading Results...</div>
+            <div id="summary-content" class="hidden">
+                 <p id="encouragement-message" class="encouragement"></p>
+                 <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Score:</span>
+                        <span id="score" class="stat-value">-- / --</span>
+                    </div>
+                    <div class="stat-item">
+                         <span class="stat-label">Percentage:</span>
+                         <span id="percentage" class="stat-value">--%</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Time Taken:</span>
+                        <span id="time-taken" class="stat-value">--:--</span>
+                    </div>
+                </div>
+                <button id="toggle-details-button" class="button tertiary-button">Show Details</button>
+            </div>
+             <div id="error-loading" class="error-message hidden">
+                Could not load results. Please try taking the quiz again.
+            </div>
+        </div>
 
-        <section id="detailed-results" class="detailed-results hidden">
-            <h2>Detailed Review</h2>
-            <!-- Detailed question review will be loaded here -->
-        </section>
+        <div id="detailed-results" class="detailed-section hidden">
+            <h2>Detailed Answers</h2>
+            <div id="answers-breakdown">
+                <!-- Detailed answers will be injected here by JS -->
+            </div>
+            <div class="legend">
+                <h3>Legend:</h3>
+                <ul>
+                    <li><span class="legend-color correct"></span> Correct Answer</li>
+                    <li><span class="legend-color incorrect"></span> Incorrect Answer</li>
+                    <li><span class="legend-color skipped"></span> Skipped Question</li>
+                    <li><span class="icon">✅</span> Correct Option</li>
+                    <li><span class="icon">❌</span> Your Incorrect Choice</li>
+                </ul>
+            </div>
+        </div>
 
+        <div class="action-buttons">
+             <button id="back-to-portal" class="button secondary-button">
+                ← Back to Portal
+             </button>
+             <button id="start-new-quiz" class="button primary-button">
+                Start New Quiz →
+             </button>
+        </div>
     </div>
 
-     <footer>
-        <p>© 2024 MCQ Portal. All rights reserved.</p>
-    </footer>
-
-    <script src="js/script.js"></script>
-    <!-- Note: We need a specific JS for SEE results -->
-    <script src="js/results_see.js"></script>
+    <script src="see_result.js"></script>
 </body>
 </html>
