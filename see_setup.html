@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEE Quiz Setup</title>
+    <link rel="stylesheet" href="see_setup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Configure Your SEE Practice Quiz</h1>
+            <p>Set your preferences below and start testing your knowledge!</p>
+        </header>
+
+        <form id="quiz-setup-form">
+            <div class="form-section">
+                <h2>Parameters</h2>
+
+                <div class="form-group">
+                    <label for="num-questions">Number of Questions (Max: 100):</label>
+                    <input type="number" id="num-questions" name="numQuestions" min="1" max="100" required>
+                    <small class="error-message" id="num-questions-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="time-limit">Time Limit (Minutes, Max: 180):</label>
+                    <input type="number" id="time-limit" name="timeLimit" min="1" max="180" required>
+                     <small class="error-message" id="time-limit-error"></small>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Select Subjects</h2>
+                <div class="subject-selection">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="subject" value="Math">
+                        <span class="checkbox-custom"></span> Math
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="subject" value="Science">
+                        <span class="checkbox-custom"></span> Science
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="subject" value="English">
+                        <span class="checkbox-custom"></span> English
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="subject" value="Social">
+                        <span class="checkbox-custom"></span> Social Studies
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="subject" value="Opt Math">
+                        <span class="checkbox-custom"></span> Optional Math
+                    </label>
+                </div>
+                 <small class="error-message" id="subjects-error"></small>
+            </div>
+
+            <div class="form-actions">
+                 <button type="button" id="back-button" class="button secondary-button">
+                    ← Back to Portal
+                 </button>
+                 <button type="submit" id="start-quiz-button" class="button primary-button">
+                    Start Quiz →
+                 </button>
+            </div>
+        </form>
+    </div>
+
+    <script src="see_setup.js"></script>
+</body>
+</html>
