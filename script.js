@@ -6,13 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const codeInput = document.getElementById('code-input');
     const levelRadios = document.querySelectorAll('input[name="codeLevel"]');
     const errorMessage = document.getElementById('error-message');
-    const successMessage = document.getElementById('success-message'); // Get success message element
+    const successMessage = document.getElementById('success-message');
 
     // --- Modal Handling ---
     const openModal = () => {
         modal.style.display = 'block';
-        clearMessages(); // Clear messages when opening
-        codeInput.value = ''; // Clear input field
+        clearMessages();
+        codeInput.value = '';
     };
 
     const closeModal = () => {
@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
     openModalBtn.addEventListener('click', openModal);
     closeModalBtn.addEventListener('click', closeModal);
 
-    // Close modal if clicked outside the content area
     window.addEventListener('click', (event) => {
         if (event.target === modal) {
             closeModal();
@@ -43,13 +42,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const clearMessages = () => {
         errorMessage.style.display = 'none';
         errorMessage.textContent = '';
-        successMessage.style.display = 'none'; // Hide success message too
+        successMessage.style.display = 'none';
         successMessage.textContent = '';
     };
 
-    // --- Code Submission & Validation (Client-side part) ---
+    // --- Code Submission & Validation ---
     submitCodeBtn.addEventListener('click', async () => {
-        clearMessages(); // Clear previous messages
+        clearMessages();
 
         let selectedLevel = '';
         levelRadios.forEach(radio => {
@@ -69,13 +68,12 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        // Disable button during check
         submitCodeBtn.disabled = true;
         submitCodeBtn.textContent = 'Verifying...';
 
         try {
-            // **IMPORTANT**: Replace '/api/check-code' with your actual Cloudflare Function URL
-            const response = await fetch('/api/check-code', {
+            // *** CHANGE HERE: Use relative path for Pages Function ***
+            const response = await fetch('/check-code', { // Points to /functions/check-code.js
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -89,30 +87,26 @@ document.addEventListener('DOMContentLoaded', () => {
             const result = await response.json();
 
             if (response.ok && result.success) {
-                // SUCCESS
                 const cookieName = `code_${selectedLevel}`;
                 const expiryDate = new Date();
-                expiryDate.setDate(expiryDate.getDate() + 30); // Cookie expires in 30 days
-                document.cookie = `${cookieName}=true; path=/; expires=${expiryDate.toUTCString()}; SameSite=Lax`; // Added SameSite
+                expiryDate.setDate(expiryDate.getDate() + 30);
+                document.cookie = `${cookieName}=true; path=/; expires=${expiryDate.toUTCString()}; SameSite=Lax`;
 
                 console.log(`Cookie set: ${cookieName}=true`);
-                showMessage(successMessage, 'Code accepted successfully!'); // Show success
+                showMessage(successMessage, 'Code accepted successfully!');
                 setTimeout(() => {
-                    closeModal(); // Close modal after a short delay
-                }, 1500); // Keep success message visible briefly
+                    closeModal();
+                }, 1500);
 
             } else {
-                // FAILURE
                 const errorText = result.message || 'Invalid code entered. Please try again.';
-                showMessage(errorMessage, errorText, 2000); // Show error for 2 seconds
+                showMessage(errorMessage, errorText, 2000);
             }
 
         } catch (error) {
-            // NETWORK OR SERVER ERROR
             console.error("Error validating code:", error);
             showMessage(errorMessage, 'An error occurred. Please try again later.', 2000);
         } finally {
-            // Re-enable button
              submitCodeBtn.disabled = false;
              submitCodeBtn.textContent = 'Verify Code';
         }
