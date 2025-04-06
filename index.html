@@ -3,68 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MCQ Quiz Portal - Select Level</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Entrance Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <header class="main-header">
-            <h1>Welcome to the MCQ Portal</h1>
-            <p>Choose your challenge level below</p>
+        <header>
+            <h1>Welcome to the Entrance Portal</h1>
+            <p>Select your entrance type or enter an access code below.</p>
         </header>
 
-        <section class="level-selection">
-            <div class="level-card" id="level-see" data-url="selection_see.html">
-                <div class="level-icon">🎓</div>
-                <h2>SEE NEB</h2>
-                <p>Practice for your Secondary Education Examination.</p>
-            </div>
+        <nav class="options-container">
+            <a href="see_setup.html" class="option-button option-see">
+                <span class="icon">👁️</span> <!-- Example Icon -->
+                See Exams
+            </a>
+            <a href="basic_setup.html" class="option-button option-basic">
+                <span class="icon"> B </span> <!-- Example Icon -->
+                Basic Entrance
+            </a>
+            <a href="ktm_setup.html" class="option-button option-ktm">
+                <span class="icon"> K </span> <!-- Example Icon -->
+                KTM Entrance
+            </a>
+        </nav>
 
-            <div class="level-card disabled" id="level-basic" data-url="selection_basic.html">
-                 <div class="level-icon">🧪</div>
-                <h2>Basic Entrance</h2>
-                <p>Prepare for basic science entrance exams. (Coming Soon)</p>
-            </div>
-
-            <div class="level-card disabled" id="level-ktm" data-url="selection_ktm.html">
-                 <div class="level-icon">🏛️</div>
-                <h2>KTM Entrance</h2>
-                <p>Focused preparation for Kathmandu Valley entrance exams. (Coming Soon)</p>
-            </div>
-        </section>
-
-        <section class="code-entry-section">
-            <button id="toggle-code-entry" class="button button-secondary">Have an Access Code?</button>
-            <div id="code-entry-area" class="code-entry-area hidden">
-                <h3>Validate Access Code (Optional)</h3>
-                <p>Unlock potential future features.</p>
-                <div class="form-group">
-                    <label for="code-level">Select Level:</label>
-                    <select id="code-level">
-                        <option value="see">SEE NEB</option>
-                        <option value="basic">Basic Entrance</option>
-                        <option value="ktm">KTM Entrance</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="access-code">Enter Code:</label>
-                    <input type="text" id="access-code" placeholder="Enter your code">
-                </div>
-                <button id="validate-code-btn" class="button">Validate & Save Code</button>
-                <p id="code-status" class="code-status-message"></p>
-                 <small>Note: Code entry is optional and for future features. You can proceed without a code.</small>
-            </div>
-        </section>
-
+        <div class="code-entry-container">
+            <button id="enter-code-btn" class="code-button">Enter Access Code</button>
+        </div>
     </div>
 
-    <footer>
-        <p>© 2024 MCQ Portal. All rights reserved.</p>
-    </footer>
+    <!-- Code Entry Modal -->
+    <div id="code-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">×</span>
+            <h2>Enter Access Code</h2>
+            <p>Select the level for your code:</p>
+            <div class="level-selection">
+                <label>
+                    <input type="radio" name="codeLevel" value="see" checked> See
+                </label>
+                <label>
+                    <input type="radio" name="codeLevel" value="basic"> Basic
+                </label>
+                <label>
+                    <input type="radio" name="codeLevel" value="ktm"> KTM
+                </label>
+            </div>
+            <input type="text" id="code-input" placeholder="Enter your code here...">
+            <button id="submit-code-btn">Verify Code</button>
+            <p id="error-message" class="error-msg"></p>
+            <p id="success-message" class="success-msg"></p> <!-- Added for success feedback -->
+        </div>
+    </div>
 
-    <!-- Common JS & Page Specific JS -->
-    <script src="js/script.js"></script>
-    <script src="js/index.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
