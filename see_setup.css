@@ -1,0 +1,231 @@
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%); /* Lighter, vibrant gradient */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align top */
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly less transparent white */
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    max-width: 650px;
+    width: 90%;
+    text-align: center;
+    margin-top: 30px; /* Add some space from the top */
+}
+
+header h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #5a67d8; /* Vibrant blue/purple */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+header p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Form Styling */
+#quiz-setup-form {
+    text-align: left;
+}
+
+.form-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    border: 1px solid #e9ecef;
+}
+
+.form-section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #6c757d; /* Subdued heading color */
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #495057;
+}
+
+.form-group input[type="number"] {
+    width: calc(100% - 24px); /* Full width minus padding */
+    padding: 10px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.form-group input[type="number"]:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Subject Selection Styling */
+.subject-selection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    position: relative; /* Needed for custom checkbox */
+}
+
+.checkbox-label:hover {
+    background-color: #f1f3f5;
+    border-color: #adb5bd;
+}
+
+.checkbox-label input[type="checkbox"] {
+    opacity: 0; /* Hide original checkbox */
+    position: absolute;
+}
+
+.checkbox-custom {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #adb5bd;
+    border-radius: 3px;
+    margin-right: 10px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkbox-custom {
+    background-color: #5a67d8; /* Match header color */
+    border-color: #5a67d8;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.6-1.5-1.5L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e"); /* Simple checkmark */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.checkbox-label input[type="checkbox"]:focus + .checkbox-custom {
+     box-shadow: 0 0 0 0.2rem rgba(90, 103, 216, 0.25); /* Focus indicator */
+}
+
+
+/* Error Message Styling */
+.error-message {
+    color: #dc3545; /* Standard Bootstrap error color */
+    font-size: 0.85em;
+    display: block; /* Makes it appear below */
+    margin-top: 5px;
+    min-height: 1.2em; /* Reserve space to prevent layout shifts */
+}
+
+/* Input with error */
+input.input-error {
+    border-color: #dc3545;
+}
+input.input-error:focus {
+     box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+.subject-selection.input-error { /* Add border to the container */
+     border: 1px solid #dc3545;
+     border-radius: 5px; /* Match other inputs */
+     padding: 5px; /* Add slight padding to make border visible */
+}
+
+
+/* Action Buttons */
+.form-actions {
+    display: flex;
+    justify-content: space-between; /* Pushes buttons apart */
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e9ecef;
+}
+
+.button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px; /* Pill shape */
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none; /* For back button if it were an <a> */
+    display: inline-flex; /* Align icons/text if needed */
+    align-items: center;
+    justify-content: center;
+}
+
+.primary-button {
+    background: linear-gradient(45deg, #667eea, #764ba2); /* Primary action gradient */
+    color: white;
+}
+
+.primary-button:hover {
+    background: linear-gradient(45deg, #5a6fd5, #673f93); /* Darker shade */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.secondary-button {
+    background-color: #6c757d; /* Grey for secondary actions */
+    color: white;
+}
+
+.secondary-button:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 25px 20px;
+    }
+    header h1 {
+        font-size: 1.8em;
+    }
+    .subject-selection {
+        grid-template-columns: 1fr; /* Stack checkboxes on smaller screens */
+    }
+    .form-actions {
+        flex-direction: column-reverse; /* Stack buttons, Start on top */
+        gap: 15px; /* Add space between stacked buttons */
+        align-items: center; /* Center stack */
+    }
+    .button {
+        width: 80%; /* Make buttons wider when stacked */
+    }
+}
