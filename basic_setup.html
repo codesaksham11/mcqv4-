@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Quiz Setup</title>
+    <!-- Link to the specific CSS for basic setup -->
+    <link rel="stylesheet" href="basic_setup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Prepare Your Basic Entrance Quiz</h1>
+            <p>Adjust the quiz settings below. Subjects (Physics, Chemistry, Biology, English) are fixed.</p>
+        </header>
+
+        <form id="quiz-setup-form">
+            <div class="form-section">
+                <h2>Parameters</h2>
+
+                <div class="form-group">
+                    <label for="num-questions">Number of Questions (10 - 100):</label>
+                    <!-- Adjusted min value -->
+                    <input type="number" id="num-questions" name="numQuestions" min="10" max="100" required>
+                    <small class="error-message" id="num-questions-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="time-limit">Time Limit (Minutes, Max: 180):</label>
+                    <input type="number" id="time-limit" name="timeLimit" min="1" max="180" required>
+                     <small class="error-message" id="time-limit-error"></small>
+                </div>
+            </div>
+
+            <!-- Subject selection is removed as subjects are fixed -->
+
+            <div class="form-actions">
+                 <button type="button" id="back-button" class="button secondary-button">
+                    ← Back to Portal
+                 </button>
+                 <button type="submit" id="start-quiz-button" class="button primary-button">
+                    Start Basic Quiz →
+                 </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Link to the specific JS for basic setup -->
+    <script src="basic_setup.js"></script>
+</body>
+</html>
