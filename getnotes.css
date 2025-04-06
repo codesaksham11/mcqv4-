@@ -1,0 +1,376 @@
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Slightly different, professional gradient */
+    background: linear-gradient(135deg, #f5f7fa 0%, #b8c6db 100%);
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dee2e6;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.4em;
+    /* Color from index.html perhaps */
+    color: #667eea;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.1em;
+    color: #555;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Sections */
+.steps-section, .pricing-section, .terms-notice {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #495057;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Steps List */
+.steps-list {
+    list-style: none;
+    padding-left: 0;
+    counter-reset: steps-counter;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.steps-list li {
+    counter-increment: steps-counter;
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 50px; /* Space for number */
+    font-size: 1.05em;
+}
+
+.steps-list li::before {
+    content: counter(steps-counter);
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 35px;
+    height: 35px;
+    background-color: #667eea; /* Use a theme color */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.steps-list li strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #343a40;
+}
+
+/* Contact Methods within Step 2 */
+.contact-methods {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 10px; /* Indent slightly */
+}
+
+.contact-link {
+    display: inline-flex; /* Align icon and text */
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    border: 1px solid transparent;
+    font-weight: 600;
+    width: fit-content; /* Prevent links taking full width */
+}
+
+.contact-link i { /* Font Awesome Icon styling */
+    font-size: 1.2em;
+    width: 20px; /* Ensure alignment */
+    text-align: center;
+}
+
+.contact-link.email { color: #d9534f; border-color: #f8d7da; }
+.contact-link.email:hover { background-color: #f8d7da; color: #721c24; }
+
+.contact-link.whatsapp { color: #25D366; border-color: #d1f8dd; }
+.contact-link.whatsapp:hover { background-color: #d1f8dd; color: #116430; }
+
+.contact-link.facebook { color: #1877F2; border-color: #d6eaff; }
+.contact-link.facebook:hover { background-color: #d6eaff; color: #0a4a9e; }
+
+/* Pricing Section */
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.pricing-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e0e0e0;
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* For popular badge */
+    overflow: hidden; /* For popular badge ribbon */
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* "Most Popular" Badge - Subtle Psychology */
+.popular-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffc107; /* Yellow for attention */
+    color: #333;
+    padding: 5px 15px;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-bottom-left-radius: 10px; /* Style it */
+     transform: rotate(0deg); /* Could rotate it for ribbon effect */
+     /* Or use a ribbon style: https://css-tricks.com/snippets/css/corner-ribbon/ */
+}
+
+.pricing-card.popular {
+    border: 2px solid #667eea; /* Highlight popular choice */
+    transform: scale(1.03); /* Make it slightly larger */
+}
+.pricing-card.popular:hover {
+    transform: scale(1.03) translateY(-5px); /* Keep scale on hover */
+}
+
+
+.card-header h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.5em;
+}
+.card-header p {
+    font-size: 0.95em;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.card-price {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #00796b; /* Use a distinct color for price */
+    margin-bottom: 25px;
+}
+
+.card-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    text-align: left;
+    color: #555;
+    flex-grow: 1; /* Pushes button down */
+}
+.card-features li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.card-features li i { /* Checkmark icon */
+    color: #28a745; /* Green check */
+}
+
+.pricing-card .button { /* Button styling within card */
+    margin-top: auto; /* Push button to bottom */
+}
+
+/* Terms Notice */
+.terms-notice {
+    text-align: center;
+    font-size: 0.95em;
+    color: #6c757d;
+    margin-top: 40px;
+}
+
+.terms-notice i { /* Italic styling */
+    font-style: italic;
+}
+
+.terms-notice a {
+    color: #007bff; /* Standard link blue */
+    text-decoration: underline;
+    font-weight: 600;
+    cursor: pointer;
+}
+.terms-notice a:hover {
+    color: #0056b3;
+}
+
+/* Action Buttons (Back Button) */
+.action-buttons {
+    display: flex;
+    justify-content: center; /* Center the back button */
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e9ecef;
+}
+
+
+/* General Button Styles (reuse from index/setup) */
+.button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.primary-button {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+}
+.primary-button:hover {
+    background: linear-gradient(45deg, #5a6fd5, #673f93);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.secondary-button {
+    background-color: #6c757d;
+    color: white;
+}
+.secondary-button:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+/* Modal Styling (reuse from index.html modal) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    color: #333;
+    margin: auto; /* Centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 600px; /* Wider for terms */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: fadeInModal 0.3s ease-out;
+    text-align: left; /* Terms are better left-aligned */
+}
+
+@keyframes fadeInModal {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.close-btn {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #333;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #555;
+    text-align: center;
+}
+
+.modal-content ol {
+    padding-left: 25px; /* Indent ordered list */
+    margin: 0;
+}
+.modal-content li {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: #444;
+}
+.modal-content li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container { padding: 25px 20px; }
+    header h1 { font-size: 2em; }
+    .steps-list li { padding-left: 45px; }
+    .steps-list li::before { width: 30px; height: 30px; font-size: 1em; }
+    .pricing-cards { grid-template-columns: 1fr; /* Stack cards */ }
+    .pricing-card.popular { transform: scale(1); } /* Remove scale on mobile */
+    .pricing-card.popular:hover { transform: translateY(-5px); }
+     .modal-content { width: 95%; padding: 25px 20px; }
+}
