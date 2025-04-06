@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results - SEE NEB</title>
+    <link rel="stylesheet" href="css/style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container results-container">
+        <header>
+            <h1>Quiz Results: SEE NEB</h1>
+            <a href="index.html" class="back-link">← Back to Home</a>
+        </header>
+
+        <section id="results-summary" class="results-summary">
+            <h2>Summary</h2>
+            <p id="feedback-message" class="feedback-message">Calculating feedback...</p>
+            <p><strong>Time Taken:</strong> <span id="time-taken">--</span></p>
+            <p><strong>Final Score:</strong> <span id="final-score">-- / --</span></p>
+            <p><strong>Percentage:</strong> <span id="percentage">--</span>%</p>
+            <button id="show-details-btn" class="button button-secondary">Show Full Details</button>
+        </section>
+
+        <section id="detailed-results" class="detailed-results hidden">
+            <h2>Detailed Review</h2>
+            <!-- Detailed question review will be loaded here -->
+        </section>
+
+    </div>
+
+     <footer>
+        <p>© 2024 MCQ Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <!-- Note: We need a specific JS for SEE results -->
+    <script src="js/results_see.js"></script>
+</body>
+</html>
