@@ -1,0 +1,346 @@
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Light, airy gradient */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.quiz-container {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 25px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+/* Header */
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 15px; /* Space between items if they wrap */
+}
+
+.quiz-header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #4a5568; /* Cool grey */
+    flex-grow: 1; /* Allow title to take space */
+    text-align: left;
+}
+
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between back button and timer */
+}
+
+.timer-display {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #2d3748; /* Darker grey */
+    background-color: #e2e8f0; /* Light grey background */
+    padding: 8px 15px;
+    border-radius: 20px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.timer-display.warning {
+    color: #c53030; /* Red for warning */
+    background-color: #fed7d7; /* Light red */
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+
+/* Loading State */
+.loading {
+    text-align: center;
+    font-size: 1.2em;
+    color: #718096; /* Medium grey */
+    padding: 40px 0;
+}
+
+/* Hidden Utility */
+.hidden {
+    display: none;
+}
+
+/* Question Area */
+#questions-area {
+    margin-bottom: 30px;
+}
+
+.subject-group {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #ccc;
+}
+.subject-group:last-child {
+     border-bottom: none;
+     margin-bottom: 0;
+     padding-bottom: 0;
+}
+
+.subject-group h2 {
+    font-size: 1.6em;
+    color: #764ba2; /* Use a theme color */
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+/* Question Card (Grid Item) */
+.question-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.question-card:hover {
+     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+
+.question-text {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #2d3748;
+    line-height: 1.5;
+}
+
+.question-text strong {
+    margin-right: 8px; /* Space after question number */
+    color: #5a67d8; /* Accent color for number */
+}
+
+
+/* Options Styling */
+.options-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between options */
+}
+
+.options-group label {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border: 1px solid #d1d5db; /* Light grey border */
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    position: relative; /* For pseudo-elements if needed */
+}
+
+.options-group label:hover {
+    background-color: #f9fafb; /* Very light grey on hover */
+    border-color: #a5b4fc; /* Highlight color */
+}
+
+.options-group input[type="radio"] {
+    margin-right: 12px;
+    appearance: none; /* Hide default radio */
+    width: 18px;
+    height: 18px;
+    border: 2px solid #adb5bd;
+    border-radius: 50%; /* Make it circular */
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+    flex-shrink: 0;
+}
+
+.options-group input[type="radio"]:checked {
+    border-color: #667eea; /* Theme color */
+    background-color: #667eea; /* Fill circle */
+    background-clip: content-box; /* Makes the inner 'dot' */
+    padding: 3px; /* Controls the size of the inner dot */
+}
+
+.options-group input[type="radio"]:focus {
+     box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.3); /* Focus ring */
+}
+
+.options-group label span {
+    flex-grow: 1; /* Allow text to take available space */
+}
+
+/* Submit Section */
+.submit-section {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* General Button Styles (copy/adapt from see_setup.css if needed) */
+.button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.primary-button {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+}
+.primary-button:hover {
+    background: linear-gradient(45deg, #5a6fd5, #673f93);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.secondary-button {
+    background-color: #6c757d;
+    color: white;
+}
+.secondary-button:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+.danger-button {
+    background-color: #e53e3e; /* Red */
+    color: white;
+}
+.danger-button:hover {
+    background-color: #c53030;
+     transform: translateY(-2px);
+}
+
+
+/* Modal Styles (copy/adapt from index.css or see_setup.css if needed) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    color: #333;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeInModal 0.3s ease-out;
+}
+
+
+@keyframes fadeInModal {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+.modal-content h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.modal-content p {
+    margin-bottom: 25px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: space-around; /* Space out buttons */
+    gap: 15px;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .quiz-container {
+        padding: 20px 15px;
+    }
+    .quiz-header {
+        flex-direction: column; /* Stack header items */
+        align-items: flex-start; /* Align to left */
+    }
+     .quiz-header h1 {
+        font-size: 1.6em;
+        margin-bottom: 10px; /* Add space below title */
+    }
+    .header-controls {
+        width: 100%; /* Make controls take full width */
+        justify-content: space-between; /* Space out back and timer */
+    }
+    .timer-display {
+        font-size: 1.1em;
+    }
+    .question-card {
+        padding: 15px;
+    }
+    .question-text {
+        font-size: 1em;
+    }
+    .options-group label {
+         padding: 10px 12px;
+         font-size: 0.95em;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+     .quiz-header h1 {
+        font-size: 1.4em;
+     }
+     .modal-content {
+         padding: 20px;
+     }
+     .modal-actions {
+         flex-direction: column; /* Stack modal buttons */
+     }
+     .button {
+         width: 90%; /* Make modal buttons wider */
+         margin: 0 auto; /* Center stacked buttons */
+     }
+}
