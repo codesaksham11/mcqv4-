@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configure SEE NEB Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Configure SEE NEB Quiz</h1>
+             <a href="index.html" class="back-link">← Back to Level Selection</a>
+        </header>
+
+        <form id="see-config-form" class="config-form">
+            <div class="form-group">
+                <label for="num-questions">Number of Questions (1-100):</label>
+                <input type="number" id="num-questions" name="num-questions" min="1" max="100" value="20">
+                 <!-- Optional Slider - uncomment and style if preferred
+                 <input type="range" id="num-questions-slider" name="num-questions-slider" min="1" max="100" value="20">
+                 <span id="num-questions-value">20</span> -->
+                <p class="validation-message" id="num-questions-validation"></p>
+            </div>
+
+            <div class="form-group">
+                <label for="time-limit">Time Limit (1-180 minutes):</label>
+                <input type="number" id="time-limit" name="time-limit" min="1" max="180" value="30">
+                 <!-- Optional Slider
+                 <input type="range" id="time-limit-slider" name="time-limit-slider" min="1" max="180" value="30">
+                 <span id="time-limit-value">30</span> -->
+                <p class="validation-message" id="time-limit-validation"></p>
+            </div>
+
+            <div class="form-group">
+                <label>Select Subjects (at least one):</label>
+                <div class="checkbox-group" id="subject-group">
+                    <label><input type="checkbox" name="subject" value="Math"> Math</label>
+                    <label><input type="checkbox" name="subject" value="OPT Math"> OPT Math</label>
+                    <label><input type="checkbox" name="subject" value="Science" checked> Science</label>
+                    <label><input type="checkbox" name="subject" value="Social"> Social</label>
+                </div>
+                 <p class="validation-message" id="subjects-validation"></p>
+            </div>
+
+             <div class="info-notice">
+                <p><strong>Notice:</strong> Future access to this level may require an access code (Est. Price: Rs. 80). Currently, access is open.</p>
+            </div>
+
+            <button type="submit" class="button button-start">Start Quiz</button>
+        </form>
+    </div>
+
+     <footer>
+        <p>© 2024 MCQ Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/selection.js"></script>
+</body>
+</html>
