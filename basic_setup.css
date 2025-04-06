@@ -1,0 +1,177 @@
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    /* New vibrant gradient - Teal/Cyan theme */
+    background: linear-gradient(135deg, #69f0ae 0%, #18ffff 100%);
+    color: #212121; /* Darker text for better contrast on light bg */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align top */
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.92); /* Slightly more opaque */
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    max-width: 650px;
+    width: 90%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+header h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    font-weight: 700;
+    /* New accent color - Teal */
+    color: #00796b;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+header p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #424242; /* Slightly darker grey */
+}
+
+/* Form Styling */
+#quiz-setup-form {
+    text-align: left;
+}
+
+.form-section {
+    background-color: #e0f7fa; /* Light cyan background for section */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    border: 1px solid #b2ebf2; /* Light cyan border */
+}
+
+.form-section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #006064; /* Darker cyan for heading */
+    border-bottom: 2px solid #80deea; /* Cyan border bottom */
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #004d40; /* Dark teal for labels */
+}
+
+.form-group input[type="number"] {
+    width: calc(100% - 24px); /* Full width minus padding */
+    padding: 10px 12px;
+    border: 1px solid #80cbc4; /* Teal border */
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    background-color: #ffffff;
+}
+
+.form-group input[type="number"]:focus {
+    border-color: #00796b; /* Darker teal on focus */
+    outline: 0;
+    /* New focus ring color */
+    box-shadow: 0 0 0 0.2rem rgba(0, 121, 107, 0.25);
+}
+
+/* Subject Selection Styling - REMOVED */
+/* .subject-selection, .checkbox-label, .checkbox-custom rules are removed */
+
+/* Error Message Styling */
+.error-message {
+    color: #c62828; /* Darker red for errors */
+    font-size: 0.85em;
+    display: block;
+    margin-top: 5px;
+    min-height: 1.2em;
+}
+
+/* Input with error */
+input.input-error {
+    border-color: #c62828; /* Darker red */
+}
+input.input-error:focus {
+     box-shadow: 0 0 0 0.2rem rgba(198, 40, 40, 0.25);
+}
+/* Removed subject-selection.input-error */
+
+/* Action Buttons */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #b2ebf2; /* Light cyan border top */
+}
+
+.button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.primary-button {
+    /* New primary action gradient - Teal/Green */
+    background: linear-gradient(45deg, #26a69a, #00796b);
+    color: white;
+}
+
+.primary-button:hover {
+    background: linear-gradient(45deg, #00897b, #004d40); /* Darker shades */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.secondary-button {
+    background-color: #546e7a; /* Blue-grey for secondary */
+    color: white;
+}
+
+.secondary-button:hover {
+    background-color: #455a64;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments (mostly unchanged from see_setup) */
+@media (max-width: 768px) {
+    .container {
+        padding: 25px 20px;
+    }
+    header h1 {
+        font-size: 1.8em;
+    }
+    /* Removed subject-selection responsive rule */
+    .form-actions {
+        flex-direction: column-reverse;
+        gap: 15px;
+        align-items: center;
+    }
+    .button {
+        width: 80%;
+    }
+}
