@@ -3,16 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MCQ Test</title>
-    <link rel="stylesheet" href="/styles.css">
+    <title>MCQ Quiz - In Progress</title>
+    <link rel="stylesheet" href="css/style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>MCQ Test</h1>
-    <div>Time Remaining: <span id="timer">00:00</span></div>
-    <div id="questionsContainer"></div>
-    <button id="submitTest">Submit</button>
+    <div class="container quiz-container">
+        <header class="quiz-header">
+            <h1 id="quiz-title">MCQ Quiz</h1>
+            <div id="timer" class="timer">Time Left: <span>--:--</span></div>
+        </header>
 
-    <audio id="clickSound" src="/click.mp3"></audio>
-    <script src="/script.js"></script>
+        <div id="loading-message">Loading questions...</div>
+
+        <div id="quiz-content" class="hidden">
+            <!-- Questions will be loaded here by JavaScript -->
+        </div>
+
+        <button id="submit-quiz-btn" class="button button-submit hidden">Submit Quiz</button>
+
+    </div>
+
+    <footer>
+        <p>© 2024 MCQ Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/mcq.js"></script>
 </body>
 </html>
