@@ -374,3 +374,34 @@ h2 {
     .pricing-card.popular:hover { transform: translateY(-5px); }
      .modal-content { width: 95%; padding: 25px 20px; }
 }
+/* ****** START: NEW CSS for Payment Partners ****** */
+
+.payment-partners-section {
+    margin-top: 40px; /* Space above this section */
+    margin-bottom: 30px; /* Space below before terms */
+    padding-top: 20px; /* Optional padding */
+    border-top: 1px solid #e9ecef; /* Subtle separator line */
+    text-align: center; /* Center the heading and logos container */
+}
+
+.payment-partners-section h2 {
+    margin-bottom: 25px; /* Space below heading */
+    font-size: 1.6em; /* Slightly smaller heading */
+}
+
+.partners-logos {
+    display: flex;
+    justify-content: center; /* Center logos horizontally */
+    align-items: center; /* Align logos vertically */
+    flex-wrap: wrap; /* Allow wrapping if many logos */
+    gap: 30px; /* Space between logos */
+}
+
+.partner-logo {
+    max-height: 45px; /* Control the logo height */
+    width: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Ensure proper alignment */
+}
+
+/* ****** END: NEW CSS for Payment Partners ****** */
+
