@@ -444,23 +444,12 @@
         });
     </script>
 
-    <!-- Firebase SDKs -->
-    <!-- Use specific versions (check Firebase docs for latest compatible v9+ modular) -->
-    <script type="module">
-        // These scripts load the necessary Firebase features.
-        // The actual initialization and logic will be in app.js
-        // Example using v10.7.1 (adjust version as needed)
-        // import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-        // import { getAuth } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-
-        // Note: We only *import* the functions needed in app.js here.
-        // The actual 'initializeApp' etc. calls happen in app.js
-        console.log("Firebase SDK scripts loaded (app.js will initialize).");
-    </script>
-
+    <!-- Firebase SDKs - Using direct script tags instead of type="module" -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
 
     <!-- Your Application Logic -->
-    <script type="module" src="/app.js"></script>
+    <script src="/app.js"></script>
 
 </body>
 </html>
