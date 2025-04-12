@@ -1,223 +1,466 @@
-// app.js - Non-module version using Firebase Compat SDK
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrance Portal | MCQ Access</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon (Optional - replace with your icon) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔑</text></svg>">
 
-// Wait for the DOM to be fully loaded before running any JavaScript
-document.addEventListener('DOMContentLoaded', function() {
-    console.log("DOM fully loaded, initializing app...");
-    
-    // --- Firebase Configuration ---
-    const firebaseConfig = {
-        apiKey: "AIzaSyAgY6xEn6DLRzAhhRp1I5U4tbdwjBb388M",
-        authDomain: "mcq-gemini-editiom.firebaseapp.com",
-        projectId: "mcq-gemini-editiom",
-        storageBucket: "mcq-gemini-editiom.appspot.com", // Fixed storage bucket
-        messagingSenderId: "654579963522",
-        appId: "1:654579963522:web:5eb1db4d4b3b3287b5069b",
-        measurementId: "G-JN821548FH"
-    };
-
-    // Initialize Firebase with compat version
-    firebase.initializeApp(firebaseConfig);
-    const auth = firebase.auth();
-    const provider = new firebase.auth.GoogleAuthProvider();
-
-    // --- DOM Element References ---
-    const loginBtn = document.getElementById('login-btn');
-    const logoutBtn = document.getElementById('logout-btn');
-    const userInfoDiv = document.getElementById('user-info');
-    const userEmailSpan = document.getElementById('user-email');
-    const optionButtons = document.querySelectorAll('.option-button');
-    const statusMessageDiv = document.getElementById('status-message');
-
-    // --- Global State ---
-    let currentUser = null; // Keep track of the current logged-in user object
-
-    // --- Functions ---
-    /**
-     * Updates the UI based on the user's authentication state.
-     * @param {object|null} user - The Firebase user object or null if logged out.
-     */
-    function updateUI(user) {
-        console.log("Updating UI for user:", user ? user.email : 'No user');
-        currentUser = user; // Update global state
-
-        if (user) {
-            // User is logged in
-            userInfoDiv.style.display = 'flex';
-            userEmailSpan.textContent = user.email || 'No email available';
-            logoutBtn.style.display = 'flex';
-            loginBtn.style.display = 'none';
-
-            // Enable MCQ buttons when logged in
-            optionButtons.forEach(button => {
-                button.disabled = false;
-                button.style.opacity = '1';
-                button.style.cursor = 'pointer';
-            });
-            clearStatusMessage();
-
-        } else {
-            // User is logged out
-            userInfoDiv.style.display = 'none';
-            logoutBtn.style.display = 'none';
-            loginBtn.style.display = 'flex';
-
-            // Disable MCQ buttons when logged out
-            optionButtons.forEach(button => {
-                button.disabled = true;
-                button.style.opacity = '0.6';
-                button.style.cursor = 'not-allowed';
-            });
-            clearStatusMessage();
+    <style>
+        /* --- Global Reset & Base --- */
+        :root {
+            --bg-primary: #1a1a2e; /* Dark blue background */
+            --bg-secondary: #16213e; /* Slightly lighter dark blue */
+            --bg-tertiary: #0f3460; /* Medium blue */
+            --accent-primary: #537fe7; /* Vibrant blue */
+            --accent-secondary: #4ab1ff; /* Lighter vibrant blue */
+            --text-primary: #e0fbfc; /* Light cyan/white text */
+            --text-secondary: #c2d9ff; /* Softer light blue text */
+            --text-dark: #333;
+            --border-color: rgba(255, 255, 255, 0.1);
+            --shadow-color: rgba(0, 0, 0, 0.3);
+            --success-color: #4CAF50;
+            --error-color: #f44336;
         }
-    }
 
-    /**
-     * Initiates the Google Sign-In popup flow.
-     */
-    async function loginWithGoogle() {
-        setStatusMessage('Logging in...', false);
-        try {
-            console.log("Starting Google sign in popup...");
-            const result = await auth.signInWithPopup(provider);
-            console.log("Login successful:", result.user.email);
-            setStatusMessage('Login successful!', false);
-        } catch (error) {
-            console.error("Login Error:", error.code, error.message);
-            if (error.code === 'auth/popup-closed-by-user') {
-                setStatusMessage('Login cancelled.', true);
-            } else if (error.code === 'auth/cancelled-popup-request') {
-                setStatusMessage('Login cancelled (multiple popups).', true);
-            } else {
-                setStatusMessage(`Login failed: ${error.message}`, true);
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            flex-grow: 1; /* Make container take available space */
+            width: 100%;
+            position: relative; /* Needed for absolute positioning inside */
+        }
+
+        /* --- Header & User Status --- */
+        header {
+            display: flex;
+            flex-direction: column; /* Stack items vertically on small screens */
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 2.5rem;
+            text-align: center;
+        }
+
+        header .title-area h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.3rem;
+        }
+
+        header .title-area p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+        }
+
+        header .user-status {
+            margin-top: 1rem; /* Add space on small screens */
+            display: flex;
+            align-items: center;
+            gap: 1rem; /* Space between elements */
+            min-height: 40px; /* Prevent layout shift */
+        }
+
+        #user-info {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+         #user-info .user-icon {
+             font-size: 1.2em; /* Slightly larger icon */
+             color: var(--accent-secondary);
+         }
+        #user-info span {
+             font-weight: 600;
+             color: var(--text-primary);
+        }
+
+        .auth-button {
+            background-color: var(--accent-primary);
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px; /* Pill shape */
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .auth-button:hover {
+            background-color: var(--accent-secondary);
+            transform: translateY(-2px);
+        }
+         .auth-button svg { /* Style for potential Google icon */
+             width: 18px;
+             height: 18px;
+             fill: currentColor;
+         }
+
+        /* Initially hide logout state */
+        #user-info,
+        #logout-btn {
+            display: none;
+        }
+
+        /* --- Main Options --- */
+        .options-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Responsive grid */
+            gap: 1.5rem; /* Space between buttons */
+            margin-bottom: 3rem;
+        }
+
+        .option-button {
+            background: linear-gradient(145deg, var(--bg-secondary), var(--bg-tertiary));
+            color: var(--text-primary);
+            text-decoration: none;
+            padding: 1.8rem 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column; /* Icon above text */
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 5px 15px var(--shadow-color);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .option-button .icon {
+            font-size: 2.5rem; /* Larger icons */
+            margin-bottom: 0.8rem;
+            line-height: 1;
+        }
+
+        .option-button:hover {
+            transform: translateY(-5px) scale(1.03);
+            box-shadow: 0 10px 25px var(--shadow-color);
+        }
+
+        /* Specific icon colors (optional) */
+        .option-see .icon { color: var(--accent-primary); }
+        .option-basic .icon { color: var(--accent-secondary); }
+        .option-ktm .icon { color: #ff9a00; } /* Example: Orange for KTM */
+
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem; /* Add space above footer */
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+         footer a {
+             color: var(--accent-primary);
+             text-decoration: none;
+             font-weight: 600;
+         }
+         footer a:hover {
+             text-decoration: underline;
+             color: var(--accent-secondary);
+         }
+
+        /* --- Hamburger Menu Styling --- */
+        #hamburger-btn {
+            position: fixed;
+            top: 25px;
+            right: 30px;
+            width: 40px;
+            height: 30px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 0;
+            z-index: 1050;
+            outline: none;
+        }
+
+        #hamburger-btn .bar {
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: #ffffff; /* White bars */
+            border-radius: 2px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        #hamburger-btn.open .bar1 { transform: translateY(13px) rotate(45deg); }
+        #hamburger-btn.open .bar2 { opacity: 0; }
+        #hamburger-btn.open .bar3 { transform: translateY(-13px) rotate(-45deg); }
+
+        #side-menu {
+            position: fixed;
+            top: 0;
+            right: -280px;
+            width: 250px;
+            height: 100%;
+            background-color: rgba(40, 40, 60, 0.98); /* Darker, less transparent */
+            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+            transition: right 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            z-index: 1040;
+            padding-top: 80px;
+            backdrop-filter: blur(8px); /* Stronger blur */
+            display: flex;
+            flex-direction: column;
+        }
+
+        #side-menu.open { right: 0; }
+
+        #side-menu .menu-item {
+            display: flex;
+            align-items: center;
+            padding: 18px 25px;
+            color: #f0f0f0;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 600;
+            border-bottom: 1px solid var(--border-color);
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+         #side-menu .menu-item:first-child {
+             border-top: 1px solid var(--border-color); /* Keep top border */
+         }
+         #side-menu .menu-item:last-child {
+             /* Optional: Add margin to push last item down */
+             /* margin-top: auto; */
+         }
+
+        #side-menu .menu-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+        }
+
+        #side-menu .menu-icon {
+            margin-right: 15px;
+            font-size: 1.3em;
+            width: 25px;
+            text-align: center;
+        }
+
+        #menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6); /* Slightly darker overlay */
+            z-index: 1030;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.4s ease, visibility 0s linear 0.4s;
+        }
+
+        #menu-overlay.open {
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.4s ease;
+        }
+
+        /* --- Responsiveness --- */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column; /* Stack header items */
+                text-align: center;
             }
-            updateUI(null);
-        }
-    }
+            header .title-area h1 {
+                font-size: 1.8rem;
+            }
+            header .user-status {
+                 margin-top: 1.2rem; /* Increase space */
+                 justify-content: center; /* Center auth button below title */
+            }
 
-    /**
-     * Logs the current user out.
-     */
-    async function logoutUser() {
-        setStatusMessage('Logging out...', false);
-        try {
-            await auth.signOut();
-            console.log("User signed out successfully");
-            setStatusMessage('You have been logged out.', false);
-            currentUser = null;
-        } catch (error) {
-            console.error("Logout Error:", error);
-            setStatusMessage(`Logout failed: ${error.message}`, true);
-        }
-    }
-
-    /**
-     * Handles the click event on the MCQ access buttons.
-     * Gets an ID token and requests access from the backend.
-     * @param {Event} event - The click event object.
-     */
-    async function handleAccessRequest(event) {
-        if (!currentUser) {
-            setStatusMessage("Error: You must be logged in to access files.", true);
-            return;
+             .options-container {
+                 grid-template-columns: 1fr; /* Single column on smaller screens */
+                 gap: 1rem;
+             }
+             .option-button {
+                 padding: 1.5rem 1rem;
+             }
+             .option-button .icon {
+                 font-size: 2rem;
+             }
         }
 
-        const button = event.currentTarget;
-        const requestedFile = button.dataset.file;
-
-        if (!requestedFile) {
-            console.error("Error: Button missing data-file attribute.", button);
-            setStatusMessage("Configuration error: Cannot determine which file to access.", true);
-            return;
+        @media (max-width: 480px) {
+             #hamburger-btn { top: 15px; right: 15px; }
+             #side-menu { width: 220px; right: -250px; padding-top: 70px; }
+             .container { padding: 0 1rem; }
+             header .title-area h1 { font-size: 1.6rem; }
+             header .title-area p { font-size: 0.9rem; }
+             .auth-button { font-size: 0.8rem; padding: 8px 16px;}
+             #user-info { font-size: 0.8rem; }
         }
 
-        setStatusMessage(`Requesting access to ${requestedFile}...`, false);
-        button.disabled = true; // Temporarily disable button during request
+    </style>
+</head>
+<body>
 
-        try {
-            // 1. Get a fresh Firebase ID Token
-            const idToken = await currentUser.getIdToken(true);
-            console.log("ID Token obtained successfully");
+    <!-- Hamburger Menu HTML -->
+    <button id="hamburger-btn" aria-label="Open Menu" aria-expanded="false">
+        <span class="bar bar1"></span>
+        <span class="bar bar2"></span>
+        <span class="bar bar3"></span>
+    </button>
 
-            // 2. Make the POST request to our Cloudflare Function
-            const response = await fetch('/api/generate-cookie', {
-                method: 'POST',
-                headers: {
-                    'Authorization': `Bearer ${idToken}`,
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ requestedFile: requestedFile })
+    <nav id="side-menu" aria-hidden="true">
+        <a href="https://studymaterialsv2.pages.dev" class="menu-item" target="_blank" rel="noopener noreferrer">
+            <span class="menu-icon">🏠</span> Home
+        </a>
+        <a href="getnotes.html" class="menu-item"> <!-- Update link if needed -->
+            <span class="menu-icon">ⓘ</span> Get Code Info
+        </a>
+        <!-- Add more menu items here -->
+    </nav>
+
+    <div id="menu-overlay"></div>
+    <!-- End Hamburger Menu HTML -->
+
+
+    <!-- Main Content -->
+    <div class="container">
+        <header>
+            <div class="title-area">
+                <h1>Welcome to the Entrance Portal</h1>
+                <p>Please log in to access your exams.</p> <!-- Updated text -->
+            </div>
+            <div class="user-status">
+                <!-- Logged In State -->
+                <div id="user-info">
+                    <span class="user-icon">👤</span> <!-- Simple user icon -->
+                    Logged in as: <span id="user-email">user@example.com</span>
+                </div>
+                <button id="logout-btn" class="auth-button">Logout</button>
+
+                <!-- Logged Out State -->
+                <button id="login-btn" class="auth-button">
+                   <!-- Optional: Add Google SVG Icon here -->
+                   <svg viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path><path fill="none" d="M0 0h48v48H0z"></path></svg>
+                    Login with Google
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <nav class="options-container">
+                <!-- These buttons will trigger app.js logic -->
+                <button class="option-button option-see" data-file="see_mcq.html">
+                    <span class="icon">👁️</span>
+                    Access SEE MCQs
+                </button>
+                <button class="option-button option-basic" data-file="basic_mcq.html">
+                    <span class="icon"> B </span>
+                    Access Basic MCQs
+                </button>
+                <button class="option-button option-ktm" data-file="ktm_mcq.html">
+                    <span class="icon"> K </span>
+                    Access KTM MCQs
+                </button>
+            </nav>
+
+            <!-- Area for status messages from app.js (optional) -->
+            <div id="status-message" style="text-align: center; margin-top: 1.5rem; font-weight: 600;"></div>
+
+        </main>
+
+    </div> <!-- End .container -->
+
+    <footer>
+        <p>© 2024 Your Portal Name. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+
+    <!-- Hamburger Menu Embedded JS (Keep As Is) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerBtn = document.getElementById('hamburger-btn');
+            const sideMenu = document.getElementById('side-menu');
+            const menuOverlay = document.getElementById('menu-overlay');
+
+            function toggleMenu(isOpen) {
+                 sideMenu.classList.toggle('open', isOpen);
+                 menuOverlay.classList.toggle('open', isOpen);
+                 hamburgerBtn.classList.toggle('open', isOpen);
+                 hamburgerBtn.setAttribute('aria-expanded', isOpen);
+                 sideMenu.setAttribute('aria-hidden', !isOpen);
+            }
+
+            hamburgerBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const isCurrentlyOpen = sideMenu.classList.contains('open');
+                toggleMenu(!isCurrentlyOpen);
             });
 
-            // 3. Handle the response
-            if (response.ok) {
-                setStatusMessage(`Access granted! Redirecting to ${requestedFile}...`, false);
-                window.location.href = `/${requestedFile}`;
-            } else {
-                let errorMsg = `Access denied.`;
-                if (response.status === 401) {
-                    errorMsg = `Access denied: Authentication failed. Please try logging out and back in.`;
-                } else if (response.status === 403) {
-                    const responseBody = await response.text();
-                    errorMsg = `Access denied: You do not have permission to access ${requestedFile}. (${response.status})`;
-                    console.warn("Permission denied details (if any):", responseBody);
-                } else {
-                    const responseBody = await response.text();
-                    errorMsg = `Error requesting access: Server returned status ${response.status}.`;
-                    console.error("Server Error Details:", responseBody);
+            menuOverlay.addEventListener('click', () => {
+                toggleMenu(false);
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && sideMenu.classList.contains('open')) {
+                    toggleMenu(false);
                 }
-                setStatusMessage(errorMsg, true);
-                button.disabled = false;
-            }
+            });
+        });
+    </script>
 
-        } catch (error) {
-            console.error("Error requesting access token or fetching:", error);
-            setStatusMessage(`An error occurred: ${error.message}. Check console for details.`, true);
-            button.disabled = false;
-        }
-    }
+    <!-- Firebase SDKs -->
+    <!-- Use specific versions (check Firebase docs for latest compatible v9+ modular) -->
+    <script type="module">
+        // These scripts load the necessary Firebase features.
+        // The actual initialization and logic will be in app.js
+        // Example using v10.7.1 (adjust version as needed)
+        // import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        // import { getAuth } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
-    /** Helper to display status messages */
-    function setStatusMessage(message, isError = false) {
-        statusMessageDiv.textContent = message;
-        statusMessageDiv.style.color = isError ? 'var(--error-color)' : 'var(--accent-secondary)';
-        if (!isError) {
-            setTimeout(clearStatusMessage, 4000);
-        }
-    }
+        // Note: We only *import* the functions needed in app.js here.
+        // The actual 'initializeApp' etc. calls happen in app.js
+        console.log("Firebase SDK scripts loaded (app.js will initialize).");
+    </script>
 
-    /** Helper to clear status messages */
-    function clearStatusMessage() {
-        statusMessageDiv.textContent = '';
-    }
 
-    // --- Event Listeners ---
-    // Attach click handlers to the buttons
-    loginBtn.addEventListener('click', function(e) {
-        console.log("Login button clicked");
-        loginWithGoogle();
-    });
-    
-    logoutBtn.addEventListener('click', function(e) {
-        console.log("Logout button clicked");
-        logoutUser();
-    });
-    
-    // Add click handlers to all option buttons
-    optionButtons.forEach(button => {
-        button.addEventListener('click', handleAccessRequest);
-    });
+    <!-- Your Application Logic -->
+    <script type="module" src="/app.js"></script>
 
-    // Listen for authentication state changes
-    auth.onAuthStateChanged(function(user) {
-        console.log("Auth state changed. User:", user ? user.email : 'Logged out');
-        updateUI(user);
-    });
-
-    // Initial UI setup - will be handled by onAuthStateChanged
-    console.log("App.js initialized. Waiting for Firebase auth state...");
-    optionButtons.forEach(button => {
-        button.disabled = true;
-        button.style.opacity = '0.6';
-        button.style.cursor = 'not-allowed';
-    });
-});
+</body>
+</html>
