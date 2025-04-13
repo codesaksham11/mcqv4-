@@ -1,99 +1,113 @@
-// functions/api/verify-session.js
+// /functions/api/verify-session.js
 
-// Helper to parse cookies
-function parseCookies(request) {
-    const cookieHeader = request.headers.get('Cookie');
-    if (!cookieHeader) return {};
-    const cookies = {};
-    cookieHeader.split(';').forEach(cookie => {
-        const parts = cookie.split('=');
-        const name = parts.shift().trim();
-        if (name) {
-            try {
-                cookies[name] = decodeURIComponent(parts.join('='));
-            } catch (e) { cookies[name] = parts.join('='); }
-        }
-    });
-    return cookies;
+// Helper function to parse cookies (simplified)
+function getCookie(request, name) {
+    let result = null;
+    const cookieString = request.headers.get('Cookie');
+    if (cookieString) {
+        const cookies = cookieString.split(';');
+        cookies.forEach(cookie => {
+            const [cookieName, cookieValue] = cookie.split('=').map(c => c.trim());
+            if (cookieName === name) {
+                result = cookieValue;
+            }
+        });
+    }
+    return result;
 }
 
-/**
- * Handles GET requests to /api/verify-session
- * Checks the session_token cookie against SESSION_KV_BINDING.
- * If valid, retrieves user email from USER_KV_BINDING and returns it.
- */
-export async function onRequestGet(context) {
+export async function onRequest(context) {
+    // Environment variables are accessible via context.env
+    const { request, env } = context;
+
+    // KV bindings
+    const SESSION_KV = env.SESSION_KV_BINDING;
+    const USER_KV = env.USER_KV_BINDING;
+
+    // Only handle GET requests for session verification
+    if (request.method !== 'GET') {
+        return new Response('Method Not Allowed', { status: 405 });
+    }
+
     try {
-        const { request, env } = context;
-
-        // Check bindings
-        const userKv = env.USER_KV_BINDING;
-        const sessionKv = env.SESSION_KV_BINDING;
-        if (!userKv || !sessionKv) {
-            console.error("[Verify Session] Missing KV bindings.");
-            // Don't expose config errors to client unless necessary
-            return new Response(JSON.stringify({ loggedIn: false, error: "Session check unavailable." }), { status: 503 }); // Service Unavailable
-        }
-
-        // Get session token from cookie
-        const cookies = parseCookies(request);
-        const sessionToken = cookies['session_token'];
+        // 1. Get the session token from the cookie
+        const sessionToken = getCookie(request, 'session_token');
 
         if (!sessionToken) {
-            return new Response(JSON.stringify({ loggedIn: false }), { status: 200 }); // Not an error, just not logged in
+            // No token, user is not logged in
+            return new Response(JSON.stringify({ loggedIn: false }), {
+                headers: { 'Content-Type': 'application/json' },
+                status: 200 // It's not an error, just not logged in
+            });
         }
 
-        // Validate session token by looking it up in Session KV
-        let walletNumber;
-        try {
-            walletNumber = await sessionKv.get(sessionToken);
-            if (!walletNumber) {
-                console.log(`[Verify Session] Token ${sessionToken} not found in Session KV (expired/invalid).`);
-                // Instruct browser to delete the invalid/expired session cookie
-                 const deleteSessionCookie = `session_token=; HttpOnly; Secure; Path=/; Max-Age=0; SameSite=Lax`;
-                return new Response(JSON.stringify({ loggedIn: false, error: "Session expired or invalid." }), {
-                    status: 200, // Return 200, but indicate not logged in
-                    headers: { 'Set-Cookie': deleteSessionCookie }
-                });
-            }
-            console.log(`[Verify Session] Token ${sessionToken} validated for wallet ${walletNumber}.`);
-        } catch (kvError) {
-            console.error(`[Verify Session] Error accessing Session KV for token ${sessionToken}:`, kvError);
-            return new Response(JSON.stringify({ loggedIn: false, error: "Could not verify session." }), { status: 500 });
+        // 2. Look up the session token in SESSION_KV
+        const sessionDataJson = await SESSION_KV.get(sessionToken);
+
+        if (!sessionDataJson) {
+            // Token exists but is not valid (expired or bogus)
+            // Optionally: Clear the bad cookie? For simplicity, we won't here.
+             return new Response(JSON.stringify({ loggedIn: false }), {
+                headers: { 'Content-Type': 'application/json' },
+                status: 200
+            });
         }
 
-        // Session is valid, get user email from User KV to display
-        let userEmail = null;
-        try {
-             const storedUserDataString = await userKv.get(walletNumber);
-             if (storedUserDataString) {
-                 const storedUserData = JSON.parse(storedUserDataString);
-                 userEmail = storedUserData.email || 'N/A';
-             } else {
-                  console.error(`[Verify Session] User data not found in User KV for validated wallet ${walletNumber}.`);
-                  // Proceed without email, maybe handle differently
-             }
-        } catch (e) {
-             console.error(`[Verify Session] Error fetching/parsing user data for wallet ${walletNumber}:`, e);
-             // Proceed without email
+        // 3. Parse session data (which includes walletNumber and name)
+        const sessionData = JSON.parse(sessionDataJson);
+        const { walletNumber, name } = sessionData;
+
+        if (!walletNumber || !name) {
+             console.error(`Incomplete session data for token: ${sessionToken}`);
+             return new Response(JSON.stringify({ loggedIn: false }), {
+                headers: { 'Content-Type': 'application/json' },
+                status: 200 // Treat incomplete session as logged out
+            });
         }
 
-        // Return logged-in status and email
-        return new Response(JSON.stringify({ loggedIn: true, email: userEmail }), {
-             status: 200,
-             headers: { 'Content-Type': 'application/json' }
-         });
+        // 4. Look up user data in USER_KV using walletNumber to get the email
+        const userDataJson = await USER_KV.get(walletNumber);
+
+        if (!userDataJson) {
+             // Session exists, but the underlying user record is gone! Invalidate session.
+             console.error(`User data not found for walletNumber: ${walletNumber} from valid session token: ${sessionToken}`);
+             // Delete the orphaned session token
+             await SESSION_KV.delete(sessionToken);
+             return new Response(JSON.stringify({ loggedIn: false }), {
+                headers: { 'Content-Type': 'application/json' },
+                status: 200
+            });
+        }
+
+        // 5. Parse user data to get the email
+        const userData = JSON.parse(userDataJson);
+        const email = userData.email; // Assuming email is stored in USER_KV value
+
+        if (!email) {
+            console.error(`Email not found in USER_KV for walletNumber: ${walletNumber}`);
+             // User data exists but is missing email - treat as invalid state
+             return new Response(JSON.stringify({ loggedIn: false }), {
+                headers: { 'Content-Type': 'application/json' },
+                status: 200
+            });
+        }
+
+        // 6. If all checks pass, return loggedIn: true with user details
+        return new Response(JSON.stringify({
+            loggedIn: true,
+            email: email,
+            name: name // Get name from session data
+        }), {
+            headers: { 'Content-Type': 'application/json' },
+            status: 200
+        });
 
     } catch (error) {
-        console.error("[Verify Session] Unexpected error:", error);
-        return new Response(JSON.stringify({ loggedIn: false, error: "An unexpected error occurred." }), { status: 500 });
+        console.error('Error in /api/verify-session:', error);
+        // Return logged out state in case of any server error
+        return new Response(JSON.stringify({ loggedIn: false, error: 'Internal Server Error' }), {
+            headers: { 'Content-Type': 'application/json' },
+            status: 500 // Use 500 for actual server errors
+        });
     }
-}
-
-// Handle other methods
-export async function onRequest(context) {
-    if (context.request.method === "GET") {
-        return await onRequestGet(context);
-    }
-    return new Response(null, { status: 405 }); // Method Not Allowed
 }
