@@ -1,0 +1,23 @@
+{
+  "name": "mcqv4",
+  "version": "1.0.0",
+  "description": "verison 4 for a separate integration fike of studymaterialsv2",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codesaksham11/mcqv4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codesaksham11/mcqv4/issues"
+  },
+  "homepage": "https://github.com/codesaksham11/mcqv4#readme",
+  "dependencies": {
+    "jsonwebtoken": "^9.0.2"
+  }
+}
