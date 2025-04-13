@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const QUIZ_TYPE = 'see';
     const TARGET_MCQ_FILE = 'see_mcq.html';
     const REQUIRED_PACKAGE = 'see'; // The package name needed to access this quiz
-    const CONFIG_STORAGE_KEY = 'quizConfig'; // Key for localStorage
+    const CONFIG_STORAGE_KEY = 'seeQuizConfig'; // Key for localStorage
 
     // --- Navigation ---
     if (backButton) {
