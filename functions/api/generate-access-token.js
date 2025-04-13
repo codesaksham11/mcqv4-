@@ -1,6 +1,5 @@
 // functions/api/generate-access-token.js
-
-import jwt from 'jsonwebtoken';
+// VERSION WITHOUT JWT SIGNATURES - LESS SECURE
 
 // Helper to parse cookies from the Request headers
 function parseCookies(request) {
@@ -22,11 +21,28 @@ function parseCookies(request) {
     return cookies;
 }
 
+// Helper to Base64 encode (URL safe) - using standard Buffer assuming nodejs_compat works for Buffer
+function base64UrlEncode(str) {
+  try {
+      // Convert string to Buffer, then to Base64, then make it URL safe
+      return Buffer.from(str)
+          .toString('base64')
+          .replace(/\+/g, '-') // Replace + with -
+          .replace(/\//g, '_') // Replace / with _
+          .replace(/=+$/, ''); // Remove trailing =
+  } catch (e) {
+      console.error("Buffer or Base64 encoding failed:", e);
+      // Fallback or throw error - For now, return null to indicate failure
+      return null;
+  }
+}
+
+
 /**
- * Handles POST requests to /api/generate-access-token
+ * Handles POST requests to /api/generate-access-token (NO JWT VERSION)
  * 1. Validates the session_token cookie using SESSION_KV_BINDING to get walletNumber.
  * 2. Checks permissions in USER_KV_BINDING based on requested file and walletNumber.
- * 3. Issues a short-lived JWT access_token cookie if permitted.
+ * 3. Issues a short-lived, Base64-encoded (UNSIGNED) access_token cookie if permitted.
  */
 export async function onRequestPost(context) {
     try {
@@ -35,11 +51,11 @@ export async function onRequestPost(context) {
 
         const userKv = env.USER_KV_BINDING;         // For user permissions
         const sessionKv = env.SESSION_KV_BINDING;   // For session validation
-        const jwtSecret = env.SHARED_JWT_SECRET;    // For signing access token
+        // No JWT Secret needed in this version
 
-        // Check required bindings and secrets
-        if (!userKv || !sessionKv || !jwtSecret) {
-            console.error("Missing required KV Bindings or JWT Secret.");
+        // Check required bindings
+        if (!userKv || !sessionKv) {
+            console.error("Missing required KV Bindings.");
             return new Response(JSON.stringify({ error: "Server configuration error." }), { status: 500, headers: { 'Content-Type': 'application/json' } });
         }
 
@@ -68,25 +84,16 @@ export async function onRequestPost(context) {
         // --- 4. Validate Session Token & Get Wallet Number from Session KV ---
         let walletNumber;
         try {
-            // Look up the session token in the session KV store
             walletNumber = await sessionKv.get(sessionToken);
-
             if (!walletNumber) {
-                // Session token not found in KV (either expired and TTL deleted it, or invalid)
                 console.log(`Session validation failed: Token ${sessionToken} not found in Session KV.`);
-                // Instruct browser to delete the invalid/expired session cookie
                  const deleteSessionCookie = `session_token=; HttpOnly; Secure; Path=/; Max-Age=0; SameSite=Lax`;
                  return new Response(JSON.stringify({ error: "Session expired or invalid. Please log in again." }), {
                      status: 401,
-                     headers: {
-                         'Content-Type': 'application/json',
-                         'Set-Cookie': deleteSessionCookie
-                     }
+                     headers: { 'Content-Type': 'application/json', 'Set-Cookie': deleteSessionCookie }
                  });
             }
-            // If found, walletNumber now holds the user's ID for this session
              console.log(`Session validated for token ${sessionToken}. Associated wallet: ${walletNumber}`);
-
         } catch (kvError) {
              console.error(`Error accessing Session KV for token ${sessionToken}:`, kvError);
              return new Response(JSON.stringify({ error: "Server error validating session." }), { status: 500, headers: { 'Content-Type': 'application/json' }});
@@ -106,7 +113,6 @@ export async function onRequestPost(context) {
 
         const storedUserDataString = await userKv.get(walletNumber);
         if (!storedUserDataString) {
-            // This shouldn't happen if the session is valid, but good to check
             console.error(`Data integrity issue: User data not found in User KV for validated wallet ${walletNumber}.`);
             return new Response(JSON.stringify({ error: "User data inconsistency. Please contact support." }), { status: 500, headers: { 'Content-Type': 'application/json' }});
         }
@@ -124,21 +130,30 @@ export async function onRequestPost(context) {
         }
 
 
-        // --- 6. Generate Access Token JWT ("Admit Card") ---
+        // --- 6. Generate UNSIGNED Access Token Payload & Encode ---
         const expiresInSeconds = 7200; // 2 hours
-        const jwtPayload = {
-            sub: walletNumber, // Use walletNumber as subject (identifies user)
-            file: `/${requestedFile}`, // File user is allowed to access
-            // 'iat' (issued at) & 'exp' (expiration) are added by jwt.sign
+        const expirationTimestamp = Math.floor(Date.now() / 1000) + expiresInSeconds; // Expires in 2 hours (seconds since epoch)
+
+        const tokenPayload = {
+            sub: walletNumber,         // User identifier (wallet number)
+            file: `/${requestedFile}`, // File allowed
+            exp: expirationTimestamp   // Expiration timestamp
         };
 
-        const accessToken = jwt.sign(jwtPayload, jwtSecret, { expiresIn: expiresInSeconds });
+        // Convert payload to JSON string, then Base64 encode it (URL safe)
+        const accessTokenValue = base64UrlEncode(JSON.stringify(tokenPayload));
+
+        if (!accessTokenValue) {
+             // Handle encoding failure (rare, but possible if Buffer isn't available)
+             console.error("Failed to Base64 encode the access token payload.");
+             return new Response(JSON.stringify({ error: "Failed to generate access token." }), { status: 500, headers: { 'Content-Type': 'application/json' } });
+        }
 
         // --- 7. Set Access Token Cookie ---
-        const accessCookie = `access_token=${accessToken}; HttpOnly; Secure; Path=/; Max-Age=${expiresInSeconds}; SameSite=Lax`;
+        const accessCookie = `access_token=${accessTokenValue}; HttpOnly; Secure; Path=/; Max-Age=${expiresInSeconds}; SameSite=Lax`;
 
         // --- 8. Return Success Response ---
-        console.log(`Issued access token for ${requestedFile} for wallet ${walletNumber}.`);
+        console.log(`Issued UNSIGNED access token for ${requestedFile} for wallet ${walletNumber}.`);
         return new Response(JSON.stringify({ success: true }), {
             status: 200,
             headers: {
@@ -148,11 +163,12 @@ export async function onRequestPost(context) {
         });
 
     } catch (error) {
+        // --- Catch-all Error Handling ---
         console.error("Error in /api/generate-access-token:", error);
         let errorMessage = "An unexpected server error occurred.";
-        if (error instanceof jwt.JsonWebTokenError) {
-            errorMessage = "Error generating access token.";
-        }
+         if (error instanceof SyntaxError) { // Likely from request.json()
+             errorMessage = "Invalid request format.";
+         }
         return new Response(JSON.stringify({ error: errorMessage }), {
             status: 500,
             headers: { 'Content-Type': 'application/json' },
