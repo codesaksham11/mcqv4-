@@ -1,140 +1,119 @@
-// functions/api/login.js
+// /functions/api/login.js
 
-/**
- * Handles POST requests to /api/login
- * Verifies user credentials (email, walletNumber) against USER_KV_BINDING.
- * Creates a session token, stores it in SESSION_KV_BINDING with expiry,
- * and sets it as an HttpOnly session cookie.
- */
+// Helper function to generate secure random token (using standard Web Crypto API)
+// Assumes a recent compatibility date is set in Cloudflare Pages settings
+function generateSessionToken() {
+    // crypto.randomUUID() is cryptographically strong and suitable for session tokens
+    return crypto.randomUUID();
+}
+
 export async function onRequestPost(context) {
+    // This specific handler `onRequestPost` automatically handles only POST requests.
+    // You can also use `onRequest` and check `request.method` yourself.
+
+    const { request, env } = context;
+
+    // KV Bindings
+    const USER_KV = env.USER_KV_BINDING;
+    const SESSION_KV = env.SESSION_KV_BINDING;
+
+    // Constants
+    const SESSION_TTL_SECONDS = 3600; // 1 hour session validity
+
     try {
-        // --- 1. Get Request Data & Environment ---
-        const { request, env } = context;
-
-        // Check if BOTH KV bindings exist
-        const userKv = env.USER_KV_BINDING;
-        const sessionKv = env.SESSION_KV_BINDING; // The new binding for session data
-
-        if (!userKv || !sessionKv) {
-            console.error("Missing required KV Bindings (USER_KV_BINDING or SESSION_KV_BINDING).");
-            return new Response(JSON.stringify({ error: "Server configuration error." }), {
-                status: 500,
-                headers: { 'Content-Type': 'application/json' },
-            });
-        }
-
-        // --- 2. Parse Request Body ---
-        let requestBody;
+        // 1. Parse incoming JSON data
+        let userDataInput;
         try {
-            requestBody = await request.json();
-        } catch (e) {
-            return new Response(JSON.stringify({ error: "Invalid request body. Expected JSON." }), {
-                status: 400,
-                headers: { 'Content-Type': 'application/json' },
-            });
+            userDataInput = await request.json();
+        } catch (error) {
+            return new Response(JSON.stringify({ error: 'Invalid JSON body' }), { status: 400, headers: { 'Content-Type': 'application/json' } });
         }
 
-        const { email, walletNumber } = requestBody;
+        const { name, email, walletNumber } = userDataInput;
 
-        // --- 3. Validate Input ---
-        if (!email || !walletNumber) {
-            return new Response(JSON.stringify({ error: "Missing email or wallet number." }), {
-                status: 400,
-                headers: { 'Content-Type': 'application/json' },
-            });
-        }
-        if (!/\S+@\S+\.\S+/.test(email)) {
-             return new Response(JSON.stringify({ error: "Invalid email format." }), {
-                status: 400,
-                headers: { 'Content-Type': 'application/json' },
-            });
+        // 2. Basic Input Validation
+        if (!name || typeof name !== 'string' || name.trim() === '' ||
+            !email || typeof email !== 'string' || !email.includes('@') || // Very basic email check
+            !walletNumber || typeof walletNumber !== 'string' || walletNumber.trim() === '') {
+            return new Response(JSON.stringify({ error: 'Missing or invalid input fields' }), { status: 400, headers: { 'Content-Type': 'application/json' } });
         }
 
-        // --- 4. Look Up User in User KV ---
-        console.log(`Login attempt: Wallet=${walletNumber}, Email=${email}`);
-        const storedUserDataString = await userKv.get(walletNumber);
+        const trimmedName = name.trim();
+        const trimmedEmail = email.trim().toLowerCase(); // Compare emails case-insensitively
+        const trimmedWalletNumber = walletNumber.trim();
 
-        if (!storedUserDataString) {
-            console.log(`Login failed: Wallet number ${walletNumber} not found in User KV.`);
-            return new Response(JSON.stringify({ error: "Invalid credentials." }), {
-                status: 401,
-                headers: { 'Content-Type': 'application/json' },
-            });
+        // 3. Look up user in USER_KV using WalletNumber
+        const storedUserDataJson = await USER_KV.get(trimmedWalletNumber);
+
+        if (!storedUserDataJson) {
+            // User not found for this wallet number
+            console.log(`Login attempt failed: Wallet number not found - ${trimmedWalletNumber}`);
+            return new Response(JSON.stringify({ error: 'Unauthorized' }), { status: 401, headers: { 'Content-Type': 'application/json' } });
         }
 
-        // --- 5. Parse Stored Data & Verify Email ---
+        // 4. Parse stored user data and verify email
         let storedUserData;
         try {
-            storedUserData = JSON.parse(storedUserDataString);
-        } catch (e) {
-            console.error(`Failed to parse stored user JSON for wallet ${walletNumber}:`, storedUserDataString, e);
-            return new Response(JSON.stringify({ error: "Server error processing user data." }), {
-                status: 500,
-                headers: { 'Content-Type': 'application/json' },
-            });
+            storedUserData = JSON.parse(storedUserDataJson);
+        } catch (parseError) {
+            console.error(`Failed to parse user data for wallet ${trimmedWalletNumber}:`, parseError);
+            return new Response(JSON.stringify({ error: 'Internal server error during user data parsing' }), { status: 500, headers: { 'Content-Type': 'application/json' } });
         }
 
-        if (!storedUserData.email || email.toLowerCase() !== storedUserData.email.toLowerCase()) {
-             console.log(`Login failed: Email mismatch for wallet ${walletNumber}. Provided: ${email}, Stored: ${storedUserData.email}`);
-             return new Response(JSON.stringify({ error: "Invalid credentials." }), {
-                status: 401,
-                headers: { 'Content-Type': 'application/json' },
-            });
+        // Ensure the stored data has an email field
+        if (!storedUserData.email || typeof storedUserData.email !== 'string') {
+             console.error(`Stored user data for wallet ${trimmedWalletNumber} is missing or has invalid email.`);
+             return new Response(JSON.stringify({ error: 'Internal server error - invalid user record configuration' }), { status: 500, headers: { 'Content-Type': 'application/json' } });
         }
 
-        // --- 6. Credentials Valid - Generate Session Token ---
-        const sessionToken = crypto.randomUUID(); // Secure random string
-        const sessionDurationSeconds = 86400; // 24 hours validity for the session token in KV
+        const storedEmail = storedUserData.email.trim().toLowerCase();
 
-        // --- 7. Store Session Token in Session KV ---
-        // Store the walletNumber associated with this session token.
-        // Set expiration TTL (Time To Live) in KV so it automatically expires.
-        try {
-            await sessionKv.put(sessionToken, walletNumber, {
-                expirationTtl: sessionDurationSeconds, // Automatically delete after this many seconds
-            });
-            console.log(`Stored session token ${sessionToken} for wallet ${walletNumber} in Session KV.`);
-        } catch (kvError) {
-             console.error(`Failed to store session token in Session KV for wallet ${walletNumber}:`, kvError);
-             // Decide if login should fail if session can't be stored
-             return new Response(JSON.stringify({ error: "Failed to initiate session." }), {
-                status: 500,
-                headers: { 'Content-Type': 'application/json' },
-            });
+        if (storedEmail !== trimmedEmail) {
+            // Email does not match
+            console.log(`Login attempt failed: Email mismatch for wallet ${trimmedWalletNumber}`);
+            return new Response(JSON.stringify({ error: 'Unauthorized' }), { status: 401, headers: { 'Content-Type': 'application/json' } });
         }
 
+        // 5. Credentials Valid - Create Session
+        const sessionToken = generateSessionToken();
+        const sessionData = {
+            walletNumber: trimmedWalletNumber,
+            name: trimmedName // Store the name provided during this login
+        };
 
-        // --- 8. Prepare Response with Secure Cookie ---
-        // The cookie lifetime can match the KV TTL or be shorter (session cookie)
-        const cookieMaxAgeSeconds = sessionDurationSeconds;
-        const cookie = `session_token=${sessionToken}; HttpOnly; Secure; Path=/; Max-Age=${cookieMaxAgeSeconds}; SameSite=Lax`;
-
-        const headers = new Headers({
-            'Content-Type': 'application/json',
-            'Set-Cookie': cookie,
+        // Store the session token -> session data mapping in KV with TTL
+        await SESSION_KV.put(sessionToken, JSON.stringify(sessionData), {
+            expirationTtl: SESSION_TTL_SECONDS
         });
 
-        // --- 9. Return Success Response ---
-        console.log(`Login successful for wallet ${walletNumber}. Issuing session cookie.`);
-        return new Response(JSON.stringify({ success: true, email: storedUserData.email }), { // Optionally return email
+        // 6. Prepare Response - Set HttpOnly Cookie
+        const headers = new Headers();
+        headers.append('Content-Type', 'application/json');
+        headers.append(
+            'Set-Cookie',
+            `session_token=${sessionToken}; HttpOnly; Secure; Path=/; SameSite=Lax; Max-Age=${SESSION_TTL_SECONDS}`
+        );
+
+        console.log(`Login successful for wallet ${trimmedWalletNumber}`);
+        return new Response(JSON.stringify({ message: 'Login successful' }), {
             status: 200,
-            headers: headers,
+            headers: headers
         });
 
     } catch (error) {
-        // --- Catch-all Error Handling ---
-        console.error("Error during login process:", error);
-        return new Response(JSON.stringify({ error: "An unexpected server error occurred." }), {
+        console.error('Error in /api/login function:', error);
+        return new Response(JSON.stringify({ error: 'Internal Server Error' }), {
             status: 500,
-            headers: { 'Content-Type': 'application/json' },
+            headers: { 'Content-Type': 'application/json' }
         });
     }
 }
 
-// Optional: Handle other methods if needed
+// Optional: Add handlers for other methods if needed, or a catch-all
 export async function onRequest(context) {
   if (context.request.method === "POST") {
     return await onRequestPost(context);
   }
-  return new Response(null, { status: 405 });
+  // Respond to non-POST requests if necessary, e.g., OPTIONS for CORS preflight
+  return new Response('Method Not Allowed', { status: 405 });
 }
