@@ -1,29 +1,50 @@
-// app.js - KV Based Login Flow
+// app.js - Modal Login Flow for index.html
 
 // --- DOM Element References ---
-const loginForm = document.getElementById('login-form');
+// Header elements
+const loginHeaderBtn = document.getElementById('login-header-btn');
+const logoutBtn = document.getElementById('logout-btn');
+const userInfoDiv = document.getElementById('user-info');
+const userEmailSpan = document.getElementById('user-email');
+const headerSubtitle = document.getElementById('header-subtitle');
+
+// Login Modal elements
+const loginModalOverlay = document.getElementById('login-modal-overlay');
+const loginModalContent = document.getElementById('login-modal-content');
+const loginModalCloseBtn = document.getElementById('modal-close-btn');
+const loginForm = document.getElementById('login-form'); // Form inside the modal
 const emailInput = document.getElementById('email-input');
 const walletInput = document.getElementById('wallet-input');
 const loginSubmitBtn = document.getElementById('login-submit-btn');
 const loginStatusMessageDiv = document.getElementById('login-status-message');
 
-const headerSubtitle = document.getElementById('header-subtitle');
-const userInfoDiv = document.getElementById('user-info');
-const userEmailSpan = document.getElementById('user-email');
-const logoutBtn = document.getElementById('logout-btn');
-
-const mainContent = document.querySelector('main'); // Select the main element
-const optionButtons = document.querySelectorAll('.option-button');
-const statusMessageDiv = document.getElementById('status-message'); // General status message div
+// General Status Message Div (might be used less now)
+const statusMessageDiv = document.getElementById('status-message');
 
 // --- Global State ---
-let isLoggedIn = false; // Simple flag to track UI state
-let userEmail = null; // Store email on successful login
+let isLoggedIn = false; // Track if user is considered logged in based on session existence
+let userEmail = null; // Store email locally just for display after successful login
 
 // --- Functions ---
 
+/** Opens the login modal */
+function openLoginModal() {
+    if (!loginModalOverlay) return;
+    emailInput.value = ''; // Clear fields on open
+    walletInput.value = '';
+    clearLoginStatusMessage();
+    loginSubmitBtn.disabled = false; // Ensure button is enabled
+    loginModalOverlay.classList.add('visible');
+}
+
+/** Closes the login modal */
+function closeLoginModal() {
+    if (!loginModalOverlay) return;
+    loginModalOverlay.classList.remove('visible');
+}
+
 /**
- * Handles the login form submission.
+ * Handles the login form submission from the modal.
  * @param {Event} event - The form submission event.
  */
 async function handleLoginSubmit(event) {
@@ -32,14 +53,13 @@ async function handleLoginSubmit(event) {
     const email = emailInput.value.trim();
     const walletNumber = walletInput.value.trim();
 
-    // Basic validation
     if (!email || !walletNumber) {
         setLoginStatusMessage("Please enter both email and wallet number.", true);
         return;
     }
 
     setLoginStatusMessage("Logging in...", false);
-    loginSubmitBtn.disabled = true; // Disable button during request
+    loginSubmitBtn.disabled = true;
 
     try {
         const response = await fetch('/api/login', {
@@ -51,204 +71,156 @@ async function handleLoginSubmit(event) {
         });
 
         if (response.ok) {
-            // Login successful! Backend should have set the HttpOnly session_token cookie.
-            userEmail = email; // Store the email locally for display
-            showLoggedInState(userEmail);
-            setLoginStatusMessage(""); // Clear login message area
+            // Login successful! Backend set the session_token cookie.
+            userEmail = email; // Store for display
+            showLoggedInState(userEmail); // Update UI
+            closeLoginModal(); // Close the modal on success
+            setLoginStatusMessage(""); // Clear message
         } else {
-            // Login failed
             let errorMsg = "Login failed. Please check your email and wallet number.";
             if (response.status === 401) {
                 errorMsg = "Login failed: Invalid email or wallet number.";
             } else {
-                // Try to get more specific error from backend if possible
                 try {
                     const errorData = await response.text();
                     console.error(`Login error ${response.status}:`, errorData);
                     if (errorData) errorMsg += ` (Server says: ${errorData})`;
-                } catch (_) { /* Ignore if reading body fails */ }
+                } catch (_) { /* Ignore */ }
             }
             setLoginStatusMessage(errorMsg, true);
             loginSubmitBtn.disabled = false; // Re-enable button
         }
     } catch (error) {
         console.error("Network or fetch error during login:", error);
-        setLoginStatusMessage("Login request failed. Please check your connection or try again later.", true);
-        loginSubmitBtn.disabled = false; // Re-enable button
+        setLoginStatusMessage("Login request failed. Check connection or try again.", true);
+        loginSubmitBtn.disabled = false;
     }
 }
 
 /**
- * Updates the UI to show the logged-in state.
+ * Updates the UI to show the logged-in state (updates header).
  * @param {string} displayEmail - The email to display.
  */
 function showLoggedInState(displayEmail) {
     isLoggedIn = true;
-    loginForm.style.display = 'none'; // Hide login form
-    mainContent.style.display = 'block'; // Show main content (MCQ buttons)
 
-    // Update header
-    headerSubtitle.textContent = "Select the exam you wish to access.";
-    userEmailSpan.textContent = displayEmail || 'N/A';
-    userInfoDiv.style.display = 'flex';
-    logoutBtn.style.display = 'flex';
-
-    // Enable MCQ buttons and add listeners
-    optionButtons.forEach(button => {
-        button.disabled = false;
-        // Remove potential old listener before adding a new one
-        button.removeEventListener('click', handleAccessRequest);
-        button.addEventListener('click', handleAccessRequest);
-    });
+    // Update header elements
+    if (headerSubtitle) headerSubtitle.textContent = "Select an exam type to configure.";
+    if (userEmailSpan) userEmailSpan.textContent = displayEmail || 'N/A';
+    if (userInfoDiv) userInfoDiv.style.display = 'flex';
+    if (logoutBtn) logoutBtn.style.display = 'flex';
+    if (loginHeaderBtn) loginHeaderBtn.style.display = 'none';
 }
 
 /**
- * Updates the UI to show the logged-out state.
+ * Updates the UI to show the logged-out state (updates header).
  */
 function showLoggedOutState() {
     isLoggedIn = false;
     userEmail = null;
-    loginForm.style.display = 'block'; // Show login form
-    mainContent.style.display = 'none'; // Hide main content
 
-    // Update header
-    headerSubtitle.textContent = "Please log in to access your exams.";
-    userInfoDiv.style.display = 'none';
-    logoutBtn.style.display = 'none';
+    // Update header elements
+    if (headerSubtitle) headerSubtitle.textContent = "Select an exam type to configure, or log in.";
+    if (userInfoDiv) userInfoDiv.style.display = 'none';
+    if (logoutBtn) logoutBtn.style.display = 'none';
+    if (loginHeaderBtn) loginHeaderBtn.style.display = 'flex';
 
-    // Disable MCQ buttons and clear general status
-    optionButtons.forEach(button => {
-        button.disabled = true;
-    });
-    setStatusMessage("");
-    setLoginStatusMessage(""); // Also clear login status
-    emailInput.value = ''; // Clear form fields
-    walletInput.value = '';
-    loginSubmitBtn.disabled = false; // Ensure login button is enabled
+    clearStatusMessage();
+    clearLoginStatusMessage();
 }
 
 /**
- * Handles logout action. (Note: Can't delete HttpOnly cookie from JS)
+ * Handles logout action. Updates UI, logs message.
+ * Note: Ideally calls a backend endpoint to invalidate session/cookie.
  */
 function handleLogout() {
-    // Ideally, you'd also call a backend endpoint '/api/logout' here
-    // which would clear the HttpOnly session_token cookie via Set-Cookie header.
+    console.log("Logout button clicked. Updating UI to logged-out state.");
+    // TODO: Implement fetch POST to '/api/logout' endpoint later if needed.
+    // This backend endpoint would clear the session_token cookie.
     // fetch('/api/logout', { method: 'POST' });
 
-    console.log("Logging out (UI change only).");
     showLoggedOutState();
-    // Maybe redirect to login page or refresh, although showLoggedOutState handles UI.
+    // Optional: Display a confirmation message
+    setStatusMessage("You have been logged out.", false);
 }
 
-/**
- * Handles the click event on the MCQ access buttons.
- * Requests an access token from the backend.
- * @param {Event} event - The click event object.
- */
-async function handleAccessRequest(event) {
-    if (!isLoggedIn) {
-        setStatusMessage("Error: You seem to be logged out. Please log in again.", true);
-        showLoggedOutState(); // Force back to login view
-        return;
-    }
-
-    const button = event.currentTarget;
-    const requestedFile = button.dataset.file;
-
-    if (!requestedFile) {
-        console.error("Error: Button missing data-file attribute.", button);
-        setStatusMessage("Configuration error: Cannot determine which file to access.", true);
-        return;
-    }
-
-    setStatusMessage(`Requesting access to ${requestedFile}...`, false);
-    button.disabled = true; // Temporarily disable this button
-
-    try {
-        // Browser automatically sends the session_token cookie
-        const response = await fetch('/api/generate-access-token', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ requestedFile: requestedFile })
-        });
-
-        if (response.ok) {
-            // Success! Backend set the HttpOnly access_token cookie.
-            setStatusMessage(`Access granted! Redirecting to ${requestedFile}...`, false);
-            window.location.href = `/${requestedFile}`; // Redirect
-        } else {
-            // Handle specific errors
-            let errorMsg = `Access denied.`;
-            try {
-                 const errorData = await response.text();
-                 console.warn(`Server response (${response.status}): ${errorData}`);
-                 errorMsg = `Access denied (${response.status}): ${errorData || 'No details provided.'}`;
-             } catch (_) {
-                 errorMsg = `Access denied with status ${response.status}.`;
-             }
-
-            if (response.status === 401) { // Session invalid or expired
-                errorMsg = `Access denied: Your session may have expired (${response.status}). Please log in again.`;
-                handleLogout(); // Force logout if session is bad
-            } else if (response.status === 403) { // Permission denied for file
-                 errorMsg = `Access denied: Permission denied for ${requestedFile} (${response.status}).`;
-            } else if (response.status === 404) { // Endpoint not found
-                 errorMsg = `Error: Access grant endpoint not found (${response.status}). Backend may not be deployed.`;
-            }
-            setStatusMessage(errorMsg, true);
-            button.disabled = false; // Re-enable button on failure
-        }
-    } catch (error) {
-        console.error("Error requesting access token:", error);
-        setStatusMessage(`An error occurred while requesting access: ${error.message}`, true);
-        button.disabled = false; // Re-enable button
-    }
-}
-
-/** Helper to display login status messages */
+/** Helper to display login status messages within the modal */
 function setLoginStatusMessage(message, isError = false) {
     if (!loginStatusMessageDiv) return;
     loginStatusMessageDiv.textContent = message;
     loginStatusMessageDiv.style.color = isError ? 'var(--error-color)' : 'var(--accent-secondary)';
-     if (!isError && message) {
-         // Optional: Auto-clear non-error messages
-         // setTimeout(clearLoginStatusMessage, 4000);
-     }
+    // Keep error messages until next action
 }
 function clearLoginStatusMessage() {
-     if (!loginStatusMessageDiv) return;
-     loginStatusMessageDiv.textContent = '';
+    if (!loginStatusMessageDiv) return;
+    loginStatusMessageDiv.textContent = '';
 }
 
-/** Helper to display general status messages */
+/** Helper to display general status messages outside the modal */
 function setStatusMessage(message, isError = false) {
     if (!statusMessageDiv) return;
     statusMessageDiv.textContent = message;
     statusMessageDiv.style.color = isError ? 'var(--error-color)' : 'var(--accent-secondary)';
-     if (!isError && message) {
-         setTimeout(clearStatusMessage, 4000);
-     }
+    if (!isError && message) {
+        setTimeout(clearStatusMessage, 4000);
+    }
 }
 function clearStatusMessage() {
     if (!statusMessageDiv) return;
     statusMessageDiv.textContent = '';
 }
 
-
 // --- Event Listeners Setup ---
-if (loginForm && logoutBtn) {
-    loginForm.addEventListener('submit', handleLoginSubmit);
-    logoutBtn.addEventListener('click', handleLogout);
-    console.log("Login/Logout listeners attached.");
+
+// Listener for header login button to open modal
+if (loginHeaderBtn) {
+    loginHeaderBtn.addEventListener('click', openLoginModal);
 } else {
-    console.error("Fatal Error: Login form or logout button not found in the DOM.");
-    alert("Critical UI elements missing. Page cannot function correctly.");
+    console.error("Header Login Button not found.");
+}
+
+// Listener for logout button
+if (logoutBtn) {
+    logoutBtn.addEventListener('click', handleLogout);
+} else {
+    console.error("Logout Button not found.");
+}
+
+// Listener for login form submission (inside modal)
+if (loginForm) {
+    loginForm.addEventListener('submit', handleLoginSubmit);
+} else {
+    console.error("Login Form not found in modal.");
+}
+
+// Listeners to close the modal
+if (loginModalCloseBtn) {
+    loginModalCloseBtn.addEventListener('click', closeLoginModal);
+} else {
+    console.error("Modal Close Button not found.");
+}
+if (loginModalOverlay) {
+    // Close modal if user clicks on the dark overlay area
+    loginModalOverlay.addEventListener('click', (event) => {
+        // Important: Only close if the click is directly on the overlay,
+        // not on the modal content itself (event bubbling).
+        if (event.target === loginModalOverlay) {
+            closeLoginModal();
+        }
+    });
+} else {
+    console.error("Login Modal Overlay not found.");
 }
 
 
 // --- Initial Page State ---
-// Start in the logged-out state by default when the page loads.
+// Check if user might already be logged in? (Advanced: Could check session cookie validity here)
+// For now, always start assuming logged out visually.
 showLoggedOutState();
-console.log("App.js loaded. Initial state set to logged out.");
+console.log("App.js loaded for index.html. Initial state set to logged out.");
+
+// Remove any previously attached access request listeners if they existed
+// (This logic is now moved to the setup pages)
+// optionButtons.forEach(button => {
+//     button.removeEventListener('click', handleAccessRequest);
+// });
