@@ -6,6 +6,28 @@
     <title>SEE Quiz Setup</title>
     <link rel="stylesheet" href="see_setup.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- ADD THIS STYLE BLOCK -->
+    <style>
+        .status-message {
+            text-align: center;
+            margin-top: 1rem; /* Add some space above */
+            margin-bottom: 1rem; /* Add some space below */
+            font-weight: 600;
+            min-height: 1.2em; /* Prevent layout shift */
+            transition: color 0.3s ease;
+        }
+        .status-message.error {
+            color: #f44336; /* Standard red for errors */
+        }
+        .status-message.success {
+             color: #4CAF50; /* Standard green for success (optional) */
+        }
+        .status-message.loading {
+            color: #4ab1ff; /* Use an accent color for loading */
+        }
+    </style>
+    <!-- END ADDED STYLE BLOCK -->
+    
 </head>
 <body>
     <div class="container">
@@ -57,7 +79,10 @@
                 </div>
                  <small class="error-message" id="subjects-error"></small>
             </div>
-
+<!-- ADD THIS DIV for access status messages -->
+            <div id="access-status-message" class="status-message"></div>
+            <!-- END ADDED DIV -->
+            
             <div class="form-actions">
                  <button type="button" id="back-button" class="button secondary-button">
                     ← Back to Portal
