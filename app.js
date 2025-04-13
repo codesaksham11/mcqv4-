@@ -1,4 +1,5 @@
 // app.js - Modal Login Flow for index.html - WITH SESSION CHECK ON LOAD
+// THIS VERSION IS CORRECT FOR BOTH JWT AND NO-JWT BACKEND ACCESS TOKENS
 
 // --- DOM Element References ---
 const loginHeaderBtn = document.getElementById('login-header-btn');
@@ -22,7 +23,7 @@ let userEmail = null;
 
 // --- Functions ---
 
-function openLoginModal() { /* ... (keep function as before) ... */
+function openLoginModal() {
     if (!loginModalOverlay) return;
     emailInput.value = '';
     walletInput.value = '';
@@ -31,12 +32,12 @@ function openLoginModal() { /* ... (keep function as before) ... */
     loginModalOverlay.classList.add('visible');
 }
 
-function closeLoginModal() { /* ... (keep function as before) ... */
+function closeLoginModal() {
     if (!loginModalOverlay) return;
     loginModalOverlay.classList.remove('visible');
 }
 
-async function handleLoginSubmit(event) { /* ... (keep function as before) ... */
+async function handleLoginSubmit(event) {
     event.preventDefault();
 
     const email = emailInput.value.trim();
@@ -56,7 +57,14 @@ async function handleLoginSubmit(event) { /* ... (keep function as before) ... *
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email: email, walletNumber: walletNumber })
         });
-        const result = await response.json(); // Get JSON response
+        // Try to parse JSON regardless of status for potential error messages
+        let result = {};
+        try {
+            result = await response.json();
+        } catch (e) {
+            console.warn("Could not parse JSON response from /api/login", response.status);
+        }
+
 
         if (response.ok && result.success) {
             userEmail = result.email || email; // Use email from response if available
@@ -65,10 +73,11 @@ async function handleLoginSubmit(event) { /* ... (keep function as before) ... *
             setLoginStatusMessage("");
         } else {
             let errorMsg = result.error || "Login failed. Please check your email and wallet number.";
-            if (response.status === 401) {
-                errorMsg = result.error || "Login failed: Invalid email or wallet number.";
+            // Use status code for more specific default messages if result.error is empty
+            if (response.status === 401 && !result.error) {
+                errorMsg = "Login failed: Invalid email or wallet number.";
             }
-            console.error(`Login error ${response.status}:`, result.error || 'Unknown error');
+            console.error(`Login error ${response.status}:`, result.error || `Status code ${response.status}`);
             setLoginStatusMessage(errorMsg, true);
             loginSubmitBtn.disabled = false;
         }
@@ -80,7 +89,7 @@ async function handleLoginSubmit(event) { /* ... (keep function as before) ... *
 }
 
 
-function showLoggedInState(displayEmail) { /* ... (keep function as before) ... */
+function showLoggedInState(displayEmail) {
     isLoggedIn = true;
     if (headerSubtitle) headerSubtitle.textContent = "Select an exam type to configure.";
     if (userEmailSpan) userEmailSpan.textContent = displayEmail || 'N/A';
@@ -90,7 +99,7 @@ function showLoggedInState(displayEmail) { /* ... (keep function as before) ... 
 }
 
 
-function showLoggedOutState() { /* ... (keep function as before) ... */
+function showLoggedOutState() {
     isLoggedIn = false;
     userEmail = null;
     if (headerSubtitle) headerSubtitle.textContent = "Select an exam type to configure, or log in.";
@@ -101,34 +110,32 @@ function showLoggedOutState() { /* ... (keep function as before) ... */
     clearLoginStatusMessage();
 }
 
-async function handleLogout() { // Make async if calling backend
+async function handleLogout() {
     console.log("Logout button clicked.");
-    // --- NEW: Call backend logout endpoint ---
     try {
-        // Optional: Create a '/api/logout' function that deletes the session from KV
-        // and sets an expired session_token cookie.
+        // Optional but recommended: Add a backend endpoint to specifically clear the session from KV
         // const response = await fetch('/api/logout', { method: 'POST' });
-        // if (!response.ok) {
-        //     console.warn("Logout API call failed, logging out UI anyway.");
-        // }
+        // if (!response.ok) { console.warn("Logout API call failed."); }
+
+        // For now, just update UI. The session will expire based on KV TTL.
+        // If '/api/logout' existed and sent back an expired cookie header, that would be better.
         setStatusMessage("You have been logged out.", false);
     } catch (error) {
-        console.error("Error during backend logout call:", error);
+        console.error("Error during backend logout call (if implemented):", error);
     }
-    // Always update UI regardless of backend call success
     showLoggedOutState();
 }
 
-function setLoginStatusMessage(message, isError = false) { /* ... (keep function as before) ... */
+function setLoginStatusMessage(message, isError = false) {
      if (!loginStatusMessageDiv) return;
      loginStatusMessageDiv.textContent = message;
      loginStatusMessageDiv.style.color = isError ? 'var(--error-color)' : 'var(--accent-secondary)';
 }
-function clearLoginStatusMessage() { /* ... (keep function as before) ... */
+function clearLoginStatusMessage() {
      if (!loginStatusMessageDiv) return;
      loginStatusMessageDiv.textContent = '';
 }
-function setStatusMessage(message, isError = false) { /* ... (keep function as before) ... */
+function setStatusMessage(message, isError = false) {
     if (!statusMessageDiv) return;
     statusMessageDiv.textContent = message;
     statusMessageDiv.style.color = isError ? 'var(--error-color)' : 'var(--accent-secondary)';
@@ -136,7 +143,7 @@ function setStatusMessage(message, isError = false) { /* ... (keep function as b
         setTimeout(clearStatusMessage, 4000);
     }
 }
-function clearStatusMessage() { /* ... (keep function as before) ... */
+function clearStatusMessage() {
     if (!statusMessageDiv) return;
     statusMessageDiv.textContent = '';
 }
@@ -145,25 +152,30 @@ function clearStatusMessage() { /* ... (keep function as before) ... */
 async function checkSession() {
     console.log("Checking session on page load...");
     try {
-        // Browser sends cookies automatically
-        const response = await fetch('/api/verify-session');
-        const data = await response.json();
+        const response = await fetch('/api/verify-session'); // GET request by default
+        // Only parse JSON if response is likely JSON
+        let data = { loggedIn: false };
+        if (response.headers.get('content-type')?.includes('application/json')) {
+            data = await response.json();
+        } else {
+             console.warn("Response from /api/verify-session was not JSON.", await response.text());
+        }
+
 
         if (response.ok && data.loggedIn) {
             console.log("User session is valid:", data.email);
-            userEmail = data.email; // Store email from verified session
+            userEmail = data.email;
             showLoggedInState(userEmail);
         } else {
             console.log("User session is not valid or expired.");
             showLoggedOutState();
              if (data.error) {
-                 console.warn("Session verification error:", data.error);
+                 console.warn("Session verification error message:", data.error);
              }
         }
     } catch (error) {
         console.error("Error checking session:", error);
-        // Assume logged out if check fails
-        showLoggedOutState();
+        showLoggedOutState(); // Default to logged out on error
         setStatusMessage("Could not verify session status.", true);
     }
 }
@@ -181,5 +193,5 @@ if (loginModalOverlay) {
 }
 
 // --- Initial Page Load ---
-checkSession(); // <-- CALL THE NEW SESSION CHECK FUNCTION ON LOAD
+checkSession(); // <-- CALL THE SESSION CHECK FUNCTION ON LOAD
 console.log("App.js loaded for index.html. Session check initiated.");
