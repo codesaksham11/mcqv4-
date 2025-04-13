@@ -1,4 +1,4 @@
-// functions/_middleware.js thing
+// functions/_middleware.js 
 
 // Import the jsonwebtoken library
 import jwt from 'jsonwebtoken';
