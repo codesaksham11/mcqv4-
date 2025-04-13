@@ -1,197 +1,213 @@
-// app.js - Modal Login Flow for index.html - WITH SESSION CHECK ON LOAD
-// THIS VERSION IS CORRECT FOR BOTH JWT AND NO-JWT BACKEND ACCESS TOKENS
+// /app.js
 
-// --- DOM Element References ---
+// --- DOM Elements ---
 const loginHeaderBtn = document.getElementById('login-header-btn');
 const logoutBtn = document.getElementById('logout-btn');
 const userInfoDiv = document.getElementById('user-info');
-const userEmailSpan = document.getElementById('user-email');
-const headerSubtitle = document.getElementById('header-subtitle');
+const userNameSpan = document.getElementById('user-name');
+
 const loginModalOverlay = document.getElementById('login-modal-overlay');
 const loginModalContent = document.getElementById('login-modal-content');
-const loginModalCloseBtn = document.getElementById('modal-close-btn');
 const loginForm = document.getElementById('login-form');
+const nameInput = document.getElementById('name-input');
 const emailInput = document.getElementById('email-input');
 const walletInput = document.getElementById('wallet-input');
 const loginSubmitBtn = document.getElementById('login-submit-btn');
-const loginStatusMessageDiv = document.getElementById('login-status-message');
-const statusMessageDiv = document.getElementById('status-message');
+const loginErrorMessage = document.getElementById('login-error-message');
+const modalCloseBtn = document.getElementById('modal-close-btn');
 
-// --- Global State ---
-let isLoggedIn = false;
-let userEmail = null;
+// --- State ---
+let isLoginPending = false; // Prevent double submissions
 
 // --- Functions ---
 
-function openLoginModal() {
-    if (!loginModalOverlay) return;
-    emailInput.value = '';
-    walletInput.value = '';
-    clearLoginStatusMessage();
-    loginSubmitBtn.disabled = false;
+/**
+ * Updates the header UI based on login status.
+ * @param {boolean} isLoggedIn - Whether the user is logged in.
+ * @param {string|null} userName - The user's name if logged in.
+ */
+function updateUI(isLoggedIn, userName = null) {
+    if (isLoggedIn && userName) {
+        loginHeaderBtn.style.display = 'none';
+        logoutBtn.style.display = 'flex'; // Use flex as buttons use it
+        userInfoDiv.style.display = 'flex'; // Use flex for alignment
+        userNameSpan.textContent = userName;
+    } else {
+        loginHeaderBtn.style.display = 'flex'; // Use flex
+        logoutBtn.style.display = 'none';
+        userInfoDiv.style.display = 'none';
+        userNameSpan.textContent = ''; // Clear name
+    }
+}
+
+/**
+ * Checks the current session status with the backend.
+ */
+async function checkSession() {
+    try {
+        const response = await fetch('/api/verify-session');
+        if (!response.ok) {
+            // Treat non-ok responses as logged out, but log error
+            console.error('Session check failed:', response.status);
+            updateUI(false);
+            return;
+        }
+        const data = await response.json();
+        updateUI(data.loggedIn, data.name); // Pass name if logged in
+    } catch (error) {
+        console.error('Error checking session:', error);
+        updateUI(false); // Assume logged out on network error
+    }
+}
+
+/**
+ * Shows the login modal.
+ */
+function showLoginModal() {
+    loginErrorMessage.textContent = ''; // Clear previous errors
+    loginForm.reset(); // Reset form fields
     loginModalOverlay.classList.add('visible');
+    loginModalOverlay.setAttribute('aria-hidden', 'false');
+    nameInput.focus(); // Focus the first field
 }
 
-function closeLoginModal() {
-    if (!loginModalOverlay) return;
+/**
+ * Hides the login modal.
+ */
+function hideLoginModal() {
     loginModalOverlay.classList.remove('visible');
+    loginModalOverlay.setAttribute('aria-hidden', 'true');
+    // Re-enable button if it was disabled during a failed attempt
+    loginSubmitBtn.disabled = false;
+    loginSubmitBtn.textContent = 'Login'; // Restore original text
+    isLoginPending = false;
 }
 
+/**
+ * Handles the login form submission.
+ * @param {Event} event - The form submission event.
+ */
 async function handleLoginSubmit(event) {
-    event.preventDefault();
+    event.preventDefault(); // Prevent default form submission
+    if (isLoginPending) return; // Avoid double clicks
 
+    const name = nameInput.value.trim();
     const email = emailInput.value.trim();
     const walletNumber = walletInput.value.trim();
 
-    if (!email || !walletNumber) {
-        setLoginStatusMessage("Please enter both email and wallet number.", true);
+    // Basic frontend validation
+    if (!name || !email || !walletNumber) {
+        loginErrorMessage.textContent = 'Please fill in all fields.';
+        loginErrorMessage.classList.remove('verifying');
         return;
     }
 
-    setLoginStatusMessage("Logging in...", false);
+    isLoginPending = true;
     loginSubmitBtn.disabled = true;
+    loginSubmitBtn.textContent = 'Verifying...';
+    loginErrorMessage.textContent = 'Attempting login...'; // Indicate activity
+    loginErrorMessage.classList.add('verifying'); // Style verifying message
 
     try {
         const response = await fetch('/api/login', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email: email, walletNumber: walletNumber })
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ name, email, walletNumber }),
         });
-        // Try to parse JSON regardless of status for potential error messages
-        let result = {};
-        try {
-            result = await response.json();
-        } catch (e) {
-            console.warn("Could not parse JSON response from /api/login", response.status);
-        }
 
-
-        if (response.ok && result.success) {
-            userEmail = result.email || email; // Use email from response if available
-            showLoggedInState(userEmail);
-            closeLoginModal();
-            setLoginStatusMessage("");
+        if (response.ok) {
+            // Login successful
+            hideLoginModal();
+            await checkSession(); // Refresh UI immediately
+        } else if (response.status === 401) {
+            loginErrorMessage.textContent = 'Invalid Email or Wallet Number.';
+            loginErrorMessage.classList.remove('verifying');
         } else {
-            let errorMsg = result.error || "Login failed. Please check your email and wallet number.";
-            // Use status code for more specific default messages if result.error is empty
-            if (response.status === 401 && !result.error) {
-                errorMsg = "Login failed: Invalid email or wallet number.";
-            }
-            console.error(`Login error ${response.status}:`, result.error || `Status code ${response.status}`);
-            setLoginStatusMessage(errorMsg, true);
-            loginSubmitBtn.disabled = false;
+            // Generic error for other statuses (400, 500, etc.)
+            loginErrorMessage.textContent = 'Login failed. Please try again later.';
+            loginErrorMessage.classList.remove('verifying');
+            console.error('Login failed with status:', response.status);
         }
     } catch (error) {
-        console.error("Network or fetch error during login:", error);
-        setLoginStatusMessage("Login request failed. Check connection or try again.", true);
-        loginSubmitBtn.disabled = false;
+        console.error('Error during login fetch:', error);
+        loginErrorMessage.textContent = 'An network error occurred. Please check your connection.';
+        loginErrorMessage.classList.remove('verifying');
+    } finally {
+        // Re-enable button unless login was successful (modal is hidden then)
+        if (!loginModalOverlay.classList.contains('visible')) {
+             // If modal is hidden (success), no need to reset button state here
+        } else {
+             loginSubmitBtn.disabled = false;
+             loginSubmitBtn.textContent = 'Login'; // Restore original text only on failure
+        }
+        isLoginPending = false; // Allow new submissions
     }
 }
 
-
-function showLoggedInState(displayEmail) {
-    isLoggedIn = true;
-    if (headerSubtitle) headerSubtitle.textContent = "Select an exam type to configure.";
-    if (userEmailSpan) userEmailSpan.textContent = displayEmail || 'N/A';
-    if (userInfoDiv) userInfoDiv.style.display = 'flex';
-    if (logoutBtn) logoutBtn.style.display = 'flex';
-    if (loginHeaderBtn) loginHeaderBtn.style.display = 'none';
-}
-
-
-function showLoggedOutState() {
-    isLoggedIn = false;
-    userEmail = null;
-    if (headerSubtitle) headerSubtitle.textContent = "Select an exam type to configure, or log in.";
-    if (userInfoDiv) userInfoDiv.style.display = 'none';
-    if (logoutBtn) logoutBtn.style.display = 'none';
-    if (loginHeaderBtn) loginHeaderBtn.style.display = 'flex';
-    clearStatusMessage();
-    clearLoginStatusMessage();
-}
-
+/**
+ * Handles the logout process.
+ */
 async function handleLogout() {
-    console.log("Logout button clicked.");
     try {
-        // Optional but recommended: Add a backend endpoint to specifically clear the session from KV
-        // const response = await fetch('/api/logout', { method: 'POST' });
-        // if (!response.ok) { console.warn("Logout API call failed."); }
+        // Optional: Show a visual cue like disabling the button
+        logoutBtn.disabled = true;
+        logoutBtn.textContent = 'Logging out...';
 
-        // For now, just update UI. The session will expire based on KV TTL.
-        // If '/api/logout' existed and sent back an expired cookie header, that would be better.
-        setStatusMessage("You have been logged out.", false);
+        await fetch('/api/logout', { method: 'POST' });
+        // No need to check response status, always update UI to logged out
     } catch (error) {
-        console.error("Error during backend logout call (if implemented):", error);
-    }
-    showLoggedOutState();
-}
-
-function setLoginStatusMessage(message, isError = false) {
-     if (!loginStatusMessageDiv) return;
-     loginStatusMessageDiv.textContent = message;
-     loginStatusMessageDiv.style.color = isError ? 'var(--error-color)' : 'var(--accent-secondary)';
-}
-function clearLoginStatusMessage() {
-     if (!loginStatusMessageDiv) return;
-     loginStatusMessageDiv.textContent = '';
-}
-function setStatusMessage(message, isError = false) {
-    if (!statusMessageDiv) return;
-    statusMessageDiv.textContent = message;
-    statusMessageDiv.style.color = isError ? 'var(--error-color)' : 'var(--accent-secondary)';
-    if (!isError && message) {
-        setTimeout(clearStatusMessage, 4000);
-    }
-}
-function clearStatusMessage() {
-    if (!statusMessageDiv) return;
-    statusMessageDiv.textContent = '';
-}
-
-// --- NEW Function: Check session on page load ---
-async function checkSession() {
-    console.log("Checking session on page load...");
-    try {
-        const response = await fetch('/api/verify-session'); // GET request by default
-        // Only parse JSON if response is likely JSON
-        let data = { loggedIn: false };
-        if (response.headers.get('content-type')?.includes('application/json')) {
-            data = await response.json();
-        } else {
-             console.warn("Response from /api/verify-session was not JSON.", await response.text());
-        }
-
-
-        if (response.ok && data.loggedIn) {
-            console.log("User session is valid:", data.email);
-            userEmail = data.email;
-            showLoggedInState(userEmail);
-        } else {
-            console.log("User session is not valid or expired.");
-            showLoggedOutState();
-             if (data.error) {
-                 console.warn("Session verification error message:", data.error);
-             }
-        }
-    } catch (error) {
-        console.error("Error checking session:", error);
-        showLoggedOutState(); // Default to logged out on error
-        setStatusMessage("Could not verify session status.", true);
+        console.error('Error during logout fetch:', error);
+        // Still update UI even if API call fails
+    } finally {
+        // Restore button state (it will be hidden by updateUI anyway)
+        logoutBtn.disabled = false;
+        logoutBtn.textContent = 'Logout';
+        updateUI(false); // Update UI to logged-out state
     }
 }
 
 
-// --- Event Listeners Setup ---
-if (loginHeaderBtn) loginHeaderBtn.addEventListener('click', openLoginModal);
-if (logoutBtn) logoutBtn.addEventListener('click', handleLogout);
-if (loginForm) loginForm.addEventListener('submit', handleLoginSubmit);
-if (loginModalCloseBtn) loginModalCloseBtn.addEventListener('click', closeLoginModal);
+// --- Event Listeners ---
+
+// Show login modal when header button is clicked
+if (loginHeaderBtn) {
+    loginHeaderBtn.addEventListener('click', showLoginModal);
+}
+
+// Hide login modal when close button is clicked
+if (modalCloseBtn) {
+    modalCloseBtn.addEventListener('click', hideLoginModal);
+}
+
+// Hide login modal when clicking outside the content area
 if (loginModalOverlay) {
     loginModalOverlay.addEventListener('click', (event) => {
-        if (event.target === loginModalOverlay) closeLoginModal();
+        if (event.target === loginModalOverlay) { // Only if clicking the overlay itself
+            hideLoginModal();
+        }
     });
 }
 
-// --- Initial Page Load ---
-checkSession(); // <-- CALL THE SESSION CHECK FUNCTION ON LOAD
-console.log("App.js loaded for index.html. Session check initiated.");
+// Handle form submission
+if (loginForm) {
+    loginForm.addEventListener('submit', handleLoginSubmit);
+}
+
+// Handle logout button click
+if (logoutBtn) {
+    logoutBtn.addEventListener('click', handleLogout);
+}
+
+// Close modal on Escape key press
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && loginModalOverlay.classList.contains('visible')) {
+        hideLoginModal();
+    }
+});
+
+
+// --- Initialisation ---
+// Check session status when the script loads
+checkSession();
