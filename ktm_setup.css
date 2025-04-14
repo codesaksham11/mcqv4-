@@ -1,0 +1,256 @@
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Premium gradient - Deep Blue/Purple */
+    background: linear-gradient(135deg, #2c3e50 0%, #4a0e4e 100%); /* Dark Blue to Deep Purple */
+    color: #e0e0e0; /* Lighter text for dark background */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgba(52, 73, 94, 0.85); /* Semi-transparent dark blue-grey */
+    padding: 35px 45px;
+    border-radius: 12px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    max-width: 700px;
+    width: 90%;
+    text-align: center;
+    margin-top: 30px;
+    backdrop-filter: blur(5px); /* Optional blur effect */
+}
+
+header h1 {
+    font-size: 2.3em;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #f1c40f; /* Gold/Yellow Accent */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+header h1 i { /* Crown Icon */
+    margin-right: 10px;
+    opacity: 0.8;
+}
+
+header p {
+    font-size: 1.1em;
+    margin-bottom: 35px;
+    color: #bdc3c7; /* Light grey */
+}
+
+/* Form Styling */
+#quiz-setup-form {
+    text-align: left;
+}
+
+.form-section {
+    background-color: rgba(44, 62, 80, 0.8); /* Slightly darker transparent section bg */
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    color: #ecf0f1; /* Light text for headings */
+    border-bottom: 2px solid #f1c40f; /* Gold accent border */
+    padding-bottom: 10px;
+    display: flex; /* Align icon */
+    align-items: center;
+}
+.form-section h2 i {
+    margin-right: 12px;
+    color: #f1c40f; /* Gold icon */
+}
+
+.section-description { /* Added for topic section */
+    color: #bdc3c7;
+    font-size: 0.95em;
+    margin-bottom: 15px;
+    margin-top: -10px; /* Pull up slightly */
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #ecf0f1; /* Light label text */
+    font-size: 1.05em;
+}
+
+.form-group input[type="number"] {
+    width: calc(100% - 24px);
+    padding: 12px 12px;
+    border: 1px solid #7f8c8d; /* Grey border */
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    background-color: #ecf0f1; /* Light background for input */
+    color: #2c3e50; /* Dark text inside input */
+}
+.form-group input[type="number"]::placeholder {
+    color: #95a5a6;
+}
+
+.form-group input[type="number"]:focus {
+    border-color: #f1c40f; /* Gold border on focus */
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(241, 196, 15, 0.25); /* Gold focus ring */
+}
+
+/* Topic Selection Styling */
+.topic-selection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    background-color: rgba(236, 240, 241, 0.1); /* Very subtle light bg */
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    color: #ecf0f1; /* Light text */
+    font-weight: 500;
+    position: relative;
+}
+
+.checkbox-label:hover {
+    background-color: rgba(236, 240, 241, 0.2);
+    border-color: #f1c40f; /* Gold highlight on hover */
+}
+
+.checkbox-label input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox-custom {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #bdc3c7; /* Light grey border */
+    border-radius: 3px;
+    margin-right: 10px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    flex-shrink: 0;
+}
+.checkbox-label i { /* Icon styling */
+     margin-right: 8px;
+     color: #bdc3c7; /* Default icon color */
+     width: 20px;
+     text-align: center;
+     transition: color 0.2s ease;
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkbox-custom {
+    background-color: #f1c40f; /* Gold check background */
+    border-color: #f1c40f;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%232c3e50' d='M6.564.75l-3.59 3.6-1.5-1.5L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e"); /* Dark checkmark */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+.checkbox-label input[type="checkbox"]:checked ~ i { /* Change icon color when checked */
+     color: #f1c40f;
+}
+
+
+.checkbox-label input[type="checkbox"]:focus + .checkbox-custom {
+     box-shadow: 0 0 0 0.2rem rgba(241, 196, 15, 0.25); /* Gold focus ring */
+}
+
+/* Error Message Styling */
+.error-message {
+    color: #e74c3c; /* Premium-looking error red */
+    font-size: 0.85em;
+    display: block;
+    margin-top: 8px;
+    min-height: 1.2em;
+    font-weight: 500;
+}
+
+/* Input with error */
+input.input-error { border-color: #e74c3c; }
+input.input-error:focus { box-shadow: 0 0 0 0.2rem rgba(231, 76, 60, 0.25); }
+.topic-selection.input-error { /* Error style for topic container */
+     border: 1px solid #e74c3c;
+     border-radius: 5px;
+     padding: 5px;
+}
+
+/* Action Buttons */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.button {
+    padding: 12px 28px; /* Slightly more padding */
+    border: none;
+    border-radius: 25px;
+    font-size: 1.05em; /* Slightly larger font */
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Space between text and icon */
+}
+
+.primary-button {
+    /* Premium purple/dark gradient */
+    background: linear-gradient(45deg, #8e44ad, #5e3370); /* Purple gradient */
+    color: white;
+    border: 1px solid rgba(255,255,255, 0.1); /* Subtle border */
+}
+
+.primary-button:hover {
+    background: linear-gradient(45deg, #7b3099, #4a245c); /* Darker purple */
+    transform: translateY(-2px) scale(1.02); /* Lift and slightly grow */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.secondary-button {
+    background-color: #7f8c8d; /* Grey */
+    color: #ecf0f1;
+    border: 1px solid rgba(255,255,255, 0.1);
+}
+
+.secondary-button:hover {
+    background-color: #6c7a7d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container { padding: 25px 20px; }
+    header h1 { font-size: 1.9em; }
+    .topic-selection { grid-template-columns: 1fr; }
+    .form-actions { flex-direction: column-reverse; gap: 15px; align-items: center; }
+    .button { width: 90%; }
+}
