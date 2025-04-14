@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KTM Quiz Setup - Premium</title>
+    <!-- Link to the specific CSS for KTM setup -->
+    <link rel="stylesheet" href="ktm_setup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons (optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-crown"></i> Premium KTM Quiz Configuration</h1>
+            <p>Tailor your Kathmandu entrance practice quiz. Select the number of questions, time, and topics.</p>
+        </header>
+
+        <form id="quiz-setup-form">
+            <div class="form-section parameters-section">
+                <h2><i class="fas fa-sliders-h"></i> Parameters</h2>
+
+                <div class="form-group">
+                    <label for="num-questions">Number of Questions (10 - 100):</label>
+                    <input type="number" id="num-questions" name="numQuestions" min="10" max="100" required placeholder="e.g., 100">
+                    <small class="error-message" id="num-questions-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="time-limit">Time Limit (Minutes, Max: 180):</label>
+                    <input type="number" id="time-limit" name="timeLimit" min="1" max="180" required placeholder="e.g., 120">
+                     <small class="error-message" id="time-limit-error"></small>
+                </div>
+            </div>
+
+            <div class="form-section topics-section">
+                 <h2><i class="fas fa-book-open"></i> Select Topics</h2>
+                 <p class="section-description">Choose which subjects to include in your quiz.</p>
+                <div class="topic-selection">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="topic" value="Science"> <!-- Value "Science" represents Physics, Chemistry, Biology -->
+                        <span class="checkbox-custom"></span> <i class="fas fa-flask"></i> Science (Phy/Chem/Bio)
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="topic" value="Math">
+                        <span class="checkbox-custom"></span> <i class="fas fa-calculator"></i> Math
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="topic" value="English">
+                        <span class="checkbox-custom"></span> <i class="fas fa-language"></i> English
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="topic" value="GK"> <!-- GK for General Knowledge -->
+                        <span class="checkbox-custom"></span> <i class="fas fa-globe-asia"></i> General Knowledge (GK)
+                    </label>
+                </div>
+                 <small class="error-message" id="topics-error"></small>
+            </div>
+
+
+            <div class="form-actions">
+                 <button type="button" id="back-button" class="button secondary-button">
+                    <i class="fas fa-arrow-left"></i> Back to Portal
+                 </button>
+                 <button type="submit" id="start-quiz-button" class="button primary-button">
+                    Start Premium Quiz <i class="fas fa-arrow-right"></i>
+                 </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Link to the specific JS for KTM setup -->
+    <script src="ktm_setup.js"></script>
+</body>
+</html>
