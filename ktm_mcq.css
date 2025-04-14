@@ -1,0 +1,262 @@
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Premium dark gradient from setup */
+    background: linear-gradient(135deg, #2c3e50 0%, #4a0e4e 100%);
+    color: #e0e0e0; /* Light text */
+    margin: 0;
+    /* Add padding top to prevent content from hiding under sticky header initially */
+    padding: 90px 20px 20px 20px; /* Adjust top padding based on header height */
+}
+
+.quiz-container {
+    max-width: 950px; /* Slightly wider? */
+    margin: 0 auto; /* Remove top margin as body padding handles it */
+    background-color: rgba(52, 73, 94, 0.9); /* Darker semi-transparent bg */
+    padding: 0; /* Remove padding, handle inside */
+    border-radius: 10px; /* Slightly less rounded */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden; /* Ensure rounded corners contain children */
+}
+
+/* Header & Sticky Timer */
+.quiz-header.sticky-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Styling for stickiness */
+    position: sticky;
+    top: 0; /* Stick to the top */
+    z-index: 100; /* Ensure it's above scrolling content */
+    /* Background must cover content scrolling under it */
+    background: linear-gradient(135deg, #34495e 0%, #5e3370 100%); /* Slightly different gradient for header? */
+    padding: 15px 30px; /* Adjust padding */
+    border-bottom: 2px solid #f1c40f; /* Gold accent border */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%; /* Ensure it spans the container width */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.quiz-header h1 {
+    margin: 0;
+    font-size: 1.8em; /* Adjust size */
+    color: #f1c40f; /* Gold accent */
+    font-weight: 700;
+    flex-grow: 1;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.timer-display {
+    font-size: 1.2em; /* Adjust size */
+    font-weight: 600;
+    color: #ffffff; /* White text */
+    background-color: rgba(44, 62, 80, 0.7); /* Darker transparent bg */
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.timer-display i {
+    opacity: 0.8;
+}
+
+.timer-display.warning {
+    color: #f1c40f; /* Gold warning */
+    background-color: rgba(231, 76, 60, 0.7); /* Reddish warning bg */
+    border-color: #f1c40f;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(241, 196, 15, 0.4); }
+  50% { transform: scale(1.03); box-shadow: 0 0 5px 3px rgba(241, 196, 15, 0.2); }
+}
+
+/* Main Content Area (below sticky header) */
+.quiz-main-content {
+     padding: 25px 40px; /* Padding for the content area */
+}
+
+
+/* Loading State */
+.loading {
+    text-align: center;
+    font-size: 1.3em;
+    color: #bdc3c7; /* Light grey */
+    padding: 50px 0;
+}
+.loading i {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+/* Hidden Utility */
+.hidden { display: none; }
+
+/* Question Area */
+#questions-area { margin-bottom: 30px; }
+
+.subject-group {
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+}
+.subject-group:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+.subject-group h2 {
+    font-size: 1.7em;
+    color: #ecf0f1; /* Light text */
+    margin-bottom: 25px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgba(241, 196, 15, 0.5); /* Thinner gold border */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.subject-group h2 i {
+     color: #f1c40f; /* Gold icon */
+     opacity: 0.9;
+}
+
+/* Question Card */
+.question-card {
+    background-color: rgba(44, 62, 80, 0.7); /* Darker card bg */
+    padding: 20px 25px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.question-text {
+    font-size: 1.15em; /* Slightly larger */
+    margin-bottom: 18px;
+    color: #ecf0f1; /* Light text */
+    line-height: 1.6;
+}
+.question-text strong { margin-right: 10px; color: #f1c40f; } /* Gold number */
+
+/* Options Styling */
+.options-group { display: flex; flex-direction: column; gap: 12px; }
+
+.options-group label {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border: 1px solid #7f8c8d; /* Grey border */
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgba(236, 240, 241, 0.1); /* Subtle light bg */
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    color: #bdc3c7; /* Light grey text */
+}
+
+.options-group label:hover {
+    background-color: rgba(236, 240, 241, 0.2);
+    border-color: #f1c40f; /* Gold highlight */
+    color: #ffffff; /* White text on hover */
+}
+
+.options-group input[type="radio"] {
+    margin-right: 12px;
+    appearance: none;
+    width: 19px; /* Slightly larger */
+    height: 19px;
+    border: 2px solid #95a5a6; /* Medium grey border */
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+    flex-shrink: 0;
+    background-color: transparent;
+}
+
+.options-group input[type="radio"]:checked {
+    border-color: #f1c40f; /* Gold border */
+    background-color: #f1c40f; /* Gold fill */
+    background-clip: content-box;
+    padding: 3px;
+}
+
+.options-group input[type="radio"]:focus {
+     box-shadow: 0 0 0 2px rgba(241, 196, 15, 0.3); /* Gold focus ring */
+}
+
+.options-group label span { flex-grow: 1; }
+
+/* Submit Section */
+.submit-section {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* General Button Styles */
+.button { /* Copied from ktm_setup.css for consistency */
+    padding: 12px 28px; border: none; border-radius: 25px; font-size: 1.05em; font-weight: 600;
+    cursor: pointer; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+}
+.primary-button { background: linear-gradient(45deg, #8e44ad, #5e3370); color: white; border: 1px solid rgba(255,255,255, 0.1); }
+.primary-button:hover { background: linear-gradient(45deg, #7b3099, #4a245c); transform: translateY(-2px) scale(1.02); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); }
+.secondary-button { background-color: #7f8c8d; color: #ecf0f1; border: 1px solid rgba(255,255,255, 0.1); }
+.secondary-button:hover { background-color: #6c7a7d; transform: translateY(-2px); box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); }
+.danger-button { background-color: #c0392b; color: white; border: 1px solid rgba(255,255,255, 0.1); }
+.danger-button:hover { background-color: #a02b1e; transform: translateY(-2px); }
+
+
+/* Modal Styles */
+.modal { /* Same as basic_mcq */
+    display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%;
+    overflow: auto; background-color: rgba(0, 0, 0, 0.7); backdrop-filter: blur(5px);
+    align-items: center; justify-content: center;
+}
+.modal-content { /* Style with premium theme */
+    background-color: #34495e; /* Dark blue-grey modal bg */
+    color: #ecf0f1; /* Light text */
+    padding: 30px; border: 1px solid rgba(255, 255, 255, 0.2); width: 90%; max-width: 450px;
+    border-radius: 10px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4); text-align: center;
+    animation: fadeInModal 0.3s ease-out;
+}
+@keyframes fadeInModal { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+.modal-content h2 { margin-top: 0; margin-bottom: 15px; color: #f1c40f; } /* Gold header */
+.modal-content h2 i { margin-right: 8px; }
+.modal-content p { margin-bottom: 25px; color: #bdc3c7; line-height: 1.6; }
+.modal-actions { display: flex; justify-content: space-around; gap: 15px; }
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    body { padding-top: 120px; } /* Increase top padding if header wraps significantly */
+    .quiz-header.sticky-header { padding: 15px 20px; }
+    .quiz-header h1 { font-size: 1.5em; }
+    .timer-display { font-size: 1.1em; }
+    .quiz-main-content { padding: 20px 15px; }
+    .question-card { padding: 15px 20px; }
+    .question-text { font-size: 1.05em; }
+    .options-group label { padding: 10px 12px; font-size: 0.95em; }
+    .button { font-size: 1em; padding: 10px 22px; }
+}
+@media (max-width: 480px) {
+     body { padding-top: 100px; } /* Adjust as needed */
+     .quiz-header h1 { font-size: 1.3em; }
+     .header-controls { flex-direction: column; align-items: flex-end; gap: 10px;} /* Stack controls */
+     .timer-display { align-self: flex-start; } /* Align timer left when stacked */
+     .modal-actions { flex-direction: column; }
+     .button { width: 90%; margin: 0 auto; }
+}
