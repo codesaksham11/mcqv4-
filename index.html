@@ -6,8 +6,7 @@
     <title>Entrance Portal Powered by NEB ASSIST</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔑</text></svg>">
-
-    <style>
+ <style>
         /* --- Global Reset & Base --- */
         :root {
             --bg-primary: #F8F1E9;
@@ -23,54 +22,60 @@
             --error-color: #e74c3c;
             --warning-color: #f39c12;
 
-             /* Added for card gradients */
-            --card-see-start: #FF6F61;
-            --card-see-end: #e55e52;
-            --card-basic-start: #006D77;
-            --card-basic-end: #005f6b;
-            --card-ktm-start: #FFD60A;
-            --card-ktm-end: #e6c000;
-            --card-text-color: #FFFFFF; /* High contrast for cards */
+             /* Button text color for high contrast on image */
+             --button-text-color: var(--bg-secondary); /* Dark Teal */
+             /* Fallback if teal is too light on some parts: #2c3e50; */
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, var(--bg-primary) 0%, #EDE4E0 100%);
+            /* --- NEW BACKGROUND --- */
+            background-image: url('images/file_00000000d36c6230b22103f2834780db_conversation_id=680496f2-8e40-800b-b56b-affe29c47313&message_id=dea58e85-fef6-4ea7-8203-ebc6f7e3431a.png');
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-attachment: fixed; /* Keep background fixed during scroll */
             color: var(--text-primary);
             line-height: 1.6;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
             overflow-x: hidden;
+             /* Add a subtle overlay to potentially improve text readability over background */
+             /* background-color: rgba(255, 255, 255, 0.1); /* Optional: light overlay */
+             /* background-blend-mode: overlay; */ /* Optional */
         }
         .container {
              max-width: 1100px;
-             margin: 0 auto; /* Changed margin-top to 0 */
+             margin: 0 auto;
              padding: 0 2rem;
              flex-grow: 1;
              width: 100%;
              position: relative;
+             /* Added padding top/bottom to space content from header/footer */
+             padding-top: 2rem;
+             padding-bottom: 3rem;
         }
 
         /* --- Header (SECOND PRIORITY) --- */
         header {
+            /* Keep header styles, its background will overlay the body image */
             display: flex;
-            justify-content: space-between; /* Space between logo and user status */
+            justify-content: space-between;
             align-items: center;
-            padding: 1.2rem 2rem; /* Adjusted padding */
-            background: var(--bg-secondary);
-            color: #FFFFFF; /* Text color for header */
+            padding: 1.2rem 2rem;
+            background: var(--bg-secondary); /* Solid background stays */
+            color: #FFFFFF;
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
         header .logo img {
-            /* Adjusted size - keeps aspect ratio from 1024x768 */
-            max-height: 45px; /* Control height */
-            width: auto;      /* Maintain aspect ratio */
-            display: block;   /* Remove extra space below image */
+            max-height: 45px;
+            width: auto;
+            display: block;
         }
         header .user-status {
             display: flex;
@@ -78,7 +83,7 @@
             gap: 1rem;
         }
         #user-info {
-            font-size: 0.95rem; /* Slightly smaller */
+            font-size: 0.95rem;
             color: #F8F1E9;
             display: flex;
             align-items: center;
@@ -91,11 +96,11 @@
             background: var(--accent-primary);
             color: #FFFFFF;
             border: none;
-            padding: 10px 22px; /* Slightly smaller */
+            padding: 10px 22px;
             border-radius: 25px;
             cursor: pointer;
             font-weight: 600;
-            font-size: 0.9rem; /* Slightly smaller */
+            font-size: 0.9rem;
             transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
             display: flex;
             align-items: center;
@@ -105,7 +110,7 @@
         .auth-button .icon { font-size: 1.1em; line-height: 1; }
         .auth-button:hover {
             background: var(--accent-secondary);
-            color: var(--bg-secondary); /* Contrast on hover */
+            color: var(--bg-secondary);
             transform: translateY(-2px);
             box-shadow: 0 5px 12px rgba(0,0,0, 0.2);
         }
@@ -124,94 +129,101 @@
         /* --- Informational Text (THIRD PRIORITY) --- */
         .intro-text {
             text-align: center;
-            padding: 3rem 1rem 1rem 1rem; /* More padding top */
-            margin: 0 auto 2rem auto; /* Center horizontally */
-            max-width: 700px; /* Control width */
+            padding: 1rem 1rem 1rem 1rem; /* Reduced top padding as container has it now */
+            margin: 0 auto 2.5rem auto; /* Increased bottom margin */
+            max-width: 700px;
+            background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white background */
+            backdrop-filter: blur(5px); /* Blur effect for readability */
+            -webkit-backdrop-filter: blur(5px); /* Safari */
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
         }
         .intro-text h1 {
-            font-size: 1.6rem; /* Less prominent than cards */
+            font-size: 1.5rem; /* Slightly adjusted size */
             font-weight: 600;
-            color: var(--bg-secondary); /* Use header color for connection */
+            color: var(--bg-secondary); /* Dark Teal */
             margin-bottom: 0.5rem;
             line-height: 1.3;
         }
-         /* Removed extra paragraph styling, rely on h1 */
 
         /* --- Main Content (Exam Options - FIRST PRIORITY) --- */
-        main { display: block; padding-bottom: 3rem; } /* Remove top padding */
+        main { display: block; padding-bottom: 0; } /* Removed padding as container handles it */
         .options-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Slightly larger minmax */
-            gap: 2.5rem; /* Increased gap */
-            animation: fadeInUp 1s ease-in-out 0.2s; /* Delay animation slightly */
-            animation-fill-mode: backwards; /* Start invisible before animation */
+            /* Adjust minmax for potentially smaller hexagons */
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2.5rem; /* Keep gap, adjust if needed */
+            animation: fadeInUp 1s ease-in-out 0.2s;
+            animation-fill-mode: backwards;
         }
 
-        /* --- Creative Option Buttons --- */
+        /* --- Creative Option Buttons (HEXAGONAL) --- */
         .option-button {
-            color: var(--card-text-color); /* High contrast text */
+            /* --- NEW BACKGROUND IMAGE --- */
+            background-image: url('images/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTExL3Jhd3BpeGVsX29mZmljZV8zMF9hYnN0cmFjdF9ncmFkaWVudF93aGl0ZV9iYWNrZ3JvdW5kX3ZlY3Rvcl9wcl9kZGY3ZTJiNC0wMjU3LTRjMTUtOWFjNS0xMmQwZTA0N2E4MWYuanBn.jpg');
+            background-size: cover;
+            background-position: center center;
+            color: var(--button-text-color); /* Use variable for high contrast text */
             text-decoration: none;
-            padding: 2.5rem 2rem; /* Generous padding */
-            border-radius: 20px; /* More pronounced rounding */
+            padding: 2rem 1.5rem; /* Adjusted padding */
             text-align: center;
             transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-between; /* Push description down */
-            border: none; /* Remove border, rely on background/shadow */
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Stronger shadow */
-            font-weight: 700; /* Bolder Title */
-            font-size: 1.5rem; /* Larger Title */
+            justify-content: center; /* Center content vertically */
+            border: none;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Adjusted shadow */
+            font-weight: 700;
+            font-size: 1.2rem; /* Smaller Title */
             cursor: pointer;
             position: relative;
-            overflow: hidden; /* Needed for pseudo-elements */
-            min-height: 260px; /* Ensure cards have similar height */
+            overflow: hidden; /* Important for clip-path */
+
+            /* --- HEXAGON SHAPE --- */
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+            /* --- SIZE ADJUSTMENT (using aspect-ratio) --- */
+            /* Let grid control width, maintain ~hexagon aspect ratio */
+             aspect-ratio: 1 / 1.15; /* Approximate ratio for a regular hexagon */
+             min-height: 180px; /* Minimum height */
+             /* Removed fixed height/width to allow grid flexibility */
         }
-         .option-button::before { /* Subtle Shine Effect on Hover */
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -150%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.25), transparent);
-            transition: left 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
-            pointer-events: none; /* Prevent interaction with shine */
-        }
-        .option-button:hover::before {
-            left: 150%;
-        }
+
+        /* Removed shine effect as it might conflict with image/clip-path */
+        /* .option-button::before { ... } */
+
         .option-button:hover {
-            transform: translateY(-10px) scale(1.02); /* Lift and slightly grow */
-            box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25); /* Enhance shadow on hover */
+            transform: translateY(-8px) scale(1.03); /* Adjusted hover effect */
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
         }
+
         .option-button .icon {
-            font-size: 4.5rem; /* Much larger icon */
-            margin-bottom: 1.5rem; /* More space below icon */
+            font-size: 3rem; /* Smaller icon */
+            margin-bottom: 1rem; /* Adjusted space */
             line-height: 1;
-            filter: drop-shadow(0 3px 5px rgba(0,0,0,0.3)); /* Shadow for icon */
-             color: #FFFFFF; /* Ensure icon color is white */
+            color: var(--button-text-color); /* Use contrast color */
+            /* Removed drop shadow */
         }
+
         .option-button .description {
-            font-size: 1rem; /* Larger description */
-            color: var(--card-text-color);
-            opacity: 0.9; /* Slightly less prominent than title */
-            margin-top: auto; /* Push to bottom if needed */
-            padding-top: 1rem; /* Space above description */
+            font-size: 0.85rem; /* Smaller description */
+            color: var(--button-text-color); /* Use contrast color */
+            opacity: 0.9;
+            margin-top: auto;
+            padding-top: 0.5rem;
         }
 
-        /* Specific Card Styles */
-        .option-see { background: linear-gradient(135deg, var(--card-see-start) 0%, var(--card-see-end) 100%); }
-        .option-basic { background: linear-gradient(135deg, var(--card-basic-start) 0%, var(--card-basic-end) 100%); }
-        .option-ktm { background: linear-gradient(135deg, var(--card-ktm-start) 0%, var(--card-ktm-end) 100%); }
-        /* Remove specific icon colors, they will inherit from parent or use white defined above */
-
+        /* Removed specific gradient classes as background is now shared */
+        /* .option-see { ... } */
+        /* .option-basic { ... } */
+        /* .option-ktm { ... } */
 
         /* --- Login Modal (Keep original styles, less prominent) --- */
         .modal-overlay {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background-color: rgba(0, 0, 0, 0.85); /* Darker overlay */
+            background-color: rgba(0, 0, 0, 0.85);
             z-index: 1060; display: none; justify-content: center; align-items: center;
             opacity: 0; transition: opacity 0.3s ease-in-out;
         }
@@ -221,7 +233,7 @@
             max-width: 450px; width: 90%; box-shadow: 0 10px 30px var(--shadow-color);
             position: relative; transform: scale(0.95);
             transition: transform 0.3s ease-in-out;
-             border: 2px solid var(--accent-primary); /* Keep border */
+             border: 2px solid var(--accent-primary);
         }
         .modal-overlay.visible #login-modal-content { transform: scale(1); }
         #login-modal-content h2 { text-align: center; margin-bottom: 1.5rem; color: var(--bg-secondary); }
@@ -247,9 +259,13 @@
 
         /* --- Footer (LEAST PRIORITY) --- */
         footer {
-            text-align: center; padding: 1.5rem 1rem; margin-top: 3rem; /* Ensure space above footer */
-            background: var(--bg-secondary); color: rgba(255, 255, 255, 0.8); /* Slightly muted white */
-            font-size: 0.85rem; /* Smaller text */
+            /* Keep footer styles, its background will overlay the body image */
+            text-align: center; padding: 1.5rem 1rem; margin-top: auto; /* Push to bottom */
+            background: var(--bg-secondary); /* Solid background stays */
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.85rem;
+             position: relative; /* Ensure it stays on top of body background */
+             z-index: 10; /* Stacking context */
         }
         footer a { color: var(--accent-secondary); text-decoration: none; font-weight: 600; transition: color 0.2s ease; }
         footer a:hover { text-decoration: underline; color: var(--accent-primary); }
@@ -257,14 +273,14 @@
 
         /* --- Hamburger Menu (Keep original styles) --- */
         #hamburger-btn {
-            position: fixed; top: 25px; right: 30px; width: 35px; height: 28px; /* Slightly adjusted size */
-            background: transparent; border: none; cursor: pointer; display: none; /* Hidden by default */
+            position: fixed; top: 25px; right: 30px; width: 35px; height: 28px;
+            background: transparent; border: none; cursor: pointer; display: none;
             flex-direction: column; justify-content: space-around; padding: 0; z-index: 1050; outline: none;
         }
         #hamburger-btn .bar { display: block; width: 100%; height: 4px; background-color: #FFFFFF; border-radius: 2px; transition: all 0.3s ease-in-out; }
-        #hamburger-btn.open .bar1 { transform: translateY(12px) rotate(45deg); } /* Adjusted transform */
+        #hamburger-btn.open .bar1 { transform: translateY(12px) rotate(45deg); }
         #hamburger-btn.open .bar2 { opacity: 0; }
-        #hamburger-btn.open .bar3 { transform: translateY(-12px) rotate(-45deg); } /* Adjusted transform */
+        #hamburger-btn.open .bar3 { transform: translateY(-12px) rotate(-45deg); }
         #side-menu {
             position: fixed; top: 0; right: -280px; width: 250px; height: 100%;
             background: var(--bg-secondary); box-shadow: -5px 0 15px var(--shadow-color);
@@ -289,42 +305,65 @@
 
         /* --- Responsiveness --- */
         @media (max-width: 992px) {
-            .options-container { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; }
-             .option-button { padding: 2rem 1.5rem; font-size: 1.3rem; min-height: 240px;}
-             .option-button .icon { font-size: 4rem; }
-             .option-button .description { font-size: 0.9rem; }
+            .options-container {
+                 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Further adjust minmax */
+                 gap: 2rem;
+            }
+             .option-button {
+                 padding: 1.5rem 1rem; /* Adjust padding */
+                 font-size: 1.1rem; /* Adjust font size */
+                 min-height: 160px; /* Adjust min height */
+             }
+             .option-button .icon { font-size: 2.5rem; } /* Adjust icon size */
+             .option-button .description { font-size: 0.8rem; } /* Adjust description size */
         }
 
         @media (max-width: 768px) {
             header { flex-direction: column; align-items: center; padding: 1rem; text-align: center; }
             header .logo { margin-bottom: 0.8rem; }
             header .user-status { margin-top: 0.5rem; }
-            #hamburger-btn { display: flex; top: 18px; right: 20px; } /* Show hamburger */
-            .intro-text h1 { font-size: 1.4rem; }
-            .options-container { grid-template-columns: 1fr; gap: 1.8rem; }
-            .option-button { min-height: auto; padding: 2rem 1.5rem; } /* Auto height on mobile stack */
+            #hamburger-btn { display: flex; top: 18px; right: 20px; }
+             .intro-text { padding: 1rem; backdrop-filter: blur(3px); -webkit-backdrop-filter: blur(3px); } /* Adjust blur */
+            .intro-text h1 { font-size: 1.3rem; }
+            .options-container {
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Allow 2 columns if space */
+                gap: 1.8rem;
+            }
+            .option-button {
+                min-height: 150px; /* Adjust min height */
+                 padding: 1.2rem 1rem;
+            }
         }
 
         @media (max-width: 480px) {
-             .container { padding: 0 1rem; }
+             .container { padding: 1rem 1rem 2rem 1rem; } /* Adjust container padding */
             #hamburger-btn { top: 15px; right: 15px; width: 30px; height: 24px; }
              #hamburger-btn .bar { height: 3px; }
             #hamburger-btn.open .bar1 { transform: translateY(10px) rotate(45deg); }
              #hamburger-btn.open .bar3 { transform: translateY(-11px) rotate(-45deg); }
             #side-menu { width: 220px; right: -250px; padding-top: 70px; }
-            .intro-text { padding: 2rem 0.5rem 1rem 0.5rem; }
-             .intro-text h1 { font-size: 1.3rem; }
+            .intro-text { padding: 1rem 0.8rem; margin-bottom: 2rem; }
+             .intro-text h1 { font-size: 1.2rem; }
             .auth-button { font-size: 0.8rem; padding: 8px 16px; }
             #user-info { font-size: 0.85rem; gap: 0.4rem; }
             #user-info .user-icon { font-size: 1.1em; }
-             .option-button { font-size: 1.2rem; padding: 1.8rem 1.2rem; }
-             .option-button .icon { font-size: 3.5rem; margin-bottom: 1rem; }
-             .option-button .description { font-size: 0.85rem; }
-             footer { font-size: 0.8rem; }
+             .options-container {
+                 grid-template-columns: 1fr; /* Stack buttons */
+                 gap: 1.5rem;
+             }
+             .option-button {
+                font-size: 1.1rem; /* Adjust font size */
+                padding: 1.5rem 1rem; /* Adjust padding */
+                min-height: auto; /* Let content define height */
+                aspect-ratio: initial; /* Remove aspect ratio constraint when stacked */
+             }
+             .option-button .icon { font-size: 2.2rem; margin-bottom: 0.8rem; } /* Adjust icon */
+             .option-button .description { font-size: 0.8rem; } /* Adjust description */
+             footer { font-size: 0.8rem; padding: 1rem; }
              #login-modal-content { padding: 2rem 1.5rem; }
         }
 
-    </style>
+            </style>
 </head>
 <body>
 
