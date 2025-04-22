@@ -18,7 +18,7 @@ export async function onRequestPost(context) {
     const SESSION_KV = env.SESSION_KV_BINDING;
 
     // Constants
-    const SESSION_TTL_SECONDS = 3600; // 1 hour session validity
+    const SESSION_TTL_SECONDS = 15811200; // 1 hour session validity
 
     try {
         // 1. Parse incoming JSON data
