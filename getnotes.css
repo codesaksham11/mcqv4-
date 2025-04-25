@@ -544,7 +544,7 @@ details[open] > summary.faq-question::after {
 /* ****** END: NEW CSS for Easter Egg Modal ****** */
 
 
-/* Responsive Adjustments */
+//* Responsive Adjustments */
 @media (max-width: 768px) {
     .container { padding: 25px 20px; }
     header h1 { font-size: 2em; }
@@ -554,8 +554,16 @@ details[open] > summary.faq-question::after {
     .pricing-card.popular { transform: scale(1); } /* Remove scale on mobile */
     .pricing-card.popular:hover { transform: translateY(-5px); } /* Keep hover effect */
     .pricing-card { min-height: auto; } /* Remove min-height */
-     .modal-content { width: 95%; padding: 25px 20px; }
+    .modal-content { width: 95%; padding: 25px 20px; }
     .faq-question { font-size: 1em; padding-right: 20px; } /* Adjust FAQ font size */
+
+    /* ****** FIX: Remove padding from modal container on mobile ****** */
+    .modal {
+        padding: 0; /* Remove padding on the overlay for mobile */
+                     /* Rely solely on flexbox centering */
+    }
+    /* ****** END FIX ****** */
+}/* Adjust FAQ font size */
 }
 
 @media (max-width: 480px) {
