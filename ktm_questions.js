@@ -1017,5 +1017,5 @@ export const questionBank = {
 { id: "KG644", questionText: "Which of the following is NOT one of the three major river systems (basins) draining Nepal?", options: [{ id: "a", text: "Koshi River System" }, { id: "b", text: "Gandaki River System" }, { id: "c", text: "Karnali River System" }, { id: "d", text: "Indus River System" }], correctOptionId: "d" },
 { id: "KG645", questionText: "What topographical feature is known as 'Charkhal Adda' in Kathmandu, historically significant as a central administrative and proclamation point, reflecting urban geography?", options: [{ id: "a", text: "A major river confluence" }, { id: "b", text: "The highest point in the city" }, { id: "c", text: "An open courtyard area near the old royal palace (Hanuman Dhoka) used for public gatherings/announcements" }, { id: "d", text: "A sacred grove of trees" }], correctOptionId: "c" }
 
-],
+]
 };
