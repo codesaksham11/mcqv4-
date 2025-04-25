@@ -43,7 +43,7 @@ header p {
 }
 
 /* Sections */
-.steps-section, .pricing-section, .terms-notice {
+.steps-section, .pricing-section, .payment-partners-section, .faq-section, .terms-notice {
     margin-bottom: 40px;
 }
 
@@ -95,7 +95,7 @@ h2 {
     color: #343a40;
 }
 
-/* Contact Methods within Step 2 */
+/* Contact Methods within Step 1 (Updated) */
 .contact-methods {
     margin-top: 15px;
     display: flex;
@@ -109,17 +109,17 @@ h2 {
     align-items: center;
     gap: 10px;
     text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 5px;
+    padding: 10px 14px;
+    border-radius: 7px;
     transition: background-color 0.2s ease, color 0.2s ease;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     font-weight: 600;
     width: fit-content; /* Prevent links taking full width */
 }
 
 .contact-link i { /* Font Awesome Icon styling */
-    font-size: 1.2em;
-    width: 20px; /* Ensure alignment */
+    font-size: 1.5em;
+    width: 22px; /* Ensure alignment */
     text-align: center;
 }
 
@@ -129,15 +129,14 @@ h2 {
 .contact-link.whatsapp { color: #25D366; border-color: #d1f8dd; }
 .contact-link.whatsapp:hover { background-color: #d1f8dd; color: #116430; }
 
-.contact-link.facebook { color: #1877F2; border-color: #d6eaff; }
-.contact-link.facebook:hover { background-color: #d6eaff; color: #0a4a9e; }
-
 /* Pricing Section */
 .pricing-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
     margin-top: 30px;
+    /* Align items at the start to handle different heights better */
+    align-items: start;
 }
 
 .pricing-card {
@@ -152,6 +151,7 @@ h2 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative; /* For popular badge */
     overflow: hidden; /* For popular badge ribbon */
+     min-height: 350px; /* Optional: give cards a min-height */
 }
 
 .pricing-card:hover {
@@ -170,8 +170,6 @@ h2 {
     font-size: 0.8em;
     font-weight: bold;
     border-bottom-left-radius: 10px; /* Style it */
-     transform: rotate(0deg); /* Could rotate it for ribbon effect */
-     /* Or use a ribbon style: https://css-tricks.com/snippets/css/corner-ribbon/ */
 }
 
 .pricing-card.popular {
@@ -223,6 +221,34 @@ h2 {
     margin-top: auto; /* Push button to bottom */
 }
 
+/* Payment Partners Section CSS */
+.payment-partners-section {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e9ecef;
+    text-align: center;
+}
+
+.payment-partners-section h2 {
+    margin-bottom: 25px;
+    font-size: 1.6em;
+}
+
+.partners-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.partner-logo {
+    max-height: 45px;
+    width: auto;
+    vertical-align: middle;
+}
+
 /* Terms Notice */
 .terms-notice {
     text-align: center;
@@ -245,17 +271,19 @@ h2 {
     color: #0056b3;
 }
 
-/* Action Buttons (Back Button) */
+/* Action Buttons (Back Button & Thank You Button) */
 .action-buttons {
     display: flex;
-    justify-content: center; /* Center the back button */
+    justify-content: center; /* Center the buttons */
+    align-items: center;
+    flex-wrap: wrap; /* Allow buttons to wrap on small screens */
+    gap: 15px; /* Add gap between buttons */
     margin-top: 40px;
     padding-top: 20px;
     border-top: 1px solid #e9ecef;
 }
 
-
-/* General Button Styles (reuse from index/setup) */
+/* General Button Styles */
 .button {
     padding: 12px 25px;
     border: none;
@@ -269,6 +297,7 @@ h2 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    text-align: center; /* Ensure text is centered */
 }
 
 .primary-button {
@@ -290,7 +319,7 @@ h2 {
     transform: translateY(-2px);
 }
 
-/* Modal Styling (reuse from index.html modal) */
+/* Modal Styling (Common for both) */
 .modal {
     display: none; /* Hidden by default */
     position: fixed;
@@ -304,6 +333,7 @@ h2 {
     backdrop-filter: blur(5px);
     align-items: center;
     justify-content: center;
+    padding: 20px; /* Add padding for small screens */
 }
 
 .modal-content {
@@ -313,12 +343,12 @@ h2 {
     padding: 30px;
     border: 1px solid #888;
     width: 90%;
-    max-width: 600px; /* Wider for terms */
+    max-width: 600px; /* Default max-width */
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     position: relative;
     animation: fadeInModal 0.3s ease-out;
-    text-align: left; /* Terms are better left-aligned */
+    text-align: left;
 }
 
 @keyframes fadeInModal {
@@ -349,8 +379,9 @@ h2 {
     text-align: center;
 }
 
+/* Terms Modal Specific */
 .modal-content ol {
-    padding-left: 25px; /* Indent ordered list */
+    padding-left: 25px;
     margin: 0;
 }
 .modal-content li {
@@ -362,6 +393,156 @@ h2 {
     margin-bottom: 0;
 }
 
+/* ****** START: NEW CSS for FAQ Section ****** */
+
+.faq-section {
+    margin-top: 50px; /* More space before FAQ */
+    padding-top: 30px;
+    border-top: 1px solid #e9ecef; /* Separator line */
+}
+
+.faq-section h2 {
+    margin-bottom: 30px;
+}
+
+.faq-container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 15px;
+}
+.faq-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.faq-question { /* Styles the <summary> tag */
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #495057;
+    padding: 15px 25px 15px 0; /* Add padding for indicator */
+    cursor: pointer;
+    position: relative; /* For indicator */
+    list-style: none; /* Remove default marker */
+    transition: color 0.2s ease;
+}
+
+.faq-question:hover {
+    color: #667eea; /* Theme color on hover */
+}
+
+/* Simple indicator for open/closed state */
+.faq-question::after {
+    content: '+';
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4em;
+    font-weight: 400; /* Make indicator less bold */
+    color: #adb5bd;
+    transition: transform 0.3s ease;
+}
+
+details[open] > summary.faq-question::after {
+    content: '−'; /* Minus sign when open */
+    transform: translateY(-50%);
+}
+
+/* Hide the default <details> marker */
+.faq-question::-webkit-details-marker { display: none; }
+.faq-question::marker { display: none; }
+
+
+.faq-answer { /* Styles the content inside <details> */
+    padding: 15px 5px 20px 5px; /* Add some padding */
+    color: #555;
+    line-height: 1.7;
+    background-color: #f8f9fc; /* Very light background, slightly different */
+    border-radius: 0 0 5px 5px;
+    /* Animation for smooth opening - might need JS for height */
+    /* transition: max-height 0.5s ease-out;
+    overflow: hidden;
+    max-height: 0; */
+}
+/* details[open] .faq-answer {
+    max-height: 1000px; /* Set a large max-height when open */
+/* } */
+
+.faq-answer ol, .faq-answer ul {
+    padding-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.faq-answer li {
+    margin-bottom: 10px;
+}
+.faq-answer strong {
+    color: #343a40;
+}
+
+.faq-answer a {
+    color: #007bff;
+    text-decoration: underline;
+}
+.faq-answer a:hover {
+    color: #0056b3;
+}
+
+/* Placeholder for images in FAQ - basic styling */
+.faq-image-placeholder {
+    display: block; /* Ensure it takes its own line */
+    max-width: 80%; /* Limit width */
+    height: auto;
+    margin: 10px auto 10px 20px; /* Indent slightly */
+    border: 1px dashed #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-style: italic;
+    color: #888;
+    min-height: 50px; /* Give it some size even without src */
+    border-radius: 4px;
+}
+/* You might want to remove border/bg when actual images are added */
+
+
+/* ****** END: NEW CSS for FAQ Section ****** */
+
+
+/* ****** START: NEW CSS for Easter Egg Modal ****** */
+
+.qr-modal-content {
+    text-align: center; /* Center content in QR modal */
+    max-width: 450px; /* Smaller modal */
+}
+
+#qr-code-image {
+    display: block;
+    max-width: 200px; /* Adjust QR code size */
+    height: auto;
+    margin: 20px auto; /* Center image */
+    border: 1px solid #eee; /* Optional border */
+}
+
+.qr-modal-content p {
+    margin-bottom: 15px;
+    color: #444;
+    line-height: 1.6;
+}
+.qr-modal-content p em {
+    color: #666;
+    font-size: 0.95em;
+}
+.qr-modal-content strong {
+    color: #d9534f; /* Highlight price */
+}
+
+/* ****** END: NEW CSS for Easter Egg Modal ****** */
+
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
@@ -371,37 +552,20 @@ h2 {
     .steps-list li::before { width: 30px; height: 30px; font-size: 1em; }
     .pricing-cards { grid-template-columns: 1fr; /* Stack cards */ }
     .pricing-card.popular { transform: scale(1); } /* Remove scale on mobile */
-    .pricing-card.popular:hover { transform: translateY(-5px); }
+    .pricing-card.popular:hover { transform: translateY(-5px); } /* Keep hover effect */
+    .pricing-card { min-height: auto; } /* Remove min-height */
      .modal-content { width: 95%; padding: 25px 20px; }
-}
-/* ****** START: NEW CSS for Payment Partners ****** */
-
-.payment-partners-section {
-    margin-top: 40px; /* Space above this section */
-    margin-bottom: 30px; /* Space below before terms */
-    padding-top: 20px; /* Optional padding */
-    border-top: 1px solid #e9ecef; /* Subtle separator line */
-    text-align: center; /* Center the heading and logos container */
+    .faq-question { font-size: 1em; padding-right: 20px; } /* Adjust FAQ font size */
 }
 
-.payment-partners-section h2 {
-    margin-bottom: 25px; /* Space below heading */
-    font-size: 1.6em; /* Slightly smaller heading */
+@media (max-width: 480px) {
+    header h1 { font-size: 1.8em; }
+    header p { font-size: 1em; }
+    h2 { font-size: 1.5em; }
+    .card-price { font-size: 2em; }
+    .button { font-size: 0.9em; padding: 10px 20px; }
+    .action-buttons { flex-direction: column; gap: 10px; } /* Stack action buttons */
+    .modal-content { padding: 20px 15px; }
+    .close-btn { font-size: 24px; top: 8px; right: 15px; }
+    .faq-question { font-size: 0.95em; }
 }
-
-.partners-logos {
-    display: flex;
-    justify-content: center; /* Center logos horizontally */
-    align-items: center; /* Align logos vertically */
-    flex-wrap: wrap; /* Allow wrapping if many logos */
-    gap: 30px; /* Space between logos */
-}
-
-.partner-logo {
-    max-height: 45px; /* Control the logo height */
-    width: auto; /* Maintain aspect ratio */
-    vertical-align: middle; /* Ensure proper alignment */
-}
-
-/* ****** END: NEW CSS for Payment Partners ****** */
-
