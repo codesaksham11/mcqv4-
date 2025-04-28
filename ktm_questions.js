@@ -446,18 +446,830 @@ export const questionBank = {
     ],
     "GK": [
         // 12 GK Questions (Sample)
-{ id: "KM001", questionText: "What is the value of sin²θ + cos²θ?", options: [{ id: "a", text: "0" }, { id: "b", text: "1" }, { id: "c", text: "2" }, { id: "d", text: "tan²θ" }], correctOptionId: "b" },
-        { id: "KM002", questionText: "If log₃(x) = 2, what is x?", options: [{ id: "a", text: "6" }, { id: "b", text: "8" }, { id: "c", text: "9" }, { id: "d", text: "27" }], correctOptionId: "c" },
-        { id: "KM003", questionText: "What is the slope of the line y = -3x + 5?", options: [{ id: "a", text: "5" }, { id: "b", text: "3" }, { id: "c", text: "-3" }, { id: "d", text: "-3/5" }], correctOptionId: "c" },
-        { id: "KM004", questionText: "What is the area of an equilateral triangle with side length 'a'?", options: [{ id: "a", text: "(√3/4)a²" }, { id: "b", text: "(1/2)a²" }, { id: "c", text: "a²" }, { id: "d", text: "(√3/2)a²" }], correctOptionId: "a" },
-        // Add 8 more Math questions...
-        { id: "KM005", questionText: "Placeholder Math Q5?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "a" },
-        { id: "KM006", questionText: "Placeholder Math Q6?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "b" },
-        { id: "KM007", questionText: "Placeholder Math Q7?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "c" },
-        { id: "KM008", questionText: "Placeholder Math Q8?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "d" },
-        { id: "KM009", questionText: "Placeholder Math Q9?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "a" },
-        { id: "KM010", questionText: "Placeholder Math Q10?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "b" },
-        { id: "KM011", questionText: "Placeholder Math Q11?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "c" },
-        { id: "KM012", questionText: "Placeholder Math Q12?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "d" }
-    ]
+    {
+        "id": "GK001",
+        "questionText": "Following the political realignments in early 2024, which major party initially outside the government coalition led by Pushpa Kamal Dahal 'Prachanda' rejoined it, significantly altering the power balance?",
+        "options": [
+            { "id": "a", "text": "Rastriya Swatantra Party (RSP)" },
+            { "id": "b", "text": "CPN (Unified Socialist)" },
+            { "id": "c", "text": "Nepali Congress (NC)" },
+            { "id": "d", "text": "CPN (UML)" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK002",
+        "questionText": "The Jajarkot earthquake in November 2023 primarily impacted which two districts most severely in terms of casualties and damage?",
+        "options": [
+            { "id": "a", "text": "Jajarkot and Dolpa" },
+            { "id": "b", "text": "Jajarkot and Rukum West" },
+            { "id": "c", "text": "Rukum East and Rolpa" },
+            { "id": "d", "text": "Salyan and Dailekh" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK003",
+        "questionText": "What significant controversy surrounded the initial months of operation of the Pokhara Regional International Airport (PRIA)?",
+        "options": [
+            { "id": "a", "text": "Lack of sufficient ground handling equipment" },
+            { "id": "b", "text": "Dispute over naming rights with local communities" },
+            { "id": "c", "text": "Absence of scheduled international flights despite its designation" },
+            { "id": "d", "text": "Major cracks appearing on the runway surface" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK004",
+        "questionText": "The investigation into the \"Fake Bhutanese Refugees\" scam involved allegations against high-profile figures from which two major political parties?",
+        "options": [
+            { "id": "a", "text": "CPN (UML) and CPN (Maoist Centre)" },
+            { "id": "b", "text": "Nepali Congress and CPN (UML)" },
+            { "id": "c", "text": "Nepali Congress and Rastriya Prajatantra Party (RPP)" },
+            { "id": "d", "text": "CPN (Maoist Centre) and CPN (Unified Socialist)" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK005",
+        "questionText": "Nepal's National Planning Commission (NPC) in its 16th Periodic Plan's approach paper placed significant emphasis on achieving which specific economic status by 2030?",
+        "options": [
+            { "id": "a", "text": "Upper-Middle-Income Country" },
+            { "id": "b", "text": "High-Income Country" },
+            { "id": "c", "text": "Least Developed Country graduation with high growth" },
+            { "id": "d", "text": "A $100 billion economy" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK006",
+        "questionText": "Which specific sector received the highest allocation priority in Nepal's budget for the fiscal year 2023/24, reflecting ongoing national priorities?",
+        "options": [
+            { "id": "a", "text": "Defence and Internal Security" },
+            { "id": "b", "text": "Health Services" },
+            { "id": "c", "text": "Education, Science and Technology" },
+            { "id": "d", "text": "Physical Infrastructure and Transport" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK007",
+        "questionText": "A significant amendment to which Act, passed in mid-2023 after much debate, primarily aimed to address issues faced by children of Nepali mothers whose fathers are unidentified?",
+        "options": [
+            { "id": "a", "text": "The Land Reform Act" },
+            { "id": "b", "text": "The Citizenship Act" },
+            { "id": "c", "text": "The Civil Service Act" },
+            { "id": "d", "text": "The Local Governance Act" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK008",
+        "questionText": "Who was appointed as the Chief Justice of Nepal in August 2023, ending a period of acting Chief Justices?",
+        "options": [
+            { "id": "a", "text": "Hari Krishna Karki" },
+            { "id": "b", "text": "Cholendra Shumsher Rana" },
+            { "id": "c", "text": "Bishowambhar Prasad Shrestha" },
+            { "id": "d", "text": "Anup Raj Sharma" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK009",
+        "questionText": "The Millennium Challenge Corporation (MCC) Nepal Compact officially entered its 'Entry into Force' (EIF) phase in August 2023. What is the primary focus of the projects under this compact?",
+        "options": [
+            { "id": "a", "text": "Hydropower generation and cross-border transmission lines" },
+            { "id": "b", "text": "Nationwide broadband internet expansion" },
+            { "id": "c", "text": "Agricultural modernization and irrigation" },
+            { "id": "d", "text": "Urban development and smart cities" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK010",
+        "questionText": "Nepal's cricket team achieved a historic qualification in late 2023 for which major ICC tournament in 2024?",
+        "options": [
+            { "id": "a", "text": "ICC Champions Trophy" },
+            { "id": "b", "text": "ICC Cricket World Cup (ODI)" },
+            { "id": "c", "text": "ICC T20 World Cup" },
+            { "id": "d", "text": "ICC World Test Championship Final" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK011",
+        "questionText": "Which regulatory body in Nepal faced scrutiny and calls for reform following the collapse of several cooperatives, impacting thousands of depositors?",
+        "options": [
+            { "id": "a", "text": "Securities Board of Nepal (SEBON)" },
+            { "id": "b", "text": "Nepal Rastra Bank (NRB)" },
+            { "id": "c", "text": "Department of Cooperatives" },
+            { "id": "d", "text": "Insurance Board (Beema Samiti)" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK012",
+        "questionText": "The government initiated processes for the development of the Budhi Gandaki Hydropower Project in a domestic investment model. What is the projected capacity of this long-discussed project?",
+        "options": [
+            { "id": "a", "text": "456 MW" },
+            { "id": "b", "text": "750 MW" },
+            { "id": "c", "text": "900 MW" },
+            { "id": "d", "text": "1200 MW" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK013",
+        "questionText": "Which high-altitude airport in Nepal saw renewed discussions or proposals for upgrades to handle larger aircraft, potentially boosting tourism in the Everest region?",
+        "options": [
+            { "id": "a", "text": "Lukla (Tenzing-Hillary) Airport" },
+            { "id": "b", "text": "Simikot Airport" },
+            { "id": "c", "text": "Jomsom Airport" },
+            { "id": "d", "text": "Syangboche Airport" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK014",
+        "questionText": "In the context of Nepal-India relations, the inauguration of the Integrated Check Post (ICP) at which border point aimed to streamline trade and transit?",
+        "options": [
+            { "id": "a", "text": "Birgunj-Raxaul" },
+            { "id": "b", "text": "Bhairahawa-Sunauli" },
+            { "id": "c", "text": "Nepalgunj-Rupaidiha" },
+            { "id": "d", "text": "Kakarbhitta-Panitanki" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK015",
+        "questionText": "Which specific issue related to the 1950 Treaty of Peace and Friendship remained a recurring point of discussion between Nepal and India during high-level talks?",
+        "options": [
+            { "id": "a", "text": "Demarcation of the Susta border area" },
+            { "id": "b", "text": "Review and updating of the treaty's provisions" },
+            { "id": "c", "text": "Water resource sharing agreements" },
+            { "id": "d", "text": "Security cooperation protocols" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK016",
+        "questionText": "Nepal's participation in the Belt and Road Initiative (BRI) saw renewed focus on the feasibility study of which specific connectivity project?",
+        "options": [
+            { "id": "a", "text": "Pokhara-Lumbini Railway" },
+            { "id": "b", "text": "Kathmandu-Kerung Railway" },
+            { "id": "c", "text": "East-West Electrified Railway (Mechi-Mahakali)" },
+            { "id": "d", "text": "Kathmandu Terai Fast Track (Expressway)" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK017",
+        "questionText": "What was a significant environmental concern raised regarding the construction of the Nijgadh International Airport project?",
+        "options": [
+            { "id": "a", "text": "Air pollution impact on nearby cities" },
+            { "id": "b", "text": "Potential displacement of indigenous communities" },
+            { "id": "c", "text": "Large-scale deforestation required for the site" },
+            { "id": "d", "text": "Contamination of major river systems" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK018",
+        "questionText": "The 'Visit Nepal Decade' (2023-2033) initiative was announced. What is the ambitious tourist arrival target set for the end of this decade?",
+        "options": [
+            { "id": "a", "text": "2 million annually" },
+            { "id": "b", "text": "3.5 million annually" },
+            { "id": "c", "text": "5 million annually" },
+            { "id": "d", "text": "7 million annually" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK019",
+        "questionText": "A significant outbreak of which vector-borne disease caused widespread concern and strained health facilities in Nepal, particularly during the post-monsoon season of 2023?",
+        "options": [
+            { "id": "a", "text": "Malaria" },
+            { "id": "b", "text": "Japanese Encephalitis" },
+            { "id": "c", "text": "Dengue Fever" },
+            { "id": "d", "text": "Chikungunya" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK020",
+        "questionText": "Which Nepali product received Geographical Indication (GI) recognition internationally or saw significant progress towards it, aiming to boost its export potential?",
+        "options": [
+            { "id": "a", "text": "Nepali Pashmina" },
+            { "id": "b", "text": "Orthodox Tea from Ilam" },
+            { "id": "c", "text": "Timur (Sichuan Pepper) from Mustang" },
+            { "id": "d", "text": "Rudraksha beads" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK021",
+        "questionText": "The Lumbini Development Trust initiated or progressed on which major project aimed at enhancing the infrastructure and spiritual ambiance of the UNESCO World Heritage site?",
+        "options": [
+            { "id": "a", "text": "Construction of a new international airport within the core zone" },
+            { "id": "b", "text": "Development of the 'Lumbini Master Plan' completion projects" },
+            { "id": "c", "text": "Building a large Buddhist university complex" },
+            { "id": "d", "text": "Establishing exclusive meditation zones for different Buddhist traditions" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK022",
+        "questionText": "What measure did Nepal Rastra Bank (NRB) implement concerning vehicle imports in mid-2023 to manage foreign exchange reserves?",
+        "options": [
+            { "id": "a", "text": "Complete ban on all vehicle imports" },
+            { "id": "b", "text": "Increased customs duty significantly" },
+            { "id": "c", "text": "Relaxation of previous import restrictions" },
+            { "id": "d", "text": "Requirement of 100% cash margin for Letter of Credit (LC)" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK023",
+        "questionText": "Which province in Nepal experienced notable political instability with frequent changes in its Chief Minister or coalition government during late 2023 / early 2024?",
+        "options": [
+            { "id": "a", "text": "Bagmati Province" },
+            { "id": "b", "text": "Gandaki Province" },
+            { "id": "c", "text": "Koshi Province" },
+            { "id": "d", "text": "Lumbini Province" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK024",
+        "questionText": "A significant policy discussion emerged regarding the potential legalization or regulated cultivation of which plant for medicinal and industrial purposes?",
+        "options": [
+            { "id": "a", "text": "Opium Poppy" },
+            { "id": "b", "text": "Coca Plant" },
+            { "id": "c", "text": "Cannabis (Marijuana)" },
+            { "id": "d", "text": "Psilocybin Mushrooms" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK025",
+        "questionText": "Nepal hosted the ministerial meeting of which regional grouping in Kathmandu, focusing on energy cooperation?",
+        "options": [
+            { "id": "a", "text": "SAARC (South Asian Association for Regional Cooperation)" },
+            { "id": "b", "text": "BIMSTEC (Bay of Bengal Initiative for Multi-Sectoral Technical and Economic Cooperation)" },
+            { "id": "c", "text": "ASEAN Regional Forum (ARF)" },
+            { "id": "d", "text": "Shanghai Cooperation Organisation (SCO) - as an observer" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK026",
+        "questionText": "Who was appointed as the Vice President of Nepal following the elections in March 2023?",
+        "options": [
+            { "id": "a", "text": "Nanda Bahadur Pun" },
+            { "id": "b", "text": "Astha Laxmi Shakya" },
+            { "id": "c", "text": "Ramsahay Prasad Yadav" },
+            { "id": "d", "text": "Parmanand Jha" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK027",
+        "questionText": "The government faced pressure from meter-interest (meter byaj) victims. What was the primary demand of these protestors?",
+        "options": [
+            { "id": "a", "text": "Complete loan waivers from banks" },
+            { "id": "b", "text": "Action against loan sharks charging exorbitant interest rates" },
+            { "id": "c", "text": "Government subsidies for agricultural inputs" },
+            { "id": "d", "text": "Increased foreign employment opportunities" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK028",
+        "questionText": "Which endangered animal species saw a positive trend in its population count in Nepal's national parks, according to the latest census results released in 2023?",
+        "options": [
+            { "id": "a", "text": "Snow Leopard" },
+            { "id": "b", "text": "One-horned Rhinoceros" },
+            { "id": "c", "text": "Bengal Tiger" },
+            { "id": "d", "text": "Red Panda" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK029",
+        "questionText": "A new integrated customs point was operationalized between Nepal and China at which border crossing, aiming to facilitate trade post-COVID disruptions?",
+        "options": [
+            { "id": "a", "text": "Tatopani-Zhangmu" },
+            { "id": "b", "text": "Rasuwagadhi-Kerung" },
+            { "id": "c", "text": "Kimathanka-Dingri" },
+            { "id": "d", "text": "Yari-Purang" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK030",
+        "questionText": "The concept of 'Digital Nepal Framework' saw progress with initiatives focused on which specific area?",
+        "options": [
+            { "id": "a", "text": "Establishing a national space agency" },
+            { "id": "b", "text": "Implementing a universal basic income through digital transfers" },
+            { "id": "c", "text": "Expanding digital payment systems and financial inclusion" },
+            { "id": "d", "text": "Developing sovereign artificial intelligence capabilities" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK031",
+        "questionText": "What type of election was successfully conducted across Nepal in May 2022, the results and implications of which continued to shape local governance into 2023-24?",
+        "options": [
+            { "id": "a", "text": "Federal Parliament Elections" },
+            { "id": "b", "text": "Provincial Assembly Elections" },
+            { "id": "c", "text": "National Assembly Elections" },
+            { "id": "d", "text": "Local Level Elections" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK032",
+        "questionText": "Which renowned Nepali mountaineer set a new record for the fastest ascent of all 14 peaks above 8,000 meters in 2023?",
+        "options": [
+            { "id": "a", "text": "Nirmal Purja 'Nimsdai'" },
+            { "id": "b", "text": "Kami Rita Sherpa" },
+            { "id": "c", "text": "Kristin Harila (with Tenjin 'Lama' Sherpa)" },
+            { "id": "d", "text": "Pasang Dawa Sherpa" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK033",
+        "questionText": "Discussions around transitional justice mechanisms related to the Maoist insurgency period focused primarily on amending the act related to which two commissions?",
+        "options": [
+            { "id": "a", "text": "National Human Rights Commission & Election Commission" },
+            { "id": "b", "text": "CIAA & Public Service Commission" },
+            { "id": "c", "text": "Truth and Reconciliation Commission & Commission of Investigation on Enforced Disappeared Persons" },
+            { "id": "d", "text": "Women Commission & Dalit Commission" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK034",
+        "questionText": "Nepal Electricity Authority (NEA) achieved a significant milestone by becoming profitable and reducing system loss. What major reform contributed significantly to this turnaround?",
+        "options": [
+            { "id": "a", "text": "Privatization of distribution networks" },
+            { "id": "b", "text": "Increased electricity imports from China" },
+            { "id": "c", "text": "Crackdown on electricity theft and leakage control" },
+            { "id": "d", "text": "Significant reduction in hydropower generation costs" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK035",
+        "questionText": "The Securities Board of Nepal (SEBON) introduced or planned to introduce which new instrument to diversify the capital market?",
+        "options": [
+            { "id": "a", "text": "Cryptocurrency trading platform" },
+            { "id": "b", "text": "Commodity derivatives market" },
+            { "id": "c", "text": "Green Bonds" },
+            { "id": "d", "text": "Private equity and venture capital funds framework" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK036",
+        "questionText": "Which international organization partnered with Nepal to launch a significant project focused on climate adaptation and resilience in vulnerable mountain communities?",
+        "options": [
+            { "id": "a", "text": "World Bank" },
+            { "id": "b", "text": "Asian Development Bank (ADB)" },
+            { "id": "c", "text": "Green Climate Fund (GCF)" },
+            { "id": "d", "text": "International Monetary Fund (IMF)" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK037",
+        "questionText": "A debate regarding the curriculum framework at the school level (Grades 11-12) involved contention over the mandatory status of which subject?",
+        "options": [
+            { "id": "a", "text": "Mathematics" },
+            { "id": "b", "text": "Social Studies and Life Skills Education" },
+            { "id": "c", "text": "English Language" },
+            { "id": "d", "text": "Computer Science" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK038",
+        "questionText": "Which traditional cultural practice faced renewed scrutiny and legal challenges regarding animal welfare concerns during major festivals?",
+        "options": [
+            { "id": "a", "text": "Kumari Jatra (Living Goddess procession)" },
+            { "id": "b", "text": "Gadhimai Mela (Mass animal sacrifice)" },
+            { "id": "c", "text": "Gai Jatra (Cow festival)" },
+            { "id": "d", "text": "Indra Jatra (Festival dedicated to Indra)" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK039",
+        "questionText": "The government took steps to regulate and promote which sector, aiming to create employment and leverage Nepal's IT talent pool?",
+        "options": [
+            { "id": "a", "text": "Ride-sharing services" },
+            { "id": "b", "text": "E-commerce platforms" },
+            { "id": "c", "text": "Business Process Outsourcing (BPO) and IT services export" },
+            { "id": "d", "text": "Drone manufacturing and operation" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK040",
+        "questionText": "What procedural step often precedes the final appointment of ambassadors to key countries like India, involving parliamentary hearings?",
+        "options": [
+            { "id": "a", "text": "Approval from the President's Office" },
+            { "id": "b", "text": "Recommendation by the Ministry of Foreign Affairs" },
+            { "id": "c", "text": "Parliamentary Hearing Committee endorsement" },
+            { "id": "d", "text": "Consent from the host country's government" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK041",
+        "questionText": "The issue of air pollution in Kathmandu Valley remained critical. What was identified as a primary contributing factor during the winter months, besides vehicular emissions?",
+        "options": [
+            { "id": "a", "text": "Industrial discharge from Hetauda" },
+            { "id": "b", "text": "Transboundary haze from Indian agricultural burning" },
+            { "id": "c", "text": "Brick kiln operations in and around the valley" },
+            { "id": "d", "text": "Deforestation in surrounding hills" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK042",
+        "questionText": "Which infrastructure project, aimed at easing traffic congestion within Kathmandu Valley, saw significant progress or completion of a major section?",
+        "options": [
+            { "id": "a", "text": "Kathmandu Outer Ring Road Project" },
+            { "id": "b", "text": "Expansion of the Koteshwor-Kalanki Ring Road section" },
+            { "id": "c", "text": "Construction of the Nagdhunga Tunnel Project approach roads" },
+            { "id": "d", "text": "Flyover construction at Gwarko intersection" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK043",
+        "questionText": "Nepal's trade deficit remained a major concern. Which single country accounted for the largest share of Nepal's import expenditure?",
+        "options": [
+            { "id": "a", "text": "China" },
+            { "id": "b", "text": "India" },
+            { "id": "c", "text": "United Arab Emirates" },
+            { "id": "d", "text": "United States" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK044",
+        "questionText": "The government announced plans to issue 'Digital Nomad Visas'. What is the primary objective of this initiative?",
+        "options": [
+            { "id": "a", "text": "To attract foreign remote workers to live and spend in Nepal" },
+            { "id": "b", "text": "To facilitate visa processes for Nepali IT professionals working abroad" },
+            { "id": "c", "text": "To provide visas for tourists engaging in digital detoxification retreats" },
+            { "id": "d", "text": "To streamline visa requirements for foreign students in IT fields" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK045",
+        "questionText": "Which social security scheme saw expansion or proposed changes to include workers from the informal sector or Nepali migrant workers abroad?",
+        "options": [
+            { "id": "a", "text": "Employees Provident Fund (EPF/Karmachari Sanchaya Kosh)" },
+            { "id": "b", "text": "Citizen Investment Trust (CIT/Nagarik Lagani Kosh)" },
+            { "id": "c", "text": "Social Security Fund (SSF/Samajik Suraksha Kosh)" },
+            { "id": "d", "text": "National Pension Scheme" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK046",
+        "questionText": "A key point of discussion in Nepal-China relations involved the operational status and potential expansion of which dry port facility?",
+        "options": [
+            { "id": "a", "text": "Birgunj Dry Port (Sirsiya)" },
+            { "id": "b", "text": "Bhairahawa Dry Port" },
+            { "id": "c", "text": "Kakarbhitta Dry Port" },
+            { "id": "d", "text": "Larcha Dry Port (near Tatopani)" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK047",
+        "questionText": "The Supreme Court of Nepal issued a directive or ruling concerning the rights of which specific community, ordering the government to ensure necessary legal provisions?",
+        "options": [
+            { "id": "a", "text": "Persons with Disabilities" },
+            { "id": "b", "text": "Senior Citizens" },
+            { "id": "c", "text": "LGBTQI+ community (related to marriage equality or identity documents)" },
+            { "id": "d", "text": "Internally Displaced Persons (IDPs)" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK048",
+        "questionText": "Which government body is primarily responsible for conducting the national census, the detailed results of which (released in 2023) provide crucial data for planning?",
+        "options": [
+            { "id": "a", "text": "National Planning Commission (NPC)" },
+            { "id": "b", "text": "Central Bureau of Statistics (CBS) / National Statistics Office (NSO)" },
+            { "id": "c", "text": "Ministry of Federal Affairs and General Administration" },
+            { "id": "d", "text": "Election Commission, Nepal" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK049",
+        "questionText": "The 'brain drain' phenomenon continued to be a concern. Which destination country consistently attracted the largest number of Nepali students going abroad for higher education?",
+        "options": [
+            { "id": "a", "text": "United States" },
+            { "id": "b", "text": "Australia" },
+            { "id": "c", "text": "Japan" },
+            { "id": "d", "text": "India" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK050",
+        "questionText": "What was a significant point of discussion or policy implemented regarding the management and pricing of petroleum products by the Nepal Oil Corporation (NOC)?",
+        "options": [
+            { "id": "a", "text": "Complete deregulation, allowing private companies to import and sell fuel" },
+            { "id": "b", "text": "Introduction of an automatic pricing mechanism adjusting prices frequently based on international rates" },
+            { "id": "c", "text": "A substantial government subsidy to keep prices artificially low" },
+            { "id": "d", "text": "Shifting entirely to importing refined products from China instead of India" }
+        ],
+        "correctOptionId": "b"
+    },
+        {
+        "id": "GK051",
+        "questionText": "The expansion of the BRICS group in 2024 notably included several countries from which two regions, signaling a shift in global economic alignments?",
+        "options": [
+            { "id": "a", "text": "Southeast Asia and Latin America" },
+            { "id": "b", "text": "Middle East and Africa" },
+            { "id": "c", "text": "Eastern Europe and Central Asia" },
+            { "id": "d", "text": "Oceania and North America" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK052",
+        "questionText": "The G20 summit hosted by India in 2023 saw the admission of which regional body as a permanent member, enhancing representation for a continent?",
+        "options": [
+            { "id": "a", "text": "Association of Southeast Asian Nations (ASEAN)" },
+            { "id": "b", "text": "European Union (EU) - already a member" },
+            { "id": "c", "text": "African Union (AU)" },
+            { "id": "d", "text": "South Asian Association for Regional Cooperation (SAARC)" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK053",
+        "questionText": "Beyond the immediate conflict zone, the war in Ukraine significantly impacted global food security primarily through disruptions to the export of which key commodity via the Black Sea?",
+        "options": [
+            { "id": "a", "text": "Rice" },
+            { "id": "b", "text": "Wheat and Corn" },
+            { "id": "c", "text": "Soybeans" },
+            { "id": "d", "text": "Coffee beans" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK054",
+        "questionText": "The International Court of Justice (ICJ) issued provisional measures in early 2024 regarding the conflict in Gaza, primarily ordering Israel to take actions related to which international convention?",
+        "options": [
+            { "id": "a", "text": "The Convention on the Rights of the Child" },
+            { "id": "b", "text": "The Geneva Conventions (Laws of War)" },
+            { "id": "c", "text": "The Genocide Convention" },
+            { "id": "d", "text": "The Chemical Weapons Convention" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK055",
+        "questionText": "COP28, held in Dubai in late 2023, resulted in a final agreement that, for the first time in COP history, explicitly called for nations to begin doing what regarding fossil fuels?",
+        "options": [
+            { "id": "a", "text": "Immediately phase them out completely" },
+            { "id": "b", "text": "Transition away from them in energy systems" },
+            { "id": "c", "text": "Increase investment in carbon capture technologies for fossil fuels" },
+            { "id": "d", "text": "Nationalize all fossil fuel industries" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK056",
+        "questionText": "Which specific international financial instrument, aimed at helping vulnerable countries cope with climate change impacts, saw significant new pledges and operationalization discussions at COP28?",
+        "options": [
+            { "id": "a", "text": "The Green Climate Fund (GCF)" },
+            { "id": "b", "text": "The Adaptation Fund" },
+            { "id": "c", "text": "The Loss and Damage Fund" },
+            { "id": "d", "text": "The Global Environment Facility (GEF)" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK057",
+        "questionText": "The ongoing civil conflict in which large African nation created a major humanitarian crisis and regional refugee flows, drawing concern from the UN and neighboring countries throughout 2023-24?",
+        "options": [
+            { "id": "a", "text": "Nigeria" },
+            { "id": "b", "text": "Ethiopia" },
+            { "id": "c", "text": "Sudan" },
+            { "id": "d", "text": "Democratic Republic of Congo" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK058",
+        "questionText": "Several developing nations, including Sri Lanka (relevant to South Asia) and Ghana, continued to grapple with severe debt crises, primarily negotiating restructuring terms with which international body and creditor groups?",
+        "options": [
+            { "id": "a", "text": "World Trade Organization (WTO) and private bondholders" },
+            { "id": "b", "text": "International Monetary Fund (IMF) and the Paris Club/China" },
+            { "id": "c", "text": "World Bank and regional development banks" },
+            { "id": "d", "text": "UN Development Programme (UNDP) and philanthropic foundations" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK059",
+        "questionText": "The concept of 'Friend-shoring' or 'Ally-shoring' gained prominence in global trade discussions, primarily driven by which major economy seeking to diversify supply chains away from geopolitical rivals?",
+        "options": [
+            { "id": "a", "text": "China" },
+            { "id": "b", "text": "Germany" },
+            { "id": "c", "text": "United States" },
+            { "id": "d", "text": "Japan" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK060",
+        "questionText": "Tensions in the South China Sea remained high, involving disputes over maritime boundaries and features primarily between China and several members of which regional organization?",
+        "options": [
+            { "id": "a", "text": "SAARC" },
+            { "id": "b", "text": "BIMSTEC" },
+            { "id": "c", "text": "ASEAN" },
+            { "id": "d", "text": "SCO" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK061",
+        "questionText": "India's 'Neighborhood First' policy saw renewed focus, including significant infrastructure and connectivity projects aimed at strengthening ties, particularly with which neighbouring countries (relevant to Nepal)?",
+        "options": [
+            { "id": "a", "text": "Pakistan and Afghanistan" },
+            { "id": "b", "text": "Myanmar and Thailand" },
+            { "id": "c", "text": "Bangladesh, Sri Lanka, and Nepal" },
+            { "id": "d", "text": "China and Bhutan" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK062",
+        "questionText": "What major technological development saw significant global debate regarding ethical guidelines, potential job displacement, and international regulation efforts throughout 2023-24?",
+        "options": [
+            { "id": "a", "text": "Commercial viability of fusion power" },
+            { "id": "b", "text": "Widespread adoption of quantum computing" },
+            { "id": "c", "text": "Advancements in generative Artificial Intelligence (AI)" },
+            { "id": "d", "text": "Rollout of 6G mobile networks" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK063",
+        "questionText": "The European Union advanced its Carbon Border Adjustment Mechanism (CBAM) during this period. What is the primary aim of CBAM?",
+        "options": [
+            { "id": "a", "text": "To provide carbon credits to developing countries" },
+            { "id": "b", "text": "To impose a levy on imported goods based on their embedded carbon emissions" },
+            { "id": "c", "text": "To fund renewable energy projects within the EU" },
+            { "id": "d", "text": "To create a carbon trading market exclusively for EU companies" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK064",
+        "questionText": "Which Central Asian country experienced significant political attention due to its strategic location and role in connectivity projects linking East Asia with Europe (relevant to BRI discussions)?",
+        "options": [
+            { "id": "a", "text": "Tajikistan" },
+            { "id": "b", "text": "Turkmenistan" },
+            { "id": "c", "text": "Kazakhstan" },
+            { "id": "d", "text": "Kyrgyzstan" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK065",
+        "questionText": "The World Health Organization (WHO) focused efforts on negotiating a new international agreement primarily aimed at improving global preparedness and response for what?",
+        "options": [
+            { "id": "a", "text": "Chronic non-communicable diseases" },
+            { "id": "b", "text": "Future pandemics" },
+            { "id": "c", "text": "Mental health crises" },
+            { "id": "d", "text": "Antimicrobial resistance" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK066",
+        "questionText": "Political instability and a coup d'état occurred in which West African nation in mid-2023, leading to regional sanctions and international concern over democratic backsliding in the Sahel region?",
+        "options": [
+            { "id": "a", "text": "Ghana" },
+            { "id": "b", "text": "Senegal" },
+            { "id": "c", "text": "Niger" },
+            { "id": "d", "text": "Ivory Coast" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK067",
+        "questionText": "Which global index, often cited in development discourse, measures multidimensional poverty, considering factors beyond just income (relevant to Nepal's development context)?",
+        "options": [
+            { "id": "a", "text": "Human Development Index (HDI)" },
+            { "id": "b", "text": "Global Hunger Index (GHI)" },
+            { "id": "c", "text": "Multidimensional Poverty Index (MPI)" },
+            { "id": "d", "text": "Corruption Perceptions Index (CPI)" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK068",
+        "questionText": "Debates surrounding the reform of the United Nations Security Council (UNSC) often center on the under-representation of which two continents among permanent members?",
+        "options": [
+            { "id": "a", "text": "North America and Europe" },
+            { "id": "b", "text": "Asia and Oceania" },
+            { "id": "c", "text": "Africa and Latin America" },
+            { "id": "d", "text": "Australia and Antarctica" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK069",
+        "questionText": "The 'Indo-Pacific' strategic concept gained further traction. Which grouping, involving the US, Japan, Australia, and India, held high-level meetings focusing on regional security and cooperation?",
+        "options": [
+            { "id": "a", "text": "AUKUS" },
+            { "id": "b", "text": "Five Eyes" },
+            { "id": "c", "text": "The Quad (Quadrilateral Security Dialogue)" },
+            { "id": "d", "text": "ASEAN Regional Forum (ARF)" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK070",
+        "questionText": "China's Belt and Road Initiative (BRI) marked its tenth anniversary in 2023. Recent discourse around the initiative has increasingly focused on which aspect?",
+        "options": [
+            { "id": "a", "text": "Expanding military bases along BRI routes" },
+            { "id": "b", "text": "Shifting towards smaller, \"smart\" or \"green\" projects" },
+            { "id": "c", "text": "Offering zero-interest loans for all new projects" },
+            { "id": "d", "text": "Exclusively funding projects within Asia" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK071",
+        "questionText": "A significant escalation occurred in late 2023 involving Houthi rebels targeting commercial shipping in which vital maritime chokepoint, impacting global trade routes?",
+        "options": [
+            { "id": "a", "text": "Strait of Malacca" },
+            { "id": "b", "text": "Suez Canal" },
+            { "id": "c", "text": "Red Sea / Bab el-Mandeb Strait" },
+            { "id": "d", "text": "Panama Canal" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK072",
+        "questionText": "Which Latin American country elected a new president advocating radical economic reforms, including potential dollarization, drawing international attention?",
+        "options": [
+            { "id": "a", "text": "Brazil" },
+            { "id": "b", "text": "Mexico" },
+            { "id": "c", "text": "Argentina" },
+            { "id": "d", "text": "Colombia" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK073",
+        "questionText": "The global semiconductor industry faced continued geopolitical focus, particularly concerning the production and export controls of advanced chips involving primarily which three economic powers/regions?",
+        "options": [
+            { "id": "a", "text": "India, Brazil, South Africa" },
+            { "id": "b", "text": "United States, China, European Union (including Netherlands)" },
+            { "id": "c", "text": "Russia, Iran, North Korea" },
+            { "id": "d", "text": "Japan, South Korea, Canada" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK074",
+        "questionText": "Climate change impacts were starkly visible with record-breaking global average temperatures reported for 2023 by organizations like the WMO. This was attributed to greenhouse gases and the influence of which recurring natural climate pattern?",
+        "options": [
+            { "id": "a", "text": "La Niña" },
+            { "id": "b", "text": "El Niño" },
+            { "id": "c", "text": "Indian Ocean Dipole" },
+            { "id": "d", "text": "Arctic Oscillation" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK075",
+        "questionText": "International migration remained a major global issue. Which sea route saw a particularly high number of dangerous crossings and migrant deaths, involving journeys towards Southern Europe?",
+        "options": [
+            { "id": "a", "text": "The English Channel" },
+            { "id": "b", "text": "The Caribbean Sea" },
+            { "id": "c", "text": "The Central Mediterranean Sea" },
+            { "id": "d", "text": "The Andaman Sea" }
+        ],
+        "correctOptionId": "c"
+    }
+]
 };
