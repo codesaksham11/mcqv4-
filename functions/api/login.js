@@ -11,9 +11,19 @@ export async function onRequestPost(context) {
     // KV Bindings
     const USER_KV = env.USER_KV_BINDING;
     const SESSION_KV = env.SESSION_KV_BINDING;
+    const ACTIVE_SESSION_MAP = env.ACTIVE_SESSION_MAP;
+
+    // Check if necessary bindings are present
+    if (!USER_KV || !SESSION_KV || !ACTIVE_SESSION_MAP) {
+        console.error("Missing KV Bindings! Ensure USER_KV_BINDING, SESSION_KV_BINDING, and ACTIVE_SESSION_MAP are bound.");
+        return new Response(JSON.stringify({ error: 'Server configuration error' }), { 
+            status: 500, 
+            headers: { 'Content-Type': 'application/json' } 
+        });
+    }
 
     // Constants
-    const SESSION_TTL_SECONDS = 3600; // 1 hour session validity // ADJUSTED TO 1 HOUR FOR EXAMPLE
+    const SESSION_TTL_SECONDS = 3600; // 1 hour session validity
 
     try {
         // 1. Parse incoming JSON data
@@ -26,7 +36,7 @@ export async function onRequestPost(context) {
 
         const { name, email, walletNumber } = userDataInput;
 
-        // 2. Basic Input Validation (Keep this part)
+        // 2. Basic Input Validation
         if (!name || typeof name !== 'string' || name.trim() === '' ||
             !email || typeof email !== 'string' || !email.includes('@') ||
             !walletNumber || typeof walletNumber !== 'string' || walletNumber.trim() === '') {
@@ -37,7 +47,7 @@ export async function onRequestPost(context) {
         const trimmedEmail = email.trim().toLowerCase();
         const trimmedWalletNumber = walletNumber.trim();
 
-        // 3. Look up user in USER_KV using WalletNumber (Keep this part)
+        // 3. Look up user in USER_KV using WalletNumber
         const storedUserDataJson = await USER_KV.get(trimmedWalletNumber);
 
         if (!storedUserDataJson) {
@@ -45,7 +55,7 @@ export async function onRequestPost(context) {
             return new Response(JSON.stringify({ error: 'Unauthorized' }), { status: 401, headers: { 'Content-Type': 'application/json' } });
         }
 
-        // 4. Parse stored user data and verify email (Keep this part)
+        // 4. Parse stored user data and verify email
         let storedUserData;
         try {
             storedUserData = JSON.parse(storedUserDataJson);
@@ -66,16 +76,29 @@ export async function onRequestPost(context) {
             return new Response(JSON.stringify({ error: 'Unauthorized' }), { status: 401, headers: { 'Content-Type': 'application/json' } });
         }
 
-        // --- START: MODIFICATION AREA ---
-
-        // 5. Credentials Valid - *** CHECK FOR & INVALIDATE EXISTING SESSION ***
+        // 5. Check for existing sessions and invalidate them
+        const existingSessionTokenJson = await ACTIVE_SESSION_MAP.get(trimmedEmail);
+        if (existingSessionTokenJson) {
+            try {
+                // Parse the existing session token
+                const existingSessionToken = JSON.parse(existingSessionTokenJson);
+                if (existingSessionToken) {
+                    // Delete the existing session
+                    await SESSION_KV.delete(existingSessionToken);
+                    console.log(`Deleted previous session token for ${trimmedEmail}: ${existingSessionToken}`);
+                }
+            } catch (parseError) {
+                console.error(`Failed to parse existing session token for ${trimmedEmail}:`, parseError);
+                // Continue with the login process anyway
+            }
+        }
 
         // 6. Create New Session
         const sessionToken = generateSessionToken();
         const sessionData = {
             walletNumber: trimmedWalletNumber,
-            name: trimmedName // Store the name provided during this login
-            // *** ADD EMAIL TO SESSION DATA ***
+            name: trimmedName,
+            email: trimmedEmail // Add email to session data
         };
 
         // Store the session token -> session data mapping in KV with TTL
@@ -83,12 +106,14 @@ export async function onRequestPost(context) {
             expirationTtl: SESSION_TTL_SECONDS
         });
 
-        // *** ADD MAPPING TO ACTIVE_SESSION_MAP KV ***
+        // Add mapping to ACTIVE_SESSION_MAP KV
+        await ACTIVE_SESSION_MAP.put(trimmedEmail, JSON.stringify(sessionToken), {
+            expirationTtl: SESSION_TTL_SECONDS
+        });
 
-        // --- END: MODIFICATION AREA ---
+        console.log(`Stored new session mapping for ${trimmedEmail}: ${sessionToken}`);
 
-
-        // 7. Prepare Response - Set HttpOnly Cookie (Keep this part)
+        // 7. Prepare Response - Set HttpOnly Cookie
         const headers = new Headers();
         headers.append('Content-Type', 'application/json');
         headers.append(
@@ -96,7 +121,7 @@ export async function onRequestPost(context) {
             `session_token=${sessionToken}; HttpOnly; Secure; Path=/; SameSite=Lax; Max-Age=${SESSION_TTL_SECONDS}`
         );
 
-        console.log(`Login successful for wallet ${trimmedWalletNumber}, email ${trimmedEmail}`); // Added email for clarity
+        console.log(`Login successful for wallet ${trimmedWalletNumber}, email ${trimmedEmail}`);
         return new Response(JSON.stringify({ message: 'Login successful' }), {
             status: 200,
             headers: headers
@@ -117,4 +142,4 @@ export async function onRequest(context) {
     return await onRequestPost(context);
   }
   return new Response('Method Not Allowed', { status: 405 });
-}
+} 
