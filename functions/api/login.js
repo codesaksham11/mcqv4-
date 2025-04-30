@@ -1,16 +1,11 @@
 // /functions/api/login.js
 
 // Helper function to generate secure random token (using standard Web Crypto API)
-// Assumes a recent compatibility date is set in Cloudflare Pages settings
 function generateSessionToken() {
-    // crypto.randomUUID() is cryptographically strong and suitable for session tokens
     return crypto.randomUUID();
 }
 
 export async function onRequestPost(context) {
-    // This specific handler `onRequestPost` automatically handles only POST requests.
-    // You can also use `onRequest` and check `request.method` yourself.
-
     const { request, env } = context;
 
     // KV Bindings
@@ -18,7 +13,7 @@ export async function onRequestPost(context) {
     const SESSION_KV = env.SESSION_KV_BINDING;
 
     // Constants
-    const SESSION_TTL_SECONDS = 15811200; // 1 hour session validity
+    const SESSION_TTL_SECONDS = 3600; // 1 hour session validity // ADJUSTED TO 1 HOUR FOR EXAMPLE
 
     try {
         // 1. Parse incoming JSON data
@@ -31,27 +26,26 @@ export async function onRequestPost(context) {
 
         const { name, email, walletNumber } = userDataInput;
 
-        // 2. Basic Input Validation
+        // 2. Basic Input Validation (Keep this part)
         if (!name || typeof name !== 'string' || name.trim() === '' ||
-            !email || typeof email !== 'string' || !email.includes('@') || // Very basic email check
+            !email || typeof email !== 'string' || !email.includes('@') ||
             !walletNumber || typeof walletNumber !== 'string' || walletNumber.trim() === '') {
             return new Response(JSON.stringify({ error: 'Missing or invalid input fields' }), { status: 400, headers: { 'Content-Type': 'application/json' } });
         }
 
         const trimmedName = name.trim();
-        const trimmedEmail = email.trim().toLowerCase(); // Compare emails case-insensitively
+        const trimmedEmail = email.trim().toLowerCase();
         const trimmedWalletNumber = walletNumber.trim();
 
-        // 3. Look up user in USER_KV using WalletNumber
+        // 3. Look up user in USER_KV using WalletNumber (Keep this part)
         const storedUserDataJson = await USER_KV.get(trimmedWalletNumber);
 
         if (!storedUserDataJson) {
-            // User not found for this wallet number
             console.log(`Login attempt failed: Wallet number not found - ${trimmedWalletNumber}`);
             return new Response(JSON.stringify({ error: 'Unauthorized' }), { status: 401, headers: { 'Content-Type': 'application/json' } });
         }
 
-        // 4. Parse stored user data and verify email
+        // 4. Parse stored user data and verify email (Keep this part)
         let storedUserData;
         try {
             storedUserData = JSON.parse(storedUserDataJson);
@@ -60,7 +54,6 @@ export async function onRequestPost(context) {
             return new Response(JSON.stringify({ error: 'Internal server error during user data parsing' }), { status: 500, headers: { 'Content-Type': 'application/json' } });
         }
 
-        // Ensure the stored data has an email field
         if (!storedUserData.email || typeof storedUserData.email !== 'string') {
              console.error(`Stored user data for wallet ${trimmedWalletNumber} is missing or has invalid email.`);
              return new Response(JSON.stringify({ error: 'Internal server error - invalid user record configuration' }), { status: 500, headers: { 'Content-Type': 'application/json' } });
@@ -69,16 +62,20 @@ export async function onRequestPost(context) {
         const storedEmail = storedUserData.email.trim().toLowerCase();
 
         if (storedEmail !== trimmedEmail) {
-            // Email does not match
             console.log(`Login attempt failed: Email mismatch for wallet ${trimmedWalletNumber}`);
             return new Response(JSON.stringify({ error: 'Unauthorized' }), { status: 401, headers: { 'Content-Type': 'application/json' } });
         }
 
-        // 5. Credentials Valid - Create Session
+        // --- START: MODIFICATION AREA ---
+
+        // 5. Credentials Valid - *** CHECK FOR & INVALIDATE EXISTING SESSION ***
+
+        // 6. Create New Session
         const sessionToken = generateSessionToken();
         const sessionData = {
             walletNumber: trimmedWalletNumber,
             name: trimmedName // Store the name provided during this login
+            // *** ADD EMAIL TO SESSION DATA ***
         };
 
         // Store the session token -> session data mapping in KV with TTL
@@ -86,7 +83,12 @@ export async function onRequestPost(context) {
             expirationTtl: SESSION_TTL_SECONDS
         });
 
-        // 6. Prepare Response - Set HttpOnly Cookie
+        // *** ADD MAPPING TO ACTIVE_SESSION_MAP KV ***
+
+        // --- END: MODIFICATION AREA ---
+
+
+        // 7. Prepare Response - Set HttpOnly Cookie (Keep this part)
         const headers = new Headers();
         headers.append('Content-Type', 'application/json');
         headers.append(
@@ -94,7 +96,7 @@ export async function onRequestPost(context) {
             `session_token=${sessionToken}; HttpOnly; Secure; Path=/; SameSite=Lax; Max-Age=${SESSION_TTL_SECONDS}`
         );
 
-        console.log(`Login successful for wallet ${trimmedWalletNumber}`);
+        console.log(`Login successful for wallet ${trimmedWalletNumber}, email ${trimmedEmail}`); // Added email for clarity
         return new Response(JSON.stringify({ message: 'Login successful' }), {
             status: 200,
             headers: headers
@@ -114,6 +116,5 @@ export async function onRequest(context) {
   if (context.request.method === "POST") {
     return await onRequestPost(context);
   }
-  // Respond to non-POST requests if necessary, e.g., OPTIONS for CORS preflight
   return new Response('Method Not Allowed', { status: 405 });
-}
+} 
