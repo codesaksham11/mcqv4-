@@ -20,9 +20,9 @@ export async function onRequestPost(context) {
     // Handles only POST requests.
     const { request, env } = context;
 
-    // KV Bindings - Added ACTIVE_SESSION_MAP
+    // KV Bindings
     const SESSION_KV = env.SESSION_KV_BINDING;
-    const ACTIVE_SESSION_MAP = env.ACTIVE_SESSION_MAP; // Make sure this binding exists
+    const ACTIVE_SESSION_MAP = env.ACTIVE_SESSION_MAP;
 
     // Check if necessary bindings are present
     if (!SESSION_KV || !ACTIVE_SESSION_MAP) {
@@ -41,17 +41,36 @@ export async function onRequestPost(context) {
 
         // 2. If a token exists, attempt to retrieve session data & delete from KV stores
         if (sessionToken) {
-            // --- START: MODIFIED LOGIC ---
-
             // A. Get session data (specifically the email) BEFORE deleting the session
             const sessionDataJson = await SESSION_KV.get(sessionToken);
             if (sessionDataJson) {
                 try {
                     const sessionData = JSON.parse(sessionDataJson);
-                    // Check if email exists in the session data (it should, based on our modified login.js)
+                    // Check if email exists in the session data
                     if (sessionData && sessionData.email) {
                         userEmail = sessionData.email;
                         console.log(`Logout initiated for session token ${sessionToken}, associated email: ${userEmail}`);
+                        
+                        // B. Get the active session token for this email
+                        const activeTokenJson = await ACTIVE_SESSION_MAP.get(userEmail);
+                        if (activeTokenJson) {
+                            try {
+                                const activeToken = JSON.parse(activeTokenJson);
+                                // Only delete from ACTIVE_SESSION_MAP if the current token matches the active token
+                                if (activeToken === sessionToken) {
+                                    await ACTIVE_SESSION_MAP.delete(userEmail);
+                                    console.log(`Deleted session mapping from ACTIVE_SESSION_MAP for email: ${userEmail}`);
+                                } else {
+                                    console.log(`Token mismatch during logout: Current=${sessionToken}, Active=${activeToken}`);
+                                }
+                            } catch (parseError) {
+                                console.error(`Failed to parse active token for email ${userEmail}:`, parseError);
+                                // Attempt to delete anyway as a cleanup measure
+                                await ACTIVE_SESSION_MAP.delete(userEmail);
+                            }
+                        } else {
+                            console.log(`No active session found in ACTIVE_SESSION_MAP for email: ${userEmail}`);
+                        }
                     } else {
                         console.warn(`Session data found for token ${sessionToken} but email is missing.`);
                     }
@@ -63,26 +82,14 @@ export async function onRequestPost(context) {
                 console.log(`Logout requested for token ${sessionToken}, but session data not found in SESSION_KV (likely expired or invalid).`);
             }
 
-            // B. Delete the session from SESSION_KV (regardless of whether email was found)
-            // Use await to ensure deletion attempt completes before responding.
+            // C. Always delete the session from SESSION_KV
             await SESSION_KV.delete(sessionToken);
             console.log(`Deleted session token from SESSION_KV: ${sessionToken}`);
-
-            // C. If we found the user's email, delete their entry from ACTIVE_SESSION_MAP
-            if (userEmail) {
-                await ACTIVE_SESSION_MAP.delete(userEmail);
-                console.log(`Deleted session mapping from ACTIVE_SESSION_MAP for email: ${userEmail}`);
-            } else {
-                console.log(`Skipping ACTIVE_SESSION_MAP delete as email was not retrieved for token: ${sessionToken}`);
-            }
-
-            // --- END: MODIFIED LOGIC ---
-
         } else {
             console.log('Logout endpoint called, but no session token cookie found.');
         }
 
-        // 3. Prepare response headers to clear the cookie (No change here)
+        // 3. Prepare response headers to clear the cookie
         const headers = new Headers();
         headers.append('Content-Type', 'application/json');
         // Set Max-Age to 0 to expire the cookie immediately
@@ -91,7 +98,7 @@ export async function onRequestPost(context) {
             `session_token=; HttpOnly; Secure; Path=/; SameSite=Lax; Max-Age=0`
         );
 
-        // 4. Send response indicating successful logout process (No change here)
+        // 4. Send response indicating successful logout process
         return new Response(JSON.stringify({ message: 'Logout successful' }), {
             status: 200,
             headers: headers
@@ -113,7 +120,7 @@ export async function onRequestPost(context) {
     }
 }
 
-// Optional: Catch-all for non-POST requests (No change)
+// Optional: Catch-all for non-POST requests
 export async function onRequest(context) {
   if (context.request.method === "POST") {
     return await onRequestPost(context);
