@@ -16,9 +16,9 @@ export async function onRequestPost(context) {
     // Check if necessary bindings are present
     if (!USER_KV || !SESSION_KV || !ACTIVE_SESSION_MAP) {
         console.error("Missing KV Bindings! Ensure USER_KV_BINDING, SESSION_KV_BINDING, and ACTIVE_SESSION_MAP are bound.");
-        return new Response(JSON.stringify({ error: 'Server configuration error' }), { 
-            status: 500, 
-            headers: { 'Content-Type': 'application/json' } 
+        return new Response(JSON.stringify({ error: 'Server configuration error' }), {
+            status: 500,
+            headers: { 'Content-Type': 'application/json' }
         });
     }
 
@@ -34,7 +34,9 @@ export async function onRequestPost(context) {
             return new Response(JSON.stringify({ error: 'Invalid JSON body' }), { status: 400, headers: { 'Content-Type': 'application/json' } });
         }
 
-        const { name, email, walletNumber } = userDataInput;
+        // <<< CHANGE START: Extract forceLogin flag >>>
+        const { name, email, walletNumber, forceLogin = false } = userDataInput; // Default forceLogin to false
+        // <<< CHANGE END >>>
 
         // 2. Basic Input Validation
         if (!name || typeof name !== 'string' || name.trim() === '' ||
@@ -76,24 +78,44 @@ export async function onRequestPost(context) {
             return new Response(JSON.stringify({ error: 'Unauthorized' }), { status: 401, headers: { 'Content-Type': 'application/json' } });
         }
 
-        // 5. Check for existing sessions and invalidate them
+        // 5. Check for existing sessions
         const existingSessionTokenJson = await ACTIVE_SESSION_MAP.get(trimmedEmail);
+
+        // <<< CHANGE START: Handle existing session based on forceLogin flag >>>
         if (existingSessionTokenJson) {
-            try {
-                // Parse the existing session token
-                const existingSessionToken = JSON.parse(existingSessionTokenJson);
-                if (existingSessionToken) {
-                    // Delete the existing session
-                    await SESSION_KV.delete(existingSessionToken);
-                    console.log(`Deleted previous session token for ${trimmedEmail}: ${existingSessionToken}`);
+            console.log(`Existing session found for email: ${trimmedEmail}`);
+            if (!forceLogin) {
+                // Existing session found, and forceLogin is false - signal conflict
+                console.log(`Returning 409 Conflict for email: ${trimmedEmail}`);
+                return new Response(JSON.stringify({
+                    conflict: true,
+                    message: 'This email is already logged in on another device or browser.'
+                }), { status: 409, headers: { 'Content-Type': 'application/json' } });
+            } else {
+                // Force login is true - proceed to invalidate the old session
+                console.log(`Force login requested for email: ${trimmedEmail}. Invalidating previous session.`);
+                try {
+                    const existingSessionToken = JSON.parse(existingSessionTokenJson);
+                    if (existingSessionToken) {
+                        await SESSION_KV.delete(existingSessionToken);
+                        console.log(`Deleted previous session token from SESSION_KV: ${existingSessionToken}`);
+                    }
+                    // Delete from ACTIVE_SESSION_MAP regardless of parsing success
+                    await ACTIVE_SESSION_MAP.delete(trimmedEmail);
+                     console.log(`Deleted previous session mapping from ACTIVE_SESSION_MAP for ${trimmedEmail}`);
+                } catch (parseError) {
+                    console.error(`Failed to parse or delete existing session token for ${trimmedEmail} during force login:`, parseError);
+                    // Attempt to delete from ACTIVE_SESSION_MAP anyway as a cleanup
+                    await ACTIVE_SESSION_MAP.delete(trimmedEmail);
+                    console.log(`Attempted cleanup delete from ACTIVE_SESSION_MAP for ${trimmedEmail}`);
+                    // Continue with login despite cleanup error
                 }
-            } catch (parseError) {
-                console.error(`Failed to parse existing session token for ${trimmedEmail}:`, parseError);
-                // Continue with the login process anyway
             }
         }
+        // <<< CHANGE END >>>
 
-        // 6. Create New Session
+
+        // 6. Create New Session (Now runs if no existing session OR if forceLogin was true)
         const sessionToken = generateSessionToken();
         const sessionData = {
             walletNumber: trimmedWalletNumber,
@@ -107,6 +129,7 @@ export async function onRequestPost(context) {
         });
 
         // Add mapping to ACTIVE_SESSION_MAP KV
+        // Use JSON.stringify for the token value as well for consistency, though not strictly needed if it's always a string
         await ACTIVE_SESSION_MAP.put(trimmedEmail, JSON.stringify(sessionToken), {
             expirationTtl: SESSION_TTL_SECONDS
         });
@@ -121,7 +144,7 @@ export async function onRequestPost(context) {
             `session_token=${sessionToken}; HttpOnly; Secure; Path=/; SameSite=Lax; Max-Age=${SESSION_TTL_SECONDS}`
         );
 
-        console.log(`Login successful for wallet ${trimmedWalletNumber}, email ${trimmedEmail}`);
+        console.log(`Login successful for wallet ${trimmedWalletNumber}, email ${trimmedEmail} (Forced: ${forceLogin})`);
         return new Response(JSON.stringify({ message: 'Login successful' }), {
             status: 200,
             headers: headers
@@ -142,4 +165,4 @@ export async function onRequest(context) {
     return await onRequestPost(context);
   }
   return new Response('Method Not Allowed', { status: 405 });
-} 
+}
