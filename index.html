@@ -468,6 +468,35 @@
              #login-modal-content { padding: 2rem 1.5rem; }
         }
 
+         /* --- START: Heart Button Specific Styles --- */
+    .heart-icon-button {
+        background-color: transparent; /* Make background transparent */
+        color: var(--accent-primary); /* Use accent color for heart */
+        border: 1px solid var(--accent-primary); /* Add border */
+        padding: 8px 10px; /* Adjust padding */
+        margin-right: 0.5rem; /* Add some space to the right */
+        box-shadow: none; /* Remove default shadow if not desired */
+    }
+
+    .heart-icon-button .icon {
+        font-size: 1.2em; /* Adjust icon size */
+        line-height: 1;
+    }
+
+    .heart-icon-button:hover {
+        background-color: var(--accent-primary); /* Coral background on hover */
+        color: #FFFFFF; /* White heart on hover */
+        border-color: var(--accent-primary);
+        transform: scale(1.1); /* Enlarge on hover */
+        box-shadow: 0 4px 10px rgba(0,0,0, 0.15); /* Add shadow on hover */
+    }
+
+    /* Active state for the shrink effect on click */
+    .heart-icon-button:active {
+       transform: scale(0.9); /* Shrink on click */
+       transition: transform 0.1s ease; /* Make shrink effect quick */
+    }
+    /* --- END: Heart Button Specific Styles --- */
             </style>
 </head>
 <body>
@@ -495,6 +524,10 @@
             <img src="images/image.jpg" alt="NEB ASSIST Logo">
         </div>
         <div class="user-status">
+                        <!-- Heart Button - Always Visible -->
+            <button id="heart-btn" class="auth-button heart-icon-button" aria-label="View Local Quizzes">
+                <span class="icon">❤️</span>
+            </button>
             <div id="user-info" style="display: none;">
                 <span class="user-icon">👤</span> Welcome, <span id="user-name">User</span>!
             </div>
@@ -646,5 +679,31 @@
     <!-- Application Logic (Keep your existing link) -->
     <script type="module" src="/app.js"></script>
 
+    <!-- START: Inline JavaScript for Heart Button -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // This code runs only after the HTML is fully loaded
+
+        let heartButtonClickCount = 0; // Counter specific to this script
+        const heartBtn = document.getElementById('heart-btn');
+
+        if (heartBtn) { // Check if the button exists
+            heartBtn.addEventListener('click', () => {
+                heartButtonClickCount++; // Increment count on each click
+                console.log("Inline Heart clicks:", heartButtonClickCount); // Optional check
+
+                // CSS :active handles the visual feedback on the first click
+
+                if (heartButtonClickCount >= 2) {
+                    console.log("Inline Navigating to local_quiz.html"); // Optional check
+                    window.location.href = 'local_quiz.html'; // Navigate on the second click
+                }
+            });
+        } else {
+            console.error("Heart button (#heart-btn) not found!"); // Error if button ID is wrong
+        }
+    });
+</script>
+<!-- END: Inline JavaScript for Heart Button -->
 </body>
 </html>
