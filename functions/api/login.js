@@ -23,7 +23,7 @@ export async function onRequestPost(context) {
     }
 
     // Constants
-    const SESSION_TTL_SECONDS = 16,848,000; // 1 hour session validity
+    const SESSION_TTL_SECONDS = 16848000; // 1 hour session validity
 
     try {
         // Log start of request handling
