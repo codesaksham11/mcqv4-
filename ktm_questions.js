@@ -1270,6 +1270,5177 @@ export const questionBank = {
             { "id": "d", "text": "The Andaman Sea" }
         ],
         "correctOptionId": "c"
+    },
+    
+    {
+        "id": "GK076",
+        "questionText": "The Licchavi ruler Manadeva I is credited with issuing the earliest known inscriptions in Nepal. What specific script was predominantly used in these inscriptions found at Changu Narayan?",
+        "options": [
+            { "id": "a", "text": "Ranjana Lipi" },
+            { "id": "b", "text": "Bhujimol Lipi" },
+            { "id": "c", "text": "Brahmi Script (Gupta character influence)" },
+            { "id": "d", "text": "Devanagari Script" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK077",
+        "questionText": "Amshuverma, a powerful Thakuri ruler during the Licchavi period, assumed titles like 'Mahasamanta'. What major administrative reform or policy is strongly associated with his reign, reflecting his authority?",
+        "options": [
+            { "id": "a", "text": "Introduction of the first Nepali currency (Mananka)" },
+            { "id": "b", "text": "Codification of laws based on Manusmriti" },
+            { "id": "c", "text": "Establishment of Kailashkut Bhawan as a grand administrative center" },
+            { "id": "d", "text": "Sending the first diplomatic mission to China led by Bhrikuti" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK078",
+        "questionText": "The 'Panchali' system during the Licchavi period referred to what type of administrative or social unit?",
+        "options": [
+            { "id": "a", "text": "A council of five senior ministers advising the king" },
+            { "id": "b", "text": "A system of village-level self-governance or local councils" },
+            { "id": "c", "text": "A military division consisting of five regiments" },
+            { "id": "d", "text": "A classification of land tenure based on five types of soil" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK079",
+        "questionText": "Which Malla King of Kantipur is credited with initiating the Kumari Jatra, involving the worship of a living goddess, though its origins might be older?",
+        "options": [
+            { "id": "a", "text": "Pratap Malla" },
+            { "id": "b", "text": "Jayaprakash Malla" },
+            { "id": "c", "text": "Siddhi Narsingh Malla" },
+            { "id": "d", "text": "Jaya Sthiti Malla" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK080",
+        "questionText": "Jaya Sthiti Malla's social reforms in the Kathmandu Valley during the 14th century aimed to organize society based on occupation. What was the primary basis or text allegedly used for this hierarchical structuring?",
+        "options": [
+            { "id": "a", "text": "Kautilya's Arthashastra" },
+            { "id": "b", "text": "Manusmriti principles" },
+            { "id": "c", "text": "Local customs and traditions compiled by court scholars" },
+            { "id": "d", "text": "Buddhist Vinaya texts" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK081",
+        "questionText": "The division of the unified Malla kingdom of the Kathmandu Valley into Kantipur, Lalitpur, and Bhaktapur occurred after the death of which influential Malla king?",
+        "options": [
+            { "id": "a", "text": "Ratna Malla" },
+            { "id": "b", "text": "Yakshya Malla" },
+            { "id": "c", "text": "Mahendra Malla" },
+            { "id": "d", "text": "Siddhi Narsingh Malla" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK082",
+        "questionText": "What was the 'Kapardar' in the Gorkhali/Shah administration?",
+        "options": [
+            { "id": "a", "text": "The chief military commander" },
+            { "id": "b", "text": "The head priest of the royal palace" },
+            { "id": "c", "text": "The official in charge of the royal household stores and treasury" },
+            { "id": "d", "text": "The chief justice or head of the judiciary" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK083",
+        "questionText": "The Battle of Kirtipur during Prithvi Narayan Shah's unification campaign was particularly difficult. Who was the Gorkhali commander who lost his life in the first major attempt to capture Kirtipur, significantly demoralizing the Gorkhali forces initially?",
+        "options": [
+            { "id": "a", "text": "Kalu Pande (Kaji Kalu Pande)" },
+            { "id": "b", "text": "Damodar Pande" },
+            { "id": "c", "text": "Shivaram Singh Basnyat" },
+            { "id": "d", "text": "Surapratap Shah" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK084",
+        "questionText": "What was the 'Jhara' system, widely prevalent during the Shah and Rana periods?",
+        "options": [
+            { "id": "a", "text": "A system of compulsory, unpaid labour demanded by the state from its citizens" },
+            { "id": "b", "text": "A land grant given to military personnel for their services" },
+            { "id": "c", "text": "A judicial court specifically for resolving land disputes" },
+            { "id": "d", "text": "A tax levied on goods traded between Nepal and Tibet" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK085",
+        "questionText": "The Treaty of Betrawati (1792) was signed between Nepal and which other power, following Nepal's conflict with Tibet?",
+        "options": [
+            { "id": "a", "text": "British East India Company" },
+            { "id": "b", "text": "Sikh Empire" },
+            { "id": "c", "text": "Qing Dynasty China" },
+            { "id": "d", "text": "Bhutan" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK086",
+        "questionText": "Bhimsen Thapa served as Mukhtiyar (Prime Minister) for an exceptionally long period. Which specific administrative or military modernization effort is strongly attributed to his tenure?",
+        "options": [
+            { "id": "a", "text": "Establishment of the first printing press (Giddhe Press)" },
+            { "id": "b", "text": "Construction of the Dharahara tower" },
+            { "id": "c", "text": "Reorganization of the army along European lines and creation of arsenals" },
+            { "id": "d", "text": "Abolition of the Sati system" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK087",
+        "questionText": "The 'Kot Massacre' (Kot Parva) of 1846 was a pivotal event leading to the rise of the Rana regime. The immediate trigger for the gathering at the Kot courtyard was the unresolved assassination of whom?",
+        "options": [
+            { "id": "a", "text": "King Rajendra Bikram Shah" },
+            { "id": "b", "text": "Prime Minister Mathabar Singh Thapa" },
+            { "id": "c", "text": "Gagan Singh Khawas (Queen Rajya Lakshmi Devi's favorite)" },
+            { "id": "d", "text": "Jung Bahadur Rana himself" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK088",
+        "questionText": "The Muluki Ain of 1854, promulgated by Jung Bahadur Rana, was Nepal's first codified national law. What was one of its most significant, albeit controversial, features reflecting the social structure of the time?",
+        "options": [
+            { "id": "a", "text": "Guaranteeing freedom of speech and press" },
+            { "id": "b", "text": "Establishing a secular legal framework" },
+            { "id": "c", "text": "Legally sanctioning the caste hierarchy and defining punishments based on caste" },
+            { "id": "d", "text": "Granting equal property rights to women" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK089",
+        "questionText": "Which Rana Prime Minister is credited with formally abolishing the Sati system in Nepal in 1920 AD (1977 BS)?",
+        "options": [
+            { "id": "a", "text": "Jung Bahadur Rana" },
+            { "id": "b", "text": "Bir Shumsher Rana" },
+            { "id": "c", "text": "Chandra Shumsher Rana" },
+            { "id": "d", "text": "Juddha Shumsher Rana" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK090",
+        "questionText": "The establishment of Tri-Chandra College in 1918 by Chandra Shumsher Rana marked a significant step in modern education. However, access remained limited. What was the primary medium of instruction initially?",
+        "options": [
+            { "id": "a", "text": "Nepali" },
+            { "id": "b", "text": "Sanskrit" },
+            { "id": "c", "text": "English and Hindi/Urdu" },
+            { "id": "d", "text": "Newari" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK091",
+        "questionText": "The 'Prachanda Gorkha' group, formed around 1931, was one of the earliest organized movements against Rana rule. What was their primary method or objective?",
+        "options": [
+            { "id": "a", "text": "To assassinate key Rana figures and seize power" },
+            { "id": "b", "text": "To petition the British for intervention against the Ranas" },
+            { "id": "c", "text": "To spread political awareness through underground pamphlets" },
+            { "id": "d", "text": "To organize a non-violent civil disobedience movement" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK092",
+        "questionText": "The Nepal Praja Parishad, another key anti-Rana organization, was established in 1936. Who was its founding president?",
+        "options": [
+            { "id": "a", "text": "Tanka Prasad Acharya" },
+            { "id": "b", "text": "Dashrath Chand" },
+            { "id": "c", "text": "Dharma Bhakta Mathema" },
+            { "id": "d", "text": "Shukraraj Shastri" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK093",
+        "questionText": "During World War II, Rana Prime Minister Juddha Shumsher supported the Allied cause. What form did Nepal's primary contribution take?",
+        "options": [
+            { "id": "a", "text": "Providing substantial financial aid" },
+            { "id": "b", "text": "Allowing Allied airbases on Nepali territory" },
+            { "id": "c", "text": "Sending Gurkha troops to fight alongside the British Army" },
+            { "id": "d", "text": "Exporting strategic raw materials to Britain" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK094",
+        "questionText": "The 'Library Incident' (Library Parva) of 1930 involved a group of youths petitioning the Rana government for permission to establish what?",
+        "options": [
+            { "id": "a", "text": "A political party" },
+            { "id": "b", "text": "A modern public library" },
+            { "id": "c", "text": "A trading company independent of Rana control" },
+            { "id": "d", "text": "A new religious sect" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK095",
+        "questionText": "What was the significance of the 'Delhi Agreement' of 1951?",
+        "options": [
+            { "id": "a", "text": "It formally ended the Anglo-Nepal War of 1814-16." },
+            { "id": "b", "text": "It established diplomatic relations between Nepal and the People's Republic of China." },
+            { "id": "c", "text": "It provided a framework for ending Rana rule and establishing a coalition government with the King and Nepali Congress." },
+            { "id": "d", "text": "It settled the border dispute between Nepal and India in the Susta region." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK096",
+        "questionText": "The first general election in Nepal was held in 1959 (2015 BS) under a constitution granted by which King?",
+        "options": [
+            { "id": "a", "text": "King Tribhuvan" },
+            { "id": "b", "text": "King Mahendra" },
+            { "id": "c", "text": "King Birendra" },
+            { "id": "d", "text": "King Gyanendra" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK097",
+        "questionText": "King Mahendra dissolved the elected parliament and banned political parties in 1960. What specific reason or justification did he primarily cite for this action?",
+        "options": [
+            { "id": "a", "text": "Failure of the government to control corruption" },
+            { "id": "b", "text": "Threat of communist takeover" },
+            { "id": "c", "text": "Incompatibility of parliamentary democracy with Nepali conditions and culture" },
+            { "id": "d", "text": "Pressure from the army to assume direct control" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK098",
+        "questionText": "The Panchayat System, introduced by King Mahendra, was characterized by 'partylessness'. What was the \"Back to the Village National Campaign\" (Gaun Pharka Rastriya Abhiyan) primarily intended to achieve?",
+        "options": [
+            { "id": "a", "text": "Promote agricultural development in rural areas" },
+            { "id": "b", "text": "Evaluate and control local Panchayat leaders and propagate Panchayat ideology" },
+            { "id": "c", "text": "Encourage urban populations to relocate to villages" },
+            { "id": "d", "text": "Establish a nationwide network of cooperative societies" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK099",
+        "questionText": "The 'Sukhani Massacre' (Sukhani Kanda) in 1973 involved the killing of several political figures associated with which emerging political movement in eastern Nepal?",
+        "options": [
+            { "id": "a", "text": "Nepali Congress cadres resisting Panchayat" },
+            { "id": "b", "text": "Pro-royalist Panchayat supporters" },
+            { "id": "c", "text": "Early communist revolutionaries (associated with the Jhapa movement)" },
+            { "id": "d", "text": "Ethnic identity activists" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK100",
+        "questionText": "The 1979 (2036 BS) student movement forced King Birendra to call for a national referendum. What was the fundamental question posed in this referendum?",
+        "options": [
+            { "id": "a", "text": "Whether to continue the monarchy or establish a republic" },
+            { "id": "b", "text": "Whether to retain the existing Panchayat system with reforms or adopt a multi-party system" },
+            { "id": "c", "text": "Whether Nepal should align with India or China" },
+            { "id": "d", "text": "Whether to adopt Nepali or English as the sole official language" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK101",
+        "questionText": "What was the 'Piskar Massacre' (Piskar Kanda) that occurred during the Panchayat era, highlighting state repression?",
+        "options": [
+            { "id": "a", "text": "Killing of student protestors in Kathmandu" },
+            { "id": "b", "text": "Extrajudicial killing of communist leaders in Jhapa" },
+            { "id": "c", "text": "Firing by police on villagers attending a cultural program in Sindhupalchok, resulting in deaths" },
+            { "id": "d", "text": "Suppression of a pro-democracy rally in Patan" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK102",
+        "questionText": "The 1990 People's Movement (Jana Andolan I) led to the end of the Panchayat system. Which two major political forces formed a 'United Left Front' alongside the Nepali Congress to spearhead this movement?",
+        "options": [
+            { "id": "a", "text": "Various communist factions (later forming UML) and pro-Indian parties" },
+            { "id": "b", "text": "Rastriya Prajatantra Party and Nepal Workers and Peasants Party" },
+            { "id": "c", "text": "Various communist factions (later forming UML) and Nepal Sadbhavana Party" },
+            { "id": "d", "text": "Various communist factions (primarily ML and Marxist groups, later forming UML)" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK103",
+        "questionText": "The Constitution of the Kingdom of Nepal, 1990, established a constitutional monarchy and multi-party democracy. What significant power, however, remained largely vested with the King?",
+        "options": [
+            { "id": "a", "text": "Power to appoint the Prime Minister" },
+            { "id": "b", "text": "Supreme command of the Royal Nepal Army" },
+            { "id": "c", "text": "Authority to dissolve the Parliament at will" },
+            { "id": "d", "text": "Control over foreign policy decisions" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK104",
+        "questionText": "The Karnali (Chisapani) Bridge, an engineering marvel and vital link to Far-Western Nepal, was completed during the early multi-party era. Which country provided significant technical and financial assistance for its construction?",
+        "options": [
+            { "id": "a", "text": "India" },
+            { "id": "b", "text": "China" },
+            { "id": "c", "text": "Japan" },
+            { "id": "d", "text": "United Kingdom" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK105",
+        "questionText": "The 'Doramba incident' during the Maoist insurgency refers to what specific event that drew international condemnation?",
+        "options": [
+            { "id": "a", "text": "A major attack by Maoists on an army barracks" },
+            { "id": "b", "text": "The abduction and killing of civilian government employees" },
+            { "id": "c", "text": "The killing of Maoist cadres by the Royal Nepal Army during a ceasefire and while unarmed" },
+            { "id": "d", "text": "A large-scale bombing in Kathmandu" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK106",
+        "questionText": "What was the 'Kalapani territory' issue, a recurring point of contention in Nepal-India relations rooted in historical treaties?",
+        "options": [
+            { "id": "a", "text": "A dispute over the source of the Mechi River" },
+            { "id": "b", "text": "Disagreement over border pillar locations in the Terai" },
+            { "id": "c", "text": "A territorial dispute concerning land east of the Lipu Khola / Mahakali River, controlled by India but claimed by Nepal based on the Sugauli Treaty interpretation" },
+            { "id": "d", "text": "Control over trade routes near Kakarbhitta" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK107",
+        "questionText": "Who was the first elected communist Prime Minister of Nepal following the restoration of multi-party democracy in 1990?",
+        "options": [
+            { "id": "a", "text": "Pushpa Kamal Dahal 'Prachanda'" },
+            { "id": "b", "text": "Madhav Kumar Nepal" },
+            { "id": "c", "text": "Man Mohan Adhikari" },
+            { "id": "d", "text": "K.P. Sharma Oli" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK108",
+        "questionText": "The 'Comprehensive Peace Accord' (CPA) signed in November 2006 formally ended the Maoist insurgency. Besides the Nepal Government (led by the Seven Party Alliance), who was the other signatory?",
+        "options": [
+            { "id": "a", "text": "The United Nations Mission in Nepal (UNMIN)" },
+            { "id": "b", "text": "King Gyanendra" },
+            { "id": "c", "text": "The Communist Party of Nepal (Maoist)" },
+            { "id": "d", "text": "The Indian Government as a witness" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK109",
+        "questionText": "What specific type of land grant, often tax-exempt and hereditary, given by the state to individuals (often priests, royals, or officials) was a significant feature of Nepal's feudal land tenure system and abolished gradually after 1951?",
+        "options": [
+            { "id": "a", "text": "Raikar" },
+            { "id": "b", "text": "Kipat" },
+            { "id": "c", "text": "Guthi" },
+            { "id": "d", "text": "Birta" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK110",
+        "questionText": "The 'Kipat' system of land tenure was traditionally associated with which specific communities in eastern Nepal, granting them communal land rights?",
+        "options": [
+            { "id": "a", "text": "Gurungs and Magars" },
+            { "id": "b", "text": "Rais and Limbus" },
+            { "id": "c", "text": "Tharus and Danuwars" },
+            { "id": "d", "text": "Newars and Tamangs" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK111",
+        "questionText": "The 'Gorkhapatra', Nepal's oldest running newspaper, was first published during the reign of which Rana Prime Minister, albeit initially under strict censorship?",
+        "options": [
+            { "id": "a", "text": "Chandra Shumsher" },
+            { "id": "b", "text": "Dev Shumsher" },
+            { "id": "c", "text": "Juddha Shumsher" },
+            { "id": "d", "text": "Padma Shumsher" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK112",
+        "questionText": "The \"Makai Parva\" (Maize Incident) of 1920 involved the persecution of individuals for publishing a book related to what?",
+        "options": [
+            { "id": "a", "text": "Advocating multi-party democracy using maize farming metaphors" },
+            { "id": "b", "text": "Criticizing Rana administration through allegorical references in a book about maize cultivation" },
+            { "id": "c", "text": "Promoting hybrid maize seeds against the government's wishes" },
+            { "id": "d", "text": "Demanding land reform for maize farmers" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK113",
+        "questionText": "The construction of the first major motorable road connecting Kathmandu Valley to the outside world (Tribhuvan Highway) was completed with assistance from which country in the 1950s?",
+        "options": [
+            { "id": "a", "text": "China" },
+            { "id": "b", "text": "United Kingdom" },
+            { "id": "c", "text": "India" },
+            { "id": "d", "text": "United States" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK114",
+        "questionText": "Siddhi Charan Shrestha, Gopal Prasad Rimal, and Kedar Man Vyathit were prominent literary figures associated with which movement or period, often challenging the status quo through their writings?",
+        "options": [
+            { "id": "a", "text": "Bhakti poetry tradition" },
+            { "id": "b", "text": "Pre-unification Malla literature" },
+            { "id": "c", "text": "Romantic and progressive literature during the anti-Rana and early democratic phase" },
+            { "id": "d", "text": "Panchayat-era state-sponsored literature" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK115",
+        "questionText": "The 'Janakpur Incident' of 1962 involved an assassination attempt on which major political figure, leading to increased political repression?",
+        "options": [
+            { "id": "a", "text": "B.P. Koirala" },
+            { "id": "b", "text": "King Mahendra" },
+            { "id": "c", "text": "Tanka Prasad Acharya" },
+            { "id": "d", "text": "Ganesh Man Singh" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK116",
+        "questionText": "What was the 'Operation Romeo' conducted by security forces during the early stages of the Maoist insurgency?",
+        "options": [
+            { "id": "a", "text": "A large-scale military offensive in Maoist heartlands" },
+            { "id": "b", "text": "An operation focused on intelligence gathering and infiltration" },
+            { "id": "c", "text": "A controversial police operation in Rolpa involving alleged human rights abuses and targeting suspected Maoist sympathizers" },
+            { "id": "d", "text": "A program aimed at encouraging Maoist defections" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK117",
+        "questionText": "The ancient trade route connecting the Kathmandu Valley with Tibet passed through which major pass, facilitating cultural and economic exchange for centuries?",
+        "options": [
+            { "id": "a", "text": "Kodari / Kuti Pass" },
+            { "id": "b", "text": "Thorong La Pass" },
+            { "id": "c", "text": "Nangpa La Pass" },
+            { "id": "d", "text": "Tinkar Pass" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK118",
+        "questionText": "Which specific Vihara (monastery) in Patan is renowned for its exquisite metalwork and association with the Licchavi and Malla periods, also known as Hiranyavarna Mahavihar?",
+        "options": [
+            { "id": "a", "text": "Mahaboudha Temple" },
+            { "id": "b", "text": "Rudra Varna Mahavihar (Okubahal)" },
+            { "id": "c", "text": "Golden Temple (Kwa Bahal)" },
+            { "id": "d", "text": "Chilancho Vihara, Kirtipur" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK119",
+        "questionText": "The concept of 'Cheli-beti bechbikhan' (trafficking of girls/women) has historical roots in Nepal, sometimes linked anecdotally or structurally to which past practices or systems?",
+        "options": [
+            { "id": "a", "text": "The Deuki system (offering young girls to temples)" },
+            { "id": "b", "text": "Recruitment practices for foreign armies" },
+            { "id": "c", "text": "Dowry system pressures" },
+            { "id": "d", "text": "Lack of educational opportunities for women during the Rana regime" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK120",
+        "questionText": "Who led the first successful ascent of Mount Everest in 1953, an event that brought international fame to Nepal?",
+        "options": [
+            { "id": "a", "text": "Tenzing Norgay Sherpa and Reinhold Messner" },
+            { "id": "b", "text": "Sir Edmund Hillary and Tenzing Norgay Sherpa" },
+            { "id": "c", "text": "Ang Rita Sherpa and Chris Bonington" },
+            { "id": "d", "text": "Pasang Lhamu Sherpa and Babu Chiri Sherpa" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK121",
+        "questionText": "The establishment of the Royal Nepal Airlines Corporation (RNAC), now Nepal Airlines, occurred during which decade, marking a key step in Nepal's aviation history?",
+        "options": [
+            { "id": "a", "text": "1940s" },
+            { "id": "b", "text": "1950s" },
+            { "id": "c", "text": "1960s" },
+            { "id": "d", "text": "1970s" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK122",
+        "questionText": "The 'Timber Corporation of Nepal' scandal during the Panchayat era highlighted issues of corruption related to the exploitation of which natural resource?",
+        "options": [
+            { "id": "a", "text": "Medicinal herbs" },
+            { "id": "b", "text": "Water resources" },
+            { "id": "c", "text": "Forest resources (timber)" },
+            { "id": "d", "text": "Mineral deposits" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK123",
+        "questionText": "What was the historical significance of the 'Lumbini Master Plan', developed with international cooperation (primarily UN and designed by Kenzo Tange)?",
+        "options": [
+            { "id": "a", "text": "To establish Lumbini as the administrative capital of Nepal" },
+            { "id": "b", "text": "To develop Lumbini as a major industrial hub" },
+            { "id": "c", "text": "To preserve and develop the birthplace of Lord Buddha as an international center for peace and pilgrimage according to a planned design" },
+            { "id": "d", "text": "To create a military base near the Indian border" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK124",
+        "questionText": "The title 'Shree Panch Maharajadhiraja' used by Nepali monarchs signified what specific aspect of their perceived authority?",
+        "options": [
+            { "id": "a", "text": "Their role as the head of the military" },
+            { "id": "b", "text": "Their sovereignty derived solely from the people's mandate" },
+            { "id": "c", "text": "Their divine right to rule and inherent sovereignty (five times respected great king of kings)" },
+            { "id": "d", "text": "Their position as the chief patron of Hinduism" }
+        ],
+        "correctOptionId": "c"
+    },
+        {
+        "id": "GK125",
+        "questionText": "Which major river system in Nepal drains the area between the Dhaulagiri and Annapurna Himal ranges before flowing south?",
+        "options": [
+            { "id": "a", "text": "Karnali River" },
+            { "id": "b", "text": "Gandaki River (Kali Gandaki)" },
+            { "id": "c", "text": "Koshi River" },
+            { "id": "d", "text": "Rapti River (West Rapti)" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK126",
+        "questionText": "The 'Inner Terai' or 'Dun Valleys' (e.g., Dang, Deukhuri, Chitwan) are situated geologically between which two distinct hill ranges?",
+        "options": [
+            { "id": "a", "text": "Terai Plain and Siwalik Hills (Churia)" },
+            { "id": "b", "text": "Siwalik Hills (Churia) and Mahabharat Range" },
+            { "id": "c", "text": "Mahabharat Range and Middle Hills Pahar" },
+            { "id": "d", "text": "Middle Hills Pahar and High Himalayas" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK127",
+        "questionText": "Which of the following high-altitude passes historically served as a major trade route connecting the Manang Valley with Tibet/China?",
+        "options": [
+            { "id": "a", "text": "Thorong La Pass" },
+            { "id": "b", "text": "Nangpa La Pass" },
+            { "id": "c", "text": "Kora La Pass" },
+            { "id": "d", "text": "Larkya La Pass" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK128",
+        "questionText": "Rara Lake, the largest lake in Nepal, is located in the Mugu district. What is its generally accepted primary geological origin?",
+        "options": [
+            { "id": "a", "text": "Glacial Moraine Damming" },
+            { "id": "b", "text": "Volcanic Crater" },
+            { "id": "c", "text": "Tectonic Subsidence / Faulting" },
+            { "id": "d", "text": "Landslide Damming" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK129",
+        "questionText": "The Arun Valley, known for its unique biodiversity, cuts through the main Himalayan axis. Which major river carves this deep valley?",
+        "options": [
+            { "id": "a", "text": "Tamor River" },
+            { "id": "b", "text": "Sun Koshi River" },
+            { "id": "c", "text": "Arun River (a major tributary of the Koshi)" },
+            { "id": "d", "text": "Dudh Koshi River" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK130",
+        "questionText": "Which national park is most renowned for harboring the endangered Red Panda in significant numbers within its temperate forests?",
+        "options": [
+            { "id": "a", "text": "Chitwan National Park" },
+            { "id": "b", "text": "Bardiya National Park" },
+            { "id": "c", "text": "Langtang National Park" },
+            { "id": "d", "text": "Sagarmatha National Park" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK131",
+        "questionText": "The Kali Gandaki Gorge, often cited as one of the world's deepest, lies between which two 8,000-meter peaks?",
+        "options": [
+            { "id": "a", "text": "Mount Everest and Lhotse" },
+            { "id": "b", "text": "Kanchenjunga and Makalu" },
+            { "id": "c", "text": "Dhaulagiri I and Annapurna I" },
+            { "id": "d", "text": "Manaslu and Himalchuli" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK132",
+        "questionText": "What is the dominant climate type experienced in the Upper Mustang region, contributing to its unique landscape and culture?",
+        "options": [
+            { "id": "a", "text": "Tropical Savanna" },
+            { "id": "b", "text": "Humid Subtropical" },
+            { "id": "c", "text": "Alpine Tundra" },
+            { "id": "d", "text": "Cold Desert / Trans-Himalayan Arid and Semi-Arid" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK133",
+        "questionText": "The Siwalik Hills (Churia Range) are primarily composed of which type of relatively young, unconsolidated rock material?",
+        "options": [
+            { "id": "a", "text": "Granite and Gneiss" },
+            { "id": "b", "text": "Limestone and Marble" },
+            { "id": "c", "text": "Sandstone, Mudstone, and Conglomerates" },
+            { "id": "d", "text": "Basalt and Volcanic Ash" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK134",
+        "questionText": "Which specific tributary is the largest contributor by volume to the Sapta Koshi river system before it enters the plains?",
+        "options": [
+            { "id": "a", "text": "Tamor River" },
+            { "id": "b", "text": "Dudh Koshi River" },
+            { "id": "c", "text": "Arun River" },
+            { "id": "d", "text": "Sun Koshi River" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK135",
+        "questionText": "The Chepang people, an indigenous group, are traditionally associated with inhabiting the steeper, less fertile slopes of which specific hill range?",
+        "options": [
+            { "id": "a", "text": "Siwalik Hills (Churia)" },
+            { "id": "b", "text": "Mahabharat Range" },
+            { "id": "c", "text": "Middle Hills (Pahar zone near river valleys)" },
+            { "id": "d", "text": "High Himalayan foothills" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK136",
+        "questionText": "Phoksundo Lake in Dolpa district, known for its stunning turquoise color, was formed primarily by what geological event?",
+        "options": [
+            { "id": "a", "text": "Glacial scouring" },
+            { "id": "b", "text": "Tectonic depression" },
+            { "id": "c", "text": "Ancient landslide damming the Suli Gad river" },
+            { "id": "d", "text": "Volcanic activity" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK137",
+        "questionText": "Which district in Nepal typically records the highest annual rainfall, primarily due to the direct impact of the summer monsoon against the Annapurna range?",
+        "options": [
+            { "id": "a", "text": "Taplejung" },
+            { "id": "b", "text": "Kaski (specifically Lumle area near Pokhara)" },
+            { "id": "c", "text": "Sindhupalchok" },
+            { "id": "d", "text": "Ilam" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK138",
+        "questionText": "Gosainkunda Lake, a significant pilgrimage site, is located in which National Park?",
+        "options": [
+            { "id": "a", "text": "Shey Phoksundo National Park" },
+            { "id": "b", "text": "Makalu Barun National Park" },
+            { "id": "c", "text": "Langtang National Park" },
+            { "id": "d", "text": "Khaptad National Park" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK139",
+        "questionText": "What type of agricultural practice is most characteristic and essential for farming on the steep slopes of Nepal's Middle Hills?",
+        "options": [
+            { "id": "a", "text": "Shifting Cultivation (Slash-and-burn)" },
+            { "id": "b", "text": "Intensive Terrace Farming" },
+            { "id": "c", "text": "Large-scale Mechanized Farming" },
+            { "id": "d", "text": "Greenhouse Hydroponics" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK140",
+        "questionText": "Which Conservation Area serves as a critical transboundary landscape connecting habitats in Nepal with Sikkim and West Bengal in India, vital for Kanchenjunga's ecosystem?",
+        "options": [
+            { "id": "a", "text": "Annapurna Conservation Area (ACA)" },
+            { "id": "b", "text": "Manaslu Conservation Area (MCA)" },
+            { "id": "c", "text": "Kanchenjunga Conservation Area (KCA)" },
+            { "id": "d", "text": "Api Nampa Conservation Area (ANCA)" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK141",
+        "questionText": "The Karnali River enters Nepal from Tibet (China) where it is known by which name?",
+        "options": [
+            { "id": "a", "text": "Yarlung Tsangpo" },
+            { "id": "b", "text": "Mapcha Khambab / Humla Karnali" },
+            { "id": "c", "text": "Indus River" },
+            { "id": "d", "text": "Sutlej River" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK142",
+        "questionText": "Which specific highway connects Kathmandu Valley to the Eastern Terai, running through Sindhuli and Bardibas, offering an alternative to the Prithvi/Mahendra highway route?",
+        "options": [
+            { "id": "a", "text": "Araniko Highway" },
+            { "id": "b", "text": "Siddhartha Highway" },
+            { "id": "c", "text": "B.P. Highway (Banepa-Sindhuli-Bardibas Road)" },
+            { "id": "d", "text": "Mid-Hill Highway (Pushpalal Lokmarga)" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK143",
+        "questionText": "What significant mineral resource, crucial for the cement industry, is found in abundance near the area of Udayapur district?",
+        "options": [
+            { "id": "a", "text": "Iron Ore" },
+            { "id": "b", "text": "Copper" },
+            { "id": "c", "text": "Limestone" },
+            { "id": "d", "text": "Mica" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK144",
+        "questionText": "The Tharu community, the largest indigenous group of the Terai, traditionally built their houses using local materials. What is a characteristic feature or name associated with their traditional dwellings?",
+        "options": [
+            { "id": "a", "text": "Igloo-shaped structures" },
+            { "id": "b", "text": "Stilt houses raised above ground" },
+            { "id": "c", "text": "Longhouses or 'Badaghar' made of mud, dung, and thatch" },
+            { "id": "d", "text": "Cave dwellings" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK145",
+        "questionText": "Which region of Nepal is most susceptible to Glacial Lake Outburst Floods (GLOFs) due to the concentration of large glaciers and proglacial lakes?",
+        "options": [
+            { "id": "a", "text": "Far-Western Terai" },
+            { "id": "b", "text": "Central Middle Hills" },
+            { "id": "c", "text": "High Himalayan regions, particularly the Koshi and Gandaki basins" },
+            { "id": "d", "text": "Kathmandu Valley" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK146",
+        "questionText": "The Api Nampa Conservation Area is located in which far-corner district of Nepal, bordering India and China (Tibet)?",
+        "options": [
+            { "id": "a", "text": "Humla" },
+            { "id": "b", "text": "Dolpa" },
+            { "id": "c", "text": "Taplejung" },
+            { "id": "d", "text": "Darchula" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK147",
+        "questionText": "What is 'Yarsagumba' (Ophiocordyceps sinensis), a high-value commodity collected seasonally in the alpine meadows of Nepal?",
+        "options": [
+            { "id": "a", "text": "A rare medicinal orchid" },
+            { "id": "b", "text": "A type of high-altitude gemstone" },
+            { "id": "c", "text": "A fungus that parasitizes ghost moth larvae (Caterpillar fungus)" },
+            { "id": "d", "text": "A type of aromatic incense wood" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK148",
+        "questionText": "Which major city in the Terai serves as a primary gateway to Lumbini, the birthplace of Lord Buddha?",
+        "options": [
+            { "id": "a", "text": "Birgunj" },
+            { "id": "b", "text": "Biratnagar" },
+            { "id": "c", "text": "Bhairahawa (Siddharthanagar)" },
+            { "id": "d", "text": "Nepalgunj" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK149",
+        "questionText": "The Rapti river that flows through Chitwan National Park belongs to which major river basin system?",
+        "options": [
+            { "id": "a", "text": "Koshi River Basin" },
+            { "id": "b", "text": "Gandaki River Basin (Narayani)" },
+            { "id": "c", "text": "Karnali River Basin" },
+            { "id": "d", "text": "Mahakali River Basin" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK150",
+        "questionText": "Which valley within the Kathmandu Valley complex is historically renowned for its traditional wood carving skills and ancient temples like Nyatapola?",
+        "options": [
+            { "id": "a", "text": "Kathmandu Valley proper" },
+            { "id": "b", "text": "Bhaktapur Valley" },
+            { "id": "c", "text": "Lalitpur (Patan) Valley area" },
+            { "id": "d", "text": "Kirtipur area" }
+        ],
+        "correctOptionId": "b"
+    },
+    
+    {
+        "id": "GK151",
+        "questionText": "What does the term 'Charkose Jhadi' historically refer to in the context of Nepal's Terai geography?",
+        "options": [
+            { "id": "a", "text": "A specific type of monsoon wind pattern" },
+            { "id": "b", "text": "A dense, approximately eight-mile wide belt of hardwood forest along the southern foothills (now largely cleared)" },
+            { "id": "c", "text": "A traditional Tharu irrigation system" },
+            { "id": "d", "text": "A measure of distance used by early surveyors" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK152",
+        "questionText": "Besides hydropower potential, which other energy resource has significant potential (though largely untapped) in the geothermal springs found along fault lines in the Middle Hills and Himalayas?",
+        "options": [
+            { "id": "a", "text": "Solar energy concentration" },
+            { "id": "b", "text": "Wind energy generation" },
+            { "id": "c", "text": "Geothermal energy" },
+            { "id": "d", "text": "Tidal energy" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK153",
+        "questionText": "Which protected area in the Terai is particularly crucial for the conservation of the Gharial crocodile (Gavialis gangeticus)?",
+        "options": [
+            { "id": "a", "text": "Parsa National Park" },
+            { "id": "b", "text": "Shuklaphanta National Park" },
+            { "id": "c", "text": "Chitwan National Park (specifically Rapti and Narayani rivers)" },
+            { "id": "d", "text": "Banke National Park" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK154",
+        "questionText": "The 'Mahabharat Lekh' range plays a crucial role in Nepal's climate by acting as a barrier primarily affecting what?",
+        "options": [
+            { "id": "a", "text": "Blocking cold winds from Tibet" },
+            { "id": "b", "text": "Influencing the intensity and distribution of monsoon rainfall (forcing moisture uplift)" },
+            { "id": "c", "text": "Creating a rain shadow effect in the Terai" },
+            { "id": "d", "text": "Generating katabatic winds at night" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK155",
+        "questionText": "Which major earthquake in Nepal's recent history (before 2015) caused significant damage primarily in Eastern Nepal and adjoining areas of India in 1988?",
+        "options": [
+            { "id": "a", "text": "The 1934 Nepal-Bihar Earthquake" },
+            { "id": "b", "text": "The 2011 Sikkim Earthquake (felt strongly in East Nepal)" },
+            { "id": "c", "text": "The Udayapur Earthquake (1988)" },
+            { "id": "d", "text": "The Bajhang Earthquake (1980)" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK156",
+        "questionText": "Which district is famously known as the 'Kingdom of Apples' in Nepal due to its suitable climate and successful horticulture?",
+        "options": [
+            { "id": "a", "text": "Manang" },
+            { "id": "b", "text": "Mustang" },
+            { "id": "c", "text": "Jumla" },
+            { "id": "d", "text": "Dolpa" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK157",
+        "questionText": "What type of soil is predominantly found in the Terai plains, making it the most fertile agricultural region of Nepal?",
+        "options": [
+            { "id": "a", "text": "Red Laterite Soil" },
+            { "id": "b", "text": "Black Cotton Soil (Regur)" },
+            { "id": "c", "text": "Alluvial Soil (transported by rivers)" },
+            { "id": "d", "text": "Podzolic Soil" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK158",
+        "questionText": "The Marsyangdi River, popular for white-water rafting, originates from the glaciers surrounding which major mountain massif?",
+        "options": [
+            { "id": "a", "text": "Kanchenjunga" },
+            { "id": "b", "text": "Dhaulagiri" },
+            { "id": "c", "text": "Manaslu and Annapurna II/IV region" },
+            { "id": "d", "text": "Everest" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK159",
+        "questionText": "Which geographical feature forms the natural border between Nepal and China along most of the northern frontier?",
+        "options": [
+            { "id": "a", "text": "The Mahabharat Range" },
+            { "id": "b", "text": "The crest line of the High Himalayas" },
+            { "id": "c", "text": "The Siwalik Hills" },
+            { "id": "d", "text": "The Bhabar zone" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK160",
+        "questionText": "What is the approximate percentage of Nepal's total land area covered by the Terai region?",
+        "options": [
+            { "id": "a", "text": "About 5%" },
+            { "id": "b", "text": "About 17%" },
+            { "id": "c", "text": "About 35%" },
+            { "id": "d", "text": "About 50%" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK161",
+        "questionText": "The ancient salt trade route between Tibet and Nepal's middle hills often involved the use of which pack animal, well-suited for high altitudes?",
+        "options": [
+            { "id": "a", "text": "Camels" },
+            { "id": "b", "text": "Domestic Elephants" },
+            { "id": "c", "text": "Yaks and Mules/Horses" },
+            { "id": "d", "text": "Water Buffaloes" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK162",
+        "questionText": "Which area near Pokhara is known for its numerous small lakes and sinkholes, suggesting complex karst topography?",
+        "options": [
+            { "id": "a", "text": "The northern slopes of Sarangkot" },
+            { "id": "b", "text": "The area around Lakeside proper" },
+            { "id": "c", "text": "The southern limestone foothills near Fusre Khola / Matepani area" },
+            { "id": "d", "text": "The Seti River gorge" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK163",
+        "questionText": "The Sun Koshi dam project, a major hydropower and irrigation scheme discussed for decades, would primarily inundate areas in which districts?",
+        "options": [
+            { "id": "a", "text": "Mustang and Manang" },
+            { "id": "b", "text": "Ramechhap, Okhaldhunga, Khotang, Udayapur, Sindhuli" },
+            { "id": "c", "text": "Kaski and Parbat" },
+            { "id": "d", "text": "Humla and Jumla" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK164",
+        "questionText": "Which ethnic group is traditionally dominant in the higher elevations of the Kanchenjunga region (Taplejung district)?",
+        "options": [
+            { "id": "a", "text": "Thakali" },
+            { "id": "b", "text": "Sherpa / Bhotiya communities (Lhomi, Walung)" },
+            { "id": "c", "text": "Gurung" },
+            { "id": "d", "text": "Magar" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK165",
+        "questionText": "What is the 'Bhabar zone' geographically situated immediately north of the Terai plain?",
+        "options": [
+            { "id": "a", "text": "A marshy grassland area" },
+            { "id": "b", "text": "A steeply rising mountain range" },
+            { "id": "c", "text": "A porous zone of boulders and gravel deposited by Himalayan rivers where water tables are deep" },
+            { "id": "d", "text": "The main agricultural belt of the Terai" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK166",
+        "questionText": "Which major highway corridor is being developed along the foothills of the Himalayas, intended to connect various mid-hill district headquarters?",
+        "options": [
+            { "id": "a", "text": "Mahendra Highway (East-West Highway)" },
+            { "id": "b", "text": "Araniko Highway" },
+            { "id": "c", "text": "Pushpalal Lokmarga (Mid-Hill Highway)" },
+            { "id": "d", "text": "Feeder roads connecting to India" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK167",
+        "questionText": "The peak commonly known as 'Machhapuchhre' (Fishtail) is considered sacred and officially off-limits for climbing. It is a satellite peak of which larger massif?",
+        "options": [
+            { "id": "a", "text": "Dhaulagiri Himal" },
+            { "id": "b", "text": "Manaslu Himal" },
+            { "id": "c", "text": "Annapurna Himal (specifically Annapurna South)" },
+            { "id": "d", "text": "Ganesh Himal" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK168",
+        "questionText": "Which city serves as the administrative headquarters of the Karnali Province?",
+        "options": [
+            { "id": "a", "text": "Nepalgunj" },
+            { "id": "b", "text": "Jumla Khalanga" },
+            { "id": "c", "text": "Birendranagar (Surkhet)" },
+            { "id": "d", "text": "Simikot" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK169",
+        "questionText": "What climatic phenomenon causes occasional 'winter rains' in Nepal, important for winter crops, distinct from the summer monsoon?",
+        "options": [
+            { "id": "a", "text": "Easterly Waves" },
+            { "id": "b", "text": "Nor'westers (Chait Jhari)" },
+            { "id": "c", "text": "Western Disturbances (originating from the Mediterranean)" },
+            { "id": "d", "text": "Tropical Cyclones from the Bay of Bengal" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK170",
+        "questionText": "The Tamang people, one of Nepal's largest indigenous groups, are predominantly concentrated in the districts surrounding which major valley?",
+        "options": [
+            { "id": "a", "text": "Pokhara Valley" },
+            { "id": "b", "text": "Kathmandu Valley" },
+            { "id": "c", "text": "Dang Valley" },
+            { "id": "d", "text": "Arun Valley" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK171",
+        "questionText": "Which pass provides the main road access between Kathmandu Valley and Kerung (Gyirong) in Tibet, China, via the Araniko Highway (before earthquake damage)?",
+        "options": [
+            { "id": "a", "text": "Kodari Pass (near Tatopani)" },
+            { "id": "b", "text": "Rasuwa Pass (near Rasuwagadhi)" },
+            { "id": "c", "text": "Kora La Pass" },
+            { "id": "d", "text": "Tinkar Pass" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK172",
+        "questionText": "Khaptad National Park in Far-Western Nepal is unique for preserving a high-altitude ecosystem primarily characterized by what type of landscape?",
+        "options": [
+            { "id": "a", "text": "Dense Rhododendron forests" },
+            { "id": "b", "text": "Rolling moorlands, pastures, and oak/fir forests" },
+            { "id": "c", "text": "Arid trans-Himalayan steppe" },
+            { "id": "d", "text": "Tropical Sal forest" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK173",
+        "questionText": "Which of the following is NOT one of the three major river systems (basins) draining Nepal?",
+        "options": [
+            { "id": "a", "text": "Koshi River System" },
+            { "id": "b", "text": "Gandaki River System" },
+            { "id": "c", "text": "Karnali River System" },
+            { "id": "d", "text": "Indus River System" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK174",
+        "questionText": "What topographical feature is known as 'Charkhal Adda' in Kathmandu, historically significant as a central administrative and proclamation point, reflecting urban geography?",
+        "options": [
+            { "id": "a", "text": "A major river confluence" },
+            { "id": "b", "text": "The highest point in the city" },
+            { "id": "c", "text": "An open courtyard area near the old royal palace (Hanuman Dhoka) used for public gatherings/announcements" },
+            { "id": "d", "text": "A sacred grove of trees" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK175",
+        "questionText": "In professional tennis, what does the term 'protected ranking' primarily allow a player to do?",
+        "options": [
+            { "id": "a", "text": "Challenge line calls using Hawk-Eye an unlimited number of times." },
+            { "id": "b", "text": "Enter the main draw of tournaments using their pre-injury ranking after a long absence." },
+            { "id": "c", "text": "Choose their preferred court surface for matches." },
+            { "id": "d", "text": "Receive coaching from their box during points." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK176",
+        "questionText": "The 'Bosman ruling' in 1995 by the European Court of Justice had a profound impact on which aspect of professional football (soccer)?",
+        "options": [
+            { "id": "a", "text": "The number of foreign players allowed in a team's matchday squad." },
+            { "id": "b", "text": "Players' freedom of movement to other clubs upon contract expiry without a transfer fee." },
+            { "id": "c", "text": "The rules regarding tackling from behind." },
+            { "id": "d", "text": "Television broadcasting rights negotiations." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK177",
+        "questionText": "Which athletics field event involves a 'runway', a 'take-off board', and a 'landing area' filled with sand?",
+        "options": [
+            { "id": "a", "text": "High Jump" },
+            { "id": "b", "text": "Javelin Throw" },
+            { "id": "c", "text": "Long Jump / Triple Jump" },
+            { "id": "d", "text": "Discus Throw" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK178",
+        "questionText": "In cricket, what does the Duckworth-Lewis-Stern (DLS) method primarily aim to calculate?",
+        "options": [
+            { "id": "a", "text": "The speed of the bowler's delivery." },
+            { "id": "b", "text": "The fair target score for the team batting second in an interrupted limited-overs match." },
+            { "id": "c", "text": "The ranking points of international teams." },
+            { "id": "d", "text": "The spin rate of the ball imparted by a spinner." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK179",
+        "questionText": "The 'Miracle on Ice' at the 1980 Winter Olympics involved a stunning upset victory by the US amateur team over the dominant Soviet Union team in which sport?",
+        "options": [
+            { "id": "a", "text": "Bobsleigh" },
+            { "id": "b", "text": "Figure Skating" },
+            { "id": "c", "text": "Ski Jumping" },
+            { "id": "d", "text": "Ice Hockey" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK180",
+        "questionText": "Which martial art, originating from Brazil, combines elements of dance, acrobatics, and music, and was historically developed by enslaved Africans?",
+        "options": [
+            { "id": "a", "text": "Krav Maga" },
+            { "id": "b", "text": "Capoeira" },
+            { "id": "c", "text": "Aikido" },
+            { "id": "d", "text": "Taekwondo" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK181",
+        "questionText": "In rugby union, what is a 'rolling maul'?",
+        "options": [
+            { "id": "a", "text": "A type of scrum formation used near the try line." },
+            { "id": "b", "text": "A phase of play where players bind together with the ball carrier and drive forward." },
+            { "id": "c", "text": "A penalty kick awarded for dangerous play." },
+            { "id": "d", "text": "The celebratory dive when scoring a try." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK182",
+        "questionText": "The 'Curse of the Billy Goat' was a famous superstition associated with the long World Series drought of which Major League Baseball (MLB) team?",
+        "options": [
+            { "id": "a", "text": "Boston Red Sox" },
+            { "id": "b", "text": "New York Yankees" },
+            { "id": "c", "text": "Chicago Cubs" },
+            { "id": "d", "text": "Los Angeles Dodgers" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK183",
+        "questionText": "Which of these cycling races is NOT one of the three 'Grand Tours'?",
+        "options": [
+            { "id": "a", "text": "Tour de France" },
+            { "id": "b", "text": "Giro d'Italia" },
+            { "id": "c", "text": "Vuelta a España" },
+            { "id": "d", "text": "Paris-Roubaix" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK184",
+        "questionText": "In basketball, what constitutes a 'triple-double'?",
+        "options": [
+            { "id": "a", "text": "Scoring 30 points, 10 rebounds, and 10 assists in a single game." },
+            { "id": "b", "text": "Achieving double-digit totals in three positive statistical categories (e.g., points, rebounds, assists, steals, blocks) in one game." },
+            { "id": "c", "text": "Making three consecutive three-point shots without a miss." },
+            { "id": "d", "text": "Winning three championships in a row." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK185",
+        "questionText": "The ancient Olympic Games, held in Olympia, Greece, included the 'Pankration', which was a brutal combination of which two combat sports?",
+        "options": [
+            { "id": "a", "text": "Fencing and Archery" },
+            { "id": "b", "text": "Boxing and Wrestling" },
+            { "id": "c", "text": "Chariot Racing and Running" },
+            { "id": "d", "text": "Javelin and Discus" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK186",
+        "questionText": "In Formula 1 racing, what does the term 'DRS' (Drag Reduction System) refer to?",
+        "options": [
+            { "id": "a", "text": "A system that improves fuel efficiency." },
+            { "id": "b", "text": "An adjustable rear wing flap that reduces drag for overtaking on specific zones." },
+            { "id": "c", "text": "The safety car deployed during accidents." },
+            { "id": "d", "text": "The communication system between the driver and the pit crew." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK187",
+        "questionText": "Which piece in Chess is the only one that can 'jump' over other pieces?",
+        "options": [
+            { "id": "a", "text": "Rook" },
+            { "id": "b", "text": "Bishop" },
+            { "id": "c", "text": "Queen" },
+            { "id": "d", "text": "Knight" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK188",
+        "questionText": "The Ryder Cup is a prestigious biennial team competition in which sport, contested between teams from Europe and the United States?",
+        "options": [
+            { "id": "a", "text": "Tennis" },
+            { "id": "b", "text": "Golf" },
+            { "id": "c", "text": "Cricket" },
+            { "id": "d", "text": "Sailing" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK189",
+        "questionText": "What is the primary objective of the 'sweeping' action performed by players in the sport of Curling?",
+        "options": [
+            { "id": "a", "text": "To clear debris from the ice path." },
+            { "id": "b", "text": "To slightly melt the ice, reducing friction and influencing the stone's path and distance." },
+            { "id": "c", "text": "To communicate signals to the skip (captain)." },
+            { "id": "d", "text": "To warm up the players' muscles during play." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK190",
+        "questionText": "The term 'Golden Slam' in tennis refers to winning all four Grand Slam tournaments (Australian Open, French Open, Wimbledon, US Open) and which other major title in the same calendar year?",
+        "options": [
+            { "id": "a", "text": "The Davis Cup / Billie Jean King Cup" },
+            { "id": "b", "text": "The ATP / WTA Finals" },
+            { "id": "c", "text": "The Olympic Gold Medal" },
+            { "id": "d", "text": "The Indian Wells Masters" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK191",
+        "questionText": "Which swimming stroke is characterized by the simultaneous movement of the arms and legs on the same horizontal plane, often considered one of the most technically complex?",
+        "options": [
+            { "id": "a", "text": "Freestyle (Front Crawl)" },
+            { "id": "b", "text": "Backstroke" },
+            { "id": "c", "text": "Breaststroke" },
+            { "id": "d", "text": "Butterfly" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK192",
+        "questionText": "The 'Haka', a traditional Māori posture dance, is famously performed before matches by the national rugby team of which country?",
+        "options": [
+            { "id": "a", "text": "Australia" },
+            { "id": "b", "text": "South Africa" },
+            { "id": "c", "text": "Fiji" },
+            { "id": "d", "text": "New Zealand" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK193",
+        "questionText": "In American Football (NFL), what is the 'line of scrimmage'?",
+        "options": [
+            { "id": "a", "text": "The boundary line at the back of the end zone." },
+            { "id": "b", "text": "The yard line where the ball is placed before a play begins, separating offense and defense." },
+            { "id": "c", "text": "The path the quarterback takes when running with the ball." },
+            { "id": "d", "text": "The area where coaches and substitutes stand during the game." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK194",
+        "questionText": "Which of these is NOT one of the five events in the Modern Pentathlon?",
+        "options": [
+            { "id": "a", "text": "Fencing (épée)" },
+            { "id": "b", "text": "Swimming (200m freestyle)" },
+            { "id": "c", "text": "Equestrian show jumping" },
+            { "id": "d", "text": "Archery" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK195",
+        "questionText": "The concept of 'Total Football' (Totaalvoetbal) is a tactical theory in football most famously associated with the Netherlands national team of which decade?",
+        "options": [
+            { "id": "a", "text": "1950s" },
+            { "id": "b", "text": "1970s" },
+            { "id": "c", "text": "1990s" },
+            { "id": "d", "text": "2010s" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK196",
+        "questionText": "Which game, originating in the Indian subcontinent, involves two teams occupying opposite halves of a field and sending a 'raider' into the other half to tag defenders and return without being tackled, all while chanting \"kabaddi, kabaddi\"?",
+        "options": [
+            { "id": "a", "text": "Kho Kho" },
+            { "id": "b", "text": "Kabaddi" },
+            { "id": "c", "text": "Sepak Takraw" },
+            { "id": "d", "text": "Lagori" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK197",
+        "questionText": "In boxing, what weight class typically falls between Lightweight and Welterweight?",
+        "options": [
+            { "id": "a", "text": "Featherweight" },
+            { "id": "b", "text": "Bantamweight" },
+            { "id": "c", "text": "Light Welterweight (or Super Lightweight)" },
+            { "id": "d", "text": "Middleweight" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK198",
+        "questionText": "The 'Ironman Triathlon' consists of a 2.4-mile swim, a 112-mile bicycle ride, and a marathon 26.22-mile run. Where were the original Ironman World Championship races held?",
+        "options": [
+            { "id": "a", "text": "Nice, France" },
+            { "id": "b", "text": "Lake Placid, USA" },
+            { "id": "c", "text": "Kona, Hawaii, USA" },
+            { "id": "d", "text": "Roth, Germany" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK199",
+        "questionText": "What does the acronym 'VAR' stand for in the context of football officiating?",
+        "options": [
+            { "id": "a", "text": "Virtual Adjudication Referee" },
+            { "id": "b", "text": "Video Assistant Referee" },
+            { "id": "c", "text": "Visual Accuracy Review" },
+            { "id": "d", "text": "Verified Action Replay" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK200",
+        "questionText": "Which country is considered the birthplace of Sumo wrestling, where it holds significant cultural and religious importance?",
+        "options": [
+            { "id": "a", "text": "China" },
+            { "id": "b", "text": "Korea" },
+            { "id": "c", "text": "Japan" },
+            { "id": "d", "text": "Mongolia" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK201",
+        "questionText": "In cricket, the 'Laws of Cricket' are traditionally maintained and copyrighted by which private club based in London?",
+        "options": [
+            { "id": "a", "text": "The International Cricket Council (ICC)" },
+            { "id": "b", "text": "Cricket Australia (CA)" },
+            { "id": "c", "text": "Board of Control for Cricket in India (BCCI)" },
+            { "id": "d", "text": "Marylebone Cricket Club (MCC)" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK202",
+        "questionText": "What is the term for the foul committed in basketball when an offensive player runs into a defensive player who has established a stationary legal guarding position?",
+        "options": [
+            { "id": "a", "text": "Blocking Foul" },
+            { "id": "b", "text": "Charging Foul (Offensive Foul)" },
+            { "id": "c", "text": "Technical Foul" },
+            { "id": "d", "text": "Flagrant Foul" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK203",
+        "questionText": "The 'Peloton' is a term used in road cycling referring to what?",
+        "options": [
+            { "id": "a", "text": "The team support car following the race." },
+            { "id": "b", "text": "The main group or pack of riders." },
+            { "id": "c", "text": "The final sprint towards the finish line." },
+            { "id": "d", "text": "The leader's jersey (e.g., yellow jersey in Tour de France)." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK204",
+        "questionText": "Which popular board game involves players acting as settlers establishing colonies on an island, trading resources like wood, brick, wheat, sheep, and ore?",
+        "options": [
+            { "id": "a", "text": "Monopoly" },
+            { "id": "b", "text": "Risk" },
+            { "id": "c", "text": "Catan (formerly The Settlers of Catan)" },
+            { "id": "d", "text": "Ticket to Ride" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK205",
+        "questionText": "In field hockey, what is the penalty called when a defending player commits a foul within the shooting circle that prevents a probable goal?",
+        "options": [
+            { "id": "a", "text": "Penalty Corner" },
+            { "id": "b", "text": "Free Hit" },
+            { "id": "c", "text": "Penalty Stroke" },
+            { "id": "d", "text": "Long Corner" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK206",
+        "questionText": "The 'Fosbury Flop', revolutionized which athletics event by having the athlete jump headfirst and backwards over the bar?",
+        "options": [
+            { "id": "a", "text": "Pole Vault" },
+            { "id": "b", "text": "Long Jump" },
+            { "id": "c", "text": "Triple Jump" },
+            { "id": "d", "text": "High Jump" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK207",
+        "questionText": "Which legendary figure skater was at the center of a controversy involving an attack on her rival Nancy Kerrigan before the 1994 Winter Olympics?",
+        "options": [
+            { "id": "a", "text": "Kristi Yamaguchi" },
+            { "id": "b", "text": "Katarina Witt" },
+            { "id": "c", "text": "Tonya Harding" },
+            { "id": "d", "text": "Michelle Kwan" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK208",
+        "questionText": "What is the maximum number of players a team can have on the court at one time in a standard game of Volleyball?",
+        "options": [
+            { "id": "a", "text": "5" },
+            { "id": "b", "text": "6" },
+            { "id": "c", "text": "7" },
+            { "id": "d", "text": "11" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK209",
+        "questionText": "The term 'Silks' refers to the distinctive coloured jackets worn by jockeys in which sport?",
+        "options": [
+            { "id": "a", "text": "Polo" },
+            { "id": "b", "text": "Equestrian Dressage" },
+            { "id": "c", "text": "Horse Racing" },
+            { "id": "d", "text": "Show Jumping" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK210",
+        "questionText": "Which strategy board game, often played on a 19x19 grid, involves two players placing black and white stones with the aim of surrounding more territory than the opponent?",
+        "options": [
+            { "id": "a", "text": "Chess" },
+            { "id": "b", "text": "Checkers (Draughts)" },
+            { "id": "c", "text": "Go" },
+            { "id": "d", "text": "Shogi" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK211",
+        "questionText": "In professional snooker, potting the black ball after potting all 15 red balls and the six colours in sequence results in what maximum possible break score?",
+        "options": [
+            { "id": "a", "text": "100" },
+            { "id": "b", "text": "140" },
+            { "id": "c", "text": "147" },
+            { "id": "d", "text": "155" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK212",
+        "questionText": "The 'Mankad' is a controversial mode of dismissal in cricket named after Indian cricketer Vinoo Mankad. How does this dismissal occur?",
+        "options": [
+            { "id": "a", "text": "The bowler hits the wicket with the ball before entering their delivery stride." },
+            { "id": "b", "text": "The fielder catches the ball after it has bounced off another fielder." },
+            { "id": "c", "text": "The bowler runs out the non-striking batsman who is backing up too far before the ball is delivered." },
+            { "id": "d", "text": "The batsman obstructs the field during play." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK213",
+        "questionText": "Which multi-sport event, held every four years, is specifically for athletes from Commonwealth nations?",
+        "options": [
+            { "id": "a", "text": "Asian Games" },
+            { "id": "b", "text": "Pan American Games" },
+            { "id": "c", "text": "Commonwealth Games" },
+            { "id": "d", "text": "Maccabiah Games" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK214",
+        "questionText": "What is the term for the area behind the goals at each end of an ice hockey rink?",
+        "options": [
+            { "id": "a", "text": "The Neutral Zone" },
+            { "id": "b", "text": "The Blue Line Area" },
+            { "id": "c", "text": "The Crease" },
+            { "id": "d", "text": "The Trapezoid (in NHL, area where goalie can play puck) / Behind the Goal Line" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK215",
+        "questionText": "Which country won the first ever FIFA World Cup tournament held in 1930?",
+        "options": [
+            { "id": "a", "text": "Brazil" },
+            { "id": "b", "text": "Italy" },
+            { "id": "c", "text": "Argentina" },
+            { "id": "d", "text": "Uruguay" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK216",
+        "questionText": "In sailing, what does 'tacking' refer to?",
+        "options": [
+            { "id": "a", "text": "Turning the bow (front) of the boat through the wind so the wind changes from one side to the other." },
+            { "id": "b", "text": "Turning the stern (back) of the boat through the wind (also called gybing/jibing)." },
+            { "id": "c", "text": "Lowering the sails completely." },
+            { "id": "d", "text": "Anchoring the boat." }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK217",
+        "questionText": "The term 'Hat-trick' originated in cricket. How did a player originally earn the 'hat'?",
+        "options": [
+            { "id": "a", "text": "By scoring three centuries in a row." },
+            { "id": "b", "text": "By taking three wickets with consecutive deliveries, traditionally rewarded with a hat collected for the player." },
+            { "id": "c", "text": "By hitting three sixes in one over." },
+            { "id": "d", "text": "By bowling three maiden overs consecutively." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK218",
+        "questionText": "Which Winter Olympic sport involves athletes skiing down a mountain course marked by gates, with variations like Slalom, Giant Slalom, Super-G, and Downhill?",
+        "options": [
+            { "id": "a", "text": "Biathlon" },
+            { "id": "b", "text": "Nordic Combined" },
+            { "id": "c", "text": "Alpine Skiing" },
+            { "id": "d", "text": "Cross-Country Skiing" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK219",
+        "questionText": "What is the name of the traditional Scottish Highland Games event where competitors toss a large tapered pole called a 'caber'?",
+        "options": [
+            { "id": "a", "text": "Hammer Throw" },
+            { "id": "b", "text": "Stone Put" },
+            { "id": "c", "text": "Caber Toss" },
+            { "id": "d", "text": "Weight for Height" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK220",
+        "questionText": "In badminton, a standard match is typically played as best of how many games?",
+        "options": [
+            { "id": "a", "text": "One" },
+            { "id": "b", "text": "Three" },
+            { "id": "c", "text": "Five" },
+            { "id": "d", "text": "Seven" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK221",
+        "questionText": "Which iconic stadium, known as the 'Theatre of Dreams', is the home ground of Manchester United football club?",
+        "options": [
+            { "id": "a", "text": "Anfield" },
+            { "id": "b", "text": "Stamford Bridge" },
+            { "id": "c", "text": "Emirates Stadium" },
+            { "id": "d", "text": "Old Trafford" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK222",
+        "questionText": "What specific rule distinguishes Greco-Roman wrestling from Freestyle wrestling?",
+        "options": [
+            { "id": "a", "text": "Greco-Roman wrestlers cannot use holds below the waist or use their legs to trip or lift opponents." },
+            { "id": "b", "text": "Freestyle wrestling matches are longer." },
+            { "id": "c", "text": "Only Greco-Roman wrestling is an Olympic sport." },
+            { "id": "d", "text": "Points are scored differently for takedowns in Greco-Roman." }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK223",
+        "questionText": "The 'Commissioner's Trophy' is awarded annually to the champion team of which major North American professional sports league?",
+        "options": [
+            { "id": "a", "text": "National Football League (NFL)" },
+            { "id": "b", "text": "National Basketball Association (NBA)" },
+            { "id": "c", "text": "National Hockey League (NHL)" },
+            { "id": "d", "text": "Major League Baseball (MLB)" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK224",
+        "questionText": "Which esports (electronic sports) title, a Multiplayer Online Battle Arena (MOBA) game developed by Valve, hosts 'The International', an annual tournament known for having one of the largest prize pools in esports history?",
+        "options": [
+            { "id": "a", "text": "League of Legends" },
+            { "id": "b", "text": "Counter-Strike: Global Offensive (CS:GO) / Counter-Strike 2" },
+            { "id": "c", "text": "Dota 2" },
+            { "id": "d", "text": "Overwatch" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK225",
+        "questionText": "According to the Constitution of Nepal (2015), how is the Prime Minister typically appointed?",
+        "options": [
+            { "id": "a", "text": "Directly elected by the people in a separate election." },
+            { "id": "b", "text": "Nominated by the President without parliamentary consideration." },
+            { "id": "c", "text": "The leader of the parliamentary party commanding a majority in the House of Representatives." },
+            { "id": "d", "text": "Elected by an electoral college comprising federal and provincial legislators." }
+        ],
+        "correctOptionId": "c"
+    },
+
+    
+    {
+        "id": "GK226",
+        "questionText": "What specific voting system is used to elect the 165 members of the House of Representatives under the First-Past-The-Post (FPTP) category?",
+        "options": [
+            { "id": "a", "text": "Proportional Representation List System" },
+            { "id": "b", "text": "Single Non-Transferable Vote (SNTV)" },
+            { "id": "c", "text": "Plurality voting in single-member constituencies" },
+            { "id": "d", "text": "Two-Round System (Runoff Voting)" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK227",
+        "questionText": "The remaining 110 members of the House of Representatives are elected through which system, ensuring representation for various groups?",
+        "options": [
+            { "id": "a", "text": "Alternative Vote (AV)" },
+            { "id": "b", "text": "Party-list Proportional Representation (PR)" },
+            { "id": "c", "text": "Single Transferable Vote (STV)" },
+            { "id": "d", "text": "Mixed-Member Majoritarian (MMM)" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK228",
+        "questionText": "What is the constitutional provision regarding the minimum percentage threshold a party must secure in the proportional representation vote to be recognized as a 'national party' and receive seats from the PR list?",
+        "options": [
+            { "id": "a", "text": "1% of the total valid votes cast nationally." },
+            { "id": "b", "text": "3% of the total valid votes cast nationally and at least one FPTP seat." },
+            { "id": "c", "text": "5% of the total valid votes cast nationally." },
+            { "id": "d", "text": "1.5% of the total valid votes cast nationally and at least three FPTP seats." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK229",
+        "questionText": "The National Assembly (Rastriya Sabha), the upper house of the Federal Parliament, has 59 members. How are the majority (56) of its members elected?",
+        "options": [
+            { "id": "a", "text": "Directly elected by voters in special constituencies." },
+            { "id": "b", "text": "Appointed by the Prime Minister based on expertise." },
+            { "id": "c", "text": "Elected by an Electoral College comprising members of Provincial Assemblies and heads/deputy heads of Local Levels within each province." },
+            { "id": "d", "text": "Nominated by the Chief Justice based on legal experience." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK230",
+        "questionText": "What is the specific term length for a member of the National Assembly, designed to ensure it's a permanent body?",
+        "options": [
+            { "id": "a", "text": "4 years, with all members retiring simultaneously." },
+            { "id": "b", "text": "5 years, concurrent with the House of Representatives." },
+            { "id": "c", "text": "6 years, with one-third retiring every two years." },
+            { "id": "d", "text": "A life term, unless they resign or are removed." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK231",
+        "questionText": "Which constitutional body is primarily responsible for conducting and monitoring all levels of elections (federal, provincial, local) in Nepal?",
+        "options": [
+            { "id": "a", "text": "National Human Rights Commission" },
+            { "id": "b", "text": "Commission for the Investigation of Abuse of Authority (CIAA)" },
+            { "id": "c", "text": "Election Commission, Nepal" },
+            { "id": "d", "text": "Office of the Attorney General" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK232",
+        "questionText": "The Constitution guarantees Nepal as a secular state. What does 'secularism' specifically mean in the context of the Nepali constitution?",
+        "options": [
+            { "id": "a", "text": "Complete separation of religion and state, with no government involvement in religious affairs." },
+            { "id": "b", "text": "Protection of 'Sanatan Dharma' (Hinduism) while ensuring religious and cultural freedom for all." },
+            { "id": "c", "text": "Establishment of Buddhism as the state religion." },
+            { "id": "d", "text": "Prohibition of all religious practices in public spaces." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK233",
+        "questionText": "What significant power does the President of Nepal hold regarding ordinances when the Federal Parliament is not in session?",
+        "options": [
+            { "id": "a", "text": "Can issue permanent laws without parliamentary approval." },
+            { "id": "b", "text": "Can issue ordinances on the recommendation of the Council of Ministers, subject to later parliamentary approval." },
+            { "id": "c", "text": "Can only issue ordinances related to national emergencies." },
+            { "id": "d", "text": "Has no power to issue ordinances; only Parliament can legislate." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK234",
+        "questionText": "The impeachment of the President or Vice-President requires a motion passed by what majority in the Federal Parliament?",
+        "options": [
+            { "id": "a", "text": "Simple majority of the total members of the House of Representatives." },
+            { "id": "b", "text": "Two-thirds majority of the total members of the National Assembly." },
+            { "id": "c", "text": "Two-thirds majority of the total members of both houses of the Federal Parliament present and voting." },
+            { "id": "d", "text": "At least two-thirds majority of the then total number of members of both Houses of the Federal Parliament." }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK235",
+        "questionText": "Which article of the Constitution deals with the fundamental 'Right to Information'?",
+        "options": [
+            { "id": "a", "text": "Article 16 (Right to live with dignity)" },
+            { "id": "b", "text": "Article 19 (Right to communication)" },
+            { "id": "c", "text": "Article 27 (Right to information)" },
+            { "id": "d", "text": "Article 31 (Right relating to education)" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK236",
+        "questionText": "The 'Madhesi Movement' (particularly in 2007 and 2015) primarily focused on which key political demands?",
+        "options": [
+            { "id": "a", "text": "Establishment of a separate Madhesi state." },
+            { "id": "b", "text": "Greater representation, federal boundary adjustments, and proportional inclusion in state bodies." },
+            { "id": "c", "text": "Abolition of the monarchy and establishment of a republic." },
+            { "id": "d", "text": "Reverting to a Hindu state status." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK237",
+        "questionText": "What was the primary mandate of the Constituent Assembly (CA) elected in 2008 and subsequently in 2013?",
+        "options": [
+            { "id": "a", "text": "To conduct local level elections across the country." },
+            { "id": "b", "text": "To draft and promulgate a new constitution for federal republican Nepal." },
+            { "id": "c", "text": "To negotiate a peace treaty with remaining insurgent groups." },
+            { "id": "d", "text": "To manage the integration of Maoist combatants into the Nepal Army." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK238",
+        "questionText": "What does the term 'Oli-garchy', sometimes used critically in Nepali political discourse, typically refer to?",
+        "options": [
+            { "id": "a", "text": "The economic policies implemented by K.P. Sharma Oli." },
+            { "id": "b", "text": "A perceived concentration of power and patronage network around K.P. Sharma Oli." },
+            { "id": "c", "text": "The specific foreign policy doctrine pursued by K.P. Sharma Oli." },
+            { "id": "d", "text": "The structure of the CPN (UML) party organization." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK239",
+        "questionText": "The Commission for the Investigation of Abuse of Authority (CIAA) is constitutionally empowered to investigate corruption charges against whom?",
+        "options": [
+            { "id": "a", "text": "Any citizen of Nepal." },
+            { "id": "b", "text": "Only members of the Federal Parliament." },
+            { "id": "c", "text": "Persons holding public office (excluding certain officials like Army, Judges during judicial functions)." },
+            { "id": "d", "text": "Only employees of private corporations." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK240",
+        "questionText": "What is the role of the 'Whip' in the context of parliamentary party politics in Nepal?",
+        "options": [
+            { "id": "a", "text": "The senior-most member of the party in Parliament." },
+            { "id": "b", "text": "An official appointed by a party to ensure party discipline and voting according to the party line." },
+            { "id": "c", "text": "The party's spokesperson for media relations." },
+            { "id": "d", "text": "The chairperson of the party's parliamentary committee." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK241",
+        "questionText": "The concept of 'inclusive democracy' is enshrined in the Nepali constitution. How is this primarily manifested in the electoral system?",
+        "options": [
+            { "id": "a", "text": "Through reserved constituencies for specific ethnic groups in FPTP elections." },
+            { "id": "b", "text": "Through quotas for women, Dalits, indigenous nationalities, Khas Arya, Madhesis, Tharus, Muslims, and backward regions in the PR system." },
+            { "id": "c", "text": "By guaranteeing universal adult suffrage alone." },
+            { "id": "d", "text": "By allowing non-citizens to vote in local elections." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK242",
+        "questionText": "What is the constitutional procedure for amending the constitution regarding provisions related to sovereignty, territorial integrity, independence, or the basic structure?",
+        "options": [
+            { "id": "a", "text": "Simple majority in both houses of Parliament." },
+            { "id": "b", "text": "Two-thirds majority in both houses and ratification by a national referendum." },
+            { "id": "c", "text": "Two-thirds majority of the total members of both houses of the Federal Parliament." },
+            { "id": "d", "text": "Such provisions are considered unamendable." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK243",
+        "questionText": "The 'Local Level Election Act' operationalizes local governance. What are the three main types of local levels established under the federal structure?",
+        "options": [
+            { "id": "a", "text": "Village Councils, Town Committees, District Panchayats" },
+            { "id": "b", "text": "Municipalities, Sub-Metropolitan Cities, Metropolitan Cities" },
+            { "id": "c", "text": "Rural Municipalities (Gaunpalika), Municipalities (Nagarpalika), and District Coordination Committees (DCC)." },
+            { "id": "d", "text": "Zonal Councils, Regional Assemblies, National Panchayat" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK244",
+        "questionText": "What is the primary function of the District Coordination Committee (DCC) under the current federal structure?",
+        "options": [
+            { "id": "a", "text": "To exercise executive and legislative power within the district." },
+            { "id": "b", "text": "To coordinate activities between federal, provincial, and local units within the district and monitor development works." },
+            { "id": "c", "text": "To serve as a judicial body for local disputes." },
+            { "id": "d", "text": "To collect taxes on behalf of the provincial government." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK245",
+        "questionText": "The dissolution of the House of Representatives by the Prime Minister has been a recurring point of political and legal contention. On what grounds did the Supreme Court overturn dissolutions in 2021?",
+        "options": [
+            { "id": "a", "text": "The Prime Minister belonged to a minority party." },
+            { "id": "b", "text": "The dissolution occurred during a national emergency." },
+            { "id": "c", "text": "The possibilities of forming an alternative government had not been exhausted as per constitutional requirements." },
+            { "id": "d", "text": "The President refused to endorse the Prime Minister's recommendation." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK246",
+        "questionText": "Which former Maoist leader served as Prime Minister multiple times and played a key role in the peace process and constitution drafting?",
+        "options": [
+            { "id": "a", "text": "Baburam Bhattarai" },
+            { "id": "b", "text": "Pushpa Kamal Dahal 'Prachanda'" },
+            { "id": "c", "text": "Mohan Baidya 'Kiran'" },
+            { "id": "d", "text": "Netra Bikram Chand 'Biplav'" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK247",
+        "questionText": "What does the 'principle of subsidiarity' generally imply in the context of Nepal's federalism?",
+        "options": [
+            { "id": "a", "text": "The federal government holds all residual powers." },
+            { "id": "b", "text": "Political decisions should be taken at the lowest possible level of government (closest to the people)." },
+            { "id": "c", "text": "Provincial governments are subordinate to the federal government in all matters." },
+            { "id": "d", "text": "Local levels derive their authority solely from provincial legislation." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK248",
+        "questionText": "The National Natural Resources and Fiscal Commission (NNRFC) has a crucial role in federalism. What is one of its key responsibilities?",
+        "options": [
+            { "id": "a", "text": "Managing national parks and conservation areas." },
+            { "id": "b", "text": "Recommending the distribution of revenues between federal, provincial, and local governments." },
+            { "id": "c", "text": "Setting the national budget ceiling." },
+            { "id": "d", "text": "Regulating banks and financial institutions." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK249",
+        "questionText": "What is the 'parliamentary hearing' process in Nepal, often applied to high-level appointments?",
+        "options": [
+            { "id": "a", "text": "A public debate on proposed legislation." },
+            { "id": "b", "text": "A process where nominees for constitutional bodies, ambassadors, and the Chief Justice face questioning by a parliamentary committee before appointment confirmation." },
+            { "id": "c", "text": "The annual address by the President to the joint session of Parliament." },
+            { "id": "d", "text": "A mechanism for citizens to directly petition Parliament." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK250",
+        "questionText": "Which major political party historically advocated for 'Constitutional Monarchy' and has its roots in the pre-1950 anti-Rana movement, though its stance has evolved?",
+        "options": [
+            { "id": "a", "text": "CPN (UML)" },
+            { "id": "b", "text": "CPN (Maoist Centre)" },
+            { "id": "c", "text": "Nepali Congress" },
+            { "id": "d", "text": "Rastriya Prajatantra Party (RPP)" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK251",
+        "questionText": "The term 'Bahudal' (Multi-party system) is often contrasted with which system that preceded it from 1960 to 1990?",
+        "options": [
+            { "id": "a", "text": "The Rana Regime" },
+            { "id": "b", "text": "The Licchavi Period Administration" },
+            { "id": "c", "text": "The Panchayat System" },
+            { "id": "d", "text": "Direct Rule by the King (post-2005)" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK252",
+        "questionText": "What is the primary ideological difference often cited between the CPN (UML) and CPN (Maoist Centre), despite their communist labels and past unification attempts?",
+        "options": [
+            { "id": "a", "text": "UML's traditional focus on 'People's Multiparty Democracy' vs. Maoist Centre's roots in 'Prachanda Path'/Maoism." },
+            { "id": "b", "text": "UML's advocacy for monarchy vs. Maoist Centre's republicanism." },
+            { "id": "c", "text": "UML's pro-India stance vs. Maoist Centre's pro-China stance." },
+            { "id": "d", "text": "UML's focus on urban areas vs. Maoist Centre's focus on rural areas." }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK253",
+        "questionText": "The 'Transitional Justice' process in Nepal, dealing with conflict-era human rights violations, primarily involves which two commissions?",
+        "options": [
+            { "id": "a", "text": "Election Commission and CIAA" },
+            { "id": "b", "text": "Truth and Reconciliation Commission (TRC) and Commission of Investigation on Enforced Disappeared Persons (CIEDP)" },
+            { "id": "c", "text": "National Human Rights Commission and National Women Commission" },
+            { "id": "d", "text": "Law Commission and Judicial Council" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK254",
+        "questionText": "What power does the House of Representatives hold regarding the annual budget presented by the Finance Minister?",
+        "options": [
+            { "id": "a", "text": "Can only debate it but cannot make changes." },
+            { "id": "b", "text": "Can suggest changes, but the government is not obliged to accept them." },
+            { "id": "c", "text": "Can approve, reject, or reduce the appropriations, but cannot increase them without government recommendation." },
+            { "id": "d", "text": "Can rewrite the budget completely." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK255",
+        "questionText": "Which constitutional body is tasked with interpreting the Constitution and acting as the final arbiter of legal disputes?",
+        "options": [
+            { "id": "a", "text": "Office of the Attorney General" },
+            { "id": "b", "text": "Judicial Council" },
+            { "id": "c", "text": "Supreme Court" },
+            { "id": "d", "text": "Nepal Law Commission" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK256",
+        "questionText": "The concept of 'State Restructuring' (Rajya Punarsanrachana) before the 2015 constitution involved intense debates primarily focused on what?",
+        "options": [
+            { "id": "a", "text": "Privatization of state-owned enterprises." },
+            { "id": "b", "text": "The number, boundaries, and names of federal provinces." },
+            { "id": "c", "text": "Reforming the civil service structure." },
+            { "id": "d", "text": "Changing the national flag and anthem." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK257",
+        "questionText": "What is meant by a 'Vote of Confidence' in the parliamentary context?",
+        "options": [
+            { "id": "a", "text": "A vote taken to pass a specific bill." },
+            { "id": "b", "text": "A vote initiated by the Prime Minister to demonstrate they still command majority support in the House of Representatives." },
+            { "id": "c", "text": "A vote initiated by the opposition to remove the Prime Minister." },
+            { "id": "d", "text": "The vote to elect the Speaker of the House." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK258",
+        "questionText": "What is the role of the 'Office of the Auditor General' (Mahalekha Parikshak)?",
+        "options": [
+            { "id": "a", "text": "To prosecute corruption cases." },
+            { "id": "b", "text": "To audit the accounts of all federal and provincial government offices, constitutional bodies, and state-owned enterprises." },
+            { "id": "c", "text": "To manage the government's consolidated fund." },
+            { "id": "d", "text": "To advise the government on fiscal policy." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK259",
+        "questionText": "The 'Citizenship Amendment Act' passed in 2023 primarily aimed to address the citizenship issues of which group?",
+        "options": [
+            { "id": "a", "text": "Foreign nationals seeking naturalization through investment." },
+            { "id": "b", "text": "Children born to Nepali mothers whose fathers are unidentified or foreign, and non-resident Nepalis." },
+            { "id": "c", "text": "Refugees seeking asylum in Nepal." },
+            { "id": "d", "text": "Descendants of Gurkha soldiers serving abroad." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK260",
+        "questionText": "What is the 'Gerontocracy' critique sometimes leveled against Nepal's political leadership?",
+        "options": [
+            { "id": "a", "text": "Criticism of leaders based on their caste origin." },
+            { "id": "b", "text": "Criticism regarding the dominance of elderly leaders across major political parties." },
+            { "id": "c", "text": "Allegations of leaders favoring their home districts." },
+            { "id": "d", "text": "Concerns about the influence of foreign powers on leaders." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK261",
+        "questionText": "The 'Janajatis' (Indigenous Nationalities) movement primarily advocates for what?",
+        "options": [
+            { "id": "a", "text": "Assimilation into the dominant Khas-Arya culture." },
+            { "id": "b", "text": "Recognition of distinct identities, cultural rights, linguistic preservation, and greater political representation/autonomy." },
+            { "id": "c", "text": "Establishment of separate nation-states based on ethnicity." },
+            { "id": "d", "text": "Prioritizing economic development over cultural rights." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK262",
+        "questionText": "What is the constitutional status of the Nepali Army?",
+        "options": [
+            { "id": "a", "text": "Directly under the command of the Prime Minister." },
+            { "id": "b", "text": "An autonomous body independent of civilian control." },
+            { "id": "c", "text": "Under the National Defence Council, with the President as Supreme Commander-in-Chief, but operational control often delegated via the Council of Ministers." },
+            { "id": "d", "text": "Under the command of the Ministry of Home Affairs." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK263",
+        "questionText": "The concept of 'Dichotomy between the Legislature-Parliament and Constituent Assembly' refers to the dual role played by which body after the 2008 elections?",
+        "options": [
+            { "id": "a", "text": "The Supreme Court" },
+            { "id": "b", "text": "The National Assembly" },
+            { "id": "c", "text": "The first Constituent Assembly (which also functioned as the interim parliament)" },
+            { "id": "d", "text": "The Provincial Assemblies" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK264",
+        "questionText": "What is the primary function of the 'Judicial Council' (Nyaya Parishad)?",
+        "options": [
+            { "id": "a", "text": "To hear final appeals from lower courts." },
+            { "id": "b", "text": "To recommend appointments, transfers, and disciplinary actions related to judges of the Supreme, High, and District Courts." },
+            { "id": "c", "text": "To draft new legislation for the Ministry of Law." },
+            { "id": "d", "text": "To provide legal aid services to the public." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK265",
+        "questionText": "Which political figure served as the first President of the Federal Democratic Republic of Nepal?",
+        "options": [
+            { "id": "a", "text": "Girija Prasad Koirala" },
+            { "id": "b", "text": "Ram Baran Yadav" },
+            { "id": "c", "text": "Bidya Devi Bhandari" },
+            { "id": "d", "text": "Parmanand Jha" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK266",
+        "questionText": "What does the term 'Floor Crossing' mean in parliamentary practice?",
+        "options": [
+            { "id": "a", "text": "Physically moving from one side of the parliament chamber to the other." },
+            { "id": "b", "text": "Voting against the official line or directive (whip) of one's own political party." },
+            { "id": "c", "text": "Changing allegiance from one political party to another between elections." },
+            { "id": "d", "text": "Obstructing parliamentary proceedings by occupying the 'floor' near the Speaker." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK267",
+        "questionText": "The 'Public Service Commission' (Lok Sewa Aayog) is responsible for what key function related to governance?",
+        "options": [
+            { "id": "a", "text": "Setting the salaries and benefits for civil servants." },
+            { "id": "b", "text": "Conducting examinations and recommending candidates for appointment to the civil service." },
+            { "id": "c", "text": "Monitoring the performance of government ministries." },
+            { "id": "d", "text": "Providing training programs for government employees." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK268",
+        "questionText": "What is the significance of the '12-Point Understanding' reached in Delhi in 2005?",
+        "options": [
+            { "id": "a", "text": "It settled a major trade dispute between Nepal and India." },
+            { "id": "b", "text": "It outlined the terms for Nepal joining the WTO." },
+            { "id": "c", "text": "It brought the Seven Party Alliance (SPA) and the CPN (Maoist) together on a common platform against the King's direct rule." },
+            { "id": "d", "text": "It established the framework for the Millennium Challenge Corporation (MCC) compact." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK269",
+        "questionText": "What is meant by 'Residual Powers' in the context of Nepal's federal structure as defined by the Constitution?",
+        "options": [
+            { "id": "a", "text": "Powers exclusively assigned to the local level." },
+            { "id": "b", "text": "Powers related to foreign affairs and defense." },
+            { "id": "c", "text": "Powers not explicitly listed in federal, provincial, or concurrent lists, which belong to the Federation (Central Government)." },
+            { "id": "d", "text": "Emergency powers exercised by the President." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK270",
+        "questionText": "The 'Rastriya Swatantra Party' (RSP) emerged rapidly in the 2022 elections. What was its primary campaign platform or appeal?",
+        "options": [
+            { "id": "a", "text": "Advocacy for the restoration of the monarchy." },
+            { "id": "b", "text": "Strong focus on ethnic identity politics." },
+            { "id": "c", "text": "Anti-corruption, good governance, and challenging established political figures/parties." },
+            { "id": "d", "text": "A socialist economic agenda based on cooperative models." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK271",
+        "questionText": "Which schedule (Anusuchi) of the Constitution lists the exclusive powers of the Provincial Governments?",
+        "options": [
+            { "id": "a", "text": "Schedule 5" },
+            { "id": "b", "text": "Schedule 6" },
+            { "id": "c", "text": "Schedule 7" },
+            { "id": "d", "text": "Schedule 8" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK272",
+        "questionText": "What mechanism allows citizens to propose legislation directly or demand a referendum on existing laws, though not yet fully implemented or commonly used in Nepal?",
+        "options": [
+            { "id": "a", "text": "Public Interest Litigation (PIL)" },
+            { "id": "b", "text": "Recall Election" },
+            { "id": "c", "text": "Initiative and Referendum provisions (partially implied or needing enabling laws)" },
+            { "id": "d", "text": "Ombudsman's recommendation" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK273",
+        "questionText": "The 'Speaker' of the House of Representatives plays a crucial role. What is one key function besides presiding over meetings?",
+        "options": [
+            { "id": "a", "text": "Acting as the leader of the majority party." },
+            { "id": "b", "text": "Casting a deciding vote in case of a tie." },
+            { "id": "c", "text": "Appointing chairs of parliamentary committees." },
+            { "id": "d", "text": "Representing Nepal in international parliamentary forums." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK274",
+        "questionText": "What is the constitutional requirement regarding the representation of women in the positions of Speaker and Deputy Speaker of the House of Representatives (and similarly for the National Assembly Chair/Vice-Chair)?",
+        "options": [
+            { "id": "a", "text": "Both positions must be held by women." },
+            { "id": "b", "text": "At least one of the two positions must be held by a woman, and they must belong to different political parties." },
+            { "id": "c", "text": "There is no specific requirement for women's representation in these posts." },
+            { "id": "d", "text": "Women must be nominated but the final election depends on parliamentary votes." }
+        ],
+        "correctOptionId": "b"
+    },
+        {
+        "id": "GK275",
+        "questionText": "Which animal possesses the unique ability known as 'Kleptoplasty', where it incorporates chloroplasts from algae it eats into its own cells to gain energy from sunlight?",
+        "options": [
+            { "id": "a", "text": "Giant Squid" },
+            { "id": "b", "text": "Sea Anemone" },
+            { "id": "c", "text": "Eastern Emerald Elysia (a type of sea slug)" },
+            { "id": "d", "text": "Vampire Bat" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK276",
+        "questionText": "What is the 'Müllerian mimicry' observed in the animal kingdom?",
+        "options": [
+            { "id": "a", "text": "A harmless species evolving to look like a dangerous one." },
+            { "id": "b", "text": "Two or more dangerous/unpalatable species evolving to resemble each other." },
+            { "id": "c", "text": "An animal camouflaging itself by resembling inanimate objects like leaves or twigs." },
+            { "id": "d", "text": "An animal using lures to attract prey." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK277",
+        "questionText": "The 'Axolotl', a type of salamander, is famous in biological research for its remarkable ability regarding injury. What is it?",
+        "options": [
+            { "id": "a", "text": "Extreme venom potency" },
+            { "id": "b", "text": "Ability to survive dehydration for months" },
+            { "id": "c", "text": "Extensive regeneration of limbs, spinal cord, and even parts of the brain without scarring" },
+            { "id": "d", "text": "Bioluminescence controlled by mood" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK278",
+        "questionText": "Which large mammal has the longest gestation period, lasting nearly two years (around 22 months)?",
+        "options": [
+            { "id": "a", "text": "Blue Whale" },
+            { "id": "b", "text": "Giraffe" },
+            { "id": "c", "text": "African Elephant" },
+            { "id": "d", "text": "Hippopotamus" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK279",
+        "questionText": "What is the primary function of the 'Jacobson's organ' (or vomeronasal organ) found in many animals like snakes and cats?",
+        "options": [
+            { "id": "a", "text": "Detecting ultrasonic sounds" },
+            { "id": "b", "text": "Sensing changes in atmospheric pressure" },
+            { "id": "c", "text": "Detecting specific chemical scent molecules, particularly pheromones (flehmen response)" },
+            { "id": "d", "text": "Generating electrical fields for navigation" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK280",
+        "questionText": "Which bird holds the record for the longest non-stop migratory flight, traveling over 11,000 km (7,000 miles) from Alaska to New Zealand without stopping?",
+        "options": [
+            { "id": "a", "text": "Arctic Tern" },
+            { "id": "b", "text": "Bar-tailed Godwit" },
+            { "id": "c", "text": "Wandering Albatross" },
+            { "id": "d", "text": "Peregrine Falcon" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK281",
+        "questionText": "What unusual substance makes up the majority of a rhinoceros horn?",
+        "options": [
+            { "id": "a", "text": "Bone tissue similar to antlers" },
+            { "id": "b", "text": "Compacted hair-like keratin fibers" },
+            { "id": "c", "text": "Calcified cartilage" },
+            { "id": "d", "text": "A unique protein found only in rhinos" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK282",
+        "questionText": "The 'Tardigrade' (water bear) is renowned for its extreme resilience. Which of these conditions is it known to survive?",
+        "options": [
+            { "id": "a", "text": "The vacuum of outer space and high radiation" },
+            { "id": "b", "text": "Temperatures close to absolute zero" },
+            { "id": "c", "text": "Extreme pressure six times greater than the deepest ocean trench" },
+            { "id": "d", "text": "All of the above" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK283",
+        "questionText": "What physiological phenomenon allows diving mammals like seals and whales to stay submerged for extended periods?",
+        "options": [
+            { "id": "a", "text": "Storing oxygen directly in their blubber" },
+            { "id": "b", "text": "The 'Dive Reflex' - slowing heart rate, redirecting blood flow to vital organs" },
+            { "id": "c", "text": "Possessing multiple stomachs to process food anaerobically" },
+            { "id": "d", "text": "Having gills that activate underwater" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK284",
+        "questionText": "Which insect undergoes 'hypermetamorphosis', a complex life cycle involving distinctly different larval stages?",
+        "options": [
+            { "id": "a", "text": "Monarch Butterfly" },
+            { "id": "b", "text": "Honey Bee" },
+            { "id": "c", "text": "Blister Beetle" },
+            { "id": "d", "text": "Praying Mantis" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK285",
+        "questionText": "What is the 'Lateral Line' system in fish primarily used for?",
+        "options": [
+            { "id": "a", "text": "Regulating buoyancy" },
+            { "id": "b", "text": "Sensing movement, vibrations, and pressure changes in the surrounding water" },
+            { "id": "c", "text": "Excreting salt from the body" },
+            { "id": "d", "text": "Camouflage through color change" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK286",
+        "questionText": "Which primate is known for its unique 'fission-fusion' social system, where group composition changes frequently throughout the day or season?",
+        "options": [
+            { "id": "a", "text": "Gorilla" },
+            { "id": "b", "text": "Orangutan" },
+            { "id": "c", "text": "Chimpanzee / Bonobo" },
+            { "id": "d", "text": "Howler Monkey" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK287",
+        "questionText": "The Bombardier Beetle has a famous defense mechanism. What does it involve?",
+        "options": [
+            { "id": "a", "text": "Releasing a foul-smelling musk" },
+            { "id": "b", "text": "Playing dead convincingly" },
+            { "id": "c", "text": "Spraying a boiling hot, noxious chemical mixture from its abdomen" },
+            { "id": "d", "text": "Camouflaging perfectly with tree bark" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK288",
+        "questionText": "What is unique about the circulatory system of an octopus?",
+        "options": [
+            { "id": "a", "text": "It has no heart; blood circulates via muscle contractions." },
+            { "id": "b", "text": "It has four chambers in its single heart." },
+            { "id": "c", "text": "It has three hearts - two pump blood through the gills, one circulates it to the body." },
+            { "id": "d", "text": "Its blood is green due to chlorocruorin instead of hemoglobin." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK289",
+        "questionText": "The 'Platypus' is one of the few mammals that exhibits which reptilian/avian trait?",
+        "options": [
+            { "id": "a", "text": "Cold-bloodedness" },
+            { "id": "b", "text": "Laying eggs (monotreme)" },
+            { "id": "c", "text": "Shedding its skin annually" },
+            { "id": "d", "text": "Having scales instead of fur" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK290",
+        "questionText": "What causes the 'pins and needles' sensation (paresthesia) when a human limb 'falls asleep'?",
+        "options": [
+            { "id": "a", "text": "Lack of blood flow (ischemia) temporarily stops nerve function." },
+            { "id": "b", "text": "Nerves being temporarily compressed, disrupting their signals." },
+            { "id": "c", "text": "Build-up of lactic acid in the muscles." },
+            { "id": "d", "text": "A brief drop in body temperature in that limb." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK291",
+        "questionText": "What is the 'Placebo Effect' in humans?",
+        "options": [
+            { "id": "a", "text": "A negative reaction to a harmless substance." },
+            { "id": "b", "text": "A measurable, observed, or felt improvement in health not attributable to an actual treatment." },
+            { "id": "c", "text": "The body's natural immunity fighting off infection." },
+            { "id": "d", "text": "A side effect of a prescribed medication." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK292",
+        "questionText": "Humans possess 'arrector pili' muscles attached to hair follicles. What is their primary function, now largely vestigial?",
+        "options": [
+            { "id": "a", "text": "To help cool the body through sweat evaporation." },
+            { "id": "b", "text": "To make hairs stand on end (causing 'goosebumps') for insulation or threat display." },
+            { "id": "c", "text": "To detect subtle air movements near the skin." },
+            { "id": "d", "text": "To secrete oils onto the skin surface." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK293",
+        "questionText": "What is the approximate percentage of the human genome that consists of 'non-coding' DNA (formerly called 'junk DNA'), which doesn't directly code for proteins but often has regulatory functions?",
+        "options": [
+            { "id": "a", "text": "Around 10%" },
+            { "id": "b", "text": "Around 25%" },
+            { "id": "c", "text": "Around 50%" },
+            { "id": "d", "text": "Around 98%" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK294",
+        "questionText": "The 'Broca's area' and 'Wernicke's area' in the human brain are most critically involved in which function?",
+        "options": [
+            { "id": "a", "text": "Regulating balance and coordination" },
+            { "id": "b", "text": "Processing visual information" },
+            { "id": "c", "text": "Language production and comprehension" },
+            { "id": "d", "text": "Controlling heart rate and breathing" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK295",
+        "questionText": "What is 'Synesthesia', a neurological condition some humans experience?",
+        "options": [
+            { "id": "a", "text": "The inability to recognize familiar faces." },
+            { "id": "b", "text": "A blending of senses, like seeing colors when hearing sounds or tasting shapes." },
+            { "id": "c", "text": "A persistent feeling that a limb is still attached after amputation (phantom limb)." },
+            { "id": "d", "text": "The complete loss of the sense of smell." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK296",
+        "questionText": "Which part of the human eye contains the photoreceptor cells (rods and cones) responsible for detecting light?",
+        "options": [
+            { "id": "a", "text": "Cornea" },
+            { "id": "b", "text": "Iris" },
+            { "id": "c", "text": "Lens" },
+            { "id": "d", "text": "Retina" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK297",
+        "questionText": "What is the primary role of 'Mitochondria' within human cells?",
+        "options": [
+            { "id": "a", "text": "Storing genetic information (DNA)" },
+            { "id": "b", "text": "Synthesizing proteins" },
+            { "id": "c", "text": "Generating most of the cell's supply of ATP (energy currency) through cellular respiration" },
+            { "id": "d", "text": "Breaking down waste materials" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK298",
+        "questionText": "The 'Babinski reflex' (or plantar reflex) involves the big toe extending upwards when the sole of the foot is stroked. In which human group is this reflex considered normal?",
+        "options": [
+            { "id": "a", "text": "Elderly adults over 70" },
+            { "id": "b", "text": "Professional athletes" },
+            { "id": "c", "text": "Infants up to about 1-2 years old" },
+            { "id": "d", "text": "Individuals with spinal cord injuries" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK299",
+        "questionText": "What is the biological purpose of the 'epiglottis' in the human throat?",
+        "options": [
+            { "id": "a", "text": "To produce sound for speech (vocal cords)." },
+            { "id": "b", "text": "To detect tastes on the back of the tongue." },
+            { "id": "c", "text": "To cover the windpipe (trachea) during swallowing, preventing food from entering the airway." },
+            { "id": "d", "text": "To warm and humidify inhaled air." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK300",
+        "questionText": "The 'Immune System's Memory' allows the human body to respond more quickly to pathogens it has encountered before. Which cells are primarily responsible for this long-term memory?",
+        "options": [
+            { "id": "a", "text": "Red blood cells" },
+            { "id": "b", "text": "Platelets" },
+            { "id": "c", "text": "Memory B cells and Memory T cells" },
+            { "id": "d", "text": "Neutrophils" }
+        ],
+        "correctOptionId": "c"
+    },
+
+    {
+        "id": "GK301",
+        "questionText": "What determines human blood types (A, B, AB, O)?",
+        "options": [
+            { "id": "a", "text": "The type of hemoglobin in red blood cells." },
+            { "id": "b", "text": "The presence or absence of specific antigens (proteins/sugars) on the surface of red blood cells." },
+            { "id": "c", "text": "The number of white blood cells in the plasma." },
+            { "id": "d", "text": "The concentration of iron in the blood." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK302",
+        "questionText": "What is the scientific term for the 'Adam's apple', the lump seen more prominently in the front of the neck of many adult males?",
+        "options": [
+            { "id": "a", "text": "Hyoid bone" },
+            { "id": "b", "text": "Thyroid gland protrusion" },
+            { "id": "c", "text": "Laryngeal prominence (part of the thyroid cartilage)" },
+            { "id": "d", "text": "Cricoid cartilage" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK303",
+        "questionText": "Which human sense is most closely linked to memory and emotion, often bypassing the thalamus (the brain's relay center for most other senses)?",
+        "options": [
+            { "id": "a", "text": "Sight" },
+            { "id": "b", "text": "Hearing" },
+            { "id": "c", "text": "Touch" },
+            { "id": "d", "text": "Smell (Olfaction)" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK304",
+        "questionText": "What is 'Proprioception', sometimes called the \"sixth sense\" in humans?",
+        "options": [
+            { "id": "a", "text": "The ability to sense temperature changes." },
+            { "id": "b", "text": "The sense of the relative position and movement of one's own body parts, without seeing them." },
+            { "id": "c", "text": "The detection of pain (nociception)." },
+            { "id": "d", "text": "The sense of balance (equilibrioception)." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK305",
+        "questionText": "The Atacama snailfish holds the record for being the deepest-living fish ever recorded. Approximately how deep can it survive in the ocean trenches?",
+        "options": [
+            { "id": "a", "text": "2,000 meters (6,500 ft)" },
+            { "id": "b", "text": "4,000 meters (13,000 ft)" },
+            { "id": "c", "text": "6,000 meters (19,700 ft)" },
+            { "id": "d", "text": "Over 8,000 meters (26,000 ft)" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK306",
+        "questionText": "What is 'Batesian mimicry'?",
+        "options": [
+            { "id": "a", "text": "Two dangerous species looking alike." },
+            { "id": "b", "text": "An animal blending in with its background." },
+            { "id": "c", "text": "A harmless species evolving to look like a dangerous or unpalatable one." },
+            { "id": "d", "text": "Animals cooperating in hunting." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK307",
+        "questionText": "The 'Shoebill Stork' is known for its imposing size and unique beak shape. What unusual behaviour is it sometimes observed doing, often related to cooling or social interaction?",
+        "options": [
+            { "id": "a", "text": "Singing complex musical notes" },
+            { "id": "b", "text": "Standing motionless for hours like a statue" },
+            { "id": "c", "text": "Performing elaborate aerial acrobatics" },
+            { "id": "d", "text": "Clattering its huge bill loudly" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK308",
+        "questionText": "What is the primary component of the 'gas' within the swim bladder that fish use to control buoyancy?",
+        "options": [
+            { "id": "a", "text": "Hydrogen Sulfide" },
+            { "id": "b", "text": "Methane" },
+            { "id": "c", "text": "Primarily Oxygen, Nitrogen, and Carbon Dioxide (similar to air, composition varies)" },
+            { "id": "d", "text": "Helium" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK309",
+        "questionText": "Which animal group exhibits 'eusociality', characterized by cooperative brood care, overlapping generations, and a division of labor into reproductive and non-reproductive castes (like ants, bees, termites)?",
+        "options": [
+            { "id": "a", "text": "Most fish species" },
+            { "id": "b", "text": "Many species of Hymenoptera (ants, bees, wasps) and Isoptera (termites), plus some others like naked mole-rats." },
+            { "id": "c", "text": "All mammals" },
+            { "id": "d", "text": "All birds that flock together" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK310",
+        "questionText": "The 'Aye-aye', a lemur from Madagascar, has a uniquely adapted finger. What does it use its thin, elongated middle finger for?",
+        "options": [
+            { "id": "a", "text": "Grooming its fur" },
+            { "id": "b", "text": "Tapping on wood to find insect larvae and extracting them (percussive foraging)" },
+            { "id": "c", "text": "Holding onto branches while sleeping" },
+            { "id": "d", "text": "Communicating through sign language" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK311",
+        "questionText": "What is 'torpor', a state entered by some animals like hummingbirds or bears (though bear hibernation is different)?",
+        "options": [
+            { "id": "a", "text": "A deep sleep state lasting for several months." },
+            { "id": "b", "text": "A short-term state of decreased physiological activity (lower body temperature, heart rate, metabolism) usually to conserve energy." },
+            { "id": "c", "text": "A state of heightened alertness during danger." },
+            { "id": "d", "text": "The process of shedding skin or exoskeleton." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK312",
+        "questionText": "Which large flightless bird, native to Australia, is known for having potentially dangerous, dagger-like claws on its inner toes?",
+        "options": [
+            { "id": "a", "text": "Ostrich" },
+            { "id": "b", "text": "Emu" },
+            { "id": "c", "text": "Cassowary" },
+            { "id": "d", "text": "Rhea" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK313",
+        "questionText": "What is 'aposematism'?",
+        "options": [
+            { "id": "a", "text": "The use of camouflage to blend into the environment." },
+            { "id": "b", "text": "Warning coloration or markings on an animal signaling that it is toxic, venomous, or otherwise dangerous/unpalatable." },
+            { "id": "c", "text": "The ability of an animal to regenerate lost body parts." },
+            { "id": "d", "text": "Migration patterns based on seasonal changes." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK314",
+        "questionText": "The 'Manchineel' tree is infamous in the human context for what reason?",
+        "options": [
+            { "id": "a", "text": "Its wood is incredibly resistant to decay." },
+            { "id": "b", "text": "It produces the world's largest edible fruit." },
+            { "id": "c", "text": "Virtually all parts of the tree (sap, fruit, leaves, bark) are extremely toxic and caustic to humans." },
+            { "id": "d", "text": "It grows only in complete darkness." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK315",
+        "questionText": "What is the 'Uncanny Valley' phenomenon related to human perception?",
+        "options": [
+            { "id": "a", "text": "A feeling of unease or revulsion experienced when viewing humanoid robots or animations that appear almost, but not exactly, like real humans." },
+            { "id": "b", "text": "The difficulty humans have in distinguishing between identical twins." },
+            { "id": "c", "text": "An optical illusion where parallel lines appear to converge." },
+            { "id": "d", "text": "The tendency to perceive familiar patterns in random stimuli (pareidolia)." }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK316",
+        "questionText": "Which vestigial structure in humans is a remnant of a tail found in our evolutionary ancestors?",
+        "options": [
+            { "id": "a", "text": "Appendix" },
+            { "id": "b", "text": "Wisdom teeth" },
+            { "id": "c", "text": "Coccyx (tailbone)" },
+            { "id": "d", "text": "Palmaris longus muscle (in the forearm)" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK317",
+        "questionText": "What is the 'Hayflick limit' in human cell biology?",
+        "options": [
+            { "id": "a", "text": "The maximum rate at which nerve impulses can travel." },
+            { "id": "b", "text": "The number of times a normal human cell population will divide before cell division stops (related to aging)." },
+            { "id": "c", "text": "The minimum amount of oxygen required for brain function." },
+            { "id": "d", "text": "The threshold of pain perception." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK318",
+        "questionText": "Human tears produced due to emotion have a different chemical composition compared to basal (lubricating) tears or reflex tears (from irritants). What do emotional tears often contain higher levels of?",
+        "options": [
+            { "id": "a", "text": "Salt and water" },
+            { "id": "b", "text": "Antibodies and lysozymes" },
+            { "id": "c", "text": "Protein-based hormones like prolactin and stress hormones (ACTH)" },
+            { "id": "d", "text": "Glucose and lipids" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK319",
+        "questionText": "What is 'Neuroplasticity' in the human brain?",
+        "options": [
+            { "id": "a", "text": "The brain's ability to generate electrical signals." },
+            { "id": "b", "text": "The rigid, unchanging structure of neural connections." },
+            { "id": "c", "text": "The brain's ability to reorganize itself by forming new neural connections throughout life." },
+            { "id": "d", "text": "The protective layer surrounding nerve cells." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK320",
+        "questionText": "Which specific type of human fingerprint pattern is the least common globally?",
+        "options": [
+            { "id": "a", "text": "Loop" },
+            { "id": "b", "text": "Whorl" },
+            { "id": "c", "text": "Arch" },
+            { "id": "d", "text": "Composite (mixed patterns)" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK321",
+        "questionText": "What is the primary function of the 'Cerebellum', located at the back of the human brain?",
+        "options": [
+            { "id": "a", "text": "Regulating body temperature" },
+            { "id": "b", "text": "Controlling voluntary movements, posture, balance, coordination, and speech." },
+            { "id": "c", "text": "Processing emotions and forming memories" },
+            { "id": "d", "text": "Generating creative thoughts" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK322",
+        "questionText": "What is the 'fight-or-flight' response physiologically triggered by in humans?",
+        "options": [
+            { "id": "a", "text": "The release of serotonin and dopamine." },
+            { "id": "b", "text": "The activation of the parasympathetic nervous system." },
+            { "id": "c", "text": "The activation of the sympathetic nervous system and release of hormones like adrenaline (epinephrine)." },
+            { "id": "d", "text": "An increase in blood sugar levels alone." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK323",
+        "questionText": "Which animal is the closest living relative to the extinct Dodo bird?",
+        "options": [
+            { "id": "a", "text": "Pigeon / Dove (specifically the Nicobar pigeon)" },
+            { "id": "b", "text": "Ostrich" },
+            { "id": "c", "text": "Penguin" },
+            { "id": "d", "text": "Flamingo" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK324",
+        "questionText": "What surprising ability related to Earth's magnetic field do some animals, like birds, turtles, and possibly even dogs, possess?",
+        "options": [
+            { "id": "a", "text": "Ability to generate their own magnetic field for defense." },
+            { "id": "b", "text": "Ability to sense the magnetic field for navigation (Magnetoreception)." },
+            { "id": "c", "text": "Ability to levitate slightly in strong magnetic fields." },
+            { "id": "d", "text": "Ability to communicate using magnetic pulses." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK325",
+        "questionText": "The 'Congress of Vienna' (1814-1815) aimed to reshape Europe after the Napoleonic Wars. Which Austrian statesman was its dominant figure and architect?",
+        "options": [
+            { "id": "a", "text": "Otto von Bismarck" },
+            { "id": "b", "text": "Klemens von Metternich" },
+            { "id": "c", "text": "Charles Maurice de Talleyrand-Périgord" },
+            { "id": "d", "text": "Viscount Castlereagh" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK326",
+        "questionText": "What major event in Russian history occurred on \"Bloody Sunday\" in January 1905, sparking widespread unrest?",
+        "options": [
+            { "id": "a", "text": "The assassination of Tsar Alexander II." },
+            { "id": "b", "text": "The storming of the Winter Palace by the Bolsheviks." },
+            { "id": "c", "text": "Unarmed demonstrators led by Father Gapon being fired upon by soldiers as they marched to the Winter Palace." },
+            { "id": "d", "text": "The mutiny on the Battleship Potemkin." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK327",
+        "questionText": "The 'Suez Crisis' of 1956 was triggered primarily by Egyptian President Gamal Abdel Nasser's decision to do what?",
+        "options": [
+            { "id": "a", "text": "Nationalize the Suez Canal." },
+            { "id": "b", "text": "Sign a military pact with the Soviet Union." },
+            { "id": "c", "text": "Close the Straits of Tiran to Israeli shipping." },
+            { "id": "d", "text": "Launch an attack on Israel." }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK328",
+        "questionText": "What international agreement, signed on August 27, 1928, saw signatory states promise not to use war to resolve \"disputes or conflicts of whatever nature\"? (Though ultimately ineffective).",
+        "options": [
+            { "id": "a", "text": "The Treaty of Versailles" },
+            { "id": "b", "text": "The Locarno Treaties" },
+            { "id": "c", "text": "The Kellogg-Briand Pact" },
+            { "id": "d", "text": "The League of Nations Covenant" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK329",
+        "questionText": "The 'Glorious Revolution' of 1688 in England resulted in the deposition of which monarch and the ascension of William III and Mary II?",
+        "options": [
+            { "id": "a", "text": "Charles I" },
+            { "id": "b", "text": "Charles II" },
+            { "id": "c", "text": "James II" },
+            { "id": "d", "text": "George I" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK330",
+        "questionText": "What was the primary goal of the 'Marshall Plan' initiated by the United States after World War II?",
+        "options": [
+            { "id": "a", "text": "To provide military aid to countries resisting communism." },
+            { "id": "b", "text": "To establish a network of US military bases in Europe." },
+            { "id": "c", "text": "To aid in the economic recovery of Western European nations." },
+            { "id": "d", "text": "To fund the development of nuclear weapons." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK331",
+        "questionText": "The political concept of 'Appeasement' is most famously associated with the pre-WWII policy of which British Prime Minister towards Nazi Germany?",
+        "options": [
+            { "id": "a", "text": "Winston Churchill" },
+            { "id": "b", "text": "Clement Attlee" },
+            { "id": "c", "text": "Neville Chamberlain" },
+            { "id": "d", "text": "Stanley Baldwin" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK332",
+        "questionText": "The 'Filibuster' is a procedural tactic primarily associated with which legislative body, allowing a minority to delay or block a vote?",
+        "options": [
+            { "id": "a", "text": "The UK House of Commons" },
+            { "id": "b", "text": "The German Bundestag" },
+            { "id": "c", "text": "The United States Senate" },
+            { "id": "d", "text": "The French National Assembly" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK333",
+        "questionText": "What was the 'Cod Wars'?",
+        "options": [
+            { "id": "a", "text": "A series of 20th-century confrontations between the UK and Iceland over fishing rights in the North Atlantic." },
+            { "id": "b", "text": "A trade dispute between Canada and Spain over cod fishing quotas." },
+            { "id": "c", "text": "A scientific debate about the classification of cod species." },
+            { "id": "d", "text": "A naval conflict simulation exercise held by NATO." }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK334",
+        "questionText": "The term 'Gerrymandering' refers to what practice in politics?",
+        "options": [
+            { "id": "a", "text": "Manipulating the boundaries of electoral districts to favor one party or class." },
+            { "id": "b", "text": "Spreading false rumors about political opponents." },
+            { "id": "c", "text": "Using public funds for campaign purposes." },
+            { "id": "d", "text": "Filling legislative positions with unqualified loyalists." }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK335",
+        "questionText": "What event on July 20, 1969, marked a pivotal moment in the Space Race?",
+        "options": [
+            { "id": "a", "text": "The launch of Sputnik 1 by the Soviet Union." },
+            { "id": "b", "text": "Yuri Gagarin becoming the first human in space." },
+            { "id": "c", "text": "The Apollo 11 mission successfully landing the first humans on the Moon." },
+            { "id": "d", "text": "The establishment of the International Space Station." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK336",
+        "questionText": "The 'Rosetta Stone', discovered in 1799, was crucial for deciphering ancient Egyptian hieroglyphs. Which three scripts are inscribed on it?",
+        "options": [
+            { "id": "a", "text": "Hieroglyphs, Latin, Arabic" },
+            { "id": "b", "text": "Hieroglyphs, Demotic, Ancient Greek" },
+            { "id": "c", "text": "Cuneiform, Hieroglyphs, Sanskrit" },
+            { "id": "d", "text": "Hieroglyphs, Hebrew, Phoenician" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK337",
+        "questionText": "What invention is Johannes Gutenberg most famously credited with developing in Europe around 1440, revolutionizing communication?",
+        "options": [
+            { "id": "a", "text": "The Telescope" },
+            { "id": "b", "text": "The Steam Engine" },
+            { "id": "c", "text": "Mechanical Movable Type Printing Press" },
+            { "id": "d", "text": "The Magnetic Compass" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK338",
+        "questionText": "The 'Doomsday Clock', maintained by the Bulletin of the Atomic Scientists since 1947, symbolically represents what?",
+        "options": [
+            { "id": "a", "text": "The countdown to the predicted end of the universe based on astronomical data." },
+            { "id": "b", "text": "The likelihood of a man-made global catastrophe (originally nuclear war, now includes climate change, etc.)." },
+            { "id": "c", "text": "The estimated time remaining until the Earth's next major extinction event." },
+            { "id": "d", "text": "A schedule for decommissioning nuclear power plants worldwide." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK339",
+        "questionText": "Which ancient civilization built Machu Picchu, the renowned citadel high in the Andes Mountains of Peru?",
+        "options": [
+            { "id": "a", "text": "Maya" },
+            { "id": "b", "text": "Aztec" },
+            { "id": "c", "text": "Inca" },
+            { "id": "d", "text": "Olmec" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK340",
+        "questionText": "The 'Silk Road' was primarily a network of trade routes connecting which two regions in antiquity and the Middle Ages?",
+        "options": [
+            { "id": "a", "text": "North Africa and Southern Europe" },
+            { "id": "b", "text": "East Asia (China) and the Mediterranean world (Europe/Middle East)" },
+            { "id": "c", "text": "The Americas and Europe" },
+            { "id": "d", "text": "India and Southeast Asia" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK341",
+        "questionText": "What does the economic term 'Stagflation' describe?",
+        "options": [
+            { "id": "a", "text": "A period of rapid economic growth and high inflation." },
+            { "id": "b", "text": "A situation with persistent high inflation combined with high unemployment and stagnant demand." },
+            { "id": "c", "text": "A sharp decline in prices (deflation) leading to economic recession." },
+            { "id": "d", "text": "Government policies aimed at stabilizing prices through subsidies." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK342",
+        "questionText": "The Bretton Woods Agreement of 1944 led to the creation of which two major international financial institutions?",
+        "options": [
+            { "id": "a", "text": "World Trade Organization (WTO) and Bank for International Settlements (BIS)" },
+            { "id": "b", "text": "International Monetary Fund (IMF) and World Bank (IBRD)" },
+            { "id": "c", "text": "Organisation for Economic Co-operation and Development (OECD) and Asian Development Bank (ADB)" },
+            { "id": "d", "text": "European Central Bank (ECB) and International Finance Corporation (IFC)" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK343",
+        "questionText": "What language family does English belong to?",
+        "options": [
+            { "id": "a", "text": "Romance (derived from Latin)" },
+            { "id": "b", "text": "Slavic" },
+            { "id": "c", "text": "Germanic" },
+            { "id": "d", "text": "Celtic" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK344",
+        "questionText": "The 'Bay of Pigs Invasion' in 1961 was a failed attempt by US-backed Cuban exiles to overthrow which leader?",
+        "options": [
+            { "id": "a", "text": "Fulgencio Batista" },
+            { "id": "b", "text": "Fidel Castro" },
+            { "id": "c", "text": "Che Guevara" },
+            { "id": "d", "text": "Hugo Chávez" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK345",
+        "questionText": "What significant legal principle was established by the U.S. Supreme Court case Marbury v. Madison (1803)?",
+        "options": [
+            { "id": "a", "text": "The right to bear arms." },
+            { "id": "b", "text": "The principle of \"separate but equal\" (later overturned)." },
+            { "id": "c", "text": "The principle of judicial review (the court's power to declare laws unconstitutional)." },
+            { "id": "d", "text": "The requirement for police to read suspects their rights (Miranda rights)." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK346",
+        "questionText": "The 'Great Firewall' is a term commonly used to refer to the internet censorship and surveillance project operated by which country?",
+        "options": [
+            { "id": "a", "text": "Russia" },
+            { "id": "b", "text": "North Korea" },
+            { "id": "c", "text": "Iran" },
+            { "id": "d", "text": "China" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK347",
+        "questionText": "What date is known as 'Bastille Day', the national day of France, commemorating the Storming of the Bastille in 1789?",
+        "options": [
+            { "id": "a", "text": "May 1st" },
+            { "id": "b", "text": "July 4th" },
+            { "id": "c", "text": "July 14th" },
+            { "id": "d", "text": "November 11th" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK348",
+        "questionText": "The 'Kyoto Protocol' (adopted 1997, entered force 2005) was an international treaty primarily aimed at addressing what global issue?",
+        "options": [
+            { "id": "a", "text": "Ozone layer depletion" },
+            { "id": "b", "text": "Nuclear weapon proliferation" },
+            { "id": "c", "text": "Climate change by setting binding emission reduction targets for developed countries" },
+            { "id": "d", "text": "Transnational organized crime" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK349",
+        "questionText": "Which Renaissance artist painted the ceiling of the Sistine Chapel in Vatican City?",
+        "options": [
+            { "id": "a", "text": "Leonardo da Vinci" },
+            { "id": "b", "text": "Raphael" },
+            { "id": "c", "text": "Donatello" },
+            { "id": "d", "text": "Michelangelo" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK350",
+        "questionText": "The 'Scramble for Africa' refers to the period of rapid colonization of the African continent by European powers during which era?",
+        "options": [
+            { "id": "a", "text": "16th - 17th centuries" },
+            { "id": "b", "text": "Late 19th century (approx. 1881-1914)" },
+            { "id": "c", "text": "Interwar period (1919-1939)" },
+            { "id": "d", "text": "Post-World War II decolonization era" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK351",
+        "questionText": "What is the 'Turing Test', proposed by Alan Turing in 1950?",
+        "options": [
+            { "id": "a", "text": "A test of a material's electrical conductivity." },
+            { "id": "b", "text": "A test of a machine's ability to exhibit intelligent behavior equivalent to, or indistinguishable from, that of a human." },
+            { "id": "c", "text": "A method for determining the age of archaeological artifacts." },
+            { "id": "d", "text": "A physical fitness test for astronauts." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK352",
+        "questionText": "The ancient library of Alexandria, one of the largest and most significant libraries of the ancient world, was located in which country?",
+        "options": [
+            { "id": "a", "text": "Greece" },
+            { "id": "b", "text": "Italy (Roman Empire)" },
+            { "id": "c", "text": "Egypt" },
+            { "id": "d", "text": "Persia" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK353",
+        "questionText": "What political ideology advocates for the abolition of all forms of state and government, often emphasizing voluntary cooperation?",
+        "options": [
+            { "id": "a", "text": "Socialism" },
+            { "id": "b", "text": "Communism" },
+            { "id": "c", "text": "Fascism" },
+            { "id": "d", "text": "Anarchism" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK354",
+        "questionText": "The 'Manhattan Project' was the codename for the Allied effort during World War II focused on developing what?",
+        "options": [
+            { "id": "a", "text": "Radar technology" },
+            { "id": "b", "text": "Jet engines" },
+            { "id": "c", "text": "The first nuclear weapons (atomic bombs)" },
+            { "id": "d", "text": "Code-breaking machines like Enigma" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK355",
+        "questionText": "In what year did the Berlin Wall, separating East and West Berlin, fall, symbolizing the end of the Cold War era in Europe?",
+        "options": [
+            { "id": "a", "text": "1985" },
+            { "id": "b", "text": "1989" },
+            { "id": "c", "text": "1991" },
+            { "id": "d", "text": "1993" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK356",
+        "questionText": "What does the acronym 'OPEC' stand for?",
+        "options": [
+            { "id": "a", "text": "Organization for Pacific Economic Cooperation" },
+            { "id": "b", "text": "Office of Petroleum Export Control" },
+            { "id": "c", "text": "Organization of the Petroleum Exporting Countries" },
+            { "id": "d", "text": "Official Partnership for Energy Companies" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK357",
+        "questionText": "The 'Spanish Flu' pandemic, which caused tens of millions of deaths worldwide, occurred during which period?",
+        "options": [
+            { "id": "a", "text": "1888-1890" },
+            { "id": "b", "text": "1905-1907" },
+            { "id": "c", "text": "1918-1920 (concurrent with the end of WWI)" },
+            { "id": "d", "text": "1945-1947" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK358",
+        "questionText": "Which social structure, formally abolished by India in 1950 but still influential, divides Hindus into hierarchical hereditary groups?",
+        "options": [
+            { "id": "a", "text": "Feudal System" },
+            { "id": "b", "text": "Class System" },
+            { "id": "c", "text": "Caste System" },
+            { "id": "d", "text": "Guild System" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK359",
+        "questionText": "The 'Hanseatic League' was a powerful commercial and defensive confederation of merchant guilds and market towns primarily located in which region during the medieval period?",
+        "options": [
+            { "id": "a", "text": "Mediterranean Sea" },
+            { "id": "b", "text": "Northern Europe (Baltic Sea and North Sea coasts)" },
+            { "id": "c", "text": "Indian Ocean" },
+            { "id": "d", "text": "Silk Road cities in Central Asia" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK360",
+        "questionText": "What is 'Esperanto'?",
+        "options": [
+            { "id": "a", "text": "An ancient dead language recently rediscovered." },
+            { "id": "b", "text": "The most widely spoken constructed international auxiliary language." },
+            { "id": "c", "text": "A dialect of Spanish spoken in South America." },
+            { "id": "d", "text": "A secret code used during World War II." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK361",
+        "questionText": "The 'Treaty of Tordesillas' (1494) divided the newly discovered lands outside Europe between which two maritime powers along a meridian west of the Cape Verde islands?",
+        "options": [
+            { "id": "a", "text": "England and France" },
+            { "id": "b", "text": "Portugal and Spain" },
+            { "id": "c", "text": "Netherlands and England" },
+            { "id": "d", "text": "Venice and Genoa" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK362",
+        "questionText": "What does the 'Peter Principle' humorously suggest about hierarchies?",
+        "options": [
+            { "id": "a", "text": "People tend to be promoted to their level of incompetence." },
+            { "id": "b", "text": "The best leaders are those who avoid making decisions." },
+            { "id": "c", "text": "Hierarchies naturally flatten over time." },
+            { "id": "d", "text": "Work expands to fill the time available for its completion (Parkinson's Law)." }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK363",
+        "questionText": "Which explorer led the first expedition documented to circumnavigate the Earth (though he died en route)?",
+        "options": [
+            { "id": "a", "text": "Christopher Columbus" },
+            { "id": "b", "text": "Vasco da Gama" },
+            { "id": "c", "text": "Ferdinand Magellan" },
+            { "id": "d", "text": "Sir Francis Drake" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK364",
+        "questionText": "The 'Bauhaus' was an influential German school of art, architecture, and design known for its emphasis on functionalism and integration of crafts and fine arts. During which period was it active?",
+        "options": [
+            { "id": "a", "text": "Late Renaissance (16th century)" },
+            { "id": "b", "text": "Baroque Period (17th century)" },
+            { "id": "c", "text": "Neoclassical Era (18th century)" },
+            { "id": "d", "text": "Interwar Period (1919-1933)" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK365",
+        "questionText": "What is the significance of the date October 31st, 1517, in the history of the Protestant Reformation?",
+        "options": [
+            { "id": "a", "text": "The Diet of Worms where Martin Luther refused to recant." },
+            { "id": "b", "text": "John Calvin published his \"Institutes of the Christian Religion\"." },
+            { "id": "c", "text": "Martin Luther allegedly posted his Ninety-five Theses on the door of the All Saints' Church in Wittenberg." },
+            { "id": "d", "text": "The founding of the Church of England by Henry VIII." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK366",
+        "questionText": "The 'Non-Aligned Movement' (NAM) was formed during the Cold War primarily by countries wishing to achieve what?",
+        "options": [
+            { "id": "a", "text": "Align closely with the United States." },
+            { "id": "b", "text": "Form a third military bloc to rival NATO and the Warsaw Pact." },
+            { "id": "c", "text": "Remain independent or neutral, not formally aligning with either the US-led Western Bloc or the Soviet-led Eastern Bloc." },
+            { "id": "d", "text": "Promote free trade agreements globally." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK367",
+        "questionText": "Which famous document, adopted by the French National Constituent Assembly in August 1789, is considered a foundational text of human civil rights?",
+        "options": [
+            { "id": "a", "text": "The Magna Carta" },
+            { "id": "b", "text": "The Bill of Rights (US)" },
+            { "id": "c", "text": "The Declaration of the Rights of Man and of the Citizen" },
+            { "id": "d", "text": "The Code Napoléon" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK368",
+        "questionText": "What is 'Moore's Law', an observation related to the history of computing hardware?",
+        "options": [
+            { "id": "a", "text": "The prediction that processor speeds (or number of transistors on a chip) would double approximately every two years." },
+            { "id": "b", "text": "The principle that software complexity grows faster than hardware capability." },
+            { "id": "c", "text": "The idea that the value of a network increases exponentially with the number of users (Metcalfe's Law)." },
+            { "id": "d", "text": "The rule that data storage capacity decreases in price by 50% each year." }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK369",
+        "questionText": "The 'Meiji Restoration' in Japan (starting 1868) marked a period of significant change. What was the primary outcome?",
+        "options": [
+            { "id": "a", "text": "The restoration of the Tokugawa Shogunate's power." },
+            { "id": "b", "text": "The return of practical imperial rule under Emperor Meiji, leading to rapid modernization and westernization." },
+            { "id": "c", "text": "Japan's isolation from the rest of the world (Sakoku policy)." },
+            { "id": "d", "text": "The establishment of a communist government." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK370",
+        "questionText": "What is the 'Fermi Paradox'?",
+        "options": [
+            { "id": "a", "text": "A paradox in fluid dynamics related to turbulence." },
+            { "id": "b", "text": "The apparent contradiction between the lack of clear evidence for extraterrestrial life and various high estimates for its probability." },
+            { "id": "c", "text": "A problem in quantum physics concerning particle entanglement." },
+            { "id": "d", "text": "An economic theory about diminishing returns." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK371",
+        "questionText": "Which conflict, lasting from 1950 to 1953, ended in an armistice and the division of the country near the 38th parallel, a division that persists today?",
+        "options": [
+            { "id": "a", "text": "Vietnam War" },
+            { "id": "b", "text": "Chinese Civil War" },
+            { "id": "c", "text": "Korean War" },
+            { "id": "d", "text": "Algerian War" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK372",
+        "questionText": "What system of government involves a monarch acting as head of state but within the parameters of a written or unwritten constitution, limiting their political powers?",
+        "options": [
+            { "id": "a", "text": "Absolute Monarchy" },
+            { "id": "b", "text": "Constitutional Monarchy" },
+            { "id": "c", "text": "Oligarchy" },
+            { "id": "d", "text": "Theocracy" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK373",
+        "questionText": "The 'Internet' evolved from a network originally developed for what purpose in the 1960s by the US Department of Defense?",
+        "options": [
+            { "id": "a", "text": "Commercial advertising" },
+            { "id": "b", "text": "Academic research sharing and resilient military communications (ARPANET)" },
+            { "id": "c", "text": "Public broadcasting" },
+            { "id": "d", "text": "International financial transactions" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK374",
+        "questionText": "What is the historical significance of the 'Spice Islands' (Maluku Islands, now part of Indonesia)?",
+        "options": [
+            { "id": "a", "text": "They were the primary battleground of the Napoleonic Wars in Asia." },
+            { "id": "b", "text": "They were the world's main source of valuable spices like nutmeg, mace, and cloves, driving European exploration and trade." },
+            { "id": "c", "text": "They hosted the first summit of the Non-Aligned Movement." },
+            { "id": "d", "text": "They were the site of the earliest known human settlements in Southeast Asia." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK375",
+        "questionText": "Which early Nepali film, directed by Pratap Subba in 1980 and shot in Darjeeling, is often considered a landmark for its realistic portrayal and thematic depth, departing from typical formulas of the time?",
+        "options": [
+            { "id": "a", "text": "Sindoor" },
+            { "id": "b", "text": "Paral Ko Aago" },
+            { "id": "c", "text": "Badlindo Akash" },
+            { "id": "d", "text": "Kusume Rumal" }
+        ],
+        "correctOptionId": "b"
+    },
+
+    
+    {
+        "id": "GK376",
+        "questionText": "Melawa Devi Gurung holds a significant place in Nepali music history. What is her primary claim to fame?",
+        "options": [
+            { "id": "a", "text": "First female composer of Nepal." },
+            { "id": "b", "text": "First Nepali female singer to record a song (around 1928 in Kolkata)." },
+            { "id": "c", "text": "Pioneer of Nepali folk-pop fusion." },
+            { "id": "d", "text": "First woman to establish a music school in Kathmandu." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK377",
+        "questionText": "The film Basudev (1984), directed by Neer Shah, adapted from a story by Dr. Dhruba Chandra Gautam, is noted for its critical take on what aspect of Nepali society?",
+        "options": [
+            { "id": "a", "text": "The caste system" },
+            { "id": "b", "text": "Political corruption during the Panchayat era" },
+            { "id": "c", "text": "The struggles of urban middle-class intellectuals and unemployment" },
+            { "id": "d", "text": "Feudal land tenure systems" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK378",
+        "questionText": "Narayan Gopal and Gopal Yonzon formed a legendary musical partnership. Which iconic song, known for its philosophical lyrics penned by Bhim Birag, is a prime example of their collaboration?",
+        "options": [
+            { "id": "a", "text": "Kehi Mitho Baata Gara" },
+            { "id": "b", "text": "Euta Manche Ko Maya Le Kati" },
+            { "id": "c", "text": "Malai Nasodha Kaha Dukcha Ghau" },
+            { "id": "d", "text": "Pokhiyera Ghamko Jhulka" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK379",
+        "questionText": "The film Balidaan (1997), directed by Tulsi Ghimire, became highly popular for its strong patriotic themes set against the backdrop of which historical period/event?",
+        "options": [
+            { "id": "a", "text": "The Anglo-Nepal War" },
+            { "id": "b", "text": "The anti-Rana movement of the 1940s" },
+            { "id": "c", "text": "The early Panchayat era and suppression of democracy" },
+            { "id": "d", "text": "The beginning of the Maoist insurgency" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK380",
+        "questionText": "Which Nepali folk-instrumental ensemble gained international recognition for reviving and promoting traditional Nepali instruments and sounds in a contemporary format?",
+        "options": [
+            { "id": "a", "text": "Nepathya" },
+            { "id": "b", "text": "1974 AD" },
+            { "id": "c", "text": "Kutumba" },
+            { "id": "d", "text": "Albatross" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK381",
+        "questionText": "What technical milestone did the film Aama (1964), directed by Hira Singh Khatri, achieve in Nepali cinema history?",
+        "options": [
+            { "id": "a", "text": "First Nepali film in colour." },
+            { "id": "b", "text": "First film produced entirely within Nepal under a government banner (then Royal Nepal Film Corporation)." },
+            { "id": "c", "text": "First Nepali film with synchronous sound." },
+            { "id": "d", "text": "First Nepali animated film." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK382",
+        "questionText": "Amber Gurung, composer of Nepal's national anthem, was also a key figure in establishing modern Nepali music. He was closely associated with the cultural life of which town outside Kathmandu before moving there?",
+        "options": [
+            { "id": "a", "text": "Pokhara" },
+            { "id": "b", "text": "Dharan" },
+            { "id": "c", "text": "Darjeeling" },
+            { "id": "d", "text": "Biratnagar" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK383",
+        "questionText": "Nischal Basnet's Loot (2012) is often credited with revitalizing Nepali cinema. What specific stylistic element or theme did it popularize?",
+        "options": [
+            { "id": "a", "text": "Historical period dramas" },
+            { "id": "b", "text": "Romantic comedies with foreign locations" },
+            { "id": "c", "text": "Gritty, realistic portrayal of urban crime and use of contemporary slang/dialogue" },
+            { "id": "d", "text": "High-budget fantasy epics" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK384",
+        "questionText": "Which legendary Nepali lyricist penned the words for numerous classic songs including Narayan Gopal's \"Euta Manche Ko Maya Le Kati\" and many compositions by Gopal Yonzon?",
+        "options": [
+            { "id": "a", "text": "Ratna Shamsher Thapa" },
+            { "id": "b", "text": "Kali Prasad Rijal" },
+            { "id": "c", "text": "Kiran Kharel" },
+            { "id": "d", "text": "Bhim Birag" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK385",
+        "questionText": "The film Prem Pinda (1995), directed by Neer Shah, is notable for being based on a historical incident involving the Rana regime. What is the central theme?",
+        "options": [
+            { "id": "a", "text": "A forbidden romance challenging Rana court hierarchy and social norms." },
+            { "id": "b", "text": "The Kot Massacre conspiracy." },
+            { "id": "c", "text": "The life story of Jung Bahadur Rana." },
+            { "id": "d", "text": "The abolition of the Sati system." }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK386",
+        "questionText": "Which Nepali rock band, formed in the early 90s, became hugely influential with hits like \"Sambodhan\" and \"Parelima,\" known for their blend of rock with Nepali melodies?",
+        "options": [
+            { "id": "a", "text": "Cobweb" },
+            { "id": "b", "text": "Mukti and Revival" },
+            { "id": "c", "text": "1974 AD" },
+            { "id": "d", "text": "The Shadows 'Nepal'" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK387",
+        "questionText": "Min Bahadur Bham's Kalo Pothi (The Black Hen), which won the Best Film award in the International Critics' Week section at the Venice Film Festival 2015, is set against the backdrop of which specific period?",
+        "options": [
+            { "id": "a", "text": "The immediate aftermath of the 2015 earthquake." },
+            { "id": "b", "text": "The height of the Panchayat system." },
+            { "id": "c", "text": "The early years of the Maoist insurgency in a remote village." },
+            { "id": "d", "text": "The unification campaign of Prithvi Narayan Shah." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK388",
+        "questionText": "What was the primary role of Radio Nepal in the development of Nepali music, particularly during the mid-20th century?",
+        "options": [
+            { "id": "a", "text": "Exclusively broadcasting Western music." },
+            { "id": "b", "text": "Acting as the main platform for recording, promoting, and archiving Nepali musicians and songs." },
+            { "id": "c", "text": "Focusing solely on classical music traditions." },
+            { "id": "d", "text": "Being a privately owned commercial station." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK389",
+        "questionText": "The song \"Resham Firiri,\" arguably the most internationally recognized Nepali folk tune, has debated origins but was popularized significantly by whom through recordings and performances?",
+        "options": [
+            { "id": "a", "text": "Narayan Gopal" },
+            { "id": "b", "text": "Buddhi Pariyar or Sundar Shrestha (associated with its popularization/recording)" },
+            { "id": "c", "text": "Kumar Basnet" },
+            { "id": "d", "text": "Jhalak Man Gandarbha" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK390",
+        "questionText": "Which actress, often called the \"first lady of Nepali cinema,\" starred in the first film produced in Nepal, Aama?",
+        "options": [
+            { "id": "a", "text": "Bhuwan Chand" },
+            { "id": "b", "text": "Tripti Nadakar" },
+            { "id": "c", "text": "Karishma Manandhar" },
+            { "id": "d", "text": "Gauri Malla" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK391",
+        "questionText": "The musical genre 'Lok Pop' in Nepal, blending folk tunes and rhythms with pop music sensibilities, was pioneered and popularized by artists like:",
+        "options": [
+            { "id": "a", "text": "Narayan Gopal" },
+            { "id": "b", "text": "Early Nepathya / Ram Thapa / Kul P. Gurung (representative figures)" },
+            { "id": "c", "text": "Bhakta Raj Acharya" },
+            { "id": "d", "text": "Amber Gurung" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK392",
+        "questionText": "Tulsi Ghimire, a prolific director, often shoots his films in locations outside Kathmandu, frequently associated with which region reflecting his roots?",
+        "options": [
+            { "id": "a", "text": "Terai plains" },
+            { "id": "b", "text": "Far-Western Nepal" },
+            { "id": "c", "text": "Darjeeling/Sikkim region of India" },
+            { "id": "d", "text": "Pokhara Valley" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK393",
+        "questionText": "Which Nepali film was the country's first official submission for the Academy Award for Best Foreign Language Film (now Best International Feature Film) in 1999?",
+        "options": [
+            { "id": "a", "text": "Balidaan" },
+            { "id": "b", "text": "Numafung" },
+            { "id": "c", "text": "Mukundo (Mask of Desire)" },
+            { "id": "d", "text": "Basudev" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK394",
+        "questionText": "Aruna Lama, known as the \"Nightingale of the Hills,\" sang numerous memorable Nepali songs. She primarily built her legendary career based in which city?",
+        "options": [
+            { "id": "a", "text": "Kathmandu" },
+            { "id": "b", "text": "Pokhara" },
+            { "id": "c", "text": "Darjeeling" },
+            { "id": "d", "text": "Dharan" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK395",
+        "questionText": "The critically acclaimed film Numafung (2001), directed by Nabin Subba, focuses on the cultural practices and social issues within which specific indigenous community of Eastern Nepal?",
+        "options": [
+            { "id": "a", "text": "Rai" },
+            { "id": "b", "text": "Limbu" },
+            { "id": "c", "text": "Tamang" },
+            { "id": "d", "text": "Gurung" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK396",
+        "questionText": "Which composer is credited with composing the music for Nepal's current national anthem, \"Sayaun Thunga Phulka Hami\"?",
+        "options": [
+            { "id": "a", "text": "Amber Gurung" },
+            { "id": "b", "text": "Gopal Yonzon" },
+            { "id": "c", "text": "Nhyoo Bajracharya" },
+            { "id": "d", "text": "Sambhujeet Baskota" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK397",
+        "questionText": "The trend of 'multiplex cinema culture' in Nepal, starting in the early 2000s, significantly impacted viewing habits and the types of films produced. Which multiplex is often considered the pioneer in Kathmandu?",
+        "options": [
+            { "id": "a", "text": "QFX Cinemas (at Jai Nepal hall initially)" },
+            { "id": "b", "text": "Big Movies" },
+            { "id": "c", "text": "FNCCI Cinema Hall" },
+            { "id": "d", "text": "Gopi Krishna Movies" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK398",
+        "questionText": "Jhalak Man Gandarbha was a legendary figure associated with preserving and performing the music of which specific Nepali community/tradition?",
+        "options": [
+            { "id": "a", "text": "Tharu folk songs" },
+            { "id": "b", "text": "Newari devotional music (Dapha)" },
+            { "id": "c", "text": "Gandarbha tradition (Sarangi playing and narrative singing)" },
+            { "id": "d", "text": "Tamang Selo" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK399",
+        "questionText": "The film Seto Surya (White Sun), directed by Deepak Rauniyar (2016), gained international acclaim for its portrayal of the lingering conflicts and societal divisions in a village during which period?",
+        "options": [
+            { "id": "a", "text": "Immediately after the end of the Rana regime." },
+            { "id": "b", "text": "During the peak of the Panchayat system." },
+            { "id": "c", "text": "In the aftermath of the Maoist conflict and the fragile peace process." },
+            { "id": "d", "text": "Following the 2015 earthquake." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK400",
+        "questionText": "Which influential music band, known for blending rock, jazz, and funk with Nepali influences, featured founding members like Phiroj Shyangden and Nirakar Yakthumba?",
+        "options": [
+            { "id": "a", "text": "Nepathya" },
+            { "id": "b", "text": "Kutumba" },
+            { "id": "c", "text": "Mongolian Heart" },
+            { "id": "d", "text": "1974 AD" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK401",
+        "questionText": "What was controversial about the film Dasdhunga (2010), directed by Manoj Pandit?",
+        "options": [
+            { "id": "a", "text": "Its excessive violence and explicit content." },
+            { "id": "b", "text": "Its sympathetic portrayal of the Maoist insurgency." },
+            { "id": "c", "text": "Its fictionalized depiction of the mysterious death of CPN-UML leaders Madan Bhandari and Jibaraj Ashrit." },
+            { "id": "d", "text": "Its high budget and alleged financial irregularities." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK402",
+        "questionText": "Bhakta Raj Acharya, known as 'Bhajan Shiromani', is revered primarily for his contributions to which genre of Nepali music?",
+        "options": [
+            { "id": "a", "text": "Rock and Roll" },
+            { "id": "b", "text": "Lok Dohori" },
+            { "id": "c", "text": "Adhunik Geet (Modern Songs) and Bhajans (Devotional Songs)" },
+            { "id": "d", "text": "Film soundtracks" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK403",
+        "questionText": "Which director is associated with the critically noted films Numafung and Goodbye Kathmandu?",
+        "options": [
+            { "id": "a", "text": "Tshering Rhitar Sherpa" },
+            { "id": "b", "text": "Nabin Subba" },
+            { "id": "c", "text": "Bhushan Dahal" },
+            { "id": "d", "text": "Dayaram Dahal" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK404",
+        "questionText": "The song \"U Jitera Gai Ya Haarera Gai\" sung by Kunti Moktan, composed by Shila Bahadur Moktan, is a popular example of which type of song, often performed in a competitive duet format?",
+        "options": [
+            { "id": "a", "text": "Tamang Selo" },
+            { "id": "b", "text": "Deuda Geet" },
+            { "id": "c", "text": "Lok Dohori" },
+            { "id": "d", "text": "Jhyaure Geet" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK405",
+        "questionText": "Which actor, known for his versatility and roles in both commercial and critically acclaimed films like Loot, Talakjung vs Tulke, and Pashupati Prasad, has a strong background in theatre?",
+        "options": [
+            { "id": "a", "text": "Rajesh Hamal" },
+            { "id": "b", "text": "Bhuwan K.C." },
+            { "id": "c", "text": "Saugat Malla" },
+            { "id": "d", "text": "Dayahang Rai" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK406",
+        "questionText": "The 2003 film Muna Madan, adapting Devkota's work, was directed by whom?",
+        "options": [
+            { "id": "a", "text": "Neer Shah" },
+            { "id": "b", "text": "Tulsi Ghimire" },
+            { "id": "c", "text": "Gyanendra Deuja" },
+            { "id": "d", "text": "Shambhu Pradhan" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK407",
+        "questionText": "What is the significance of the 'Image Awards' in the context of Nepali music?",
+        "options": [
+            { "id": "a", "text": "It is Nepal's oldest music award ceremony." },
+            { "id": "b", "text": "It is primarily focused on folk music genres." },
+            { "id": "c", "text": "It was one of the major, long-running award ceremonies recognizing achievements in Nepali music, organized by Image Channel." },
+            { "id": "d", "text": "It exclusively awarded international artists performing in Nepal." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK408",
+        "questionText": "Which modern Nepali rock band is known for its heavier, alternative/metal sound and songs like \"Atti Bhayo\"?",
+        "options": [
+            { "id": "a", "text": "Albatross" },
+            { "id": "b", "text": "The Axe Band" },
+            { "id": "c", "text": "Cobweb" },
+            { "id": "d", "text": "Underside" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK409",
+        "questionText": "Director Tshering Rhitar Sherpa gained international notice with films like Mukundo and Karma. His works often explore themes related to what?",
+        "options": [
+            { "id": "a", "text": "Political thrillers set in Kathmandu." },
+            { "id": "b", "text": "Traditional beliefs, spirituality, and psychological complexities, often within specific cultural contexts (e.g., Shamanism, Buddhism)." },
+            { "id": "c", "text": "High-action martial arts sequences." },
+            { "id": "d", "text": "Light-hearted romantic comedies aimed at youth." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK410",
+        "questionText": "The song \"Gairi Khet Ko Shirai Haneyo\" is a classic example of which regional folk music style from Western Nepal?",
+        "options": [
+            { "id": "a", "text": "Maithili Geet" },
+            { "id": "b", "text": "Bhojpuri Geet" },
+            { "id": "c", "text": "Deuda Geet" },
+            { "id": "d", "text": "Newari Rajamati" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK411",
+        "questionText": "The film Jhola (2013), based on Krishna Dharabasi's story, brought which abolished social evil back into public discourse?",
+        "options": [
+            { "id": "a", "text": "Untouchability" },
+            { "id": "b", "text": "Deuki system" },
+            { "id": "c", "text": "Sati system" },
+            { "id": "d", "text": "Bonded labor (Kamaiya)" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK412",
+        "questionText": "Who is often credited as the first music director of Nepali films, starting with Aama?",
+        "options": [
+            { "id": "a", "text": "Amber Gurung" },
+            { "id": "b", "text": "Gopal Yonzon" },
+            { "id": "c", "text": "Chandra Raj Sharma" },
+            { "id": "d", "text": "Jaidev (Indian composer who worked on Aama)" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK413",
+        "questionText": "The rise of music video culture in Nepal was significantly boosted by the launch of which private television channel in the mid-1990s?",
+        "options": [
+            { "id": "a", "text": "Nepal Television (NTV)" },
+            { "id": "b", "text": "Kantipur Television" },
+            { "id": "c", "text": "Channel Nepal / Image Channel" },
+            { "id": "d", "text": "Sagarmatha Television" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK414",
+        "questionText": "Which Nepali rapper gained prominence through platforms like Raw Barz and is known for hits like \"Laure,\" often addressing social issues and youth experiences?",
+        "options": [
+            { "id": "a", "text": "Yama Buddha (Anil Adhikari)" },
+            { "id": "b", "text": "VTEN (Samir Ghising)" },
+            { "id": "c", "text": "Ashish Rana (Laure)" },
+            { "id": "d", "text": "Girish Khatiwada" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK415",
+        "questionText": "The film Kusume Rumal (1985) was immensely popular and ran for a record time. Besides its romantic plot, what was notable about its production?",
+        "options": [
+            { "id": "a", "text": "It was the first Nepali film shot entirely abroad." },
+            { "id": "b", "text": "Directed by Tulsi Ghimire, it featured popular actors Udit Narayan Jha (also singer) and Tripti Nadakar." },
+            { "id": "c", "text": "It was based on a famous historical novel." },
+            { "id": "d", "text": "It was Nepal's first 3D film." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK416",
+        "questionText": "Which female singer is known for her powerful vocals and hits from the 90s/2000s Adhunik genre like \"Sayad Timro Batoma\"?",
+        "options": [
+            { "id": "a", "text": "Kunti Moktan" },
+            { "id": "b", "text": "Nalina Chitrakar" },
+            { "id": "c", "text": "Sapana Shree" },
+            { "id": "d", "text": "Anju Panta" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK417",
+        "questionText": "The use of the 'Sarangi' instrument is intrinsically linked to which musical community in Nepal?",
+        "options": [
+            { "id": "a", "text": "Damai musicians (part of Panche Baaja)" },
+            { "id": "b", "text": "Gandarbha community" },
+            { "id": "c", "text": "Newar Jyapu community (Dhime baaja)" },
+            { "id": "d", "text": "Gurung community (Rodhi Ghar music)" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK418",
+        "questionText": "What was the theme of the critically praised documentary Saving Dolma (or similar titles like Dolma) by Kesang Tseten Lama?",
+        "options": [
+            { "id": "a", "text": "The impact of climate change on Himalayan glaciers." },
+            { "id": "b", "text": "The preservation of traditional Thangka painting." },
+            { "id": "c", "text": "The story of a young woman escaping potential trafficking from a remote village." },
+            { "id": "d", "text": "The challenges faced by Gurkha veterans." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK419",
+        "questionText": "Which composer/musician is known for incorporating Western classical structures and orchestration into modern Nepali music (Adhunik Geet), alongside Gopal Yonzon and Amber Gurung?",
+        "options": [
+            { "id": "a", "text": "Nati Kaji (Amrit Lal Shrestha)" },
+            { "id": "b", "text": "Shiva Shankar Manandhar" },
+            { "id": "c", "text": "Dibya Khaling" },
+            { "id": "d", "text": "Sambhujeet Baskota" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK420",
+        "questionText": "The movie Pashupati Prasad (2016), directed by Dipendra K. Khanal, gained popularity for its poignant story centered around a character living near which major religious site in Kathmandu?",
+        "options": [
+            { "id": "a", "text": "Boudhanath Stupa" },
+            { "id": "b", "text": "Swayambhunath Stupa" },
+            { "id": "c", "text": "Pashupatinath Temple" },
+            { "id": "d", "text": "Budhanilkantha Temple" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK421",
+        "questionText": "Which singer, often called the 'Tragedy King' of Nepali music, is known for his melancholic songs like \"Ma Patharko Manche\"?",
+        "options": [
+            { "id": "a", "text": "Phatteman Rajbhandari" },
+            { "id": "b", "text": "Yogeshwor Amatya" },
+            { "id": "c", "text": "Deep Shrestha" },
+            { "id": "d", "text": "Udit Narayan Jha" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK422",
+        "questionText": "What significant change did the advent of digital filmmaking bring to the Nepali film industry in the early 2000s?",
+        "options": [
+            { "id": "a", "text": "A complete shift to animation films." },
+            { "id": "b", "text": "It drastically lowered production costs, leading to an increase in the number of films produced, though quality varied." },
+            { "id": "c", "text": "It allowed for easier international distribution deals." },
+            { "id": "d", "text": "It mandated the use of English subtitles for all films." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK423",
+        "questionText": "The song \"Mutu Jalirahecha,\" sung by Prakash Shrestha, represents the 'Adhunik Geet' style. Who composed this classic tune?",
+        "options": [
+            { "id": "a", "text": "Gopal Yonzon" },
+            { "id": "b", "text": "Amber Gurung" },
+            { "id": "c", "text": "Shakti Ballav" },
+            { "id": "d", "text": "Ranjit Gazmer" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK424",
+        "questionText": "Which film festival, held annually in Kathmandu, focuses specifically on showcasing mountaineering films and stories related to mountain culture, environment, and adventure?",
+        "options": [
+            { "id": "a", "text": "Nepal International Film Festival (NIFF)" },
+            { "id": "b", "text": "Kathmandu International Mountain Film Festival (KIMFF)" },
+            { "id": "c", "text": "Ekadeshma International Short Film Festival" },
+            { "id": "d", "text": "Nepal Africa Film Festival" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK425",
+        "questionText": "Who is the current President of Nepal (as of April 2025)?",
+        "options": [
+            { "id": "a", "text": "Bidya Devi Bhandari" },
+            { "id": "b", "text": "Ram Baran Yadav" },
+            { "id": "c", "text": "Ram Chandra Poudel" },
+            { "id": "d", "text": "KP Sharma Oli" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK426",
+        "questionText": "Who is the current Prime Minister of Nepal (as of April 2025)?",
+        "options": [
+            { "id": "a", "text": "Sher Bahadur Deuba" },
+            { "id": "b", "text": "Pushpa Kamal Dahal 'Prachanda'" },
+            { "id": "c", "text": "Madhav Kumar Nepal" },
+            { "id": "d", "text": "KP Sharma Oli" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK427",
+        "questionText": "KP Sharma Oli became the Prime Minister of Nepal in which month of 2024?",
+        "options": [
+            { "id": "a", "text": "March" },
+            { "id": "b", "text": "May" },
+            { "id": "c", "text": "July" },
+            { "id": "d", "text": "September" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK428",
+        "questionText": "Which two major political parties formed the current coalition government in Nepal in July 2024?",
+        "options": [
+            { "id": "a", "text": "Nepali Congress and CPN (Maoist Centre)" },
+            { "id": "b", "text": "CPN (UML) and CPN (Maoist Centre)" },
+            { "id": "c", "text": "Nepali Congress and CPN (UML)" },
+            { "id": "d", "text": "Rastriya Swatantra Party and Nepali Congress" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK429",
+        "questionText": "Who was recently (April 2025) appointed as the new Minister for Education, Science and Technology?",
+        "options": [
+            { "id": "a", "text": "Bidya Bhattarai" },
+            { "id": "b", "text": "Raghuji Pant" },
+            { "id": "c", "text": "Sumana Shrestha" },
+            { "id": "d", "text": "Pradeep Poudel" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK430",
+        "questionText": "Which famous Brazilian football star visited Nepal in April 2025 and met the Prime Minister?",
+        "options": [
+            { "id": "a", "text": "Ronaldinho" },
+            { "id": "b", "text": "Neymar" },
+            { "id": "c", "text": "Pelé" },
+            { "id": "d", "text": "Roberto Carlos" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK431",
+        "questionText": "Nepal is preparing to host the 'Sagarmatha Sambaad' (Everest Dialogue) in May 2025.[1] What is its main theme?",
+        "options": [
+            { "id": "a", "text": "Tourism Development" },
+            { "id": "b", "text": "International Trade" },
+            { "id": "c", "text": "Climate Change and Mountains" },
+            { "id": "d", "text": "Regional Security" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK432",
+        "questionText": "Which important infrastructure project in Nepal, involving a 315-km transmission line, is funded by the US agency MCC?",
+        "options": [
+            { "id": "a", "text": "Upper Tamakoshi Hydropower" },
+            { "id": "b", "text": "Melamchi Water Supply Project" },
+            { "id": "c", "text": "Lapsiphedi-Ratamate-Hetauda Transmission Line" },
+            { "id": "d", "text": "Mid-Hill Highway" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK433",
+        "questionText": "The year 2025 marks a significant anniversary of diplomatic relations between Nepal and which country?",
+        "options": [
+            { "id": "a", "text": "India" },
+            { "id": "b", "text": "China" },
+            { "id": "c", "text": "USA" },
+            { "id": "d", "text": "UK" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK434",
+        "questionText": "Which hydropower project is often cited as the largest completed electricity project in Nepal to date?",
+        "options": [
+            { "id": "a", "text": "Kali Gandaki A" },
+            { "id": "b", "text": "Bheri-Babai Diversion" },
+            { "id": "c", "text": "Upper Tamakoshi" },
+            { "id": "d", "text": "Budhigandaki" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK435",
+        "questionText": "Who is the current Minister for Foreign Affairs in the Nepal government (as of April 2025)?",
+        "options": [
+            { "id": "a", "text": "Pradeep Gyawali" },
+            { "id": "b", "text": "Prakash Sharan Mahat" },
+            { "id": "c", "text": "Arzu Rana Deuba" },
+            { "id": "d", "text": "Narayan Kaji Shrestha" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK436",
+        "questionText": "Which team recently won the Qualifier 2 match to enter the final of the Nepal Super League (NSL) Season 3 (Football)?",
+        "options": [
+            { "id": "a", "text": "Lalitpur City FC" },
+            { "id": "b", "text": "Dhangadhi FC" },
+            { "id": "c", "text": "Butwal Lumbini FC" },
+            { "id": "d", "text": "Pokhara Thunders FC" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK437",
+        "questionText": "Which major international airport project in Nepal was recently completed and is operational, besides Tribhuvan International Airport?",
+        "options": [
+            { "id": "a", "text": "Nijgadh International Airport" },
+            { "id": "b", "text": "Pokhara Regional International Airport" },
+            { "id": "c", "text": "Bhairahawa (Gautam Buddha) International Airport" },
+            { "id": "d", "text": "Both b and c" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK438",
+        "questionText": "Nepal's foreign policy is primarily based on the principle of:",
+        "options": [
+            { "id": "a", "text": "Joining military alliances" },
+            { "id": "b", "text": "Alignment with major powers" },
+            { "id": "c", "text": "Nonalignment and peaceful coexistence" },
+            { "id": "d", "text": "Economic isolationism" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK439",
+        "questionText": "Which long highway project, considered a 'National Pride Project', aims to connect the hilly regions from East to West Nepal?",
+        "options": [
+            { "id": "a", "text": "Postal Highway (Hulaki Rajmarg)" },
+            { "id": "b", "text": "Mid-Hill Highway (Pushpalal Lokmarga)" },
+            { "id": "c", "text": "Kathmandu-Terai Fast Track" },
+            { "id": "d", "text": "East-West Highway (Mahendra Highway)" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK440",
+        "questionText": "Who is the current Chief Secretary of the Government of Nepal (as of April 2025)?",
+        "options": [
+            { "id": "a", "text": "Shankar Das Bairagi" },
+            { "id": "b", "text": "Lok Darshan Regmi" },
+            { "id": "c", "text": "Baikuntha Aryal" },
+            { "id": "d", "text": "Eaknarayan Aryal" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK441",
+        "questionText": "The 'SURYA KIRAN' is a joint military exercise held regularly between Nepal and which country?",
+        "options": [
+            { "id": "a", "text": "China" },
+            { "id": "b", "text": "USA" },
+            { "id": "c", "text": "India" },
+            { "id": "d", "text": "Bangladesh" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK442",
+        "questionText": "Which framework agreement related to infrastructure and connectivity did Nepal sign with China in December 2024?",
+        "options": [
+            { "id": "a", "text": "MCC Compact" },
+            { "id": "b", "text": "BIMSTEC Charter" },
+            { "id": "c", "text": "SAARC Development Fund" },
+            { "id": "d", "text": "Belt and Road Initiative (BRI)" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK443",
+        "questionText": "In which city is the Pashupati Area Development Project, a National Pride Project, located?",
+        "options": [
+            { "id": "a", "text": "Pokhara" },
+            { "id": "b", "text": "Lumbini" },
+            { "id": "c", "text": "Janakpur" },
+            { "id": "d", "text": "Kathmandu" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK444",
+        "questionText": "Who holds the position of Speaker of the House of Representatives (Pratinidhi Sabha) in Nepal's Federal Parliament (as of April 2025)?",
+        "options": [
+            { "id": "a", "text": "Agni Sapkota" },
+            { "id": "b", "text": "Krishna Bahadur Mahara" },
+            { "id": "c", "text": "Subas Chandra Nemwang" },
+            { "id": "d", "text": "Dev Raj Ghimire" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK445",
+        "questionText": "Who is considered the first king of the Gopal Dynasty, believed to be the earliest rulers of the Kathmandu Valley?",
+        "options": [
+            { "id": "a", "text": "Yalambar" },
+            { "id": "b", "text": "Bhuktaman" },
+            { "id": "c", "text": "Manadeva" },
+            { "id": "d", "text": "Jayasthiti Malla" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK446",
+        "questionText": "Which dynasty is believed to have ruled Nepal after the Gopal dynasty and before the Licchavi dynasty?",
+        "options": [
+            { "id": "a", "text": "Mahispal (Ahir) Dynasty" },
+            { "id": "b", "text": "Malla Dynasty" },
+            { "id": "c", "text": "Shah Dynasty" },
+            { "id": "d", "text": "Kirat Dynasty" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK447",
+        "questionText": "Yalambar, the first Kirati king, is mentioned in which famous Hindu epic?",
+        "options": [
+            { "id": "a", "text": "Ramayana" },
+            { "id": "b", "text": "Mahabharata" },
+            { "id": "c", "text": "Bhagavad Gita" },
+            { "id": "d", "text": "Puranas" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK448",
+        "questionText": "Who was the first historically documented king of Nepal, known from inscriptions, belonging to the Licchavi dynasty?",
+        "options": [
+            { "id": "a", "text": "Amsuverma" },
+            { "id": "b", "text": "Supushpa" },
+            { "id": "c", "text": "Manadeva I" },
+            { "id": "d", "text": "Bhrikuti" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK449",
+        "questionText": "The famous Changu Narayan Temple, a UNESCO World Heritage site, was built during the reign of which Licchavi king?",
+        "options": [
+            { "id": "a", "text": "Narendra Deva" },
+            { "id": "b", "text": "Manadeva I" },
+            { "id": "c", "text": "Shiva Deva I" },
+            { "id": "d", "text": "Amsuverma" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK450",
+        "questionText": "Amsuverma, a prominent ruler during the Licchavi period, held which title?",
+        "options": [
+            { "id": "a", "text": "Maharajadhiraja" },
+            { "id": "b", "text": "Mahasamanta" },
+            { "id": "c", "text": "Senapati" },
+            { "id": "d", "text": "Rajkumar" }
+        ],
+        "correctOptionId": "b"
+    },
+    
+    {
+        "id": "GK451",
+        "questionText": "The Nepalese princess Bhrikuti, who married Tibetan King Songtsen Gampo, belonged to which dynasty?",
+        "options": [
+            { "id": "a", "text": "Kirat" },
+            { "id": "b", "text": "Malla" },
+            { "id": "c", "text": "Licchavi" },
+            { "id": "d", "text": "Shah" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK452",
+        "questionText": "The Malla dynasty primarily ruled which part of present-day Nepal?",
+        "options": [
+            { "id": "a", "text": "Terai region" },
+            { "id": "b", "text": "Karnali region" },
+            { "id": "c", "text": "Kathmandu Valley" },
+            { "id": "d", "text": "Gandaki region" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK453",
+        "questionText": "Which Malla king is credited with dividing the Kathmandu Valley into three kingdoms (Kathmandu, Patan, Bhaktapur)?",
+        "options": [
+            { "id": "a", "text": "Jayasthiti Malla" },
+            { "id": "b", "text": "Pratap Malla" },
+            { "id": "c", "text": "Yakshya Malla" },
+            { "id": "d", "text": "Siddhi Narsingh Malla" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK454",
+        "questionText": "Jayasthiti Malla is famous for introducing social reforms and codifying laws based on what?",
+        "options": [
+            { "id": "a", "text": "Buddhist principles" },
+            { "id": "b", "text": "Kirati traditions" },
+            { "id": "c", "text": "Manusmriti (Hindu caste system)" },
+            { "id": "d", "text": "Western legal systems" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK455",
+        "questionText": "Pratap Malla, a famous king of Kantipur (Kathmandu), was known for his contributions to:",
+        "options": [
+            { "id": "a", "text": "Military conquests" },
+            { "id": "b", "text": "Road construction" },
+            { "id": "c", "text": "Literature, art, and architecture (e.g., Rani Pokhari)" },
+            { "id": "d", "text": "Trade treaties" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK456",
+        "questionText": "Who was the king of Gorkha who started the unification campaign of Nepal?",
+        "options": [
+            { "id": "a", "text": "Ram Shah" },
+            { "id": "b", "text": "Drabya Shah" },
+            { "id": "c", "text": "Prithvi Narayan Shah" },
+            { "id": "d", "text": "Narbhupal Shah" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK457",
+        "questionText": "In which year did Prithvi Narayan Shah conquer Kathmandu (Kantipur), a key event in Nepal's unification?",
+        "options": [
+            { "id": "a", "text": "1744 AD" },
+            { "id": "b", "text": "1768 AD (Vikram Samvat 1825)" },
+            { "id": "c", "text": "1775 AD" },
+            { "id": "d", "text": "1816 AD" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK458",
+        "questionText": "The Anglo-Nepalese War (Gorkha War) took place primarily between which years?",
+        "options": [
+            { "id": "a", "text": "1768-1770" },
+            { "id": "b", "text": "1801-1805" },
+            { "id": "c", "text": "1814-1816" },
+            { "id": "d", "text": "1846-1847" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK459",
+        "questionText": "What was the name of the treaty that ended the Anglo-Nepalese War?",
+        "options": [
+            { "id": "a", "text": "Treaty of Versailles" },
+            { "id": "b", "text": "Treaty of Sugauli" },
+            { "id": "c", "text": "Treaty of Kathmandu" },
+            { "id": "d", "text": "Treaty of Gorkha" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK460",
+        "questionText": "Which event marked the beginning of the Rana regime in Nepal in 1846 AD (1903 BS)?",
+        "options": [
+            { "id": "a", "text": "Kot Massacre (Kot Parva)" },
+            { "id": "b", "text": "Bhandarkhal Massacre" },
+            { "id": "c", "text": "Alau Massacre" },
+            { "id": "d", "text": "Sugauli Treaty" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK461",
+        "questionText": "Who was the founder of the Rana regime, establishing hereditary Prime Ministership?",
+        "options": [
+            { "id": "a", "text": "Bhimsen Thapa" },
+            { "id": "b", "text": "Mathabar Singh Thapa" },
+            { "id": "c", "text": "Jung Bahadur Rana" },
+            { "id": "d", "text": "Chandra Shumsher Rana" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK462",
+        "questionText": "During which Rana Prime Minister's rule was slavery abolished in Nepal (in 1924 AD)?",
+        "options": [
+            { "id": "a", "text": "Jung Bahadur Rana" },
+            { "id": "b", "text": "Dev Shumsher Rana" },
+            { "id": "c", "text": "Chandra Shumsher Rana" },
+            { "id": "d", "text": "Juddha Shumsher Rana" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK463",
+        "questionText": "Which Rana Prime Minister abolished the Sati system (widow immolation) in Nepal (in 1920 AD)?",
+        "options": [
+            { "id": "a", "text": "Jung Bahadur Rana" },
+            { "id": "b", "text": "Bir Shumsher Rana" },
+            { "id": "c", "text": "Chandra Shumsher Rana" },
+            { "id": "d", "text": "Padma Shumsher Rana" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK464",
+        "questionText": "The revolution that overthrew the Rana regime and established democracy occurred in which year?",
+        "options": [
+            { "id": "a", "text": "1947 AD (2004 BS)" },
+            { "id": "b", "text": "1951 AD (2007 BS)" },
+            { "id": "c", "text": "1960 AD (2017 BS)" },
+            { "id": "d", "text": "1990 AD (2046 BS)" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK465",
+        "questionText": "Who was the King of Nepal during the 1951 (2007 BS) revolution?",
+        "options": [
+            { "id": "a", "text": "King Mahendra" },
+            { "id": "b", "text": "King Tribhuvan" },
+            { "id": "c", "text": "King Birendra" },
+            { "id": "d", "text": "King Gyanendra" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK466",
+        "questionText": "King Mahendra dissolved the elected parliament and banned political parties in which year, starting the Panchayat system?",
+        "options": [
+            { "id": "a", "text": "1951 AD (2007 BS)" },
+            { "id": "b", "text": "1959 AD (2015 BS)" },
+            { "id": "c", "text": "1960 AD (2017 BS)" },
+            { "id": "d", "text": "1972 AD (2028 BS)" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK467",
+        "questionText": "The 'Jana Andolan I' (People's Movement I) which restored multi-party democracy took place in which year?",
+        "options": [
+            { "id": "a", "text": "1951 AD (2007 BS)" },
+            { "id": "b", "text": "1960 AD (2017 BS)" },
+            { "id": "c", "text": "1990 AD (2046 BS)" },
+            { "id": "d", "text": "2006 AD (2063 BS)" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK468",
+        "questionText": "The Royal Palace Massacre, in which King Birendra and his family were killed, occurred in which year?",
+        "options": [
+            { "id": "a", "text": "1990 AD" },
+            { "id": "b", "text": "1996 AD" },
+            { "id": "c", "text": "2001 AD" },
+            { "id": "d", "text": "2006 AD" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK469",
+        "questionText": "Nepal was declared a Federal Democratic Republic, ending the monarchy, in which year?",
+        "options": [
+            { "id": "a", "text": "1990 AD (2046 BS)" },
+            { "id": "b", "text": "2001 AD (2058 BS)" },
+            { "id": "c", "text": "2006 AD (2063 BS)" },
+            { "id": "d", "text": "2008 AD (2065 BS)" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK470",
+        "questionText": "What is the national sport of Nepal?",
+        "options": [
+            { "id": "a", "text": "Cricket" },
+            { "id": "b", "text": "Football" },
+            { "id": "c", "text": "Volleyball" },
+            { "id": "d", "text": "Kabaddi" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK471",
+        "questionText": "Who is the current captain of the Nepal National Men's Cricket Team (as of April 2025)?",
+        "options": [
+            { "id": "a", "text": "Paras Khadka" },
+            { "id": "b", "text": "Sandeep Lamichhane" },
+            { "id": "c", "text": "Gyanendra Malla" },
+            { "id": "d", "text": "Rohit Paudel" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK472",
+        "questionText": "Who is the current captain of the Nepal National Men's Football Team (as of April 2025)?",
+        "options": [
+            { "id": "a", "text": "Nawayug Shrestha" },
+            { "id": "b", "text": "Anjan Bista" },
+            { "id": "c", "text": "Kiran Chemjong" },
+            { "id": "d", "text": "Rohit Chand" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK473",
+        "questionText": "Paras Khadka, a famous Nepali sportsperson, is associated with which sport?",
+        "options": [
+            { "id": "a", "text": "Football" },
+            { "id": "b", "text": "Athletics" },
+            { "id": "c", "text": "Cricket" },
+            { "id": "d", "text": "Swimming" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK474",
+        "questionText": "Which Nepali cricketer holds the world record for the fastest fifty in T20 International cricket?",
+        "options": [
+            { "id": "a", "text": "Kushal Bhurtel" },
+            { "id": "b", "text": "Rohit Paudel" },
+            { "id": "c", "text": "Dipendra Singh Airee" },
+            { "id": "d", "text": "Sandeep Lamichhane" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK475",
+        "questionText": "How many players are there on each team on the court during a standard volleyball match?",
+        "options": [
+            { "id": "a", "text": "5" },
+            { "id": "b", "text": "6" },
+            { "id": "c", "text": "7" },
+            { "id": "d", "text": "11" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK476",
+        "questionText": "Which country won the FIFA World Cup held in Qatar in 2022?",
+        "options": [
+            { "id": "a", "text": "France" },
+            { "id": "b", "text": "Brazil" },
+            { "id": "c", "text": "Argentina" },
+            { "id": "d", "text": "Germany" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK477",
+        "questionText": "The Olympic Games are held every how many years?",
+        "options": [
+            { "id": "a", "text": "2 years" },
+            { "id": "b", "text": "3 years" },
+            { "id": "c", "text": "4 years" },
+            { "id": "d", "text": "5 years" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK478",
+        "questionText": "In which sport would you hear terms like 'LBW', 'Maiden Over', and 'Wicket'?",
+        "options": [
+            { "id": "a", "text": "Football" },
+            { "id": "b", "text": "Basketball" },
+            { "id": "c", "text": "Hockey" },
+            { "id": "d", "text": "Cricket" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK479",
+        "questionText": "Gaurika Singh, who won multiple gold medals for Nepal in the South Asian Games, competes in which sport?",
+        "options": [
+            { "id": "a", "text": "Athletics" },
+            { "id": "b", "text": "Swimming" },
+            { "id": "c", "text": "Taekwondo" },
+            { "id": "d", "text": "Shooting" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK480",
+        "questionText": "What does NSL stand for in the context of Nepali domestic football?",
+        "options": [
+            { "id": "a", "text": "National Soccer League" },
+            { "id": "b", "text": "Nepal Super League" },
+            { "id": "c", "text": "Nepal Sports League" },
+            { "id": "d", "text": "National Senior League" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK481",
+        "questionText": "How many players are on a standard football (soccer) team on the field at one time?",
+        "options": [
+            { "id": "a", "text": "9" },
+            { "id": "b", "text": "10" },
+            { "id": "c", "text": "11" },
+            { "id": "d", "text": "12" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK482",
+        "questionText": "Where were the 2020 Summer Olympics held (actually hosted in 2021)?",
+        "options": [
+            { "id": "a", "text": "Paris" },
+            { "id": "b", "text": "Los Angeles" },
+            { "id": "c", "text": "Beijing" },
+            { "id": "d", "text": "Tokyo" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK483",
+        "questionText": "Sandeep Lamichhane is a famous Nepali player associated with which sport?",
+        "options": [
+            { "id": "a", "text": "Badminton" },
+            { "id": "b", "text": "Football" },
+            { "id": "c", "text": "Cricket" },
+            { "id": "d", "text": "Boxing" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK484",
+        "questionText": "Which tournament is considered the most prestigious in the sport of tennis? (Hint: There are four majors)",
+        "options": [
+            { "id": "a", "text": "Davis Cup" },
+            { "id": "b", "text": "ATP Finals" },
+            { "id": "c", "text": "Grand Slam tournaments (Wimbledon, US Open, French Open, Australian Open)" },
+            { "id": "d", "text": "Olympic Tennis Tournament" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK485",
+        "questionText": "What is the standard duration of a professional football (soccer) match, excluding stoppage time?",
+        "options": [
+            { "id": "a", "text": "60 minutes" },
+            { "id": "b", "text": "75 minutes" },
+            { "id": "c", "text": "90 minutes" },
+            { "id": "d", "text": "100 minutes" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK486",
+        "questionText": "Which body governs international cricket?",
+        "options": [
+            { "id": "a", "text": "FIFA" },
+            { "id": "b", "text": "IOC" },
+            { "id": "c", "text": "ICC (International Cricket Council)" },
+            { "id": "d", "text": "FIBA" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK487",
+        "questionText": "In which district of Nepal is the Tribhuvan University International Cricket Ground located?",
+        "options": [
+            { "id": "a", "text": "Lalitpur" },
+            { "id": "b", "text": "Bhaktapur" },
+            { "id": "c", "text": "Kaski" },
+            { "id": "d", "text": "Kathmandu" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK488",
+        "questionText": "How many rings are there on the Olympic flag?",
+        "options": [
+            { "id": "a", "text": "3" },
+            { "id": "b", "text": "4" },
+            { "id": "c", "text": "5" },
+            { "id": "d", "text": "6" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK489",
+        "questionText": "'Dribbling' is a skill primarily associated with which of these sports?",
+        "options": [
+            { "id": "a", "text": "Volleyball" },
+            { "id": "b", "text": "Swimming" },
+            { "id": "c", "text": "Basketball" },
+            { "id": "d", "text": "Archery" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK490",
+        "questionText": "Which team won the Martyr's Memorial A-Division League (Football) title for the 2023 season (2079/80 BS)?",
+        "options": [
+            { "id": "a", "text": "Manang Marshyangdi Club" },
+            { "id": "b", "text": "Three Star Club" },
+            { "id": "c", "text": "Machhindra Football Club" },
+            { "id": "d", "text": "Church Boys United" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK491",
+        "questionText": "What is the term for scoring three goals in a single game of football or hockey?",
+        "options": [
+            { "id": "a", "text": "Brace" },
+            { "id": "b", "text": "Hat-trick" },
+            { "id": "c", "text": "Eagle" },
+            { "id": "d", "text": "Strike" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK492",
+        "questionText": "Which of these is NOT an Olympic sport? (Note: Status may change)",
+        "options": [
+            { "id": "a", "text": "Athletics" },
+            { "id": "b", "text": "Fencing" },
+            { "id": "c", "text": "Cricket (Currently not, but approved for 2028)" },
+            { "id": "d", "text": "Gymnastics" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK493",
+        "questionText": "The term 'Checkmate' is used in which game?",
+        "options": [
+            { "id": "a", "text": "Ludo" },
+            { "id": "b", "text": "Cards" },
+            { "id": "c", "text": "Chess" },
+            { "id": "d", "text": "Carrom Board" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK494",
+        "questionText": "Which country is hosting the next Summer Olympics in 2024?",
+        "options": [
+            { "id": "a", "text": "USA (Los Angeles)" },
+            { "id": "b", "text": "Australia (Brisbane)" },
+            { "id": "c", "text": "France (Paris)" },
+            { "id": "d", "text": "Japan (Tokyo)" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK495",
+        "questionText": "Which recent Nepali movie series, known for its comedy, includes actors like Deepak Raj Giri and Deepa Shree Niraula?",
+        "options": [
+            { "id": "a", "text": "Kabaddi" },
+            { "id": "b", "text": "Prem Geet" },
+            { "id": "c", "text": "Chhakka Panja" },
+            { "id": "d", "text": "Loot" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK496",
+        "questionText": "Dayahang Rai is a prominent actor frequently seen in which popular movie franchise set in Mustang?",
+        "options": [
+            { "id": "a", "text": "Chhakka Panja" },
+            { "id": "b", "text": "Kabaddi" },
+            { "id": "c", "text": "Nai Nabhannu La" },
+            { "id": "d", "text": "Hostel" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK497",
+        "questionText": "The movie 'Jaari' (released 2023), starring Dayahang Rai and Miruna Magar, is based on the culture of which community?",
+        "options": [
+            { "id": "a", "text": "Gurung" },
+            { "id": "b", "text": "Newar" },
+            { "id": "c", "text": "Limbu" },
+            { "id": "d", "text": "Tharu" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK498",
+        "questionText": "Who directed the commercially successful movie 'Kabaddi 4: The Final Match'?",
+        "options": [
+            { "id": "a", "text": "Nischal Basnet" },
+            { "id": "b", "text": "Rambabu Gurung" },
+            { "id": "c", "text": "Dipendra K Khanal" },
+            { "id": "d", "text": "Deepa Shree Niraula" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK499",
+        "questionText": "Anmol KC is a popular young actor known for starring in which movie series?",
+        "options": [
+            { "id": "a", "text": "Loot" },
+            { "id": "b", "text": "A Mero Hajur" },
+            { "id": "c", "text": "Hostel Returns" },
+            { "id": "d", "text": "Jholay" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK500",
+        "questionText": "The song \"Maya Pirim\" became very popular from which movie starring Pradeep Khadka and Jassita Gurung?",
+        "options": [
+            { "id": "a", "text": "Prem Geet 3" },
+            { "id": "b", "text": "Lily Bily" },
+            { "id": "c", "text": "Love Station" },
+            { "id": "d", "text": "Rose" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK501",
+        "questionText": "Sajjan Raj Vaidya is a popular contemporary singer known for hits like:",
+        "options": [
+            { "id": "a", "text": "Maya Maya" },
+            { "id": "b", "text": "Hawa Huree" },
+            { "id": "c", "text": "Chitthi Bhitra" },
+            { "id": "d", "text": "K Saro Ramri Bhako" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK502",
+        "questionText": "Which recent movie starred Hari Bansha Acharya and Madan Krishna Shrestha (MaHa Jodi) dealing with themes of aging and companionship?",
+        "options": [
+            { "id": "a", "text": "Shatru Gatey" },
+            { "id": "b", "text": "Dal Bhat Tarkari" },
+            { "id": "c", "text": "Mahapurush" },
+            { "id": "d", "text": "Jatra" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK503",
+        "questionText": "The song \"Timro Maya...\" featuring Paul Shah and Malika Mahat was a viral hit sung by:",
+        "options": [
+            { "id": "a", "text": "Melina Rai & Kulendra Bishwokarma" },
+            { "id": "b", "text": "Prabisha Adhikari & Pratap Das" },
+            { "id": "c", "text": "Eleena Chauhan & Samikshya Adhikari" },
+            { "id": "d", "text": "Anju Panta & Jagdish Samal" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK504",
+        "questionText": "Nischal Basnet directed which groundbreaking Nepali movie known for the song \"Udhreko Choli\"?",
+        "options": [
+            { "id": "a", "text": "Talakjung vs Tulke" },
+            { "id": "b", "text": "Kabaddi" },
+            { "id": "c", "text": "Loot" },
+            { "id": "d", "text": "Pashupati Prasad" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK505",
+        "questionText": "Bipin Karki is a versatile actor known for his roles in movies like 'Pashupati Prasad' and 'Jatra'. What character did he play in 'Pashupati Prasad'?",
+        "options": [
+            { "id": "a", "text": "Pashupati Prasad" },
+            { "id": "b", "text": "Hanuman Ji (Dude dressed as Hanuman)" },
+            { "id": "c", "text": "Bhasme Don" },
+            { "id": "d", "text": "Mit Baa" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK506",
+        "questionText": "The movie 'Prem Geet 3' was notably released in which language besides Nepali?",
+        "options": [
+            { "id": "a", "text": "English" },
+            { "id": "b", "text": "Hindi" },
+            { "id": "c", "text": "Chinese" },
+            { "id": "d", "text": "Bengali" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK507",
+        "questionText": "Sushant KC is a popular young singer-songwriter known for songs like:",
+        "options": [
+            { "id": "a", "text": "Relimai" },
+            { "id": "b", "text": "Maya ma" },
+            { "id": "c", "text": "Thamel Bazar" },
+            { "id": "d", "text": "Jaula Relaima" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK508",
+        "questionText": "Who played the lead female role opposite Anmol KC in the recent movie 'Farki Farki'?",
+        "options": [
+            { "id": "a", "text": "Suhana Thapa" },
+            { "id": "b", "text": "Jassita Gurung" },
+            { "id": "c", "text": "Samragyee RL Shah" },
+            { "id": "d", "text": "Anna Sharma" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK509",
+        "questionText": "Melina Rai, a popular contemporary singer, is known for lending her voice to hit songs from which movie series?",
+        "options": [
+            { "id": "a", "text": "Chhakka Panja" },
+            { "id": "b", "text": "Kabaddi" },
+            { "id": "c", "text": "Nai Nabhannu La" },
+            { "id": "d", "text": "Loot" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK510",
+        "questionText": "Which animated Nepali film tells the story of the founder of Nepal Sambat?",
+        "options": [
+            { "id": "a", "text": "Salim" },
+            { "id": "b", "text": "The Legend of Shankhadhar" },
+            { "id": "c", "text": "Kumari" },
+            { "id": "d", "text": "Four Brothers" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK511",
+        "questionText": "The song \"Butta Maya\" by Ishan Raj Onta became popular partly due to its use on which social media platform?",
+        "options": [
+            { "id": "a", "text": "Facebook" },
+            { "id": "b", "text": "Instagram" },
+            { "id": "c", "text": "TikTok" },
+            { "id": "d", "text": "Twitter" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK512",
+        "questionText": "Which actress won the National Film Award for Best Actress for her role in 'Bulbul' (2019)?",
+        "options": [
+            { "id": "a", "text": "Menuka Pradhan" },
+            { "id": "b", "text": "Swastima Khadka" },
+            { "id": "c", "text": "Priyanka Karki" },
+            { "id": "d", "text": "Keki Adhikari" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK513",
+        "questionText": "The movie 'Gopi', directed by Dipendra Lama, starred which actor as a farmer passionate about cows?",
+        "options": [
+            { "id": "a", "text": "Dayahang Rai" },
+            { "id": "b", "text": "Bipin Karki" },
+            { "id": "c", "text": "Khagendra Lamichhane" },
+            { "id": "d", "text": "Saugat Malla" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK514",
+        "questionText": "What is the name of the popular folk-rock band fronted by Amrit Gurung?",
+        "options": [
+            { "id": "a", "text": "1974 AD" },
+            { "id": "b", "text": "Albatross" },
+            { "id": "c", "text": "Nepathya" },
+            { "id": "d", "text": "Mukti and Revival" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK515",
+        "questionText": "The movie 'Pashupati Prasad 2: Bhasme Don' starred which actor in the lead role?",
+        "options": [
+            { "id": "a", "text": "Dayahang Rai" },
+            { "id": "b", "text": "Saugat Malla" },
+            { "id": "c", "text": "Khagendra Lamichhane" },
+            { "id": "d", "text": "Bipin Karki" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK516",
+        "questionText": "Eleena Chauhan is a popular female singer known for recent hits like:",
+        "options": [
+            { "id": "a", "text": "Galbandi" },
+            { "id": "b", "text": "Kura Kani" },
+            { "id": "c", "text": "Insta ko Photo" },
+            { "id": "d", "text": "Timro Maya le Badhera Rakha" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK517",
+        "questionText": "Which actress starred opposite Pradeep Khadka in the first two 'Prem Geet' movies?",
+        "options": [
+            { "id": "a", "text": "Anna Sharma" },
+            { "id": "b", "text": "Samragyee RL Shah" },
+            { "id": "c", "text": "Pooja Sharma" },
+            { "id": "d", "text": "Jassita Gurung" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK518",
+        "questionText": "The song \"Kale Dai\" featuring Reshma Ghimire and Asif Shah was sung by:",
+        "options": [
+            { "id": "a", "text": "Prakash Saput & Shanti Shree Pariyar" },
+            { "id": "b", "text": "Asmita Adhikari & Mahesh Kafle" },
+            { "id": "c", "text": "Sunita Dulal & Khuman Adhikari" },
+            { "id": "d", "text": "Preeti Ale & Prakash Saput" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK519",
+        "questionText": "Which director is known for the 'Nai Nabhannu La' movie series?",
+        "options": [
+            { "id": "a", "text": "Bikash Raj Acharya" },
+            { "id": "b", "text": "Sudarshan Thapa" },
+            { "id": "c", "text": "Muskan Dhakal" },
+            { "id": "d", "text": "Milan Chams" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK520",
+        "questionText": "Who is often referred to as the 'Swor Samrat' (Emperor of Voice) of Nepali music?",
+        "options": [
+            { "id": "a", "text": "Arun Thapa" },
+            { "id": "b", "text": "Gopal Yonjan" },
+            { "id": "c", "text": "Narayan Gopal" },
+            { "id": "d", "text": "Bhakta Raj Acharya" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK521",
+        "questionText": "Which movie is considered the first Nepali feature film produced in Nepal?",
+        "options": [
+            { "id": "a", "text": "Satya Harischandra" },
+            { "id": "b", "text": "Aama" },
+            { "id": "c", "text": "Maitighar" },
+            { "id": "d", "text": "Kumari" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK522",
+        "questionText": "Which legendary female singer is popularly known as the 'Nightingale of Nepal'?",
+        "options": [
+            { "id": "a", "text": "Aruna Lama" },
+            { "id": "b", "text": "Tara Devi" },
+            { "id": "c", "text": "Melina Rai" },
+            { "id": "d", "text": "Anju Panta" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK523",
+        "questionText": "The iconic song \"Kusume Rumal\" is from a movie of the same name starring:",
+        "options": [
+            { "id": "a", "text": "Shiva Shrestha, Karishma Manandhar" },
+            { "id": "b", "text": "Rajesh Hamal, Kristi Mainali" },
+            { "id": "c", "text": "Bhuwan K.C., Tripti Nadakar" },
+            { "id": "d", "text": "Shree Krishna Shrestha, Niruta Singh" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK524",
+        "questionText": "Gopal Yonjan was a famous Nepali musician known for composing, singing, and writing lyrics. Which of these is a famous song associated with him?",
+        "options": [
+            { "id": "a", "text": "Eh Kancha Malai Sunko Tara" },
+            { "id": "b", "text": "Jati Maya Laye Pani" },
+            { "id": "c", "text": "Desh le Ragat Mage" },
+            { "id": "d", "text": "Ritu Haru Ma Timi" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK525",
+        "questionText": "Which highly popular movie starred Shree Krishna Shrestha and Niruta Singh and featured the hit song \"Mohani Lagla Hai\"?",
+        "options": [
+            { "id": "a", "text": "Dakshina" },
+            { "id": "b", "text": "Aafno Manche" },
+            { "id": "c", "text": "Darpan Chhaya" },
+            { "id": "d", "text": "Ajambari Nata" }
+        ],
+        "correctOptionId": "c"
+    },
+
+    {
+        "id": "GK526",
+        "questionText": "Arun Thapa was a beloved singer known for his melancholic voice. Which is one of his most famous songs?",
+        "options": [
+            { "id": "a", "text": "Resham Firiri" },
+            { "id": "b", "text": "Jati Maya Laye Pani (or Ritu Haru Ma Timi)" },
+            { "id": "c", "text": "Timile Ta Hoina" },
+            { "id": "d", "text": "Ukali Orali Haru Ma" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK527",
+        "questionText": "Who directed the classic Nepali film 'Basudev', starring Harihar Sharma, Neer Shah, and Sharmila Malla?",
+        "options": [
+            { "id": "a", "text": "Tulsi Ghimire" },
+            { "id": "b", "text": "Neer Shah" },
+            { "id": "c", "text": "Prakash Thapa" },
+            { "id": "d", "text": "Yadav Kharel" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK528",
+        "questionText": "The song \"Ukali Orali Haru Ma\" is famously associated with which singer?",
+        "options": [
+            { "id": "a", "text": "Prem Dhoj Pradhan" },
+            { "id": "b", "text": "Narayan Gopal" },
+            { "id": "c", "text": "Udit Narayan Jha" },
+            { "id": "d", "text": "Deep Shrestha" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK529",
+        "questionText": "Rajesh Hamal, often called the 'Mahanayak' of Nepali cinema, made his debut in which film?",
+        "options": [
+            { "id": "a", "text": "Deuta" },
+            { "id": "b", "text": "Chino" },
+            { "id": "c", "text": "Yug Dekhi Yug Samma" },
+            { "id": "d", "text": "Bhauju" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK530",
+        "questionText": "Who composed the music for Nepal's current national anthem, \"Sayaun Thunga Phool Ka\"?",
+        "options": [
+            { "id": "a", "text": "Narayan Gopal" },
+            { "id": "b", "text": "Gopal Yonjan" },
+            { "id": "c", "text": "Ambar Gurung" },
+            { "id": "d", "text": "Nhyoo Bajracharya" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK531",
+        "questionText": "Which influential band, popular since the 90s, featured musicians like Phiroj Shyangden and Adrian Pradhan and is known for hits like \"Samjhi Baschu\"?",
+        "options": [
+            { "id": "a", "text": "The Shadows Nepal" },
+            { "id": "b", "text": "Mantra" },
+            { "id": "c", "text": "1974 AD" },
+            { "id": "d", "text": "Cobweb" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK532",
+        "questionText": "The movie 'Balidan', known for its patriotic themes, was directed by and starred which prominent filmmaker?",
+        "options": [
+            { "id": "a", "text": "Hari Bansha Acharya" },
+            { "id": "b", "text": "Neer Shah" },
+            { "id": "c", "text": "Tulsi Ghimire" },
+            { "id": "d", "text": "Sunil Thapa" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK533",
+        "questionText": "Who sang the classic melancholic song \"Maya Ko Dori Le\"?",
+        "options": [
+            { "id": "a", "text": "Kumar Basnet" },
+            { "id": "b", "text": "Khem Raj Gurung" },
+            { "id": "c", "text": "Bhakta Raj Acharya" },
+            { "id": "d", "text": "Phatteman Rajbhandari" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK534",
+        "questionText": "Tulsi Ghimire directed many classic Nepali films. Which of these is one of his most acclaimed works, starring Bhuwan KC and Moushumi Malla?",
+        "options": [
+            { "id": "a", "text": "Chino" },
+            { "id": "b", "text": "Balidan" },
+            { "id": "c", "text": "Lahure" },
+            { "id": "d", "text": "Dakshina" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK535",
+        "questionText": "Deepak Bajracharya is a pop singer known for the timeless hit song:",
+        "options": [
+            { "id": "a", "text": "Ow Amira" },
+            { "id": "b", "text": "Kali Kali Hissi Pareki" },
+            { "id": "c", "text": "Nira Jaile Risaune" },
+            { "id": "d", "text": "Maya Ko Dori Le" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK536",
+        "questionText": "Which actress was often paired with Rajesh Hamal in many hit movies of the 90s?",
+        "options": [
+            { "id": "a", "text": "Gauri Malla" },
+            { "id": "b", "text": "Karishma Manandhar" },
+            { "id": "c", "text": "Pooja Chand" },
+            { "id": "d", "text": "Saranga Shrestha" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK537",
+        "questionText": "The folk singer Kumar Basnet is famous for his unique style and songs like:",
+        "options": [
+            { "id": "a", "text": "Banma Phulyo Phool" },
+            { "id": "b", "text": "Herda Ramro Machhapuchhre" },
+            { "id": "c", "text": "Lai Bari Lai / Chhori Bhanda Aama Taruni" },
+            { "id": "d", "text": "Lekali Hey Hey" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK538",
+        "questionText": "Which movie featured the popular song \"Timro Mann Ma Lukeko Kura\"?",
+        "options": [
+            { "id": "a", "text": "Silu" },
+            { "id": "b", "text": "Kanyadan" },
+            { "id": "c", "text": "Numafung" },
+            { "id": "d", "text": "Samjhana" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "GK539",
+        "questionText": "Udit Narayan Jha, a famous Bollywood playback singer, started his career singing in Nepali films. Which is one of his early popular Nepali songs?",
+        "options": [
+            { "id": "a", "text": "Mohani Lagla Hai" },
+            { "id": "b", "text": "Kusume Rumal" },
+            { "id": "c", "text": "Piratiko Meetho Tirsana" },
+            { "id": "d", "text": "Parkhi Basen Aula Bhani" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "GK540",
+        "questionText": "'Maitighar' was a significant early film primarily because it:",
+        "options": [
+            { "id": "a", "text": "was the first colour film shot in Nepal" },
+            { "id": "b", "text": "featured famous Indian actress Mala Sinha (born in Nepal)" },
+            { "id": "c", "text": "was directed by a foreigner" },
+            { "id": "d", "text": "was based on a historical event" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK541",
+        "questionText": "Which legendary singer is known as the 'Bhajan Shiromani' of Nepal?",
+        "options": [
+            { "id": "a", "text": "Narayan Gopal" },
+            { "id": "b", "text": "Bhakta Raj Acharya" },
+            { "id": "c", "text": "Phatteman Rajbhandari" },
+            { "id": "d", "text": "Gopal Yonjan" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK542",
+        "questionText": "The movie 'Numafung' highlighted the culture and traditions of which ethnic group?",
+        "options": [
+            { "id": "a", "text": "Sherpa" },
+            { "id": "b", "text": "Limbu" },
+            { "id": "c", "text": "Rai" },
+            { "id": "d", "text": "Tamang" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "GK543",
+        "questionText": "Which singer is known for the patriotic song \"Gaun Gaun Bata Utha\"?",
+        "options": [
+            { "id": "a", "text": "Gopal Yonjan" },
+            { "id": "b", "text": "Ambar Gurung" },
+            { "id": "c", "text": "Narayan Gopal" },
+            { "id": "d", "text": "Ram Krishna Dhakal" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "GK544",
+        "questionText": "The comedy duo 'MaHa Jodi' refers to:",
+        "options": [
+            { "id": "a", "text": "Rajesh Hamal & Karishma Manandhar" },
+            { "id": "b", "text": "Santosh Panta & Rama Thapaliya" },
+            { "id": "c", "text": "Madan Krishna Shrestha & Hari Bansha Acharya" },
+            { "id": "d", "text": "Deepak Raj Giri & Deepa Shree Niraula" }
+        ],
+        "correctOptionId": "c"
     }
+    // End of available questions from the source text. Total 544 questions processed.
+    // (The initial count of 570 appears incorrect based on the provided sections.)
+
 ]
 };
