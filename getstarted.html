@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEB Assist - Ace Your Exams & Save on Fees</title>
+    <style>
+        /* Basic Reset & Defaults */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fdfdfd; /* Slightly off-white */
+        }
+
+        html {
+            scroll-behavior: smooth; /* Enable smooth scrolling */
+        }
+
+        /* Container */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 25px; /* Slightly more padding */
+            overflow: hidden;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: #ffffff;
+            color: #333;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e8e8e8;
+            position: sticky;
+            top: 0;
+            z-index: 1000; /* Ensure navbar stays on top */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow */
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            font-size: 1.6rem; /* Slightly larger logo */
+            font-weight: bold;
+            color: #2A7AB0; /* Adjusted blue */
+            text-decoration: none;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin-left: 25px;
+        }
+
+        .navbar ul li a {
+            color: #444; /* Slightly darker link color */
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            padding-bottom: 5px;
+            border-bottom: 2px solid transparent; /* Prepare for hover effect */
+        }
+
+        .navbar ul li a:hover {
+            color: #124A7A; /* Darker blue on hover */
+            border-bottom-color: #124A7A; /* Underline on hover */
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #ffffff;
+            padding: 50px 0 60px 0; /* Adjusted padding */
+            text-align: center;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .hero .container {
+             display: flex;
+             flex-direction: row; /* Side-by-side layout */
+             align-items: center;
+             justify-content: space-around; /* Distribute space */
+             flex-wrap: wrap; /* Allow wrapping on smaller screens */
+             gap: 30px;
+        }
+
+        .hero-text {
+            flex-basis: 55%; /* Take slightly more space */
+            text-align: left; /* Align text left */
+        }
+
+        .hero-image-container {
+             flex-basis: 35%; /* Take less space */
+             text-align: center; /* Center the image within its container */
+        }
+
+        .hero img.hero-illustration {
+            max-width: 200px; /* Smaller illustration */
+            height: auto;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem; /* Adjusted size */
+            line-height: 1.2;
+            margin-bottom: 15px;
+            color: #102A43; /* Darker, more serious blue */
+        }
+
+        .hero p.subtitle {
+            font-size: 1.15rem;
+            color: #486581; /* Softer blue-grey */
+            margin-bottom: 30px;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background: #FF7F50; /* Coral, slightly brighter */
+            color: #fff;
+            padding: 14px 35px; /* Slightly larger padding */
+            border: none;
+            border-radius: 30px; /* More rounded */
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(255, 127, 80, 0.3); /* Subtle shadow matching color */
+        }
+
+        .btn:hover {
+            background: #E66A40;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(255, 127, 80, 0.4);
+        }
+
+        .btn-secondary {
+            background: #3B8AB8; /* Secondary button color */
+            box-shadow: 0 4px 10px rgba(59, 138, 184, 0.2);
+        }
+         .btn-secondary:hover {
+             background: #2A709B;
+             box-shadow: 0 6px 15px rgba(59, 138, 184, 0.3);
+         }
+
+        /* Sections & Animation Base */
+        section {
+            padding: 60px 0; /* Consistent padding */
+        }
+
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(30px); /* Start slightly lower */
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2.3rem;
+            margin-bottom: 45px;
+            color: #102A43;
+            font-weight: 600; /* Slightly bolder headings */
+        }
+
+        /* Problem/Opportunity Section */
+        .problem-opportunity {
+            background: #F0F4F8; /* Lighter grey-blue */
+            text-align: center;
+        }
+        .problem-opportunity p {
+            max-width: 750px;
+            margin: 0 auto 20px auto;
+            font-size: 1.1rem;
+            color: #334E68; /* Darker text for contrast */
+        }
+
+        /* Solution Section */
+        .solution {
+             background: #ffffff;
+             text-align: center;
+        }
+         .solution p {
+            max-width: 750px;
+            margin: 0 auto 20px auto;
+            font-size: 1.1rem;
+            color: #334E68;
+         }
+         .solution strong { /* Emphasize the benefit */
+             color: #0B6A8F;
+             font-weight: 600;
+         }
+
+        /* Pricing/Packages Section */
+        .packages {
+            background: #F0F4F8;
+        }
+
+        .package-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 35px; /* Increased gap */
+            margin-top: 20px;
+        }
+
+        .package-card {
+            background: #ffffff;
+            border: 1px solid #d1d9e6;
+            border-radius: 10px; /* Slightly more rounded */
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .package-card:hover {
+            transform: translateY(-8px); /* More noticeable hover lift */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .package-card h3 {
+            font-size: 1.7rem; /* Slightly adjusted */
+            color: #2A7AB0;
+            margin-bottom: 15px;
+        }
+
+        .package-card .ideal-for {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+
+        .package-card ul {
+            list-style: none;
+            margin-bottom: 25px; /* More space before price */
+            text-align: left;
+            padding-left: 10px;
+            flex-grow: 1;
+        }
+
+        .package-card ul li {
+            margin-bottom: 12px; /* Increased spacing */
+            position: relative;
+            padding-left: 28px;
+            color: #444;
+        }
+        /* Simple checkmark icon */
+        .package-card ul li::before {
+            content: '✓'; /* Unicode checkmark */
+            color: #28A745;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 1px; /* Fine-tune position */
+            font-size: 1.2em;
+        }
+
+        .package-card .price {
+            font-size: 1.8rem; /* Slightly smaller price */
+            font-weight: bold;
+            color: #0B6A8F; /* Price color */
+            margin-bottom: 25px;
+        }
+        .package-card .price span { /* Add suffix */
+             font-size: 0.8rem;
+             font-weight: normal;
+             color: #555;
+         }
+
+        .package-card .btn {
+            margin-top: auto;
+        }
+
+
+        /* Why Choose Us Section */
+        .benefits {
+            background: #ffffff;
+        }
+
+        .benefits-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted minmax */
+            gap: 30px; /* Increased gap */
+        }
+
+        .benefits-list li {
+            background: #F8F9FA; /* Very light grey */
+            padding: 25px; /* More padding */
+            border-radius: 8px;
+            border-left: 5px solid #3B8AB8; /* Accent color */
+            display: flex;
+            align-items: flex-start; /* Align items top */
+            gap: 15px;
+        }
+        /* Placeholder for icon */
+         .benefits-list li::before {
+            content: '🎯'; /* Target Icon */
+            font-size: 1.6rem;
+            color: #FF7F50; /* Match CTA color */
+            margin-top: 2px; /* Align icon better */
+         }
+
+        .benefits-list li div { /* Wrap text content */
+            flex: 1;
+        }
+
+        .benefits-list li strong {
+            display: block;
+            color: #102A43;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+        .benefits-list li span { /* Description text */
+            color: #486581;
+        }
+
+
+        /* Topper Section */
+        .topper-section {
+            background: linear-gradient(135deg, #E0F7FA 0%, #B2EBF2 100%); /* Light cyan gradient */
+            padding: 60px 0;
+        }
+        .topper-section .container {
+             display: flex;
+             align-items: center;
+             gap: 40px;
+             flex-wrap: wrap;
+             justify-content: center;
+        }
+
+        .topper-image {
+            flex-basis: 200px; /* Adjusted size */
+            flex-shrink: 0;
+            text-align: center;
+        }
+
+        .topper-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            border: 6px solid #ffffff; /* Thicker border */
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .topper-text {
+            flex-basis: 550px; /* Adjusted size */
+            flex-grow: 1;
+        }
+        .topper-text h2 {
+            text-align: left;
+            margin-bottom: 15px;
+             color: #0B6A8F; /* Teal color */
+        }
+        .topper-text p {
+            font-size: 1.1rem;
+            color: #334E68;
+            margin-bottom: 15px;
+        }
+         .topper-text .disclaimer {
+             font-size: 0.9rem;
+             color: #546E7A;
+             font-style: italic;
+             margin-top: 10px;
+         }
+        .topper-text a {
+            color: #0277BD;
+            font-weight: bold;
+            text-decoration: none;
+            border-bottom: 1px dotted #0277BD;
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+        .topper-text a:hover {
+            color: #01579B;
+            border-bottom-color: #01579B;
+        }
+
+
+        /* About/Mission Section */
+        .mission {
+            background: #ffffff;
+            text-align: center;
+        }
+        .mission p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: #334E68;
+        }
+        .mission strong { /* Highlight key message */
+             color: #102A43;
+             font-weight: 600;
+         }
+
+
+        /* Final CTA Section */
+        .final-cta {
+            background: #102A43; /* Dark blue background */
+            color: #ffffff;
+            text-align: center;
+            padding: 70px 0; /* More padding */
+        }
+        .final-cta h2 {
+             color: #ffffff;
+             margin-bottom: 15px;
+             font-size: 2.4rem;
+        }
+        .final-cta p {
+            font-size: 1.25rem; /* Larger text */
+            margin-bottom: 35px; /* More space */
+            opacity: 0.9;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .final-cta .btn { /* Make final button slightly different */
+             background: #FFC107; /* Gold/Yellow */
+             color: #333; /* Dark text on yellow */
+             box-shadow: 0 4px 10px rgba(255, 193, 7, 0.3);
+        }
+        .final-cta .btn:hover {
+             background: #E0A800;
+             box-shadow: 0 6px 15px rgba(255, 193, 7, 0.4);
+             color: #000;
+         }
+
+
+        /* Footer */
+        footer {
+            background: #E9ECEF; /* Lighter footer */
+            color: #6C757D; /* Grey text */
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 0; /* Remove margin-top if CTA background is dark */
+            font-size: 0.9rem;
+            border-top: 1px solid #DEE2E6;
+        }
+        footer a {
+            color: #0B6A8F; /* Link color */
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero .container {
+                 flex-direction: column-reverse; /* Stack image above text */
+                 text-align: center;
+            }
+            .hero-text {
+                 text-align: center; /* Center text on small screens */
+                 flex-basis: 100%;
+            }
+            .hero img.hero-illustration {
+                 max-width: 150px; /* Even smaller illustration */
+                 margin-bottom: 20px;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p.subtitle {
+                font-size: 1rem;
+            }
+            section h2 {
+                 font-size: 1.9rem;
+                 margin-bottom: 30px;
+            }
+            .package-grid, .benefits-list {
+                grid-template-columns: 1fr; /* Stack cards/items */
+            }
+            .navbar .container {
+                 flex-direction: column;
+                 gap: 10px;
+            }
+            .navbar ul {
+                 margin-top: 10px;
+                 justify-content: center; /* Center nav links */
+                 flex-wrap: wrap; /* Allow wrapping */
+            }
+             .topper-section .container {
+                 flex-direction: column;
+                 text-align: center;
+             }
+             .topper-text h2 {
+                 text-align: center;
+             }
+             .final-cta h2 {
+                 font-size: 2rem;
+             }
+             .final-cta p {
+                 font-size: 1.1rem;
+             }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">NEB Assist</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#packages">Features</a></li>
+                <li><a href="#packages">Pricing</a></li>
+                <li><a href="#mission">About</a></li>
+                <li><a href="https://studymaterialsv2.pages.dev/ourteam" target="_blank">Our Team</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h1>Stop Stressing, Start Preparing: Ace Your SEE & Entrance Exams</h1>
+                <p class="subtitle">Gain confidence with targeted MCQ practice. Prepare smarter, perform better, and <strong>save big on future class fees!</strong></p>
+                <a href="#packages" class="btn scroll-link">See Practice Plans</a>
+            </div>
+            <div class="hero-image-container">
+                <!-- Replace with your animated illustration SVG or PNG -->
+                <img src="animated-student.svg" alt="Student practicing MCQs" class="hero-illustration">
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem/Opportunity Section -->
+    <section class="problem-opportunity fade-in-section">
+        <div class="container">
+            <h2>Feeling Lost in Exam Prep? High Costs Blocking Your Path?</h2>
+            <p>SEE and Class 11 Entrance exams are crucial steps. But expensive bridge courses aren't the only way. What if you could get focused, affordable practice that fits *your* schedule and targets exactly what you need?</p>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution fade-in-section">
+         <div class="container">
+             <h2>NEB Assist: Your Affordable Edge</h2>
+             <p>We provide specialized MCQ practice tailored for Nepali students. Master exam patterns, beat the clock, and build rock-solid confidence. <strong>Ace your entrance, secure your spot, and avoid unnecessary high fees later!</strong></p>
+         </div>
+     </section>
+
+
+    <!-- Packages & Pricing Section -->
+    <section id="packages" class="packages fade-in-section">
+        <div class="container">
+            <h2>Choose Your Smart Practice Plan</h2>
+            <div class="package-grid">
+                <!-- SEE Package -->
+                <div class="package-card">
+                    <h3>SEE Exam Prep</h3>
+                    <p class="ideal-for">For Class 10 students tackling the SEE.</p>
+                    <ul>
+                        <li>NEB Syllabus MCQs</li>
+                        <li>Math, Science, Opt Math</li>
+                        <li>English (Grammar Focus)</li>
+                        <li>Social Studies (MCQ Format)</li>
+                        <li>Choose Subject</li>
+                        <li>Set Time Limit & Questions</li>
+                    </ul>
+                    <div class="price">Rs. 89 <span>/ full access</span></div>
+                    <a href="index.html" class="btn btn-secondary">Get SEE Package</a>
+                </div>
+
+                <!-- Basic Entrance Package -->
+                <div class="package-card">
+                    <h3>Basic Entrance Prep</h3>
+                     <p class="ideal-for">For kicking off Class 11 entrance prep.</p>
+                    <ul>
+                        <li>Essential Foundation MCQs</li>
+                        <li>English Focus</li>
+                        <li>Science Focus</li>
+                        <li>Set Time Limit</li>
+                        <li>Select Question Count</li>
+                    </ul>
+                     <div class="price">Rs. 100 <span>/ full access</span></div>
+                    <a href="index.html" class="btn btn-secondary">Get Basic Package</a>
+                </div>
+
+                <!-- KTM Entrance Package -->
+                <div class="package-card">
+                    <h3>KTM Entrance Prep</h3>
+                    <p class="ideal-for">For aiming high in competitive Kathmandu exams.</p>
+                    <ul>
+                        <li>Advanced, Specially Crafted MCQs</li>
+                        <li>Math, Science, English, GK</li> <!-- Confirm/Adjust -->
+                        <li>Choose Subject & Topic</li>
+                        <li>Set Time Limit</li>
+                        <li>Select Question Count</li>
+                    </ul>
+                    <div class="price">Rs. 120 <span>/ full access</span></div>
+                    <a href="index.html" class="btn">Get KTM Package</a> <!-- Highlighted -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="benefits fade-in-section">
+        <div class="container">
+            <h2>Why NEB Assist Works</h2>
+            <ul class="benefits-list">
+                <li><div><strong>Exam-Specific:</strong> <span>Questions mirror actual SEE & Entrance formats.</span></div></li>
+                <li><div><strong>Time Mastery:</strong> <span>Practice under pressure with custom timers.</span></div></li>
+                <li><div><strong>Smart Alternative:</strong> <span>Skip costly bridge courses, not quality prep.</span></div></li>
+                <li><div><strong>By Us, For You:</strong> <span>Affordable plans from Nepali students & teachers.</span></div></li>
+                <li><div><strong>Confidence Fuel:</strong> <span>Turn exam anxiety into exam readiness.</span></div></li>
+                <li><div><strong>Pinpoint Focus:</strong> <span>Zero in on subjects/topics needing work (SEE/KTM).</span></div></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Credibility Boost: Topper Section -->
+    <section class="topper-section fade-in-section">
+        <div class="container">
+            <div class="topper-image">
+                <!-- Keep Jasmine's placeholder here -->
+                <img src="jasmine-poudel-topper.png" alt="Jasmine Poudel - 2081 Batch Topper">
+            </div>
+            <div class="topper-text">
+                <h2>Success Stories Start Here: Meet Jasmine Poudel</h2>
+                <p>Jasmine (2081 Batch, 3.84 GPA, Metropolitan Scholar) knows what it takes. She uses her insights to help us craft MCQs that reflect real exam challenges, giving you an edge.</p>
+                <p><a href="https://studymaterialsv2.pages.dev/ourteam" target="_blank">Meet the full team behind NEB Assist.</a></p>
+                 <p class="disclaimer">Student image used with permission.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Snippet / Our Mission -->
+    <section id="mission" class="mission fade-in-section">
+        <div class="container">
+            <h2>Our Mission: Your Success, Affordably</h2>
+            <p>NEB Assist is run by passionate Nepali students and teachers dedicated to your success. We built this because quality preparation shouldn't break the bank. <strong>Master your MCQs, secure top results, save on future fees,</strong> and become a capable, contributing citizen. Excellence through accessible practice – that's our goal.</p>
+        </div>
+    </section>
+
+    <!-- Final Call to Action -->
+    <section class="final-cta fade-in-section">
+        <div class="container">
+            <h2>Ready to Outsmart the Exam & Save Money?</h2>
+            <p>Stop waiting. Choose your plan, start practicing instantly, and take control of your future academic path!</p>
+            <a href="index.html" class="btn">Yes, Start My Practice Now!</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© <script>document.write(new Date().getFullYear())</script> NEB Assist | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Fade-in Animation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null, // Use the viewport as the root
+                rootMargin: '0px',
+                threshold: 0.1 // Trigger when 10% of the element is visible
+            };
+
+            const observerCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target); // Stop observing once visible
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+            const sectionsToAnimate = document.querySelectorAll('.fade-in-section');
+            sectionsToAnimate.forEach(section => {
+                observer.observe(section);
+            });
+
+            // Optional: Simple smooth scroll for internal anchor links
+            document.querySelectorAll('a.scroll-link').forEach(anchor => {
+                 anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href && href.startsWith('#')) {
+                        e.preventDefault();
+                        const targetElement = document.querySelector(href);
+                        if (targetElement) {
+                            // Offset to account for sticky navbar height (adjust value if needed)
+                            const navbarHeight = document.querySelector('.navbar')?.offsetHeight || 0;
+                            const elementPosition = targetElement.getBoundingClientRect().top;
+                            const offsetPosition = elementPosition + window.pageYOffset - navbarHeight - 10; // 10px extra space
+
+                            window.scrollTo({
+                                top: offsetPosition,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
