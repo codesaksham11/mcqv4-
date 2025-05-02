@@ -398,35 +398,6839 @@ export const questionBank = {
     ],
     "Biology": [
         // 12 Biology Questions (Sample - reuse/modify or add new)
-        { id: "KB001", questionText: "Which blood type is the universal donor?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "AB" }, { id: "d", text: "O Negative" }], correctOptionId: "d" },
-        { id: "KB002", questionText: "What part of the brain controls balance and coordination?", options: [{ id: "a", text: "Cerebrum" }, { id: "b", text: "Cerebellum" }, { id: "c", text: "Medulla Oblongata" }, { id: "d", text: "Hypothalamus" }], correctOptionId: "b" },
-        { id: "KB003", questionText: "What is the function of the kidneys?", options: [{ id: "a", text: "Pump blood" }, { id: "b", text: "Digest food" }, { id: "c", text: "Filter waste from blood" }, { id: "d", text: "Produce hormones" }], correctOptionId: "c" },
-        { id: "KB004", questionText: "Where does fertilization typically occur in humans?", options: [{ id: "a", text: "Ovary" }, { id: "b", text: "Uterus" }, { id: "c", text: "Fallopian Tube" }, { id: "d", text: "Vagina" }], correctOptionId: "c" },
-        // Add 8 more Biology questions...
-        { id: "KB005", questionText: "Placeholder Bio Q5?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "a" },
-        { id: "KB006", questionText: "Placeholder Bio Q6?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "b" },
-        { id: "KB007", questionText: "Placeholder Bio Q7?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "c" },
-        { id: "KB008", questionText: "Placeholder Bio Q8?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "d" },
-        { id: "KB009", questionText: "Placeholder Bio Q9?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "a" },
-        { id: "KB010", questionText: "Placeholder Bio Q10?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "b" },
-        { id: "KB011", questionText: "Placeholder Bio Q11?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "c" },
-        { id: "KB012", questionText: "Placeholder Bio Q12?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "d" }
+         {
+    "id": "KB001",
+    "questionText": "The branch of biology dealing with the study of the form and structure of organisms and their specific structural features is known as:",
+    "options": [
+      { "id": "a", "text": "Physiology" },
+      { "id": "b", "text": "Anatomy" },
+      { "id": "c", "text": "Cytology" },
+      { "id": "d", "text": "Morphology" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB002",
+    "questionText": "Carolus Linnaeus is renowned for establishing which system of naming organisms?",
+    "options": [
+      { "id": "a", "text": "Polynomial nomenclature" },
+      { "id": "b", "text": "Common naming system" },
+      { "id": "c", "text": "Binomial nomenclature" },
+      { "id": "d", "text": "Hierarchical classification" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB003",
+    "questionText": "The study of tissues is technically referred to as:",
+    "options": [
+      { "id": "a", "text": "Cytology" },
+      { "id": "b", "text": "Histology" },
+      { "id": "c", "text": "Organology" },
+      { "id": "d", "text": "Anatomy" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB004",
+    "questionText": "Gregor Mendel, often called the 'Father of Genetics', conducted his seminal experiments primarily on which organism?",
+    "options": [
+      { "id": "a", "text": "Fruit flies" },
+      { "id": "b", "text": "Maize plants" },
+      { "id": "c", "text": "Pea plants (Pisum sativum)" },
+      { "id": "d", "text": "Mice" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB005",
+    "questionText": "What is the specific study of fungi called?",
+    "options": [
+      { "id": "a", "text": "Phycology" },
+      { "id": "b", "text": "Mycology" },
+      { "id": "c", "text": "Bryology" },
+      { "id": "d", "text": "Bacteriology" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB006",
+    "questionText": "Aristotle, a foundational figure in biology, is often specifically credited as the 'Father of':",
+    "options": [
+      { "id": "a", "text": "Botany" },
+      { "id": "b", "text": "Zoology" },
+      { "id": "c", "text": "Microbiology" },
+      { "id": "d", "text": "Genetics" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB007",
+    "questionText": "The scientific study of insects falls under the discipline of:",
+    "options": [
+      { "id": "a", "text": "Herpetology" },
+      { "id": "b", "text": "Ornithology" },
+      { "id": "c", "text": "Entomology" },
+      { "id": "d", "text": "Ichthyology" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB008",
+    "questionText": "Who is credited with coining the term 'cell' after observing cork slices under a microscope?",
+    "options": [
+      { "id": "a", "text": "Antonie van Leeuwenhoek" },
+      { "id": "b", "text": "Robert Hooke" },
+      { "id": "c", "text": "Matthias Schleiden" },
+      { "id": "d", "text": "Theodor Schwann" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB009",
+    "questionText": "Paleontology is the scientific study of:",
+    "options": [
+      { "id": "a", "text": "Ancient climates" },
+      { "id": "b", "text": "Life existing prior to the start of the Holocene Epoch (fossils)" },
+      { "id": "c", "text": "Rock formations" },
+      { "id": "d", "text": "Early human civilizations" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB010",
+    "questionText": "The study of algae is known as:",
+    "options": [
+      { "id": "a", "text": "Mycology" },
+      { "id": "b", "text": "Phycology (or Algology)" },
+      { "id": "c", "text": "Pteridology" },
+      { "id": "d", "text": "Lichenology" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB011",
+    "questionText": "Which scientist is best known for his theory of evolution by natural selection?",
+    "options": [
+      { "id": "a", "text": "Jean-Baptiste Lamarck" },
+      { "id": "b", "text": "Charles Darwin" },
+      { "id": "c", "text": "Alfred Russel Wallace" },
+      { "id": "d", "text": "Gregor Mendel" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB012",
+    "questionText": "Theophrastus, a student of Aristotle, is considered the 'Father of':",
+    "options": [
+      { "id": "a", "text": "Zoology" },
+      { "id": "b", "text": "Medicine" },
+      { "id": "c", "text": "Botany" },
+      { "id": "d", "text": "Ecology" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB013",
+    "questionText": "The study of the functions of living organisms and their parts is called:",
+    "options": [
+      { "id": "a", "text": "Anatomy" },
+      { "id": "b", "text": "Morphology" },
+      { "id": "c", "text": "Physiology" },
+      { "id": "d", "text": "Embryology" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB014",
+    "questionText": "Antonie van Leeuwenhoek is often referred to as the 'Father of Microbiology' due to his pioneering work with:",
+    "options": [
+      { "id": "a", "text": "Developing vaccines" },
+      { "id": "b", "text": "Formulating the cell theory" },
+      { "id": "c", "text": "Improving microscopes and observing 'animalcules'" },
+      { "id": "d", "text": "Discovering the structure of DNA" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB015",
+    "questionText": "What is the term for the study of heredity and variation in living organisms?",
+    "options": [
+      { "id": "a", "text": "Evolution" },
+      { "id": "b", "text": "Taxonomy" },
+      { "id": "c", "text": "Genetics" },
+      { "id": "d", "text": "Ecology" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB016",
+    "questionText": "The branch of biology concerned with the relationships of organisms to one another and to their physical surroundings is:",
+    "options": [
+      { "id": "a", "text": "Ethology" },
+      { "id": "b", "text": "Ecology" },
+      { "id": "c", "text": "Physiology" },
+      { "id": "d", "text": "Taxonomy" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB017",
+    "questionText": "Sericulture is the practice of rearing which organisms for commercial purposes?",
+    "options": [
+      { "id": "a", "text": "Honey bees" },
+      { "id": "b", "text": "Earthworms" },
+      { "id": "c", "text": "Silkworms" },
+      { "id": "d", "text": "Lac insects" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB018",
+    "questionText": "The study of fishes is known as:",
+    "options": [
+      { "id": "a", "text": "Ichthyology" },
+      { "id": "b", "text": "Herpetology" },
+      { "id": "c", "text": "Mammalogy" },
+      { "id": "d", "text": "Ornithology" }
+    ],
+    "correctOptionId": "a"
+  },
+  {
+    "id": "KB019",
+    "questionText": "Louis Pasteur made significant contributions to microbiology, including the development of a process to kill harmful bacteria in liquids, known as:",
+    "options": [
+      { "id": "a", "text": "Fermentation" },
+      { "id": "b", "text": "Sterilization" },
+      { "id": "c", "text": "Pasteurization" },
+      { "id": "d", "text": "Vaccination" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB020",
+    "questionText": "What is the study of birds called?",
+    "options": [
+      { "id": "a", "text": "Entomology" },
+      { "id": "b", "text": "Ornithology" },
+      { "id": "c", "text": "Herpetology" },
+      { "id": "d", "text": "Mammalogy" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB021",
+    "questionText": "The scientific study of the structure and function of cells is:",
+    "options": [
+      { "id": "a", "text": "Histology" },
+      { "id": "b", "text": "Cytology" },
+      { "id": "c", "text": "Molecular Biology" },
+      { "id": "d", "text": "Genetics" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB022",
+    "questionText": "Who is credited with discovering the circulation of blood in the human body?",
+    "options": [
+      { "id": "a", "text": "Andreas Vesalius" },
+      { "id": "b", "text": "William Harvey" },
+      { "id": "c", "text": "Galen" },
+      { "id": "d", "text": "Hippocrates" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB023",
+    "questionText": "Taxonomy primarily deals with:",
+    "options": [
+      { "id": "a", "text": "The study of toxins" },
+      { "id": "b", "text": "The classification, nomenclature, and identification of organisms" },
+      { "id": "c", "text": "The study of tissue arrangement" },
+      { "id": "d", "text": "The study of animal behavior" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB024",
+    "questionText": "The study of reptiles and amphibians is termed:",
+    "options": [
+      { "id": "a", "text": "Ichthyology" },
+      { "id": "b", "text": "Ornithology" },
+      { "id": "c", "text": "Herpetology" },
+      { "id": "d", "text": "Entomology" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB025",
+    "questionText": "Apiculture refers to the maintenance of bee colonies, commonly in man-made hives, for the purpose of collecting:",
+    "options": [
+      { "id": "a", "text": "Silk" },
+      { "id": "b", "text": "Honey and beeswax" },
+      { "id": "c", "text": "Lac" },
+      { "id": "d", "text": "Pearls" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB026",
+    "questionText": "Andreas Vesalius is considered a key figure in the history of:",
+    "options": [
+      { "id": "a", "text": "Physiology" },
+      { "id": "b", "text": "Genetics" },
+      { "id": "c", "text": "Human Anatomy" },
+      { "id": "d", "text": "Microbiology" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB027",
+    "questionText": "The study of the development of an organism from a fertilized egg (zygote) to its mature form is:",
+    "options": [
+      { "id": "a", "text": "Gerontology" },
+      { "id": "b", "text": "Embryology" },
+      { "id": "c", "text": "Oncology" },
+      { "id": "d", "text": "Pathology" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB028",
+    "questionText": "What branch of biology studies viruses?",
+    "options": [
+      { "id": "a", "text": "Bacteriology" },
+      { "id": "b", "text": "Virology" },
+      { "id": "c", "text": "Mycology" },
+      { "id": "d", "text": "Parasitology" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB029",
+    "questionText": "The study of parasites, their hosts, and the relationship between them is known as:",
+    "options": [
+      { "id": "a", "text": "Pathology" },
+      { "id": "b", "text": "Immunology" },
+      { "id": "c", "text": "Parasitology" },
+      { "id": "d", "text": "Symbiosis" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB030",
+    "questionText": "Which term refers to the study of the causes and effects of diseases?",
+    "options": [
+      { "id": "a", "text": "Physiology" },
+      { "id": "b", "text": "Pathology" },
+      { "id": "c", "text": "Epidemiology" },
+      { "id": "d", "text": "Immunology" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB031",
+    "questionText": "The study of mammals is called:",
+    "options": [
+      { "id": "a", "text": "Mammalogy" },
+      { "id": "b", "text": "Ornithology" },
+      { "id": "c", "text": "Anthropology" },
+      { "id": "d", "text": "Primatology" }
+    ],
+    "correctOptionId": "a"
+  },
+  {
+    "id": "KB032",
+    "questionText": "Hugo de Vries is known for his contribution to evolutionary theory, particularly his concept of:",
+    "options": [
+      { "id": "a", "text": "Natural Selection" },
+      { "id": "b", "text": "Inheritance of Acquired Characteristics" },
+      { "id": "c", "text": "Mutation Theory" },
+      { "id": "d", "text": "Genetic Drift" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB033",
+    "questionText": "What is the study of bacteria called?",
+    "options": [
+      { "id": "a", "text": "Virology" },
+      { "id": "b", "text": "Mycology" },
+      { "id": "c", "text": "Bacteriology" },
+      { "id": "d", "text": "Protistology" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB034",
+    "questionText": "The field focusing on the study of the immune system is:",
+    "options": [
+      { "id": "a", "text": "Endocrinology" },
+      { "id": "b", "text": "Hematology" },
+      { "id": "c", "text": "Immunology" },
+      { "id": "d", "text": "Oncology" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB035",
+    "questionText": "Dendrology is a branch of botany that specifically studies:",
+    "options": [
+      { "id": "a", "text": "Ferns" },
+      { "id": "b", "text": "Mosses" },
+      { "id": "c", "text": "Trees and woody plants" },
+      { "id": "d", "text": "Grasses" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB036",
+    "questionText": "The scientist who proposed the 'Theory of Inheritance of Acquired Characteristics' (though largely discredited now) was:",
+    "options": [
+      { "id": "a", "text": "Charles Darwin" },
+      { "id": "b", "text": "Gregor Mendel" },
+      { "id": "c", "text": "Jean-Baptiste Lamarck" },
+      { "id": "d", "text": "August Weismann" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB037",
+    "questionText": "What is the scientific study of animal behavior called?",
+    "options": [
+      { "id": "a", "text": "Ecology" },
+      { "id": "b", "text": "Ethology" },
+      { "id": "c", "text": "Psychology" },
+      { "id": "d", "text": "Sociology" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB038",
+    "questionText": "Pomology is the branch of botany concerned with the study and cultivation of:",
+    "options": [
+      { "id": "a", "text": "Vegetables" },
+      { "id": "b", "text": "Flowers" },
+      { "id": "c", "text": "Fruits" },
+      { "id": "d", "text": "Grains" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB039",
+    "questionText": "The study of the heart and its diseases falls under:",
+    "options": [
+      { "id": "a", "text": "Neurology" },
+      { "id": "b", "text": "Pulmonology" },
+      { "id": "c", "text": "Cardiology" },
+      { "id": "d", "text": "Nephrology" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB040",
+    "questionText": "Biotechnology often involves the use of living systems and organisms to develop or make products. A foundational figure whose work on fermentation laid groundwork could be considered:",
+    "options": [
+      { "id": "a", "text": "Robert Hooke" },
+      { "id": "b", "text": "Louis Pasteur" },
+      { "id": "c", "text": "Alexander Fleming" },
+      { "id": "d", "text": "Watson and Crick" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB041",
+    "questionText": "What term describes the study of the physical and chemical functions of tissues and organs?",
+    "options": [
+      { "id": "a", "text": "Histology" },
+      { "id": "b", "text": "Anatomy" },
+      { "id": "c", "text": "Physiology" },
+      { "id": "d", "text": "Cytology" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB042",
+    "questionText": "Olericulture is the science of:",
+    "options": [
+      { "id": "a", "text": "Flower cultivation (Floriculture)" },
+      { "id": "b", "text": "Fruit cultivation (Pomology)" },
+      { "id": "c", "text": "Vegetable growing" },
+      { "id": "d", "text": "Vine growing (Viticulture)" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB043",
+    "questionText": "The study of the nervous system is known as:",
+    "options": [
+      { "id": "a", "text": "Endocrinology" },
+      { "id": "b", "text": "Neurology" },
+      { "id": "c", "text": "Myology" },
+      { "id": "d", "text": "Osteology" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB044",
+    "questionText": "Ernst Haeckel, a German biologist, is credited with coining which common biological term?",
+    "options": [
+      { "id": "a", "text": "Gene" },
+      { "id": "b", "text": "Ecosystem" },
+      { "id": "c", "text": "Ecology" },
+      { "id": "d", "text": "Hormone" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB045",
+    "questionText": "The study of blood and blood-forming organs is called:",
+    "options": [
+      { "id": "a", "text": "Cardiology" },
+      { "id": "b", "text": "Hematology" },
+      { "id": "c", "text": "Immunology" },
+      { "id": "d", "text": "Angiology" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB046",
+    "questionText": "Pteridology is the specific study of which group of plants?",
+    "options": [
+      { "id": "a", "text": "Algae" },
+      { "id": "b", "text": "Fungi" },
+      { "id": "c", "text": "Ferns and their relatives" },
+      { "id": "d", "text": "Mosses and liverworts" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB047",
+    "questionText": "The term 'Biology' itself, meaning the study of life, is generally attributed to have been coined independently by Gottfried Reinhold Treviranus and which other scientist around 1802?",
+    "options": [
+      { "id": "a", "text": "Charles Darwin" },
+      { "id": "b", "text": "Carolus Linnaeus" },
+      { "id": "c", "text": "Jean-Baptiste Lamarck" },
+      { "id": "d", "text": "Gregor Mendel" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB048",
+    "questionText": "Gerontology is the study of:",
+    "options": [
+      { "id": "a", "text": "The development of embryos" },
+      { "id": "b", "text": "The social, cultural, psychological, cognitive, and biological aspects of aging" },
+      { "id": "c", "text": "The origin and history of words (Etymology)" },
+      { "id": "d", "text": "The measurement of human physical characteristics (Anthropometry)" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB049",
+    "questionText": "The study of bones is known as:",
+    "options": [
+      { "id": "a", "text": "Myology" },
+      { "id": "b", "text": "Osteology" },
+      { "id": "c", "text": "Arthrology" },
+      { "id": "d", "text": "Chondrology" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB050",
+    "questionText": "Who are James Watson and Francis Crick primarily known for in the field of biology?",
+    "options": [
+      { "id": "a", "text": "Developing the first vaccine" },
+      { "id": "b", "text": "Proposing the double helix structure of DNA" },
+      { "id": "c", "text": "Discovering penicillin" },
+      { "id": "d", "text": "Formulating the cell theory" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB051",
+    "questionText": "Which enzyme, primarily found in saliva and pancreatic juice, begins the digestion of carbohydrates?",
+    "options": [
+      { "id": "a", "text": "Lipase" },
+      { "id": "b", "text": "Pepsin" },
+      { "id": "c", "text": "Amylase" },
+      { "id": "d", "text": "Trypsin" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB052",
+    "questionText": "The functional unit of the kidney responsible for filtering waste from the blood is the:",
+    "options": [
+      { "id": "a", "text": "Alveolus" },
+      { "id": "b", "text": "Neuron" },
+      { "id": "c", "text": "Nephron" },
+      { "id": "d", "text": "Villus" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB053",
+    "questionText": "Which chamber of the human heart receives deoxygenated blood returning from the body?",
+    "options": [
+      { "id": "a", "text": "Left Atrium" },
+      { "id": "b", "text": "Right Atrium" },
+      { "id": "c", "text": "Left Ventricle" },
+      { "id": "d", "text": "Right Ventricle" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB054",
+    "questionText": "What is the primary role of platelets (thrombocytes) in the blood?",
+    "options": [
+      { "id": "a", "text": "Oxygen transport" },
+      { "id": "b", "text": "Fighting infection" },
+      { "id": "c", "text": "Blood clotting" },
+      { "id": "d", "text": "Carbon dioxide transport" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB055",
+    "questionText": "The hormone insulin, crucial for regulating blood sugar levels, is secreted by which gland?",
+    "options": [
+      { "id": "a", "text": "Thyroid gland" },
+      { "id": "b", "text": "Adrenal gland" },
+      { "id": "c", "text": "Pituitary gland" },
+      { "id": "d", "text": "Pancreas (Islets of Langerhans)" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB056",
+    "questionText": "Where does the final absorption of digested nutrients primarily occur in the digestive system?",
+    "options": [
+      { "id": "a", "text": "Stomach" },
+      { "id": "b", "text": "Large Intestine" },
+      { "id": "c", "text": "Small Intestine" },
+      { "id": "d", "text": "Esophagus" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB057",
+    "questionText": "Gas exchange (oxygen and carbon dioxide) between the air and blood in the lungs occurs specifically in the:",
+    "options": [
+      { "id": "a", "text": "Trachea" },
+      { "id": "b", "text": "Bronchi" },
+      { "id": "c", "text": "Alveoli" },
+      { "id": "d", "text": "Diaphragm" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB058",
+    "questionText": "Which part of the human brain is primarily responsible for coordinating voluntary movements, posture, and balance?",
+    "options": [
+      { "id": "a", "text": "Cerebrum" },
+      { "id": "b", "text": "Cerebellum" },
+      { "id": "c", "text": "Medulla Oblongata" },
+      { "id": "d", "text": "Hypothalamus" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB059",
+    "questionText": "Bile juice, which aids in the emulsification of fats, is produced by the liver but stored in the:",
+    "options": [
+      { "id": "a", "text": "Pancreas" },
+      { "id": "b", "text": "Gallbladder" },
+      { "id": "c", "text": "Spleen" },
+      { "id": "d", "text": "Duodenum" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB060",
+    "questionText": "What type of blood vessel typically carries oxygenated blood away from the heart (with one major exception)?",
+    "options": [
+      { "id": "a", "text": "Vein" },
+      { "id": "b", "text": "Artery" },
+      { "id": "c", "text": "Capillary" },
+      { "id": "d", "text": "Venule" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB061",
+    "questionText": "Which hormone is often referred to as the \"fight-or-flight\" hormone, preparing the body for stressful situations?",
+    "options": [
+      { "id": "a", "text": "Insulin" },
+      { "id": "b", "text": "Thyroxine" },
+      { "id": "c", "text": "Adrenaline (Epinephrine)" },
+      { "id": "d", "text": "Growth Hormone" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB062",
+    "questionText": "Peristalsis, the wave-like muscular contractions that move food through the digestive tract, is primarily carried out by which type of muscle?",
+    "options": [
+      { "id": "a", "text": "Skeletal muscle" },
+      { "id": "b", "text": "Cardiac muscle" },
+      { "id": "c", "text": "Smooth muscle" },
+      { "id": "d", "text": "Voluntary muscle" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB063",
+    "questionText": "The liquid matrix of blood, consisting mostly of water, in which blood cells are suspended, is called:",
+    "options": [
+      { "id": "a", "text": "Serum" },
+      { "id": "b", "text": "Lymph" },
+      { "id": "c", "text": "Plasma" },
+      { "id": "d", "text": "Hemoglobin" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB064",
+    "questionText": "Which structure in the respiratory system prevents food from entering the trachea (windpipe) during swallowing?",
+    "options": [
+      { "id": "a", "text": "Larynx" },
+      { "id": "b", "text": "Pharynx" },
+      { "id": "c", "text": "Epiglottis" },
+      { "id": "d", "text": "Uvula" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB065",
+    "questionText": "The enzyme pepsin, which begins protein digestion, functions optimally in which type of environment found in the stomach?",
+    "options": [
+      { "id": "a", "text": "Highly alkaline" },
+      { "id": "b", "text": "Neutral" },
+      { "id": "c", "text": "Highly acidic" },
+      { "id": "d", "text": "Slightly alkaline" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB066",
+    "questionText": "Which endocrine gland is often called the \"master gland\" because it influences many other endocrine glands?",
+    "options": [
+      { "id": "a", "text": "Thyroid gland" },
+      { "id": "b", "text": "Adrenal gland" },
+      { "id": "c", "text": "Pancreas" },
+      { "id": "d", "text": "Pituitary gland" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB067",
+    "questionText": "What is the name of the large artery that carries oxygenated blood from the left ventricle to the rest of the body?",
+    "options": [
+      { "id": "a", "text": "Pulmonary Artery" },
+      { "id": "b", "text": "Superior Vena Cava" },
+      { "id": "c", "text": "Aorta" },
+      { "id": "d", "text": "Pulmonary Vein" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB068",
+    "questionText": "The basic structural and functional unit of the nervous system is the:",
+    "options": [
+      { "id": "a", "text": "Nephron" },
+      { "id": "b", "text": "Neuron" },
+      { "id": "c", "text": "Glial cell" },
+      { "id": "d", "text": "Osteocyte" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB069",
+    "questionText": "Which component of the blood is primarily responsible for transporting oxygen?",
+    "options": [
+      { "id": "a", "text": "White Blood Cells (Leukocytes)" },
+      { "id": "b", "text": "Platelets (Thrombocytes)" },
+      { "id": "c", "text": "Red Blood Cells (Erythrocytes)" },
+      { "id": "d", "text": "Plasma" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB070",
+    "questionText": "The process by which metabolic waste products are removed from the body is known as:",
+    "options": [
+      { "id": "a", "text": "Digestion" },
+      { "id": "b", "text": "Respiration" },
+      { "id": "c", "text": "Circulation" },
+      { "id": "d", "text": "Excretion" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB071",
+    "questionText": "Which vitamin is essential for proper blood clotting?",
+    "options": [
+      { "id": "a", "text": "Vitamin A" },
+      { "id": "b", "text": "Vitamin C" },
+      { "id": "c", "text": "Vitamin D" },
+      { "id": "d", "text": "Vitamin K" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB072",
+    "questionText": "The part of the peripheral nervous system that controls involuntary actions, such as heart rate and digestion, is the:",
+    "options": [
+      { "id": "a", "text": "Somatic nervous system" },
+      { "id": "b", "text": "Central nervous system" },
+      { "id": "c", "text": "Autonomic nervous system" },
+      { "id": "d", "text": "Sensory nervous system" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB073",
+    "questionText": "Thyroxine, a hormone regulating metabolism, is produced by which gland located in the neck?",
+    "options": [
+      { "id": "a", "text": "Pituitary gland" },
+      { "id": "b", "text": "Adrenal gland" },
+      { "id": "c", "text": "Thyroid gland" },
+      { "id": "d", "text": "Parathyroid gland" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB074",
+    "questionText": "What is the main function of the large intestine in the digestive process?",
+    "options": [
+      { "id": "a", "text": "Digestion of proteins" },
+      { "id": "b", "text": "Absorption of nutrients" },
+      { "id": "c", "text": "Absorption of water and formation of feces" },
+      { "id": "d", "text": "Production of bile" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB075",
+    "questionText": "The tough, flexible connective tissue found at the ends of bones in joints, the nose, and ears is called:",
+    "options": [
+      { "id": "a", "text": "Ligament" },
+      { "id": "b", "text": "Tendon" },
+      { "id": "c", "text": "Cartilage" },
+      { "id": "d", "text": "Marrow" }
+    ],
+    "correctOptionId": "c"
+  },
+
+  {
+    "id": "KB076",
+    "questionText": "Which blood type is often referred to as the \"universal donor\" because it can typically be given to individuals of any ABO blood group?",
+    "options": [
+      { "id": "a", "text": "A" },
+      { "id": "b", "text": "B" },
+      { "id": "c", "text": "AB" },
+      { "id": "d", "text": "O (specifically O negative)" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB077",
+    "questionText": "The contraction phase of the heart cycle is called:",
+    "options": [
+      { "id": "a", "text": "Diastole" },
+      { "id": "b", "text": "Systole" },
+      { "id": "c", "text": "Fibrillation" },
+      { "id": "d", "text": "Murmur" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB078",
+    "questionText": "Which structure connects muscles to bones?",
+    "options": [
+      { "id": "a", "text": "Ligaments" },
+      { "id": "b", "text": "Tendons" },
+      { "id": "c", "text": "Cartilage" },
+      { "id": "d", "text": "Joints" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB079",
+    "questionText": "The islets of Langerhans, responsible for hormone production (like insulin and glucagon), are located within which organ?",
+    "options": [
+      { "id": "a", "text": "Liver" },
+      { "id": "b", "text": "Kidney" },
+      { "id": "c", "text": "Spleen" },
+      { "id": "d", "text": "Pancreas" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB080",
+    "questionText": "What is the primary respiratory pigment found in human red blood cells that binds to oxygen?",
+    "options": [
+      { "id": "a", "text": "Myoglobin" },
+      { "id": "b", "text": "Hemocyanin" },
+      { "id": "c", "text": "Chlorophyll" },
+      { "id": "d", "text": "Hemoglobin" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB081",
+    "questionText": "A rapid, involuntary response to a stimulus, processed mainly in the spinal cord, is known as a:",
+    "options": [
+      { "id": "a", "text": "Voluntary action" },
+      { "id": "b", "text": "Conditioned response" },
+      { "id": "c", "text": "Reflex action" },
+      { "id": "d", "text": "Hormonal response" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB082",
+    "questionText": "The pulmonary artery is unique among arteries because it carries:",
+    "options": [
+      { "id": "a", "text": "Oxygenated blood to the lungs" },
+      { "id": "b", "text": "Deoxygenated blood to the lungs" },
+      { "id": "c", "text": "Oxygenated blood from the lungs" },
+      { "id": "d", "text": "Deoxygenated blood from the lungs" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB083",
+    "questionText": "Which specific type of white blood cell is primarily involved in producing antibodies?",
+    "options": [
+      { "id": "a", "text": "Neutrophils" },
+      { "id": "b", "text": "Eosinophils" },
+      { "id": "c", "text": "Monocytes" },
+      { "id": "d", "text": "Lymphocytes (specifically B-lymphocytes)" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB084",
+    "questionText": "The tiny finger-like projections lining the small intestine, which increase the surface area for absorption, are called:",
+    "options": [
+      { "id": "a", "text": "Cilia" },
+      { "id": "b", "text": "Flagella" },
+      { "id": "c", "text": "Villi" },
+      { "id": "d", "text": "Alveoli" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB085",
+    "questionText": "Which mineral is crucial for bone formation and muscle contraction?",
+    "options": [
+      { "id": "a", "text": "Iron" },
+      { "id": "b", "text": "Iodine" },
+      { "id": "c", "text": "Calcium" },
+      { "id": "d", "text": "Sodium" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB086",
+    "questionText": "The vocal cords, responsible for sound production, are located within the:",
+    "options": [
+      { "id": "a", "text": "Pharynx" },
+      { "id": "b", "text": "Trachea" },
+      { "id": "c", "text": "Larynx (voice box)" },
+      { "id": "d", "text": "Esophagus" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB087",
+    "questionText": "Glucagon, a hormone that raises blood glucose levels, is secreted by the:",
+    "options": [
+      { "id": "a", "text": "Thyroid gland" },
+      { "id": "b", "text": "Adrenal cortex" },
+      { "id": "c", "text": "Pituitary gland" },
+      { "id": "d", "text": "Pancreas (alpha cells of Islets of Langerhans)" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB088",
+    "questionText": "The junction where a neuron transmits an impulse to another cell (neuron, muscle cell, or gland cell) is called a:",
+    "options": [
+      { "id": "a", "text": "Axon" },
+      { "id": "b", "text": "Dendrite" },
+      { "id": "c", "text": "Synapse" },
+      { "id": "d", "text": "Myelin sheath" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB089",
+    "questionText": "Urea, the primary nitrogenous waste product excreted by humans, is synthesized mainly in which organ?",
+    "options": [
+      { "id": "a", "text": "Kidneys" },
+      { "id": "b", "text": "Liver" },
+      { "id": "c", "text": "Spleen" },
+      { "id": "d", "text": "Lungs" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB090",
+    "questionText": "Which type of joint allows for the widest range of motion, like the shoulder and hip joints?",
+    "options": [
+      { "id": "a", "text": "Hinge joint" },
+      { "id": "b", "text": "Pivot joint" },
+      { "id": "c", "text": "Ball-and-socket joint" },
+      { "id": "d", "text": "Gliding joint" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB091",
+    "questionText": "The fluid that circulates within the lymphatic system, eventually returning to the bloodstream, is known as:",
+    "options": [
+      { "id": "a", "text": "Plasma" },
+      { "id": "b", "text": "Serum" },
+      { "id": "c", "text": "Lymph" },
+      { "id": "d", "text": "Cerebrospinal fluid" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB092",
+    "questionText": "What is the primary function of the Cerebrum in the human brain?",
+    "options": [
+      { "id": "a", "text": "Regulating breathing and heart rate" },
+      { "id": "b", "text": "Coordinating balance and movement" },
+      { "id": "c", "text": "Processing sensory information, thought, and voluntary control" },
+      { "id": "d", "text": "Relaying sensory information" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB093",
+    "questionText": "Lipase is an enzyme responsible for the digestion of:",
+    "options": [
+      { "id": "a", "text": "Proteins" },
+      { "id": "b", "text": "Carbohydrates" },
+      { "id": "c", "text": "Fats (Lipids)" },
+      { "id": "d", "text": "Nucleic acids" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB094",
+    "questionText": "The muscular wall separating the thoracic cavity (containing heart and lungs) from the abdominal cavity, crucial for breathing, is the:",
+    "options": [
+      { "id": "a", "text": "Intercostal muscle" },
+      { "id": "b", "text": "Diaphragm" },
+      { "id": "c", "text": "Peritoneum" },
+      { "id": "d", "text": "Pleura" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB095",
+    "questionText": "Which hormone primarily regulates the body's overall metabolic rate?",
+    "options": [
+      { "id": "a", "text": "Insulin" },
+      { "id": "b", "text": "Adrenaline" },
+      { "id": "c", "text": "Thyroxine" },
+      { "id": "d", "text": "Growth Hormone" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB096",
+    "questionText": "The filtering of blood in the nephron primarily occurs in a structure composed of the glomerulus and Bowman's capsule, collectively known as the:",
+    "options": [
+      { "id": "a", "text": "Loop of Henle" },
+      { "id": "b", "text": "Collecting duct" },
+      { "id": "c", "text": "Renal corpuscle (Malpighian body)" },
+      { "id": "d", "text": "Proximal convoluted tubule" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB097",
+    "questionText": "Which part of the eye contains photoreceptor cells (rods and cones) and converts light into neural signals?",
+    "options": [
+      { "id": "a", "text": "Cornea" },
+      { "id": "b", "text": "Lens" },
+      { "id": "c", "text": "Iris" },
+      { "id": "d", "text": "Retina" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB098",
+    "questionText": "The exchange of materials (nutrients, gases, waste) between blood and tissues occurs primarily across the walls of which blood vessels?",
+    "options": [
+      { "id": "a", "text": "Arteries" },
+      { "id": "b", "text": "Arterioles" },
+      { "id": "c", "text": "Capillaries" },
+      { "id": "d", "text": "Veins" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB099",
+    "questionText": "Trypsin, an enzyme involved in protein digestion in the small intestine, is secreted in an inactive form by the:",
+    "options": [
+      { "id": "a", "text": "Stomach" },
+      { "id": "b", "text": "Liver" },
+      { "id": "c", "text": "Salivary glands" },
+      { "id": "d", "text": "Pancreas" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB100",
+    "questionText": "Growth Hormone (GH), which stimulates growth and cell reproduction, is secreted by the:",
+    "options": [
+      { "id": "a", "text": "Thyroid gland" },
+      { "id": "b", "text": "Adrenal gland" },
+      { "id": "c", "text": "Anterior pituitary gland" },
+      { "id": "d", "text": "Pancreas" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB101",
+    "questionText": "In the five-kingdom classification system proposed by R.H. Whittaker, prokaryotic organisms like bacteria are placed in which kingdom?",
+    "options": [
+      { "id": "a", "text": "Protista" },
+      { "id": "b", "text": "Fungi" },
+      { "id": "c", "text": "Monera" },
+      { "id": "d", "text": "Plantae" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB102",
+    "questionText": "Which of the following represents the correct hierarchical order of taxonomic categories from broadest to most specific?",
+    "options": [
+      { "id": "a", "text": "Kingdom, Phylum, Order, Class, Family, Genus, Species" },
+      { "id": "b", "text": "Kingdom, Phylum, Class, Order, Family, Genus, Species" },
+      { "id": "c", "text": "Kingdom, Class, Phylum, Order, Family, Species, Genus" },
+      { "id": "d", "text": "Phylum, Kingdom, Class, Family, Order, Genus, Species" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB103",
+    "questionText": "Organisms that possess both male and female reproductive organs in the same individual are termed:",
+    "options": [
+      { "id": "a", "text": "Dioecious" },
+      { "id": "b", "text": "Unisexual" },
+      { "id": "c", "text": "Hermaphrodite (or Monoecious)" },
+      { "id": "d", "text": "Parthenogenetic" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB104",
+    "questionText": "Animals that have three primary germ layers (ectoderm, mesoderm, and endoderm) during embryonic development are described as:",
+    "options": [
+      { "id": "a", "text": "Diploblastic" },
+      { "id": "b", "text": "Triploblastic" },
+      { "id": "c", "text": "Monoblastic" },
+      { "id": "d", "text": "Acoelomic" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB105",
+    "questionText": "Hydra and Jellyfish exhibit radial symmetry and possess stinging cells called nematocysts. They belong to the phylum:",
+    "options": [
+      { "id": "a", "text": "Porifera" },
+      { "id": "b", "text": "Platyhelminthes" },
+      { "id": "c", "text": "Cnidaria (Coelenterata)" },
+      { "id": "d", "text": "Annelida" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB106",
+    "questionText": "Flatworms, such as Tapeworm and Planaria, are characterized by being dorsoventrally flattened and acoelomate. They belong to the phylum:",
+    "options": [
+      { "id": "a", "text": "Nematoda" },
+      { "id": "b", "text": "Annelida" },
+      { "id": "c", "text": "Platyhelminthes" },
+      { "id": "d", "text": "Arthropoda" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB107",
+    "questionText": "An earthworm exhibits metameric segmentation, has a true coelom, and a closed circulatory system. It is classified under the phylum:",
+    "options": [
+      { "id": "a", "text": "Mollusca" },
+      { "id": "b", "text": "Arthropoda" },
+      { "id": "c", "text": "Annelida" },
+      { "id": "d", "text": "Nematoda" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB108",
+    "questionText": "Which phylum is characterized by jointed appendages, a chitinous exoskeleton, and includes insects, spiders, and crustaceans?",
+    "options": [
+      { "id": "a", "text": "Annelida" },
+      { "id": "b", "text": "Mollusca" },
+      { "id": "c", "text": "Arthropoda" },
+      { "id": "d", "text": "Echinodermata" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB109",
+    "questionText": "Organisms belonging to the Kingdom Protista are typically:",
+    "options": [
+      { "id": "a", "text": "Prokaryotic and multicellular" },
+      { "id": "b", "text": "Eukaryotic and primarily unicellular or colonial" },
+      { "id": "c", "text": "Prokaryotic and unicellular" },
+      { "id": "d", "text": "Eukaryotic and exclusively multicellular with tissues" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB110",
+    "questionText": "The term 'Acoelomate' refers to animals that:",
+    "options": [
+      { "id": "a", "text": "Have a true coelom lined by mesoderm" },
+      { "id": "b", "text": "Have a body cavity not completely lined by mesoderm (pseudocoelom)" },
+      { "id": "c", "text": "Lack a true body cavity between the gut and the body wall" },
+      { "id": "d", "text": "Have fluid-filled cavities within the mesoderm" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB111",
+    "questionText": "Which of the following is an example of a pseudocoelomate organism?",
+    "options": [
+      { "id": "a", "text": "Earthworm (Lumbricus)" },
+      { "id": "b", "text": "Roundworm (Ascaris)" },
+      { "id": "c", "text": "Tapeworm (Taenia)" },
+      { "id": "d", "text": "Hydra" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB112",
+    "questionText": "Starfish and sea urchins belong to the phylum Echinodermata. What type of symmetry do adult echinoderms typically exhibit?",
+    "options": [
+      { "id": "a", "text": "Bilateral symmetry" },
+      { "id": "b", "text": "Radial symmetry (pentamerous)" },
+      { "id": "c", "text": "Asymmetry" },
+      { "id": "d", "text": "Biradial symmetry" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB113",
+    "questionText": "The presence of a notochord at some stage in the life cycle is a defining characteristic of which phylum?",
+    "options": [
+      { "id": "a", "text": "Arthropoda" },
+      { "id": "b", "text": "Annelida" },
+      { "id": "c", "text": "Mollusca" },
+      { "id": "d", "text": "Chordata" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB114",
+    "questionText": "Vertebrates belong to the subphylum Vertebrata within the phylum Chordata. What structure typically replaces the notochord in most adult vertebrates?",
+    "options": [
+      { "id": "a", "text": "Nerve cord" },
+      { "id": "b", "text": "Vertebral column (spine)" },
+      { "id": "c", "text": "Exoskeleton" },
+      { "id": "d", "text": "Coelom" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB115",
+    "questionText": "Which class of vertebrates includes animals that are typically cold-blooded (poikilothermic), breathe through gills throughout their life, and have fins?",
+    "options": [
+      { "id": "a", "text": "Amphibia" },
+      { "id": "b", "text": "Reptilia" },
+      { "id": "c", "text": "Pisces (Fishes)" },
+      { "id": "d", "text": "Aves" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB116",
+    "questionText": "Frogs and salamanders belong to the class Amphibia. A key characteristic of amphibians is:",
+    "options": [
+      { "id": "a", "text": "They have scales and lay amniotic eggs." },
+      { "id": "b", "text": "They undergo metamorphosis from an aquatic larval stage to a semi-terrestrial/aquatic adult stage." },
+      { "id": "c", "text": "They are warm-blooded and have feathers." },
+      { "id": "d", "text": "They possess mammary glands." }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB117",
+    "questionText": "Reptiles (Class Reptilia), such as lizards, snakes, and turtles, are better adapted to terrestrial life than amphibians primarily because they:",
+    "options": [
+      { "id": "a", "text": "Breathe through gills" },
+      { "id": "b", "text": "Have moist skin for respiration" },
+      { "id": "c", "text": "Possess dry, scaly skin and lay amniotic eggs" },
+      { "id": "d", "text": "Are warm-blooded" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB118",
+    "questionText": "Birds (Class Aves) are unique among vertebrates due to the presence of:",
+    "options": [
+      { "id": "a", "text": "Scales" },
+      { "id": "b", "text": "Mammary glands" },
+      { "id": "c", "text": "Feathers and pneumatic bones" },
+      { "id": "d", "text": "A three-chambered heart" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB119",
+    "questionText": "Mammals (Class Mammalia) are characterized by the presence of:",
+    "options": [
+      { "id": "a", "text": "Feathers and beaks" },
+      { "id": "b", "text": "Mammary glands, hair/fur, and a diaphragm" },
+      { "id": "c", "text": "Scales and cold blood" },
+      { "id": "d", "text": "Gills and fins" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB120",
+    "questionText": "Amoeba and Paramecium are single-celled eukaryotic organisms often studied as examples of which kingdom?",
+    "options": [
+      { "id": "a", "text": "Monera" },
+      { "id": "b", "text": "Fungi" },
+      { "id": "c", "text": "Protista" },
+      { "id": "d", "text": "Animalia" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB121",
+    "questionText": "Snails, slugs, and octopuses, often possessing a shell (though sometimes reduced or internal), belong to the phylum:",
+    "options": [
+      { "id": "a", "text": "Arthropoda" },
+      { "id": "b", "text": "Annelida" },
+      { "id": "c", "text": "Mollusca" },
+      { "id": "d", "text": "Echinodermata" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB122",
+    "questionText": "An animal body plan that can be divided into two equal mirror-image halves along only one plane is described as having:",
+    "options": [
+      { "id": "a", "text": "Radial symmetry" },
+      { "id": "b", "text": "Bilateral symmetry" },
+      { "id": "c", "text": "Spherical symmetry" },
+      { "id": "d", "text": "Asymmetry" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB123",
+    "questionText": "Sponges (Phylum Porifera) represent the simplest multicellular animals and are characterized by:",
+    "options": [
+      { "id": "a", "text": "Having distinct tissues and organs" },
+      { "id": "b", "text": "A cellular level of organization and numerous pores (ostia)" },
+      { "id": "c", "text": "Possessing stinging cells (nematocysts)" },
+      { "id": "d", "text": "Having a true coelom" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB124",
+    "questionText": "Organisms that derive nutrients by absorbing decomposed organic matter are known as:",
+    "options": [
+      { "id": "a", "text": "Autotrophs" },
+      { "id": "b", "text": "Parasites" },
+      { "id": "c", "text": "Saprophytes" },
+      { "id": "d", "text": "Chemotrophs" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB125",
+    "questionText": "Fungi, like mushrooms and molds, are eukaryotic organisms characterized by:",
+    "options": [
+      { "id": "a", "text": "Being photosynthetic" },
+      { "id": "b", "text": "Having cell walls made primarily of chitin and being heterotrophic" },
+      { "id": "c", "text": "Lacking cell walls and being autotrophic" },
+      { "id": "d", "text": "Being prokaryotic and parasitic" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB126",
+    "questionText": "Which of the following groups includes organisms that are exclusively marine?",
+    "options": [
+      { "id": "a", "text": "Porifera" },
+      { "id": "b", "text": "Cnidaria" },
+      { "id": "c", "text": "Echinodermata" },
+      { "id": "d", "text": "Annelida" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB127",
+    "questionText": "The scientific name Homo sapiens refers to modern humans. Homo represents the:",
+    "options": [
+      { "id": "a", "text": "Species" },
+      { "id": "b", "text": "Genus" },
+      { "id": "c", "text": "Family" },
+      { "id": "d", "text": "Order" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB128",
+    "questionText": "Animals possessing a true coelom, which is a fluid-filled body cavity completely lined by mesoderm, are called:",
+    "options": [
+      { "id": "a", "text": "Acoelomates" },
+      { "id": "b", "text": "Pseudocoelomates" },
+      { "id": "c", "text": "Coelomates (Eucoelomates)" },
+      { "id": "d", "text": "Diploblasts" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB129",
+    "questionText": "Which of the following is NOT a characteristic feature of the phylum Chordata?",
+    "options": [
+      { "id": "a", "text": "Presence of a notochord" },
+      { "id": "b", "text": "Dorsal hollow nerve cord" },
+      { "id": "c", "text": "Pharyngeal gill slits (at some stage)" },
+      { "id": "d", "text": "Ventral solid nerve cord" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB130",
+    "questionText": "The class Chondrichthyes (e.g., sharks, rays) differs from the class Osteichthyes (e.g., tuna, carp) primarily in having:",
+    "options": [
+      { "id": "a", "text": "Bony skeleton" },
+      { "id": "b", "text": "Cartilaginous skeleton" },
+      { "id": "c", "text": "Lungs instead of gills" },
+      { "id": "d", "text": "Warm blood" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB131",
+    "questionText": "Which vertebrate class was the first to become truly terrestrial, independent of water for reproduction?",
+    "options": [
+      { "id": "a", "text": "Amphibia" },
+      { "id": "b", "text": "Reptilia" },
+      { "id": "c", "text": "Aves" },
+      { "id": "d", "text": "Mammalia" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB132",
+    "questionText": "The water vascular system, used for locomotion, feeding, and respiration, is a unique feature of which phylum?",
+    "options": [
+      { "id": "a", "text": "Mollusca" },
+      { "id": "b", "text": "Arthropoda" },
+      { "id": "c", "text": "Echinodermata" },
+      { "id": "d", "text": "Chordata" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB133",
+    "questionText": "'Cold-blooded' is a layman's term for poikilothermic. Which of the following vertebrate classes are typically considered poikilothermic?",
+    "options": [
+      { "id": "a", "text": "Aves and Mammalia" },
+      { "id": "b", "text": "Pisces, Amphibia, and Reptilia" },
+      { "id": "c", "text": "Mammalia and Reptilia" },
+      { "id": "d", "text": "Aves and Pisces" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB134",
+    "questionText": "Insects belong to the Class Insecta within Phylum Arthropoda. A defining characteristic of insects is having:",
+    "options": [
+      { "id": "a", "text": "Two pairs of antennae" },
+      { "id": "b", "text": "Four pairs of legs" },
+      { "id": "c", "text": "A body divided into head, thorax, and abdomen, with three pairs of legs on the thorax" },
+      { "id": "d", "text": "A cephalothorax and abdomen, with typically four pairs of legs" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB135",
+    "questionText": "Animals that develop from embryos with only two germ layers (ectoderm and endoderm) are called:",
+    "options": [
+      { "id": "a", "text": "Triploblastic" },
+      { "id": "b", "text": "Coelomate" },
+      { "id": "c", "text": "Diploblastic" },
+      { "id": "d", "text": "Segmented" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB136",
+    "questionText": "The Kingdom Fungi includes organisms like yeast. Yeast is unusual among fungi because it is typically:",
+    "options": [
+      { "id": "a", "text": "Multicellular with hyphae" },
+      { "id": "b", "text": "Unicellular" },
+      { "id": "c", "text": "Photosynthetic" },
+      { "id": "d", "text": "Prokaryotic" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB137",
+    "questionText": "Based on body symmetry, how would you classify a sponge (Phylum Porifera)?",
+    "options": [
+      { "id": "a", "text": "Radially symmetrical" },
+      { "id": "b", "text": "Bilaterally symmetrical" },
+      { "id": "c", "text": "Primarily asymmetrical" },
+      { "id": "d", "text": "Spherically symmetrical" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB138",
+    "questionText": "Which phylum includes segmented worms like leeches and earthworms?",
+    "options": [
+      { "id": "a", "text": "Platyhelminthes" },
+      { "id": "b", "text": "Nematoda" },
+      { "id": "c", "text": "Annelida" },
+      { "id": "d", "text": "Arthropoda" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB139",
+    "questionText": "Bats, despite having wings, are classified as mammals because they:",
+    "options": [
+      { "id": "a", "text": "Lay eggs" },
+      { "id": "b", "text": "Are cold-blooded" },
+      { "id": "c", "text": "Have feathers" },
+      { "id": "d", "text": "Have hair/fur and mammary glands" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB140",
+    "questionText": "The notochord persists throughout life in some primitive chordates like Amphioxus (lancelet), but in vertebrates, it is largely replaced by the:",
+    "options": [
+      { "id": "a", "text": "Spinal cord" },
+      { "id": "b", "text": "Exoskeleton" },
+      { "id": "c", "text": "Vertebral column" },
+      { "id": "d", "text": "Sternum" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB141",
+    "questionText": "Which of the following is a characteristic of Kingdom Animalia members?",
+    "options": [
+      { "id": "a", "text": "Presence of a cell wall made of cellulose" },
+      { "id": "b", "text": "Autotrophic nutrition" },
+      { "id": "c", "text": "Prokaryotic cell structure" },
+      { "id": "d", "text": "Heterotrophic nutrition and typically multicellular" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB142",
+    "questionText": "Which term describes the condition where the body cavity is present but not fully lined by mesodermal tissue, such as in roundworms?",
+    "options": [
+      { "id": "a", "text": "Coelomate" },
+      { "id": "b", "text": "Acoelomate" },
+      { "id": "c", "text": "Pseudocoelomate" },
+      { "id": "d", "text": "Haemocoel" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB143",
+    "questionText": "The Malpighian tubules, responsible for excretion, are characteristic structures found in which group of animals?",
+    "options": [
+      { "id": "a", "text": "Annelids" },
+      { "id": "b", "text": "Molluscs" },
+      { "id": "c", "text": "Insects (Arthropoda)" },
+      { "id": "d", "text": "Echinoderms" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB144",
+    "questionText": "Which class of vertebrates possesses a four-chambered heart, is warm-blooded (homeothermic), and possesses feathers?",
+    "options": [
+      { "id": "a", "text": "Reptilia" },
+      { "id": "b", "text": "Amphibia" },
+      { "id": "c", "text": "Aves" },
+      { "id": "d", "text": "Mammalia" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB145",
+    "questionText": "The body of a mollusc, like a snail, is typically unsegmented and divided into which three main parts?",
+    "options": [
+      { "id": "a", "text": "Head, thorax, abdomen" },
+      { "id": "b", "text": "Cephalothorax, abdomen, telson" },
+      { "id": "c", "text": "Head, visceral mass, muscular foot" },
+      { "id": "d", "text": "Prosoma, opisthosoma, appendages" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB146",
+    "questionText": "Corals, sea anemones, and jellyfish are examples belonging to which phylum known for its radial symmetry and cnidocytes?",
+    "options": [
+      { "id": "a", "text": "Porifera" },
+      { "id": "b", "text": "Platyhelminthes" },
+      { "id": "c", "text": "Cnidaria" },
+      { "id": "d", "text": "Ctenophora" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB147",
+    "questionText": "Which of these is NOT a vertebrate?",
+    "options": [
+      { "id": "a", "text": "Shark" },
+      { "id": "b", "text": "Frog" },
+      { "id": "c", "text": "Butterfly" },
+      { "id": "d", "text": "Snake" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB148",
+    "questionText": "Animals belonging to Phylum Platyhelminthes (flatworms) are the simplest animals to exhibit:",
+    "options": [
+      { "id": "a", "text": "Radial symmetry" },
+      { "id": "b", "text": "A true coelom" },
+      { "id": "c", "text": "Bilateral symmetry and cephalization (development of a head region)" },
+      { "id": "d", "text": "Metameric segmentation" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB149",
+    "questionText": "The process of shedding the exoskeleton, common in arthropods, to allow for growth is called:",
+    "options": [
+      { "id": "a", "text": "Metamorphosis" },
+      { "id": "b", "text": "Molting (Ecdysis)" },
+      { "id": "c", "text": "Regeneration" },
+      { "id": "d", "text": "Budding" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB150",
+    "questionText": "Organisms in the Kingdom Plantae are generally characterized by:",
+    "options": [
+      { "id": "a", "text": "Heterotrophic nutrition and chitinous cell walls" },
+      { "id": "b", "text": "Autotrophic nutrition (photosynthesis) and cellulosic cell walls" },
+      { "id": "c", "text": "Prokaryotic cells and absorption" },
+      { "id": "d", "text": "Motility and lack of cell walls" }
+    ],
+    "correctOptionId": "b"
+  },
+
+  {
+    "id": "KB151",
+    "questionText": "In a honey bee colony, the queen bee develops from a fertilized egg fed a special diet called:",
+    "options": [
+      { "id": "a", "text": "Pollen paste" },
+      { "id": "b", "text": "Nectar concentrate" },
+      { "id": "c", "text": "Royal jelly" },
+      { "id": "d", "text": "Honey dew" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB152",
+    "questionText": "The unfertilized eggs laid by a queen honey bee develop into:",
+    "options": [
+      { "id": "a", "text": "Queens" },
+      { "id": "b", "text": "Workers" },
+      { "id": "c", "text": "Drones (males)" },
+      { "id": "d", "text": "Gynes" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB153",
+    "questionText": "What is the primary function of drone bees in a honey bee colony?",
+    "options": [
+      { "id": "a", "text": "Foraging for nectar" },
+      { "id": "b", "text": "Defending the hive" },
+      { "id": "c", "text": "Mating with the queen" },
+      { "id": "d", "text": "Caring for the larvae" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB154",
+    "questionText": "The process of transformation from an immature larval stage to a distinct adult stage, often involving significant changes in form and structure (like in butterflies or bees), is called:",
+    "options": [
+      { "id": "a", "text": "Molting" },
+      { "id": "b", "text": "Regeneration" },
+      { "id": "c", "text": "Metamorphosis" },
+      { "id": "d", "text": "Parthenogenesis" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB155",
+    "questionText": "Worker honey bees perform a specific sequence of movements, often called the 'waggle dance', primarily to communicate the:",
+    "options": [
+      { "id": "a", "text": "Presence of danger near the hive" },
+      { "id": "b", "text": "Location and distance of a food source" },
+      { "id": "c", "text": "Need for hive ventilation" },
+      { "id": "d", "text": "Time for swarming" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB156",
+    "questionText": "The larval stage of a mosquito is commonly known as a:",
+    "options": [
+      { "id": "a", "text": "Nymph" },
+      { "id": "b", "text": "Grub" },
+      { "id": "c", "text": "Wriggler" },
+      { "id": "d", "text": "Caterpillar" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB157",
+    "questionText": "Which type of metamorphosis, seen in insects like grasshoppers and dragonflies, involves stages of egg, nymph, and adult, where the nymph often resembles a smaller version of the adult?",
+    "options": [
+      { "id": "a", "text": "Complete metamorphosis" },
+      { "id": "b", "text": "Incomplete metamorphosis (Hemimetabolous)" },
+      { "id": "c", "text": "Ametabolous development" },
+      { "id": "d", "text": "Hypermetamorphosis" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB158",
+    "questionText": "Beeswax, used by honey bees to construct the honeycomb, is secreted from glands located on which part of the worker bee's body?",
+    "options": [
+      { "id": "a", "text": "Head" },
+      { "id": "b", "text": "Thorax" },
+      { "id": "c", "text": "Abdomen" },
+      { "id": "d", "text": "Legs" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB159",
+    "questionText": "The larval stage of a butterfly or moth is called a:",
+    "options": [
+      { "id": "a", "text": "Maggot" },
+      { "id": "b", "text": "Grub" },
+      { "id": "c", "text": "Caterpillar" },
+      { "id": "d", "text": "Nymph" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB160",
+    "questionText": "In complete metamorphosis (Holometabolous), as seen in bees, butterflies, and flies, which stage occurs between the larva and the adult?",
+    "options": [
+      { "id": "a", "text": "Nymph" },
+      { "id": "b", "text": "Pupa" },
+      { "id": "c", "text": "Imago" },
+      { "id": "d", "text": "Subimago" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB161",
+    "questionText": "What is the main carbohydrate source collected by honey bees to produce honey?",
+    "options": [
+      { "id": "a", "text": "Pollen" },
+      { "id": "b", "text": "Nectar" },
+      { "id": "c", "text": "Honeydew" },
+      { "id": "d", "text": "Propolis" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB162",
+    "questionText": "The scientific practice of bee keeping, especially for honey and wax production, is known as:",
+    "options": [
+      { "id": "a", "text": "Sericulture" },
+      { "id": "b", "text": "Aquaculture" },
+      { "id": "c", "text": "Apiculture" },
+      { "id": "d", "text": "Horticulture" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB163",
+    "questionText": "The young one of a housefly, which often develops in decaying organic matter, is called a:",
+    "options": [
+      { "id": "a", "text": "Wriggler" },
+      { "id": "b", "text": "Caterpillar" },
+      { "id": "c", "text": "Nymph" },
+      { "id": "d", "text": "Maggot" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB164",
+    "questionText": "Propolis, a resinous substance collected by honey bees from tree buds or sap flows, is primarily used in the hive for:",
+    "options": [
+      { "id": "a", "text": "Feeding the queen" },
+      { "id": "b", "text": "Sealing gaps and sterilizing the hive" },
+      { "id": "c", "text": "Constructing honeycomb cells" },
+      { "id": "d", "text": "Cooling the hive" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB165",
+    "questionText": "Which caste of honey bee is sterile, female, and performs most of the tasks within and outside the hive?",
+    "options": [
+      { "id": "a", "text": "Queen" },
+      { "id": "b", "text": "Drone" },
+      { "id": "c", "text": "Worker" },
+      { "id": "d", "text": "Soldier" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB166",
+    "questionText": "An insect like a silverfish undergoes a type of development where the young resemble miniature adults and there is no distinct larval or pupal stage. This is called:",
+    "options": [
+      { "id": "a", "text": "Complete metamorphosis" },
+      { "id": "b", "text": "Incomplete metamorphosis" },
+      { "id": "c", "text": "Ametabolous development" },
+      { "id": "d", "text": "Paurometabolous development" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB167",
+    "questionText": "The shedding of the exoskeleton or cuticle by insects and other arthropods to allow for growth is termed:",
+    "options": [
+      { "id": "a", "text": "Metamorphosis" },
+      { "id": "b", "text": "Ecdysis (Molting)" },
+      { "id": "c", "text": "Pupation" },
+      { "id": "d", "text": "Diapause" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB168",
+    "questionText": "Where do mosquito larvae (wrigglers) typically develop?",
+    "options": [
+      { "id": "a", "text": "In soil" },
+      { "id": "b", "text": "In standing water" },
+      { "id": "c", "text": "On plant leaves" },
+      { "id": "d", "text": "Inside wood" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB169",
+    "questionText": "The adult form of an insect, especially after metamorphosis, is referred to as the:",
+    "options": [
+      { "id": "a", "text": "Larva" },
+      { "id": "b", "text": "Pupa" },
+      { "id": "c", "text": "Nymph" },
+      { "id": "d", "text": "Imago" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB170",
+    "questionText": "Pollen collected by honey bees serves primarily as a source of:",
+    "options": [
+      { "id": "a", "text": "Carbohydrates (energy)" },
+      { "id": "b", "text": "Protein and lipids" },
+      { "id": "c", "text": "Water" },
+      { "id": "d", "text": "Minerals for wax production" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB171",
+    "questionText": "Swarming in honey bees is a natural process primarily related to:",
+    "options": [
+      { "id": "a", "text": "Finding new food sources" },
+      { "id": "b", "text": "Colony reproduction (forming a new colony)" },
+      { "id": "c", "text": "Defending against predators" },
+      { "id": "d", "text": "Seasonal migration" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB172",
+    "questionText": "Which insect order undergoes complete metamorphosis?",
+    "options": [
+      { "id": "a", "text": "Orthoptera (Grasshoppers, Crickets)" },
+      { "id": "b", "text": "Odonata (Dragonflies, Damselflies)" },
+      { "id": "c", "text": "Hymenoptera (Bees, Ants, Wasps)" },
+      { "id": "d", "text": "Hemiptera (True Bugs, Cicadas)" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB173",
+    "questionText": "The pupal stage of a butterfly, often encased in a protective covering, is called a:",
+    "options": [
+      { "id": "a", "text": "Cocoon" },
+      { "id": "b", "text": "Chrysalis" },
+      { "id": "c", "text": "Tumbler" },
+      { "id": "d", "text": "Nymph casing" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB174",
+    "questionText": "How do honey bees primarily regulate the temperature inside their hive?",
+    "options": [
+      { "id": "a", "text": "Sealing entrances with propolis" },
+      { "id": "b", "text": "Fanning their wings and evaporative cooling using water" },
+      { "id": "c", "text": "Migrating to cooler locations" },
+      { "id": "d", "text": "Entering a state of hibernation" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB175",
+    "questionText": "The larval stage of a beetle is typically called a:",
+    "options": [
+      { "id": "a", "text": "Wriggler" },
+      { "id": "b", "text": "Caterpillar" },
+      { "id": "c", "text": "Grub" },
+      { "id": "d", "text": "Nymph" }
+    ],
+    "correctOptionId": "c"
+  },
+    {
+    "id": "KB176",
+    "questionText": "In myopia (nearsightedness), parallel light rays entering the eye focus:",
+    "options": [
+      { "id": "a", "text": "Directly on the retina" },
+      { "id": "b", "text": "In front of the retina" },
+      { "id": "c", "text": "Behind the retina" },
+      { "id": "d", "text": "On the optic nerve" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB177",
+    "questionText": "Which type of corrective lens is required to fix hypermetropia (farsightedness), and why?",
+    "options": [
+      { "id": "a", "text": "Concave lens, to diverge light rays before they enter the eye." },
+      { "id": "b", "text": "Convex lens, to converge light rays more strongly onto the retina." },
+      { "id": "c", "text": "Cylindrical lens, to correct uneven curvature." },
+      { "id": "d", "text": "Bifocal lens, to correct both near and far vision simultaneously." }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB178",
+    "questionText": "Cataract is a condition characterized by the clouding or opacification of which specific part of the eye?",
+    "options": [
+      { "id": "a", "text": "Cornea" },
+      { "id": "b", "text": "Iris" },
+      { "id": "c", "text": "Lens" },
+      { "id": "d", "text": "Retina" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB179",
+    "questionText": "Atherosclerosis, a major underlying cause of various heart diseases, involves the deposition of fatty plaques (atheromas) primarily within the walls of:",
+    "options": [
+      { "id": "a", "text": "Veins" },
+      { "id": "b", "text": "Capillaries" },
+      { "id": "c", "text": "Arteries" },
+      { "id": "d", "text": "Lymphatic vessels" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB180",
+    "questionText": "A myocardial infarction, commonly known as a heart attack, results from a sudden and severe lack of blood supply specifically to the:",
+    "options": [
+      { "id": "a", "text": "Brain tissue" },
+      { "id": "b", "text": "Lung tissue" },
+      { "id": "c", "text": "Heart muscle (myocardium)" },
+      { "id": "d", "text": "Kidney nephrons" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB181",
+    "questionText": "Hypertension is the medical term for:",
+    "options": [
+      { "id": "a", "text": "Low blood sugar" },
+      { "id": "b", "text": "High blood pressure" },
+      { "id": "c", "text": "Rapid heart rate" },
+      { "id": "d", "text": "Irregular heartbeat" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB182",
+    "questionText": "Which refractive error is primarily caused by an irregularly shaped cornea or lens, leading to blurred vision at all distances?",
+    "options": [
+      { "id": "a", "text": "Myopia" },
+      { "id": "b", "text": "Hypermetropia" },
+      { "id": "c", "text": "Presbyopia" },
+      { "id": "d", "text": "Astigmatism" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB183",
+    "questionText": "The surgical removal of a clouded lens and its replacement with an artificial intraocular lens (IOL) is the standard treatment for which condition?",
+    "options": [
+      { "id": "a", "text": "Glaucoma" },
+      { "id": "b", "text": "Cataract" },
+      { "id": "c", "text": "Macular Degeneration" },
+      { "id": "d", "text": "Diabetic Retinopathy" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB184",
+    "questionText": "Which lifestyle factor is LEAST likely to be considered a primary risk factor for developing coronary artery disease?",
+    "options": [
+      { "id": "a", "text": "High intake of saturated fats" },
+      { "id": "b", "text": "Regular moderate exercise" },
+      { "id": "c", "text": "Smoking tobacco" },
+      { "id": "d", "text": "Uncontrolled diabetes mellitus" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB185",
+    "questionText": "The inability of the eye, typically associated with aging, to focus properly on near objects due to reduced elasticity of the lens is known as:",
+    "options": [
+      { "id": "a", "text": "Myopia" },
+      { "id": "b", "text": "Astigmatism" },
+      { "id": "c", "text": "Presbyopia" },
+      { "id": "d", "text": "Hypermetropia" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB186",
+    "questionText": "Angina Pectoris refers to chest pain or discomfort caused by:",
+    "options": [
+      { "id": "a", "text": "A fully blocked coronary artery (heart attack)" },
+      { "id": "b", "text": "Inflammation of the heart muscle (myocarditis)" },
+      { "id": "c", "text": "Temporary reduction of blood flow to the heart muscle" },
+      { "id": "d", "text": "A leaky heart valve" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB187",
+    "questionText": "A convex lens (converging lens) is used to correct hypermetropia because the person's eye:",
+    "options": [
+      { "id": "a", "text": "Focuses light in front of the retina" },
+      { "id": "b", "text": "Cannot focus light sufficiently onto the retina (focus point is behind)" },
+      { "id": "c", "text": "Has an irregularly shaped cornea" },
+      { "id": "d", "text": "Has a clouded lens" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB188",
+    "questionText": "Persistently high blood pressure (hypertension) significantly increases the risk of all the following conditions EXCEPT:",
+    "options": [
+      { "id": "a", "text": "Stroke" },
+      { "id": "b", "text": "Heart attack" },
+      { "id": "c", "text": "Kidney failure" },
+      { "id": "d", "text": "Type 1 Diabetes" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB189",
+    "questionText": "Which statement accurately describes the difference between myopia and hypermetropia?",
+    "options": [
+      { "id": "a", "text": "Myopia is farsightedness, hypermetropia is nearsightedness." },
+      { "id": "b", "text": "Myopia involves difficulty seeing distant objects clearly, hypermetropia involves difficulty seeing near objects clearly (though distant may also be blurred)." },
+      { "id": "c", "text": "Myopia is corrected with convex lenses, hypermetropia with concave lenses." },
+      { "id": "d", "text": "Myopia is caused by a shortened eyeball, hypermetropia by an elongated eyeball." }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB190",
+    "questionText": "The blood vessels that directly supply oxygenated blood to the heart muscle tissue itself are called the:",
+    "options": [
+      { "id": "a", "text": "Pulmonary arteries" },
+      { "id": "b", "text": "Aorta" },
+      { "id": "c", "text": "Coronary arteries" },
+      { "id": "d", "text": "Vena cavae" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB191",
+    "questionText": "A disease present at birth, resulting from genetic or developmental factors, is termed:",
+    "options": [
+      { "id": "a", "text": "Communicable" },
+      { "id": "b", "text": "Acquired" },
+      { "id": "c", "text": "Congenital" },
+      { "id": "d", "text": "Degenerative" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB192",
+    "questionText": "Which instrument is commonly used to measure blood pressure?",
+    "options": [
+      { "id": "a", "text": "Stethoscope" },
+      { "id": "b", "text": "Sphygmomanometer" },
+      { "id": "c", "text": "Electrocardiograph (ECG)" },
+      { "id": "d", "text": "Ophthalmoscope" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB193",
+    "questionText": "A stroke occurs when the blood supply to a part of the _______ is severely reduced or interrupted.",
+    "options": [
+      { "id": "a", "text": "Heart" },
+      { "id": "b", "text": "Lungs" },
+      { "id": "c", "text": "Brain" },
+      { "id": "d", "text": "Liver" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB194",
+    "questionText": "Which vision defect is typically caused by the eyeball being too long or the lens system being too powerful?",
+    "options": [
+      { "id": "a", "text": "Hypermetropia" },
+      { "id": "b", "text": "Presbyopia" },
+      { "id": "c", "text": "Myopia" },
+      { "id": "d", "text": "Astigmatism" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB195",
+    "questionText": "A common symptom of cataracts is:",
+    "options": [
+      { "id": "a", "text": "Sudden, severe eye pain" },
+      { "id": "b", "text": "Double vision in one eye" },
+      { "id": "c", "text": "Gradually increasingly blurred or hazy vision" },
+      { "id": "d", "text": "Seeing flashes of light" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB196",
+    "questionText": "The power of a corrective lens is measured in diopters. A concave lens used to correct myopia would have a power that is:",
+    "options": [
+      { "id": "a", "text": "Positive" },
+      { "id": "b", "text": "Negative" },
+      { "id": "c", "text": "Zero" },
+      { "id": "d", "text": "Variable depending on distance" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB197",
+    "questionText": "Heart failure is a chronic condition where the heart:",
+    "options": [
+      { "id": "a", "text": "Stops beating suddenly" },
+      { "id": "b", "text": "Cannot pump blood effectively enough to meet the body's needs" },
+      { "id": "c", "text": "Develops fatty plaques in its arteries" },
+      { "id": "d", "text": "Experiences an electrical malfunction causing irregular rhythm" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB198",
+    "questionText": "Which procedure uses sound waves (ultrasound) to create images of the heart's structure and function?",
+    "options": [
+      { "id": "a", "text": "Electrocardiogram (ECG/EKG)" },
+      { "id": "b", "text": "Angiogram" },
+      { "id": "c", "text": "Echocardiogram" },
+      { "id": "d", "text": "Stress test" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB199",
+    "questionText": "Difficulty seeing clearly in dim light (night blindness) can be an early symptom of cataracts or a deficiency in which vitamin?",
+    "options": [
+      { "id": "a", "text": "Vitamin C" },
+      { "id": "b", "text": "Vitamin D" },
+      { "id": "c", "text": "Vitamin K" },
+      { "id": "d", "text": "Vitamin A" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB200",
+    "questionText": "Maintaining a healthy weight, eating a balanced diet low in sodium and unhealthy fats, and avoiding smoking are key preventive measures primarily aimed at reducing the risk of:",
+    "options": [
+      { "id": "a", "text": "Infectious diseases like influenza" },
+      { "id": "b", "text": "Genetic disorders like cystic fibrosis" },
+      { "id": "c", "text": "Cardiovascular diseases like hypertension and atherosclerosis" },
+      { "id": "d", "text": "Autoimmune diseases like rheumatoid arthritis" }
+    ],
+    "correctOptionId": "c"
+  },
+    {
+    "id": "KB201",
+    "questionText": "Which plant tissue is primarily responsible for the transport of water and dissolved minerals from the roots upwards?",
+    "options": [
+      { "id": "a", "text": "Phloem" },
+      { "id": "b", "text": "Xylem" },
+      { "id": "c", "text": "Parenchyma" },
+      { "id": "d", "text": "Collenchyma" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB202",
+    "questionText": "The process by which plants lose water vapor, primarily through stomata in the leaves, is known as:",
+    "options": [
+      { "id": "a", "text": "Guttation" },
+      { "id": "b", "text": "Photosynthesis" },
+      { "id": "c", "text": "Transpiration" },
+      { "id": "d", "text": "Respiration" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB203",
+    "questionText": "In angiosperms, the structure that develops from the ovule after fertilization and contains the embryo is the:",
+    "options": [
+      { "id": "a", "text": "Fruit" },
+      { "id": "b", "text": "Seed" },
+      { "id": "c", "text": "Flower" },
+      { "id": "d", "text": "Pollen grain" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB204",
+    "questionText": "Which group of non-vascular plants are often called the 'amphibians of the plant kingdom' due to their dependence on water for reproduction?",
+    "options": [
+      { "id": "a", "text": "Algae" },
+      { "id": "b", "text": "Fungi" },
+      { "id": "c", "text": "Bryophytes (Mosses, Liverworts)" },
+      { "id": "d", "text": "Pteridophytes (Ferns)" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB205",
+    "questionText": "Lichens represent a symbiotic association primarily between which two types of organisms?",
+    "options": [
+      { "id": "a", "text": "Fungus and Bacterium" },
+      { "id": "b", "text": "Alga (or Cyanobacterium) and Fungus" },
+      { "id": "c", "text": "Moss and Fungus" },
+      { "id": "d", "text": "Alga and Protozoan" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB206",
+    "questionText": "Phloem tissue in vascular plants is chiefly concerned with the transport of:",
+    "options": [
+      { "id": "a", "text": "Water and minerals" },
+      { "id": "b", "text": "Air to internal tissues" },
+      { "id": "c", "text": "Manufactured food (sugars)" },
+      { "id": "d", "text": "Gametes" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB207",
+    "questionText": "Which of the following is a characteristic feature of gymnosperms (like Pine trees)?",
+    "options": [
+      { "id": "a", "text": "Production of flowers" },
+      { "id": "b", "text": "Seeds enclosed within a fruit" },
+      { "id": "c", "text": "Presence of naked seeds, often in cones" },
+      { "id": "d", "text": "Dominant gametophyte generation" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB208",
+    "questionText": "The green pigment essential for capturing light energy during photosynthesis is:",
+    "options": [
+      { "id": "a", "text": "Carotene" },
+      { "id": "b", "text": "Xanthophyll" },
+      { "id": "c", "text": "Chlorophyll" },
+      { "id": "d", "text": "Phycobilin" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB209",
+    "questionText": "Which part of a typical flower contains the female reproductive structures, including the ovary, style, and stigma?",
+    "options": [
+      { "id": "a", "text": "Calyx (sepals)" },
+      { "id": "b", "text": "Corolla (petals)" },
+      { "id": "c", "text": "Androecium (stamens)" },
+      { "id": "d", "text": "Gynoecium (pistil/carpel)" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB210",
+    "questionText": "Ferns (Pteridophytes) reproduce primarily through the production of:",
+    "options": [
+      { "id": "a", "text": "Seeds" },
+      { "id": "b", "text": "Flowers" },
+      { "id": "c", "text": "Spores" },
+      { "id": "d", "text": "Cones" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB211",
+    "questionText": "The phenomenon of 'double fertilization' is a unique characteristic found only in which major plant group?",
+    "options": [
+      { "id": "a", "text": "Bryophytes" },
+      { "id": "b", "text": "Pteridophytes" },
+      { "id": "c", "text": "Gymnosperms" },
+      { "id": "d", "text": "Angiosperms" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB212",
+    "questionText": "A plant root system characterized by a single prominent primary root with smaller lateral branches is called a:",
+    "options": [
+      { "id": "a", "text": "Fibrous root system" },
+      { "id": "b", "text": "Adventitious root system" },
+      { "id": "c", "text": "Tap root system" },
+      { "id": "d", "text": "Haustorial root system" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB213",
+    "questionText": "The opening and closing of stomata on a leaf surface are primarily regulated by the turgor pressure of which specialized cells?",
+    "options": [
+      { "id": "a", "text": "Companion cells" },
+      { "id": "b", "text": "Epidermal cells" },
+      { "id": "c", "text": "Guard cells" },
+      { "id": "d", "text": "Mesophyll cells" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB214",
+    "questionText": "Yeast, used in baking and brewing, belongs to which kingdom, although often studied alongside plants?",
+    "options": [
+      { "id": "a", "text": "Monera" },
+      { "id": "b", "text": "Protista" },
+      { "id": "c", "text": "Fungi" },
+      { "id": "d", "text": "Plantae" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB215",
+    "questionText": "In the life cycle of a moss (Bryophyte), which generation is dominant, photosynthetic, and nutritionally independent?",
+    "options": [
+      { "id": "a", "text": "Sporophyte generation" },
+      { "id": "b", "text": "Gametophyte generation" },
+      { "id": "c", "text": "Both are equally dominant" },
+      { "id": "d", "text": "Neither is photosynthetic" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB216",
+    "questionText": "What is the primary function of root hairs on a plant root?",
+    "options": [
+      { "id": "a", "text": "Protection against pathogens" },
+      { "id": "b", "text": "Storage of food reserves" },
+      { "id": "c", "text": "Anchoring the plant firmly" },
+      { "id": "d", "text": "Absorption of water and minerals" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB217",
+    "questionText": "Which plant hormone is primarily responsible for promoting cell elongation, apical dominance, and root initiation?",
+    "options": [
+      { "id": "a", "text": "Gibberellin" },
+      { "id": "b", "text": "Cytokinin" },
+      { "id": "c", "text": "Ethylene" },
+      { "id": "d", "text": "Auxin (like IAA)" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB218",
+    "questionText": "Spirogyra, a common freshwater alga, is characterized by its distinctive:",
+    "options": [
+      { "id": "a", "text": "Spherical colonies" },
+      { "id": "b", "text": "Spiral-shaped chloroplasts" },
+      { "id": "c", "text": "Motile flagellated cells" },
+      { "id": "d", "text": "Red pigmentation" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB219",
+    "questionText": "Plants that complete their entire life cycle (germination to seed production) within a single growing season are termed:",
+    "options": [
+      { "id": "a", "text": "Biennials" },
+      { "id": "b", "text": "Perennials" },
+      { "id": "c", "text": "Annuals" },
+      { "id": "d", "text": "Ephemerals" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB220",
+    "questionText": "The transfer of pollen grains from the anther to the stigma of the same flower or another flower on the same plant is called:",
+    "options": [
+      { "id": "a", "text": "Cross-pollination" },
+      { "id": "b", "text": "Self-pollination" },
+      { "id": "c", "text": "Fertilization" },
+      { "id": "d", "text": "Germination" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB221",
+    "questionText": "Which component of xylem tissue consists of dead cells with lignified walls and provides both water transport and mechanical support?",
+    "options": [
+      { "id": "a", "text": "Sieve tubes" },
+      { "id": "b", "text": "Companion cells" },
+      { "id": "c", "text": "Tracheids and Vessels" },
+      { "id": "d", "text": "Phloem parenchyma" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB222",
+    "questionText": "The edible part of a potato plant is a modified underground stem known as a:",
+    "options": [
+      { "id": "a", "text": "Rhizome" },
+      { "id": "b", "text": "Corm" },
+      { "id": "c", "text": "Bulb" },
+      { "id": "d", "text": "Tuber" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB223",
+    "questionText": "In double fertilization in angiosperms, one male gamete fuses with the egg cell to form the zygote, while the other male gamete fuses with the central cell (polar nuclei) to form the:",
+    "options": [
+      { "id": "a", "text": "Seed coat" },
+      { "id": "b", "text": "Embryo" },
+      { "id": "c", "text": "Endosperm" },
+      { "id": "d", "text": "Fruit wall" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB224",
+    "questionText": "Which of these plant groups possesses true roots, stems, leaves, and vascular tissues but does NOT produce seeds?",
+    "options": [
+      { "id": "a", "text": "Algae" },
+      { "id": "b", "text": "Bryophytes" },
+      { "id": "c", "text": "Pteridophytes" },
+      { "id": "d", "text": "Gymnosperms" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB225",
+    "questionText": "The collective term for the sepals of a flower is the:",
+    "options": [
+      { "id": "a", "text": "Corolla" },
+      { "id": "b", "text": "Calyx" },
+      { "id": "c", "text": "Androecium" },
+      { "id": "d", "text": "Gynoecium" }
+    ],
+    "correctOptionId": "b"
+  },
+
+  {
+    "id": "KB226",
+    "questionText": "Fungi obtain nutrients by absorption and have cell walls primarily composed of:",
+    "options": [
+      { "id": "a", "text": "Cellulose" },
+      { "id": "b", "text": "Peptidoglycan" },
+      { "id": "c", "text": "Chitin" },
+      { "id": "d", "text": "Lignin" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB227",
+    "questionText": "The response of a plant part towards or away from a stimulus like light is known as:",
+    "options": [
+      { "id": "a", "text": "Thigmotropism" },
+      { "id": "b", "text": "Geotropism (Gravitropism)" },
+      { "id": "c", "text": "Hydrotropism" },
+      { "id": "d", "text": "Phototropism" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB228",
+    "questionText": "Which of the following is considered a primary producer in most terrestrial ecosystems?",
+    "options": [
+      { "id": "a", "text": "Fungi" },
+      { "id": "b", "text": "Herbivores" },
+      { "id": "c", "text": "Green plants (autotrophs)" },
+      { "id": "d", "text": "Carnivores" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB229",
+    "questionText": "Monocotyledonous plants (like maize, grass) typically exhibit which type of root system and leaf venation?",
+    "options": [
+      { "id": "a", "text": "Tap root system, Reticulate venation" },
+      { "id": "b", "text": "Fibrous root system, Parallel venation" },
+      { "id": "c", "text": "Tap root system, Parallel venation" },
+      { "id": "d", "text": "Fibrous root system, Reticulate venation" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB230",
+    "questionText": "Sieve tubes, essential components of phloem for sugar transport, rely on adjacent ___________ for metabolic support and loading/unloading sugars.",
+    "options": [
+      { "id": "a", "text": "Vessel elements" },
+      { "id": "b", "text": "Tracheids" },
+      { "id": "c", "text": "Companion cells" },
+      { "id": "d", "text": "Xylem parenchyma" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB231",
+    "questionText": "A fruit that develops from the ovary along with other floral parts (like the thalamus) is called a:",
+    "options": [
+      { "id": "a", "text": "Simple fruit" },
+      { "id": "b", "text": "Aggregate fruit" },
+      { "id": "c", "text": "Multiple fruit" },
+      { "id": "d", "text": "False fruit (pseudocarp)" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB232",
+    "questionText": "The region of active cell division at the tip of a plant root or shoot is known as the:",
+    "options": [
+      { "id": "a", "text": "Vascular cambium" },
+      { "id": "b", "text": "Apical meristem" },
+      { "id": "c", "text": "Cork cambium" },
+      { "id": "d", "text": "Intercalary meristem" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB233",
+    "questionText": "Which plant hormone is a gas and is primarily involved in fruit ripening and senescence?",
+    "options": [
+      { "id": "a", "text": "Auxin" },
+      { "id": "b", "text": "Gibberellin" },
+      { "id": "c", "text": "Cytokinin" },
+      { "id": "d", "text": "Ethylene" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB234",
+    "questionText": "Which layer of cells in a plant leaf contains the highest concentration of chloroplasts and is the primary site of photosynthesis?",
+    "options": [
+      { "id": "a", "text": "Upper epidermis" },
+      { "id": "b", "text": "Spongy mesophyll" },
+      { "id": "c", "text": "Palisade mesophyll" },
+      { "id": "d", "text": "Lower epidermis" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB235",
+    "questionText": "The carpel (or pistil) of a flower consists of which three parts?",
+    "options": [
+      { "id": "a", "text": "Anther, Filament, Connective" },
+      { "id": "b", "text": "Sepal, Petal, Receptacle" },
+      { "id": "c", "text": "Stigma, Style, Ovary" },
+      { "id": "d", "text": "Ovule, Embryo sac, Egg cell" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB236",
+    "questionText": "Rhizoids in bryophytes function primarily for:",
+    "options": [
+      { "id": "a", "text": "Water absorption like true roots" },
+      { "id": "b", "text": "Anchorage to the substrate" },
+      { "id": "c", "text": "Photosynthesis" },
+      { "id": "d", "text": "Spore production" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB237",
+    "questionText": "Conifers like pine and fir belong to which major division of plants?",
+    "options": [
+      { "id": "a", "text": "Bryophyta" },
+      { "id": "b", "text": "Pteridophyta" },
+      { "id": "c", "text": "Gymnospermae" },
+      { "id": "d", "text": "Angiospermae" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB238",
+    "questionText": "The process where pollen grains land on the receptive stigma is called ____________, which precedes fertilization.",
+    "options": [
+      { "id": "a", "text": "Germination" },
+      { "id": "b", "text": "Pollination" },
+      { "id": "c", "text": "Dispersal" },
+      { "id": "d", "text": "Syngamy" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB239",
+    "questionText": "In ferns, clusters of sporangia found usually on the underside of fertile leaves (fronds) are known as:",
+    "options": [
+      { "id": "a", "text": "Strobili" },
+      { "id": "b", "text": "Sori" },
+      { "id": "c", "text": "Cones" },
+      { "id": "d", "text": "Archegonia" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB240",
+    "questionText": "A plant exhibiting xerophytic adaptations (like cacti) is specifically adapted to survive in conditions of:",
+    "options": [
+      { "id": "a", "text": "High salinity" },
+      { "id": "b", "text": "Low light intensity" },
+      { "id": "c", "text": "Water scarcity (arid environments)" },
+      { "id": "d", "text": "Aquatic environments" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB241",
+    "questionText": "The vascular bundles in a dicot stem are typically arranged:",
+    "options": [
+      { "id": "a", "text": "Scattered throughout the ground tissue" },
+      { "id": "b", "text": "In a distinct ring surrounding the pith" },
+      { "id": "c", "text": "Only in the central region" },
+      { "id": "d", "text": "Just beneath the epidermis" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB242",
+    "questionText": "Which type of simple permanent tissue in plants is characterized by living cells with unevenly thickened cell walls, providing mechanical support to growing parts?",
+    "options": [
+      { "id": "a", "text": "Parenchyma" },
+      { "id": "b", "text": "Collenchyma" },
+      { "id": "c", "text": "Sclerenchyma (fibers)" },
+      { "id": "d", "text": "Xylem" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB243",
+    "questionText": "Angiosperms are broadly divided into monocots and dicots based on the number of ___________ in their seeds.",
+    "options": [
+      { "id": "a", "text": "Seed coats" },
+      { "id": "b", "text": "Cotyledons (seed leaves)" },
+      { "id": "c", "text": "Endosperms" },
+      { "id": "d", "text": "Embryos" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB244",
+    "questionText": "The structure within the ovule of a flowering plant that contains the egg cell is the:",
+    "options": [
+      { "id": "a", "text": "Pollen tube" },
+      { "id": "b", "text": "Embryo sac" },
+      { "id": "c", "text": "Nucellus" },
+      { "id": "d", "text": "Integument" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB245",
+    "questionText": "Which group represents the simplest green plants, mostly aquatic, lacking true roots, stems, and leaves?",
+    "options": [
+      { "id": "a", "text": "Fungi" },
+      { "id": "b", "text": "Algae" },
+      { "id": "c", "text": "Bryophytes" },
+      { "id": "d", "text": "Pteridophytes" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB246",
+    "questionText": "What is the term for the stalk that attaches a leaf blade to the plant stem?",
+    "options": [
+      { "id": "a", "text": "Stipule" },
+      { "id": "b", "text": "Midrib" },
+      { "id": "c", "text": "Petiole" },
+      { "id": "d", "text": "Pedicel" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB247",
+    "questionText": "The male reproductive part of a flower, consisting of an anther and a filament, is the:",
+    "options": [
+      { "id": "a", "text": "Carpel" },
+      { "id": "b", "text": "Pistil" },
+      { "id": "c", "text": "Stamen" },
+      { "id": "d", "text": "Petal" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB248",
+    "questionText": "Some fungi form a mutually beneficial relationship with plant roots, aiding in nutrient absorption. This association is called:",
+    "options": [
+      { "id": "a", "text": "Lichen" },
+      { "id": "b", "text": "Mycorrhiza" },
+      { "id": "c", "text": "Parasitism" },
+      { "id": "d", "text": "Commensalism" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB249",
+    "questionText": "The pressure exerted by the fluid inside a plant cell against its cell wall is known as:",
+    "options": [
+      { "id": "a", "text": "Osmotic pressure" },
+      { "id": "b", "text": "Wall pressure" },
+      { "id": "c", "text": "Turgor pressure" },
+      { "id": "d", "text": "Diffusion pressure deficit" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB250",
+    "questionText": "Vegetative propagation, like using stem cuttings or grafting, is a form of:",
+    "options": [
+      { "id": "a", "text": "Sexual reproduction" },
+      { "id": "b", "text": "Asexual reproduction" },
+      { "id": "c", "text": "Spore formation" },
+      { "id": "d", "text": "Parthenogenesis" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB251",
+    "questionText": "In a typical terrestrial food chain, which trophic level would organisms like rabbits (herbivores) occupy?",
+    "options": [
+      { "id": "a", "text": "Producers" },
+      { "id": "b", "text": "Primary Consumers" },
+      { "id": "c", "text": "Secondary Consumers" },
+      { "id": "d", "text": "Decomposers" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB252",
+    "questionText": "The term 'Ecosystem' refers to:",
+    "options": [
+      { "id": "a", "text": "All the members of a single species living in an area." },
+      { "id": "b", "text": "The physical environment (abiotic factors) only." },
+      { "id": "c", "text": "A community of living organisms (biotic factors) interacting with their physical environment (abiotic factors)." },
+      { "id": "d", "text": "The geographical area where an organism lives." }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB253",
+    "questionText": "Which cellular organelle is often referred to as the \"powerhouse of the cell\" because it is the primary site of aerobic respiration and ATP synthesis?",
+    "options": [
+      { "id": "a", "text": "Nucleus" },
+      { "id": "b", "text": "Ribosome" },
+      { "id": "c", "text": "Golgi apparatus" },
+      { "id": "d", "text": "Mitochondrion" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB254",
+    "questionText": "The basic structural and functional unit of heredity, responsible for carrying genetic information, is the:",
+    "options": [
+      { "id": "a", "text": "Chromosome" },
+      { "id": "b", "text": "Gene" },
+      { "id": "c", "text": "Allele" },
+      { "id": "d", "text": "Nucleotide" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB255",
+    "questionText": "Acid rain is primarily caused by the atmospheric pollution resulting from the release of:",
+    "options": [
+      { "id": "a", "text": "Carbon dioxide and methane" },
+      { "id": "b", "text": "Chlorofluorocarbons (CFCs)" },
+      { "id": "c", "text": "Oxides of sulfur and nitrogen" },
+      { "id": "d", "text": "Ozone and particulate matter" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB256",
+    "questionText": "The process of growing plant cells, tissues, or organs in a sterile laboratory setting on an artificial nutrient medium is known as:",
+    "options": [
+      { "id": "a", "text": "Hydroponics" },
+      { "id": "b", "text": "Grafting" },
+      { "id": "c", "text": "Plant tissue culture (Micropropagation)" },
+      { "id": "d", "text": "Genetic engineering" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB257",
+    "questionText": "Which of the following structures is present in a plant cell but absent in an animal cell?",
+    "options": [
+      { "id": "a", "text": "Cell membrane" },
+      { "id": "b", "text": "Mitochondrion" },
+      { "id": "c", "text": "Nucleus" },
+      { "id": "d", "text": "Cell wall (typically cellulosic)" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB258",
+    "questionText": "The gradual process by which ecosystems change and develop over time, potentially leading from bare rock to a forest, is called:",
+    "options": [
+      { "id": "a", "text": "Adaptation" },
+      { "id": "b", "text": "Evolution" },
+      { "id": "c", "text": "Ecological succession" },
+      { "id": "d", "text": "Niche differentiation" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB259",
+    "questionText": "Mosquitoes act as vectors, transmitting diseases like malaria. A vector is an organism that:",
+    "options": [
+      { "id": "a", "text": "Causes the disease itself." },
+      { "id": "b", "text": "Is immune to the disease." },
+      { "id": "c", "text": "Transmits a pathogen from one host to another." },
+      { "id": "d", "text": "Is the primary host where the pathogen reproduces sexually." }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB260",
+    "questionText": "The observable physical or biochemical characteristics of an organism, resulting from its genotype and environmental influences, are known as its:",
+    "options": [
+      { "id": "a", "text": "Genotype" },
+      { "id": "b", "text": "Phenotype" },
+      { "id": "c", "text": "Allele" },
+      { "id": "d", "text": "Genome" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB261",
+    "questionText": "The Ozone layer in the stratosphere is crucial for life on Earth because it absorbs most of the harmful:",
+    "options": [
+      { "id": "a", "text": "Infrared radiation" },
+      { "id": "b", "text": "Ultraviolet (UV-B and UV-C) radiation" },
+      { "id": "c", "text": "Visible light" },
+      { "id": "d", "text": "Gamma rays" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB262",
+    "questionText": "DNA (Deoxyribonucleic acid), the molecule carrying genetic instructions, is structured as a:",
+    "options": [
+      { "id": "a", "text": "Single helix" },
+      { "id": "b", "text": "Double helix" },
+      { "id": "c", "text": "Triple helix" },
+      { "id": "d", "text": "Folded sheet" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB263",
+    "questionText": "The process by which certain bacteria and fungi break down dead organic matter, returning essential nutrients to the ecosystem, is performed by organisms known as:",
+    "options": [
+      { "id": "a", "text": "Producers" },
+      { "id": "b", "text": "Consumers" },
+      { "id": "c", "text": "Decomposers" },
+      { "id": "d", "text": "Parasites" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB264",
+    "questionText": "In genetics, if an individual has two identical alleles for a particular trait (e.g., TT or tt), they are described as being:",
+    "options": [
+      { "id": "a", "text": "Heterozygous" },
+      { "id": "b", "text": "Homozygous" },
+      { "id": "c", "text": "Dominant" },
+      { "id": "d", "text": "Recessive" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB265",
+    "questionText": "The phenomenon where certain organisms, like fireflies or some deep-sea fish, produce and emit light is called:",
+    "options": [
+      { "id": "a", "text": "Fluorescence" },
+      { "id": "b", "text": "Phosphorescence" },
+      { "id": "c", "text": "Bioluminescence" },
+      { "id": "d", "text": "Chemiluminescence" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB266",
+    "questionText": "A major environmental concern associated with the burning of fossil fuels is the increased atmospheric concentration of _________, a primary greenhouse gas contributing to global warming.",
+    "options": [
+      { "id": "a", "text": "Oxygen (O2)" },
+      { "id": "b", "text": "Nitrogen (N2)" },
+      { "id": "c", "text": "Carbon dioxide (CO2)" },
+      { "id": "d", "text": "Sulfur dioxide (SO2)" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB267",
+    "questionText": "Which cellular organelle is responsible for synthesizing proteins based on the instructions carried by messenger RNA (mRNA)?",
+    "options": [
+      { "id": "a", "text": "Lysosome" },
+      { "id": "b", "text": "Mitochondrion" },
+      { "id": "c", "text": "Ribosome" },
+      { "id": "d", "text": "Endoplasmic reticulum" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB268",
+    "questionText": "Fossils provide strong evidence for the theory of evolution. Fossils are typically:",
+    "options": [
+      { "id": "a", "text": "Living organisms found in ancient rocks." },
+      { "id": "b", "text": "Preserved remains, impressions, or traces of organisms from past geological ages." },
+      { "id": "c", "text": "Man-made artifacts resembling ancient life." },
+      { "id": "d", "text": "Collections of minerals unrelated to life forms." }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB269",
+    "questionText": "A simple method for purifying drinking water, especially effective at killing most harmful microorganisms, is:",
+    "options": [
+      { "id": "a", "text": "Filtration through cloth" },
+      { "id": "b", "text": "Sedimentation" },
+      { "id": "c", "text": "Boiling" },
+      { "id": "d", "text": "Adding sugar" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB270",
+    "questionText": "The ability of some organisms, like lizards losing their tails or starfish regrowing arms, to regrow lost body parts is known as:",
+    "options": [
+      { "id": "a", "text": "Metamorphosis" },
+      { "id": "b", "text": "Regeneration" },
+      { "id": "c", "text": "Budding" },
+      { "id": "d", "text": "Fragmentation" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB271",
+    "questionText": "In Mendelian genetics, an allele whose effect is masked when paired with a dominant allele is called a:",
+    "options": [
+      { "id": "a", "text": "Dominant allele" },
+      { "id": "b", "text": "Recessive allele" },
+      { "id": "c", "text": "Co-dominant allele" },
+      { "id": "d", "text": "Mutant allele" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB272",
+    "questionText": "The layer of gases surrounding the Earth, essential for maintaining temperature and protecting from radiation, is the:",
+    "options": [
+      { "id": "a", "text": "Hydrosphere" },
+      { "id": "b", "text": "Lithosphere" },
+      { "id": "c", "text": "Atmosphere" },
+      { "id": "d", "text": "Biosphere" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB273",
+    "questionText": "What is the primary role of the nucleus within a eukaryotic cell?",
+    "options": [
+      { "id": "a", "text": "Energy production (ATP synthesis)" },
+      { "id": "b", "text": "Protein synthesis" },
+      { "id": "c", "text": "Storing genetic material (DNA) and controlling cell activities" },
+      { "id": "d", "text": "Waste disposal and recycling" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB274",
+    "questionText": "The Green Revolution refers to a period of significant increase in agricultural productivity, largely due to the development of:",
+    "options": [
+      { "id": "a", "text": "Organic farming techniques" },
+      { "id": "b", "text": "High-yield crop varieties, fertilizers, and pesticides" },
+      { "id": "c", "text": "Genetically modified animals" },
+      { "id": "d", "text": "Traditional irrigation methods" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB275",
+    "questionText": "Biodiversity refers to:",
+    "options": [
+      { "id": "a", "text": "The number of individuals of a single species." },
+      { "id": "b", "text": "The variety of life forms within a given ecosystem, biome, or the entire Earth." },
+      { "id": "c", "text": "The interaction between living and non-living components." },
+      { "id": "d", "text": "The total biomass present in an area." }
+    ],
+    "correctOptionId": "b"
+  },
+
+  {
+    "id": "KB276",
+    "questionText": "Which cellular organelle is responsible for protein synthesis?",
+    "options": [
+      { "id": "a", "text": "Mitochondrion" },
+      { "id": "b", "text": "Lysosome" },
+      { "id": "c", "text": "Ribosome" },
+      { "id": "d", "text": "Golgi Apparatus" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB277",
+    "questionText": "Which of these is NOT found in a typical prokaryotic cell?",
+    "options": [
+      { "id": "a", "text": "Cell membrane" },
+      { "id": "b", "text": "Ribosomes" },
+      { "id": "c", "text": "Nucleus" },
+      { "id": "d", "text": "Cytoplasm" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB278",
+    "questionText": "The energy currency of the cell is:",
+    "options": [
+      { "id": "a", "text": "Glucose" },
+      { "id": "b", "text": "ADP" },
+      { "id": "c", "text": "ATP" },
+      { "id": "d", "text": "RNA" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB279",
+    "questionText": "Which phylum includes animals with a soft body, often covered by a hard calcareous shell?",
+    "options": [
+      { "id": "a", "text": "Arthropoda" },
+      { "id": "b", "text": "Annelida" },
+      { "id": "c", "text": "Mollusca" },
+      { "id": "d", "text": "Echinodermata" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB280",
+    "questionText": "Gymnosperms differ from Angiosperms primarily in having:",
+    "options": [
+      { "id": "a", "text": "Vascular tissues" },
+      { "id": "b", "text": "Naked seeds (not enclosed in fruit)" },
+      { "id": "c", "text": "True roots, stems, and leaves" },
+      { "id": "d", "text": "Flowers for reproduction" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB281",
+    "questionText": "Which process involves the conversion of light energy into chemical energy in plants?",
+    "options": [
+      { "id": "a", "text": "Respiration" },
+      { "id": "b", "text": "Transpiration" },
+      { "id": "c", "text": "Photosynthesis" },
+      { "id": "d", "text": "Fermentation" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB282",
+    "questionText": "The main function of stomata in plant leaves is:",
+    "options": [
+      { "id": "a", "text": "Absorption of water" },
+      { "id": "b", "text": "Gas exchange and transpiration" },
+      { "id": "c", "text": "Food storage" },
+      { "id": "d", "text": "Providing structural support" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB283",
+    "questionText": "Which component of human blood is primarily involved in fighting infections?",
+    "options": [
+      { "id": "a", "text": "Red Blood Cells (Erythrocytes)" },
+      { "id": "b", "text": "Platelets (Thrombocytes)" },
+      { "id": "c", "text": "Plasma" },
+      { "id": "d", "text": "White Blood Cells (Leukocytes)" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB284",
+    "questionText": "The enzyme Trypsin, involved in protein digestion, is secreted by the:",
+    "options": [
+      { "id": "a", "text": "Stomach" },
+      { "id": "b", "text": "Salivary glands" },
+      { "id": "c", "text": "Liver" },
+      { "id": "d", "text": "Pancreas" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB285",
+    "questionText": "Contraction of the diaphragm muscle aids in which process?",
+    "options": [
+      { "id": "a", "text": "Digestion" },
+      { "id": "b", "text": "Circulation" },
+      { "id": "c", "text": "Inhalation (Breathing in)" },
+      { "id": "d", "text": "Exhalation (Breathing out)" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB286",
+    "questionText": "The main excretory organ in humans is the:",
+    "options": [
+      { "id": "a", "text": "Lungs" },
+      { "id": "b", "text": "Skin" },
+      { "id": "c", "text": "Liver" },
+      { "id": "d", "text": "Kidneys" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB287",
+    "questionText": "Which endocrine gland is known as the 'master gland'?",
+    "options": [
+      { "id": "a", "text": "Thyroid gland" },
+      { "id": "b", "text": "Adrenal gland" },
+      { "id": "c", "text": "Pituitary gland" },
+      { "id": "d", "text": "Pancreas" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB288",
+    "questionText": "The part of the human brain responsible for higher functions like thinking and memory is the:",
+    "options": [
+      { "id": "a", "text": "Cerebellum" },
+      { "id": "b", "text": "Medulla Oblongata" },
+      { "id": "c", "text": "Cerebrum" },
+      { "id": "d", "text": "Hypothalamus" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB289",
+    "questionText": "An alternative form of a gene is called a(n):",
+    "options": [
+      { "id": "a", "text": "Chromosome" },
+      { "id": "b", "text": "Allele" },
+      { "id": "c", "text": "Genotype" },
+      { "id": "d", "text": "Phenotype" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB290",
+    "questionText": "The genetic makeup of an organism is its:",
+    "options": [
+      { "id": "a", "text": "Phenotype" },
+      { "id": "b", "text": "Genome" },
+      { "id": "c", "text": "Genotype" },
+      { "id": "d", "text": "Allele frequency" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB291",
+    "questionText": "Which of these are the primary producers in an aquatic ecosystem?",
+    "options": [
+      { "id": "a", "text": "Zooplankton" },
+      { "id": "b", "text": "Small fish" },
+      { "id": "c", "text": "Phytoplankton (Algae)" },
+      { "id": "d", "text": "Large fish" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB292",
+    "questionText": "The complex network of interconnected food chains in an ecosystem is called a:",
+    "options": [
+      { "id": "a", "text": "Trophic level" },
+      { "id": "b", "text": "Food web" },
+      { "id": "c", "text": "Ecological pyramid" },
+      { "id": "d", "text": "Biomass" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB293",
+    "questionText": "Tuberculosis (TB) is a disease caused by a:",
+    "options": [
+      { "id": "a", "text": "Virus" },
+      { "id": "b", "text": "Bacterium" },
+      { "id": "c", "text": "Fungus" },
+      { "id": "d", "text": "Protozoan" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB294",
+    "questionText": "Malaria is transmitted by the bite of which vector?",
+    "options": [
+      { "id": "a", "text": "Tse-tse fly" },
+      { "id": "b", "text": "Housefly" },
+      { "id": "c", "text": "Female Anopheles mosquito" },
+      { "id": "d", "text": "Sandfly" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB295",
+    "questionText": "Organs that are reduced in size and functionless in an organism but were functional in its ancestors are called:",
+    "options": [
+      { "id": "a", "text": "Homologous organs" },
+      { "id": "b", "text": "Analogous organs" },
+      { "id": "c", "text": "Vestigial organs" },
+      { "id": "d", "text": "Adaptive organs" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB296",
+    "questionText": "The 'Green Revolution' is associated with advancements in:",
+    "options": [
+      { "id": "a", "text": "Forest conservation" },
+      { "id": "b", "text": "Agricultural production" },
+      { "id": "c", "text": "Renewable energy" },
+      { "id": "d", "text": "Water purification" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB297",
+    "questionText": "Which gas is the main component of biogas?",
+    "options": [
+      { "id": "a", "text": "Oxygen" },
+      { "id": "b", "text": "Carbon dioxide" },
+      { "id": "c", "text": "Methane" },
+      { "id": "d", "text": "Hydrogen sulfide" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB298",
+    "questionText": "Which type of cell division results in the formation of gametes (sperm and egg cells)?",
+    "options": [
+      { "id": "a", "text": "Mitosis" },
+      { "id": "b", "text": "Meiosis" },
+      { "id": "c", "text": "Amitosis" },
+      { "id": "d", "text": "Binary Fission" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB299",
+    "questionText": "The building blocks (monomers) of proteins are:",
+    "options": [
+      { "id": "a", "text": "Monosaccharides" },
+      { "id": "b", "text": "Fatty acids" },
+      { "id": "c", "text": "Nucleotides" },
+      { "id": "d", "text": "Amino acids" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB300",
+    "questionText": "Which kingdom includes multicellular, eukaryotic organisms that are heterotrophic by ingestion?",
+    "options": [
+      { "id": "a", "text": "Monera" },
+      { "id": "b", "text": "Protista" },
+      { "id": "c", "text": "Fungi" },
+      { "id": "d", "text": "Animalia" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB301",
+    "questionText": "Which plant hormone promotes ripening of fruits?",
+    "options": [
+      { "id": "a", "text": "Auxin" },
+      { "id": "b", "text": "Gibberellin" },
+      { "id": "c", "text": "Cytokinin" },
+      { "id": "d", "text": "Ethylene" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB302",
+    "questionText": "Double fertilization is a characteristic feature of which plant group?",
+    "options": [
+      { "id": "a", "text": "Algae" },
+      { "id": "b", "text": "Bryophytes" },
+      { "id": "c", "text": "Gymnosperms" },
+      { "id": "d", "text": "Angiosperms" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB303",
+    "questionText": "Which blood type is known as the 'universal recipient'?",
+    "options": [
+      { "id": "a", "text": "A" },
+      { "id": "b", "text": "B" },
+      { "id": "c", "text": "AB" },
+      { "id": "d", "text": "O" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB304",
+    "questionText": "Where does the digestion of carbohydrates begin in the human digestive system?",
+    "options": [
+      { "id": "a", "text": "Stomach" },
+      { "id": "b", "text": "Small intestine" },
+      { "id": "c", "text": "Mouth" },
+      { "id": "d", "text": "Large intestine" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB305",
+    "questionText": "The functional junction between two neurons is called a:",
+    "options": [
+      { "id": "a", "text": "Synapse" },
+      { "id": "b", "text": "Axon" },
+      { "id": "c", "text": "Dendrite" },
+      { "id": "d", "text": "Myelin sheath" }
+    ],
+    "correctOptionId": "a"
+  },
+  {
+    "id": "KB306",
+    "questionText": "Which of the following is a sex-linked disease?",
+    "options": [
+      { "id": "a", "text": "Sickle cell anemia" },
+      { "id": "b", "text": "Haemophilia" },
+      { "id": "c", "text": "Diabetes mellitus" },
+      { "id": "d", "text": "Hypertension" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB307",
+    "questionText": "The study of interaction between organisms and their environment is called:",
+    "options": [
+      { "id": "a", "text": "Physiology" },
+      { "id": "b", "text": "Genetics" },
+      { "id": "c", "text": "Ecology" },
+      { "id": "d", "text": "Taxonomy" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB308",
+    "questionText": "Which of these organisms is a primary consumer?",
+    "options": [
+      { "id": "a", "text": "Grass" },
+      { "id": "b", "text": "Rabbit" },
+      { "id": "c", "text": "Fox" },
+      { "id": "d", "text": "Lion" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB309",
+    "questionText": "The depletion of the ozone layer is primarily caused by:",
+    "options": [
+      { "id": "a", "text": "Carbon dioxide (CO2)" },
+      { "id": "b", "text": "Sulfur dioxide (SO2)" },
+      { "id": "c", "text": "Chlorofluorocarbons (CFCs)" },
+      { "id": "d", "text": "Methane (CH4)" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB310",
+    "questionText": "Which structure prevents food from entering the windpipe (trachea) during swallowing?",
+    "options": [
+      { "id": "a", "text": "Larynx" },
+      { "id": "b", "text": "Pharynx" },
+      { "id": "c", "text": "Uvula" },
+      { "id": "d", "text": "Epiglottis" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB311",
+    "questionText": "Bile juice, which aids in fat digestion, is produced by the:",
+    "options": [
+      { "id": "a", "text": "Pancreas" },
+      { "id": "b", "text": "Gallbladder" },
+      { "id": "c", "text": "Liver" },
+      { "id": "d", "text": "Small intestine" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB312",
+    "questionText": "Which type of muscle tissue is found in the walls of the heart?",
+    "options": [
+      { "id": "a", "text": "Skeletal muscle" },
+      { "id": "b", "text": "Smooth muscle" },
+      { "id": "c", "text": "Cardiac muscle" },
+      { "id": "d", "text": "Voluntary muscle" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB313",
+    "questionText": "The longest phase of the cell cycle is:",
+    "options": [
+      { "id": "a", "text": "Prophase" },
+      { "id": "b", "text": "Metaphase" },
+      { "id": "c", "text": "Anaphase" },
+      { "id": "d", "text": "Interphase" }
+    ],
+    "correctOptionId": "d"
+  },
+  {
+    "id": "KB314",
+    "questionText": "Which part of the flower develops into a fruit after fertilization?",
+    "options": [
+      { "id": "a", "text": "Ovule" },
+      { "id": "b", "text": "Ovary" },
+      { "id": "c", "text": "Petal" },
+      { "id": "d", "text": "Stamen" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB315",
+    "questionText": "Ferns belong to which group of plants?",
+    "options": [
+      { "id": "a", "text": "Bryophytes" },
+      { "id": "b", "text": "Pteridophytes" },
+      { "id": "c", "text": "Gymnosperms" },
+      { "id": "d", "text": "Angiosperms" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB316",
+    "questionText": "How many pairs of chromosomes are typically found in a human somatic cell?",
+    "options": [
+      { "id": "a", "text": "22 pairs" },
+      { "id": "b", "text": "23 pairs" },
+      { "id": "c", "text": "46 pairs" },
+      { "id": "d", "text": "44 pairs" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB317",
+    "questionText": "The theory of 'Survival of the Fittest' was proposed by:",
+    "options": [
+      { "id": "a", "text": "Lamarck" },
+      { "id": "b", "text": "Mendel" },
+      { "id": "c", "text": "Darwin" },
+      { "id": "d", "text": "De Vries" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB318",
+    "questionText": "Which of these is an example of a communicable disease?",
+    "options": [
+      { "id": "a", "text": "Diabetes" },
+      { "id": "b", "text": "Cancer" },
+      { "id": "c", "text": "Influenza (Flu)" },
+      { "id": "d", "text": "Scurvy" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB319",
+    "questionText": "Cellular respiration primarily occurs in which organelle?",
+    "options": [
+      { "id": "a", "text": "Chloroplast" },
+      { "id": "b", "text": "Ribosome" },
+      { "id": "c", "text": "Mitochondrion" },
+      { "id": "d", "text": "Nucleus" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB320",
+    "questionText": "What is the scientific name for humans?",
+    "options": [
+      { "id": "a", "text": "Homo erectus" },
+      { "id": "b", "text": "Pan troglodytes" },
+      { "id": "c", "text": "Homo sapiens" },
+      { "id": "d", "text": "Gorilla gorilla" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB321",
+    "questionText": "Which tissue transports manufactured food (sugars) from leaves to other parts of the plant?",
+    "options": [
+      { "id": "a", "text": "Xylem" },
+      { "id": "b", "text": "Phloem" },
+      { "id": "c", "text": "Parenchyma" },
+      { "id": "d", "text": "Sclerenchyma" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB322",
+    "questionText": "The process of fusion of male and female gametes is called:",
+    "options": [
+      { "id": "a", "text": "Pollination" },
+      { "id": "b", "text": "Fertilization" },
+      { "id": "c", "text": "Germination" },
+      { "id": "d", "text": "Ovulation" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB323",
+    "questionText": "Which vitamin deficiency causes Scurvy?",
+    "options": [
+      { "id": "a", "text": "Vitamin A" },
+      { "id": "b", "text": "Vitamin B1" },
+      { "id": "c", "text": "Vitamin C" },
+      { "id": "d", "text": "Vitamin D" }
+    ],
+    "correctOptionId": "c"
+  },
+  {
+    "id": "KB324",
+    "questionText": "Animals that maintain a constant internal body temperature regardless of the external environment are called:",
+    "options": [
+      { "id": "a", "text": "Poikilothermic (Cold-blooded)" },
+      { "id": "b", "text": "Homeothermic (Warm-blooded)" },
+      { "id": "c", "text": "Heterothermic" },
+      { "id": "d", "text": "Ectothermic" }
+    ],
+    "correctOptionId": "b"
+  },
+  {
+    "id": "KB325",
+    "questionText": "The sequence of organisms where one is eaten by another forms a:",
+    "options": [
+      { "id": "a", "text": "Food web" },
+      { "id": "b", "text": "Food chain" },
+      { "id": "c", "text": "Trophic level" },
+      { "id": "d", "text": "Ecosystem" }
+    ],
+    "correctOptionId": "b"
+  }
+
+
     ],
     "Math": [
         // 12 Math Questions (Sample - reuse/modify or add new)
-        { id: "KM001", questionText: "What is the value of sin²θ + cos²θ?", options: [{ id: "a", text: "0" }, { id: "b", text: "1" }, { id: "c", text: "2" }, { id: "d", text: "tan²θ" }], correctOptionId: "b" },
-        { id: "KM002", questionText: "If log₃(x) = 2, what is x?", options: [{ id: "a", text: "6" }, { id: "b", text: "8" }, { id: "c", text: "9" }, { id: "d", text: "27" }], correctOptionId: "c" },
-        { id: "KM003", questionText: "What is the slope of the line y = -3x + 5?", options: [{ id: "a", text: "5" }, { id: "b", text: "3" }, { id: "c", text: "-3" }, { id: "d", text: "-3/5" }], correctOptionId: "c" },
-        { id: "KM004", questionText: "What is the area of an equilateral triangle with side length 'a'?", options: [{ id: "a", text: "(√3/4)a²" }, { id: "b", text: "(1/2)a²" }, { id: "c", text: "a²" }, { id: "d", text: "(√3/2)a²" }], correctOptionId: "a" },
-        // Add 8 more Math questions...
-        { id: "KM005", questionText: "Placeholder Math Q5?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "a" },
-        { id: "KM006", questionText: "Placeholder Math Q6?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "b" },
-        { id: "KM007", questionText: "Placeholder Math Q7?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "c" },
-        { id: "KM008", questionText: "Placeholder Math Q8?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "d" },
-        { id: "KM009", questionText: "Placeholder Math Q9?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "a" },
-        { id: "KM010", questionText: "Placeholder Math Q10?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "b" },
-        { id: "KM011", questionText: "Placeholder Math Q11?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "c" },
-        { id: "KM012", questionText: "Placeholder Math Q12?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "d" }
+           {
+        "id": "KM001",
+        "questionText": "If A = {x | x is a prime factor of 210}, what is the cardinality of set A, n(A)?",
+        "options": [
+            { "id": "a", "text": "3" },
+            { "id": "b", "text": "4" },
+            { "id": "c", "text": "5" },
+            { "id": "d", "text": "6" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM002",
+        "questionText": "Let U = {1, 2, 3, 4, 5, 6, 7, 8} and A = {1, 2, 3, 4}. If B = {x | x = y + 2, y ∈ A}, what is A’ ∩ B? (A' is the complement of A)",
+        "options": [
+            { "id": "a", "text": "{5, 6}" },
+            { "id": "b", "text": "{3, 4, 5, 6}" },
+            { "id": "c", "text": "{7, 8}" },
+            { "id": "d", "text": "{5, 6, 7, 8}" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM003",
+        "questionText": "In a class of 60 students, 40 like Math, 30 like Science, and 15 like both. How many students like neither Math nor Science?",
+        "options": [
+            { "id": "a", "text": "5" },
+            { "id": "b", "text": "10" },
+            { "id": "c", "text": "15" },
+            { "id": "d", "text": "20" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM004",
+        "questionText": "If n(A) = 10, n(B) = 15, and n(A ∪ B) = 20, what is n(A - B)?",
+        "options": [
+            { "id": "a", "text": "5" },
+            { "id": "b", "text": "10" },
+            { "id": "c", "text": "15" },
+            { "id": "d", "text": "20" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM005",
+        "questionText": "Let P = {factors of 12} and Q = {factors of 18}. What is the number of elements in the power set of (P ∩ Q)?",
+        "options": [
+            { "id": "a", "text": "4" },
+            { "id": "b", "text": "8" },
+            { "id": "c", "text": "16" },
+            { "id": "d", "text": "32" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM006",
+        "questionText": "What is the value of log₁₀(1000)?",
+        "options": [
+            { "id": "a", "text": "2" },
+            { "id": "b", "text": "3" },
+            { "id": "c", "text": "100" },
+            { "id": "d", "text": "10" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM007",
+        "questionText": "Consider the sets A = {x | x is a letter in the word 'FOLLOW'} and B = {x | x is a letter in the word 'WOLF'}. Which statement is true?",
+        "options": [
+            { "id": "a", "text": "A = B" },
+            { "id": "b", "text": "A is a proper subset of B" },
+            { "id": "c", "text": "B is a proper subset of A" },
+            { "id": "d", "text": "n(A) = n(B) but A ≠ B" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM008",
+        "questionText": "If n(U) = 50, n(A) = 25, n(B) = 20, and n((A ∪ B)') = 10, find n(A ∩ B).",
+        "options": [
+            { "id": "a", "text": "5" },
+            { "id": "b", "text": "10" },
+            { "id": "c", "text": "15" },
+            { "id": "d", "text": "Cannot be determined" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM009",
+        "questionText": "Set A has 'm' elements and Set B has 'n' elements. If the total number of subsets of A is 112 more than the total number of subsets of B, what is the value of m?",
+        "options": [
+            { "id": "a", "text": "5" },
+            { "id": "b", "text": "6" },
+            { "id": "c", "text": "7" },
+            { "id": "d", "text": "8" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM010",
+        "questionText": "Let A = {1, 2, 3}, B = {3, 4, 5}, C = {5, 6, 7}. What is (A - B) ∪ (B - C)?",
+        "options": [
+            { "id": "a", "text": "{1, 2, 3, 4}" },
+            { "id": "b", "text": "{1, 2, 4}" },
+            { "id": "c", "text": "{1, 2, 3, 4, 5}" },
+            { "id": "d", "text": "{1, 2, 3, 4, 6, 7}" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM011",
+        "questionText": "In a survey of 100 people, 70 read Magazine A, 60 read Magazine B, and 50 read Magazine C. If 40 read both A and B, 35 read both B and C, 30 read both A and C, and 20 read all three, how many read exactly one magazine?",
+        "options": [
+            { "id": "a", "text": "30" },
+            { "id": "b", "text": "40" },
+            { "id": "c", "text": "45" },
+            { "id": "d", "text": "50" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM012",
+        "questionText": "If A = {x: x ∈ N, x² < 20} and B = {x: x is an even prime number}, what is A ∩ B?",
+        "options": [
+            { "id": "a", "text": "{2}" },
+            { "id": "b", "text": "{4}" },
+            { "id": "c", "text": "{2, 4}" },
+            { "id": "d", "text": "∅" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM013",
+        "questionText": "If n(A Δ B) represents the symmetric difference (A-B) ∪ (B-A), and n(A) = 20, n(B) = 28, n(A ∪ B) = 36, what is n(A Δ B)?",
+        "options": [
+            { "id": "a", "text": "12" },
+            { "id": "b", "text": "16" },
+            { "id": "c", "text": "24" },
+            { "id": "d", "text": "36" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM014",
+        "questionText": "Which of the following sets is an infinite set?",
+        "options": [
+            { "id": "a", "text": "{x | x ∈ N and x is a factor of 1000}" },
+            { "id": "b", "text": "{x | x is a prime number less than 1,000,000}" },
+            { "id": "c", "text": "{x | x ∈ Z and x² = 4}" },
+            { "id": "d", "text": "{x | x ∈ R and 1 < x < 2}" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KM015",
+        "questionText": "If A ⊂ B, which of the following is always true?",
+        "options": [
+            { "id": "a", "text": "A ∩ B = B" },
+            { "id": "b", "text": "A ∪ B = A" },
+            { "id": "c", "text": "A' ⊂ B'" },
+            { "id": "d", "text": "A - B = ∅" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KM016",
+        "questionText": "Let U be the set of all triangles. Let P be the set of isosceles triangles and R be the set of right-angled triangles. What does the set P ∩ R represent?",
+        "options": [
+            { "id": "a", "text": "Set of equilateral triangles" },
+            { "id": "b", "text": "Set of scalene right-angled triangles" },
+            { "id": "c", "text": "Set of isosceles right-angled triangles" },
+            { "id": "d", "text": "Set of all right-angled triangles" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM017",
+        "questionText": "If n(A) = 5, how many proper, non-empty subsets does A have?",
+        "options": [
+            { "id": "a", "text": "30" },
+            { "id": "b", "text": "31" },
+            { "id": "c", "text": "32" },
+            { "id": "d", "text": "25" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM018",
+        "questionText": "Given A = {1, {2, 3}, 4}. Which statement is correct?",
+        "options": [
+            { "id": "a", "text": "{2, 3} ⊂ A" },
+            { "id": "b", "text": "2 ∈ A" },
+            { "id": "c", "text": "{1, 4} ∈ A" },
+            { "id": "d", "text": "{2, 3} ∈ A" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KM019",
+        "questionText": "In a group of students, 15 play Hockey, 18 play Football, and 12 play Cricket. 5 play Hockey and Football, 6 play Football and Cricket, and 4 play Hockey and Cricket. 2 play all three games. How many students play Football but not Hockey?",
+        "options": [
+            { "id": "a", "text": "13" },
+            { "id": "b", "text": "11" },
+            { "id": "c", "text": "8" },
+            { "id": "d", "text": "16" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM020",
+        "questionText": "If A = { multiples of 3 less than 20 } and B = { multiples of 4 less than 20 }, find n(A ∪ B).",
+        "options": [
+            { "id": "a", "text": "8" },
+            { "id": "b", "text": "9" },
+            { "id": "c", "text": "10" },
+            { "id": "d", "text": "11" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM021",
+        "questionText": "Let X = {a, b, c} and Y = {1, 2}. How many distinct relations can be defined from X to Y?",
+        "options": [
+            { "id": "a", "text": "6" },
+            { "id": "b", "text": "8" },
+            { "id": "c", "text": "32" },
+            { "id": "d", "text": "64" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KM022",
+        "questionText": "If A and B are two sets such that A ∪ B = A ∩ B, then which condition must be true?",
+        "options": [
+            { "id": "a", "text": "A = ∅" },
+            { "id": "b", "text": "B = ∅" },
+            { "id": "c", "text": "A = B" },
+            { "id": "d", "text": "A is a proper subset of B" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM023",
+        "questionText": "Let U = {x | x is a positive integer < 10}. Let P = {1, 2, 3, 4} and Q = {3, 4, 5, 6}. What is (P - Q)'?",
+        "options": [
+            { "id": "a", "text": "{1, 2}" },
+            { "id": "b", "text": "{3, 4, 5, 6, 7, 8, 9}" },
+            { "id": "c", "text": "{5, 6, 7, 8, 9}" },
+            { "id": "d", "text": "{7, 8, 9}" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM024",
+        "questionText": "Out of 80 sailors on a boat, 50 know swimming, 60 know rowing, and 10 know neither. How many sailors know both swimming and rowing?",
+        "options": [
+            { "id": "a", "text": "20" },
+            { "id": "b", "text": "30" },
+            { "id": "c", "text": "40" },
+            { "id": "d", "text": "50" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM025",
+        "questionText": "Let S = {x | x⁴ - 1 = 0, x ∈ Z}. What is the cardinality of S?",
+        "options": [
+            { "id": "a", "text": "0" },
+            { "id": "b", "text": "1" },
+            { "id": "c", "text": "2" },
+            { "id": "d", "text": "4" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM026",
+        "questionText": "A sum of money doubles itself at compound interest in 15 years. In how many years will it become eight times itself at the same rate of compound interest?",
+        "options": [
+            { "id": "a", "text": "30 years" },
+            { "id": "b", "text": "45 years" },
+            { "id": "c", "text": "60 years" },
+            { "id": "d", "text": "90 years" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM027",
+        "questionText": "The compound interest on ₹10,000 in 2 years at 4% per annum, the interest being compounded half-yearly, is:",
+        "options": [
+            { "id": "a", "text": "₹824.32" },
+            { "id": "b", "text": "₹816.00" },
+            { "id": "c", "text": "₹828.80" },
+            { "id": "d", "text": "₹832.16" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM028",
+        "questionText": "What principal amount will yield an amount of ₹4913 after 3 years at a compound interest rate of 6 ¼ % per annum?",
+        "options": [
+            { "id": "a", "text": "₹4096" },
+            { "id": "b", "text": "₹4100" },
+            { "id": "c", "text": "₹4200" },
+            { "id": "d", "text": "₹4000" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM029",
+        "questionText": "The difference between the compound interest and simple interest on a certain sum for 2 years at 10% per annum is ₹15. Find the sum.",
+        "options": [
+            { "id": "a", "text": "₹1500" },
+            { "id": "b", "text": "₹1600" },
+            { "id": "c", "text": "₹1400" },
+            { "id": "d", "text": "₹1550" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM030",
+        "questionText": "A machine depreciates in value at a rate of 10% per year. If its present value is ₹1,62,000, what was its value 2 years ago?",
+        "options": [
+            { "id": "a", "text": "₹1,94,400" },
+            { "id": "b", "text": "₹2,00,000" },
+            { "id": "c", "text": "₹1,80,000" },
+            { "id": "d", "text": "₹2,10,000" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM031",
+        "questionText": "The population of a town increases by 5% annually. If its present population is 9261, what was it 3 years ago?",
+        "options": [
+            { "id": "a", "text": "8000" },
+            { "id": "b", "text": "7500" },
+            { "id": "c", "text": "8500" },
+            { "id": "d", "text": "7800" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM032",
+        "questionText": "Find the compound interest on ₹8000 for 9 months at 20% per annum compounded quarterly.",
+        "options": [
+            { "id": "a", "text": "₹1261" },
+            { "id": "b", "text": "₹1200" },
+            { "id": "c", "text": "₹1300" },
+            { "id": "d", "text": "₹1250" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM033",
+        "questionText": "Simple interest on a sum for 2 years at a certain rate is ₹160. Compound interest on the same sum for the same period and same rate is ₹170. Find the rate percent per annum.",
+        "options": [
+            { "id": "a", "text": "10%" },
+            { "id": "b", "text": "12%" },
+            { "id": "c", "text": "12.5%" },
+            { "id": "d", "text": "15%" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM034",
+        "questionText": "If the exchange rate is US $1 = NPR 130, and a bank charges a 1% commission for converting dollars to rupees, how many rupees will you get for US $500?",
+        "options": [
+            { "id": "a", "text": "NPR 65000" },
+            { "id": "b", "text": "NPR 64350" },
+            { "id": "c", "text": "NPR 65650" },
+            { "id": "d", "text": "NPR 64500" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM035",
+        "questionText": "The value of a car depreciates by 20% in the first year, and then by 15% in the second year. What is the total percentage depreciation after two years?",
+        "options": [
+            { "id": "a", "text": "35%" },
+            { "id": "b", "text": "32%" },
+            { "id": "c", "text": "38%" },
+            { "id": "d", "text": "34%" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM036",
+        "questionText": "At what rate percent per annum compound interest will ₹2304 amount to ₹2500 in 2 years?",
+        "options": [
+            { "id": "a", "text": "4%" },
+            { "id": "b", "text": "4 1/6%" },
+            { "id": "c", "text": "4 1/2%" },
+            { "id": "d", "text": "5%" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM037",
+        "questionText": "A sum amounts to ₹756 in 2 years and to ₹873 in 3.5 years at a certain rate of simple interest. Find the original sum.",
+        "options": [
+            { "id": "a", "text": "₹600" },
+            { "id": "b", "text": "₹650" },
+            { "id": "c", "text": "₹700" },
+            { "id": "d", "text": "Cannot be determined" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM038",
+        "questionText": "A certain sum is invested for 2 years at 8% p.a. compound interest compounded annually. If the interest earned is ₹1352, what is the sum?",
+        "options": [
+            { "id": "a", "text": "₹8000" },
+            { "id": "b", "text": "₹8125" },
+            { "id": "c", "text": "₹8500" },
+            { "id": "d", "text": "₹8200" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM039",
+        "questionText": "The population of bacteria in a culture grows by 10% in the first hour, decreases by 8% in the second hour, and again increases by 12% in the third hour. If the initial count was 10,000, find the approximate count after 3 hours.",
+        "options": [
+            { "id": "a", "text": "11288" },
+            { "id": "b", "text": "11334" },
+            { "id": "c", "text": "11408" },
+            { "id": "d", "text": "11200" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM040",
+        "questionText": "If 1 Euro = NPR 145 and 1 US$ = NPR 132. How many US Dollars can be exchanged for 500 Euros? (approx)",
+        "options": [
+            { "id": "a", "text": "$549.24" },
+            { "id": "b", "text": "$455.17" },
+            { "id": "c", "text": "$550.00" },
+            { "id": "d", "text": "$450.00" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM041",
+        "questionText": "A sum of money invested at compound interest amounts to ₹800 in 2 years and ₹840 in 3 years. The rate of interest per annum is:",
+        "options": [
+            { "id": "a", "text": "4%" },
+            { "id": "b", "text": "5%" },
+            { "id": "c", "text": "6%" },
+            { "id": "d", "text": "8%" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM042",
+        "questionText": "The value of an apartment appreciates by 15% per year. If its current worth is ₹60 lakhs, what will be its approximate worth after 2 years?",
+        "options": [
+            { "id": "a", "text": "₹79.35 lakhs" },
+            { "id": "b", "text": "₹78.00 lakhs" },
+            { "id": "c", "text": "₹80.15 lakhs" },
+            { "id": "d", "text": "₹79.00 lakhs" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM043",
+        "questionText": "What is the difference between the compound interest on ₹5000 for 1 year at 4% per annum compounded yearly and compounded half-yearly?",
+        "options": [
+            { "id": "a", "text": "₹1" },
+            { "id": "b", "text": "₹2" },
+            { "id": "c", "text": "₹3" },
+            { "id": "d", "text": "₹4" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM044",
+        "questionText": "A father divides ₹5100 between his two sons, Mohan and Sohan, who are 15 and 17 years old respectively, in such a way that if their shares are invested at 4% p.a. compound interest, they will receive equal amounts on reaching the age of 18 years. How much did Sohan (the older son) receive?",
+        "options": [
+            { "id": "a", "text": "₹2500" },
+            { "id": "b", "text": "₹2600" },
+            { "id": "c", "text": "₹2550" },
+            { "id": "d", "text": "₹2400" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM045",
+        "questionText": "A sum of ₹12000 deposited at compound interest becomes double after 5 years. After 20 years, it will become:",
+        "options": [
+            { "id": "a", "text": "₹96000" },
+            { "id": "b", "text": "₹120000" },
+            { "id": "c", "text": "₹192000" },
+            { "id": "d", "text": "₹124000" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM046",
+        "questionText": "The present worth of ₹169 due in 2 years at 4% per annum compound interest is:",
+        "options": [
+            { "id": "a", "text": "₹156.25" },
+            { "id": "b", "text": "₹150.50" },
+            { "id": "c", "text": "₹154.75" },
+            { "id": "d", "text": "₹158.00" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM047",
+        "questionText": "A company's profit increased by 10% from 2018 to 2019 and decreased by 5% from 2019 to 2020. If the profit in 2020 was ₹20.9 lakhs, what was the profit in 2018?",
+        "options": [
+            { "id": "a", "text": "₹19 lakhs" },
+            { "id": "b", "text": "₹20 lakhs" },
+            { "id": "c", "text": "₹21 lakhs" },
+            { "id": "d", "text": "₹20.5 lakhs" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM048",
+        "questionText": "If the exchange rate is 1 GBP = NPR 165 and the bank takes 0.5% commission on converting GBP to NPR, how much NPR is needed to get 200 GBP?",
+        "options": [
+            { "id": "a", "text": "NPR 33000" },
+            { "id": "b", "text": "NPR 33165" },
+            { "id": "c", "text": "NPR 32835" },
+            { "id": "d", "text": "NPR 33330" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM049",
+        "questionText": "The compound interest on a certain sum for the first year at 5% is ₹400. Find the compound interest for the second year at the same rate on the same sum.",
+        "options": [
+            { "id": "a", "text": "₹400" },
+            { "id": "b", "text": "₹410" },
+            { "id": "c", "text": "₹420" },
+            { "id": "d", "text": "₹405" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM050",
+        "questionText": "The height of a tree increases by 1/8th of its height annually. If its present height is 64 cm, what will be its height after 2 years?",
+        "options": [
+            { "id": "a", "text": "81 cm" },
+            { "id": "b", "text": "80 cm" },
+            { "id": "c", "text": "72 cm" },
+            { "id": "d", "text": "84 cm" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM051",
+        "questionText": "Find the amount on ₹5000 in 2 years if the rate of interest is 4% for the first year and 5% for the second year, compounded annually.",
+        "options": [
+            { "id": "a", "text": "₹5460" },
+            { "id": "b", "text": "₹5400" },
+            { "id": "c", "text": "₹5500" },
+            { "id": "d", "text": "₹5480" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM052",
+        "questionText": "A loan of ₹10,000 is taken at 10% p.a. compound interest. If ₹2000 is repaid at the end of the first year, how much is due at the end of the second year?",
+        "options": [
+            { "id": "a", "text": "₹9000" },
+            { "id": "b", "text": "₹9900" },
+            { "id": "c", "text": "₹10000" },
+            { "id": "d", "text": "₹10800" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM053",
+        "questionText": "A machine worth ₹10,000 depreciates by 10%, 8%, and 5% in the first, second, and third years respectively. Find its value after 3 years.",
+        "options": [
+            { "id": "a", "text": "₹7866" },
+            { "id": "b", "text": "₹7900" },
+            { "id": "c", "text": "₹7800" },
+            { "id": "d", "text": "₹7922" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM054",
+        "questionText": "If the compound interest earned on a certain sum for the 2nd year is ₹250 and for the 3rd year is ₹265, find the rate of interest.",
+        "options": [
+            { "id": "a", "text": "5%" },
+            { "id": "b", "text": "6%" },
+            { "id": "c", "text": "7%" },
+            { "id": "d", "text": "8%" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM055",
+        "questionText": "The difference between CI compounded annually and SI on a certain sum for 3 years at 10% p.a. is ₹93. Find the principal.",
+        "options": [
+            { "id": "a", "text": "₹2000" },
+            { "id": "b", "text": "₹2500" },
+            { "id": "c", "text": "₹3000" },
+            { "id": "d", "text": "₹3500" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM056",
+        "questionText": "A person invests ₹5000 for 3 years at a certain rate of interest compounded annually. At the end of one year, it amounts to ₹5600. Calculate the amount at the end of the third year.",
+        "options": [
+            { "id": "a", "text": "₹7024.64" },
+            { "id": "b", "text": "₹7123.34" },
+            { "id": "c", "text": "₹6987.12" },
+            { "id": "d", "text": "₹7000.00" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM057",
+        "questionText": "The cost of a scooter depreciates every year by 15% of its value at the beginning of the year. If the present cost is ₹8000, find its cost after 2 years.",
+        "options": [
+            { "id": "a", "text": "₹5780" },
+            { "id": "b", "text": "₹5960" },
+            { "id": "c", "text": "₹6000" },
+            { "id": "d", "text": "₹5500" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM058",
+        "questionText": "If 1 AUD = NPR 90 and a traveller wants to exchange NPR 50,000 for AUD. If the exchange agency charges a flat fee of NPR 500 for the transaction, how many AUD will the traveller receive? (approx)",
+        "options": [
+            { "id": "a", "text": "555.55 AUD" },
+            { "id": "b", "text": "550 AUD" },
+            { "id": "c", "text": "544.44 AUD" },
+            { "id": "d", "text": "551.11 AUD" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM059",
+        "questionText": "In what time will ₹1000 amount to ₹1331 at 10% per annum, compounded annually?",
+        "options": [
+            { "id": "a", "text": "2 years" },
+            { "id": "b", "text": "2.5 years" },
+            { "id": "c", "text": "3 years" },
+            { "id": "d", "text": "3.5 years" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM060",
+        "questionText": "A sum of money amounts to ₹6655 in 3 years at 10% compound interest compounded annually. The sum of money is:",
+        "options": [
+            { "id": "a", "text": "₹5000" },
+            { "id": "b", "text": "₹5500" },
+            { "id": "c", "text": "₹6000" },
+            { "id": "d", "text": "₹6100" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM061",
+        "questionText": "The population of a village decreases at the rate of 20% per annum. If its population 2 years ago was 10,000, the present population is:",
+        "options": [
+            { "id": "a", "text": "6000" },
+            { "id": "b", "text": "6400" },
+            { "id": "c", "text": "7200" },
+            { "id": "d", "text": "8000" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM062",
+        "questionText": "Find the compound interest on ₹16000 for 1 year at the rate of 20% p.a., if the interest is compounded quarterly.",
+        "options": [
+            { "id": "a", "text": "₹3328.80" },
+            { "id": "b", "text": "₹3448.10" },
+            { "id": "c", "text": "₹3200" },
+            { "id": "d", "text": "₹3520.50" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM063",
+        "questionText": "If the simple interest on a sum of money for 2 years at 5% per annum is ₹50, what is the compound interest on the same sum at the same rate and for the same time?",
+        "options": [
+            { "id": "a", "text": "₹50.00" },
+            { "id": "b", "text": "₹51.00" },
+            { "id": "c", "text": "₹51.25" },
+            { "id": "d", "text": "₹52.50" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM064",
+        "questionText": "A factory's output of scooters grew from 10,000 to 13,310 in 3 years. Find the annual rate of growth of the output of scooters.",
+        "options": [
+            { "id": "a", "text": "8%" },
+            { "id": "b", "text": "9%" },
+            { "id": "c", "text": "10%" },
+            { "id": "d", "text": "11%" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM065",
+        "questionText": "If exchanging USD to NPR costs a 1.5% commission and exchanging NPR back to USD costs another 1.5% commission. If you start with $1000, exchange it to NPR (Rate $1=NPR 130), and then immediately exchange all the NPR back to USD, how many dollars will you have? (Approximate)",
+        "options": [
+            { "id": "a", "text": "$970.00" },
+            { "id": "b", "text": "$970.30" },
+            { "id": "c", "text": "$985.00" },
+            { "id": "d", "text": "$970.45" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM066",
+        "questionText": "What sum invested for 1.5 years compounded half-yearly at the rate of 8% p.a. will amount to ₹132651?",
+        "options": [
+            { "id": "a", "text": "₹117500" },
+            { "id": "b", "text": "₹120000" },
+            { "id": "c", "text": "₹118750" },
+            { "id": "d", "text": "₹121250" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM067",
+        "questionText": "A sum of money becomes 1.331 times itself in 3 years at compound interest. The rate of interest per annum is:",
+        "options": [
+            { "id": "a", "text": "8%" },
+            { "id": "b", "text": "9%" },
+            { "id": "c", "text": "10%" },
+            { "id": "d", "text": "11%" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM068",
+        "questionText": "The value of a property increases every year by 5%. If its value at the end of 3 years is ₹46305, what was its original value at the beginning of these three years?",
+        "options": [
+            { "id": "a", "text": "₹40000" },
+            { "id": "b", "text": "₹41000" },
+            { "id": "c", "text": "₹42000" },
+            { "id": "d", "text": "₹39000" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM069",
+        "questionText": "The compound interest on ₹30,000 at 7% per annum for a certain time is ₹4347. The time is:",
+        "options": [
+            { "id": "a", "text": "1 year" },
+            { "id": "b", "text": "1.5 years" },
+            { "id": "c", "text": "2 years" },
+            { "id": "d", "text": "2.5 years" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM070",
+        "questionText": "If the amount is 2.25 times the sum after 2 years at compound interest (compounded annually), the rate of interest per annum is:",
+        "options": [
+            { "id": "a", "text": "25%" },
+            { "id": "b", "text": "30%" },
+            { "id": "c", "text": "40%" },
+            { "id": "d", "text": "50%" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KM071",
+        "questionText": "A bank offers 5% compound interest calculated on a half-yearly basis. A customer deposits ₹1600 each on 1st January and 1st July of a year. At the end of the year, the amount he would have gained by way of interest is:",
+        "options": [
+            { "id": "a", "text": "₹120" },
+            { "id": "b", "text": "₹121" },
+            { "id": "c", "text": "₹122" },
+            { "id": "d", "text": "₹123" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM072",
+        "questionText": "If exchanging 100 Japanese Yen (JPY) costs NPR 95 and exchanging 1 US Dollar (USD) costs NPR 130. How many JPY can be exchanged for 50 USD? (approx)",
+        "options": [
+            { "id": "a", "text": "6842 JPY" },
+            { "id": "b", "text": "6500 JPY" },
+            { "id": "c", "text": "7000 JPY" },
+            { "id": "d", "text": "6750 JPY" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM073",
+        "questionText": "The population of a city was 80,000. In the first year, it increased by 10%, and in the second year, it decreased by 8%. What is the population at the end of the second year?",
+        "options": [
+            { "id": "a", "text": "80960" },
+            { "id": "b", "text": "81000" },
+            { "id": "c", "text": "80800" },
+            { "id": "d", "text": "80000" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM074",
+        "questionText": "A invests ₹ P for 2 years at 5% simple interest. B invests the same amount ₹ P for 2 years at 5% compound interest (compounded annually). Who earns more interest and by how much?",
+        "options": [
+            { "id": "a", "text": "B earns P/400 more" },
+            { "id": "b", "text": "A earns P/400 more" },
+            { "id": "c", "text": "B earns P/200 more" },
+            { "id": "d", "text": "Both earn the same interest" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM075",
+        "questionText": "If the roots of the quadratic equation x² - px + q = 0 are α and β, then the value of α²/β + β²/α is:",
+        "options": [
+            { "id": "a", "text": "(p³ - 3pq) / q" },
+            { "id": "b", "text": "(p³ + 3pq) / q" },
+            { "id": "c", "text": "(q³ - 3pq) / p" },
+            { "id": "d", "text": "(q³ + 3pq) / p" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM076",
+        "questionText": "For what value of 'k' does the equation (k-2)x² + 2(2k-3)x + (5k-6) = 0 have equal roots?",
+        "options": [
+            { "id": "a", "text": "k=1 or k=3" },
+            { "id": "b", "text": "k=3 or k=4" },
+            { "id": "c", "text": "k=1 or k=4" },
+            { "id": "d", "text": "k=2 or k=3" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM077",
+        "questionText": "If one root of the equation x² + ax + 3 = 0 is 1, then its other root is:",
+        "options": [
+            { "id": "a", "text": "3" },
+            { "id": "b", "text": "-3" },
+            { "id": "c", "text": "2" },
+            { "id": "d", "text": "-2" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM078",
+        "questionText": "Solve for x: 2^(2x+1) = 4^(2x-1)",
+        "options": [
+            { "id": "a", "text": "1/2" },
+            { "id": "b", "text": "1" },
+            { "id": "c", "text": "3/2" },
+            { "id": "d", "text": "2" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM079",
+        "questionText": "If x + 5 = 12, what is the value of 2x - 3?",
+        "options": [
+            { "id": "a", "text": "11" },
+            { "id": "b", "text": "14" },
+            { "id": "c", "text": "17" },
+            { "id": "d", "text": "7" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM080",
+        "questionText": "The 5th term of an Arithmetic Progression (AP) is 16 and the 9th term is 28. What is the 12th term?",
+        "options": [
+            { "id": "a", "text": "37" },
+            { "id": "b", "text": "40" },
+            { "id": "c", "text": "34" },
+            { "id": "d", "text": "43" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM081",
+        "questionText": "If α and β are the roots of 2x² - 5x + 3 = 0, find the equation whose roots are 1/α and 1/β.",
+        "options": [
+            { "id": "a", "text": "3x² - 5x + 2 = 0" },
+            { "id": "b", "text": "2x² - 5x + 3 = 0" },
+            { "id": "c", "text": "3x² + 5x + 2 = 0" },
+            { "id": "d", "text": "5x² - 3x + 2 = 0" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM082",
+        "questionText": "The sum of the first 'n' terms of an AP is given by Sn = 3n² + 2n. What is the common difference of the AP?",
+        "options": [
+            { "id": "a", "text": "3" },
+            { "id": "b", "text": "2" },
+            { "id": "c", "text": "6" },
+            { "id": "d", "text": "5" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM083",
+        "questionText": "If 9^(x) * 3^(2) * (1/3)^(-x) = 27, find the value of x.",
+        "options": [
+            { "id": "a", "text": "1/2" },
+            { "id": "b", "text": "1/3" },
+            { "id": "c", "text": "1/4" },
+            { "id": "d", "text": "2/3" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM084",
+        "questionText": "The product of the roots of the equation √3 x² - 6x + 2√3 = 0 is:",
+        "options": [
+            { "id": "a", "text": "2" },
+            { "id": "b", "text": "-2" },
+            { "id": "c", "text": "2√3" },
+            { "id": "d", "text": "-2√3" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM085",
+        "questionText": "Which term of the AP: 21, 18, 15, ... is -81?",
+        "options": [
+            { "id": "a", "text": "33rd" },
+            { "id": "b", "text": "34th" },
+            { "id": "c", "text": "35th" },
+            { "id": "d", "text": "36th" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM086",
+        "questionText": "If x = √6 + √6 + √6 + ... ∞, then the value of x is:",
+        "options": [
+            { "id": "a", "text": "6" },
+            { "id": "b", "text": "2" },
+            { "id": "c", "text": "3" },
+            { "id": "d", "text": "√6" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM087",
+        "questionText": "Find the sum of the first 20 terms of the AP whose first term is 5 and the last term is 62.",
+        "options": [
+            { "id": "a", "text": "670" },
+            { "id": "b", "text": "770" },
+            { "id": "c", "text": "870" },
+            { "id": "d", "text": "570" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM088",
+        "questionText": "If (x+1) is a factor of the polynomial 2x² + kx, what is the value of k?",
+        "options": [
+            { "id": "a", "text": "-2" },
+            { "id": "b", "text": "2" },
+            { "id": "c", "text": "-3" },
+            { "id": "d", "text": "3" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM089",
+        "questionText": "How many two-digit numbers are divisible by 3?",
+        "options": [
+            { "id": "a", "text": "29" },
+            { "id": "b", "text": "30" },
+            { "id": "c", "text": "31" },
+            { "id": "d", "text": "32" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM090",
+        "questionText": "If the roots of x² - kx + 64 = 0 are in the ratio 1:4, find the value of k.",
+        "options": [
+            { "id": "a", "text": "16" },
+            { "id": "b", "text": "20" },
+            { "id": "c", "text": "24" },
+            { "id": "d", "text": "10" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM091",
+        "questionText": "Find the sum: 34 + 32 + 30 + ... + 10.",
+        "options": [
+            { "id": "a", "text": "286" },
+            { "id": "b", "text": "290" },
+            { "id": "c", "text": "300" },
+            { "id": "d", "text": "272" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM092",
+        "questionText": "If 2^(x-1) + 2^(x+1) = 320, find the value of x.",
+        "options": [
+            { "id": "a", "text": "5" },
+            { "id": "b", "text": "6" },
+            { "id": "c", "text": "7" },
+            { "id": "d", "text": "8" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM093",
+        "questionText": "If the sum of the roots of the equation kx² + 6x + 4k = 0 is equal to the product of the roots, then k = ?",
+        "options": [
+            { "id": "a", "text": "-3/2" },
+            { "id": "b", "text": "3/2" },
+            { "id": "c", "text": "2/3" },
+            { "id": "d", "text": "-2/3" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM094",
+        "questionText": "In an AP, the sum of the first n terms is (5n²/2 + 3n/2). Find its 20th term.",
+        "options": [
+            { "id": "a", "text": "101" },
+            { "id": "b", "text": "98" },
+            { "id": "c", "text": "102" },
+            { "id": "d", "text": "99" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KM095",
+        "questionText": "If α, β are the roots of x² - x - 1 = 0, then the value of α³ + β³ is:",
+        "options": [
+            { "id": "a", "text": "4" },
+            { "id": "b", "text": "-4" },
+            { "id": "c", "text": "3" },
+            { "id": "d", "text": "-3" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM096",
+        "questionText": "Solve: 5^(x+1) + 5^(2-x) = 5³ + 1",
+        "options": [
+            { "id": "a", "text": "1 or -2" },
+            { "id": "b", "text": "-1 or 2" },
+            { "id": "c", "text": "1 or 2" },
+            { "id": "d", "text": "-1 or -2" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM097",
+        "questionText": "Find the middle term of the AP 6, 13, 20, ..., 216.",
+        "options": [
+            { "id": "a", "text": "111" },
+            { "id": "b", "text": "104" },
+            { "id": "c", "text": "118" },
+            { "id": "d", "text": "125" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM098",
+        "questionText": "For what value of 'a' are the roots of the equation ax² + (a-1)x + (a-2) = 0 reciprocals of each other?",
+        "options": [
+            { "id": "a", "text": "1" },
+            { "id": "b", "text": "2" },
+            { "id": "c", "text": "-2" },
+            { "id": "d", "text": "No such value exists" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM099",
+        "questionText": "If the 4th term of an AP is 11 and the 10th term is 23, find the sum of the first 15 terms.",
+        "options": [
+            { "id": "a", "text": "355" },
+            { "id": "b", "text": "365" },
+            { "id": "c", "text": "285" },
+            { "id": "d", "text": "345" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM100",
+        "questionText": "The roots of the equation 4x² - 12x + 9 = 0 are:",
+        "options": [
+            { "id": "a", "text": "Real and distinct" },
+            { "id": "b", "text": "Real and equal" },
+            { "id": "c", "text": "Not real" },
+            { "id": "d", "text": "Irrational" }
+        ],
+        "correctOptionId": "b"
+    },
+
+    {
+        "id": "KM101",
+        "questionText": "A can do a piece of work in 10 days, while B can do it in 15 days. They work together for 5 days. The fraction of the work that is left is:",
+        "options": [
+            { "id": "a", "text": "1/2" },
+            { "id": "b", "text": "1/3" },
+            { "id": "c", "text": "1/6" },
+            { "id": "d", "text": "1/4" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM102",
+        "questionText": "Pipe A can fill a tank in 8 hours, Pipe B can fill it in 12 hours. If both pipes are opened simultaneously, how much time will be taken to fill the tank?",
+        "options": [
+            { "id": "a", "text": "4 hours" },
+            { "id": "b", "text": "4.8 hours" },
+            { "id": "c", "text": "5 hours" },
+            { "id": "d", "text": "6 hours" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM103",
+        "questionText": "A works twice as fast as B. If B can complete a work in 12 days independently, the number of days in which A and B can together finish the work is:",
+        "options": [
+            { "id": "a", "text": "4 days" },
+            { "id": "b", "text": "6 days" },
+            { "id": "c", "text": "8 days" },
+            { "id": "d", "text": "18 days" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM104",
+        "questionText": "A can do a certain job in 12 days. B is 60% more efficient than A. How many days does B alone take to do the same job?",
+        "options": [
+            { "id": "a", "text": "7.5 days" },
+            { "id": "b", "text": "8 days" },
+            { "id": "c", "text": "19.2 days" },
+            { "id": "d", "text": "6 days" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM105",
+        "questionText": "A and B undertake to do a piece of work for ₹600. A alone can do it in 6 days while B alone can do it in 8 days. With the help of C, they finish it in 3 days. Find the share of C.",
+        "options": [
+            { "id": "a", "text": "₹75" },
+            { "id": "b", "text": "₹100" },
+            { "id": "c", "text": "₹150" },
+            { "id": "d", "text": "₹300" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM106",
+        "questionText": "A tap can fill a tank in 6 hours. After half the tank is filled, three more similar taps are opened. What is the total time taken to fill the tank completely?",
+        "options": [
+            { "id": "a", "text": "3 hrs 15 min" },
+            { "id": "b", "text": "3 hrs 45 min" },
+            { "id": "c", "text": "4 hrs" },
+            { "id": "d", "text": "4 hrs 15 min" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM107",
+        "questionText": "A can do 1/3 of the work in 5 days and B can do 2/5 of the work in 10 days. In how many days can both A and B together do the work?",
+        "options": [
+            { "id": "a", "text": "7 1/2 days" },
+            { "id": "b", "text": "8 4/5 days" },
+            { "id": "c", "text": "9 3/8 days" },
+            { "id": "d", "text": "10 days" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM108",
+        "questionText": "10 men can complete a piece of work in 15 days and 15 women can complete the same work in 12 days. If all the 10 men and 15 women work together, in how many days will the work get completed?",
+        "options": [
+            { "id": "a", "text": "6 days" },
+            { "id": "b", "text": "6 1/3 days" },
+            { "id": "c", "text": "6 2/3 days" },
+            { "id": "d", "text": "7 days" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM109",
+        "questionText": "A tank has a leak which would empty it in 8 hours. A tap is turned on which admits 6 liters a minute into the tank, and it is now emptied in 12 hours. How many liters does the tank hold?",
+        "options": [
+            { "id": "a", "text": "7580 liters" },
+            { "id": "b", "text": "8260 liters" },
+            { "id": "c", "text": "8640 liters" },
+            { "id": "d", "text": "8800 liters" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM110",
+        "questionText": "A and B can do a work in 8 days, B and C can do the same work in 12 days. A, B and C together can finish it in 6 days. A and C together will do it in:",
+        "options": [
+            { "id": "a", "text": "4 days" },
+            { "id": "b", "text": "6 days" },
+            { "id": "c", "text": "8 days" },
+            { "id": "d", "text": "12 days" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM111",
+        "questionText": "A alone can finish a work in 16 days and B alone in 12 days. Starting with A, they work on alternate days. The total work will be completed in:",
+        "options": [
+            { "id": "a", "text": "12 days" },
+            { "id": "b", "text": "13 days" },
+            { "id": "c", "text": "13 5/7 days" },
+            { "id": "d", "text": "13 3/4 days" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KM112",
+        "questionText": "4 men and 6 women can complete a work in 8 days, while 3 men and 7 women can complete it in 10 days. In how many days will 10 women complete it?",
+        "options": [
+            { "id": "a", "text": "35 days" },
+            { "id": "b", "text": "40 days" },
+            { "id": "c", "text": "45 days" },
+            { "id": "d", "text": "50 days" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM113",
+        "questionText": "A is thrice as good a workman as B and therefore is able to finish a job in 60 days less than B. Working together, they can do it in:",
+        "options": [
+            { "id": "a", "text": "20 days" },
+            { "id": "b", "text": "22.5 days" },
+            { "id": "c", "text": "25 days" },
+            { "id": "d", "text": "30 days" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM114",
+        "questionText": "A pump can fill a tank with water in 2 hours. Because of a leak, it took 2 1/3 hours to fill the tank. The leak can drain all the water of the tank in:",
+        "options": [
+            { "id": "a", "text": "7 hours" },
+            { "id": "b", "text": "8 hours" },
+            { "id": "c", "text": "10 hours" },
+            { "id": "d", "text": "14 hours" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KM115",
+        "questionText": "P can complete a work in 12 days working 8 hours a day. Q can complete the same work in 8 days working 10 hours a day. If both P and Q work together, working 8 hours a day, in how many days can they complete the work?",
+        "options": [
+            { "id": "a", "text": "5 5/11 days" },
+            { "id": "b", "text": "5 6/11 days" },
+            { "id": "c", "text": "6 5/11 days" },
+            { "id": "d", "text": "6 6/11 days" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM116",
+        "questionText": "5 men can prepare 10 toys in 6 days working 6 hours a day. Then in how many days can 12 men prepare 16 toys working 8 hours a day?",
+        "options": [
+            { "id": "a", "text": "2 days" },
+            { "id": "b", "text": "3 days" },
+            { "id": "c", "text": "4 days" },
+            { "id": "d", "text": "6 days" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM117",
+        "questionText": "A and B can finish a work in 30 days. They worked together for 20 days and then B left. A finished the remaining work in another 20 days. In how many days can A alone finish the work?",
+        "options": [
+            { "id": "a", "text": "40 days" },
+            { "id": "b", "text": "50 days" },
+            { "id": "c", "text": "60 days" },
+            { "id": "d", "text": "54 days" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM118",
+        "questionText": "Two pipes can fill a tank in 20 and 24 minutes respectively and a waste pipe can empty 3 gallons per minute. All the three pipes working together can fill the tank in 15 minutes. The capacity of the tank is:",
+        "options": [
+            { "id": "a", "text": "60 gallons" },
+            { "id": "b", "text": "100 gallons" },
+            { "id": "c", "text": "120 gallons" },
+            { "id": "d", "text": "180 gallons" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM119",
+        "questionText": "A contractor undertakes to do a piece of work in 40 days. He engages 100 men at the beginning and 100 more after 35 days and completes the work in stipulated time. If he had not engaged the additional men, how many days behind schedule would it be finished?",
+        "options": [
+            { "id": "a", "text": "3 days" },
+            { "id": "b", "text": "5 days" },
+            { "id": "c", "text": "6 days" },
+            { "id": "d", "text": "10 days" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM120",
+        "questionText": "If 6 men and 8 boys can do a piece of work in 10 days while 26 men and 48 boys can do the same in 2 days, the time taken by 15 men and 20 boys in doing the same type of work will be:",
+        "options": [
+            { "id": "a", "text": "4 days" },
+            { "id": "b", "text": "5 days" },
+            { "id": "c", "text": "6 days" },
+            { "id": "d", "text": "7 days" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM121",
+        "questionText": "A can build a wall in 30 days, while B alone can build it in 40 days. If they build it together and get a payment of ₹7000, what is B's share?",
+        "options": [
+            { "id": "a", "text": "₹2000" },
+            { "id": "b", "text": "₹3000" },
+            { "id": "c", "text": "₹4000" },
+            { "id": "d", "text": "₹4500" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM122",
+        "questionText": "A machine P can print one lakh books in 8 hours, machine Q can print the same number of books in 10 hours while machine R can print them in 12 hours. All the machines are started at 9 A.M. while machine P is closed at 11 A.M. and the remaining two machines complete the work. Approximately at what time will the work be finished?",
+        "options": [
+            { "id": "a", "text": "11:30 A.M." },
+            { "id": "b", "text": "12 noon" },
+            { "id": "c", "text": "12:30 P.M." },
+            { "id": "d", "text": "1:00 P.M." }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KM123",
+        "questionText": "Worker A takes 8 hours to do a job. Worker B takes 10 hours to do the same job. How long should it take both A and B, working together but independently, to do the same job?",
+        "options": [
+            { "id": "a", "text": "40/9 hours" },
+            { "id": "b", "text": "4 hours" },
+            { "id": "c", "text": "9 hours" },
+            { "id": "d", "text": "18 hours" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM124",
+        "questionText": "A cistern has two taps which fill it in 12 minutes and 15 minutes respectively. There is also a waste pipe in the cistern. When all the three are opened, the empty cistern is full in 20 minutes. How long will the waste pipe take to empty the full cistern?",
+        "options": [
+            { "id": "a", "text": "8 minutes" },
+            { "id": "b", "text": "10 minutes" },
+            { "id": "c", "text": "12 minutes" },
+            { "id": "d", "text": "16 minutes" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM125",
+        "questionText": "A does half as much work as B in three-fourths of the time. If together they take 18 days to complete the work, how much time shall B take to do it alone?",
+        "options": [
+            { "id": "a", "text": "30 days" },
+            { "id": "b", "text": "35 days" },
+            { "id": "c", "text": "40 days" },
+            { "id": "d", "text": "45 days" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM126",
+        "questionText": "12 men complete a work in 18 days. Six days after they started working, 4 more men joined them. How many days will all of them take to complete the remaining work?",
+        "options": [
+            { "id": "a", "text": "9 days" },
+            { "id": "b", "text": "10 days" },
+            { "id": "c", "text": "12 days" },
+            { "id": "d", "text": "15 days" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM127",
+        "questionText": "A and B together can complete a task in 20 days. B and C together can complete the same task in 30 days. A and C together can complete the same task in 40 days. What is the ratio of the number of days taken by A when completing the same task alone to the number of days taken by C when completing the same task alone?",
+        "options": [
+            { "id": "a", "text": "1:5" },
+            { "id": "b", "text": "2:7" },
+            { "id": "c", "text": "3:5" },
+            { "id": "d", "text": "1:7" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM128",
+        "questionText": "A certain number of men can finish a piece of work in 100 days. If there were 10 men less, it would take 10 days more for the work to be finished. How many men were there originally?",
+        "options": [
+            { "id": "a", "text": "100" },
+            { "id": "b", "text": "110" },
+            { "id": "c", "text": "120" },
+            { "id": "d", "text": "90" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM129",
+        "questionText": "Two pipes A and B can fill a cistern in 37.5 minutes and 45 minutes respectively. Both pipes are opened. The cistern will be filled in just half an hour, if pipe B is turned off after:",
+        "options": [
+            { "id": "a", "text": "5 min" },
+            { "id": "b", "text": "9 min" },
+            { "id": "c", "text": "10 min" },
+            { "id": "d", "text": "15 min" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM130",
+        "questionText": "A takes 5 days more than B to do a certain job and 9 days more than C; A and B together can do the job in the same time as C. How many days A would take to do it?",
+        "options": [
+            { "id": "a", "text": "15 days" },
+            { "id": "b", "text": "16 days" },
+            { "id": "c", "text": "20 days" },
+            { "id": "d", "text": "25 days" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM131",
+        "questionText": "Ram and Shyam can do a work in 10 days and 15 days respectively. They work together, but Ram leaves 2 days before the completion of the work. In how many days was the work completed?",
+        "options": [
+            { "id": "a", "text": "6 days" },
+            { "id": "b", "text": "8 days" },
+            { "id": "c", "text": "7.2 days" },
+            { "id": "d", "text": "5.4 days" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM132",
+        "questionText": "3 men or 5 women can do a work in 12 days. How long will 6 men and 5 women take to finish the work?",
+        "options": [
+            { "id": "a", "text": "4 days" },
+            { "id": "b", "text": "5 days" },
+            { "id": "c", "text": "6 days" },
+            { "id": "d", "text": "7 days" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM133",
+        "questionText": "A tank is filled by three pipes with uniform flow. The first two pipes operating simultaneously fill the tank in the same time during which the tank is filled by the third pipe alone. The second pipe fills the tank 5 hours faster than the first pipe and 4 hours slower than the third pipe. The time required by the first pipe alone is:",
+        "options": [
+            { "id": "a", "text": "6 hours" },
+            { "id": "b", "text": "10 hours" },
+            { "id": "c", "text": "15 hours" },
+            { "id": "d", "text": "30 hours" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM134",
+        "questionText": "A can do work in 15 days and B in 20 days. If they work on it together for 4 days, then the fraction of the work that is left is :",
+        "options": [
+            { "id": "a", "text": "1/4" },
+            { "id": "b", "text": "7/15" },
+            { "id": "c", "text": "8/15" },
+            { "id": "d", "text": "1/10" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM135",
+        "questionText": "If 5 men and 2 boys working together can do four times as much work as a man and a boy working together. The ratio of the work done by a man to that of a boy is:",
+        "options": [
+            { "id": "a", "text": "1:2" },
+            { "id": "b", "text": "2:1" },
+            { "id": "c", "text": "1:3" },
+            { "id": "d", "text": "3:1" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM136",
+        "questionText": "Two pipes P and Q can fill a tank in 10 hours and 12 hours respectively. C can empty it in 6 hours. If all the three are opened at 7 am, at what time will one-fourth of the tank be filled?",
+        "options": [
+            { "id": "a", "text": "10 am" },
+            { "id": "b", "text": "10 pm" },
+            { "id": "c", "text": "11 pm" },
+            { "id": "d", "text": "11 am" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM137",
+        "questionText": "A can write 75 pages in 25 hours. A and B together can write 135 pages in 27 hours. In what time can B write 42 pages?",
+        "options": [
+            { "id": "a", "text": "17 hours" },
+            { "id": "b", "text": "19 hours" },
+            { "id": "c", "text": "21 hours" },
+            { "id": "d", "text": "23 hours" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM138",
+        "questionText": "A garrison of 500 men had provisions for 27 days. After 3 days, a reinforcement of 300 men arrived. For how many more days will the remaining provisions last?",
+        "options": [
+            { "id": "a", "text": "15 days" },
+            { "id": "b", "text": "16 days" },
+            { "id": "c", "text": "17.5 days" },
+            { "id": "d", "text": "18 days" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM139",
+        "questionText": "A booster pump can be used for filling as well as for emptying a tank. The capacity of the tank is 2400 m³. The emptying capacity of the pump is 10 m³ per minute higher than its filling capacity and the pump needs 8 minutes lesser to empty the tank than it needs to fill it. What is the filling capacity of the pump?",
+        "options": [
+            { "id": "a", "text": "40 m³/min" },
+            { "id": "b", "text": "50 m³/min" },
+            { "id": "c", "text": "60 m³/min" },
+            { "id": "d", "text": "30 m³/min" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM140",
+        "questionText": "A work could be completed in 100 days by some workers. However, due to the absence of 10 workers, it was completed in 110 days. The original number of workers was:",
+        "options": [
+            { "id": "a", "text": "100" },
+            { "id": "b", "text": "110" },
+            { "id": "c", "text": "55" },
+            { "id": "d", "text": "50" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM141",
+        "questionText": "A, B, and C are employed to do a piece of work for ₹575. A and C are supposed to finish 19/23 of the work together. Amount shall be paid to B is:",
+        "options": [
+            { "id": "a", "text": "₹210" },
+            { "id": "b", "text": "₹100" },
+            { "id": "c", "text": "₹200" },
+            { "id": "d", "text": "₹475" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM142",
+        "questionText": "Tap A fills a tank in 4 hours, whereas tap B empties the full tank in 6 hours. If both taps are opened together when the tank is empty, the number of hours taken to fill the tank is:",
+        "options": [
+            { "id": "a", "text": "6 hours" },
+            { "id": "b", "text": "8 hours" },
+            { "id": "c", "text": "10 hours" },
+            { "id": "d", "text": "12 hours" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KM143",
+        "questionText": "A and B can do a piece of work in 72 days; B and C can do it in 120 days; A and C can do it in 90 days. In how many days can A alone do the work?",
+        "options": [
+            { "id": "a", "text": "150 days" },
+            { "id": "b", "text": "120 days" },
+            { "id": "c", "text": "100 days" },
+            { "id": "d", "text": "80 days" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM144",
+        "questionText": "10 men, working 6 hours a day can complete a work in 18 days. How many hours a day must 15 men work to complete the same work in 12 days?",
+        "options": [
+            { "id": "a", "text": "6 hours" },
+            { "id": "b", "text": "9 hours" },
+            { "id": "c", "text": "10 hours" },
+            { "id": "d", "text": "12 hours" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM145",
+        "questionText": "A is 30% more efficient than B. How much time will they, working together, take to complete a job which A alone could have done in 23 days?",
+        "options": [
+            { "id": "a", "text": "11 days" },
+            { "id": "b", "text": "13 days" },
+            { "id": "c", "text": "20 days" },
+            { "id": "d", "text": "9 days" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM146",
+        "questionText": "A swimming pool is filled by three pipes with uniform flow. The first two pipes operating simultaneously fill the pool in the same time during which the pool is filled by the third pipe alone. The second pipe fills the pool 10 hours faster than the first pipe and 8 hours slower than the third pipe. Find the time required by the third pipe.",
+        "options": [
+            { "id": "a", "text": "12 hours" },
+            { "id": "b", "text": "15 hours" },
+            { "id": "c", "text": "20 hours" },
+            { "id": "d", "text": "24 hours" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM147",
+        "questionText": "A can finish a work in 18 days and B can do the same work in half the time taken by A. Then, working together, what part of the same work can they finish in a day?",
+        "options": [
+            { "id": "a", "text": "1/6" },
+            { "id": "b", "text": "1/9" },
+            { "id": "c", "text": "2/5" },
+            { "id": "d", "text": "2/7" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM148",
+        "questionText": "45 men can complete a work in 16 days. Four days after they started working, 36 more men joined them. How many days will they now take to complete the remaining work?",
+        "options": [
+            { "id": "a", "text": "6 days" },
+            { "id": "b", "text": "6 2/3 days" },
+            { "id": "c", "text": "7 days" },
+            { "id": "d", "text": "8 days" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM149",
+        "questionText": "A large tanker can be filled by two pipes A and B in 60 minutes and 40 minutes respectively. How many minutes will it take to fill the tanker from empty state if B is used for half the time and A and B fill it together for the other half?",
+        "options": [
+            { "id": "a", "text": "15 min" },
+            { "id": "b", "text": "20 min" },
+            { "id": "c", "text": "27.5 min" },
+            { "id": "d", "text": "30 min" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KM150",
+        "questionText": "X and Y can do a piece of work in 20 days and 12 days respectively. X started the work alone and then after 4 days Y joined him till the completion of the work. How long did the work last?",
+        "options": [
+            { "id": "a", "text": "6 days" },
+            { "id": "b", "text": "10 days" },
+            { "id": "c", "text": "15 days" },
+            { "id": "d", "text": "20 days" }
+        ],
+        "correctOptionId": "b"
+    },
+        {
+        "id": "KM151",
+        "questionText": "The H.C.F. of two numbers is 11 and their L.C.M. is 7700. If one of the numbers is 275, then the other is:",
+        "options": [
+            { "id": "a", "text": "279" },
+            { "id": "b", "text": "308" },
+            { "id": "c", "text": "318" },
+            { "id": "d", "text": "283" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM152",
+        "questionText": "A shopkeeper sells an article for ₹78 and earns double the profit that he would have earned if he had sold it for ₹69. What is the cost price of the article?",
+        "options": [
+            { "id": "a", "text": "₹60" },
+            { "id": "b", "text": "₹57" },
+            { "id": "c", "text": "₹51" },
+            { "id": "d", "text": "₹55.50" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM153",
+        "questionText": "Find the greatest number that will divide 43, 91, and 183 so as to leave the same remainder in each case.",
+        "options": [
+            { "id": "a", "text": "4" },
+            { "id": "b", "text": "7" },
+            { "id": "c", "text": "9" },
+            { "id": "d", "text": "13" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM154",
+        "questionText": "A trader mixes 26 kg of rice at ₹20 per kg with 30 kg of rice of other variety at ₹36 per kg and sells the mixture at ₹30 per kg. His profit percent is:",
+        "options": [
+            { "id": "a", "text": "No profit, no loss" },
+            { "id": "b", "text": "5%" },
+            { "id": "c", "text": "8%" },
+            { "id": "d", "text": "10%" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM155",
+        "questionText": "The L.C.M. of two numbers is 48. The numbers are in the ratio 2 : 3. The sum of the numbers is:",
+        "options": [
+            { "id": "a", "text": "28" },
+            { "id": "b", "text": "32" },
+            { "id": "c", "text": "40" },
+            { "id": "d", "text": "64" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM156",
+        "questionText": "If the selling price of 10 articles is equal to the cost price of 12 articles, find the gain percent.",
+        "options": [
+            { "id": "a", "text": "10%" },
+            { "id": "b", "text": "16 2/3%" },
+            { "id": "c", "text": "20%" },
+            { "id": "d", "text": "25%" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM157",
+        "questionText": "Three numbers are in the ratio 1 : 2 : 3 and their H.C.F. is 12. The numbers are:",
+        "options": [
+            { "id": "a", "text": "12, 24, 36" },
+            { "id": "b", "text": "5, 10, 15" },
+            { "id": "c", "text": "4, 8, 12" },
+            { "id": "d", "text": "10, 20, 30" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM158",
+        "questionText": "A shopkeeper professes to sell his goods at cost price but uses a weight of 960 grams for a kg weight. Find his gain percent.",
+        "options": [
+            { "id": "a", "text": "4%" },
+            { "id": "b", "text": "4 1/6%" },
+            { "id": "c", "text": "4 1/4%" },
+            { "id": "d", "text": "5%" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM159",
+        "questionText": "Find the least number which when divided by 6, 7, 8, 9, and 12 leaves the same remainder 1 in each case.",
+        "options": [
+            { "id": "a", "text": "504" },
+            { "id": "b", "text": "505" },
+            { "id": "c", "text": "503" },
+            { "id": "d", "text": "506" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM160",
+        "questionText": "A dealer sold a bicycle at a profit of 10%. Had he bought the bicycle at 10% less cost and sold it at a price ₹60 more, he would have gained 25%. The cost price of the bicycle was:",
+        "options": [
+            { "id": "a", "text": "₹2000" },
+            { "id": "b", "text": "₹2400" },
+            { "id": "c", "text": "₹2500" },
+            { "id": "d", "text": "₹2600" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM161",
+        "questionText": "The H.C.F. and L.C.M. of two numbers are 12 and 336 respectively. If one of the numbers is 84, the other number is:",
+        "options": [
+            { "id": "a", "text": "36" },
+            { "id": "b", "text": "48" },
+            { "id": "c", "text": "72" },
+            { "id": "d", "text": "96" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM162",
+        "questionText": "An article is sold at a certain price. By selling it at 2/3 of that price, one loses 10%. Find the gain percent at the original price.",
+        "options": [
+            { "id": "a", "text": "20%" },
+            { "id": "b", "text": "35%" },
+            { "id": "c", "text": "40%" },
+            { "id": "d", "text": "15%" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM163",
+        "questionText": "What is the least number which when doubled will be exactly divisible by 12, 18, 21 and 30?",
+        "options": [
+            { "id": "a", "text": "1260" },
+            { "id": "b", "text": "630" },
+            { "id": "c", "text": "196" },
+            { "id": "d", "text": "2520" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM164",
+        "questionText": "A shopkeeper allows a discount of 10% on the marked price. How much above the cost price must he mark his goods to gain 17%?",
+        "options": [
+            { "id": "a", "text": "20%" },
+            { "id": "b", "text": "27%" },
+            { "id": "c", "text": "30%" },
+            { "id": "d", "text": "18%" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM165",
+        "questionText": "Find the H.C.F. of 2/3, 8/9, 64/81, 10/27.",
+        "options": [
+            { "id": "a", "text": "2/81" },
+            { "id": "b", "text": "160/3" },
+            { "id": "c", "text": "10/81" },
+            { "id": "d", "text": "2/3" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM166",
+        "questionText": "A man buys an article for ₹27.50 and sells it for ₹28.60. Find his gain percent.",
+        "options": [
+            { "id": "a", "text": "2.5%" },
+            { "id": "b", "text": "3%" },
+            { "id": "c", "text": "4%" },
+            { "id": "d", "text": "5%" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM167",
+        "questionText": "Six bells commence tolling together and toll at intervals of 2, 4, 6, 8, 10 and 12 seconds respectively. In 30 minutes, how many times do they toll together? (Includes the initial toll)",
+        "options": [
+            { "id": "a", "text": "4" },
+            { "id": "b", "text": "10" },
+            { "id": "c", "text": "15" },
+            { "id": "d", "text": "16" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KM168",
+        "questionText": "If an article is sold for ₹178 at a loss of 11%, what should be its selling price in order to earn a profit of 11%?",
+        "options": [
+            { "id": "a", "text": "₹222.50" },
+            { "id": "b", "text": "₹267" },
+            { "id": "c", "text": "₹222" },
+            { "id": "d", "text": "₹220" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM169",
+        "questionText": "The L.C.M. of 1.08, 0.36 and 0.9 is:",
+        "options": [
+            { "id": "a", "text": "1.08" },
+            { "id": "b", "text": "0.9" },
+            { "id": "c", "text": "5.4" },
+            { "id": "d", "text": "10.8" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM170",
+        "questionText": "A dishonest dealer uses a scale of 90 cm instead of a meter scale and claims to sell at cost price. His profit percent is:",
+        "options": [
+            { "id": "a", "text": "9%" },
+            { "id": "b", "text": "10%" },
+            { "id": "c", "text": "11 1/9%" },
+            { "id": "d", "text": "12%" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM171",
+        "questionText": "Find the largest 4-digit number exactly divisible by 12, 15, 18 and 27.",
+        "options": [
+            { "id": "a", "text": "9690" },
+            { "id": "b", "text": "9720" },
+            { "id": "c", "text": "9930" },
+            { "id": "d", "text": "9960" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM172",
+        "questionText": "By selling 33 meters of cloth, a shopkeeper gains the cost price of 11 meters. Find the gain percent.",
+        "options": [
+            { "id": "a", "text": "25%" },
+            { "id": "b", "text": "33 1/3%" },
+            { "id": "c", "text": "50%" },
+            { "id": "d", "text": "11%" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM173",
+        "questionText": "The ratio of two numbers is 3:4 and their H.C.F is 4. Their L.C.M is:",
+        "options": [
+            { "id": "a", "text": "12" },
+            { "id": "b", "text": "16" },
+            { "id": "c", "text": "24" },
+            { "id": "d", "text": "48" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KM174",
+        "questionText": "A radio is sold for ₹990 at a profit of 10%. What would have been the actual profit or loss on it, had it been sold for ₹890?",
+        "options": [
+            { "id": "a", "text": "Loss ₹10" },
+            { "id": "b", "text": "Profit ₹10" },
+            { "id": "c", "text": "Loss ₹9" },
+            { "id": "d", "text": "Profit ₹9" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM175",
+        "questionText": "The least number which when divided by 12, 15, 20 and 54 leaves in each case a remainder of 8 is:",
+        "options": [
+            { "id": "a", "text": "540" },
+            { "id": "b", "text": "532" },
+            { "id": "c", "text": "548" },
+            { "id": "d", "text": "560" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM176",
+        "questionText": "A shopkeeper marks his goods 20% above the cost price and allows a discount of 10% on the marked price. His gain percent is:",
+        "options": [
+            { "id": "a", "text": "8%" },
+            { "id": "b", "text": "10%" },
+            { "id": "c", "text": "12%" },
+            { "id": "d", "text": "18%" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM177",
+        "questionText": "The product of two co-prime numbers is 117. Their L.C.M. should be:",
+        "options": [
+            { "id": "a", "text": "1" },
+            { "id": "b", "text": "117" },
+            { "id": "c", "text": "Equal to their H.C.F." },
+            { "id": "d", "text": "Cannot be calculated" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM178",
+        "questionText": "A man sold two flats for ₹ 6,75,958 each. On one he gains 16% while on the other he loses 16%. Find his gain or loss percent in the whole transaction.",
+        "options": [
+            { "id": "a", "text": "2.56% loss" },
+            { "id": "b", "text": "2.56% gain" },
+            { "id": "c", "text": "No profit, no loss" },
+            { "id": "d", "text": "16% loss" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM179",
+        "questionText": "Find the greatest number which divides 1305, 4665 and 6905, leaving the same remainder 25 in each case.",
+        "options": [
+            { "id": "a", "text": "50" },
+            { "id": "b", "text": "100" },
+            { "id": "c", "text": "110" },
+            { "id": "d", "text": "160" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KM180",
+        "questionText": "A book was sold for ₹27.50 with a profit of 10%. If it were sold for ₹25.75, then what would have been the percentage of profit or loss?",
+        "options": [
+            { "id": "a", "text": "Profit 2%" },
+            { "id": "b", "text": "Loss 3%" },
+            { "id": "c", "text": "Profit 3%" },
+            { "id": "d", "text": "Loss 2%" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM181",
+        "questionText": "Find the L.C.M. of 4.5, 0.009, 0.18.",
+        "options": [
+            { "id": "a", "text": "4.5" },
+            { "id": "b", "text": "0.009" },
+            { "id": "c", "text": "9" },
+            { "id": "d", "text": "0.18" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM182",
+        "questionText": "A cycle was purchased for ₹1600 and ₹400 was spent on its repairs. It was sold for ₹2400. Find the profit percent.",
+        "options": [
+            { "id": "a", "text": "15%" },
+            { "id": "b", "text": "20%" },
+            { "id": "c", "text": "25%" },
+            { "id": "d", "text": "30%" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM183",
+        "questionText": "The H.C.F. of two numbers is 23 and the other two factors in their L.C.M. are 13 and 14. The larger of the two numbers is:",
+        "options": [
+            { "id": "a", "text": "276" },
+            { "id": "b", "text": "299" },
+            { "id": "c", "text": "322" },
+            { "id": "d", "text": "345" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM184",
+        "questionText": "A shopkeeper bought 80 kg of sugar for ₹13.50 per kg. He mixed it with 120 kg of sugar costing ₹16 per kg. In order to make a profit of 16%, he must sell the mixture at:",
+        "options": [
+            { "id": "a", "text": "₹15 per kg" },
+            { "id": "b", "text": "₹16 per kg" },
+            { "id": "c", "text": "₹17.40 per kg" },
+            { "id": "d", "text": "₹18 per kg" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM185",
+        "questionText": "Find the least perfect square number which is exactly divisible by 3, 4, 5, 6 and 8.",
+        "options": [
+            { "id": "a", "text": "900" },
+            { "id": "b", "text": "1200" },
+            { "id": "c", "text": "2500" },
+            { "id": "d", "text": "3600" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KM186",
+        "questionText": "A man buys oranges at ₹5 a dozen and an equal number at ₹4 a dozen. He sells them at ₹5.50 a dozen and makes a profit of ₹50. How many oranges did he buy?",
+        "options": [
+            { "id": "a", "text": "30 dozens" },
+            { "id": "b", "text": "40 dozens" },
+            { "id": "c", "text": "50 dozens" },
+            { "id": "d", "text": "60 dozens" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM187",
+        "questionText": "The H.C.F. of (x² - 5x + 6) and (x² - 7x + 12) is:",
+        "options": [
+            { "id": "a", "text": "(x - 2)" },
+            { "id": "b", "text": "(x - 3)" },
+            { "id": "c", "text": "(x - 4)" },
+            { "id": "d", "text": "(x + 3)" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM188",
+        "questionText": "A reduction of 20% in the price of sugar enables a purchaser to obtain 4 kg more for ₹160. What is the original price per kg of sugar?",
+        "options": [
+            { "id": "a", "text": "₹8" },
+            { "id": "b", "text": "₹9" },
+            { "id": "c", "text": "₹10" },
+            { "id": "d", "text": "₹12" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM189",
+        "questionText": "Find the least number which when divided by 20, 25, 35 and 40 leaves remainders 14, 19, 29 and 34 respectively.",
+        "options": [
+            { "id": "a", "text": "1394" },
+            { "id": "b", "text": "1400" },
+            { "id": "c", "text": "1406" },
+            { "id": "d", "text": "1396" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM190",
+        "questionText": "A sells an article to B at a gain of 10%. B sells it to C at a gain of 5%. If C pays ₹462 for it, what did it cost A?",
+        "options": [
+            { "id": "a", "text": "₹400" },
+            { "id": "b", "text": "₹410" },
+            { "id": "c", "text": "₹420" },
+            { "id": "d", "text": "₹450" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM191",
+        "questionText": "The L.C.M. of two prime numbers x and y (where x > y) is 161. The value of 3y - x is:",
+        "options": [
+            { "id": "a", "text": "-2" },
+            { "id": "b", "text": "-1" },
+            { "id": "c", "text": "1" },
+            { "id": "d", "text": "2" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM192",
+        "questionText": "The marked price of a watch was ₹720. A man bought the same for ₹550.80 after getting two successive discounts, the first being 10%. What was the second discount rate?",
+        "options": [
+            { "id": "a", "text": "12%" },
+            { "id": "b", "text": "14%" },
+            { "id": "c", "text": "15%" },
+            { "id": "d", "text": "18%" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM193",
+        "questionText": "Find the greatest possible length which can be used to measure exactly the lengths 7 m, 3 m 85 cm, 12 m 95 cm.",
+        "options": [
+            { "id": "a", "text": "15 cm" },
+            { "id": "b", "text": "25 cm" },
+            { "id": "c", "text": "35 cm" },
+            { "id": "d", "text": "42 cm" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM194",
+        "questionText": "A shopkeeper sells an article at a loss of 12.5%. Had he sold it for ₹51.80 more, he would have earned a profit of 6%. The cost price of the article is:",
+        "options": [
+            { "id": "a", "text": "₹280" },
+            { "id": "b", "text": "₹300" },
+            { "id": "c", "text": "₹320" },
+            { "id": "d", "text": "₹350" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM195",
+        "questionText": "What is the greatest number of four digits which is divisible by 15, 25, 40 and 75?",
+        "options": [
+            { "id": "a", "text": "9000" },
+            { "id": "b", "text": "9400" },
+            { "id": "c", "text": "9600" },
+            { "id": "d", "text": "9800" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM196",
+        "questionText": "Sam purchased 20 dozen toys at the rate of ₹375 per dozen. He sold each one of them at the rate of ₹33. What was his percentage profit?",
+        "options": [
+            { "id": "a", "text": "3.5%" },
+            { "id": "b", "text": "4.5%" },
+            { "id": "c", "text": "5.6%" },
+            { "id": "d", "text": "6.5%" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM197",
+        "questionText": "Three pieces of timber 42 m, 49 m and 63 m long have to be divided into planks of the same length. What is the greatest possible length of each plank?",
+        "options": [
+            { "id": "a", "text": "7 m" },
+            { "id": "b", "text": "14 m" },
+            { "id": "c", "text": "1 m" },
+            { "id": "d", "text": "3 m" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM198",
+        "questionText": "A manufacturer sells an article to a wholesale dealer at a profit of 10%. The wholesale dealer sells it to a shopkeeper at 20% profit. The shopkeeper sells it to a customer for ₹56,100 at a loss of 15%. Find the cost price for the manufacturer.",
+        "options": [
+            { "id": "a", "text": "₹50000" },
+            { "id": "b", "text": "₹45000" },
+            { "id": "c", "text": "₹40000" },
+            { "id": "d", "text": "₹55000" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM199",
+        "questionText": "Find the H.C.F. of 513, 1134 and 1215.",
+        "options": [
+            { "id": "a", "text": "9" },
+            { "id": "b", "text": "18" },
+            { "id": "c", "text": "27" },
+            { "id": "d", "text": "3" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM200",
+        "questionText": "A fruit seller buys lemons at 2 for a rupee and sells them at 5 for three rupees. His gain percent is:",
+        "options": [
+            { "id": "a", "text": "10%" },
+            { "id": "b", "text": "15%" },
+            { "id": "c", "text": "20%" },
+            { "id": "d", "text": "25%" }
+        ],
+        "correctOptionId": "c"
+    },
+
+
+    {
+        "id": "KM201",
+        "questionText": "The roots of the quadratic equation x² - 13x + 36 = 0 represent the length and breadth (in cm) of a rectangle. What is the length of the diagonal of this rectangle?",
+        "options": [
+            { "id": "a", "text": "10 cm" },
+            { "id": "b", "text": "√105 cm" },
+            { "id": "c", "text": "√97 cm" },
+            { "id": "d", "text": "5 cm" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM202",
+        "questionText": "The circumference of a circle is 20π cm. If the radius of this circle is numerically equal to the common difference of an arithmetic progression whose first term is 3, what is the 5th term of the AP?",
+        "options": [
+            { "id": "a", "text": "43" },
+            { "id": "b", "text": "10" },
+            { "id": "c", "text": "33" },
+            { "id": "d", "text": "40" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM203",
+        "questionText": "A solid metal sphere of radius r is melted and recast into a cone with the same radius r. If the height of the cone is h, what is the value of h/r? (Volume of sphere = 4/3 πr³, Volume of cone = 1/3 πr²h)",
+        "options": [
+            { "id": "a", "text": "2" },
+            { "id": "b", "text": "3" },
+            { "id": "c", "text": "4" },
+            { "id": "d", "text": "1" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM204",
+        "questionText": "The point (k, 2k) lies on the line 3x + 2y = 14. This value of k represents the side length (in m) of a cube. What is the volume of the cube?",
+        "options": [
+            { "id": "a", "text": "8 m³" },
+            { "id": "b", "text": "14 m³" },
+            { "id": "c", "text": "27 m³" },
+            { "id": "d", "text": "64 m³" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM205",
+        "questionText": "If sin θ = 3/5 for an acute angle θ, and the value of 5 cos θ represents the radius (in cm) of a cylinder whose height is 10 cm, find the volume of the cylinder. (Use π = 22/7 or 3.14).",
+        "options": [
+            { "id": "a", "text": "160π cm³" },
+            { "id": "b", "text": "400π cm³" },
+            { "id": "c", "text": "160 cm³" },
+            { "id": "d", "text": "250π cm³" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM206",
+        "questionText": "The mean of three numbers a, b, c is 15. If a and b are the roots of the equation x² - 18x + 72 = 0, what is the value of c?",
+        "options": [
+            { "id": "a", "text": "9" },
+            { "id": "b", "text": "15" },
+            { "id": "c", "text": "21" },
+            { "id": "d", "text": "27" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KM207",
+        "questionText": "A square has a perimeter of 48 cm. A circle is drawn such that its diameter is equal to the side length of the square. What is the area of the circle?",
+        "options": [
+            { "id": "a", "text": "144π cm²" },
+            { "id": "b", "text": "36π cm²" },
+            { "id": "c", "text": "12π cm²" },
+            { "id": "d", "text": "24π cm²" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM208",
+        "questionText": "The distance between points A(2, 3) and B(x, -1) is 5 units. The positive value of x represents the slant height (in cm) of a cone whose radius is 3 cm. What is the volume of the cone? (Volume = 1/3 πr²h)",
+        "options": [
+            { "id": "a", "text": "9π cm³" },
+            { "id": "b", "text": "12π cm³" },
+            { "id": "c", "text": "15π cm³" },
+            { "id": "d", "text": "5π cm³" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM209",
+        "questionText": "If (a+b)² = 100 and (a-b)² = 36, the positive value of √ab represents the length of an edge of a cube. Find the total surface area of the cube.",
+        "options": [
+            { "id": "a", "text": "64 cm²" },
+            { "id": "b", "text": "96 cm²" },
+            { "id": "c", "text": "16 cm²" },
+            { "id": "d", "text": "128 cm²" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM210",
+        "questionText": "The sum of the first n terms of an AP is given by S_n = 2n² + 3n. The n-th term, a_n, represents the area of an equilateral triangle (in cm²) when n=3. What is the side length of this equilateral triangle? (Area = (√3/4) * side²)",
+        "options": [
+            { "id": "a", "text": "√17 cm" },
+            { "id": "b", "text": "√(68/√3) cm" },
+            { "id": "c", "text": "17 cm" },
+            { "id": "d", "text": "√(17√3 / 4) cm" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM211",
+        "questionText": "A number is chosen at random from the integers 1 to 10. The probability that the number chosen is a prime number is P. If 10P represents the height (in cm) of a cuboid with length 5 cm and breadth 3 cm, find its volume.",
+        "options": [
+            { "id": "a", "text": "60 cm³" },
+            { "id": "b", "text": "40 cm³" },
+            { "id": "c", "text": "50 cm³" },
+            { "id": "d", "text": "75 cm³" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM212",
+        "questionText": "The line y = mx + c passes through (0, 5) and (3, 14). The value m+c represents the radius (in cm) of a sphere. What is the surface area of the sphere? (Surface Area = 4πr²)",
+        "options": [
+            { "id": "a", "text": "64π cm²" },
+            { "id": "b", "text": "256π cm²" },
+            { "id": "c", "text": "16π cm²" },
+            { "id": "d", "text": "100π cm²" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM213",
+        "questionText": "In a right-angled triangle, the hypotenuse is 25 cm and one side is 7 cm. The length of the third side (in cm) is equal to the diameter of a circle. Find the circumference of the circle.",
+        "options": [
+            { "id": "a", "text": "24π cm" },
+            { "id": "b", "text": "7π cm" },
+            { "id": "c", "text": "25π cm" },
+            { "id": "d", "text": "12π cm" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM214",
+        "questionText": "If x = √3 + √2, then the value of x + 1/x is k. If k represents the area of a square (in m²), what is the perimeter of the square?",
+        "options": [
+            { "id": "a", "text": "8√3 m" },
+            { "id": "b", "text": "4√6 m" },
+            { "id": "c", "text": "8√6 m" },
+            { "id": "d", "text": "4√3 m" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM215",
+        "questionText": "The volume of a cube is 216 cm³. The side length of this cube represents the height (in cm) of a cylinder whose base area is 100π cm². What is the volume of the cylinder?",
+        "options": [
+            { "id": "a", "text": "600π cm³" },
+            { "id": "b", "text": "2160π cm³" },
+            { "id": "c", "text": "1296π cm³" },
+            { "id": "d", "text": "3600π cm³" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM216",
+        "questionText": "The HCF of two numbers is 11 and their LCM is 7700. If one number is 275, the other number y represents the area (in cm²) of a sector of a circle with radius 14 cm. Find the angle of the sector (in degrees). (Area of sector = (θ/360) * πr², use π=22/7)",
+        "options": [
+            { "id": "a", "text": "180°" },
+            { "id": "b", "text": "90°" },
+            { "id": "c", "text": "210°" },
+            { "id": "d", "text": "120°" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM217",
+        "questionText": "A triangle with vertices A(0,0), B(6,0), and C(3,4) has area A. This area A (in cm²) is numerically equal to the curved surface area of a cone whose radius is 3 cm. Find the slant height (l) of the cone. (CSA of cone = πrl)",
+        "options": [
+            { "id": "a", "text": "4/π cm" },
+            { "id": "b", "text": "12/π cm" },
+            { "id": "c", "text": "4 cm" },
+            { "id": "d", "text": "12 cm" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM218",
+        "questionText": "If tan θ = 4/3, the value 5 sin θ represents the side length (in cm) of a rhombus whose height is 3 cm. What is the area of the rhombus? (Area = base * height)",
+        "options": [
+            { "id": "a", "text": "12 cm²" },
+            { "id": "b", "text": "9 cm²" },
+            { "id": "c", "text": "15 cm²" },
+            { "id": "d", "text": "16 cm²" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM219",
+        "questionText": "The roots of x² - 7x + 10 = 0 are α and β. The value α² + β² represents the volume of a sphere (in cm³). What is the radius of the sphere? (Volume = 4/3 πr³)",
+        "options": [
+            { "id": "a", "text": "³√(29*3 / 4π) cm" },
+            { "id": "b", "text": "³√(29 / π) cm" },
+            { "id": "c", "text": "³√(87 / 4π) cm" },
+            { "id": "d", "text": "³√(29 * 4 / 3π) cm" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM220",
+        "questionText": "A shopkeeper mixes two types of tea, one costing ₹180/kg and another ₹280/kg, in the ratio 5:3. The cost price per kg of the mixture P (in ₹) is used as the measure of the hypotenuse of a right-angled triangle where one angle is 60°. Find the length of the side adjacent to the 60° angle. (Cost of mixture = (m1*c1 + m2*c2)/(m1+m2))",
+        "options": [
+            { "id": "a", "text": "107.5" },
+            { "id": "b", "text": "215" },
+            { "id": "c", "text": "215√3 / 2" },
+            { "id": "d", "text": "215/2" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KM221",
+        "questionText": "The midpoint of the line segment joining P(a, 7) and Q(-3, b) is M(1, 5). The value a+b represents the area (in cm²) of a circle. What is its diameter?",
+        "options": [
+            { "id": "a", "text": "√(8/π) cm" },
+            { "id": "b", "text": "4√(2/π) cm" },
+            { "id": "c", "text": "8 cm" },
+            { "id": "d", "text": "2√(2/π) cm" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM222",
+        "questionText": "The sum of ages of a father and son is 50 years. Five years ago, the product of their ages was 175. The father's current age F (in years) represents the surface area of a cube (in cm²). What is the volume of the cube? (Surface Area = 6s²)",
+        "options": [
+            { "id": "a", "text": "(35/6)³ cm³" },
+            { "id": "b", "text": "35√35 / (6√6) cm³" },
+            { "id": "c", "text": "(√35/6)³ cm³" },
+            { "id": "d", "text": "35 cm³" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM223",
+        "questionText": "A number x is such that x = 0.121212.... When x is expressed as a fraction p/q in simplest form, the value p+q represents the length (in cm) of the base of a triangle whose area is 115 cm² and height is 10 cm. Is this correct?",
+        "options": [
+            { "id": "a", "text": "Yes, the base length matches p+q." },
+            { "id": "b", "text": "No, the base length required is 23 cm, not p+q." },
+            { "id": "c", "text": "No, the base length required is 11.5 cm, not p+q." },
+            { "id": "d", "text": "No, the base length required is 45 cm, not p+q." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM224",
+        "questionText": "A bag contains 3 red balls and 5 blue balls. The probability P of drawing a blue ball is calculated. If 1 / P represents the ratio Area(Circle) / Circumference(Circle) for a given circle, what is the radius of that circle?",
+        "options": [
+            { "id": "a", "text": "16/5 units" },
+            { "id": "b", "text": "8/5 units" },
+            { "id": "c", "text": "5/4 units" },
+            { "id": "d", "text": "5/8 units" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM225",
+        "questionText": "The value of k for which the quadratic equation kx² - 6x + 1 = 0 has equal roots is found. This value k represents the volume of a cuboid (in m³) whose dimensions are in the ratio 1:2:3. Find the length of the longest side of the cuboid.",
+        "options": [
+            { "id": "a", "text": "³√(9/6) m" },
+            { "id": "b", "text": "3 * ³√(9/6) m" },
+            { "id": "c", "text": "³√(27/2) m" },
+            { "id": "d", "text": "3 * ³√(3/2) m" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KM226",
+        "questionText": "In triangle ABC, angle B = 90°, AB = 8 cm, BC = 15 cm. AC is calculated. The value (AC - 10) represents the radius of a sector (in cm) with an angle of 60°. Find the area of the sector.",
+        "options": [
+            { "id": "a", "text": "49π/6 cm²" },
+            { "id": "b", "text": "7π/6 cm²" },
+            { "id": "c", "text": "17π/6 cm²" },
+            { "id": "d", "text": "84.5π cm²" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM227",
+        "questionText": "If 2^x = 8^(y+1) and 9^y = 3^(x-9). The value x+y represents the perimeter (in cm) of an equilateral triangle. What is the area of this triangle?",
+        "options": [
+            { "id": "a", "text": "81√3 / 4 cm²" },
+            { "id": "b", "text": "27√3 / 4 cm²" },
+            { "id": "c", "text": "729√3 / 4 cm²" },
+            { "id": "d", "text": "243√3 / 4 cm²" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM228",
+        "questionText": "The volume of a cylinder is 3080 cm³ and its height is 20 cm. The radius r (in cm) of the cylinder is calculated (use π=22/7). This radius r is then used as the side length of a square. Find the length of the diagonal of the square.",
+        "options": [
+            { "id": "a", "text": "7 cm" },
+            { "id": "b", "text": "7√2 cm" },
+            { "id": "c", "text": "14 cm" },
+            { "id": "d", "text": "14√2 cm" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM229",
+        "questionText": "The coordinates of the vertices of a triangle are (1,2), (3,8) and (5,2). The area A of this triangle is calculated. The value √A represents the common ratio r of a geometric progression whose first term is 2. Find the 4th term of the GP.",
+        "options": [
+            { "id": "a", "text": "8√2" },
+            { "id": "b", "text": "48" },
+            { "id": "c", "text": "32√2" },
+            { "id": "d", "text": "64" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM230",
+        "questionText": "A boat goes 30 km upstream and 44 km downstream in 10 hours. It can go 40 km upstream and 55 km downstream in 13 hours. The speed of the boat in still water b (in km/hr) represents the slant height of a cone whose radius is 6 km. Find the curved surface area of the cone.",
+        "options": [
+            { "id": "a", "text": "48π km²" },
+            { "id": "b", "text": "66π km²" },
+            { "id": "c", "text": "30π km²" },
+            { "id": "d", "text": "18π km²" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM231",
+        "questionText": "Simplify (√5 + √3) / (√5 - √3) = a + b√15. The value a+b represents the number of sides n of a regular polygon whose interior angle is 140°. Find n.",
+        "options": [
+            { "id": "a", "text": "5" },
+            { "id": "b", "text": "9" },
+            { "id": "c", "text": "10" },
+            { "id": "d", "text": "8" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM232",
+        "questionText": "The mode of the data set {3, 5, x, 6, 5, 3, 7, x, 8, 3} is 3. The median M of this data set represents the diameter (in cm) of a sphere. Find the volume of the sphere. (Volume = 4/3 πr³)",
+        "options": [
+            { "id": "a", "text": "36π cm³" },
+            { "id": "b", "text": "(125/6)π cm³" },
+            { "id": "c", "text": "250π/3 cm³" },
+            { "id": "d", "text": "(1372/3)π cm³" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM233",
+        "questionText": "If sin A = 1/2 and cos B = √3/2 (A and B are acute), the value A+B (in degrees) represents the area of a trapezium (in cm²) whose parallel sides are 10 cm and 8 cm. Find the height of the trapezium. (Area = 1/2 * (sum of parallel sides) * h)",
+        "options": [
+            { "id": "a", "text": "5 cm" },
+            { "id": "b", "text": "10 cm" },
+            { "id": "c", "text": "15 cm" },
+            { "id": "d", "text": "20 cm" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM234",
+        "questionText": "The points A(4,7), B(p,3) and C(7,3) are vertices of a right triangle, right-angled at B. The value of p is found. This value p represents the radius (in cm) of a hemispherical bowl. Find the volume of the bowl. (Volume of hemisphere = 2/3 πr³)",
+        "options": [
+            { "id": "a", "text": "128π/3 cm³" },
+            { "id": "b", "text": "64π/3 cm³" },
+            { "id": "c", "text": "256π/3 cm³" },
+            { "id": "d", "text": "512π/3 cm³" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM235",
+        "questionText": "Solve for x: √(2x+9) + x = 13. The positive solution x represents the length of the base (in cm) of an isosceles triangle whose equal sides are 25 cm. Find the area of the triangle.",
+        "options": [
+            { "id": "a", "text": "300 cm²" },
+            { "id": "b", "text": "240 cm²" },
+            { "id": "c", "text": "120 cm²" },
+            { "id": "d", "text": "250 cm²" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM236",
+        "questionText": "The sum of squares of two consecutive positive integers is 365. The larger integer N represents the total surface area (in m²) of a solid cylinder whose radius is 3 m. Find the height of the cylinder. (TSA = 2πr² + 2πrh)",
+        "options": [
+            { "id": "a", "text": "(14 - 18π) / 6π m" },
+            { "id": "b", "text": "(14 - 9π) / 3π m" },
+            { "id": "c", "text": "14 / (6π) m" },
+            { "id": "d", "text": "Cannot be determined / Negative height" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KM237",
+        "questionText": "A card is drawn from a well-shuffled deck of 52 cards. The probability P of drawing a King or a Queen is calculated. The value 13 * P represents the side length (in cm) of an equilateral triangle. Find its height.",
+        "options": [
+            { "id": "a", "text": "√3 cm" },
+            { "id": "b", "text": "2√3 cm" },
+            { "id": "c", "text": "4√3 cm" },
+            { "id": "d", "text": "3√3 cm" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM238",
+        "questionText": "The ratio of the volumes of two spheres is 8:27. The ratio of their surface areas is R. The value √(R) (using the square root of the numerical ratio value, e.g., if R is 4:9, use √(4/9) = 2/3) represents cos θ for an angle θ in a right triangle. Find tan θ.",
+        "options": [
+            { "id": "a", "text": "√5 / 2" },
+            { "id": "b", "text": "3/√5" },
+            { "id": "c", "text": "2/√5" },
+            { "id": "d", "text": "√5 / 3" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM239",
+        "questionText": "The radius of a circle is 10 cm. The angle subtended by a chord at the centre is 90°. The area of the minor segment A (in cm²) is calculated. The value A/π (considering only the coefficient of π in A) represents the n-th term of the sequence 3, 7, 11,... Find n.",
+        "options": [
+          { "id": "a", "text": "6" },
+          { "id": "b", "text": "7" },
+          { "id": "c", "text": "25/π - 50/π² (approx 1)" },
+          { "id": "d", "text": "Cannot determine / Depends on π value" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM240",
+        "questionText": "A train travels 360 km at a uniform speed. If the speed had been 5 km/hr more, it would have taken 1 hour less. The original speed s (in km/hr) represents the area of the base (in cm²) of a cone whose volume is 480 cm³. Find the height of the cone.",
+        "options": [
+            { "id": "a", "text": "12 cm" },
+            { "id": "b", "text": "40 cm" },
+            { "id": "c", "text": "36 cm" },
+            { "id": "d", "text": "10 cm" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM241",
+        "questionText": "If x = 2 + √3, the value x² + 1/x² is calculated. Let this value be V. V represents the volume (in m³) of water in a cylindrical tank of radius 1 m. Find the depth of the water. (Volume = πr²h)",
+        "options": [
+            { "id": "a", "text": "14/π m" },
+            { "id": "b", "text": "7/π m" },
+            { "id": "c", "text": "14 m" },
+            { "id": "d", "text": "28/π m" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM242",
+        "questionText": "Three metallic spheres of radii 6 cm, 8 cm, and 10 cm are melted to form a single solid sphere. The radius R (in cm) of the new sphere represents the length of the hypotenuse of an isosceles right-angled triangle. Find the area of this triangle.",
+        "options": [
+            { "id": "a", "text": "36 cm²" },
+            { "id": "b", "text": "72 cm²" },
+            { "id": "c", "text": "144 cm²" },
+            { "id": "d", "text": "24 cm²" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM243",
+        "questionText": "The coordinates of the centroid of a triangle with vertices (7, 5), (5, 7), and (x, y) are (6, 6). The value x+y represents the sum of the first n terms of the AP 2, 5, 8,... Find n. (S_n = n/2 * [2a + (n-1)d])",
+        "options": [
+            { "id": "a", "text": "3" },
+            { "id": "b", "text": "4" },
+            { "id": "c", "text": "5" },
+            { "id": "d", "text": "6" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM244",
+        "questionText": "Find the value of k if x-1 is a factor of 4x³ + 3x² - 4x + k. This value k represents the curved surface area (in cm²) of a cylinder whose height is 5 cm. Find the radius of the cylinder. (CSA = 2πrh)",
+        "options": [
+            { "id": "a", "text": "-3 / (10π) cm" },
+            { "id": "b", "text": "3 / (10π) cm" },
+            { "id": "c", "text": "Radius is -3 cm" },
+            { "id": "d", "text": "Radius cannot be determined / Invalid CSA" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KM245",
+        "questionText": "Two dice are thrown simultaneously. The probability P that the sum of the numbers is a multiple of 4 is calculated. The value 1/P represents the ratio of the Total Surface Area to the Lateral Surface Area of a cube. Is this correct? (TSA = 6s², LSA = 4s²)",
+        "options": [
+            { "id": "a", "text": "Yes, 1/P = 3/2 which matches the ratio." },
+            { "id": "b", "text": "No, 1/P = 4, ratio is 3/2." },
+            { "id": "c", "text": "No, 1/P = 36/9 = 4, ratio is 3/2." },
+            { "id": "d", "text": "No, P = 1/4, 1/P = 4, ratio is 3/2." }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KM246",
+        "questionText": "If the length of a rectangle is increased by 20%, by what percentage must the width be decreased so that the area remains unchanged?",
+        "options": [
+            { "id": "a", "text": "20%" },
+            { "id": "b", "text": "25%" },
+            { "id": "c", "text": "16.67%" },
+            { "id": "d", "text": "15%" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM247",
+        "questionText": "If the radius of a circle is decreased by 10%, by what percentage does its area decrease?",
+        "options": [
+            { "id": "a", "text": "10%" },
+            { "id": "b", "text": "19%" },
+            { "id": "c", "text": "20%" },
+            { "id": "d", "text": "21%" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM248",
+        "questionText": "A mixture contains milk and water in the ratio 5:2. If there are 10 liters of water, how many liters of milk are there?",
+        "options": [
+            { "id": "a", "text": "20 liters" },
+            { "id": "b", "text": "25 liters" },
+            { "id": "c", "text": "15 liters" },
+            { "id": "d", "text": "50 liters" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM249",
+        "questionText": "A salary of $50,000 is increased by 8%. What is the new salary?",
+        "options": [
+            { "id": "a", "text": "$50,800" },
+            { "id": "b", "text": "$54,000" },
+            { "id": "c", "text": "$58,000" },
+            { "id": "d", "text": "$50,400" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM250",
+        "questionText": "A shop sells an item for $80 after a 20% discount. What was the original price?",
+        "options": [
+            { "id": "a", "text": "$96" },
+            { "id": "b", "text": "$64" },
+            { "id": "c", "text": "$100" },
+            { "id": "d", "text": "$120" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM251",
+        "questionText": "If the side of a cube is increased by 10%, by what percentage does its volume increase?",
+        "options": [
+            { "id": "a", "text": "10%" },
+            { "id": "b", "text": "21%" },
+            { "id": "c", "text": "30%" },
+            { "id": "d", "text": "33.1%" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KM252",
+        "questionText": "Two numbers are in the ratio 3:4. If their sum is 84, find the smaller number.",
+        "options": [
+            { "id": "a", "text": "21" },
+            { "id": "b", "text": "28" },
+            { "id": "c", "text": "36" },
+            { "id": "d", "text": "48" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM253",
+        "questionText": "In a class of 40 students, 60% are girls. How many boys are there in the class?",
+        "options": [
+            { "id": "a", "text": "24" },
+            { "id": "b", "text": "16" },
+            { "id": "c", "text": "20" },
+            { "id": "d", "text": "18" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM254",
+        "questionText": "If A is 25% more than B, then B is what percentage less than A?",
+        "options": [
+            { "id": "a", "text": "25%" },
+            { "id": "b", "text": "20%" },
+            { "id": "c", "text": "15%" },
+            { "id": "d", "text": "30%" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM255",
+        "questionText": "The radius of a sphere is doubled. By what factor does its surface area increase?",
+        "options": [
+            { "id": "a", "text": "2" },
+            { "id": "b", "text": "4" },
+            { "id": "c", "text": "8" },
+            { "id": "d", "text": "6" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM256",
+        "questionText": "Solve for x: 3x - 7 = 14",
+        "options": [
+            { "id": "a", "text": "3" },
+            { "id": "b", "text": "5" },
+            { "id": "c", "text": "7" },
+            { "id": "d", "text": "21/3" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM257",
+        "questionText": "Solve for y: y/4 + 2 = 5",
+        "options": [
+            { "id": "a", "text": "3" },
+            { "id": "b", "text": "8" },
+            { "id": "c", "text": "12" },
+            { "id": "d", "text": "20" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM258",
+        "questionText": "Simplify: (2x²)(5x³)",
+        "options": [
+            { "id": "a", "text": "7x⁵" },
+            { "id": "b", "text": "10x⁶" },
+            { "id": "c", "text": "10x⁵" },
+            { "id": "d", "text": "7x⁶" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM259",
+        "questionText": "Expand: (a + 3)²",
+        "options": [
+            { "id": "a", "text": "a² + 9" },
+            { "id": "b", "text": "a² + 3a + 9" },
+            { "id": "c", "text": "a² + 6a + 9" },
+            { "id": "d", "text": "a² + 6a + 6" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM260",
+        "questionText": "Factorize: x² - 9",
+        "options": [
+            { "id": "a", "text": "(x - 9)(x + 1)" },
+            { "id": "b", "text": "(x - 3)(x - 3)" },
+            { "id": "c", "text": "(x - 3)(x + 3)" },
+            { "id": "d", "text": "(x + 9)(x - 1)" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM261",
+        "questionText": "If f(x) = 2x² - x + 1, find f(-2).",
+        "options": [
+            { "id": "a", "text": "7" },
+            { "id": "b", "text": "9" },
+            { "id": "c", "text": "11" },
+            { "id": "d", "text": "-5" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM262",
+        "questionText": "Solve the quadratic equation: x² - 6x + 8 = 0",
+        "options": [
+            { "id": "a", "text": "x=-2 or x=-4" },
+            { "id": "b", "text": "x=2 or x=4" },
+            { "id": "c", "text": "x=-2 or x=4" },
+            { "id": "d", "text": "x=2 or x=-4" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM263",
+        "questionText": "What is the value of 5⁰ + 3⁻¹?",
+        "options": [
+            { "id": "a", "text": "1" },
+            { "id": "b", "text": "6" },
+            { "id": "c", "text": "1/3" },
+            { "id": "d", "text": "4/3" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KM264",
+        "questionText": "Simplify: √(16x⁴)",
+        "options": [
+            { "id": "a", "text": "4x²" },
+            { "id": "b", "text": "8x²" },
+            { "id": "c", "text": "4x" },
+            { "id": "d", "text": "16x²" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM265",
+        "questionText": "If a + b = 10 and ab = 21, find a² + b².",
+        "options": [
+            { "id": "a", "text": "100" },
+            { "id": "b", "text": "42" },
+            { "id": "c", "text": "58" },
+            { "id": "d", "text": "79" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM266",
+        "questionText": "Find the area of a triangle with base 10 cm and height 6 cm.",
+        "options": [
+            { "id": "a", "text": "60 cm²" },
+            { "id": "b", "text": "30 cm²" },
+            { "id": "c", "text": "16 cm²" },
+            { "id": "d", "text": "32 cm²" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM267",
+        "questionText": "Find the circumference of a circle with radius 7 cm (Use π = 22/7).",
+        "options": [
+            { "id": "a", "text": "22 cm" },
+            { "id": "b", "text": "154 cm" },
+            { "id": "c", "text": "44 cm" },
+            { "id": "d", "text": "49 cm" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM268",
+        "questionText": "Find the volume of a cuboid with length 5m, width 3m, and height 2m.",
+        "options": [
+            { "id": "a", "text": "10 m³" },
+            { "id": "b", "text": "15 m³" },
+            { "id": "c", "text": "30 m³" },
+            { "id": "d", "text": "62 m³" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM269",
+        "questionText": "What is the length of the diagonal of a square with side length 5 cm?",
+        "options": [
+            { "id": "a", "text": "5 cm" },
+            { "id": "b", "text": "10 cm" },
+            { "id": "c", "text": "5√2 cm" },
+            { "id": "d", "text": "2√5 cm" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM270",
+        "questionText": "Find the area of a trapezium with parallel sides 8 cm and 12 cm, and height 5 cm.",
+        "options": [
+            { "id": "a", "text": "100 cm²" },
+            { "id": "b", "text": "50 cm²" },
+            { "id": "c", "text": "40 cm²" },
+            { "id": "d", "text": "60 cm²" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM271",
+        "questionText": "What is the sum of interior angles of a hexagon?",
+        "options": [
+            { "id": "a", "text": "360°" },
+            { "id": "b", "text": "540°" },
+            { "id": "c", "text": "720°" },
+            { "id": "d", "text": "1080°" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM272",
+        "questionText": "Find the volume of a cylinder with radius 3 cm and height 10 cm (Leave π in the answer).",
+        "options": [
+            { "id": "a", "text": "30π cm³" },
+            { "id": "b", "text": "60π cm³" },
+            { "id": "c", "text": "90π cm³" },
+            { "id": "d", "text": "300π cm³" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM273",
+        "questionText": "In a right-angled triangle, the two shorter sides are 9 cm and 12 cm. Find the length of the hypotenuse.",
+        "options": [
+            { "id": "a", "text": "10 cm" },
+            { "id": "b", "text": "15 cm" },
+            { "id": "c", "text": "21 cm" },
+            { "id": "d", "text": "25 cm" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM274",
+        "questionText": "Find the surface area of a cube with edge length 4 cm.",
+        "options": [
+            { "id": "a", "text": "16 cm²" },
+            { "id": "b", "text": "64 cm²" },
+            { "id": "c", "text": "96 cm²" },
+            { "id": "d", "text": "24 cm²" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM275",
+        "questionText": "If two angles of a triangle are 50° and 70°, what is the third angle?",
+        "options": [
+            { "id": "a", "text": "50°" },
+            { "id": "b", "text": "60°" },
+            { "id": "c", "text": "70°" },
+            { "id": "d", "text": "120°" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM276",
+        "questionText": "Find the average (mean) of the numbers: 15, 20, 25, 30.",
+        "options": [
+            { "id": "a", "text": "20" },
+            { "id": "b", "text": "22" },
+            { "id": "c", "text": "22.5" },
+            { "id": "d", "text": "25" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM277",
+        "questionText": "What is the Least Common Multiple (LCM) of 12 and 18?",
+        "options": [
+            { "id": "a", "text": "6" },
+            { "id": "b", "text": "18" },
+            { "id": "c", "text": "36" },
+            { "id": "d", "text": "72" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM278",
+        "questionText": "What is the Highest Common Factor (HCF) of 24 and 36?",
+        "options": [
+            { "id": "a", "text": "6" },
+            { "id": "b", "text": "12" },
+            { "id": "c", "text": "24" },
+            { "id": "d", "text": "72" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM279",
+        "questionText": "Calculate: 15% of 200.",
+        "options": [
+            { "id": "a", "text": "15" },
+            { "id": "b", "text": "20" },
+            { "id": "c", "text": "30" },
+            { "id": "d", "text": "35" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM280",
+        "questionText": "Convert the fraction 3/8 to a decimal.",
+        "options": [
+            { "id": "a", "text": "0.125" },
+            { "id": "b", "text": "0.3" },
+            { "id": "c", "text": "0.375" },
+            { "id": "d", "text": "0.83" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM281",
+        "questionText": "What is the next term in the sequence: 2, 5, 8, 11, ...?",
+        "options": [
+            { "id": "a", "text": "13" },
+            { "id": "b", "text": "14" },
+            { "id": "c", "text": "15" },
+            { "id": "d", "text": "12" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM282",
+        "questionText": "Is the number 123 divisible by 3?",
+        "options": [
+            { "id": "a", "text": "Yes" },
+            { "id": "b", "text": "No" },
+            { "id": "c", "text": "Only if it's even" },
+            { "id": "d", "text": "Cannot be determined" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KM283",
+        "questionText": "Find the simple interest on $1000 at 5% per annum for 3 years.",
+        "options": [
+            { "id": "a", "text": "$50" },
+            { "id": "b", "text": "$100" },
+            { "id": "c", "text": "$150" },
+            { "id": "d", "text": "$300" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM284",
+        "questionText": "Evaluate: |-5| + |3 - 7|",
+        "options": [
+            { "id": "a", "text": "1" },
+            { "id": "b", "text": "9" },
+            { "id": "c", "text": "-9" },
+            { "id": "d", "text": "5" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM285",
+        "questionText": "Write 0.00056 in standard scientific notation.",
+        "options": [
+            { "id": "a", "text": "5.6 x 10⁴" },
+            { "id": "b", "text": "5.6 x 10⁻³" },
+            { "id": "c", "text": "5.6 x 10⁻⁴" },
+            { "id": "d", "text": "0.56 x 10⁻³" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM286",
+        "questionText": "A standard six-sided die is rolled. What is the probability of rolling an even number?",
+        "options": [
+            { "id": "a", "text": "1/6" },
+            { "id": "b", "text": "1/3" },
+            { "id": "c", "text": "1/2" },
+            { "id": "d", "text": "2/3" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM287",
+        "questionText": "A bag contains 3 red balls and 7 blue balls. What is the probability of picking a red ball?",
+        "options": [
+            { "id": "a", "text": "3/7" },
+            { "id": "b", "text": "7/10" },
+            { "id": "c", "text": "3/10" },
+            { "id": "d", "text": "1/3" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM288",
+        "questionText": "Find the median of the data set: 3, 8, 5, 2, 8.",
+        "options": [
+            { "id": "a", "text": "8" },
+            { "id": "b", "text": "3" },
+            { "id": "c", "text": "5" },
+            { "id": "d", "text": "5.2" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM289",
+        "questionText": "Find the mode of the data set: 2, 4, 6, 4, 7, 4, 8.",
+        "options": [
+            { "id": "a", "text": "2" },
+            { "id": "b", "text": "4" },
+            { "id": "c", "text": "6" },
+            { "id": "d", "text": "7" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM290",
+        "questionText": "If a coin is tossed 3 times, what is the probability of getting exactly two heads?",
+        "options": [
+            { "id": "a", "text": "1/8" },
+            { "id": "b", "text": "2/8" },
+            { "id": "c", "text": "3/8" },
+            { "id": "d", "text": "4/8" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM291",
+        "questionText": "A car travels at 60 km/h for 2.5 hours. How far does it travel?",
+        "options": [
+            { "id": "a", "text": "120 km" },
+            { "id": "b", "text": "150 km" },
+            { "id": "c", "text": "180 km" },
+            { "id": "d", "text": "24 km" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM292",
+        "questionText": "If 5 apples cost $2.50, how much do 12 apples cost?",
+        "options": [
+            { "id": "a", "text": "$5.00" },
+            { "id": "b", "text": "$6.00" },
+            { "id": "c", "text": "$7.50" },
+            { "id": "d", "text": "$12.00" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM293",
+        "questionText": "John is 5 years older than his sister. If the sum of their ages is 35, how old is John?",
+        "options": [
+            { "id": "a", "text": "15 years old" },
+            { "id": "b", "text": "18 years old" },
+            { "id": "c", "text": "20 years old" },
+            { "id": "d", "text": "25 years old" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KM294",
+        "questionText": "Machine A can do a job in 3 hours, Machine B in 6 hours. How long will it take them working together?",
+        "options": [
+            { "id": "a", "text": "1.5 hours" },
+            { "id": "b", "text": "2 hours" },
+            { "id": "c", "text": "4.5 hours" },
+            { "id": "d", "text": "9 hours" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KM295",
+        "questionText": "If the height of a cylinder is increased by 5%, by approximately what percentage should the radius be decreased to keep the volume the same?",
+        "options": [
+            { "id": "a", "text": "5%" },
+            { "id": "b", "text": "2.4%" },
+            { "id": "c", "text": "2.5%" },
+            { "id": "d", "text": "4.8%" }
+        ],
+        "correctOptionId": "c"
+    }
+
     ],
     "English": [
         // 12 English Questions (Sample - reuse/modify or add new)
