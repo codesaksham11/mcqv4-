@@ -7234,20 +7234,11001 @@ export const questionBank = {
     ],
     "English": [
         // 12 English Questions (Sample - reuse/modify or add new)
-        { id: "KE001", questionText: "Choose the word with the opposite meaning of 'ancient'.", options: [{ id: "a", text: "Old" }, { id: "b", text: "Modern" }, { id: "c", text: "Past" }, { id: "d", text: "Historic" }], correctOptionId: "b" },
-        { id: "KE002", questionText: "Which is the correct spelling?", options: [{ id: "a", text: "Separate" }, { id: "b", text: "Seperate" }, { id: "c", text: "Saperate" }, { id: "d", text: "Sepparate" }], correctOptionId: "a" },
-        { id: "KE003", questionText: "Identify the type of sentence: 'Stop!'", options: [{ id: "a", text: "Declarative" }, { id: "b", text: "Interrogative" }, { id: "c", text: "Imperative" }, { id: "d", text: "Exclamatory" }], correctOptionId: "c" }, // Could also be exclamatory depending on context
-        { id: "KE004", questionText: "What is a group of lions called?", options: [{ id: "a", text: "Herd" }, { id: "b", text: "Pack" }, { id: "c", text: "Pride" }, { id: "d", text: "Flock" }], correctOptionId: "c" },
-        // Add 8 more English questions...
-        { id: "KE005", questionText: "Placeholder Eng Q5?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "a" },
-        { id: "KE006", questionText: "Placeholder Eng Q6?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "b" },
-        { id: "KE007", questionText: "Placeholder Eng Q7?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "c" },
-        { id: "KE008", questionText: "Placeholder Eng Q8?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "d" },
-        { id: "KE009", questionText: "Placeholder Eng Q9?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "a" },
-        { id: "KE010", questionText: "Placeholder Eng Q10?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "b" },
-        { id: "KE011", questionText: "Placeholder Eng Q11?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "c" },
-        { id: "KE012", questionText: "Placeholder Eng Q12?", options: [{ id: "a", text: "A" }, { id: "b", text: "B" }, { id: "c", text: "C" }, { id: "d", text: "D" }], correctOptionId: "d" }
-    ],
+        
+    {
+        "id": "KE001",
+        "questionText": "I am supposed to be first, ______?",
+        "options": [
+            { "id": "a", "text": "am I" },
+            { "id": "b", "text": "am not I" },
+            { "id": "c", "text": "aren't I" },
+            { "id": "d", "text": "don't I" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE002",
+        "questionText": "Let's try that again, ______?",
+        "options": [
+            { "id": "a", "text": "will we" },
+            { "id": "b", "text": "don't we" },
+            { "id": "c", "text": "shall we" },
+            { "id": "d", "text": "should we" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE003",
+        "questionText": "Do sit down, ______?",
+        "options": [
+            { "id": "a", "text": "do you" },
+            { "id": "b", "text": "don't you" },
+            { "id": "c", "text": "will you" },
+            { "id": "d", "text": "aren't you" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE004",
+        "questionText": "Nothing was said, ______?",
+        "options": [
+            { "id": "a", "text": "wasn't it" },
+            { "id": "b", "text": "was it" },
+            { "id": "c", "text": "did it" },
+            { "id": "d", "text": "didn't it" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE005",
+        "questionText": "Everybody looked so happy, ______?",
+        "options": [
+            { "id": "a", "text": "wasn't he" },
+            { "id": "b", "text": "didn't they" },
+            { "id": "c", "text": "weren't they" },
+            { "id": "d", "text": "did he" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE006",
+        "questionText": "You barely know him, ______?",
+        "options": [
+            { "id": "a", "text": "don't you" },
+            { "id": "b", "text": "do you" },
+            { "id": "c", "text": "haven't you" },
+            { "id": "d", "text": "have you" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE007",
+        "questionText": "He seldom visits, ______?",
+        "options": [
+            { "id": "a", "text": "doesn't he" },
+            { "id": "b", "text": "is he" },
+            { "id": "c", "text": "does he" },
+            { "id": "d", "text": "isn't he" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE008",
+        "questionText": "Someone has to do it, ______?",
+        "options": [
+            { "id": "a", "text": "hasn't he" },
+            { "id": "b", "text": "haven't they" },
+            { "id": "c", "text": "doesn't he" },
+            { "id": "d", "text": "don't they" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE009",
+        "questionText": "There's little point in arguing, ______?",
+        "options": [
+            { "id": "a", "text": "isn't there" },
+            { "id": "b", "text": "is there" },
+            { "id": "c", "text": "isn't it" },
+            { "id": "d", "text": "is it" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE010",
+        "questionText": "You'd rather I went, ______?",
+        "options": [
+            { "id": "a", "text": "hadn't you" },
+            { "id": "b", "text": "didn't you" },
+            { "id": "c", "text": "wouldn't you" },
+            { "id": "d", "text": "should you" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE011",
+        "questionText": "I think he's right, ______?",
+        "options": [
+            { "id": "a", "text": "don't I" },
+            { "id": "b", "text": "doesn't he" },
+            { "id": "c", "text": "isn't he" },
+            { "id": "d", "text": "is he" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE012",
+        "questionText": "Don't forget your keys, ______?",
+        "options": [
+            { "id": "a", "text": "do you" },
+            { "id": "b", "text": "don't you" },
+            { "id": "c", "text": "will you" },
+            { "id": "d", "text": "won't you" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE013",
+        "questionText": "He used to live here, ______?",
+        "options": [
+            { "id": "a", "text": "usedn't he" },
+            { "id": "b", "text": "didn't he" },
+            { "id": "c", "text": "doesn't he" },
+            { "id": "d", "text": "wasn't he" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE014",
+        "questionText": "Few people knew the answer, ______?",
+        "options": [
+            { "id": "a", "text": "didn't they" },
+            { "id": "b", "text": "did they" },
+            { "id": "c", "text": "weren't they" },
+            { "id": "d", "text": "were they" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE015",
+        "questionText": "I need hardly remind you, ______?",
+        "options": [
+            { "id": "a", "text": "don't I" },
+            { "id": "b", "text": "needn't I" },
+            { "id": "c", "text": "do I" },
+            { "id": "d", "text": "need I" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE016",
+        "questionText": "Everything is okay, ______?",
+        "options": [
+            { "id": "a", "text": "aren't they" },
+            { "id": "b", "text": "isn't it" },
+            { "id": "c", "text": "is it" },
+            { "id": "d", "text": "are they" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE017",
+        "questionText": "He ought to be more careful, ______?",
+        "options": [
+            { "id": "a", "text": "oughtn't he" },
+            { "id": "b", "text": "shouldn't he" },
+            { "id": "c", "text": "didn't he" },
+            { "id": "d", "text": "wasn't he" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE018",
+        "questionText": "Nobody phoned while I was out, ______?",
+        "options": [
+            { "id": "a", "text": "didn't they" },
+            { "id": "b", "text": "did he" },
+            { "id": "c", "text": "did they" },
+            { "id": "d", "text": "didn't he" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE019",
+        "questionText": "Mind the step, ______?",
+        "options": [
+            { "id": "a", "text": "don't you" },
+            { "id": "b", "text": "do you" },
+            { "id": "c", "text": "will you" },
+            { "id": "d", "text": "should you" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE020",
+        "questionText": "It's scarcely rained all summer, ______?",
+        "options": [
+            { "id": "a", "text": "isn't it" },
+            { "id": "b", "text": "hasn't it" },
+            { "id": "c", "text": "has it" },
+            { "id": "d", "text": "does it" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE021",
+        "questionText": "One should always be polite, ______?",
+        "options": [
+            { "id": "a", "text": "shouldn't one" },
+            { "id": "b", "text": "shouldn't you" },
+            { "id": "c", "text": "shouldn't they" },
+            { "id": "d", "text": "oughtn't one" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE022",
+        "questionText": "What a surprise, ______?",
+        "options": [
+            { "id": "a", "text": "isn't it" },
+            { "id": "b", "text": "was it" },
+            { "id": "c", "text": "wasn't it" },
+            { "id": "d", "text": "does it" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE023",
+        "questionText": "He has his breakfast at 7 am, ______?",
+        "options": [
+            { "id": "a", "text": "hasn't he" },
+            { "id": "b", "text": "has he" },
+            { "id": "c", "text": "doesn't he" },
+            { "id": "d", "text": "does he" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE024",
+        "questionText": "She must be tired after the journey, ______?",
+        "options": [
+            { "id": "a", "text": "mustn't she" },
+            { "id": "b", "text": "isn't she" },
+            { "id": "c", "text": "must she" },
+            { "id": "d", "text": "hasn't she" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE025",
+        "questionText": "You must stop doing that, ______?",
+        "options": [
+            { "id": "a", "text": "mustn't you" },
+            { "id": "b", "text": "needn't you" },
+            { "id": "c", "text": "don't you" },
+            { "id": "d", "text": "haven't you" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE026",
+        "questionText": "Let me help you with that, ______?",
+        "options": [
+            { "id": "a", "text": "shall I" },
+            { "id": "b", "text": "will you" },
+            { "id": "c", "text": "don't I" },
+            { "id": "d", "text": "may I" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE027",
+        "questionText": "This won't take long, ______?",
+        "options": [
+            { "id": "a", "text": "won't it" },
+            { "id": "b", "text": "does it" },
+            { "id": "c", "text": "will it" },
+            { "id": "d", "text": "isn't it" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE028",
+        "questionText": "That was hardly fair, ______?",
+        "options": [
+            { "id": "a", "text": "wasn't it" },
+            { "id": "b", "text": "was it" },
+            { "id": "c", "text": "didn't it" },
+            { "id": "d", "text": "did it" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE029",
+        "questionText": "I suppose you're right, ______?",
+        "options": [
+            { "id": "a", "text": "don't I" },
+            { "id": "b", "text": "aren't you" },
+            { "id": "c", "text": "do I" },
+            { "id": "d", "text": "are you" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE030",
+        "questionText": "No one objected at the time, ______?",
+        "options": [
+            { "id": "a", "text": "didn't they" },
+            { "id": "b", "text": "did they" },
+            { "id": "c", "text": "didn't he" },
+            { "id": "d", "text": "did he" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE031",
+        "questionText": "Pass me the salt, ______?",
+        "options": [
+            { "id": "a", "text": "don't you" },
+            { "id": "b", "text": "shall I" },
+            { "id": "c", "text": "can you" },
+            { "id": "d", "text": "isn't it" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE032",
+        "questionText": "There used to be a cinema here, ______?",
+        "options": [
+            { "id": "a", "text": "usedn't there" },
+            { "id": "b", "text": "didn't there" },
+            { "id": "c", "text": "wasn't there" },
+            { "id": "d", "text": "isn't there" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE033",
+        "questionText": "A little progress has been made, ______?",
+        "options": [
+            { "id": "a", "text": "has it" },
+            { "id": "b", "text": "hasn't it" },
+            { "id": "c", "text": "isn't it" },
+            { "id": "d", "text": "is it" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE034",
+        "questionText": "Little progress has been made, ______?",
+        "options": [
+            { "id": "a", "text": "has it" },
+            { "id": "b", "text": "hasn't it" },
+            { "id": "c", "text": "isn't it" },
+            { "id": "d", "text": "is it" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE035",
+        "questionText": "I'm afraid he's busy, ______?",
+        "options": [
+            { "id": "a", "text": "aren't I" },
+            { "id": "b", "text": "am I not" },
+            { "id": "c", "text": "isn't he" },
+            { "id": "d", "text": "is he" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE036",
+        "questionText": "Have some more tea, ______?",
+        "options": [
+            { "id": "a", "text": "haven't you" },
+            { "id": "b", "text": "do you" },
+            { "id": "c", "text": "won't you" },
+            { "id": "d", "text": "shall we" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE037",
+        "questionText": "He'd better hurry up, ______?",
+        "options": [
+            { "id": "a", "text": "wouldn't he" },
+            { "id": "b", "text": "shouldn't he" },
+            { "id": "c", "text": "hadn't he" },
+            { "id": "d", "text": "didn't he" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE038",
+        "questionText": "Neither of them complained, ______?",
+        "options": [
+            { "id": "a", "text": "didn't they" },
+            { "id": "b", "text": "did they" },
+            { "id": "c", "text": "did he" },
+            { "id": "d", "text": "didn't he" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE039",
+        "questionText": "She rarely makes mistakes, ______?",
+        "options": [
+            { "id": "a", "text": "doesn't she" },
+            { "id": "b", "text": "does she" },
+            { "id": "c", "text": "isn't she" },
+            { "id": "d", "text": "is she" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE040",
+        "questionText": "He might come later, ______?",
+        "options": [
+            { "id": "a", "text": "mightn't he" },
+            { "id": "b", "text": "won't he" },
+            { "id": "c", "text": "doesn't he" },
+            { "id": "d", "text": "shouldn't he" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE041",
+        "questionText": "You think you're clever, ______?",
+        "options": [
+            { "id": "a", "text": "isn't it" },
+            { "id": "b", "text": "are you" },
+            { "id": "c", "text": "don't you" },
+            { "id": "d", "text": "aren't you" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE042",
+        "questionText": "So you're the new manager, ______?",
+        "options": [
+            { "id": "a", "text": "aren't you" },
+            { "id": "b", "text": "are you" },
+            { "id": "c", "text": "don't you" },
+            { "id": "d", "text": "do you" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE043",
+        "questionText": "One can't be too careful, ______?",
+        "options": [
+            { "id": "a", "text": "can one" },
+            { "id": "b", "text": "can you" },
+            { "id": "c", "text": "can't one" },
+            { "id": "d", "text": "can they" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE044",
+        "questionText": "Let us pray, ______?",
+        "options": [
+            { "id": "a", "text": "shall we" },
+            { "id": "b", "text": "will we" },
+            { "id": "c", "text": "may we" },
+            { "id": "d", "text": "don't we" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE045",
+        "questionText": "These aren't your books, ______?",
+        "options": [
+            { "id": "a", "text": "aren't they" },
+            { "id": "b", "text": "are these" },
+            { "id": "c", "text": "are they" },
+            { "id": "d", "text": "isn't it" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE046",
+        "questionText": "That picture is beautiful, ______?",
+        "options": [
+            { "id": "a", "text": "isn't that" },
+            { "id": "b", "text": "is it" },
+            { "id": "c", "text": "isn't it" },
+            { "id": "d", "text": "is that" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE047",
+        "questionText": "You have to admit you were wrong, ______?",
+        "options": [
+            { "id": "a", "text": "haven't you" },
+            { "id": "b", "text": "don't you" },
+            { "id": "c", "text": "didn't you" },
+            { "id": "d", "text": "aren't you" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE048",
+        "questionText": "She'd finished before he arrived, ______?",
+        "options": [
+            { "id": "a", "text": "wouldn't she" },
+            { "id": "b", "text": "didn't she" },
+            { "id": "c", "text": "hadn't she" },
+            { "id": "d", "text": "wasn't she" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE049",
+        "questionText": "Nothing he says can be trusted, ______?",
+        "options": [
+            { "id": "a", "text": "can it" },
+            { "id": "b", "text": "can't it" },
+            { "id": "c", "text": "can he" },
+            { "id": "d", "text": "can't he" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE050",
+        "questionText": "I am not interrupting, ______?",
+        "options": [
+            { "id": "a", "text": "aren't I" },
+            { "id": "b", "text": "don't I" },
+            { "id": "c", "text": "am I" },
+            { "id": "d", "text": "are I" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE051",
+        "questionText": "Look at those dark clouds! It ______ any minute now.",
+        "options": [
+            { "id": "a", "text": "will rain" },
+            { "id": "b", "text": "is raining" },
+            { "id": "c", "text": "is going to rain" },
+            { "id": "d", "text": "rains" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE052",
+        "questionText": "By the time the guests arrive, I ______ cooking.",
+        "options": [
+            { "id": "a", "text": "will finish" },
+            { "id": "b", "text": "will be finishing" },
+            { "id": "c", "text": "will have finished" },
+            { "id": "d", "text": "finish" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE053",
+        "questionText": "She ______ constantly ______ my things! It's so annoying.",
+        "options": [
+            { "id": "a", "text": "is / taking" },
+            { "id": "b", "text": "does / take" },
+            { "id": "c", "text": "will / take" },
+            { "id": "d", "text": "has / taken" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE054",
+        "questionText": "I wish I ______ more about the topic before the meeting yesterday.",
+        "options": [
+            { "id": "a", "text": "knew" },
+            { "id": "b", "text": "had known" },
+            { "id": "c", "text": "know" },
+            { "id": "d", "text": "would know" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE055",
+        "questionText": "This time next week, we ______ on a beach in Spain.",
+        "options": [
+            { "id": "a", "text": "will relax" },
+            { "id": "b", "text": "are relaxing" },
+            { "id": "c", "text": "will be relaxing" },
+            { "id": "d", "text": "relax" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE056",
+        "questionText": "He ______ as a teacher for ten years before he changed careers.",
+        "options": [
+            { "id": "a", "text": "worked" },
+            { "id": "b", "text": "was working" },
+            { "id": "c", "text": "has worked" },
+            { "id": "d", "text": "had worked" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE057",
+        "questionText": "How long ______ you ______ English when you decided to move abroad?",
+        "options": [
+            { "id": "a", "text": "did / study" },
+            { "id": "b", "text": "were / studying" },
+            { "id": "c", "text": "have / been studying" },
+            { "id": "d", "text": "had / been studying" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE058",
+        "questionText": "Don't call me between 7 and 8 pm tonight. I ______ dinner then.",
+        "options": [
+            { "id": "a", "text": "will eat" },
+            { "id": "b", "text": "will be eating" },
+            { "id": "c", "text": "am eating" },
+            { "id": "d", "text": "eat" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE059",
+        "questionText": "It's high time you ______ taking responsibility for your actions.",
+        "options": [
+            { "id": "a", "text": "start" },
+            { "id": "b", "text": "started" },
+            { "id": "c", "text": "have started" },
+            { "id": "d", "text": "are starting" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE060",
+        "questionText": "Water ______ at 0 degrees Celsius.",
+        "options": [
+            { "id": "a", "text": "is freezing" },
+            { "id": "b", "text": "will freeze" },
+            { "id": "c", "text": "freezes" },
+            { "id": "d", "text": "has frozen" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE061",
+        "questionText": "I ______ John since he moved away last year.",
+        "options": [
+            { "id": "a", "text": "didn't see" },
+            { "id": "b", "text": "haven't seen" },
+            { "id": "c", "text": "wasn't seeing" },
+            { "id": "d", "text": "don't see" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE062",
+        "questionText": "When I got home, I realised I ______ my keys at the office.",
+        "options": [
+            { "id": "a", "text": "left" },
+            { "id": "b", "text": "was leaving" },
+            { "id": "c", "text": "had left" },
+            { "id": "d", "text": "have left" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE063",
+        "questionText": "She ______ her homework yet; she's still watching TV.",
+        "options": [
+            { "id": "a", "text": "didn't finish" },
+            { "id": "b", "text": "hasn't finished" },
+            { "id": "c", "text": "isn't finishing" },
+            { "id": "d", "text": "doesn't finish" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE064",
+        "questionText": "My train ______ at 8:00 am tomorrow morning, according to the schedule.",
+        "options": [
+            { "id": "a", "text": "will leave" },
+            { "id": "b", "text": "is leaving" },
+            { "id": "c", "text": "leaves" },
+            { "id": "d", "text": "is going to leave" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE065",
+        "questionText": "He behaves as though he ______ the place.",
+        "options": [
+            { "id": "a", "text": "owns" },
+            { "id": "b", "text": "owned" },
+            { "id": "c", "text": "had owned" },
+            { "id": "d", "text": "would own" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE066",
+        "questionText": "If I ______ you, I would apologise immediately.",
+        "options": [
+            { "id": "a", "text": "am" },
+            { "id": "b", "text": "was" },
+            { "id": "c", "text": "were" },
+            { "id": "d", "text": "had been" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE067",
+        "questionText": "They ______ for three hours when they finally found the right path.",
+        "options": [
+            { "id": "a", "text": "walked" },
+            { "id": "b", "text": "were walking" },
+            { "id": "c", "text": "have been walking" },
+            { "id": "d", "text": "had been walking" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE068",
+        "questionText": "I think I ______ a coffee now. I feel quite tired.",
+        "options": [
+            { "id": "a", "text": "have" },
+            { "id": "b", "text": "am having" },
+            { "id": "c", "text": "will have" },
+            { "id": "d", "text": "am going to have" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE069",
+        "questionText": "As soon as she ______ the news, she called her family.",
+        "options": [
+            { "id": "a", "text": "hears" },
+            { "id": "b", "text": "heard" },
+            { "id": "c", "text": "has heard" },
+            { "id": "d", "text": "was hearing" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE070",
+        "questionText": "This soup ______ strange. Did you add something unusual?",
+        "options": [
+            { "id": "a", "text": "is tasting" },
+            { "id": "b", "text": "tasted" },
+            { "id": "c", "text": "tastes" },
+            { "id": "d", "text": "has tasted" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE071",
+        "questionText": "He mentioned that he ______ to Paris the following week.",
+        "options": [
+            { "id": "a", "text": "travels" },
+            { "id": "b", "text": "is travelling" },
+            { "id": "c", "text": "travelled" },
+            { "id": "d", "text": "was travelling" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE072",
+        "questionText": "I'd rather you ______ that here.",
+        "options": [
+            { "id": "a", "text": "don't smoke" },
+            { "id": "b", "text": "didn't smoke" },
+            { "id": "c", "text": "haven't smoked" },
+            { "id": "d", "text": "won't smoke" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE073",
+        "questionText": "She ______ this book three times already.",
+        "options": [
+            { "id": "a", "text": "read" },
+            { "id": "b", "text": "reads" },
+            { "id": "c", "text": "has read" },
+            { "id": "d", "text": "was reading" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE074",
+        "questionText": "While I ______ the report, the phone rang constantly.",
+        "options": [
+            { "id": "a", "text": "wrote" },
+            { "id": "b", "text": "have written" },
+            { "id": "c", "text": "had written" },
+            { "id": "d", "text": "was writing" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE075",
+        "questionText": "The earth ______ around the sun.",
+        "options": [
+            { "id": "a", "text": "is revolving" },
+            { "id": "b", "text": "revolves" },
+            { "id": "c", "text": "has revolved" },
+            { "id": "d", "text": "revolved" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE076",
+        "questionText": "I ______ you know as soon as I get any information.",
+        "options": [
+            { "id": "a", "text": "let" },
+            { "id": "b", "text": "am letting" },
+            { "id": "c", "text": "will let" },
+            { "id": "d", "text": "have let" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE077",
+        "questionText": "If the weather ______ nice tomorrow, we'll go for a picnic.",
+        "options": [
+            { "id": "a", "text": "will be" },
+            { "id": "b", "text": "is going to be" },
+            { "id": "c", "text": "is" },
+            { "id": "d", "text": "be" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE078",
+        "questionText": "Shakespeare ______ many famous plays.",
+        "options": [
+            { "id": "a", "text": "has written" },
+            { "id": "b", "text": "wrote" },
+            { "id": "c", "text": "had written" },
+            { "id": "d", "text": "was writing" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE079",
+        "questionText": "What ______ you ______ at 9 pm last night?",
+        "options": [
+            { "id": "a", "text": "did / do" },
+            { "id": "b", "text": "were / doing" },
+            { "id": "c", "text": "have / done" },
+            { "id": "d", "text": "had / done" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE080",
+        "questionText": "I can't believe he ______ all the cake! There's none left.",
+        "options": [
+            { "id": "a", "text": "ate" },
+            { "id": "b", "text": "was eating" },
+            { "id": "c", "text": "has eaten" },
+            { "id": "d", "text": "had eaten" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE081",
+        "questionText": "Look! That man ______ to steal your bag!",
+        "options": [
+            { "id": "a", "text": "tries" },
+            { "id": "b", "text": "will try" },
+            { "id": "c", "text": "is trying" },
+            { "id": "d", "text": "tried" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE082",
+        "questionText": "We ______ meet outside the cinema at 7:30 pm tonight.",
+        "options": [
+            { "id": "a", "text": "are meeting" },
+            { "id": "b", "text": "meet" },
+            { "id": "c", "text": "will meet" },
+            { "id": "d", "text": "will be meeting" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE083",
+        "questionText": "He ______ much happier since he changed jobs.",
+        "options": [
+            { "id": "a", "text": "is seeming" },
+            { "id": "b", "text": "seemed" },
+            { "id": "c", "text": "has seemed" },
+            { "id": "d", "text": "had seemed" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE084",
+        "questionText": "Suppose you ______ a million dollars, what would you do?",
+        "options": [
+            { "id": "a", "text": "win" },
+            { "id": "b", "text": "won" },
+            { "id": "c", "text": "have won" },
+            { "id": "d", "text": "had won" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE085",
+        "questionText": "They ______ the house before the storm hit.",
+        "options": [
+            { "id": "a", "text": "left" },
+            { "id": "b", "text": "were leaving" },
+            { "id": "c", "text": "have left" },
+            { "id": "d", "text": "had left" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE086",
+        "questionText": "Be careful! The floor ______.",
+        "options": [
+            { "id": "a", "text": "just mopped" },
+            { "id": "b", "text": "was just mopped" },
+            { "id": "c", "text": "has just been mopped" },
+            { "id": "d", "text": "had just been mopped" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE087",
+        "questionText": "The concert ______ by the time we get there if we don't hurry.",
+        "options": [
+            { "id": "a", "text": "starts" },
+            { "id": "b", "text": "will start" },
+            { "id": "c", "text": "will be starting" },
+            { "id": "d", "text": "will have started" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE088",
+        "questionText": "How many countries ______ you ______ so far?",
+        "options": [
+            { "id": "a", "text": "did / visit" },
+            { "id": "b", "text": "were / visiting" },
+            { "id": "c", "text": "have / visited" },
+            { "id": "d", "text": "had / visited" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE089",
+        "questionText": "He ______ when he was young, but he stopped years ago.",
+        "options": [
+            { "id": "a", "text": "used to smoke" },
+            { "id": "b", "text": "was smoking" },
+            { "id": "c", "text": "had smoked" },
+            { "id": "d", "text": "smoked" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE090",
+        "questionText": "I suggest that she ______ a doctor immediately.",
+        "options": [
+            { "id": "a", "text": "sees" },
+            { "id": "b", "text": "see" },
+            { "id": "c", "text": "saw" },
+            { "id": "d", "text": "is seeing" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE091",
+        "questionText": "This is the first time I ______ sushi.",
+        "options": [
+            { "id": "a", "text": "eat" },
+            { "id": "b", "text": "ate" },
+            { "id": "c", "text": "am eating" },
+            { "id": "d", "text": "have eaten" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE092",
+        "questionText": "He said he ______ help me if he could.",
+        "options": [
+            { "id": "a", "text": "will" },
+            { "id": "b", "text": "can" },
+            { "id": "c", "text": "would" },
+            { "id": "d", "text": "is going to" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE093",
+        "questionText": "I ______ TV when I heard a strange noise outside.",
+        "options": [
+            { "id": "a", "text": "watched" },
+            { "id": "b", "text": "have watched" },
+            { "id": "c", "text": "was watching" },
+            { "id": "d", "text": "had watched" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE094",
+        "questionText": "By 2030, scientists predict that technology ______ even further.",
+        "options": [
+            { "id": "a", "text": "advances" },
+            { "id": "b", "text": "will advance" },
+            { "id": "c", "text": "will be advancing" },
+            { "id": "d", "text": "will have advanced" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE095",
+        "questionText": "She acts as if she ______ everything.",
+        "options": [
+            { "id": "a", "text": "knows" },
+            { "id": "b", "text": "knew" },
+            { "id": "c", "text": "has known" },
+            { "id": "d", "text": "had known" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE096",
+        "questionText": "Wait here until the manager ______.",
+        "options": [
+            { "id": "a", "text": "will come" },
+            { "id": "b", "text": "is coming" },
+            { "id": "c", "text": "comes" },
+            { "id": "d", "text": "came" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE097",
+        "questionText": "I ______ for my keys for an hour now and I still can't find them.",
+        "options": [
+            { "id": "a", "text": "looked" },
+            { "id": "b", "text": "was looking" },
+            { "id": "c", "text": "have looked" },
+            { "id": "d", "text": "have been looking" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE098",
+        "questionText": "If he ______ harder, he would have passed the exam.",
+        "options": [
+            { "id": "a", "text": "studied" },
+            { "id": "b", "text": "was studying" },
+            { "id": "c", "text": "had studied" },
+            { "id": "d", "text": "would study" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE099",
+        "questionText": "What time ______ the presentation start tomorrow? It's fixed.",
+        "options": [
+            { "id": "a", "text": "will" },
+            { "id": "b", "text": "is going to" },
+            { "id": "c", "text": "does" },
+            { "id": "d", "text": "is" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE100",
+        "questionText": "I didn't realise you ______ already ______.",
+        "options": [
+            { "id": "a", "text": "were / leaving" },
+            { "id": "b", "text": "had / left" },
+            { "id": "c", "text": "have / left" },
+            { "id": "d", "text": "left" }
+        ],
+        "correctOptionId": "b"
+    },
+     {
+        "id": "KE101",
+        "questionText": "He said, \"I am leaving now.\" He said that ______ leaving ______.",
+        "options": [
+            { "id": "a", "text": "he is / now" },
+            { "id": "b", "text": "I was / then" },
+            { "id": "c", "text": "he was / then" },
+            { "id": "d", "text": "he was / now" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE102",
+        "questionText": "She asked me, \"Do you like coffee?\" She asked me ______ coffee.",
+        "options": [
+            { "id": "a", "text": "do I like" },
+            { "id": "b", "text": "if I liked" },
+            { "id": "c", "text": "whether I like" },
+            { "id": "d", "text": "that I liked" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE103",
+        "questionText": "The teacher said, \"The Earth revolves around the Sun.\" The teacher said that the Earth ______ around the Sun.",
+        "options": [
+            { "id": "a", "text": "revolved" },
+            { "id": "b", "text": "was revolving" },
+            { "id": "c", "text": "revolves" },
+            { "id": "d", "text": "had revolved" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE104",
+        "questionText": "He said, \"I must finish this report today.\" (Obligation) He said that he ______ finish ______ report ______.",
+        "options": [
+            { "id": "a", "text": "must / this / today" },
+            { "id": "b", "text": "had to / that / that day" },
+            { "id": "c", "text": "must / that / that day" },
+            { "id": "d", "text": "had to / this / today" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE105",
+        "questionText": "She said, \"I might come to the party.\" She said that she ______ come to the party.",
+        "options": [
+            { "id": "a", "text": "might have" },
+            { "id": "b", "text": "might" },
+            { "id": "c", "text": "would" },
+            { "id": "d", "text": "could" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE106",
+        "questionText": "\"Don't wait for me,\" he told her. He told her ______.",
+        "options": [
+            { "id": "a", "text": "don't wait for him" },
+            { "id": "b", "text": "not to wait for him" },
+            { "id": "c", "text": "she shouldn't wait for him" },
+            { "id": "d", "text": "to not wait for him" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE107",
+        "questionText": "My friend said, \"I saw this movie yesterday.\" My friend said that he ______ that movie ______.",
+        "options": [
+            { "id": "a", "text": "saw / yesterday" },
+            { "id": "b", "text": "had seen / the day before" },
+            { "id": "c", "text": "saw / the previous day" },
+            { "id": "d", "text": "had seen / yesterday" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE108",
+        "questionText": "\"What time does the train leave?\" she asked. She asked what time ______.",
+        "options": [
+            { "id": "a", "text": "does the train leave" },
+            { "id": "b", "text": "the train left" },
+            { "id": "c", "text": "did the train leave" },
+            { "id": "d", "text": "the train leaves (if reporting soon after/referring to schedule)" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE109",
+        "questionText": "He said, \"Wow! What a beautiful view!\" He ______ that it was a beautiful view.",
+        "options": [
+            { "id": "a", "text": "said" },
+            { "id": "b", "text": "told" },
+            { "id": "c", "text": "asked" },
+            { "id": "d", "text": "exclaimed" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE110",
+        "questionText": "\"I wish I were taller,\" she sighed. She sighed that she ______ taller.",
+        "options": [
+            { "id": "a", "text": "wished she were" },
+            { "id": "b", "text": "wished she had been" },
+            { "id": "c", "text": "wishes she was" },
+            { "id": "d", "text": "had wished she were" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE111",
+        "questionText": "The doctor advised, \"You should rest for a week.\" The doctor advised me ______ for a week.",
+        "options": [
+            { "id": "a", "text": "that I should rest" },
+            { "id": "b", "text": "to rest" },
+            { "id": "c", "text": "resting" },
+            { "id": "d", "text": "should rest" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE112",
+        "questionText": "\"Let's go for a walk,\" he said. He suggested ______.",
+        "options": [
+            { "id": "a", "text": "to go for a walk" },
+            { "id": "b", "text": "us going for a walk" },
+            { "id": "c", "text": "that we should go for a walk" },
+            { "id": "d", "text": "let us go for a walk" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE113",
+        "questionText": "She asked, \"Where did you put my keys?\" She asked me where ______ her keys.",
+        "options": [
+            { "id": "a", "text": "did I put" },
+            { "id": "b", "text": "I put" },
+            { "id": "c", "text": "I had put" },
+            { "id": "d", "text": "had I put" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE114",
+        "questionText": "He claimed, \"I have never been here before.\" He claimed that he ______ there before.",
+        "options": [
+            { "id": "a", "text": "has never been" },
+            { "id": "b", "text": "had never been" },
+            { "id": "c", "text": "never was" },
+            { "id": "d", "text": "was never" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE115",
+        "questionText": "\"Could you please pass the salt?\" she asked. She asked me politely ______ the salt.",
+        "options": [
+            { "id": "a", "text": "could I pass" },
+            { "id": "b", "text": "whether I could pass" },
+            { "id": "c", "text": "to pass her" },
+            { "id": "d", "text": "if I pass" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE116",
+        "questionText": "He said, \"I wouldn't do that if I were you.\" (Conditional Type 2) He said that he ______ that if he ______ me.",
+        "options": [
+            { "id": "a", "text": "wouldn't do / had been" },
+            { "id": "b", "text": "wouldn't have done / were" },
+            { "id": "c", "text": "wouldn't do / were" },
+            { "id": "d", "text": "won't do / was" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE117",
+        "questionText": "\"I'll call you tomorrow,\" he promised. He promised that he ______ me ______.",
+        "options": [
+            { "id": "a", "text": "will call / tomorrow" },
+            { "id": "b", "text": "would call / the next day" },
+            { "id": "c", "text": "will call / the following day" },
+            { "id": "d", "text": "would call / tomorrow" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE118",
+        "questionText": "She warned him, \"Don't be late again.\" She warned him ______.",
+        "options": [
+            { "id": "a", "text": "don't be late again" },
+            { "id": "b", "text": "not to be late again" },
+            { "id": "c", "text": "that he shouldn't be late again" },
+            { "id": "d", "text": "to not be late again" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE119",
+        "questionText": "\"You must be tired after your journey,\" she said. (Deduction) She said that I ______ tired after my journey.",
+        "options": [
+            { "id": "a", "text": "had to be" },
+            { "id": "b", "text": "must have been" },
+            { "id": "c", "text": "must be" },
+            { "id": "d", "text": "was" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE120",
+        "questionText": "\"What have you done?\" he asked angrily. He angrily asked what ______.",
+        "options": [
+            { "id": "a", "text": "have I done" },
+            { "id": "b", "text": "had I done" },
+            { "id": "c", "text": "I had done" },
+            { "id": "d", "text": "I have done" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE121",
+        "questionText": "The sign says, \"No Parking.\" The sign indicates that parking ______.",
+        "options": [
+            { "id": "a", "text": "wasn't allowed" },
+            { "id": "b", "text": "isn't allowed" },
+            { "id": "c", "text": "hadn't been allowed" },
+            { "id": "d", "text": "won't be allowed" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE122",
+        "questionText": "He said, \"I was watching TV when she called.\" He said that he ______ TV when she ______.",
+        "options": [
+            { "id": "a", "text": "watched / called" },
+            { "id": "b", "text": "had been watching / called" },
+            { "id": "c", "text": "was watching / had called" },
+            { "id": "d", "text": "had been watching / had called" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE123",
+        "questionText": "\"Shall I open the window?\" he asked. (Offer) He offered ______.",
+        "options": [
+            { "id": "a", "text": "if he should open the window" },
+            { "id": "b", "text": "opening the window" },
+            { "id": "c", "text": "to open the window" },
+            { "id": "d", "text": "shall he open the window" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE124",
+        "questionText": "She said, \"I bought these shoes last week.\" She said she ______ shoes ______.",
+        "options": [
+            { "id": "a", "text": "bought those / last week" },
+            { "id": "b", "text": "had bought these / the week before" },
+            { "id": "c", "text": "bought those / the previous week" },
+            { "id": "d", "text": "had bought those / the week before" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE125",
+        "questionText": "\"Congratulations on passing your exam!\" they said. They ______ me on passing my exam.",
+        "options": [
+            { "id": "a", "text": "said congratulations to" },
+            { "id": "b", "text": "told" },
+            { "id": "c", "text": "congratulated" },
+            { "id": "d", "text": "asked" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE126",
+        "questionText": "He said, \"If I had known, I would have helped.\" (Conditional Type 3) He said that if he ______, he ______.",
+        "options": [
+            { "id": "a", "text": "knew / would help" },
+            { "id": "b", "text": "had known / would have helped" },
+            { "id": "c", "text": "had known / would help" },
+            { "id": "d", "text": "knew / would have helped" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE127",
+        "questionText": "\"Are you coming with us?\" she asked him. She asked him ______ with them.",
+        "options": [
+            { "id": "a", "text": "are you coming" },
+            { "id": "b", "text": "if he is coming" },
+            { "id": "c", "text": "whether he was coming" },
+            { "id": "d", "text": "that he was coming" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE128",
+        "questionText": "He shouted, \"Help!\" He shouted ______.",
+        "options": [
+            { "id": "a", "text": "help" },
+            { "id": "b", "text": "that he needed help" },
+            { "id": "c", "text": "for help" },
+            { "id": "d", "text": "to help" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE129",
+        "questionText": "She said, \"I can't find my glasses here.\" She said that she ______ her glasses ______.",
+        "options": [
+            { "id": "a", "text": "couldn't find / here" },
+            { "id": "b", "text": "can't find / there" },
+            { "id": "c", "text": "couldn't find / there" },
+            { "id": "d", "text": "can't find / here" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE130",
+        "questionText": "\"I need to leave early today,\" he mentioned. He mentioned that he ______ to leave early ______.",
+        "options": [
+            { "id": "a", "text": "needs / today" },
+            { "id": "b", "text": "needed / that day" },
+            { "id": "c", "text": "needs / that day" },
+            { "id": "d", "text": "needed / today" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE131",
+        "questionText": "She said, \"I wish I hadn't said that.\" She said she ______ that.",
+        "options": [
+            { "id": "a", "text": "wished she hadn't said" },
+            { "id": "b", "text": "wished she didn't say" },
+            { "id": "c", "text": "had wished she hadn't said" },
+            { "id": "d", "text": "wished she wouldn't say" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE132",
+        "questionText": "\"Go to your room now!\" the parent ordered. The parent ordered the child ______ to ______ room ______.",
+        "options": [
+            { "id": "a", "text": "go / your / now" },
+            { "id": "b", "text": "to go / his / then" },
+            { "id": "c", "text": "going / his / then" },
+            { "id": "d", "text": "should go / their / now" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE133",
+        "questionText": "He asked, \"How long have you been waiting?\" He asked how long ______.",
+        "options": [
+            { "id": "a", "text": "have I been waiting" },
+            { "id": "b", "text": "I have been waiting" },
+            { "id": "c", "text": "had I been waiting" },
+            { "id": "d", "text": "I had been waiting" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE134",
+        "questionText": "\"It's raining,\" she noted. (If reporting immediately or situation unchanged) She noted that it ______.",
+        "options": [
+            { "id": "a", "text": "rained" },
+            { "id": "b", "text": "had rained" },
+            { "id": "c", "text": "was raining" },
+            { "id": "d", "text": "is raining" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE135",
+        "questionText": "He begged, \"Please, don't tell anyone.\" He begged me ______.",
+        "options": [
+            { "id": "a", "text": "please don't tell anyone" },
+            { "id": "b", "text": "not to tell anyone" },
+            { "id": "c", "text": "telling no one" },
+            { "id": "d", "text": "that I shouldn't tell anyone" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE136",
+        "questionText": "She said, \"I may not be able to attend the meeting tomorrow.\" She said she ______ be able to attend the meeting ______.",
+        "options": [
+            { "id": "a", "text": "may not / tomorrow" },
+            { "id": "b", "text": "might not / the next day" },
+            { "id": "c", "text": "may not / the following day" },
+            { "id": "d", "text": "might not / tomorrow" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE137",
+        "questionText": "\"What a silly mistake!\" he thought. He thought that it ______ silly mistake.",
+        "options": [
+            { "id": "a", "text": "is a" },
+            { "id": "b", "text": "was a" },
+            { "id": "c", "text": "had been a" },
+            { "id": "d", "text": "would be a" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE138",
+        "questionText": "He said, \"You needn't worry about it.\" He said that I ______ worry about it.",
+        "options": [
+            { "id": "a", "text": "needn't" },
+            { "id": "b", "text": "didn't need to" },
+            { "id": "c", "text": "wouldn't need to" },
+            { "id": "d", "text": "Both b and c can be acceptable depending on context/interpretation." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE139",
+        "questionText": "\"I'd rather stay home tonight,\" she said. She said she ______ home ______.",
+        "options": [
+            { "id": "a", "text": "would rather stay / tonight" },
+            { "id": "b", "text": "had rather stayed / that night" },
+            { "id": "c", "text": "would rather stay / that night" },
+            { "id": "d", "text": "rather stayed / that night" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE140",
+        "questionText": "He asked, \"Who broke the vase?\" He asked who ______ the vase.",
+        "options": [
+            { "id": "a", "text": "did break" },
+            { "id": "b", "text": "broke" },
+            { "id": "c", "text": "had broken" },
+            { "id": "d", "text": "has broken" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE141",
+        "questionText": "She insisted, \"I didn't do anything wrong.\" She insisted that she ______ anything wrong.",
+        "options": [
+            { "id": "a", "text": "didn't do" },
+            { "id": "b", "text": "hadn't done" },
+            { "id": "c", "text": "hasn't done" },
+            { "id": "d", "text": "wouldn't do" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE142",
+        "questionText": "\"Let me carry your bag,\" he offered. He offered ______.",
+        "options": [
+            { "id": "a", "text": "let him carry my bag" },
+            { "id": "b", "text": "to carry my bag" },
+            { "id": "c", "text": "carrying my bag" },
+            { "id": "d", "text": "that he carry my bag" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE143",
+        "questionText": "The notice read, \"Keep off the grass.\" The notice instructed people ______.",
+        "options": [
+            { "id": "a", "text": "keeping off the grass" },
+            { "id": "b", "text": "should keep off the grass" },
+            { "id": "c", "text": "to keep off the grass" },
+            { "id": "d", "text": "don't walk on the grass" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE144",
+        "questionText": "He said, \"I was born in 1990.\" He said that he ______ in 1990.",
+        "options": [
+            { "id": "a", "text": "was born" },
+            { "id": "b", "text": "had been born" },
+            { "id": "c", "text": "is born" },
+            { "id": "d", "text": "has been born" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE145",
+        "questionText": "\"Why didn't you call me yesterday?\" she asked him. She asked him why he ______ her ______.",
+        "options": [
+            { "id": "a", "text": "didn't call / yesterday" },
+            { "id": "b", "text": "hadn't called / the day before" },
+            { "id": "c", "text": "didn't call / the previous day" },
+            { "id": "d", "text": "hadn't called / yesterday" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE146",
+        "questionText": "He said, \"If it rains tomorrow, the match will be cancelled.\" (Conditional Type 1) He said that if it ______ the match ______ cancelled.",
+        "options": [
+            { "id": "a", "text": "rains tomorrow / will be" },
+            { "id": "b", "text": "rained the next day / would be" },
+            { "id": "c", "text": "rains the following day / would be" },
+            { "id": "d", "text": "rained tomorrow / will be" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE147",
+        "questionText": "\"Yes, I took the money,\" he confessed. He confessed ______.",
+        "options": [
+            { "id": "a", "text": "yes, he took the money" },
+            { "id": "b", "text": "to take the money" },
+            { "id": "c", "text": "that he had taken the money" },
+            { "id": "d", "text": "taking the money" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE148",
+        "questionText": "She told me, \"This is the best cake I have ever tasted.\" She told me that ______ the best cake she ______.",
+        "options": [
+            { "id": "a", "text": "this was / has ever tasted" },
+            { "id": "b", "text": "that was / had ever tasted" },
+            { "id": "c", "text": "that is / has ever tasted" },
+            { "id": "d", "text": "this was / had ever tasted" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE149",
+        "questionText": "\"Shall we meet at the usual place?\" he suggested. He suggested ______ at the usual place.",
+        "options": [
+            { "id": "a", "text": "shall we meet" },
+            { "id": "b", "text": "to meet" },
+            { "id": "c", "text": "meeting" },
+            { "id": "d", "text": "if we should meet" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE150",
+        "questionText": "He said, \"You ought to apologize.\" He said that I ______ apologize.",
+        "options": [
+            { "id": "a", "text": "oughted to" },
+            { "id": "b", "text": "ought to" },
+            { "id": "c", "text": "should have" },
+            { "id": "d", "text": "had to" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE151",
+        "questionText": "He is studying ______ history of ______ Roman Empire.",
+        "options": [
+            { "id": "a", "text": "Ø / the" },
+            { "id": "b", "text": "the / the" },
+            { "id": "c", "text": "a / the" },
+            { "id": "d", "text": "Ø / Ø" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE152",
+        "questionText": "______ honesty is ______ best policy.",
+        "options": [
+            { "id": "a", "text": "An / the" },
+            { "id": "b", "text": "The / the" },
+            { "id": "c", "text": "Ø / the" },
+            { "id": "d", "text": "An / a" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE153",
+        "questionText": "She speaks ______ French fluently, but she's learning ______ Spanish.",
+        "options": [
+            { "id": "a", "text": "Ø / Ø" },
+            { "id": "b", "text": "the / the" },
+            { "id": "c", "text": "Ø / the" },
+            { "id": "d", "text": "the / Ø" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE154",
+        "questionText": "What ______ beautiful day! Let's go to ______ park.",
+        "options": [
+            { "id": "a", "text": "a / the" },
+            { "id": "b", "text": "the / the" },
+            { "id": "c", "text": "Ø / a" },
+            { "id": "d", "text": "a / a" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE155",
+        "questionText": "______ man is mortal. (Meaning mankind)",
+        "options": [
+            { "id": "a", "text": "A" },
+            { "id": "b", "text": "The" },
+            { "id": "c", "text": "An" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE156",
+        "questionText": "My brother works as ______ electrician.",
+        "options": [
+            { "id": "a", "text": "Ø" },
+            { "id": "b", "text": "an" },
+            { "id": "c", "text": "the" },
+            { "id": "d", "text": "a" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE157",
+        "questionText": "We had ______ lunch at ______ restaurant near the station.",
+        "options": [
+            { "id": "a", "text": "Ø / a" },
+            { "id": "b", "text": "a / the" },
+            { "id": "c", "text": "the / a" },
+            { "id": "d", "text": "Ø / the" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE158",
+        "questionText": "He went to ______ prison for theft, but I visited him in ______ prison yesterday.",
+        "options": [
+            { "id": "a", "text": "the / the" },
+            { "id": "b", "text": "Ø / the" },
+            { "id": "c", "text": "the / Ø" },
+            { "id": "d", "text": "Ø / Ø" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE159",
+        "questionText": "She plays ______ piano beautifully, but she wants to buy ______ new guitar.",
+        "options": [
+            { "id": "a", "text": "the / a" },
+            { "id": "b", "text": "a / the" },
+            { "id": "c", "text": "Ø / a" },
+            { "id": "d", "text": "the / the" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE160",
+        "questionText": "______ Mount Everest is the highest peak in ______ Himalayas.",
+        "options": [
+            { "id": "a", "text": "The / the" },
+            { "id": "b", "text": "Ø / the" },
+            { "id": "c", "text": "The / Ø" },
+            { "id": "d", "text": "Ø / Ø" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE161",
+        "questionText": "I need ______ information about ______ hotels in ______ London.",
+        "options": [
+            { "id": "a", "text": "Ø / Ø / Ø" },
+            { "id": "b", "text": "the / the / Ø" },
+            { "id": "c", "text": "Ø / the / Ø" },
+            { "id": "d", "text": "some / Ø / Ø" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE162",
+        "questionText": "He suffers from ______ diabetes.",
+        "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "the" },
+            { "id": "c", "text": "an" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE163",
+        "questionText": "Is this ______ book you were telling me about?",
+        "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "an" },
+            { "id": "c", "text": "the" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE164",
+        "questionText": "I saw ______ one-eyed man crossing the street.",
+        "options": [
+            { "id": "a", "text": "an" },
+            { "id": "b", "text": "a" },
+            { "id": "c", "text": "the" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE165",
+        "questionText": "She is ______ honorable person.",
+        "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "the" },
+            { "id": "c", "text": "an" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE166",
+        "questionText": "______ poor need more help from ______ government.",
+        "options": [
+            { "id": "a", "text": "Ø / the" },
+            { "id": "b", "text": "The / the" },
+            { "id": "c", "text": "The / Ø" },
+            { "id": "d", "text": "A / a" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE167",
+        "questionText": "We visited ______ Lake Windermere in ______ Lake District.",
+        "options": [
+            { "id": "a", "text": "Ø / the" },
+            { "id": "b", "text": "the / the" },
+            { "id": "c", "text": "Ø / Ø" },
+            { "id": "d", "text": "the / Ø" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE168",
+        "questionText": "He arrived half ______ hour late.",
+        "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "the" },
+            { "id": "c", "text": "an" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE169",
+        "questionText": "Turn off ______ light when you leave ______ room.",
+        "options": [
+            { "id": "a", "text": "a / a" },
+            { "id": "b", "text": "the / the" },
+            { "id": "c", "text": "Ø / the" },
+            { "id": "d", "text": "the / Ø" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE170",
+        "questionText": "______ life would be very different without ______ technology.",
+        "options": [
+            { "id": "a", "text": "A / the" },
+            { "id": "b", "text": "Ø / Ø" },
+            { "id": "c", "text": "The / the" },
+            { "id": "d", "text": "Ø / the" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE171",
+        "questionText": "She has ______ PhD in astrophysics.",
+        "options": [
+            { "id": "a", "text": "an" },
+            { "id": "b", "text": "Ø" },
+            { "id": "c", "text": "the" },
+            { "id": "d", "text": "a" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE172",
+        "questionText": "They went on ______ expedition to ______ Arctic.",
+        "options": [
+            { "id": "a", "text": "an / the" },
+            { "id": "b", "text": "the / Ø" },
+            { "id": "c", "text": "an / Ø" },
+            { "id": "d", "text": "Ø / the" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE173",
+        "questionText": "He took ______ great interest in ______ subject.",
+        "options": [
+            { "id": "a", "text": "Ø / the" },
+            { "id": "b", "text": "a / the" },
+            { "id": "c", "text": "the / Ø" },
+            { "id": "d", "text": "a / Ø" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE174",
+        "questionText": "______ breakfast is the most important meal of ______ day.",
+        "options": [
+            { "id": "a", "text": "The / the" },
+            { "id": "b", "text": "Ø / the" },
+            { "id": "c", "text": "A / a" },
+            { "id": "d", "text": "Ø / a" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE175",
+        "questionText": "Only ______ few people understand the complexity of the issue.",
+        "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "the" },
+            { "id": "c", "text": "Ø" },
+            { "id": "d", "text": "an" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE176",
+        "questionText": "There is ______ little hope of finding survivors. (Meaning not much hope)",
+        "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "the" },
+            { "id": "c", "text": "an" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE177",
+        "questionText": "______ River Thames flows through London.",
+        "options": [
+            { "id": "a", "text": "Ø" },
+            { "id": "b", "text": "A" },
+            { "id": "c", "text": "An" },
+            { "id": "d", "text": "The" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE178",
+        "questionText": "He works for ______ FBI.",
+        "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "an" },
+            { "id": "c", "text": "the" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE179",
+        "questionText": "She lives in ______ United Kingdom, near ______ Manchester.",
+        "options": [
+            { "id": "a", "text": "Ø / Ø" },
+            { "id": "b", "text": "the / Ø" },
+            { "id": "c", "text": "the / the" },
+            { "id": "d", "text": "Ø / the" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE180",
+        "questionText": "______ cheetah is the fastest land animal. (Referring to the species)",
+        "options": [
+            { "id": "a", "text": "A" },
+            { "id": "b", "text": "An" },
+            { "id": "c", "text": "Ø" },
+            { "id": "d", "text": "The" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE181",
+        "questionText": "Let's meet at ______ Queen Street Station.",
+        "options": [
+            { "id": "a", "text": "the" },
+            { "id": "b", "text": "a" },
+            { "id": "c", "text": "an" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE182",
+        "questionText": "He was elected ______ President of the club.",
+        "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "an" },
+            { "id": "c", "text": "the" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE183",
+        "questionText": "______ President gave a speech last night. (Referring to a specific, known president)",
+        "options": [
+            { "id": "a", "text": "A" },
+            { "id": "b", "text": "An" },
+            { "id": "c", "text": "Ø" },
+            { "id": "d", "text": "The" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE184",
+        "questionText": "They travelled by ______ train across ______ Europe.",
+        "options": [
+            { "id": "a", "text": "Ø / Ø" },
+            { "id": "b", "text": "the / Ø" },
+            { "id": "c", "text": "a / the" },
+            { "id": "d", "text": "the / the" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE185",
+        "questionText": "I usually go to ______ bed around midnight.",
+        "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "the" },
+            { "id": "c", "text": "an" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE186",
+        "questionText": "Can you tell me ______ way to ______ post office?",
+        "options": [
+            { "id": "a", "text": "a / a" },
+            { "id": "b", "text": "the / the" },
+            { "id": "c", "text": "Ø / the" },
+            { "id": "d", "text": "the / a" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE187",
+        "questionText": "He has ______ unique talent for music.",
+        "options": [
+            { "id": "a", "text": "an" },
+            { "id": "b", "text": "a" },
+            { "id": "c", "text": "the" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE188",
+        "questionText": "She bought ______ dozen eggs and ______ loaf of bread.",
+        "options": [
+            { "id": "a", "text": "a / a" },
+            { "id": "b", "text": "the / the" },
+            { "id": "c", "text": "a / the" },
+            { "id": "d", "text": "the / a" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE189",
+        "questionText": "______ knowledge is power.",
+        "options": [
+            { "id": "a", "text": "A" },
+            { "id": "b", "text": "The" },
+            { "id": "c", "text": "An" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE190",
+        "questionText": "______ knowledge she gained from the course was invaluable.",
+        "options": [
+            { "id": "a", "text": "A" },
+            { "id": "b", "text": "The" },
+            { "id": "c", "text": "An" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE191",
+        "questionText": "He is considered ______ expert in his field.",
+        "options": [
+            { "id": "a", "text": "Ø" },
+            { "id": "b", "text": "the" },
+            { "id": "c", "text": "a" },
+            { "id": "d", "text": "an" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE192",
+        "questionText": "We walked along ______ Wall Street.",
+        "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "the" },
+            { "id": "c", "text": "an" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE193",
+        "questionText": "______ Philippines consists of thousands of islands.",
+        "options": [
+            { "id": "a", "text": "Ø" },
+            { "id": "b", "text": "A" },
+            { "id": "c", "text": "An" },
+            { "id": "d", "text": "The" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE194",
+        "questionText": "What ______ pity that you can't come!",
+        "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "the" },
+            { "id": "c", "text": "Ø" },
+            { "id": "d", "text": "an" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE195",
+        "questionText": "He always tells ______ truth, but sometimes tells ______ lie.",
+        "options": [
+            { "id": "a", "text": "the / a" },
+            { "id": "b", "text": "a / the" },
+            { "id": "c", "text": "Ø / a" },
+            { "id": "d", "text": "the / the" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE196",
+        "questionText": "She is studying ______ biology at ______ university.",
+        "options": [
+            { "id": "a", "text": "Ø / a" },
+            { "id": "b", "text": "the / the" },
+            { "id": "c", "text": "Ø / the" },
+            { "id": "d", "text": "a / a" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE197",
+        "questionText": "He is ______ heir to the throne.",
+        "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "the" },
+            { "id": "c", "text": "an" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE198",
+        "questionText": "The ship hit ______ iceberg.",
+        "options": [
+            { "id": "a", "text": "an" },
+            { "id": "b", "text": "a" },
+            { "id": "c", "text": "the" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE199",
+        "questionText": "We need to protect ______ environment.",
+        "options": [
+            { "id": "a", "text": "an" },
+            { "id": "b", "text": "a" },
+            { "id": "c", "text": "the" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE200",
+        "questionText": "______ next train to Brighton leaves from Platform 3.",
+        "options": [
+            { "id": "a", "text": "A" },
+            { "id": "b", "text": "An" },
+            { "id": "c", "text": "Ø" },
+            { "id": "d", "text": "The" }
+        ],
+        "correctOptionId": "d"
+    },
+
+    {
+        "id": "KE201",
+        "questionText": "He drove at ______ speed of 100 km per hour.",
+        "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "the" },
+            { "id": "c", "text": "an" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE202",
+        "questionText": "She has ______ appointment with ______ doctor this afternoon.",
+        "options": [
+            { "id": "a", "text": "an / the" },
+            { "id": "b", "text": "the / a" },
+            { "id": "c", "text": "an / a" },
+            { "id": "d", "text": "Ø / the" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE203",
+        "questionText": "______ Statue of Liberty is in ______ New York Harbor.",
+        "options": [
+            { "id": "a", "text": "The / Ø" },
+            { "id": "b", "text": "Ø / the" },
+            { "id": "c", "text": "The / the" },
+            { "id": "d", "text": "Ø / Ø" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE204",
+        "questionText": "He made ______ mistake in his calculations.",
+        "options": [
+            { "id": "a", "text": "the" },
+            { "id": "b", "text": "an" },
+            { "id": "c", "text": "Ø" },
+            { "id": "d", "text": "a" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE205",
+        "questionText": "They live on ______ fifth floor.",
+        "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "an" },
+            { "id": "c", "text": "the" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE206",
+        "questionText": "______ happiness means different things to different people.",
+        "options": [
+            { "id": "a", "text": "A" },
+            { "id": "b", "text": "The" },
+            { "id": "c", "text": "An" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE207",
+        "questionText": "I prefer ______ coffee to ______ tea. (General preference)",
+        "options": [
+            { "id": "a", "text": "the / the" },
+            { "id": "b", "text": "a / a" },
+            { "id": "c", "text": "Ø / Ø" },
+            { "id": "d", "text": "the / Ø" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE208",
+        "questionText": "Could you pass me ______ coffee that's on the table? (Specific coffee)",
+        "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "an" },
+            { "id": "c", "text": "Ø" },
+            { "id": "d", "text": "the" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE209",
+        "questionText": "______ winter is coming.",
+        "options": [
+            { "id": "a", "text": "A" },
+            { "id": "b", "text": "The" },
+            { "id": "c", "text": "An" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE210",
+        "questionText": "______ winter of 2010 was particularly harsh.",
+        "options": [
+            { "id": "a", "text": "A" },
+            { "id": "b", "text": "The" },
+            { "id": "c", "text": "An" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE211",
+        "questionText": "They communicate by ______ radio.",
+        "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "the" },
+            { "id": "c", "text": "an" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE212",
+        "questionText": "Listen! I think I heard ______ shot.",
+        "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "the" },
+            { "id": "c", "text": "an" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE213",
+        "questionText": "______ nature is full of wonders.",
+        "options": [
+            { "id": "a", "text": "A" },
+            { "id": "b", "text": "The" },
+            { "id": "c", "text": "An" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE214",
+        "questionText": "He has ______ good understanding of ______ problem.",
+        "options": [
+            { "id": "a", "text": "a / the" },
+            { "id": "b", "text": "the / a" },
+            { "id": "c", "text": "Ø / the" },
+            { "id": "d", "text": "a / a" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE215",
+        "questionText": "______ most people enjoy holidays.",
+        "options": [
+            { "id": "a", "text": "A" },
+            { "id": "b", "text": "The" },
+            { "id": "c", "text": "An" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE216",
+        "questionText": "She works day and ______ night to finish the project.",
+        "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "the" },
+            { "id": "c", "text": "an" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE217",
+        "questionText": "He hit me on ______ head.",
+        "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "an" },
+            { "id": "c", "text": "Ø" },
+            { "id": "d", "text": "the" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE218",
+        "questionText": "______ Netherlands is famous for its tulips.",
+        "options": [
+            { "id": "a", "text": "Ø" },
+            { "id": "b", "text": "A" },
+            { "id": "c", "text": "An" },
+            { "id": "d", "text": "The" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE219",
+        "questionText": "It's ______ honour to meet you.",
+        "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "the" },
+            { "id": "c", "text": "an" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE220",
+        "questionText": "______ number of students were absent yesterday.",
+        "options": [
+            { "id": "a", "text": "The" },
+            { "id": "b", "text": "A" },
+            { "id": "c", "text": "Ø" },
+            { "id": "d", "text": "An" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE221",
+        "questionText": "______ number of students absent yesterday was surprising.",
+        "options": [
+            { "id": "a", "text": "The" },
+            { "id": "b", "text": "A" },
+            { "id": "c", "text": "Ø" },
+            { "id": "d", "text": "An" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE222",
+        "questionText": "She went to ______ church to pray.",
+        "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "the" },
+            { "id": "c", "text": "an" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE223",
+        "questionText": "We admired ______ beautiful stained glass in ______ church.",
+        "options": [
+            { "id": "a", "text": "a / the" },
+            { "id": "b", "text": "the / the" },
+            { "id": "c", "text": "Ø / a" },
+            { "id": "d", "text": "the / a" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE224",
+        "questionText": "He arrived on ______ Monday morning.",
+        "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "the" },
+            { "id": "c", "text": "an" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE225",
+        "questionText": "It was ______ Monday morning I will never forget.",
+        "options": [
+            { "id": "a", "text": "Ø" },
+            { "id": "b", "text": "the" },
+            { "id": "c", "text": "an" },
+            { "id": "d", "text": "a" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE226",
+        "questionText": "The woman ______ interviewed me was very professional.",
+        "options": [
+            { "id": "a", "text": "whom" },
+            { "id": "b", "text": "which" },
+            { "id": "c", "text": "who" },
+            { "id": "d", "text": "whose" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE227",
+        "questionText": "This is the book ______ I was telling you about.",
+        "options": [
+            { "id": "a", "text": "who" },
+            { "id": "b", "text": "which" },
+            { "id": "c", "text": "whose" },
+            { "id": "d", "text": "Ø (which/that omitted)" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE228",
+        "questionText": "My neighbour, ______ son is a famous actor, is very modest.",
+        "options": [
+            { "id": "a", "text": "who" },
+            { "id": "b", "text": "which" },
+            { "id": "c", "text": "whom" },
+            { "id": "d", "text": "whose" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE229",
+        "questionText": "The decisions ______ the committee made were controversial.",
+        "options": [
+            { "id": "a", "text": "who" },
+            { "id": "b", "text": "whose" },
+            { "id": "c", "text": "Ø (which/that omitted)" },
+            { "id": "d", "text": "whom" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE230",
+        "questionText": "She complained about the noise, ______ was really annoying.",
+        "options": [
+            { "id": "a", "text": "that" },
+            { "id": "b", "text": "which" },
+            { "id": "c", "text": "what" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE231",
+        "questionText": "Is there anyone ______ can help me with this heavy bag?",
+        "options": [
+            { "id": "a", "text": "which" },
+            { "id": "b", "text": "whose" },
+            { "id": "c", "text": "who" },
+            { "id": "d", "text": "whom" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE232",
+        "questionText": "The hotel ______ we stayed was excellent.",
+        "options": [
+            { "id": "a", "text": "which" },
+            { "id": "b", "text": "that" },
+            { "id": "c", "text": "where" },
+            { "id": "d", "text": "when" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE233",
+        "questionText": "I spoke to the manager, ______ seemed very understanding.",
+        "options": [
+            { "id": "a", "text": "whom" },
+            { "id": "b", "text": "which" },
+            { "id": "c", "text": "that" },
+            { "id": "d", "text": "who" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE234",
+        "questionText": "The reason ______ he failed the exam is still unclear.",
+        "options": [
+            { "id": "a", "text": "which" },
+            { "id": "b", "text": "where" },
+            { "id": "c", "text": "when" },
+            { "id": "d", "text": "why" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE235",
+        "questionText": "This is the key ______ opens the front door.",
+        "options": [
+            { "id": "a", "text": "who" },
+            { "id": "b", "text": "Ø" },
+            { "id": "c", "text": "whose" },
+            { "id": "d", "text": "that" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE236",
+        "questionText": "The candidate ______ they selected had years of experience.",
+        "options": [
+            { "id": "a", "text": "who" },
+            { "id": "b", "text": "whose" },
+            { "id": "c", "text": "whom" },
+            { "id": "d", "text": "which" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE237",
+        "questionText": "My car, ______ I bought last year, has broken down again.",
+        "options": [
+            { "id": "a", "text": "that" },
+            { "id": "b", "text": "which" },
+            { "id": "c", "text": "Ø" },
+            { "id": "d", "text": "whose" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE238",
+        "questionText": "I remember the day ______ we first met.",
+        "options": [
+            { "id": "a", "text": "which" },
+            { "id": "b", "text": "where" },
+            { "id": "c", "text": "when" },
+            { "id": "d", "text": "why" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE239",
+        "questionText": "Tell me ______ you know about the situation.",
+        "options": [
+            { "id": "a", "text": "which" },
+            { "id": "b", "text": "that" },
+            { "id": "c", "text": "what" },
+            { "id": "d", "text": "who" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE240",
+        "questionText": "The students ______ projects were submitted late received lower grades.",
+        "options": [
+            { "id": "a", "text": "who" },
+            { "id": "b", "text": "which" },
+            { "id": "c", "text": "whom" },
+            { "id": "d", "text": "whose" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE241",
+        "questionText": "The chair ______ I was sitting on suddenly collapsed.",
+        "options": [
+            { "id": "a", "text": "who" },
+            { "id": "b", "text": "where" },
+            { "id": "c", "text": "which" },
+            { "id": "d", "text": "when" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE242",
+        "questionText": "He introduced me to his sister, ______ works as a designer.",
+        "options": [
+            { "id": "a", "text": "that" },
+            { "id": "b", "text": "which" },
+            { "id": "c", "text": "who" },
+            { "id": "d", "text": "whom" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE243",
+        "questionText": "Do you know the person ______ car is parked illegally?",
+        "options": [
+            { "id": "a", "text": "who" },
+            { "id": "b", "text": "which" },
+            { "id": "c", "text": "whose" },
+            { "id": "d", "text": "whom" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE244",
+        "questionText": "The town ______ I grew up has changed a lot.",
+        "options": [
+            { "id": "a", "text": "which" },
+            { "id": "b", "text": "that" },
+            { "id": "c", "text": "when" },
+            { "id": "d", "text": "where" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE245",
+        "questionText": "People ______ live in glass houses shouldn't throw stones.",
+        "options": [
+            { "id": "a", "text": "which" },
+            { "id": "b", "text": "whose" },
+            { "id": "c", "text": "who" },
+            { "id": "d", "text": "whom" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE246",
+        "questionText": "The report, ______ was published yesterday, contains errors.",
+        "options": [
+            { "id": "a", "text": "that" },
+            { "id": "b", "text": "which" },
+            { "id": "c", "text": "Ø" },
+            { "id": "d", "text": "whose" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE247",
+        "questionText": "This is the restaurant ______ serves the best pizza in town.",
+        "options": [
+            { "id": "a", "text": "who" },
+            { "id": "b", "text": "where" },
+            { "id": "c", "text": "which" },
+            { "id": "d", "text": "when" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE248",
+        "questionText": "The person to ______ you should address your complaint is the manager.",
+        "options": [
+            { "id": "a", "text": "who" },
+            { "id": "b", "text": "whose" },
+            { "id": "c", "text": "which" },
+            { "id": "d", "text": "whom" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE249",
+        "questionText": "The time ______ the meeting starts is 9:00 AM.",
+        "options": [
+            { "id": "a", "text": "where" },
+            { "id": "b", "text": "which" },
+            { "id": "c", "text": "when" },
+            { "id": "d", "text": "why" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE250",
+        "questionText": "Is this the film ______ won the Oscar last year?",
+        "options": [
+            { "id": "a", "text": "who" },
+            { "id": "b", "text": "Ø" },
+            { "id": "c", "text": "whose" },
+            { "id": "d", "text": "which" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE251",
+        "questionText": "Anyone ______ interested in the position should apply online. (Reduced clause)",
+        "options": [
+            { "id": "a", "text": "who" },
+            { "id": "b", "text": "is" },
+            { "id": "c", "text": "interested" },
+            { "id": "d", "text": "which is" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE252",
+        "questionText": "The problems ______ discussed in the meeting are complex. (Reduced clause)",
+        "options": [
+            { "id": "a", "text": "were" },
+            { "id": "b", "text": "which" },
+            { "id": "c", "text": "discussed" },
+            { "id": "d", "text": "who were" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE253",
+        "questionText": "He lost the map, ______ made the journey much harder.",
+        "options": [
+            { "id": "a", "text": "that" },
+            { "id": "b", "text": "what" },
+            { "id": "c", "text": "which" },
+            { "id": "d", "text": "Ø" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE254",
+        "questionText": "The only thing ______ matters is your happiness.",
+        "options": [
+            { "id": "a", "text": "who" },
+            { "id": "b", "text": "which" },
+            { "id": "c", "text": "Ø" },
+            { "id": "d", "text": "that" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE255",
+        "questionText": "The company ______ CEO was recently arrested is facing bankruptcy.",
+        "options": [
+            { "id": "a", "text": "which" },
+            { "id": "b", "text": "whom" },
+            { "id": "c", "text": "whose" },
+            { "id": "d", "text": "who" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE256",
+        "questionText": "That's the professor with ______ I studied linguistics.",
+        "options": [
+            { "id": "a", "text": "who" },
+            { "id": "b", "text": "which" },
+            { "id": "c", "text": "whom" },
+            { "id": "d", "text": "whose" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE257",
+        "questionText": "The year ______ the Berlin Wall fell was 1989.",
+        "options": [
+            { "id": "a", "text": "where" },
+            { "id": "b", "text": "which" },
+            { "id": "c", "text": "why" },
+            { "id": "d", "text": "when" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE258",
+        "questionText": "We visited the museum, ______ we saw many ancient artifacts.",
+        "options": [
+            { "id": "a", "text": "which" },
+            { "id": "b", "text": "that" },
+            { "id": "c", "text": "when" },
+            { "id": "d", "text": "where" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE259",
+        "questionText": "The ideas ______ he presented were innovative.",
+        "options": [
+            { "id": "a", "text": "who" },
+            { "id": "b", "text": "whom" },
+            { "id": "c", "text": "whose" },
+            { "id": "d", "text": "Ø (which/that omitted)" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE260",
+        "questionText": "My eldest brother, ______ you met last week, is a pilot.",
+        "options": [
+            { "id": "a", "text": "that" },
+            { "id": "b", "text": "which" },
+            { "id": "c", "text": "whom" },
+            { "id": "d", "text": "whose" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE261",
+        "questionText": "The employees ______ complaining about the new policy held a meeting. (Reduced clause)",
+        "options": [
+            { "id": "a", "text": "were" },
+            { "id": "b", "text": "complaining" },
+            { "id": "c", "text": "who" },
+            { "id": "d", "text": "which were" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE262",
+        "questionText": "The house, the garden ______ is beautiful, is for sale.",
+        "options": [
+            { "id": "a", "text": "which" },
+            { "id": "b", "text": "that" },
+            { "id": "c", "text": "whose" },
+            { "id": "d", "text": "of which (Less common/more formal than whose)" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE263",
+        "questionText": "This is exactly ______ I was looking for.",
+        "options": [
+            { "id": "a", "text": "which" },
+            { "id": "b", "text": "that" },
+            { "id": "c", "text": "what" },
+            { "id": "d", "text": "the thing" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE264",
+        "questionText": "Do you remember the name of the artist ______ painted this picture?",
+        "options": [
+            { "id": "a", "text": "which" },
+            { "id": "b", "text": "whose" },
+            { "id": "c", "text": "whom" },
+            { "id": "d", "text": "who" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE265",
+        "questionText": "The village through ______ we drove was very picturesque.",
+        "options": [
+            { "id": "a", "text": "who" },
+            { "id": "b", "text": "where" },
+            { "id": "c", "text": "which" },
+            { "id": "d", "text": "that" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE266",
+        "questionText": "He talked about his trip to India, ______ fascinated everyone.",
+        "options": [
+            { "id": "a", "text": "that" },
+            { "id": "b", "text": "which" },
+            { "id": "c", "text": "who" },
+            { "id": "d", "text": "what" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE267",
+        "questionText": "The children ______ toys were broken were crying.",
+        "options": [
+            { "id": "a", "text": "who" },
+            { "id": "b", "text": "which" },
+            { "id": "c", "text": "whom" },
+            { "id": "d", "text": "whose" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE268",
+        "questionText": "I didn't like the way ______ she spoke to me.",
+        "options": [
+            { "id": "a", "text": "which" },
+            { "id": "b", "text": "where" },
+            { "id": "c", "text": "when" },
+            { "id": "d", "text": "Ø (that/in which omitted)" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE269",
+        "questionText": "The lady ______ is sitting over there is my aunt.",
+        "options": [
+            { "id": "a", "text": "which" },
+            { "id": "b", "text": "whose" },
+            { "id": "c", "text": "who" },
+            { "id": "d", "text": "whom" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE270",
+        "questionText": "All the information ______ needed is in the file. (Reduced clause)",
+        "options": [
+            { "id": "a", "text": "is" },
+            { "id": "b", "text": "which" },
+            { "id": "c", "text": "needed" },
+            { "id": "d", "text": "that are" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE271",
+        "questionText": "He finally achieved the goal ______ he had been working towards for years.",
+        "options": [
+            { "id": "a", "text": "who" },
+            { "id": "b", "text": "where" },
+            { "id": "c", "text": "which" },
+            { "id": "d", "text": "when" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE272",
+        "questionText": "She is one of the few people ______ I truly trust.",
+        "options": [
+            { "id": "a", "text": "who" },
+            { "id": "b", "text": "which" },
+            { "id": "c", "text": "whose" },
+            { "id": "d", "text": "whom" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE273",
+        "questionText": "The meeting, ______ lasted three hours, was inconclusive.",
+        "options": [
+            { "id": "a", "text": "that" },
+            { "id": "b", "text": "which" },
+            { "id": "c", "text": "Ø" },
+            { "id": "d", "text": "it" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE274",
+        "questionText": "There are several reasons ______ this project failed.",
+        "options": [
+            { "id": "a", "text": "which" },
+            { "id": "b", "text": "where" },
+            { "id": "c", "text": "when" },
+            { "id": "d", "text": "why" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE275",
+        "questionText": "The police questioned the man ______ neighbours heard the argument.",
+        "options": [
+            { "id": "a", "text": "who" },
+            { "id": "b", "text": "which" },
+            { "id": "c", "text": "whom" },
+            { "id": "d", "text": "whose" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE276",
+        "questionText": "A person who believes in the existence of God or gods is called...",
+        "options": [
+            { "id": "a", "text": "An atheist" },
+            { "id": "b", "text": "An agnostic" },
+            { "id": "c", "text": "A theist" },
+            { "id": "d", "text": "A sceptic" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE277",
+        "questionText": "The study of the origin and history of words is...",
+        "options": [
+            { "id": "a", "text": "Linguistics" },
+            { "id": "b", "text": "Etymology" },
+            { "id": "c", "text": "Philology" },
+            { "id": "d", "text": "Phonetics" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE278",
+        "questionText": "A place where birds are kept is an...",
+        "options": [
+            { "id": "a", "text": "Apiary" },
+            { "id": "b", "text": "Aquarium" },
+            { "id": "c", "text": "Aviary" },
+            { "id": "d", "text": "Armory" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE279",
+        "questionText": "An extreme or irrational fear of heights is...",
+        "options": [
+            { "id": "a", "text": "Claustrophobia" },
+            { "id": "b", "text": "Agoraphobia" },
+            { "id": "c", "text": "Acrophobia" },
+            { "id": "d", "text": "Hydrophobia" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE280",
+        "questionText": "The art of beautiful handwriting is called...",
+        "options": [
+            { "id": "a", "text": "Cartography" },
+            { "id": "b", "text": "Calligraphy" },
+            { "id": "c", "text": "Cryptography" },
+            { "id": "d", "text": "Stenography" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE281",
+        "questionText": "Someone who loves and collects books is a...",
+        "options": [
+            { "id": "a", "text": "Bibliophile" },
+            { "id": "b", "text": "Philatelist" },
+            { "id": "c", "text": "Numismatist" },
+            { "id": "d", "text": "Librarian" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE282",
+        "questionText": "A government ruled by the wealthy is a...",
+        "options": [
+            { "id": "a", "text": "Democracy" },
+            { "id": "b", "text": "Autocracy" },
+            { "id": "c", "text": "Oligarchy" },
+            { "id": "d", "text": "Plutocracy" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE283",
+        "questionText": "The scientific study of earthquakes is...",
+        "options": [
+            { "id": "a", "text": "Geology" },
+            { "id": "b", "text": "Seismology" },
+            { "id": "c", "text": "Meteorology" },
+            { "id": "d", "text": "Volcanology" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE284",
+        "questionText": "A person who can speak many languages is a...",
+        "options": [
+            { "id": "a", "text": "Linguist" },
+            { "id": "b", "text": "Polyglot" },
+            { "id": "c", "text": "Monoglot" },
+            { "id": "d", "text": "Grammarian" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE285",
+        "questionText": "A collection of historical documents or records is kept in an...",
+        "options": [
+            { "id": "a", "text": "Archive" },
+            { "id": "b", "text": "Museum" },
+            { "id": "c", "text": "Library" },
+            { "id": "d", "text": "Gallery" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE286",
+        "questionText": "The belief that there is no God is...",
+        "options": [
+            { "id": "a", "text": "Theism" },
+            { "id": "b", "text": "Agnosticism" },
+            { "id": "c", "text": "Deism" },
+            { "id": "d", "text": "Atheism" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE287",
+        "questionText": "A person who studies human history and prehistory through excavation is an...",
+        "options": [
+            { "id": "a", "text": "Anthropologist" },
+            { "id": "b", "text": "Archaeologist" },
+            { "id": "c", "text": "Paleontologist" },
+            { "id": "d", "text": "Historian" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE288",
+        "questionText": "An imaginary perfect society is called...",
+        "options": [
+            { "id": "a", "text": "Dystopia" },
+            { "id": "b", "text": "Utopia" },
+            { "id": "c", "text": "Arcadia" },
+            { "id": "d", "text": "Paradise" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE289",
+        "questionText": "The study of stars, planets, and the universe is...",
+        "options": [
+            { "id": "a", "text": "Astrology" },
+            { "id": "b", "text": "Astronomy" },
+            { "id": "c", "text": "Cosmology" },
+            { "id": "d", "text": "Geology" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE290",
+        "questionText": "A person who hates humankind is a...",
+        "options": [
+            { "id": "a", "text": "Misogynist" },
+            { "id": "b", "text": "Philanthropist" },
+            { "id": "c", "text": "Misanthrope" },
+            { "id": "d", "text": "Altruist" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE291",
+        "questionText": "A place where bees are kept is an...",
+        "options": [
+            { "id": "a", "text": "Aviary" },
+            { "id": "b", "text": "Apiary" },
+            { "id": "c", "text": "Aquarium" },
+            { "id": "d", "text": "Stable" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE292",
+        "questionText": "The art of map-making is...",
+        "options": [
+            { "id": "a", "text": "Calligraphy" },
+            { "id": "b", "text": "Cartography" },
+            { "id": "c", "text": "Geography" },
+            { "id": "d", "text": "Topography" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE293",
+        "questionText": "An extreme fear of water is...",
+        "options": [
+            { "id": "a", "text": "Acrophobia" },
+            { "id": "b", "text": "Claustrophobia" },
+            { "id": "c", "text": "Hydrophobia" },
+            { "id": "d", "text": "Agoraphobia" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE294",
+        "questionText": "A person appointed by two parties to resolve a dispute is an...",
+        "options": [
+            { "id": "a", "text": "Advocate" },
+            { "id": "b", "text": "Arbitrator" },
+            { "id": "c", "text": "Judge" },
+            { "id": "d", "text": "Mediator" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE295",
+        "questionText": "The study of the functions of living organisms and their parts is...",
+        "options": [
+            { "id": "a", "text": "Anatomy" },
+            { "id": "b", "text": "Biology" },
+            { "id": "c", "text": "Physiology" },
+            { "id": "d", "text": "Cytology" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE296",
+        "questionText": "Someone who walks in their sleep is a...",
+        "options": [
+            { "id": "a", "text": "Somniloquist" },
+            { "id": "b", "text": "Somnambulist" },
+            { "id": "c", "text": "Insomniac" },
+            { "id": "d", "text": "Hypnotist" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE297",
+        "questionText": "A large building with an extensive collection of books for public use is a...",
+        "options": [
+            { "id": "a", "text": "Museum" },
+            { "id": "b", "text": "Gallery" },
+            { "id": "c", "text": "Archive" },
+            { "id": "d", "text": "Library" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE298",
+        "questionText": "A system of government by one person with absolute power is an...",
+        "options": [
+            { "id": "a", "text": "Oligarchy" },
+            { "id": "b", "text": "Democracy" },
+            { "id": "c", "text": "Autocracy" },
+            { "id": "d", "text": "Monarchy" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE299",
+        "questionText": "The scientific study of plants is...",
+        "options": [
+            { "id": "a", "text": "Zoology" },
+            { "id": "b", "text": "Botany" },
+            { "id": "c", "text": "Mycology" },
+            { "id": "d", "text": "Ecology" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE300",
+        "questionText": "A person who eats only plant-based foods is a...",
+        "options": [
+            { "id": "a", "text": "Vegetarian" },
+            { "id": "b", "text": "Carnivore" },
+            { "id": "c", "text": "Omnivore" },
+            { "id": "d", "text": "Vegan" }
+        ],
+        "correctOptionId": "d"
+    },
+     {
+        "id": "KE301",
+        "questionText": "A place where sick or injured people are given medical care is a...",
+        "options": [
+            { "id": "a", "text": "Dormitory" },
+            { "id": "b", "text": "Sanatorium" },
+            { "id": "c", "text": "Hospital" },
+            { "id": "d", "text": "Clinic" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE302",
+        "questionText": "The practice of writing in secret code is...",
+        "options": [
+            { "id": "a", "text": "Stenography" },
+            { "id": "b", "text": "Calligraphy" },
+            { "id": "c", "text": "Cryptography" },
+            { "id": "d", "text": "Hieroglyphics" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE303",
+        "questionText": "An extreme fear of open or public places is...",
+        "options": [
+            { "id": "a", "text": "Acrophobia" },
+            { "id": "b", "text": "Claustrophobia" },
+            { "id": "c", "text": "Agoraphobia" },
+            { "id": "d", "text": "Xenophobia" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE304",
+        "questionText": "Someone who collects stamps is a...",
+        "options": [
+            { "id": "a", "text": "Numismatist" },
+            { "id": "b", "text": "Philatelist" },
+            { "id": "c", "text": "Cartographer" },
+            { "id": "d", "text": "Bibliophile" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE305",
+        "questionText": "The study of the Earth's physical structure and substance is...",
+        "options": [
+            { "id": "a", "text": "Meteorology" },
+            { "id": "b", "text": "Geography" },
+            { "id": "c", "text": "Geology" },
+            { "id": "d", "text": "Oceanography" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE306",
+        "questionText": "A person who is new to a subject, skill, or belief is a...",
+        "options": [
+            { "id": "a", "text": "Veteran" },
+            { "id": "b", "text": "Expert" },
+            { "id": "c", "text": "Novice" },
+            { "id": "d", "text": "Master" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE307",
+        "questionText": "A building containing tanks of live fish of different species is an...",
+        "options": [
+            { "id": "a", "text": "Aviary" },
+            { "id": "b", "text": "Apiary" },
+            { "id": "c", "text": "Aquarium" },
+            { "id": "d", "text": "Terrarium" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE308",
+        "questionText": "A government ruled by a small group of people is an...",
+        "options": [
+            { "id": "a", "text": "Autocracy" },
+            { "id": "b", "text": "Democracy" },
+            { "id": "c", "text": "Oligarchy" },
+            { "id": "d", "text": "Theocracy" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE309",
+        "questionText": "The study of fungi is...",
+        "options": [
+            { "id": "a", "text": "Botany" },
+            { "id": "b", "text": "Zoology" },
+            { "id": "c", "text": "Mycology" },
+            { "id": "d", "text": "Virology" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE310",
+        "questionText": "A person who actively opposes or is hostile to someone or something is an...",
+        "options": [
+            { "id": "a", "text": "Ally" },
+            { "id": "b", "text": "Advocate" },
+            { "id": "c", "text": "Protagonist" },
+            { "id": "d", "text": "Antagonist" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE311",
+        "questionText": "A room or building equipped for scientific experiments or research is a...",
+        "options": [
+            { "id": "a", "text": "Studio" },
+            { "id": "b", "text": "Workshop" },
+            { "id": "c", "text": "Laboratory" },
+            { "id": "d", "text": "Observatory" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE312",
+        "questionText": "The art of planning and composing dances is...",
+        "options": [
+            { "id": "a", "text": "Cinematography" },
+            { "id": "b", "text": "Choreography" },
+            { "id": "c", "text": "Calligraphy" },
+            { "id": "d", "text": "Musicology" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE313",
+        "questionText": "An extreme fear of foreigners or strangers is...",
+        "options": [
+            { "id": "a", "text": "Acrophobia" },
+            { "id": "b", "text": "Gynophobia" },
+            { "id": "c", "text": "Xenophobia" },
+            { "id": "d", "text": "Necrophobia" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE314",
+        "questionText": "Someone who collects coins or medals is a...",
+        "options": [
+            { "id": "a", "text": "Philatelist" },
+            { "id": "b", "text": "Numismatist" },
+            { "id": "c", "text": "Horologist" },
+            { "id": "d", "text": "Lexicographer" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE315",
+        "questionText": "The study of weather and climate is...",
+        "options": [
+            { "id": "a", "text": "Geology" },
+            { "id": "b", "text": "Seismology" },
+            { "id": "c", "text": "Meteorology" },
+            { "id": "d", "text": "Hydrology" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE316",
+        "questionText": "A person who is recovering after an illness or medical treatment is a...",
+        "options": [
+            { "id": "a", "text": "Patient" },
+            { "id": "b", "text": "Convalescent" },
+            { "id": "c", "text": "Hypochondriac" },
+            { "id": "d", "text": "Malade" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE317",
+        "questionText": "A building where grain is stored is a...",
+        "options": [
+            { "id": "a", "text": "Hangar" },
+            { "id": "b", "text": "Silo" },
+            { "id": "c", "text": "Granary" },
+            { "id": "d", "text": "Warehouse" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE318",
+        "questionText": "A government controlled by religious leaders is a...",
+        "options": [
+            { "id": "a", "text": "Democracy" },
+            { "id": "b", "text": "Theocracy" },
+            { "id": "c", "text": "Plutocracy" },
+            { "id": "d", "text": "Bureaucracy" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE319",
+        "questionText": "The scientific study of animals is...",
+        "options": [
+            { "id": "a", "text": "Botany" },
+            { "id": "b", "text": "Zoology" },
+            { "id": "c", "text": "Entomology" },
+            { "id": "d", "text": "Ornithology" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE320",
+        "questionText": "Someone who believes that war and violence are unjustifiable is a...",
+        "options": [
+            { "id": "a", "text": "Patriot" },
+            { "id": "b", "text": "Pacifist" },
+            { "id": "c", "text": "Activist" },
+            { "id": "d", "text": "Loyalist" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE321",
+        "questionText": "A place equipped for observation of astronomical or meteorological phenomena is an...",
+        "options": [
+            { "id": "a", "text": "Laboratory" },
+            { "id": "b", "text": "Observatory" },
+            { "id": "c", "text": "Planetarium" },
+            { "id": "d", "text": "Auditorium" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE322",
+        "questionText": "The process of working metals is...",
+        "options": [
+            { "id": "a", "text": "Alchemy" },
+            { "id": "b", "text": "Chemistry" },
+            { "id": "c", "text": "Metallurgy" },
+            { "id": "d", "text": "Geology" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE323",
+        "questionText": "An extreme fear of spiders is...",
+        "options": [
+            { "id": "a", "text": "Ophidiophobia" },
+            { "id": "b", "text": "Cynophobia" },
+            { "id": "c", "text": "Arachnophobia" },
+            { "id": "d", "text": "Entomophobia" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE324",
+        "questionText": "A person who compiles dictionaries is a...",
+        "options": [
+            { "id": "a", "text": "Cartographer" },
+            { "id": "b", "text": "Calligrapher" },
+            { "id": "c", "text": "Lexicographer" },
+            { "id": "d", "text": "Biographer" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE325",
+        "questionText": "The study of human societies and their development is...",
+        "options": [
+            { "id": "a", "text": "Anthropology" },
+            { "id": "b", "text": "Psychology" },
+            { "id": "c", "text": "Sociology" },
+            { "id": "d", "text": "Ethnology" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE326",
+        "questionText": "Someone who is easily deceived or cheated is...",
+        "options": [
+            { "id": "a", "text": "Credulous" },
+            { "id": "b", "text": "Sceptical" },
+            { "id": "c", "text": "Cynical" },
+            { "id": "d", "text": "Gullible" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE327",
+        "questionText": "A large cage or building for housing aircraft is a...",
+        "options": [
+            { "id": "a", "text": "Granary" },
+            { "id": "b", "text": "Hangar" },
+            { "id": "c", "text": "Depot" },
+            { "id": "d", "text": "Dockyard" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE328",
+        "questionText": "A system of government where power is held by the people is a...",
+        "options": [
+            { "id": "a", "text": "Monarchy" },
+            { "id": "b", "text": "Aristocracy" },
+            { "id": "c", "text": "Democracy" },
+            { "id": "d", "text": "Republic" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE329",
+        "questionText": "The study of insects is...",
+        "options": [
+            { "id": "a", "text": "Ornithology" },
+            { "id": "b", "text": "Herpetology" },
+            { "id": "c", "text": "Entomology" },
+            { "id": "d", "text": "Ichthyology" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE330",
+        "questionText": "A person who donates money or help generously is a...",
+        "options": [
+            { "id": "a", "text": "Miser" },
+            { "id": "b", "text": "Beneficiary" },
+            { "id": "c", "text": "Philanthropist" },
+            { "id": "d", "text": "Collector" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE331",
+        "questionText": "A large room in a college or university where students sleep is a...",
+        "options": [
+            { "id": "a", "text": "Hostel" },
+            { "id": "b", "text": "Dormitory" },
+            { "id": "c", "text": "Refectory" },
+            { "id": "d", "text": "Common room" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE332",
+        "questionText": "The art and science of preparing and serving good food is...",
+        "options": [
+            { "id": "a", "text": "Nutrition" },
+            { "id": "b", "text": "Gastronomy" },
+            { "id": "c", "text": "Cuisine" },
+            { "id": "d", "text": "Confectionery" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE333",
+        "questionText": "An extreme fear of death or dead bodies is...",
+        "options": [
+            { "id": "a", "text": "Thanatophobia" },
+            { "id": "b", "text": "Necrophobia" },
+            { "id": "c", "text": "Hemophobia" },
+            { "id": "d", "text": "Claustrophobia" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE334",
+        "questionText": "Someone who tells stories, especially one who earns a living by it, is a...",
+        "options": [
+            { "id": "a", "text": "Narrator" },
+            { "id": "b", "text": "Raconteur" },
+            { "id": "c", "text": "Author" },
+            { "id": "d", "text": "Orator" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE335",
+        "questionText": "The study of the mind and behavior is...",
+        "options": [
+            { "id": "a", "text": "Sociology" },
+            { "id": "b", "text": "Physiology" },
+            { "id": "c", "text": "Psychology" },
+            { "id": "d", "text": "Neurology" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE336",
+        "questionText": "A person who travels to a sacred place as an act of religious devotion is a...",
+        "options": [
+            { "id": "a", "text": "Tourist" },
+            { "id": "b", "text": "Wanderer" },
+            { "id": "c", "text": "Pilgrim" },
+            { "id": "d", "text": "Explorer" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE337",
+        "questionText": "A room built below ground level, often used for storage, is a...",
+        "options": [
+            { "id": "a", "text": "Attic" },
+            { "id": "b", "text": "Loft" },
+            { "id": "c", "text": "Cellar" },
+            { "id": "d", "text": "Pantry" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE338",
+        "questionText": "A state of disorder due to absence or nonrecognition of authority is...",
+        "options": [
+            { "id": "a", "text": "Monarchy" },
+            { "id": "b", "text": "Tyranny" },
+            { "id": "c", "text": "Anarchy" },
+            { "id": "d", "text": "Oligarchy" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE339",
+        "questionText": "The study of birds is...",
+        "options": [
+            { "id": "a", "text": "Entomology" },
+            { "id": "b", "text": "Herpetology" },
+            { "id": "c", "text": "Ornithology" },
+            { "id": "d", "text": "Mammalogy" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE340",
+        "questionText": "Someone who pretends to be someone else, especially for fraudulent purposes, is an...",
+        "options": [
+            { "id": "a", "text": "Actor" },
+            { "id": "b", "text": "Impostor" },
+            { "id": "c", "text": "Mimic" },
+            { "id": "d", "text": "Doppelgänger" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE341",
+        "questionText": "A place where weapons and ammunition are stored is an...",
+        "options": [
+            { "id": "a", "text": "Armory / Arsenal" },
+            { "id": "b", "text": "Archive" },
+            { "id": "c", "text": "Barracks" },
+            { "id": "d", "text": "Hangar" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE342",
+        "questionText": "The art of effective or persuasive speaking or writing is...",
+        "options": [
+            { "id": "a", "text": "Poetry" },
+            { "id": "b", "text": "Rhetoric" },
+            { "id": "c", "text": "Prose" },
+            { "id": "d", "text": "Debate" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE343",
+        "questionText": "An extreme fear of dogs is...",
+        "options": [
+            { "id": "a", "text": "Ailurophobia" },
+            { "id": "b", "text": "Cynophobia" },
+            { "id": "c", "text": "Musophobia" },
+            { "id": "d", "text": "Equinophobia" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE344",
+        "questionText": "A person who is skilled in cutting, shaping, and polishing precious stones is a...",
+        "options": [
+            { "id": "a", "text": "Jeweler" },
+            { "id": "b", "text": "Goldsmith" },
+            { "id": "c", "text": "Lapidary" },
+            { "id": "d", "text": "Engraver" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE345",
+        "questionText": "The study of ancient writings and inscriptions is...",
+        "options": [
+            { "id": "a", "text": "Paleography" },
+            { "id": "b", "text": "Calligraphy" },
+            { "id": "c", "text": "Epigraphy" },
+            { "id": "d", "text": "Archaeology" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE346",
+        "questionText": "Someone who deserts their country or cause for an opposing one is a...",
+        "options": [
+            { "id": "a", "text": "Refugee" },
+            { "id": "b", "text": "Patriot" },
+            { "id": "c", "text": "Renegade" },
+            { "id": "d", "text": "Exile" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE347",
+        "questionText": "A building or room containing collections of books, periodicals, and sometimes films and recorded music for use or borrowing by the public or the members of an institution.",
+        "options": [
+            { "id": "a", "text": "Museum" },
+            { "id": "b", "text": "Gallery" },
+            { "id": "c", "text": "Archive" },
+            { "id": "d", "text": "Library" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE348",
+        "questionText": "A form of government in which a state is ruled by representatives of the citizen body.",
+        "options": [
+            { "id": "a", "text": "Democracy" },
+            { "id": "b", "text": "Republic" },
+            { "id": "c", "text": "Federation" },
+            { "id": "d", "text": "Confederacy" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE349",
+        "questionText": "The study of reptiles and amphibians is...",
+        "options": [
+            { "id": "a", "text": "Ornithology" },
+            { "id": "b", "text": "Ichthyology" },
+            { "id": "c", "text": "Herpetology" },
+            { "id": "d", "text": "Entomology" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE350",
+        "questionText": "A person who is intolerant towards those holding different opinions is a...",
+        "options": [
+            { "id": "a", "text": "Liberal" },
+            { "id": "b", "text": "Bigot" },
+            { "id": "c", "text": "Sceptic" },
+            { "id": "d", "text": "Conservative" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE351",
+        "questionText": "A place where fruit trees are grown is an...",
+        "options": [
+            { "id": "a", "text": "Orchard" },
+            { "id": "b", "text": "Vineyard" },
+            { "id": "c", "text": "Nursery" },
+            { "id": "d", "text": "Plantation" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE352",
+        "questionText": "The practice of spying or using spies is...",
+        "options": [
+            { "id": "a", "text": "Sabotage" },
+            { "id": "b", "text": "Espionage" },
+            { "id": "c", "text": "Reconnaissance" },
+            { "id": "d", "text": "Infiltration" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE353",
+        "questionText": "An extreme fear of confined places is...",
+        "options": [
+            { "id": "a", "text": "Agoraphobia" },
+            { "id": "b", "text": "Acrophobia" },
+            { "id": "c", "text": "Claustrophobia" },
+            { "id": "d", "text": "Xenophobia" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE354",
+        "questionText": "Someone who designs buildings and supervises their construction is an...",
+        "options": [
+            { "id": "a", "text": "Engineer" },
+            { "id": "b", "text": "Architect" },
+            { "id": "c", "text": "Surveyor" },
+            { "id": "d", "text": "Builder" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE355",
+        "questionText": "The study of human origins, societies, and cultures is...",
+        "options": [
+            { "id": "a", "text": "Sociology" },
+            { "id": "b", "text": "Anthropology" },
+            { "id": "c", "text": "Ethnology" },
+            { "id": "d", "text": "Archaeology" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE356",
+        "questionText": "A person who believes the worst will happen is an...",
+        "options": [
+            { "id": "a", "text": "Optimist" },
+            { "id": "b", "text": "Realist" },
+            { "id": "c", "text": "Pessimist" },
+            { "id": "d", "text": "Idealist" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE357",
+        "questionText": "A building or large room used for public events such as meetings and concerts is an...",
+        "options": [
+            { "id": "a", "text": "Auditorium" },
+            { "id": "b", "text": "Stadium" },
+            { "id": "c", "text": "Amphitheater" },
+            { "id": "d", "text": "Arena" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE358",
+        "questionText": "A system of government by the nobility is an...",
+        "options": [
+            { "id": "a", "text": "Democracy" },
+            { "id": "b", "text": "Plutocracy" },
+            { "id": "c", "text": "Aristocracy" },
+            { "id": "d", "text": "Meritocracy" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE359",
+        "questionText": "The study of fish is...",
+        "options": [
+            { "id": "a", "text": "Herpetology" },
+            { "id": "b", "text": "Ornithology" },
+            { "id": "c", "text": "Ichthyology" },
+            { "id": "d", "text": "Mammalogy" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE360",
+        "questionText": "Someone who leaves their own country to settle permanently in another is an...",
+        "options": [
+            { "id": "a", "text": "Immigrant" },
+            { "id": "b", "text": "Emigrant" },
+            { "id": "c", "text": "Refugee" },
+            { "id": "d", "text": "Expatriate" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE361",
+        "questionText": "A room or building in which dead bodies are kept before burial or cremation is a...",
+        "options": [
+            { "id": "a", "text": "Cemetery" },
+            { "id": "b", "text": "Morgue / Mortuary" },
+            { "id": "c", "text": "Crypt" },
+            { "id": "d", "text": "Crematorium" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE362",
+        "questionText": "The art of making fireworks is...",
+        "options": [
+            { "id": "a", "text": "Pyrotechnics" },
+            { "id": "b", "text": "Ballistics" },
+            { "id": "c", "text": "Chemistry" },
+            { "id": "d", "text": "Explosives engineering" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE363",
+        "questionText": "An extreme fear of cats is...",
+        "options": [
+            { "id": "a", "text": "Cynophobia" },
+            { "id": "b", "text": "Ailurophobia" },
+            { "id": "c", "text": "Musophobia" },
+            { "id": "d", "text": "Ophidiophobia" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE364",
+        "questionText": "A person who studies or writes about history is a...",
+        "options": [
+            { "id": "a", "text": "Biographer" },
+            { "id": "b", "text": "Chronicler" },
+            { "id": "c", "text": "Historian" },
+            { "id": "d", "text": "Archaeologist" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE365",
+        "questionText": "The study of the relationships between organisms and their environment is...",
+        "options": [
+            { "id": "a", "text": "Biology" },
+            { "id": "b", "text": "Ecology" },
+            { "id": "c", "text": "Genetics" },
+            { "id": "d", "text": "Evolution" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE366",
+        "questionText": "A person who offers the use of their home to travellers for free, often via organised schemes.",
+        "options": [
+            { "id": "a", "text": "Host" },
+            { "id": "b", "text": "Landlord" },
+            { "id": "c", "text": "Innkeeper" },
+            { "id": "d", "text": "Couchsurfer" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE367",
+        "questionText": "A place where hides (animal skins) are tanned is a...",
+        "options": [
+            { "id": "a", "text": "Tannery" },
+            { "id": "b", "text": "Abattoir" },
+            { "id": "c", "text": "Factory" },
+            { "id": "d", "text": "Workshop" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE368",
+        "questionText": "A government run by officials is a...",
+        "options": [
+            { "id": "a", "text": "Democracy" },
+            { "id": "b", "text": "Bureaucracy" },
+            { "id": "c", "text": "Technocracy" },
+            { "id": "d", "text": "Gerontocracy" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE369",
+        "questionText": "The study of tissues is...",
+        "options": [
+            { "id": "a", "text": "Cytology" },
+            { "id": "b", "text": "Histology" },
+            { "id": "c", "text": "Anatomy" },
+            { "id": "d", "text": "Pathology" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE370",
+        "questionText": "A person who is excessively concerned with minor details and rules is a...",
+        "options": [
+            { "id": "a", "text": "Perfectionist" },
+            { "id": "b", "text": "Pedant" },
+            { "id": "c", "text": "Disciplinarian" },
+            { "id": "d", "text": "Critic" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE371",
+        "questionText": "A place where wine is made is a...",
+        "options": [
+            { "id": "a", "text": "Brewery" },
+            { "id": "b", "text": "Distillery" },
+            { "id": "c", "text": "Winery" },
+            { "id": "d", "text": "Vineyard" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE372",
+        "questionText": "The art of growing fruit, vegetables, and flowers is...",
+        "options": [
+            { "id": "a", "text": "Agriculture" },
+            { "id": "b", "text": "Horticulture" },
+            { "id": "c", "text": "Floristry" },
+            { "id": "d", "text": "Botany" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE373",
+        "questionText": "An extreme fear of snakes is...",
+        "options": [
+            { "id": "a", "text": "Arachnophobia" },
+            { "id": "b", "text": "Herpetophobia" },
+            { "id": "c", "text": "Ophidiophobia" },
+            { "id": "d", "text": "Zoophobia" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE374",
+        "questionText": "A person who studies languages is a...",
+        "options": [
+            { "id": "a", "text": "Polyglot" },
+            { "id": "b", "text": "Lexicographer" },
+            { "id": "c", "text": "Linguist" },
+            { "id": "d", "text": "Grammarian" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE375",
+        "questionText": "The study of the causes and effects of diseases is...",
+        "options": [
+            { "id": "a", "text": "Physiology" },
+            { "id": "b", "text": "Pathology" },
+            { "id": "c", "text": "Virology" },
+            { "id": "d", "text": "Immunology" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE376",
+        "questionText": "Someone who acts behalf of another person or group is a...",
+        "options": [
+            { "id": "a", "text": "Leader" },
+            { "id": "b", "text": "Representative" },
+            { "id": "c", "text": "Delegate" },
+            { "id": "d", "text": "Agent" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE377",
+        "questionText": "A sheltered place for ships; a port.",
+        "options": [
+            { "id": "a", "text": "Bay" },
+            { "id": "b", "text": "Inlet" },
+            { "id": "c", "text": "Harbour" },
+            { "id": "d", "text": "Estuary" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE378",
+        "questionText": "A government by old people is a...",
+        "options": [
+            { "id": "a", "text": "Gerontocracy" },
+            { "id": "b", "text": "Aristocracy" },
+            { "id": "c", "text": "Ochlocracy (mob rule)" },
+            { "id": "d", "text": "Plutocracy" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE379",
+        "questionText": "The study of cells is...",
+        "options": [
+            { "id": "a", "text": "Histology" },
+            { "id": "b", "text": "Cytology" },
+            { "id": "c", "text": "Biology" },
+            { "id": "d", "text": "Genetics" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE380",
+        "questionText": "A person who is unable to pay their debts is...",
+        "options": [
+            { "id": "a", "text": "Solvent" },
+            { "id": "b", "text": "Rich" },
+            { "id": "c", "text": "Insolvent / Bankrupt" },
+            { "id": "d", "text": "Creditor" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE381",
+        "questionText": "A place where coins, medals, or tokens are made is a...",
+        "options": [
+            { "id": "a", "text": "Treasury" },
+            { "id": "b", "text": "Bank" },
+            { "id": "c", "text": "Mint" },
+            { "id": "d", "text": "Factory" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE382",
+        "questionText": "The art of arranging the steps, patterns, and movements in dances is...",
+        "options": [
+            { "id": "a", "text": "Ballet" },
+            { "id": "b", "text": "Choreography" },
+            { "id": "c", "text": "Kinesiology" },
+            { "id": "d", "text": "Gymnastics" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE383",
+        "questionText": "An extreme fear of being in crowded public places like markets.",
+        "options": [
+            { "id": "a", "text": "Claustrophobia" },
+            { "id": "b", "text": "Ochlophobia / Demophobia" },
+            { "id": "c", "text": "Agoraphobia" },
+            { "id": "d", "text": "Social Phobia" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE384",
+        "questionText": "A person who makes maps is a...",
+        "options": [
+            { "id": "a", "text": "Geographer" },
+            { "id": "b", "text": "Surveyor" },
+            { "id": "c", "text": "Cartographer" },
+            { "id": "d", "text": "Topographer" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE385",
+        "questionText": "The study of religion and religious belief is...",
+        "options": [
+            { "id": "a", "text": "Philosophy" },
+            { "id": "b", "text": "Ethics" },
+            { "id": "c", "text": "Theology" },
+            { "id": "d", "text": "Anthropology" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE386",
+        "questionText": "Someone who can use either hand equally well is...",
+        "options": [
+            { "id": "a", "text": "Bilingual" },
+            { "id": "b", "text": "Ambidextrous" },
+            { "id": "c", "text": "Versatile" },
+            { "id": "d", "text": "Dexterous" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE387",
+        "questionText": "A place where young plants and trees are grown for sale or planting elsewhere.",
+        "options": [
+            { "id": "a", "text": "Orchard" },
+            { "id": "b", "text": "Greenhouse" },
+            { "id": "c", "text": "Nursery" },
+            { "id": "d", "text": "Garden" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE388",
+        "questionText": "A state where there are no laws or government.",
+        "options": [
+            { "id": "a", "text": "Utopia" },
+            { "id": "b", "text": "Autocracy" },
+            { "id": "c", "text": "Anarchy" },
+            { "id": "d", "text": "Republic" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE389",
+        "questionText": "The study of the measurement of time is...",
+        "options": [
+            { "id": "a", "text": "Chronology" },
+            { "id": "b", "text": "Horology" },
+            { "id": "c", "text": "Archaeology" },
+            { "id": "d", "text": "Metrology" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE390",
+        "questionText": "A person who opposes another person is an...",
+        "options": [
+            { "id": "a", "text": "Ally" },
+            { "id": "b", "text": "Opponent" },
+            { "id": "c", "text": "Colleague" },
+            { "id": "d", "text": "Partner" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE391",
+        "questionText": "A container for the ashes of a dead person.",
+        "options": [
+            { "id": "a", "text": "Coffin" },
+            { "id": "b", "text": "Casket" },
+            { "id": "c", "text": "Urn" },
+            { "id": "d", "text": "Sarcophagus" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE392",
+        "questionText": "The art of public speaking is...",
+        "options": [
+            { "id": "a", "text": "Oratory" },
+            { "id": "b", "text": "Rhetoric" },
+            { "id": "c", "text": "Elocution" },
+            { "id": "d", "text": "Debate" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE393",
+        "questionText": "An extreme fear of spiders and other arachnids.",
+        "options": [
+            { "id": "a", "text": "Entomophobia" },
+            { "id": "b", "text": "Arachnophobia" },
+            { "id": "c", "text": "Ophidiophobia" },
+            { "id": "d", "text": "Acarophobia" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE394",
+        "questionText": "A person who writes dictionaries.",
+        "options": [
+            { "id": "a", "text": "Linguist" },
+            { "id": "b", "text": "Etymologist" },
+            { "id": "c", "text": "Lexicographer" },
+            { "id": "d", "text": "Philologist" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE395",
+        "questionText": "The study of sound is...",
+        "options": [
+            { "id": "a", "text": "Optics" },
+            { "id": "b", "text": "Acoustics" },
+            { "id": "c", "text": "Phonetics" },
+            { "id": "d", "text": "Sonics" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE396",
+        "questionText": "Someone who settles in a new country.",
+        "options": [
+            { "id": "a", "text": "Native" },
+            { "id": "b", "text": "Emigrant" },
+            { "id": "c", "text": "Immigrant" },
+            { "id": "d", "text": "Tourist" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE397",
+        "questionText": "A factory for making beer.",
+        "options": [
+            { "id": "a", "text": "Winery" },
+            { "id": "b", "text": "Distillery" },
+            { "id": "c", "text": "Brewery" },
+            { "id": "d", "text": "Cidery" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE398",
+        "questionText": "A government consisting of the best or most able citizens.",
+        "options": [
+            { "id": "a", "text": "Democracy" },
+            { "id": "b", "text": "Meritocracy" },
+            { "id": "c", "text": "Aristocracy" },
+            { "id": "d", "text": "Technocracy" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE399",
+        "questionText": "The study of ancient things, especially the remains of prehistoric times.",
+        "options": [
+            { "id": "a", "text": "History" },
+            { "id": "b", "text": "Paleontology" },
+            { "id": "c", "text": "Archaeology" },
+            { "id": "d", "text": "Anthropology" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE400",
+        "questionText": "A person who is killed because of their religious or other beliefs.",
+        "options": [
+            { "id": "a", "text": "Saint" },
+            { "id": "b", "text": "Martyr" },
+            { "id": "c", "text": "Apostle" },
+            { "id": "d", "text": "Prophet" }
+        ],
+        "correctOptionId": "b"
+    },
+
+    {
+        "id": "KE401",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Acomodate" },
+            { "id": "b", "text": "Accommodate" },
+            { "id": "c", "text": "Accomodate" },
+            { "id": "d", "text": "Acommodate" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE402",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Belive" },
+            { "id": "b", "text": "Beleive" },
+            { "id": "c", "text": "Believe" },
+            { "id": "d", "text": "Beleave" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE403",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Cemetary" },
+            { "id": "b", "text": "Cematery" },
+            { "id": "c", "text": "Cemetery" },
+            { "id": "d", "text": "Cematary" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE404",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Definate" },
+            { "id": "b", "text": "Definite" },
+            { "id": "c", "text": "Definete" },
+            { "id": "d", "text": "Defenite" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE405",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Embarass" },
+            { "id": "b", "text": "Embarrass" },
+            { "id": "c", "text": "Embaress" },
+            { "id": "d", "text": "Embarras" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE406",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Flourescent" },
+            { "id": "b", "text": "Fluorescent" },
+            { "id": "c", "text": "Flourescent" },
+            { "id": "d", "text": "Fluorescant" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE407",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Guarantee" },
+            { "id": "b", "text": "Guarentee" },
+            { "id": "c", "text": "Gaurantee" },
+            { "id": "d", "text": "Gauruntee" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE408",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Hieght" },
+            { "id": "b", "text": "Height" },
+            { "id": "c", "text": "Hieght" },
+            { "id": "d", "text": "Heigth" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE409",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Independant" },
+            { "id": "b", "text": "Indipendant" },
+            { "id": "c", "text": "Independent" },
+            { "id": "d", "text": "Indepandent" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE410",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Jewelery" },
+            { "id": "b", "text": "Jewellry" },
+            { "id": "c", "text": "Jewelry" },
+            { "id": "d", "text": "Jewelrey" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE411",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Knowledge" },
+            { "id": "b", "text": "Knowlege" },
+            { "id": "c", "text": "Knowladge" },
+            { "id": "d", "text": "Knowlidge" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE412",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Liason" },
+            { "id": "b", "text": "Liasion" },
+            { "id": "c", "text": "Liaison" },
+            { "id": "d", "text": "Leason" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE413",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Millenium" },
+            { "id": "b", "text": "Millennium" },
+            { "id": "c", "text": "Milennium" },
+            { "id": "d", "text": "Millannium" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE414",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Neccessary" },
+            { "id": "b", "text": "Necessary" },
+            { "id": "c", "text": "Necassary" },
+            { "id": "d", "text": "Necesary" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE415",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Occurence" },
+            { "id": "b", "text": "Occurrence" },
+            { "id": "c", "text": "Occurrance" },
+            { "id": "d", "text": "Ocurrence" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE416",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Procede" },
+            { "id": "b", "text": "Proceed" },
+            { "id": "c", "text": "Proseed" },
+            { "id": "d", "text": "Proseede" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE417",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Questionnaire" },
+            { "id": "b", "text": "Questionaire" },
+            { "id": "c", "text": "Questionnair" },
+            { "id": "d", "text": "Quetionnaire" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE418",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Recieve" },
+            { "id": "b", "text": "Receive" },
+            { "id": "c", "text": "Reciev" },
+            { "id": "d", "text": "Reiceive" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE419",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Separate" },
+            { "id": "b", "text": "Seperate" },
+            { "id": "c", "text": "Saperate" },
+            { "id": "d", "text": "Seperete" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE420",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Tommorow" },
+            { "id": "b", "text": "Tomorrow" },
+            { "id": "c", "text": "Tomorow" },
+            { "id": "d", "text": "Tommorow" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE421",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Unfortunatly" },
+            { "id": "b", "text": "Unfortunately" },
+            { "id": "c", "text": "Unfortunatley" },
+            { "id": "d", "text": "Unfourtunately" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE422",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Vaccum" },
+            { "id": "b", "text": "Vacume" },
+            { "id": "c", "text": "Vacuum" },
+            { "id": "d", "text": "Vacumm" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE423",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Wierd" },
+            { "id": "b", "text": "Weird" },
+            { "id": "c", "text": "Wierde" },
+            { "id": "d", "text": "Weired" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE424",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Exilerate" },
+            { "id": "b", "text": "Exhilarate" },
+            { "id": "c", "text": "Exhilerate" },
+            { "id": "d", "text": "Exilerate" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE425",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Yatch" },
+            { "id": "b", "text": "Yacht" },
+            { "id": "c", "text": "Yocht" },
+            { "id": "d", "text": "Yattch" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE426",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Zealous" },
+            { "id": "b", "text": "Zealeous" },
+            { "id": "c", "text": "Zelous" },
+            { "id": "d", "text": "Zealus" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE427",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Acknowledge" },
+            { "id": "b", "text": "Aknolege" },
+            { "id": "c", "text": "Acknowlege" },
+            { "id": "d", "text": "Acknoledge" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE428",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Buisness" },
+            { "id": "b", "text": "Business" },
+            { "id": "c", "text": "Buisness" },
+            { "id": "d", "text": "Busines" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE429",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Colleague" },
+            { "id": "b", "text": "Coleague" },
+            { "id": "c", "text": "Collaegue" },
+            { "id": "d", "text": "Collague" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE430",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Dilemma" },
+            { "id": "b", "text": "Dilema" },
+            { "id": "c", "text": "Dilemna" },
+            { "id": "d", "text": "Dillama" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE431",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Existance" },
+            { "id": "b", "text": "Existence" },
+            { "id": "c", "text": "Exsistence" },
+            { "id": "d", "text": "Existense" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE432",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Forein" },
+            { "id": "b", "text": "Foriegn" },
+            { "id": "c", "text": "Foreign" },
+            { "id": "d", "text": "Forign" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE433",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Government" },
+            { "id": "b", "text": "Goverment" },
+            { "id": "c", "text": "Governmant" },
+            { "id": "d", "text": "Guvernment" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE434",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Harass" },
+            { "id": "b", "text": "Harrass" },
+            { "id": "c", "text": "Haras" },
+            { "id": "d", "text": "Harras" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE435",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Immediately" },
+            { "id": "b", "text": "Immediatly" },
+            { "id": "c", "text": "Immediateley" },
+            { "id": "d", "text": "Immediatley" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE436",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Judgement" },
+            { "id": "b", "text": "Judgment" },
+            { "id": "c", "text": "Judgmant" },
+            { "id": "d", "text": "Judgament" }
+        ],
+        "correctOptionId": "b" // Note: 'Judgement' is also correct (UK)
+    },
+    {
+        "id": "KE437",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Leisure" },
+            { "id": "b", "text": "Liesure" },
+            { "id": "c", "text": "Leasure" },
+            { "id": "d", "text": "Leisur" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE438",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Maintainance" },
+            { "id": "b", "text": "Maintenance" },
+            { "id": "c", "text": "Maintenence" },
+            { "id": "d", "text": "Maintainence" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE439",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Noticable" },
+            { "id": "b", "text": "Noticeable" },
+            { "id": "c", "text": "Noticible" },
+            { "id": "d", "text": "Noticeble" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE440",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Occasional" },
+            { "id": "b", "text": "Ocassional" },
+            { "id": "c", "text": "Occassional" },
+            { "id": "d", "text": "Ocassionnal" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE441",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Priviledge" },
+            { "id": "b", "text": "Privilege" },
+            { "id": "c", "text": "Privilage" },
+            { "id": "d", "text": "Previlege" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE442",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Quiet" }, // Opposite of noisy
+            { "id": "b", "text": "Quite" }, // Meaning fairly or completely
+            { "id": "c", "text": "Quiete" },
+            { "id": "d", "text": "Quait" }
+        ],
+        "correctOptionId": "a" // Assuming 'quiet' as in not noisy, common confusion with 'quite'
+    },
+    {
+        "id": "KE443",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Recommend" },
+            { "id": "b", "text": "Reccommend" },
+            { "id": "c", "text": "Reccomend" },
+            { "id": "d", "text": "Recomend" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE444",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Sincerely" },
+            { "id": "b", "text": "Sincerly" },
+            { "id": "c", "text": "Sincerley" },
+            { "id": "d", "text": "Sencirely" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE445",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Threshold" },
+            { "id": "b", "text": "Threshhold" },
+            { "id": "c", "text": "Threashold" },
+            { "id": "d", "text": "Threshould" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE446",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Untill" },
+            { "id": "b", "text": "Until" },
+            { "id": "c", "text": "Untile" },
+            { "id": "d", "text": "Antil" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE447",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Visible" },
+            { "id": "b", "text": "Visable" },
+            { "id": "c", "text": "Visibal" },
+            { "id": "d", "text": "Visibel" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE448",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Weather" }, // Climate conditions
+            { "id": "b", "text": "Wether" }, // Archaic sheep
+            { "id": "c", "text": "Wheather" },
+            { "id": "d", "text": "Weathar" }
+        ],
+        "correctOptionId": "a" // Assuming 'weather' as in climate
+    },
+    {
+        "id": "KE449",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Absense" },
+            { "id": "b", "text": "Abscence" },
+            { "id": "c", "text": "Absence" },
+            { "id": "d", "text": "Abcense" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE450",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Calendar" },
+            { "id": "b", "text": "Calender" },
+            { "id": "c", "text": "Calandar" },
+            { "id": "d", "text": "Callendar" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE451",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Concious" },
+            { "id": "b", "text": "Conscious" },
+            { "id": "c", "text": "Consious" },
+            { "id": "d", "text": "Contious" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE452",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Dissapoint" },
+            { "id": "b", "text": "Disappoint" },
+            { "id": "c", "text": "Dissappoint" },
+            { "id": "d", "text": "Disapoint" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE453",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Fasinate" },
+            { "id": "b", "text": "Facinate" },
+            { "id": "c", "text": "Fascinate" },
+            { "id": "d", "text": "Fassinate" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE454",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Grammer" },
+            { "id": "b", "text": "Grammar" },
+            { "id": "c", "text": "Gramar" },
+            { "id": "d", "text": "Gramer" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE455",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Humourous" },
+            { "id": "b", "text": "Humorous" },
+            { "id": "c", "text": "Humerous" },
+            { "id": "d", "text": "Humorus" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE456",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Ignorance" },
+            { "id": "b", "text": "Ignorense" },
+            { "id": "c", "text": "Ignoranse" },
+            { "id": "d", "text": "Ignorence" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE457",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Jealosy" },
+            { "id": "b", "text": "Jealousy" },
+            { "id": "c", "text": "Jealusy" },
+            { "id": "d", "text": "Jeallousy" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE458",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Laboratory" },
+            { "id": "b", "text": "Labratory" },
+            { "id": "c", "text": "Laboratery" },
+            { "id": "d", "text": "Labaratory" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE459",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Miscelaneous" },
+            { "id": "b", "text": "Miscellaneous" },
+            { "id": "c", "text": "Missellaneous" },
+            { "id": "d", "text": "Misellaneous" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE460",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Neighbor" }, // US spelling
+            { "id": "b", "text": "Nieghbor" },
+            { "id": "c", "text": "Neighber" },
+            { "id": "d", "text": "Neihbor" }
+        ],
+        "correctOptionId": "a" // UK spelling 'Neighbour' not listed
+    },
+    {
+        "id": "KE461",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Oppertunity" },
+            { "id": "b", "text": "Opportunity" },
+            { "id": "c", "text": "Oportunity" },
+            { "id": "d", "text": "Opportunety" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE462",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Posession" },
+            { "id": "b", "text": "Posession" },
+            { "id": "c", "text": "Possession" },
+            { "id": "d", "text": "Possesion" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE463",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Prefered" },
+            { "id": "b", "text": "Preferred" },
+            { "id": "c", "text": "Preferrd" },
+            { "id": "d", "text": "Preferd" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE464",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Rythm" },
+            { "id": "b", "text": "Rhythem" },
+            { "id": "c", "text": "Rhythm" },
+            { "id": "d", "text": "Rhithm" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE465",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Surprize" },
+            { "id": "b", "text": "Surprise" },
+            { "id": "c", "text": "Suprise" },
+            { "id": "d", "text": "Surprisse" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE466",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Temperature" },
+            { "id": "b", "text": "Tempereture" },
+            { "id": "c", "text": "Temprature" },
+            { "id": "d", "text": "Tempurature" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE467",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Thorough" }, // Meaning complete
+            { "id": "b", "text": "Through" }, // Movement from one side to another
+            { "id": "c", "text": "Thorogh" },
+            { "id": "d", "text": "Thorouh" }
+        ],
+        "correctOptionId": "a" // Assuming 'thorough' as in complete
+    },
+    {
+        "id": "KE468",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Vehicle" },
+            { "id": "b", "text": "Vehical" },
+            { "id": "c", "text": "Vechicle" },
+            { "id": "d", "text": "Vehicel" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE469",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Wednesday" },
+            { "id": "b", "text": "Wenesday" },
+            { "id": "c", "text": "Wendsday" },
+            { "id": "d", "text": "Wensday" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE470",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Acheive" },
+            { "id": "b", "text": "Achieve" },
+            { "id": "c", "text": "Acheve" },
+            { "id": "d", "text": "Acieve" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE471",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Arguement" },
+            { "id": "b", "text": "Argument" },
+            { "id": "c", "text": "Argeument" },
+            { "id": "d", "text": "Argumant" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE472",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Beautiful" },
+            { "id": "b", "text": "Beauitful" },
+            { "id": "c", "text": "Beutiful" },
+            { "id": "d", "text": "Beatiful" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE473",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Committee" },
+            { "id": "b", "text": "Commitee" },
+            { "id": "c", "text": "Comittee" },
+            { "id": "d", "text": "Committe" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE474",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Definitely" },
+            { "id": "b", "text": "Definitly" },
+            { "id": "c", "text": "Definately" },
+            { "id": "d", "text": "Definatly" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE475",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Environment" },
+            { "id": "b", "text": "Enviroment" },
+            { "id": "c", "text": "Envirenment" },
+            { "id": "d", "text": "Environmant" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE476",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "February" },
+            { "id": "b", "text": "Febuary" },
+            { "id": "c", "text": "Feburary" },
+            { "id": "d", "text": "Febraury" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE477",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Grateful" },
+            { "id": "b", "text": "Greatful" },
+            { "id": "c", "text": "Gratefull" },
+            { "id": "d", "text": "Greatfull" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE478",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Hierarchy" },
+            { "id": "b", "text": "Hierarky" },
+            { "id": "c", "text": "Heirarchy" },
+            { "id": "d", "text": "Hirarchy" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE479",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Intelligence" },
+            { "id": "b", "text": "Inteligenzce" },
+            { "id": "c", "text": "Intelligense" },
+            { "id": "d", "text": "Intellegence" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE480",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Knaife" },
+            { "id": "b", "text": "Knif" },
+            { "id": "c", "text": "Knife" },
+            { "id": "d", "text": "Niefe" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE481",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Licence (UK) / License (US)" }, // Noun (UK), Verb (US/UK)
+            { "id": "b", "text": "License (UK) / Licence (US)" }, // Verb (UK), Noun (US)
+            { "id": "c", "text": "Lisence" },
+            { "id": "d", "text": "Licens" }
+        ],
+        "correctOptionId": "a" // Assuming common context requires the noun form, UK spelling provided first
+    },
+    {
+        "id": "KE482",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Miniature" },
+            { "id": "b", "text": "Minature" },
+            { "id": "c", "text": "Miniture" },
+            { "id": "d", "text": "Minieture" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE483",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Nuisance" },
+            { "id": "b", "text": "Nusance" },
+            { "id": "c", "text": "Nuisence" },
+            { "id": "d", "text": "Nusence" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE484",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Original" },
+            { "id": "b", "text": "Orignal" },
+            { "id": "c", "text": "Origynal" },
+            { "id": "d", "text": "Originel" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE485",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Parliament" },
+            { "id": "b", "text": "Parliment" },
+            { "id": "c", "text": "Parlement" },
+            { "id": "d", "text": "Parliamant" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE486",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Queue" },
+            { "id": "b", "text": "Que" },
+            { "id": "c", "text": "Kue" },
+            { "id": "d", "text": "Qew" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE487",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Resteraunt" },
+            { "id": "b", "text": "Restarant" },
+            { "id": "c", "text": "Restaurant" },
+            { "id": "d", "text": "Restaurent" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE488",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Schedule" },
+            { "id": "b", "text": "Shedule" },
+            { "id": "c", "text": "Scedule" },
+            { "id": "d", "text": "Schedual" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE489",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Successfull" },
+            { "id": "b", "text": "Successful" },
+            { "id": "c", "text": "Succesful" },
+            { "id": "d", "text": "Sucessful" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE490",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Tounge" },
+            { "id": "b", "text": "Toungue" },
+            { "id": "c", "text": "Tongue" },
+            { "id": "d", "text": "Tonge" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE491",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Usage" },
+            { "id": "b", "text": "Useage" },
+            { "id": "c", "text": "Usige" },
+            { "id": "d", "text": "Useige" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE492",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Vicious" },
+            { "id": "b", "text": "Viscious" },
+            { "id": "c", "text": "Vicous" },
+            { "id": "d", "text": "Vishous" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE493",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Writeing" },
+            { "id": "b", "text": "Writing" },
+            { "id": "c", "text": "Writting" },
+            { "id": "d", "text": "Wrieting" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE494",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Appearance" },
+            { "id": "b", "text": "Apperance" },
+            { "id": "c", "text": "Appearence" }, // Correct option 'a' repeated? Use 'a'.
+            { "id": "d", "text": "Appereance" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE495",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Brilliance" },
+            { "id": "b", "text": "Brillance" },
+            { "id": "c", "text": "Brillianse" },
+            { "id": "d", "text": "Brilance" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE496",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Criticise (UK) / Criticize (US)" },
+            { "id": "b", "text": "Critisize" },
+            { "id": "c", "text": "Criticiz" },
+            { "id": "d", "text": "Critizise" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE497",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Desparate" },
+            { "id": "b", "text": "Desperate" },
+            { "id": "c", "text": "Despirate" },
+            { "id": "d", "text": "Desprate" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE498",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Efficient" },
+            { "id": "b", "text": "Efficiant" },
+            { "id": "c", "text": "Efficent" },
+            { "id": "d", "text": "Effishent" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE499",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Further" }, // Extent/metaphorical distance
+            { "id": "b", "text": "Farther" }, // Physical distance
+            { "id": "c", "text": "Fuerther" },
+            { "id": "d", "text": "Forther" }
+        ],
+        "correctOptionId": "a" // Assuming general use case
+    },
+    {
+        "id": "KE500",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Generaly" },
+            { "id": "b", "text": "Generally" },
+            { "id": "c", "text": "Generaly" }, // Duplicate 'a'
+            { "id": "d", "text": "Genrally" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE501",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Hindrance" },
+            { "id": "b", "text": "Hinderance" },
+            { "id": "c", "text": "Hindrence" },
+            { "id": "d", "text": "Hinderence" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE502",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Irresistible" },
+            { "id": "b", "text": "Irresistable" },
+            { "id": "c", "text": "Irrisistible" },
+            { "id": "d", "text": "Iresistible" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE503",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Jewellery (UK) / Jewelry (US)" },
+            { "id": "b", "text": "Jewellry" },
+            { "id": "c", "text": "Jewlery" },
+            { "id": "d", "text": "Jewelery" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE504",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Kindergarten" },
+            { "id": "b", "text": "Kindergarden" },
+            { "id": "c", "text": "Kindergartin" },
+            { "id": "d", "text": "Kintergarten" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE505",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Lightning" }, // Electrical discharge
+            { "id": "b", "text": "Lightening" }, // Making lighter
+            { "id": "c", "text": "Lightining" },
+            { "id": "d", "text": "Lighning" }
+        ],
+        "correctOptionId": "a" // Assuming electrical discharge
+    },
+    {
+        "id": "KE506",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Maneuver (US) / Manoeuvre (UK)" },
+            { "id": "b", "text": "Manouver" },
+            { "id": "c", "text": "Maneouver" },
+            { "id": "d", "text": "Manouvre" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE507",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Niece" },
+            { "id": "b", "text": "Neice" },
+            { "id": "c", "text": "Neece" },
+            { "id": "d", "text": "Niese" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE508",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Outrageous" },
+            { "id": "b", "text": "Outragous" },
+            { "id": "c", "text": "Outrageos" },
+            { "id": "d", "text": "Outragious" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE509",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Perseverence" },
+            { "id": "b", "text": "Perseverance" },
+            { "id": "c", "text": "Perseveranse" },
+            { "id": "d", "text": "Persevarence" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE510",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Quarentine" },
+            { "id": "b", "text": "Quarantine" },
+            { "id": "c", "text": "Quarantene" },
+            { "id": "d", "text": "Quarentene" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE511",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Relevant" },
+            { "id": "b", "text": "Relevent" },
+            { "id": "c", "text": "Relavant" },
+            { "id": "d", "text": "Relevante" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE512",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Scarcely" },
+            { "id": "b", "text": "Scarcly" },
+            { "id": "c", "text": "Scarseley" },
+            { "id": "d", "text": "Scarceley" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE513",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Technicaly" },
+            { "id": "b", "text": "Technically" },
+            { "id": "c", "text": "Technicalley" },
+            { "id": "d", "text": "Technecally" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE514",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Unnecessary" },
+            { "id": "b", "text": "Unneccessary" },
+            { "id": "c", "text": "Unecessary" },
+            { "id": "d", "text": "Unnecesary" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE515",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Villain" },
+            { "id": "b", "text": "Villian" },
+            { "id": "c", "text": "Villiain" },
+            { "id": "d", "text": "Vilan" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE516",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Weird" },
+            { "id": "b", "text": "Wierd" },
+            { "id": "c", "text": "Weired" },
+            { "id": "d", "text": "Wierde" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE517",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Accomodation" },
+            { "id": "b", "text": "Accommodation" },
+            { "id": "c", "text": "Acommodation" },
+            { "id": "d", "text": "Accommadation" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE518",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Broccoli" },
+            { "id": "b", "text": "Brocolli" },
+            { "id": "c", "text": "Brocolli" }, // Duplicate 'b'
+            { "id": "d", "text": "Brocoly" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE519",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Conscience" },
+            { "id": "b", "text": "Consience" },
+            { "id": "c", "text": "Consciense" },
+            { "id": "d", "text": "Concience" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE520",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Discipline" },
+            { "id": "b", "text": "Disciplin" },
+            { "id": "c", "text": "Disipline" },
+            { "id": "d", "text": "Dissipline" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE521",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Exaggerate" },
+            { "id": "b", "text": "Exagerate" },
+            { "id": "c", "text": "Exaggerrate" },
+            { "id": "d", "text": "Exadgerate" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE522",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Forty" },
+            { "id": "b", "text": "Fourty" },
+            { "id": "c", "text": "Fourtie" },
+            { "id": "d", "text": "Fortie" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE523",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Guard" },
+            { "id": "b", "text": "Gaurd" },
+            { "id": "c", "text": "Gard" },
+            { "id": "d", "text": "Guerd" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE524",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Hypocrisy" },
+            { "id": "b", "text": "Hypocricy" },
+            { "id": "c", "text": "Hipocrisy" },
+            { "id": "d", "text": "Hypocracy" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE525",
+        "questionText": "Choose the correct spelling:",
+        "options": [
+            { "id": "a", "text": "Immediately" },
+            { "id": "b", "text": "Immediatly" },
+            { "id": "c", "text": "Immeadiately" },
+            { "id": "d", "text": "Immediatley" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE526",
+        "questionText": "The plural of 'cactus' is:",
+        "options": [
+            { "id": "a", "text": "cactuses" },
+            { "id": "b", "text": "cactus" },
+            { "id": "c", "text": "cacti" },
+            { "id": "d", "text": "cactae" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE527",
+        "questionText": "The singular of 'bacteria' is:",
+        "options": [
+            { "id": "a", "text": "bacterio" },
+            { "id": "b", "text": "bacterium" },
+            { "id": "c", "text": "bacterius" },
+            { "id": "d", "text": "bacteriae" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE528",
+        "questionText": "The plural of 'child' is:",
+        "options": [
+            { "id": "a", "text": "childs" },
+            { "id": "b", "text": "childes" },
+            { "id": "c", "text": "children" },
+            { "id": "d", "text": "childen" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE529",
+        "questionText": "The plural of 'sheep' is:",
+        "options": [
+            { "id": "a", "text": "sheeps" },
+            { "id": "b", "text": "sheep" },
+            { "id": "c", "text": "sheepes" },
+            { "id": "d", "text": "shep" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE530",
+        "questionText": "The singular of 'criteria' is:",
+        "options": [
+            { "id": "a", "text": "criterium" },
+            { "id": "b", "text": "criterion" },
+            { "id": "c", "text": "criteria" },
+            { "id": "d", "text": "criterius" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE531",
+        "questionText": "The plural of 'goose' is:",
+        "options": [
+            { "id": "a", "text": "gooses" },
+            { "id": "b", "text": "geese" },
+            { "id": "c", "text": "geeses" },
+            { "id": "d", "text": "goose" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE532",
+        "questionText": "The singular of 'phenomena' is:",
+        "options": [
+            { "id": "a", "text": "phenomenon" },
+            { "id": "b", "text": "phenomena" },
+            { "id": "c", "text": "phenomenum" },
+            { "id": "d", "text": "phenomenos" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE533",
+        "questionText": "The plural of 'man' is:",
+        "options": [
+            { "id": "a", "text": "mans" },
+            { "id": "b", "text": "manes" },
+            { "id": "c", "text": "men" },
+            { "id": "d", "text": "mens" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE534",
+        "questionText": "The plural of 'fish' (referring to multiple individual fish, possibly different species) can be:",
+        "options": [
+            { "id": "a", "text": "fish" },
+            { "id": "b", "text": "fishes" },
+            { "id": "c", "text": "fishies" },
+            { "id": "d", "text": "Both a and b" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE535",
+        "questionText": "The singular of 'analyses' is:",
+        "options": [
+            { "id": "a", "text": "analysis" },
+            { "id": "b", "text": "analyse" },
+            { "id": "c", "text": "analyzis" },
+            { "id": "d", "text": "analysum" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE536",
+        "questionText": "The plural of 'wolf' is:",
+        "options": [
+            { "id": "a", "text": "wolfs" },
+            { "id": "b", "text": "wolfes" },
+            { "id": "c", "text": "wolves" },
+            { "id": "d", "text": "wolf" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE537",
+        "questionText": "The singular of 'dice' (meaning more than one die) is:",
+        "options": [
+            { "id": "a", "text": "dice" },
+            { "id": "b", "text": "dic" },
+            { "id": "c", "text": "die" },
+            { "id": "d", "text": "di" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE538",
+        "questionText": "The plural of 'ox' is:",
+        "options": [
+            { "id": "a", "text": "oxes" },
+            { "id": "b", "text": "oxs" },
+            { "id": "c", "text": "oxen" },
+            { "id": "d", "text": "ox" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE539",
+        "questionText": "The plural of 'syllabus' is:",
+        "options": [
+            { "id": "a", "text": "syllabi" },
+            { "id": "b", "text": "syllabuses" },
+            { "id": "c", "text": "syllabus" },
+            { "id": "d", "text": "Both a and b" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE540",
+        "questionText": "The singular of 'media' (referring to communication channels) is:",
+        "options": [
+            { "id": "a", "text": "medius" },
+            { "id": "b", "text": "media" },
+            { "id": "c", "text": "medii" },
+            { "id": "d", "text": "medium" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE541",
+        "questionText": "The plural of 'foot' is:",
+        "options": [
+            { "id": "a", "text": "foots" },
+            { "id": "b", "text": "feet" },
+            { "id": "c", "text": "feets" },
+            { "id": "d", "text": "footes" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE542",
+        "questionText": "The plural of 'deer' is:",
+        "options": [
+            { "id": "a", "text": "deers" },
+            { "id": "b", "text": "deer" },
+            { "id": "c", "text": "deeres" },
+            { "id": "d", "text": "dear" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE543",
+        "questionText": "The singular of 'hypotheses' is:",
+        "options": [
+            { "id": "a", "text": "hypothesa" },
+            { "id": "b", "text": "hypothesis" },
+            { "id": "c", "text": "hypothem" },
+            { "id": "d", "text": "hypothese" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE544",
+        "questionText": "The plural of 'woman' is:",
+        "options": [
+            { "id": "a", "text": "womans" },
+            { "id": "b", "text": "womanes" },
+            { "id": "c", "text": "womens" },
+            { "id": "d", "text": "women" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE545",
+        "questionText": "The plural of 'potato' is:",
+        "options": [
+            { "id": "a", "text": "potatos" },
+            { "id": "b", "text": "potato" },
+            { "id": "c", "text": "potatoies" },
+            { "id": "d", "text": "potatoes" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE546",
+        "questionText": "The singular of 'alumni' (male graduates) is:",
+        "options": [
+            { "id": "a", "text": "alumnus" },
+            { "id": "b", "text": "alumna" },
+            { "id": "c", "text": "alumnum" },
+            { "id": "d", "text": "alumni" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE547",
+        "questionText": "The plural of 'mouse' is:",
+        "options": [
+            { "id": "a", "text": "mouses" },
+            { "id": "b", "text": "mice" },
+            { "id": "c", "text": "meese" },
+            { "id": "d", "text": "mouse" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE548",
+        "questionText": "The plural of 'species' is:",
+        "options": [
+            { "id": "a", "text": "specieses" },
+            { "id": "b", "text": "specie" },
+            { "id": "c", "text": "species" },
+            { "id": "d", "text": "speciae" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE549",
+        "questionText": "The singular of 'indices' (or indexes) is:",
+        "options": [
+            { "id": "a", "text": "index" },
+            { "id": "b", "text": "indice" },
+            { "id": "c", "text": "indicum" },
+            { "id": "d", "text": "indecis" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE550",
+        "questionText": "The plural of 'life' is:",
+        "options": [
+            { "id": "a", "text": "lifes" },
+            { "id": "b", "text": "lives" },
+            { "id": "c", "text": "live" },
+            { "id": "d", "text": "life" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE551",
+        "questionText": "The singular of 'larvae' is:",
+        "options": [
+            { "id": "a", "text": "larva" },
+            { "id": "b", "text": "larvum" },
+            { "id": "c", "text": "larvus" },
+            { "id": "d", "text": "larvis" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE552",
+        "questionText": "The plural of 'criterion' is:",
+        "options": [
+            { "id": "a", "text": "criterions" },
+            { "id": "b", "text": "criteria" },
+            { "id": "c", "text": "criterias" },
+            { "id": "d", "text": "criterion" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE553",
+        "questionText": "The plural of 'quiz' is:",
+        "options": [
+            { "id": "a", "text": "quiz" },
+            { "id": "b", "text": "quizes" },
+            { "id": "c", "text": "quizzes" },
+            { "id": "d", "text": "quizs" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE554",
+        "questionText": "The singular of 'stimuli' is:",
+        "options": [
+            { "id": "a", "text": "stimula" },
+            { "id": "b", "text": "stimulon" },
+            { "id": "c", "text": "stimulus" },
+            { "id": "d", "text": "stimuli" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE555",
+        "questionText": "The plural of 'tooth' is:",
+        "options": [
+            { "id": "a", "text": "tooths" },
+            { "id": "b", "text": "teeths" },
+            { "id": "c", "text": "teeth" },
+            { "id": "d", "text": "toothes" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE556",
+        "questionText": "The plural of 'hero' is:",
+        "options": [
+            { "id": "a", "text": "heros" },
+            { "id": "b", "text": "hero" },
+            { "id": "c", "text": "heroes" },
+            { "id": "d", "text": "heroies" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE557",
+        "questionText": "The singular of 'oases' is:",
+        "options": [
+            { "id": "a", "text": "oasus" },
+            { "id": "b", "text": "oasis" },
+            { "id": "c", "text": "oasa" },
+            { "id": "d", "text": "oase" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE558",
+        "questionText": "The plural of 'shelf' is:",
+        "options": [
+            { "id": "a", "text": "shelfs" },
+            { "id": "b", "text": "shelves" },
+            { "id": "c", "text": "shelfes" },
+            { "id": "d", "text": "shelf" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE559",
+        "questionText": "The plural of 'aircraft' is:",
+        "options": [
+            { "id": "a", "text": "aircrafts" },
+            { "id": "b", "text": "aircraft" },
+            { "id": "c", "text": "aircraftes" },
+            { "id": "d", "text": "airscraft" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE560",
+        "questionText": "The singular of 'data' is:",
+        "options": [
+            { "id": "a", "text": "datas" },
+            { "id": "b", "text": "datum" },
+            { "id": "c", "text": "daton" },
+            { "id": "d", "text": "datae" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE561",
+        "questionText": "The plural of 'louse' is:",
+        "options": [
+            { "id": "a", "text": "louses" },
+            { "id": "b", "text": "lices" },
+            { "id": "c", "text": "lice" },
+            { "id": "d", "text": "louse" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE562",
+        "questionText": "The plural of 'mother-in-law' is:",
+        "options": [
+            { "id": "a", "text": "mother-in-laws" },
+            { "id": "b", "text": "mothers-in-law" },
+            { "id": "c", "text": "mothers-in-laws" },
+            { "id": "d", "text": "mother-in-law" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE563",
+        "questionText": "The singular of 'fungi' is:",
+        "options": [
+            { "id": "a", "text": "funga" },
+            { "id": "b", "text": "fungis" },
+            { "id": "c", "text": "fungus" },
+            { "id": "d", "text": "fungum" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE564",
+        "questionText": "The plural of 'phenomenon' is:",
+        "options": [
+            { "id": "a", "text": "phenomenons" },
+            { "id": "b", "text": "phenomenae" },
+            { "id": "c", "text": "phenomena" },
+            { "id": "d", "text": "phenomenon" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE565",
+        "questionText": "The plural of 'focus' is:",
+        "options": [
+            { "id": "a", "text": "focuses" },
+            { "id": "b", "text": "foci" },
+            { "id": "c", "text": "focus" },
+            { "id": "d", "text": "Both a and b" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE566",
+        "questionText": "The singular of 'vertices' (or vertexes) is:",
+        "options": [
+            { "id": "a", "text": "vertice" },
+            { "id": "b", "text": "vertix" },
+            { "id": "c", "text": "vertex" },
+            { "id": "d", "text": "verticus" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE567",
+        "questionText": "The plural of 'basis' is:",
+        "options": [
+            { "id": "a", "text": "basis" },
+            { "id": "b", "text": "basises" },
+            { "id": "c", "text": "basum" },
+            { "id": "d", "text": "bases" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE568",
+        "questionText": "The plural of 'passer-by' is:",
+        "options": [
+            { "id": "a", "text": "passer-bys" },
+            { "id": "b", "text": "passers-by" },
+            { "id": "c", "text": "passers-bys" },
+            { "id": "d", "text": "passer-by" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE569",
+        "questionText": "The singular of 'curricula' (or curriculums) is:",
+        "options": [
+            { "id": "a", "text": "curriculus" },
+            { "id": "b", "text": "curriculum" },
+            { "id": "c", "text": "curricula" },
+            { "id": "d", "text": "curriculae" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE570",
+        "questionText": "The plural of 'elf' is:",
+        "options": [
+            { "id": "a", "text": "elfs" },
+            { "id": "b", "text": "elfes" },
+            { "id": "c", "text": "elves" },
+            { "id": "d", "text": "elf" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE571",
+        "questionText": "The plural of 'analysis' is:",
+        "options": [
+            { "id": "a", "text": "analysis" },
+            { "id": "b", "text": "analyses" },
+            { "id": "c", "text": "analysises" },
+            { "id": "d", "text": "analysi" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE572",
+        "questionText": "The singular of 'nuclei' is:",
+        "options": [
+            { "id": "a", "text": "nuclea" },
+            { "id": "b", "text": "nucleum" },
+            { "id": "c", "text": "nucleus" },
+            { "id": "d", "text": "nuclei" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE573",
+        "questionText": "The plural of 'leaf' is:",
+        "options": [
+            { "id": "a", "text": "leafs" },
+            { "id": "b", "text": "leaves" },
+            { "id": "c", "text": "leafes" },
+            { "id": "d", "text": "leavs" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE574",
+        "questionText": "The plural of 'salmon' is:",
+        "options": [
+            { "id": "a", "text": "salmons" },
+            { "id": "b", "text": "salmon" },
+            { "id": "c", "text": "salmones" },
+            { "id": "d", "text": "salmi" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE575",
+        "questionText": "The singular of 'appendices' (or appendixes) is:",
+        "options": [
+            { "id": "a", "text": "appendice" },
+            { "id": "b", "text": "appendix" },
+            { "id": "c", "text": "appendum" },
+            { "id": "d", "text": "appenda" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE576",
+        "questionText": "The plural of 'formula' is:",
+        "options": [
+            { "id": "a", "text": "formulae" },
+            { "id": "b", "text": "formulas" },
+            { "id": "c", "text": "formula" },
+            { "id": "d", "text": "Both a and b" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE577",
+        "questionText": "The plural of 'person' is:",
+        "options": [
+            { "id": "a", "text": "persons" },
+            { "id": "b", "text": "people" },
+            { "id": "c", "text": "persones" },
+            { "id": "d", "text": "Both a and b are commonly used" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE578",
+        "questionText": "The singular of 'theses' is:",
+        "options": [
+            { "id": "a", "text": "these" },
+            { "id": "b", "text": "thesis" },
+            { "id": "c", "text": "thesa" },
+            { "id": "d", "text": "thesum" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE579",
+        "questionText": "The plural of 'roof' is:",
+        "options": [
+            { "id": "a", "text": "rooves" },
+            { "id": "b", "text": "roofs" },
+            { "id": "c", "text": "roofes" },
+            { "id": "d", "text": "Both a and b are sometimes used, b is more common" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE580",
+        "questionText": "The plural of 'alga' is:",
+        "options": [
+            { "id": "a", "text": "algas" },
+            { "id": "b", "text": "alges" },
+            { "id": "c", "text": "algae" },
+            { "id": "d", "text": "alga" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE581",
+        "questionText": "The singular of 'crises' is:",
+        "options": [
+            { "id": "a", "text": "crisis" },
+            { "id": "b", "text": "crise" },
+            { "id": "c", "text": "crisus" },
+            { "id": "d", "text": "crisa" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE582",
+        "questionText": "The plural of 'thief' is:",
+        "options": [
+            { "id": "a", "text": "thiefs" },
+            { "id": "b", "text": "thieves" },
+            { "id": "c", "text": "thiefes" },
+            { "id": "d", "text": "theives" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE583",
+        "questionText": "The plural of 'radius' is:",
+        "options": [
+            { "id": "a", "text": "radiuses" },
+            { "id": "b", "text": "radii" },
+            { "id": "c", "text": "radius" },
+            { "id": "d", "text": "Both a and b" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE584",
+        "questionText": "The singular of 'genera' is:",
+        "options": [
+            { "id": "a", "text": "genus" },
+            { "id": "b", "text": "gene" },
+            { "id": "c", "text": "genum" },
+            { "id": "d", "text": "genre" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE585",
+        "questionText": "The plural of 'echo' is:",
+        "options": [
+            { "id": "a", "text": "echos" },
+            { "id": "b", "text": "echo" },
+            { "id": "c", "text": "echoes" },
+            { "id": "d", "text": "echoies" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE586",
+        "questionText": "The plural of 'index' is:",
+        "options": [
+            { "id": "a", "text": "indexes" },
+            { "id": "b", "text": "indices" },
+            { "id": "c", "text": "index" },
+            { "id": "d", "text": "Both a and b" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE587",
+        "questionText": "The singular of 'vertebrae' is:",
+        "options": [
+            { "id": "a", "text": "vertebrus" },
+            { "id": "b", "text": "vertebrum" },
+            { "id": "c", "text": "vertebra" },
+            { "id": "d", "text": "vertebris" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE588",
+        "questionText": "The plural of 'medium' (referring to a psychic) is:",
+        "options": [
+            { "id": "a", "text": "media" },
+            { "id": "b", "text": "mediums" },
+            { "id": "c", "text": "mediae" },
+            { "id": "d", "text": "medium" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE589",
+        "questionText": "The plural of 'attorney general' is:",
+        "options": [
+            { "id": "a", "text": "attorney generals" },
+            { "id": "b", "text": "attorneys general" },
+            { "id": "c", "text": "attorneys generals" },
+            { "id": "d", "text": "attorney general" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE590",
+        "questionText": "The singular of 'automata' is:",
+        "options": [
+            { "id": "a", "text": "automatus" },
+            { "id": "b", "text": "automatum" },
+            { "id": "c", "text": "automa" },
+            { "id": "d", "text": "automaton" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE591",
+        "questionText": "The plural of 'diagnosis' is:",
+        "options": [
+            { "id": "a", "text": "diagnosises" },
+            { "id": "b", "text": "diagnoses" },
+            { "id": "c", "text": "diagnosis" },
+            { "id": "d", "text": "diagnosi" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE592",
+        "questionText": "The plural of 'dwarf' is:",
+        "options": [
+            { "id": "a", "text": "dwarfs" },
+            { "id": "b", "text": "dwarves" },
+            { "id": "c", "text": "dwarf" },
+            { "id": "d", "text": "Both a and b are used" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE593",
+        "questionText": "The singular of 'matrices' (or matrixes) is:",
+        "options": [
+            { "id": "a", "text": "matrix" },
+            { "id": "b", "text": "matrice" },
+            { "id": "c", "text": "matris" },
+            { "id": "d", "text": "matrixum" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE594",
+        "questionText": "The plural of 'memorandum' is:",
+        "options": [
+            { "id": "a", "text": "memorandums" },
+            { "id": "b", "text": "memoranda" },
+            { "id": "c", "text": "memorandum" },
+            { "id": "d", "text": "Both a and b" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE595",
+        "questionText": "The plural of 'mongoose' is:",
+        "options": [
+            { "id": "a", "text": "mongeese" },
+            { "id": "b", "text": "mongooses" },
+            { "id": "c", "text": "mongice" },
+            { "id": "d", "text": "mongoose" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE596",
+        "questionText": "The singular of 'parentheses' is:",
+        "options": [
+            { "id": "a", "text": "parenthesis" },
+            { "id": "b", "text": "parenthesa" },
+            { "id": "c", "text": "parentheson" },
+            { "id": "d", "text": "parenthese" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE597",
+        "questionText": "The plural of 'stratum' is:",
+        "options": [
+            { "id": "a", "text": "stratums" },
+            { "id": "b", "text": "strata" },
+            { "id": "c", "text": "stratum" },
+            { "id": "d", "text": "strati" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE598",
+        "questionText": "The plural of 'terminus' is:",
+        "options": [
+            { "id": "a", "text": "terminuses" },
+            { "id": "b", "text": "termini" },
+            { "id": "c", "text": "terminus" },
+            { "id": "d", "text": "Both a and b" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE599",
+        "questionText": "The singular of 'cacti' is:",
+        "options": [
+            { "id": "a", "text": "cacta" },
+            { "id": "b", "text": "cactus" },
+            { "id": "c", "text": "cacto" },
+            { "id": "d", "text": "cactum" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE600",
+        "questionText": "The plural of 'vertex' is:",
+        "options": [
+            { "id": "a", "text": "vertexes" },
+            { "id": "b", "text": "vertices" },
+            { "id": "c", "text": "vertex" },
+            { "id": "d", "text": "Both a and b" }
+        ],
+        "correctOptionId": "d"
+    },
+
+    {
+        "id": "KE601",
+        "questionText": "The plural of 'appendix' is:",
+        "options": [
+            { "id": "a", "text": "appendixes" },
+            { "id": "b", "text": "appendices" },
+            { "id": "c", "text": "appendix" },
+            { "id": "d", "text": "Both a and b" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE602",
+        "questionText": "The singular of 'bases' is:",
+        "options": [
+            { "id": "a", "text": "basis" },
+            { "id": "b", "text": "basa" },
+            { "id": "c", "text": "base" },
+            { "id": "d", "text": "basus" }
+        ],
+        "correctOptionId": "a" // Note: 'base' is also a singular word, but 'bases' is the plural of 'basis'.
+    },
+    {
+        "id": "KE603",
+        "questionText": "The plural of 'bureau' is:",
+        "options": [
+            { "id": "a", "text": "bureaus" },
+            { "id": "b", "text": "bureaux" },
+            { "id": "c", "text": "bureau" },
+            { "id": "d", "text": "Both a and b" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE604",
+        "questionText": "The plural of 'curriculum' is:",
+        "options": [
+            { "id": "a", "text": "curriculums" },
+            { "id": "b", "text": "curricula" },
+            { "id": "c", "text": "curriculum" },
+            { "id": "d", "text": "Both a and b" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE605",
+        "questionText": "The singular of 'ellipses' is:",
+        "options": [
+            { "id": "a", "text": "ellipsis" },
+            { "id": "b", "text": "ellipse" },
+            { "id": "c", "text": "ellipsus" },
+            { "id": "d", "text": "ellipsa" }
+        ],
+        "correctOptionId": "a" // Note: 'ellipse' is also a word, but 'ellipses' is the plural of 'ellipsis'.
+    },
+    {
+        "id": "KE606",
+        "questionText": "The plural of 'hoof' is:",
+        "options": [
+            { "id": "a", "text": "hoofs" },
+            { "id": "b", "text": "hooves" },
+            { "id": "c", "text": "hoof" },
+            { "id": "d", "text": "Both a and b are used" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE607",
+        "questionText": "The plural of 'larva' is:",
+        "options": [
+            { "id": "a", "text": "larvas" },
+            { "id": "b", "text": "larva" },
+            { "id": "c", "text": "larvae" },
+            { "id": "d", "text": "larvæ" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE608",
+        "questionText": "The singular of 'lice' is:",
+        "options": [
+            { "id": "a", "text": "louse" },
+            { "id": "b", "text": "lice" },
+            { "id": "c", "text": "lous" },
+            { "id": "d", "text": "licus" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE609",
+        "questionText": "The plural of 'oasis' is:",
+        "options": [
+            { "id": "a", "text": "oasis" },
+            { "id": "b", "text": "oases" },
+            { "id": "c", "text": "oasises" },
+            { "id": "d", "text": "oasi" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE610",
+        "questionText": "The plural of 'plateau' is:",
+        "options": [
+            { "id": "a", "text": "plateaus" },
+            { "id": "b", "text": "plateaux" },
+            { "id": "c", "text": "plateau" },
+            { "id": "d", "text": "Both a and b" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE611",
+        "questionText": "The singular of 'radii' is:",
+        "options": [
+            { "id": "a", "text": "radiis" },
+            { "id": "b", "text": "radiae" },
+            { "id": "c", "text": "radius" },
+            { "id": "d", "text": "radion" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE612",
+        "questionText": "The plural of 'scarf' is:",
+        "options": [
+            { "id": "a", "text": "scarfs" },
+            { "id": "b", "text": "scarves" },
+            { "id": "c", "text": "scarf" },
+            { "id": "d", "text": "Both a and b are used" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE613",
+        "questionText": "The plural of 'stimulus' is:",
+        "options": [
+            { "id": "a", "text": "stimuluses" },
+            { "id": "b", "text": "stimuli" },
+            { "id": "c", "text": "stimulus" },
+            { "id": "d", "text": "stimulae" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE614",
+        "questionText": "The singular of 'syllabi' (or syllabuses) is:",
+        "options": [
+            { "id": "a", "text": "syllabus" },
+            { "id": "b", "text": "syllabis" },
+            { "id": "c", "text": "syllabum" },
+            { "id": "d", "text": "syllabon" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE615",
+        "questionText": "The plural of 'thesis' is:",
+        "options": [
+            { "id": "a", "text": "thesises" },
+            { "id": "b", "text": "thesis" },
+            { "id": "c", "text": "thesi" },
+            { "id": "d", "text": "theses" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE616",
+        "questionText": "The plural of 'trout' is:",
+        "options": [
+            { "id": "a", "text": "trouts" },
+            { "id": "b", "text": "trout" },
+            { "id": "c", "text": "troutes" },
+            { "id": "d", "text": "troat" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE617",
+        "questionText": "The singular of 'oxen' is:",
+        "options": [
+            { "id": "a", "text": "oxus" },
+            { "id": "b", "text": "ox" },
+            { "id": "c", "text": "oxa" },
+            { "id": "d", "text": "oxum" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE618",
+        "questionText": "The plural of 'vita' (as in curriculum vitae) is:",
+        "options": [
+            { "id": "a", "text": "vita" },
+            { "id": "b", "text": "vitas" },
+            { "id": "c", "text": "vitae" },
+            { "id": "d", "text": "vites" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE619",
+        "questionText": "The singular of 'geese' is:",
+        "options": [
+            { "id": "a", "text": "goose" },
+            { "id": "b", "text": "geesa" },
+            { "id": "c", "text": "goosa" },
+            { "id": "d", "text": "geece" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE620",
+        "questionText": "The plural of 'alumna' (female graduate) is:",
+        "options": [
+            { "id": "a", "text": "alumnus" },
+            { "id": "b", "text": "alumnae" },
+            { "id": "c", "text": "alumnas" },
+            { "id": "d", "text": "alumni (can refer to mixed or female group, but alumnae is specifically female plural)" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE621",
+        "questionText": "The singular of 'men' is:",
+        "options": [
+            { "id": "a", "text": "men" },
+            { "id": "b", "text": "man" },
+            { "id": "c", "text": "mon" },
+            { "id": "d", "text": "manus" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE622",
+        "questionText": "The plural of 'wharf' is:",
+        "options": [
+            { "id": "a", "text": "wharfs" },
+            { "id": "b", "text": "wharves" },
+            { "id": "c", "text": "wharf" },
+            { "id": "d", "text": "Both a and b are used" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE623",
+        "questionText": "The singular of 'feet' is:",
+        "options": [
+            { "id": "a", "text": "foots" },
+            { "id": "b", "text": "foot" },
+            { "id": "c", "text": "feet" },
+            { "id": "d", "text": "feat" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE624",
+        "questionText": "The plural of 'corpus' is:",
+        "options": [
+            { "id": "a", "text": "corpuses" },
+            { "id": "b", "text": "corpora" },
+            { "id": "c", "text": "corpi" },
+            { "id": "d", "text": "Both a and b" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE625",
+        "questionText": "The singular of 'children' is:",
+        "options": [
+            { "id": "a", "text": "childs" },
+            { "id": "b", "text": "childe" },
+            { "id": "c", "text": "child" },
+            { "id": "d", "text": "childer" }
+        ],
+        "correctOptionId": "c"
+    },
+     {
+        "id": "KE626",
+        "questionText": "If I ______ you, I would take that job offer immediately.",
+        "options": [
+            { "id": "a", "text": "am" },
+            { "id": "b", "text": "was" },
+            { "id": "c", "text": "were" },
+            { "id": "d", "text": "had been" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE627",
+        "questionText": "Had I known you were coming, I ______ something special.",
+        "options": [
+            { "id": "a", "text": "would cook" },
+            { "id": "b", "text": "cooked" },
+            { "id": "c", "text": "would have cooked" },
+            { "id": "d", "text": "will cook" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE628",
+        "questionText": "If the weather ______ nice tomorrow, we will go hiking.",
+        "options": [
+            { "id": "a", "text": "will be" },
+            { "id": "b", "text": "is" },
+            { "id": "c", "text": "were" },
+            { "id": "d", "text": "would be" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE629",
+        "questionText": "She wouldn't be so stressed now if she ______ her assignment earlier.",
+        "options": [
+            { "id": "a", "text": "finished" },
+            { "id": "b", "text": "had finished" },
+            { "id": "c", "text": "finishes" },
+            { "id": "d", "text": "would finish" }
+        ],
+        "correctOptionId": "b" // Implies a past condition affecting the present
+    },
+    {
+        "id": "KE630",
+        "questionText": "______ you need any help, please don't hesitate to ask.",
+        "options": [
+            { "id": "a", "text": "If" },
+            { "id": "b", "text": "Were" },
+            { "id": "c", "text": "Had" },
+            { "id": "d", "text": "Should" }
+        ],
+        "correctOptionId": "d" // Formal alternative to 'If you should need'
+    },
+    {
+        "id": "KE631",
+        "questionText": "I wish I ______ play the piano like you do.",
+        "options": [
+            { "id": "a", "text": "can" },
+            { "id": "b", "text": "could" },
+            { "id": "c", "text": "will" },
+            { "id": "d", "text": "would" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE632",
+        "questionText": "He acts as though he ______ the owner of the place.",
+        "options": [
+            { "id": "a", "text": "is" },
+            { "id": "b", "text": "were" },
+            { "id": "c", "text": "had been" },
+            { "id": "d", "text": "will be" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE633",
+        "questionText": "If I hadn't overslept, I ______ the train.",
+        "options": [
+            { "id": "a", "text": "wouldn't miss" },
+            { "id": "b", "text": "wouldn't have missed" },
+            { "id": "c", "text": "didn't miss" },
+            { "id": "d", "text": "won't miss" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE634",
+        "questionText": "You can borrow my car ______ you promise to drive carefully.",
+        "options": [
+            { "id": "a", "text": "unless" },
+            { "id": "b", "text": "whether" },
+            { "id": "c", "text": "provided that" },
+            { "id": "d", "text": "in case" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE635",
+        "questionText": "Suppose you ______ a million dollars, what would you do first?",
+        "options": [
+            { "id": "a", "text": "win" },
+            { "id": "b", "text": "won" },
+            { "id": "c", "text": "had won" },
+            { "id": "d", "text": "would win" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE636",
+        "questionText": "If water reaches 100 degrees Celsius, it ______.",
+        "options": [
+            { "id": "a", "text": "will boil" },
+            { "id": "b", "text": "would boil" },
+            { "id": "c", "text": "boils" },
+            { "id": "d", "text": "would have boiled" }
+        ],
+        "correctOptionId": "c" // Zero conditional (fact)
+    },
+    {
+        "id": "KE637",
+        "questionText": "I wouldn't have recognized him ______ you hadn't pointed him out.",
+        "options": [
+            { "id": "a", "text": "if" },
+            { "id": "b", "text": "unless" },
+            { "id": "c", "text": "provided that" },
+            { "id": "d", "text": "whether" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE638",
+        "questionText": "______ I richer, I would travel around the world.",
+        "options": [
+            { "id": "a", "text": "If" },
+            { "id": "b", "text": "Was" },
+            { "id": "c", "text": "Were" },
+            { "id": "d", "text": "Had" }
+        ],
+        "correctOptionId": "c" // Inversion for hypothetical 'If I were'
+    },
+    {
+        "id": "KE639",
+        "questionText": "If you heat ice, it ______.",
+        "options": [
+            { "id": "a", "text": "melts" },
+            { "id": "b", "text": "will melt" },
+            { "id": "c", "text": "would melt" },
+            { "id": "d", "text": "melted" }
+        ],
+        "correctOptionId": "a" // Zero conditional (fact)
+    },
+    {
+        "id": "KE640",
+        "questionText": "Take an umbrella ______ it rains later.",
+        "options": [
+            { "id": "a", "text": "if" },
+            { "id": "b", "text": "unless" },
+            { "id": "c", "text": "whether" },
+            { "id": "d", "text": "in case" }
+        ],
+        "correctOptionId": "d" // Precaution
+    },
+    {
+        "id": "KE641",
+        "questionText": "If he ______ more careful, he wouldn't have had the accident yesterday. (Implies he isn't generally careful)",
+        "options": [
+            { "id": "a", "text": "is" },
+            { "id": "b", "text": "were" },
+            { "id": "c", "text": "had been" },
+            { "id": "d", "text": "was" }
+        ],
+        "correctOptionId": "c" // Past unreal condition related to a past event
+    },
+    {
+        "id": "KE642",
+        "questionText": "Unless you ______ harder, you won't pass the exam.",
+        "options": [
+            { "id": "a", "text": "study" },
+            { "id": "b", "text": "don't study" },
+            { "id": "c", "text": "will study" },
+            { "id": "d", "text": "studied" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE643",
+        "questionText": "I wish I ______ that yesterday; I really regret it now.",
+        "options": [
+            { "id": "a", "text": "didn't say" },
+            { "id": "b", "text": "wouldn't say" },
+            { "id": "c", "text": "hadn't said" },
+            { "id": "d", "text": "haven't said" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE644",
+        "questionText": "But for his timely intervention, the situation ______ much worse.",
+        "options": [
+            { "id": "a", "text": "would be" },
+            { "id": "b", "text": "will be" },
+            { "id": "c", "text": "would have been" },
+            { "id": "d", "text": "is" }
+        ],
+        "correctOptionId": "c" // Implied past unreal condition
+    },
+    {
+        "id": "KE645",
+        "questionText": "______ invited me, I would have gone to the party.",
+        "options": [
+            { "id": "a", "text": "If they" },
+            { "id": "b", "text": "Had they" },
+            { "id": "c", "text": "Did they" },
+            { "id": "d", "text": "Should they" }
+        ],
+        "correctOptionId": "b" // Inversion for past unreal 'If they had'
+    },
+    {
+        "id": "KE646",
+        "questionText": "If I ______ free next weekend, I'll give you a call.",
+        "options": [
+            { "id": "a", "text": "would be" },
+            { "id": "b", "text": "were" },
+            { "id": "c", "text": "am" },
+            { "id": "d", "text": "will be" }
+        ],
+        "correctOptionId": "c" // First conditional
+    },
+    {
+        "id": "KE647",
+        "questionText": "He talks ______ he knew everything about the subject.",
+        "options": [
+            { "id": "a", "text": "if" },
+            { "id": "b", "text": "like" },
+            { "id": "c", "text": "as if" },
+            { "id": "d", "text": "whether" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE648",
+        "questionText": "We would be living in Canada now if my parents ______ the visa years ago.",
+        "options": [
+            { "id": "a", "text": "got" },
+            { "id": "b", "text": "had got" },
+            { "id": "c", "text": "would get" },
+            { "id": "d", "text": "get" }
+        ],
+        "correctOptionId": "b" // Mixed conditional (past condition, present result)
+    },
+    {
+        "id": "KE649",
+        "questionText": "______ you change your mind, let me know by Friday.",
+        "options": [
+            { "id": "a", "text": "Were" },
+            { "id": "b", "text": "Had" },
+            { "id": "c", "text": "If" }, // If is also correct, but Should implies less likelihood / more formal
+            { "id": "d", "text": "Should" }
+        ],
+        "correctOptionId": "d" // Inversion for future condition 'If you should change'
+    },
+    {
+        "id": "KE650",
+        "questionText": "You'll miss the flight ______ you hurry up.",
+        "options": [
+            { "id": "a", "text": "if" },
+            { "id": "b", "text": "in case" },
+            { "id": "c", "text": "provided that" },
+            { "id": "d", "text": "unless" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE651",
+        "questionText": "It's high time you ______ apologising for your mistake.",
+        "options": [
+            { "id": "a", "text": "start" },
+            { "id": "b", "text": "started" },
+            { "id": "c", "text": "should start" },
+            { "id": "d", "text": "had started" }
+        ],
+        "correctOptionId": "b" // Past subjunctive after 'It's high time'
+    },
+    {
+        "id": "KE652",
+        "questionText": "If I ______ the lottery last year, I would be retired now.",
+        "options": [
+            { "id": "a", "text": "won" },
+            { "id": "b", "text": "would win" },
+            { "id": "c", "text": "win" },
+            { "id": "d", "text": "had won" }
+        ],
+        "correctOptionId": "d" // Mixed conditional (past unreal condition, present unreal result)
+    },
+    {
+        "id": "KE653",
+        "questionText": "Work hard; ______ you will not succeed.",
+        "options": [
+            { "id": "a", "text": "if" },
+            { "id": "b", "text": "unless" },
+            { "id": "c", "text": "otherwise" },
+            { "id": "d", "text": "provided" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE654",
+        "questionText": "If only I ______ listened to your advice!",
+        "options": [
+            { "id": "a", "text": "had" },
+            { "id": "b", "text": "would have" },
+            { "id": "c", "text": "have" },
+            { "id": "d", "text": "did" }
+        ],
+        "correctOptionId": "a" // Wish about the past -> past perfect
+    },
+    {
+        "id": "KE655",
+        "questionText": "______ you to see John tomorrow, could you give him this message?",
+        "options": [
+            { "id": "a", "text": "If" }, // If is also correct
+            { "id": "b", "text": "Had" },
+            { "id": "c", "text": "Should" },
+            { "id": "d", "text": "Were" }
+        ],
+        "correctOptionId": "d" // Inversion for hypothetical future 'If you were to see'
+    },
+    {
+        "id": "KE656",
+        "questionText": "If the company ______ bankrupt last month, many people would still have their jobs.",
+        "options": [
+            { "id": "a", "text": "didn't go" },
+            { "id": "b", "text": "wouldn't go" },
+            { "id": "c", "text": "hadn't gone" },
+            { "id": "d", "text": "hasn't gone" }
+        ],
+        "correctOptionId": "c" // Mixed conditional (past unreal condition, present unreal result)
+    },
+    {
+        "id": "KE657",
+        "questionText": "I will lend you the money on condition that you ______ me back next week.",
+        "options": [
+            { "id": "a", "text": "pay" },
+            { "id": "b", "text": "paid" },
+            { "id": "c", "text": "will pay" },
+            { "id": "d", "text": "would pay" }
+        ],
+        "correctOptionId": "a" // Present tense after 'on condition that' for future condition
+    },
+    {
+        "id": "KE658",
+        "questionText": "If you ______ see flames, raise the alarm immediately. (Formal instruction)",
+        "options": [
+            { "id": "a", "text": "will" },
+            { "id": "b", "text": "would" },
+            { "id": "c", "text": "should" },
+            { "id": "d", "text": "could" }
+        ],
+        "correctOptionId": "c" // Formal conditional often uses 'should'
+    },
+    {
+        "id": "KE659",
+        "questionText": "______ it not been for the heavy rain, the match would have taken place.",
+        "options": [
+            { "id": "a", "text": "If" },
+            { "id": "b", "text": "Should" },
+            { "id": "c", "text": "Were" },
+            { "id": "d", "text": "Had" }
+        ],
+        "correctOptionId": "d" // Inversion for past unreal 'If it had not been'
+    },
+    {
+        "id": "KE660",
+        "questionText": "If I were not so busy, I ______ you yesterday. (Implied I was busy)",
+        "options": [
+            { "id": "a", "text": "would help" },
+            { "id": "b", "text": "helped" },
+            { "id": "c", "text": "would have helped" },
+            { "id": "d", "text": "will help" }
+        ],
+        "correctOptionId": "c" // Mixed conditional (present unreal condition, past unreal result)
+    },
+    {
+        "id": "KE661",
+        "questionText": "What would you do if you ______ confronted by a bear in the woods?",
+        "options": [
+            { "id": "a", "text": "are" },
+            { "id": "b", "text": "were" },
+            { "id": "c", "text": "had been" },
+            { "id": "d", "text": "would be" }
+        ],
+        "correctOptionId": "b" // Second conditional (hypothetical present/future)
+    },
+    {
+        "id": "KE662",
+        "questionText": "I'll join you later ______ I finish this report on time.",
+        "options": [
+            { "id": "a", "text": "unless" },
+            { "id": "b", "text": "whether" },
+            { "id": "c", "text": "if" },
+            { "id": "d", "text": "in case" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE663",
+        "questionText": "If my car ______ working properly, I wouldn't have taken the bus this morning. (Implies it isn't working properly now/generally)",
+        "options": [
+            { "id": "a", "text": "is" },
+            { "id": "b", "text": "was" },
+            { "id": "c", "text": "were" },
+            { "id": "d", "text": "had been" }
+        ],
+        "correctOptionId": "c" // Mixed conditional (present unreal condition, past unreal result) -> use 'were' for hypothetical 'be'
+    },
+    {
+        "id": "KE664",
+        "questionText": "______ the sun shining, we could go to the beach.",
+        "options": [
+            { "id": "a", "text": "If" }, // If the sun were shining...
+            { "id": "b", "text": "Should" },
+            { "id": "c", "text": "Were" },
+            { "id": "d", "text": "Had" }
+        ],
+        "correctOptionId": "c" // Inversion: Were the sun shining...
+    },
+    {
+        "id": "KE665",
+        "questionText": "You can't enter the club ______ you are a member.",
+        "options": [
+            { "id": "a", "text": "if" },
+            { "id": "b", "text": "provided that" },
+            { "id": "c", "text": "unless" },
+            { "id": "d", "text": "whether" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE666",
+        "questionText": "If she ______ about the meeting, she would have attended.",
+        "options": [
+            { "id": "a", "text": "knew" },
+            { "id": "b", "text": "knows" },
+            { "id": "c", "text": "had known" },
+            { "id": "d", "text": "would know" }
+        ],
+        "correctOptionId": "c" // Third conditional
+    },
+    {
+        "id": "KE667",
+        "questionText": "I wish the neighbours ______ making so much noise last night.",
+        "options": [
+            { "id": "a", "text": "stopped" },
+            { "id": "b", "text": "would stop" },
+            { "id": "c", "text": "had stopped" },
+            { "id": "d", "text": "stop" }
+        ],
+        "correctOptionId": "c" // Wish about the past -> past perfect
+    },
+    {
+        "id": "KE668",
+        "questionText": "Study regularly, ______ you might forget what you've learned.",
+        "options": [
+            { "id": "a", "text": "unless" },
+            { "id": "b", "text": "or else" },
+            { "id": "c", "text": "provided that" },
+            { "id": "d", "text": "if" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE669",
+        "questionText": "______ the opportunity arise, I would definitely apply for that job.",
+        "options": [
+            { "id": "a", "text": "If" }, // If the opportunity should arise...
+            { "id": "b", "text": "Were" },
+            { "id": "c", "text": "Should" },
+            { "id": "d", "text": "Had" }
+        ],
+        "correctOptionId": "c" // Inversion: Should the opportunity arise...
+    },
+    {
+        "id": "KE670",
+        "questionText": "If the refugees ______ permitted to enter the country last year, their lives would be different now.",
+        "options": [
+            { "id": "a", "text": "were" },
+            { "id": "b", "text": "are" },
+            { "id": "c", "text": "would be" },
+            { "id": "d", "text": "had been" }
+        ],
+        "correctOptionId": "d" // Mixed conditional (past unreal condition, present unreal result)
+    },
+    {
+        "id": "KE671",
+        "questionText": "As long as you ______ quiet, you can stay and watch.",
+        "options": [
+            { "id": "a", "text": "will be" },
+            { "id": "b", "text": "are" },
+            { "id": "c", "text": "were" },
+            { "id": "d", "text": "would be" }
+        ],
+        "correctOptionId": "b" // Present tense after 'as long as' for condition
+    },
+    {
+        "id": "KE672",
+        "questionText": "If it ______ for his quick thinking, the accident could have been fatal.",
+        "options": [
+            { "id": "a", "text": "wasn't" },
+            { "id": "b", "text": "weren't" },
+            { "id": "c", "text": "isn't" },
+            { "id": "d", "text": "hadn't been" }
+        ],
+        "correctOptionId": "d" // Past unreal conditional phrase 'if it hadn't been for'
+    },
+    {
+        "id": "KE673",
+        "questionText": "If I ______ you were ill, I would have visited you in the hospital.",
+        "options": [
+            { "id": "a", "text": "knew" },
+            { "id": "b", "text": "would know" },
+            { "id": "c", "text": "had known" },
+            { "id": "d", "text": "know" }
+        ],
+        "correctOptionId": "c" // Third conditional
+    },
+    {
+        "id": "KE674",
+        "questionText": "Would you mind if I ______ the window?",
+        "options": [
+            { "id": "a", "text": "open" },
+            { "id": "b", "text": "opened" },
+            { "id": "c", "text": "will open" },
+            { "id": "d", "text": "would open" }
+        ],
+        "correctOptionId": "b" // Past tense after 'Would you mind if I...'
+    },
+    {
+        "id": "KE675",
+        "questionText": "______ any problems occur, contact the technical support team immediately.",
+        "options": [
+            { "id": "a", "text": "If" }, // If any problems should occur...
+            { "id": "b", "text": "Were" },
+            { "id": "c", "text": "Should" },
+            { "id": "d", "text": "Had" }
+        ],
+        "correctOptionId": "c" // Inversion: Should any problems occur...
+    },
+    {
+        "id": "KE676",
+        "questionText": "If you found a wallet on the street, what ______ you do?",
+        "options": [
+            { "id": "a", "text": "will" },
+            { "id": "b", "text": "would" },
+            { "id": "c", "text": "did" },
+            { "id": "d", "text": "do" }
+        ],
+        "correctOptionId": "b" // Second conditional
+    },
+    {
+        "id": "KE677",
+        "questionText": "He won't be able to finish the project ______ he gets some help.",
+        "options": [
+            { "id": "a", "text": "if" },
+            { "id": "b", "text": "unless" },
+            { "id": "c", "text": "provided" },
+            { "id": "d", "text": "whether" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE678",
+        "questionText": "I wish I ______ afford a new car right now.",
+        "options": [
+            { "id": "a", "text": "can" },
+            { "id": "b", "text": "will" },
+            { "id": "c", "text": "could" },
+            { "id": "d", "text": "would" }
+        ],
+        "correctOptionId": "c" // Wish about the present -> could/past tense
+    },
+    {
+        "id": "KE679",
+        "questionText": "If the earth suddenly ______ spinning, we would all fly off.",
+        "options": [
+            { "id": "a", "text": "stop" },
+            { "id": "b", "text": "stopped" },
+            { "id": "c", "text": "had stopped" },
+            { "id": "d", "text": "stops" }
+        ],
+        "correctOptionId": "b" // Second conditional
+    },
+    {
+        "id": "KE680",
+        "questionText": "______ I to win the competition, I would donate half the prize money.",
+        "options": [
+            { "id": "a", "text": "If" }, // If I were to win...
+            { "id": "b", "text": "Should" },
+            { "id": "c", "text": "Had" },
+            { "id": "d", "text": "Were" }
+        ],
+        "correctOptionId": "d" // Inversion: Were I to win...
+    },
+    {
+        "id": "KE681",
+        "questionText": "If they ______ the 8:00 am train, they would be here by now.",
+        "options": [
+            { "id": "a", "text": "took" },
+            { "id": "b", "text": "had taken" },
+            { "id": "c", "text": "take" },
+            { "id": "d", "text": "would take" }
+        ],
+        "correctOptionId": "b" // Mixed conditional (past unreal condition, present unreal result)
+    },
+    {
+        "id": "KE682",
+        "questionText": "He will likely fail the course ______ he starts attending classes regularly.",
+        "options": [
+            { "id": "a", "text": "if" },
+            { "id": "b", "text": "unless" },
+            { "id": "c", "text": "provided" },
+            { "id": "d", "text": "as long as" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE683",
+        "questionText": "If only we ______ more time together last summer!",
+        "options": [
+            { "id": "a", "text": "spent" },
+            { "id": "b", "text": "spend" },
+            { "id": "c", "text": "had spent" },
+            { "id": "d", "text": "would spend" }
+        ],
+        "correctOptionId": "c" // Wish about the past -> past perfect
+    },
+    {
+        "id": "KE684",
+        "questionText": "Without your advice, I ______ what to do back then.",
+        "options": [
+            { "id": "a", "text": "wouldn't know" },
+            { "id": "b", "text": "didn't know" },
+            { "id": "c", "text": "wouldn't have known" },
+            { "id": "d", "text": "won't know" }
+        ],
+        "correctOptionId": "c" // Implied past unreal condition
+    },
+    {
+        "id": "KE685",
+        "questionText": "______ she call, tell her I'm not available until after lunch.",
+        "options": [
+            { "id": "a", "text": "If" }, // If she should call...
+            { "id": "b", "text": "Were" },
+            { "id": "c", "text": "Had" },
+            { "id": "d", "text": "Should" }
+        ],
+        "correctOptionId": "d" // Inversion: Should she call...
+    },
+    {
+        "id": "KE686",
+        "questionText": "If the rules ______ different, that wouldn't have been a penalty. (Implies rules are not different)",
+        "options": [
+            { "id": "a", "text": "are" },
+            { "id": "b", "text": "were" },
+            { "id": "c", "text": "had been" },
+            { "id": "d", "text": "would be" }
+        ],
+        "correctOptionId": "b" // Mixed conditional (present unreal condition, past unreal result) -> use 'were'
+    },
+    {
+        "id": "KE687",
+        "questionText": "You may go to the party ______ you are back by midnight.",
+        "options": [
+            { "id": "a", "text": "unless" },
+            { "id": "b", "text": "whether" },
+            { "id": "c", "text": "as long as" },
+            { "id": "d", "text": "in case" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE688",
+        "questionText": "If I ______ that the road was closed, I would have taken a different route this morning.",
+        "options": [
+            { "id": "a", "text": "knew" },
+            { "id": "b", "text": "know" },
+            { "id": "c", "text": "had known" },
+            { "id": "d", "text": "would know" }
+        ],
+        "correctOptionId": "c" // Third conditional
+    },
+    {
+        "id": "KE689",
+        "questionText": "I wish my phone ______ ringing while I'm in meetings.",
+        "options": [
+            { "id": "a", "text": "stopped" }, // Wish about present habit -> simple past
+            { "id": "b", "text": "wouldn't stop" }, // Incorrect structure
+            { "id": "c", "text": "didn't stop" }, // Incorrect meaning
+            { "id": "d", "text": "wouldn't keep" } // Common phrasing for annoyance at repeated action
+        ],
+        "correctOptionId": "d" // Or 'would stop' (Wish about future/annoyance) or 'stopped' (Wish about present habit) - 'wouldn't keep' is a good fit for annoyance
+    },
+    {
+        "id": "KE690",
+        "questionText": "Supposing the flight ______ cancelled, what would we do?",
+        "options": [
+            { "id": "a", "text": "is" },
+            { "id": "b", "text": "were" },
+            { "id": "c", "text": "had been" },
+            { "id": "d", "text": "would be" }
+        ],
+        "correctOptionId": "b" // After 'supposing' for hypothetical present/future -> use past subjunctive 'were'
+    },
+    {
+        "id": "KE691",
+        "questionText": "______ the fire brigade arrived earlier, they might have saved the building.",
+        "options": [
+            { "id": "a", "text": "If" }, // If the fire brigade had arrived...
+            { "id": "b", "text": "Were" },
+            { "id": "c", "text": "Should" },
+            { "id": "d", "text": "Had" }
+        ],
+        "correctOptionId": "d" // Inversion: Had the fire brigade arrived...
+    },
+    {
+        "id": "KE692",
+        "questionText": "If the patient ______ the medication as prescribed, he might feel better now.",
+        "options": [
+            { "id": "a", "text": "takes" },
+            { "id": "b", "text": "took" },
+            { "id": "c", "text": "had taken" },
+            { "id": "d", "text": "would take" }
+        ],
+        "correctOptionId": "c" // Mixed conditional (past unreal condition/action, present possible result)
+    },
+    {
+        "id": "KE693",
+        "questionText": "Water the plants regularly; ______ they will die.",
+        "options": [
+            { "id": "a", "text": "if not" },
+            { "id": "b", "text": "unless" },
+            { "id": "c", "text": "otherwise" },
+            { "id": "d", "text": "provided" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE694",
+        "questionText": "If I ______ have to work tomorrow, I would join you. (Hypothetical future)",
+        "options": [
+            { "id": "a", "text": "don't" },
+            { "id": "b", "text": "didn't" },
+            { "id": "c", "text": "won't" },
+            { "id": "d", "text": "hadn't" }
+        ],
+        "correctOptionId": "b" // Second conditional -> simple past in if-clause
+    },
+    {
+        "id": "KE695",
+        "questionText": "______ you happen to find my keys, could you let me know?",
+        "options": [
+            { "id": "a", "text": "If" }, // If you should happen...
+            { "id": "b", "text": "Were" },
+            { "id": "c", "text": "Had" },
+            { "id": "d", "text": "Should" }
+        ],
+        "correctOptionId": "d" // Inversion: Should you happen...
+    },
+    {
+        "id": "KE696",
+        "questionText": "The team would perform better if they ______ more effectively.",
+        "options": [
+            { "id": "a", "text": "communicate" },
+            { "id": "b", "text": "communicated" },
+            { "id": "c", "text": "had communicated" },
+            { "id": "d", "text": "would communicate" }
+        ],
+        "correctOptionId": "b" // Second conditional
+    },
+    {
+        "id": "KE697",
+        "questionText": "I wish I ______ so much cake last night.",
+        "options": [
+            { "id": "a", "text": "didn't eat" },
+            { "id": "b", "text": "wouldn't eat" },
+            { "id": "c", "text": "hadn't eaten" },
+            { "id": "d", "text": "haven't eaten" }
+        ],
+        "correctOptionId": "c" // Wish about the past -> past perfect
+    },
+    {
+        "id": "KE698",
+        "questionText": "But for the traffic jam, I ______ on time for the meeting.",
+        "options": [
+            { "id": "a", "text": "would be" },
+            { "id": "b", "text": "will be" },
+            { "id": "c", "text": "am" },
+            { "id": "d", "text": "would have been" }
+        ],
+        "correctOptionId": "d" // Implied past unreal condition
+    },
+    {
+        "id": "KE699",
+        "questionText": "______ I able to speak French, I would apply for the job in Paris.",
+        "options": [
+            { "id": "a", "text": "If" }, // If I were able...
+            { "id": "b", "text": "Should" },
+            { "id": "c", "text": "Were" },
+            { "id": "d", "text": "Had" }
+        ],
+        "correctOptionId": "c" // Inversion: Were I able...
+    },
+    {
+        "id": "KE700",
+        "questionText": "If the experiment ______ successful, it could lead to a major breakthrough.",
+        "options": [
+            { "id": "a", "text": "is" },
+            { "id": "b", "text": "were" },
+            { "id": "c", "text": "had been" },
+            { "id": "d", "text": "will be" }
+        ],
+        "correctOptionId": "b" // Second conditional (hypothetical future)
+    },
+    {
+        "id": "KE701",
+        "questionText": "[SYNONYM] ABATE",
+        "options": [
+            { "id": "a", "text": "Increase" },
+            { "id": "b", "text": "Subside" },
+            { "id": "c", "text": "Provoke" },
+            { "id": "d", "text": "Intensify" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE702",
+        "questionText": "[SYNONYM] ABHOR",
+        "options": [
+            { "id": "a", "text": "Adore" },
+            { "id": "b", "text": "Detest" },
+            { "id": "c", "text": "Ignore" },
+            { "id": "d", "text": "Understand" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE703",
+        "questionText": "[SYNONYM] ABJURE",
+        "options": [
+            { "id": "a", "text": "Accept" },
+            { "id": "b", "text": "Renounce" },
+            { "id": "c", "text": "Discuss" },
+            { "id": "d", "text": "Confirm" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE704",
+        "questionText": "[SYNONYM] ABSTRUSE",
+        "options": [
+            { "id": "a", "text": "Obvious" },
+            { "id": "b", "text": "Clear" },
+            { "id": "c", "text": "Recondite" },
+            { "id": "d", "text": "Simple" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE705",
+        "questionText": "[SYNONYM] ACCOLADE",
+        "options": [
+            { "id": "a", "text": "Criticism" },
+            { "id": "b", "text": "Honor" },
+            { "id": "c", "text": "Blame" },
+            { "id": "d", "text": "Silence" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE706",
+        "questionText": "[SYNONYM] ACQUIESCE",
+        "options": [
+            { "id": "a", "text": "Resist" },
+            { "id": "b", "text": "Consent" },
+            { "id": "c", "text": "Argue" },
+            { "id": "d", "text": "Refuse" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE707",
+        "questionText": "[SYNONYM] ADROIT",
+        "options": [
+            { "id": "a", "text": "Clumsy" },
+            { "id": "b", "text": "Skillful" },
+            { "id": "c", "text": "Awkward" },
+            { "id": "d", "text": "Slow" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE708",
+        "questionText": "[SYNONYM] ALACRITY",
+        "options": [
+            { "id": "a", "text": "Reluctance" },
+            { "id": "b", "text": "Slowness" },
+            { "id": "c", "text": "Eagerness" },
+            { "id": "d", "text": "Fear" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE709",
+        "questionText": "[SYNONYM] AMELIORATE",
+        "options": [
+            { "id": "a", "text": "Worsen" },
+            { "id": "b", "text": "Improve" },
+            { "id": "c", "text": "Damage" },
+            { "id": "d", "text": "Hinder" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE710",
+        "questionText": "[SYNONYM] AMENABLE",
+        "options": [
+            { "id": "a", "text": "Uncooperative" },
+            { "id": "b", "text": "Stubborn" },
+            { "id": "c", "text": "Tractable" },
+            { "id": "d", "text": "Resistant" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE711",
+        "questionText": "[SYNONYM] ANATHEMA",
+        "options": [
+            { "id": "a", "text": "Blessing" },
+            { "id": "b", "text": "Curse" },
+            { "id": "c", "text": "Prayer" },
+            { "id": "d", "text": "Hope" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE712",
+        "questionText": "[SYNONYM] APOCRYPHAL",
+        "options": [
+            { "id": "a", "text": "Authentic" },
+            { "id": "b", "text": "Genuine" },
+            { "id": "c", "text": "Verified" },
+            { "id": "d", "text": "Spurious" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE713",
+        "questionText": "[SYNONYM] ARDUOUS",
+        "options": [
+            { "id": "a", "text": "Easy" },
+            { "id": "b", "text": "Effortless" },
+            { "id": "c", "text": "Strenuous" },
+            { "id": "d", "text": "Simple" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE714",
+        "questionText": "[SYNONYM] ASSUAGE",
+        "options": [
+            { "id": "a", "text": "Aggravate" },
+            { "id": "b", "text": "Intensify" },
+            { "id": "c", "text": "Soothe" },
+            { "id": "d", "text": "Incite" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE715",
+        "questionText": "[SYNONYM] AUDACIOUS",
+        "options": [
+            { "id": "a", "text": "Timid" },
+            { "id": "b", "text": "Cowardly" },
+            { "id": "c", "text": "Bold" },
+            { "id": "d", "text": "Fearful" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE716",
+        "questionText": "[SYNONYM] AUSPICIOUS",
+        "options": [
+            { "id": "a", "text": "Unlucky" },
+            { "id": "b", "text": "Ominous" },
+            { "id": "c", "text": "Favorable" },
+            { "id": "d", "text": "Threatening" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE717",
+        "questionText": "[SYNONYM] BANE",
+        "options": [
+            { "id": "a", "text": "Blessing" },
+            { "id": "b", "text": "Benefit" },
+            { "id": "c", "text": "Curse" },
+            { "id": "d", "text": "Advantage" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE718",
+        "questionText": "[SYNONYM] BELIE",
+        "options": [
+            { "id": "a", "text": "Confirm" },
+            { "id": "b", "text": "Prove" },
+            { "id": "c", "text": "Misrepresent" },
+            { "id": "d", "text": "Support" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE719",
+        "questionText": "[SYNONYM] BLITHE",
+        "options": [
+            { "id": "a", "text": "Sad" },
+            { "id": "b", "text": "Worried" },
+            { "id": "c", "text": "Carefree" },
+            { "id": "d", "text": "Anxious" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE720",
+        "questionText": "[SYNONYM] BURGEON",
+        "options": [
+            { "id": "a", "text": "Shrink" },
+            { "id": "b", "text": "Wither" },
+            { "id": "c", "text": "Flourish" },
+            { "id": "d", "text": "Decline" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE721",
+        "questionText": "[SYNONYM] CAJOLE",
+        "options": [
+            { "id": "a", "text": "Bully" },
+            { "id": "b", "text": "Coax" },
+            { "id": "c", "text": "Demand" },
+            { "id": "d", "text": "Force" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE722",
+        "questionText": "[SYNONYM] CALUMNY",
+        "options": [
+            { "id": "a", "text": "Praise" },
+            { "id": "b", "text": "Compliment" },
+            { "id": "c", "text": "Slander" },
+            { "id": "d", "text": "Approval" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE723",
+        "questionText": "[SYNONYM] CAPRICIOUS",
+        "options": [
+            { "id": "a", "text": "Stable" },
+            { "id": "b", "text": "Consistent" },
+            { "id": "c", "text": "Predictable" },
+            { "id": "d", "text": "Fickle" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE724",
+        "questionText": "[SYNONYM] CASTIGATE",
+        "options": [
+            { "id": "a", "text": "Praise" },
+            { "id": "b", "text": "Reward" },
+            { "id": "c", "text": "Punish" },
+            { "id": "d", "text": "Encourage" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE725",
+        "questionText": "[SYNONYM] COGENT",
+        "options": [
+            { "id": "a", "text": "Weak" },
+            { "id": "b", "text": "Unconvincing" },
+            { "id": "c", "text": "Persuasive" },
+            { "id": "d", "text": "Vague" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE726",
+        "questionText": "[SYNONYM] CONTRITE",
+        "options": [
+            { "id": "a", "text": "Unrepentant" },
+            { "id": "b", "text": "Defiant" },
+            { "id": "c", "text": "Penitent" },
+            { "id": "d", "text": "Proud" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE727",
+        "questionText": "[SYNONYM] CONUNDRUM",
+        "options": [
+            { "id": "a", "text": "Solution" },
+            { "id": "b", "text": "Answer" },
+            { "id": "c", "text": "Explanation" },
+            { "id": "d", "text": "Puzzle" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE728",
+        "questionText": "[SYNONYM] COPIOUS",
+        "options": [
+            { "id": "a", "text": "Scarce" },
+            { "id": "b", "text": "Limited" },
+            { "id": "c", "text": "Abundant" },
+            { "id": "d", "text": "Meager" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE729",
+        "questionText": "[SYNONYM] DEARTH",
+        "options": [
+            { "id": "a", "text": "Abundance" },
+            { "id": "b", "text": "Surplus" },
+            { "id": "c", "text": "Plenty" },
+            { "id": "d", "text": "Scarcity" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE730",
+        "questionText": "[SYNONYM] DELETERIOUS",
+        "options": [
+            { "id": "a", "text": "Beneficial" },
+            { "id": "b", "text": "Harmless" },
+            { "id": "c", "text": "Helpful" },
+            { "id": "d", "text": "Harmful" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE731",
+        "questionText": "[SYNONYM] DEMUR",
+        "options": [
+            { "id": "a", "text": "Agree" },
+            { "id": "b", "text": "Accept" },
+            { "id": "c", "text": "Object" },
+            { "id": "d", "text": "Approve" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE732",
+        "questionText": "[SYNONYM] DERISION",
+        "options": [
+            { "id": "a", "text": "Admiration" },
+            { "id": "b", "text": "Respect" },
+            { "id": "c", "text": "Ridicule" },
+            { "id": "d", "text": "Praise" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE733",
+        "questionText": "[SYNONYM] DESICCATE",
+        "options": [
+            { "id": "a", "text": "Moisten" },
+            { "id": "b", "text": "Hydrate" },
+            { "id": "c", "text": "Soak" },
+            { "id": "d", "text": "Dry" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE734",
+        "questionText": "[SYNONYM] DIATRIBE",
+        "options": [
+            { "id": "a", "text": "Eulogy" },
+            { "id": "b", "text": "Praise" },
+            { "id": "c", "text": "Compliment" },
+            { "id": "d", "text": "Tirade" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE735",
+        "questionText": "[SYNONYM] DIDACTIC",
+        "options": [
+            { "id": "a", "text": "Uninformative" },
+            { "id": "b", "text": "Confusing" },
+            { "id": "c", "text": "Instructive" },
+            { "id": "d", "text": "Misleading" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE736",
+        "questionText": "[SYNONYM] DIFFIDENT",
+        "options": [
+            { "id": "a", "text": "Confident" },
+            { "id": "b", "text": "Bold" },
+            { "id": "c", "text": "Assertive" },
+            { "id": "d", "text": "Shy" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE737",
+        "questionText": "[SYNONYM] DILATORY",
+        "options": [
+            { "id": "a", "text": "Prompt" },
+            { "id": "b", "text": "Quick" },
+            { "id": "c", "text": "Fast" },
+            { "id": "d", "text": "Slow" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE738",
+        "questionText": "[SYNONYM] DISABUSE",
+        "options": [
+            { "id": "a", "text": "Deceive" },
+            { "id": "b", "text": "Mislead" },
+            { "id": "c", "text": "Correct" },
+            { "id": "d", "text": "Confuse" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE739",
+        "questionText": "[SYNONYM] DISPARAGE",
+        "options": [
+            { "id": "a", "text": "Praise" },
+            { "id": "b", "text": "Compliment" },
+            { "id": "c", "text": "Belittle" },
+            { "id": "d", "text": "Admire" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE740",
+        "questionText": "[SYNONYM] DISSEMBLE",
+        "options": [
+            { "id": "a", "text": "Reveal" },
+            { "id": "b", "text": "Expose" },
+            { "id": "c", "text": "Pretend" },
+            { "id": "d", "text": "Admit" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE741",
+        "questionText": "[SYNONYM] EBULLIENT",
+        "options": [
+            { "id": "a", "text": "Depressed" },
+            { "id": "b", "text": "Apathetic" },
+            { "id": "c", "text": "Enthusiastic" },
+            { "id": "d", "text": "Calm" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE742",
+        "questionText": "[SYNONYM] EFFRONTERY",
+        "options": [
+            { "id": "a", "text": "Timidity" },
+            { "id": "b", "text": "Shyness" },
+            { "id": "c", "text": "Impudence" },
+            { "id": "d", "text": "Respect" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE743",
+        "questionText": "[SYNONYM] EGREGIOUS",
+        "options": [
+            { "id": "a", "text": "Minor" },
+            { "id": "b", "text": "Slight" },
+            { "id": "c", "text": "Trivial" },
+            { "id": "d", "text": "Shocking" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE744",
+        "questionText": "[SYNONYM] ENERVATE",
+        "options": [
+            { "id": "a", "text": "Strengthen" },
+            { "id": "b", "text": "Invigorate" },
+            { "id": "c", "text": "Energize" },
+            { "id": "d", "text": "Weaken" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE745",
+        "questionText": "[SYNONYM] ENIGMA",
+        "options": [
+            { "id": "a", "text": "Clarity" },
+            { "id": "b", "text": "Explanation" },
+            { "id": "c", "text": "Mystery" },
+            { "id": "d", "text": "Solution" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE746",
+        "questionText": "[SYNONYM] EPHEMERAL",
+        "options": [
+            { "id": "a", "text": "Permanent" },
+            { "id": "b", "text": "Lasting" },
+            { "id": "c", "text": "Eternal" },
+            { "id": "d", "text": "Transient" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE747",
+        "questionText": "[SYNONYM] EQUIVOCATE",
+        "options": [
+            { "id": "a", "text": "Clarify" },
+            { "id": "b", "text": "Affirm" },
+            { "id": "c", "text": "Prevaricate" },
+            { "id": "d", "text": "Confirm" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE748",
+        "questionText": "[SYNONYM] ERUDITE",
+        "options": [
+            { "id": "a", "text": "Ignorant" },
+            { "id": "b", "text": "Uneducated" },
+            { "id": "c", "text": "Learned" },
+            { "id": "d", "text": "Simple" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE749",
+        "questionText": "[SYNONYM] ESCHEW",
+        "options": [
+            { "id": "a", "text": "Embrace" },
+            { "id": "b", "text": "Seek" },
+            { "id": "c", "text": "Avoid" },
+            { "id": "d", "text": "Welcome" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE750",
+        "questionText": "[SYNONYM] EXCULPATE",
+        "options": [
+            { "id": "a", "text": "Accuse" },
+            { "id": "b", "text": "Blame" },
+            { "id": "c", "text": "Incriminate" },
+            { "id": "d", "text": "Absolve" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE751",
+        "questionText": "[SYNONYM] EXIGENT",
+        "options": [
+            { "id": "a", "text": "Trivial" },
+            { "id": "b", "text": "Unimportant" },
+            { "id": "c", "text": "Urgent" },
+            { "id": "d", "text": "Minor" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE752",
+        "questionText": "[SYNONYM] FACETIOUS",
+        "options": [
+            { "id": "a", "text": "Serious" },
+            { "id": "b", "text": "Grave" },
+            { "id": "c", "text": "Solemn" },
+            { "id": "d", "text": "Flippant" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE753",
+        "questionText": "[SYNONYM] FATUOUS",
+        "options": [
+            { "id": "a", "text": "Sensible" },
+            { "id": "b", "text": "Wise" },
+            { "id": "c", "text": "Intelligent" },
+            { "id": "d", "text": "Silly" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE754",
+        "questionText": "[SYNONYM] FECKLESS",
+        "options": [
+            { "id": "a", "text": "Effective" },
+            { "id": "b", "text": "Competent" },
+            { "id": "c", "text": "Useless" },
+            { "id": "d", "text": "Responsible" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE755",
+        "questionText": "[SYNONYM] FOMENT",
+        "options": [
+            { "id": "a", "text": "Calm" },
+            { "id": "b", "text": "Suppress" },
+            { "id": "c", "text": "Instigate" },
+            { "id": "d", "text": "Quell" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE756",
+        "questionText": "[SYNONYM] FORTUITOUS",
+        "options": [
+            { "id": "a", "text": "Planned" },
+            { "id": "b", "text": "Deliberate" },
+            { "id": "c", "text": "Accidental" },
+            { "id": "d", "text": "Intentional" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE757",
+        "questionText": "[SYNONYM] FRACTIOUS",
+        "options": [
+            { "id": "a", "text": "Agreeable" },
+            { "id": "b", "text": "Contented" },
+            { "id": "c", "text": "Quarrelsome" },
+            { "id": "d", "text": "Peaceful" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE758",
+        "questionText": "[SYNONYM] GAINSAY",
+        "options": [
+            { "id": "a", "text": "Agree" },
+            { "id": "b", "text": "Confirm" },
+            { "id": "c", "text": "Affirm" },
+            { "id": "d", "text": "Deny" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE759",
+        "questionText": "[SYNONYM] GARRULOUS",
+        "options": [
+            { "id": "a", "text": "Taciturn" },
+            { "id": "b", "text": "Reserved" },
+            { "id": "c", "text": "Quiet" },
+            { "id": "d", "text": "Talkative" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE760",
+        "questionText": "[SYNONYM] GERMANE",
+        "options": [
+            { "id": "a", "text": "Irrelevant" },
+            { "id": "b", "text": "Unrelated" },
+            { "id": "c", "text": "Inapplicable" },
+            { "id": "d", "text": "Relevant" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE761",
+        "questionText": "[SYNONYM] GRANDILOQUENT",
+        "options": [
+            { "id": "a", "text": "Simple" },
+            { "id": "b", "text": "Plain" },
+            { "id": "c", "text": "Pompous" },
+            { "id": "d", "text": "Understated" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE762",
+        "questionText": "[SYNONYM] HACKNEYED",
+        "options": [
+            { "id": "a", "text": "Original" },
+            { "id": "b", "text": "Fresh" },
+            { "id": "c", "text": "Novel" },
+            { "id": "d", "text": "Overused" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE763",
+        "questionText": "[SYNONYM] IMPASSIVE",
+        "options": [
+            { "id": "a", "text": "Emotional" },
+            { "id": "b", "text": "Expressive" },
+            { "id": "c", "text": "Unemotional" },
+            { "id": "d", "text": "Excited" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE764",
+        "questionText": "[SYNONYM] IMPERIOUS",
+        "options": [
+            { "id": "a", "text": "Humble" },
+            { "id": "b", "text": "Meek" },
+            { "id": "c", "text": "Submissive" },
+            { "id": "d", "text": "Domineering" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE765",
+        "questionText": "[SYNONYM] IMPERTURBABLE",
+        "options": [
+            { "id": "a", "text": "Agitated" },
+            { "id": "b", "text": "Anxious" },
+            { "id": "c", "text": "Calm" },
+            { "id": "d", "text": "Worried" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE766",
+        "questionText": "[SYNONYM] IMPLACABLE",
+        "options": [
+            { "id": "a", "text": "Merciful" },
+            { "id": "b", "text": "Forgiving" },
+            { "id": "c", "text": "Unrelenting" },
+            { "id": "d", "text": "Lenient" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE767",
+        "questionText": "[SYNONYM] INCHOATE",
+        "options": [
+            { "id": "a", "text": "Developed" },
+            { "id": "b", "text": "Mature" },
+            { "id": "c", "text": "Complete" },
+            { "id": "d", "text": "Undeveloped" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE768",
+        "questionText": "[SYNONYM] INIMICAL",
+        "options": [
+            { "id": "a", "text": "Friendly" },
+            { "id": "b", "text": "Favorable" },
+            { "id": "c", "text": "Hostile" },
+            { "id": "d", "text": "Helpful" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE769",
+        "questionText": "[SYNONYM] INSIPID",
+        "options": [
+            { "id": "a", "text": "Tasty" },
+            { "id": "b", "text": "Flavorful" },
+            { "id": "c", "text": "Dull" },
+            { "id": "d", "text": "Exciting" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE770",
+        "questionText": "[SYNONYM] INTREPID",
+        "options": [
+            { "id": "a", "text": "Cowardly" },
+            { "id": "b", "text": "Timid" },
+            { "id": "c", "text": "Fearful" },
+            { "id": "d", "text": "Fearless" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE771",
+        "questionText": "[SYNONYM] INVETERATE",
+        "options": [
+            { "id": "a", "text": "Occasional" },
+            { "id": "b", "text": "Temporary" },
+            { "id": "c", "text": "Deep-rooted" },
+            { "id": "d", "text": "Superficial" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE772",
+        "questionText": "[SYNONYM] IRASCIBLE",
+        "options": [
+            { "id": "a", "text": "Calm" },
+            { "id": "b", "text": "Patient" },
+            { "id": "c", "text": "Placid" },
+            { "id": "d", "text": "Irritable" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE773",
+        "questionText": "[SYNONYM] LACHRYMOSE",
+        "options": [
+            { "id": "a", "text": "Cheerful" },
+            { "id": "b", "text": "Joyful" },
+            { "id": "c", "text": "Tearful" },
+            { "id": "d", "text": "Laughing" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE774",
+        "questionText": "[SYNONYM] LACONIC",
+        "options": [
+            { "id": "a", "text": "Verbose" },
+            { "id": "b", "text": "Talkative" },
+            { "id": "c", "text": "Garrulous" },
+            { "id": "d", "text": "Concise" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE775",
+        "questionText": "[SYNONYM] LANGUID",
+        "options": [
+            { "id": "a", "text": "Energetic" },
+            { "id": "b", "text": "Vigorous" },
+            { "id": "c", "text": "Listless" },
+            { "id": "d", "text": "Active" }
+        ],
+        "correctOptionId": "c"
+    },
+     {
+        "id": "KE776",
+        "questionText": "[ANTONYM] ABATE",
+        "options": [
+            { "id": "a", "text": "Decrease" },
+            { "id": "b", "text": "Lessen" },
+            { "id": "c", "text": "Dwindle" },
+            { "id": "d", "text": "Intensify" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE777",
+        "questionText": "[ANTONYM] ABHOR",
+        "options": [
+            { "id": "a", "text": "Hate" },
+            { "id": "b", "text": "Loathe" },
+            { "id": "c", "text": "Despise" },
+            { "id": "d", "text": "Adore" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE778",
+        "questionText": "[ANTONYM] ABROGATE",
+        "options": [
+            { "id": "a", "text": "Abolish" },
+            { "id": "b", "text": "Repeal" },
+            { "id": "c", "text": "Cancel" },
+            { "id": "d", "text": "Institute" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE779",
+        "questionText": "[ANTONYM] ACERBIC",
+        "options": [
+            { "id": "a", "text": "Sour" },
+            { "id": "b", "text": "Bitter" },
+            { "id": "c", "text": "Harsh" },
+            { "id": "d", "text": "Kind" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE780",
+        "questionText": "[ANTONYM] ACRIMONIOUS",
+        "options": [
+            { "id": "a", "text": "Bitter" },
+            { "id": "b", "text": "Caustic" },
+            { "id": "c", "text": "Harmonious" },
+            { "id": "d", "text": "Spiteful" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE781",
+        "questionText": "[ANTONYM] ADULATION",
+        "options": [
+            { "id": "a", "text": "Flattery" },
+            { "id": "b", "text": "Praise" },
+            { "id": "c", "text": "Worship" },
+            { "id": "d", "text": "Criticism" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE782",
+        "questionText": "[ANTONYM] AFFABLE",
+        "options": [
+            { "id": "a", "text": "Friendly" },
+            { "id": "b", "text": "Amiable" },
+            { "id": "c", "text": "Grumpy" },
+            { "id": "d", "text": "Pleasant" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE783",
+        "questionText": "[ANTONYM] ALLEVIATE",
+        "options": [
+            { "id": "a", "text": "Ease" },
+            { "id": "b", "text": "Relieve" },
+            { "id": "c", "text": "Aggravate" },
+            { "id": "d", "text": "Mitigate" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE784",
+        "questionText": "[ANTONYM] ALOOF",
+        "options": [
+            { "id": "a", "text": "Distant" },
+            { "id": "b", "text": "Reserved" },
+            { "id": "c", "text": "Detached" },
+            { "id": "d", "text": "Sociable" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE785",
+        "questionText": "[ANTONYM] AMBIGUOUS",
+        "options": [
+            { "id": "a", "text": "Unclear" },
+            { "id": "b", "text": "Vague" },
+            { "id": "c", "text": "Equivocal" },
+            { "id": "d", "text": "Clear" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE786",
+        "questionText": "[ANTONYM] AMIABLE",
+        "options": [
+            { "id": "a", "text": "Friendly" },
+            { "id": "b", "text": "Agreeable" },
+            { "id": "c", "text": "Hostile" },
+            { "id": "d", "text": "Likeable" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE787",
+        "questionText": "[ANTONYM] ANTIPATHY",
+        "options": [
+            { "id": "a", "text": "Hostility" },
+            { "id": "b", "text": "Aversion" },
+            { "id": "c", "text": "Dislike" },
+            { "id": "d", "text": "Fondness" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE788",
+        "questionText": "[ANTONYM] APATHY",
+        "options": [
+            { "id": "a", "text": "Indifference" },
+            { "id": "b", "text": "Unconcern" },
+            { "id": "c", "text": "Passion" },
+            { "id": "d", "text": "Lethargy" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE789",
+        "questionText": "[ANTONYM] APLOMB",
+        "options": [
+            { "id": "a", "text": "Poise" },
+            { "id": "b", "text": "Assurance" },
+            { "id": "c", "text": "Confidence" },
+            { "id": "d", "text": "Awkwardness" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE790",
+        "questionText": "[ANTONYM] APPEASE",
+        "options": [
+            { "id": "a", "text": "Pacify" },
+            { "id": "b", "text": "Soothe" },
+            { "id": "c", "text": "Provoke" },
+            { "id": "d", "text": "Calm" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE791",
+        "questionText": "[ANTONYM] APPROBATION",
+        "options": [
+            { "id": "a", "text": "Approval" },
+            { "id": "b", "text": "Praise" },
+            { "id": "c", "text": "Sanction" },
+            { "id": "d", "text": "Disapproval" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE792",
+        "questionText": "[ANTONYM] ASCETIC",
+        "options": [
+            { "id": "a", "text": "Austere" },
+            { "id": "b", "text": "Self-denying" },
+            { "id": "c", "text": "Strict" },
+            { "id": "d", "text": "Hedonistic" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE793",
+        "questionText": "[ANTONYM] ASSIDUOUS",
+        "options": [
+            { "id": "a", "text": "Diligent" },
+            { "id": "b", "text": "Careful" },
+            { "id": "c", "text": "Lazy" },
+            { "id": "d", "text": "Thorough" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE794",
+        "questionText": "[ANTONYM] AUSTERE",
+        "options": [
+            { "id": "a", "text": "Strict" },
+            { "id": "b", "text": "Severe" },
+            { "id": "c", "text": "Simple" },
+            { "id": "d", "text": "Luxurious" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE795",
+        "questionText": "[ANTONYM] AVARICE",
+        "options": [
+            { "id": "a", "text": "Greed" },
+            { "id": "b", "text": "Covetousness" },
+            { "id": "c", "text": "Generosity" },
+            { "id": "d", "text": "Rapacity" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE796",
+        "questionText": "[ANTONYM] BELLICOSE",
+        "options": [
+            { "id": "a", "text": "Warlike" },
+            { "id": "b", "text": "Aggressive" },
+            { "id": "c", "text": "Peaceful" },
+            { "id": "d", "text": "Pugnacious" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE797",
+        "questionText": "[ANTONYM] BENIGN",
+        "options": [
+            { "id": "a", "text": "Kind" },
+            { "id": "b", "text": "Gentle" },
+            { "id": "c", "text": "Harmless" },
+            { "id": "d", "text": "Malignant" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE798",
+        "questionText": "[ANTONYM] BOLSTER",
+        "options": [
+            { "id": "a", "text": "Support" },
+            { "id": "b", "text": "Strengthen" },
+            { "id": "c", "text": "Reinforce" },
+            { "id": "d", "text": "Undermine" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE799",
+        "questionText": "[ANTONYM] BOMBASTIC",
+        "options": [
+            { "id": "a", "text": "Pompous" },
+            { "id": "b", "text": "Grandiloquent" },
+            { "id": "c", "text": "Simple" },
+            { "id": "d", "text": "Inflated" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE800",
+        "questionText": "[ANTONYM] BOORISH",
+        "options": [
+            { "id": "a", "text": "Rude" },
+            { "id": "b", "text": "Coarse" },
+            { "id": "c", "text": "Cultured" },
+            { "id": "d", "text": "Ill-mannered" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE801",
+        "questionText": "[ANTONYM] BUCOLIC",
+        "options": [
+            { "id": "a", "text": "Rustic" },
+            { "id": "b", "text": "Rural" },
+            { "id": "c", "text": "Pastoral" },
+            { "id": "d", "text": "Urban" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE802",
+        "questionText": "[ANTONYM] BUTTRESS",
+        "options": [
+            { "id": "a", "text": "Support" },
+            { "id": "b", "text": "Reinforce" },
+            { "id": "c", "text": "Weaken" },
+            { "id": "d", "text": "Brace" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE803",
+        "questionText": "[ANTONYM] CACOPHONY",
+        "options": [
+            { "id": "a", "text": "Discord" },
+            { "id": "b", "text": "Harshness" },
+            { "id": "c", "text": "Dissonance" },
+            { "id": "d", "text": "Harmony" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE804",
+        "questionText": "[ANTONYM] CANNY",
+        "options": [
+            { "id": "a", "text": "Shrewd" },
+            { "id": "b", "text": "Clever" },
+            { "id": "c", "text": "Astute" },
+            { "id": "d", "text": "Naive" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE805",
+        "questionText": "[ANTONYM] CAUSTIC",
+        "options": [
+            { "id": "a", "text": "Biting" },
+            { "id": "b", "text": "Sarcastic" },
+            { "id": "c", "text": "Corrosive" },
+            { "id": "d", "text": "Mild" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE806",
+        "questionText": "[ANTONYM] CENSURE",
+        "options": [
+            { "id": "a", "text": "Criticize" },
+            { "id": "b", "text": "Condemn" },
+            { "id": "c", "text": "Blame" },
+            { "id": "d", "text": "Praise" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE807",
+        "questionText": "[ANTONYM] CHARY",
+        "options": [
+            { "id": "a", "text": "Wary" },
+            { "id": "b", "text": "Cautious" },
+            { "id": "c", "text": "Careful" },
+            { "id": "d", "text": "Reckless" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE808",
+        "questionText": "[ANTONYM] CHURLISH",
+        "options": [
+            { "id": "a", "text": "Rude" },
+            { "id": "b", "text": "Surly" },
+            { "id": "c", "text": "Polite" },
+            { "id": "d", "text": "Ill-tempered" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE809",
+        "questionText": "[ANTONYM] COMPLAISANT",
+        "options": [
+            { "id": "a", "text": "Obliging" },
+            { "id": "b", "text": "Willing" },
+            { "id": "c", "text": "Agreeable" },
+            { "id": "d", "text": "Stubborn" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE810",
+        "questionText": "[ANTONYM] CONCILIATORY",
+        "options": [
+            { "id": "a", "text": "Appeasing" },
+            { "id": "b", "text": "Peacemaking" },
+            { "id": "c", "text": "Antagonistic" },
+            { "id": "d", "text": "Placating" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE811",
+        "questionText": "[ANTONYM] CONTENTIOUS",
+        "options": [
+            { "id": "a", "text": "Controversial" },
+            { "id": "b", "text": "Disputable" },
+            { "id": "c", "text": "Agreeable" },
+            { "id": "d", "text": "Argumentative" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE812",
+        "questionText": "[ANTONYM] CORPULENT",
+        "options": [
+            { "id": "a", "text": "Fat" },
+            { "id": "b", "text": "Obese" },
+            { "id": "c", "text": "Stout" },
+            { "id": "d", "text": "Thin" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE813",
+        "questionText": "[ANTONYM] CRAVEN",
+        "options": [
+            { "id": "a", "text": "Cowardly" },
+            { "id": "b", "text": "Fearful" },
+            { "id": "c", "text": "Timid" },
+            { "id": "d", "text": "Brave" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE814",
+        "questionText": "[ANTONYM] CREDULOUS",
+        "options": [
+            { "id": "a", "text": "Gullible" },
+            { "id": "b", "text": "Trusting" },
+            { "id": "c", "text": "Naive" },
+            { "id": "d", "text": "Skeptical" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE815",
+        "questionText": "[ANTONYM] CURTAIL",
+        "options": [
+            { "id": "a", "text": "Reduce" },
+            { "id": "b", "text": "Shorten" },
+            { "id": "c", "text": "Lessen" },
+            { "id": "d", "text": "Extend" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE816",
+        "questionText": "[ANTONYM] DECOROUS",
+        "options": [
+            { "id": "a", "text": "Proper" },
+            { "id": "b", "text": "Seemly" },
+            { "id": "c", "text": "Decent" },
+            { "id": "d", "text": "Improper" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE817",
+        "questionText": "[ANTONYM] DEFERENCE",
+        "options": [
+            { "id": "a", "text": "Respect" },
+            { "id": "b", "text": "Regard" },
+            { "id": "c", "text": "Consideration" },
+            { "id": "d", "text": "Disrespect" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE818",
+        "questionText": "[ANTONYM] DENIGRATE",
+        "options": [
+            { "id": "a", "text": "Belittle" },
+            { "id": "b", "text": "Disparage" },
+            { "id": "c", "text": "Defame" },
+            { "id": "d", "text": "Praise" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE819",
+        "questionText": "[ANTONYM] DESULTORY",
+        "options": [
+            { "id": "a", "text": "Random" },
+            { "id": "b", "text": "Haphazard" },
+            { "id": "c", "text": "Aimless" },
+            { "id": "d", "text": "Methodical" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE820",
+        "questionText": "[ANTONYM] DIAPHANOUS",
+        "options": [
+            { "id": "a", "text": "Sheer" },
+            { "id": "b", "text": "Fine" },
+            { "id": "c", "text": "Delicate" },
+            { "id": "d", "text": "Opaque" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE821",
+        "questionText": "[ANTONYM] DISCORDANT",
+        "options": [
+            { "id": "a", "text": "Conflicting" },
+            { "id": "b", "text": "Disagreeing" },
+            { "id": "c", "text": "Harmonious" },
+            { "id": "d", "text": "Incompatible" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE822",
+        "questionText": "[ANTONYM] DISINTERESTED",
+        "options": [
+            { "id": "a", "text": "Impartial" },
+            { "id": "b", "text": "Neutral" },
+            { "id": "c", "text": "Unbiased" },
+            { "id": "d", "text": "Biased" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE823",
+        "questionText": "[ANTONYM] DISSONANCE",
+        "options": [
+            { "id": "a", "text": "Discord" },
+            { "id": "b", "text": "Disagreeement" },
+            { "id": "c", "text": "Harshness" },
+            { "id": "d", "text": "Accord" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE824",
+        "questionText": "[ANTONYM] DOGMATIC",
+        "options": [
+            { "id": "a", "text": "Assertive" },
+            { "id": "b", "text": "Opinionated" },
+            { "id": "c", "text": "Doctrinaire" },
+            { "id": "d", "text": "Flexible" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE825",
+        "questionText": "[ANTONYM] DOLEFUL",
+        "options": [
+            { "id": "a", "text": "Sad" },
+            { "id": "b", "text": "Mournful" },
+            { "id": "c", "text": "Sorrowful" },
+            { "id": "d", "text": "Cheerful" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE826",
+        "questionText": "[ANTONYM] DOUR",
+        "options": [
+            { "id": "a", "text": "Stern" },
+            { "id": "b", "text": "Gloomy" },
+            { "id": "c", "text": "Severe" },
+            { "id": "d", "text": "Cheerful" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE827",
+        "questionText": "[ANTONYM] DUPE",
+        "options": [
+            { "id": "a", "text": "Deceive" },
+            { "id": "b", "text": "Trick" },
+            { "id": "c", "text": "Fool" },
+            { "id": "d", "text": "Enlighten" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE828",
+        "questionText": "[ANTONYM] ECLECTIC",
+        "options": [
+            { "id": "a", "text": "Diverse" },
+            { "id": "b", "text": "Varied" },
+            { "id": "c", "text": "Wide-ranging" },
+            { "id": "d", "text": "Narrow" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE829",
+        "questionText": "[ANTONYM] EDIFY",
+        "options": [
+            { "id": "a", "text": "Instruct" },
+            { "id": "b", "text": "Improve" },
+            { "id": "c", "text": "Enlighten" },
+            { "id": "d", "text": "Confuse" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE830",
+        "questionText": "[ANTONYM] ELOQUENT",
+        "options": [
+            { "id": "a", "text": "Fluent" },
+            { "id": "b", "text": "Articulate" },
+            { "id": "c", "text": "Expressive" },
+            { "id": "d", "text": "Inarticulate" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE831",
+        "questionText": "[ANTONYM] EMACIATED",
+        "options": [
+            { "id": "a", "text": "Thin" },
+            { "id": "b", "text": "Wasted" },
+            { "id": "c", "text": "Skeletal" },
+            { "id": "d", "text": "Plump" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE832",
+        "questionText": "[ANTONYM] ENDEMIC",
+        "options": [
+            { "id": "a", "text": "Native" },
+            { "id": "b", "text": "Local" },
+            { "id": "c", "text": "Restricted" },
+            { "id": "d", "text": "Widespread" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE833",
+        "questionText": "[ANTONYM] ENGENDER",
+        "options": [
+            { "id": "a", "text": "Cause" },
+            { "id": "b", "text": "Produce" },
+            { "id": "c", "text": "Create" },
+            { "id": "d", "text": "Destroy" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE834",
+        "questionText": "[ANTONYM] ENNUI",
+        "options": [
+            { "id": "a", "text": "Boredom" },
+            { "id": "b", "text": "Tedium" },
+            { "id": "c", "text": "Listlessness" },
+            { "id": "d", "text": "Excitement" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE835",
+        "questionText": "[ANTONYM] ESOTERIC",
+        "options": [
+            { "id": "a", "text": "Obscure" },
+            { "id": "b", "text": "Abstruse" },
+            { "id": "c", "text": "Recondite" },
+            { "id": "d", "text": "Common" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE836",
+        "questionText": "[ANTONYM] ETHEREAL",
+        "options": [
+            { "id": "a", "text": "Delicate" },
+            { "id": "b", "text": "Heavenly" },
+            { "id": "c", "text": "Airy" },
+            { "id": "d", "text": "Substantial" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE837",
+        "questionText": "[ANTONYM] EVANESCENT",
+        "options": [
+            { "id": "a", "text": "Fleeting" },
+            { "id": "b", "text": "Transient" },
+            { "id": "c", "text": "Vanishing" },
+            { "id": "d", "text": "Permanent" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE838",
+        "questionText": "[ANTONYM] EXACERBATE",
+        "options": [
+            { "id": "a", "text": "Worsen" },
+            { "id": "b", "text": "Aggravate" },
+            { "id": "c", "text": "Intensify" },
+            { "id": "d", "text": "Alleviate" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE839",
+        "questionText": "[ANTONYM] EXECRABLE",
+        "options": [
+            { "id": "a", "text": "Detestable" },
+            { "id": "b", "text": "Abominable" },
+            { "id": "c", "text": "Hateful" },
+            { "id": "d", "text": "Admirable" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE840",
+        "questionText": "[ANTONYM] EXONERATE",
+        "options": [
+            { "id": "a", "text": "Absolve" },
+            { "id": "b", "text": "Acquit" },
+            { "id": "c", "text": "Clear" },
+            { "id": "d", "text": "Convict" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE841",
+        "questionText": "[ANTONYM] EXTANT",
+        "options": [
+            { "id": "a", "text": "Existing" },
+            { "id": "b", "text": "Surviving" },
+            { "id": "c", "text": "Still present" },
+            { "id": "d", "text": "Extinct" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE842",
+        "questionText": "[ANTONYM] EXTRANEOUS",
+        "options": [
+            { "id": "a", "text": "Irrelevant" },
+            { "id": "b", "text": "Unrelated" },
+            { "id": "c", "text": "Foreign" },
+            { "id": "d", "text": "Essential" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE843",
+        "questionText": "[ANTONYM] FACILE",
+        "options": [
+            { "id": "a", "text": "Easy" },
+            { "id": "b", "text": "Effortless" },
+            { "id": "c", "text": "Superficial" },
+            { "id": "d", "text": "Profound" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE844",
+        "questionText": "[ANTONYM] FASTIDIOUS",
+        "options": [
+            { "id": "a", "text": "Meticulous" },
+            { "id": "b", "text": "Fussy" },
+            { "id": "c", "text": "Critical" },
+            { "id": "d", "text": "Careless" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE845",
+        "questionText": "[ANTONYM] FELICITOUS",
+        "options": [
+            { "id": "a", "text": "Apt" },
+            { "id": "b", "text": "Well-chosen" },
+            { "id": "c", "text": "Suitable" },
+            { "id": "d", "text": "Inappropriate" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE846",
+        "questionText": "[ANTONYM] FERVID",
+        "options": [
+            { "id": "a", "text": "Passionate" },
+            { "id": "b", "text": "Intense" },
+            { "id": "c", "text": "Zealous" },
+            { "id": "d", "text": "Apathetic" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE847",
+        "questionText": "[ANTONYM] FETID",
+        "options": [
+            { "id": "a", "text": "Stinking" },
+            { "id": "b", "text": "Foul" },
+            { "id": "c", "text": "Smelly" },
+            { "id": "d", "text": "Fragrant" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE848",
+        "questionText": "[ANTONYM] FLIPPANT",
+        "options": [
+            { "id": "a", "text": "Disrespectful" },
+            { "id": "b", "text": "Frivolous" },
+            { "id": "c", "text": "Saucy" },
+            { "id": "d", "text": "Respectful" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE849",
+        "questionText": "[ANTONYM] FLORID",
+        "options": [
+            { "id": "a", "text": "Flushed" },
+            { "id": "b", "text": "Ruddy" },
+            { "id": "c", "text": "Ornate" },
+            { "id": "d", "text": "Pale" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE850",
+        "questionText": "[ANTONYM] FRUGAL",
+        "options": [
+            { "id": "a", "text": "Thrifty" },
+            { "id": "b", "text": "Economical" },
+            { "id": "c", "text": "Sparing" },
+            { "id": "d", "text": "Extravagant" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE851",
+        "questionText": "Of the two runners, John is the ______.",
+        "options": [
+            { "id": "a", "text": "fast" },
+            { "id": "b", "text": "faster" },
+            { "id": "c", "text": "fastest" },
+            { "id": "d", "text": "more fast" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE852",
+        "questionText": "This is the ______ movie I have ever seen!",
+        "options": [
+            { "id": "a", "text": "bad" },
+            { "id": "b", "text": "worse" },
+            { "id": "c", "text": "worst" },
+            { "id": "d", "text": "baddest" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE853",
+        "questionText": "She speaks English ______ than her brother.",
+        "options": [
+            { "id": "a", "text": "fluent" },
+            { "id": "b", "text": "fluently" },
+            { "id": "c", "text": "more fluently" },
+            { "id": "d", "text": "most fluently" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE854",
+        "questionText": "Mount Everest is the ______ mountain in the world.",
+        "options": [
+            { "id": "a", "text": "high" },
+            { "id": "b", "text": "higher" },
+            { "id": "c", "text": "highest" },
+            { "id": "d", "text": "more high" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE855",
+        "questionText": "My sister is two years ______ than me.",
+        "options": [
+            { "id": "a", "text": "old" },
+            { "id": "b", "text": "older" },
+            { "id": "c", "text": "elder" },
+            { "id": "d", "text": "Both b and c can be used here" } // 'Elder' typically used for family comparison, but 'older' is always safe.
+        ],
+        "correctOptionId": "b" // Older is more universally correct.
+    },
+    {
+        "id": "KE856",
+        "questionText": "This problem is ______ than the previous one.",
+        "options": [
+            { "id": "a", "text": "difficult" },
+            { "id": "b", "text": "difficulter" },
+            { "id": "c", "text": "more difficult" },
+            { "id": "d", "text": "most difficult" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE857",
+        "questionText": "He did ______ on the test than he expected.",
+        "options": [
+            { "id": "a", "text": "bad" },
+            { "id": "b", "text": "badly" },
+            { "id": "c", "text": "worse" }, // Comparative adverb
+            { "id": "d", "text": "worst" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE858",
+        "questionText": "Which sentence is grammatically correct?",
+        "options": [
+            { "id": "a", "text": "She is the most unique artist I know." }, // Unique is absolute
+            { "id": "b", "text": "She is a very unique artist I know." }, // Unique is absolute
+            { "id": "c", "text": "She is the unique artist I know." }, // Implies only one
+            { "id": "d", "text": "She is a unique artist I know." } // Correct way to use the absolute adjective
+        ],
+        "correctOptionId": "d" // Re-evaluating based on standard grammar rules for absolute adjectives. Original note in source was slightly off. 'a very unique' or 'most unique' are common but technically incorrect. 'a unique' or 'the unique' (if context implies singularity) are better. D is best fit here.
+    },
+    {
+        "id": "KE859",
+        "questionText": "I have ______ money than you.",
+        "options": [
+            { "id": "a", "text": "little" },
+            { "id": "b", "text": "less" }, // Uncountable noun
+            { "id": "c", "text": "least" },
+            { "id": "d", "text": "fewer" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE860",
+        "questionText": "There were ______ people at the party than we thought.",
+        "options": [
+            { "id": "a", "text": "little" },
+            { "id": "b", "text": "less" },
+            { "id": "c", "text": "least" },
+            { "id": "d", "text": "fewer" } // Countable noun
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE861",
+        "questionText": "Your house is ______ from the station than mine.",
+        "options": [
+            { "id": "a", "text": "far" },
+            { "id": "b", "text": "farther" }, // Physical distance
+            { "id": "c", "text": "further" }, // Also metaphorical extent
+            { "id": "d", "text": "Both b and c are often accepted, but 'farther' usually implies physical distance." }
+        ],
+        "correctOptionId": "b" // Prefer 'farther' for physical distance
+    },
+    {
+        "id": "KE862",
+        "questionText": "We need to discuss this matter ______.",
+        "options": [
+            { "id": "a", "text": "far" },
+            { "id": "b", "text": "farther" },
+            { "id": "c", "text": "further" }, // Metaphorical extent
+            { "id": "d", "text": "Both b and c are possible, but 'further' is preferred for metaphorical extent." }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE863",
+        "questionText": "This is the ______ interesting book I've read this year.",
+        "options": [
+            { "id": "a", "text": "more" },
+            { "id": "b", "text": "most" },
+            { "id": "c", "text": "much" },
+            { "id": "d", "text": "many" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE864",
+        "questionText": "He arrived ______ than expected.",
+        "options": [
+            { "id": "a", "text": "late" },
+            { "id": "b", "text": "later" },
+            { "id": "c", "text": "latest" },
+            { "id": "d", "text": "more late" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE865",
+        "questionText": "She is the ______ of the three sisters.",
+        "options": [
+            { "id": "a", "text": "quiet" },
+            { "id": "b", "text": "quieter" },
+            { "id": "c", "text": "quietest" },
+            { "id": "d", "text": "more quiet" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE866",
+        "questionText": "Which is the ______ route to the city center?",
+        "options": [
+            { "id": "a", "text": "direct" },
+            { "id": "b", "text": "directest" },
+            { "id": "c", "text": "most direct" },
+            { "id": "d", "text": "more direct" }
+        ],
+        "correctOptionId": "c" // Adjectives ending in -ect usually take more/most
+    },
+    {
+        "id": "KE867",
+        "questionText": "His performance was ______ than his previous ones.",
+        "options": [
+            { "id": "a", "text": "good" },
+            { "id": "b", "text": "better" },
+            { "id": "c", "text": "best" },
+            { "id": "d", "text": "more good" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE868",
+        "questionText": "This fabric feels ______ than that one.",
+        "options": [
+            { "id": "a", "text": "soft" },
+            { "id": "b", "text": "softer" },
+            { "id": "c", "text": "softest" },
+            { "id": "d", "text": "more soft" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE869",
+        "questionText": "The ______ you study, the ______ you will learn.",
+        "options": [
+            { "id": "a", "text": "more / more" },
+            { "id": "b", "text": "most / most" },
+            { "id": "c", "text": "more / most" },
+            { "id": "d", "text": "most / more" }
+        ],
+        "correctOptionId": "a" // Correlative comparative structure
+    },
+    {
+        "id": "KE870",
+        "questionText": "He is ______ than his brother.",
+        "options": [
+            { "id": "a", "text": "clever" },
+            { "id": "b", "text": "cleverer" },
+            { "id": "c", "text": "more clever" },
+            { "id": "d", "text": "Both b and c are generally accepted" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE871",
+        "questionText": "That was the ______ meal I've had in a long time.",
+        "options": [
+            { "id": "a", "text": "good" },
+            { "id": "b", "text": "better" },
+            { "id": "c", "text": "best" },
+            { "id": "d", "text": "well" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE872",
+        "questionText": "She runs ______ than anyone else on the team.",
+        "options": [
+            { "id": "a", "text": "quick" },
+            { "id": "b", "text": "quicker" }, // Informal adverb use
+            { "id": "c", "text": "quickly" }, // Formal adverb
+            { "id": "d", "text": "more quickly" } // Comparative adverb
+        ],
+        "correctOptionId": "d" // Comparative adverb is needed
+    },
+    {
+        "id": "KE873",
+        "questionText": "Of the two options, this one is ______.",
+        "options": [
+            { "id": "a", "text": "good" },
+            { "id": "b", "text": "better" },
+            { "id": "c", "text": "best" },
+            { "id": "d", "text": "the better" } // Use comparative for two items
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE874",
+        "questionText": "This suitcase is ______ than that one.",
+        "options": [
+            { "id": "a", "text": "heavy" },
+            { "id": "b", "text": "heavier" },
+            { "id": "c", "text": "heaviest" },
+            { "id": "d", "text": "more heavy" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE875",
+        "questionText": "It was the ______ day of my life.",
+        "options": [
+            { "id": "a", "text": "happy" },
+            { "id": "b", "text": "happier" },
+            { "id": "c", "text": "happiest" },
+            { "id": "d", "text": "most happy" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE876",
+        "questionText": "Can you speak a bit ______? I can't hear you.",
+        "options": [
+            { "id": "a", "text": "loud" }, // Adjective
+            { "id": "b", "text": "louder" }, // Comparative adjective (sometimes used informally as adverb)
+            { "id": "c", "text": "loudly" }, // Adverb
+            { "id": "d", "text": "more loudly" } // Comparative adverb
+        ],
+        "correctOptionId": "d" // Comparative adverb modifies 'speak'
+    },
+    {
+        "id": "KE877",
+        "questionText": "Today's weather is ______ than yesterday's.",
+        "options": [
+            { "id": "a", "text": "bad" },
+            { "id": "b", "text": "badly" },
+            { "id": "c", "text": "worse" },
+            { "id": "d", "text": "worst" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE878",
+        "questionText": "He has the ______ potential of all the candidates.",
+        "options": [
+            { "id": "a", "text": "much" },
+            { "id": "b", "text": "more" },
+            { "id": "c", "text": "most" }, // Potential is uncountable -> most
+            { "id": "d", "text": "many" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE879",
+        "questionText": "This task is ______ simple than it looks.",
+        "options": [
+            { "id": "a", "text": "more" },
+            { "id": "b", "text": "most" },
+            { "id": "c", "text": "less" },
+            { "id": "d", "text": "least" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE880",
+        "questionText": "She is ______ person I know.",
+        "options": [
+            { "id": "a", "text": "the kinder" },
+            { "id": "b", "text": "the kindest" },
+            { "id": "c", "text": "the more kind" },
+            { "id": "d", "text": "the most kind" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE881",
+        "questionText": "Your explanation is ______ than mine.",
+        "options": [
+            { "id": "a", "text": "clear" },
+            { "id": "b", "text": "clearer" },
+            { "id": "c", "text": "clearest" },
+            { "id": "d", "text": "more clear" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE882",
+        "questionText": "This is the ______ solution to the problem.",
+        "options": [
+            { "id": "a", "text": "simple" },
+            { "id": "b", "text": "simpler" },
+            { "id": "c", "text": "simplest" },
+            { "id": "d", "text": "most simple (Both c and d are often accepted, but 'simplest' is common)" }
+        ],
+        "correctOptionId": "c" // Simplest is preferred
+    },
+    {
+        "id": "KE883",
+        "questionText": "He drives ______ than his wife.",
+        "options": [
+            { "id": "a", "text": "careful" },
+            { "id": "b", "text": "carefully" },
+            { "id": "c", "text": "more carefully" },
+            { "id": "d", "text": "most carefully" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE884",
+        "questionText": "Who is the ______ student in the class?",
+        "options": [
+            { "id": "a", "text": "intelligent" },
+            { "id": "b", "text": "intelligenter" },
+            { "id": "c", "text": "more intelligent" },
+            { "id": "d", "text": "most intelligent" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE885",
+        "questionText": "The Nile is the ______ river in the world.",
+        "options": [
+            { "id": "a", "text": "long" },
+            { "id": "b", "text": "longer" },
+            { "id": "c", "text": "longest" },
+            { "id": "d", "text": "more long" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE886",
+        "questionText": "I feel ______ today than I did yesterday.",
+        "options": [
+            { "id": "a", "text": "well" }, // Adverb base form
+            { "id": "b", "text": "better" }, // Comparative adverb
+            { "id": "c", "text": "good" }, // Adjective
+            { "id": "d", "text": "best" } // Superlative adverb
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE887",
+        "questionText": "This is the ______ price we can offer.",
+        "options": [
+            { "id": "a", "text": "low" },
+            { "id": "b", "text": "lower" },
+            { "id": "c", "text": "lowest" },
+            { "id": "d", "text": "less low" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE888",
+        "questionText": "She is ______ interested in history than in science.",
+        "options": [
+            { "id": "a", "text": "much" }, // Intensifier
+            { "id": "b", "text": "more" }, // Comparative
+            { "id": "c", "text": "most" },
+            { "id": "d", "text": "many" }
+        ],
+        "correctOptionId": "b" // Simple comparison
+    },
+    {
+        "id": "KE889",
+        "questionText": "Which building is ______? The Empire State or the Chrysler Building?",
+        "options": [
+            { "id": "a", "text": "tall" },
+            { "id": "b", "text": "taller" }, // Comparing two
+            { "id": "c", "text": "tallest" },
+            { "id": "d", "text": "more tall" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE890",
+        "questionText": "This method is ______ effective than the old one.",
+        "options": [
+            { "id": "a", "text": "little" },
+            { "id": "b", "text": "less" },
+            { "id": "c", "text": "least" },
+            { "id": "d", "text": "fewer" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE891",
+        "questionText": "He is the ______ player on the team.",
+        "options": [
+            { "id": "a", "text": "young" },
+            { "id": "b", "text": "younger" },
+            { "id": "c", "text": "youngest" },
+            { "id": "d", "text": "more young" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE892",
+        "questionText": "The Sahara is the ______ desert in the world.",
+        "options": [
+            { "id": "a", "text": "hot" },
+            { "id": "b", "text": "hotter" },
+            { "id": "c", "text": "hottest" },
+            { "id": "d", "text": "most hot" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE893",
+        "questionText": "She sings ______ than she plays the guitar.",
+        "options": [
+            { "id": "a", "text": "beautiful" },
+            { "id": "b", "text": "beautifully" },
+            { "id": "c", "text": "more beautifully" },
+            { "id": "d", "text": "most beautifully" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE894",
+        "questionText": "It was the ______ experience of my trip.",
+        "options": [
+            { "id": "a", "text": "memorable" },
+            { "id": "b", "text": "more memorable" },
+            { "id": "c", "text": "most memorable" },
+            { "id": "d", "text": "memorabler" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE895",
+        "questionText": "His handwriting is ______ to read than hers.",
+        "options": [
+            { "id": "a", "text": "easy" },
+            { "id": "b", "text": "easier" },
+            { "id": "c", "text": "easiest" },
+            { "id": "d", "text": "more easy" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE896",
+        "questionText": "Choose the grammatically INCORRECT sentence:",
+        "options": [
+            { "id": "a", "text": "This book is more interesting than that one." },
+            { "id": "b", "text": "He is the most tallest boy in the school." }, // Double superlative
+            { "id": "c", "text": "She runs faster than him." }, // 'him' is acceptable object pronoun here
+            { "id": "d", "text": "Today is hotter than yesterday." }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE897",
+        "questionText": "This knife is not as ______ as that one.",
+        "options": [
+            { "id": "a", "text": "sharp" }, // Structure 'as ... as' uses base adjective
+            { "id": "b", "text": "sharper" },
+            { "id": "c", "text": "sharpest" },
+            { "id": "d", "text": "more sharp" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE898",
+        "questionText": "He is considered the ______ composer of his era.",
+        "options": [
+            { "id": "a", "text": "great" },
+            { "id": "b", "text": "greater" },
+            { "id": "c", "text": "greatest" },
+            { "id": "d", "text": "more great" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE899",
+        "questionText": "The situation is getting ______ and ______.",
+        "options": [
+            { "id": "a", "text": "bad / bad" },
+            { "id": "b", "text": "worse / worse" }, // Repeated comparative for ongoing change
+            { "id": "c", "text": "worst / worst" },
+            { "id": "d", "text": "badder / badder" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE900",
+        "questionText": "She looks ______ now than she did before her holiday.",
+        "options": [
+            { "id": "a", "text": "happy" },
+            { "id": "b", "text": "happier" },
+            { "id": "c", "text": "happiest" },
+            { "id": "d", "text": "more happy" }
+        ],
+        "correctOptionId": "b"
+    },
+     {
+        "id": "KE901",
+        "questionText": "This is by far the ______ challenge we have faced.",
+        "options": [
+            { "id": "a", "text": "tough" },
+            { "id": "b", "text": "tougher" },
+            { "id": "c", "text": "toughest" }, // 'by far' emphasizes superlative
+            { "id": "d", "text": "more tough" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE902",
+        "questionText": "He works ______ now that he has a deadline.",
+        "options": [
+            { "id": "a", "text": "hard" },
+            { "id": "b", "text": "harder" }, // Comparative adverb
+            { "id": "c", "text": "hardly" }, // Means 'almost not'
+            { "id": "d", "text": "more hard" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE903",
+        "questionText": "Of gold and silver, gold is the ______.",
+        "options": [
+            { "id": "a", "text": "valuable" },
+            { "id": "b", "text": "more valuable" }, // Comparing two
+            { "id": "c", "text": "most valuable" },
+            { "id": "d", "text": "valuabler" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE904",
+        "questionText": "This chair is ______ comfortable than the sofa.",
+        "options": [
+            { "id": "a", "text": "little" },
+            { "id": "b", "text": "less" },
+            { "id": "c", "text": "least" },
+            { "id": "d", "text": "fewer" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE905",
+        "questionText": "That was one of the ______ decisions I've ever made.",
+        "options": [
+            { "id": "a", "text": "difficult" },
+            { "id": "b", "text": "difficulter" },
+            { "id": "c", "text": "more difficult" },
+            { "id": "d", "text": "most difficult" } // 'one of the' requires superlative
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE906",
+        "questionText": "The temperature is ______ today than it was last week.",
+        "options": [
+            { "id": "a", "text": "high" },
+            { "id": "b", "text": "higher" },
+            { "id": "c", "text": "highest" },
+            { "id": "d", "text": "more high" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE907",
+        "questionText": "He speaks ______ than anyone I know.",
+        "options": [
+            { "id": "a", "text": "polite" },
+            { "id": "b", "text": "politely" },
+            { "id": "c", "text": "more politely" },
+            { "id": "d", "text": "most politely" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE908",
+        "questionText": "This is the ______ part of the entire project.",
+        "options": [
+            { "id": "a", "text": "important" },
+            { "id": "b", "text": "importanter" },
+            { "id": "c", "text": "more important" },
+            { "id": "d", "text": "most important" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE909",
+        "questionText": "She is ______ at maths than her sister.",
+        "options": [
+            { "id": "a", "text": "good" },
+            { "id": "b", "text": "better" },
+            { "id": "c", "text": "best" },
+            { "id": "d", "text": "well" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE910",
+        "questionText": "The traffic is ______ during rush hour.",
+        "options": [
+            { "id": "a", "text": "bad" },
+            { "id": "b", "text": "worse" }, // Implied comparison to other times
+            { "id": "c", "text": "worst" },
+            { "id": "d", "text": "more bad" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE911",
+        "questionText": "Which route takes ______ time?",
+        "options": [
+            { "id": "a", "text": "little" },
+            { "id": "b", "text": "less" },
+            { "id": "c", "text": "the less" },
+            { "id": "d", "text": "the least" } // Superlative needed for 'which' question involving > 2 implicit options
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE912",
+        "questionText": "Antarctica is the ______ continent.",
+        "options": [
+            { "id": "a", "text": "cold" },
+            { "id": "b", "text": "colder" },
+            { "id": "c", "text": "coldest" },
+            { "id": "d", "text": "more cold" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE913",
+        "questionText": "He is ______ now than he used to be.",
+        "options": [
+            { "id": "a", "text": "patient" },
+            { "id": "b", "text": "patienter" },
+            { "id": "c", "text": "more patient" },
+            { "id": "d", "text": "most patient" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE914",
+        "questionText": "This is the ______ coffee I've ever tasted.",
+        "options": [
+            { "id": "a", "text": "strong" },
+            { "id": "b", "text": "stronger" },
+            { "id": "c", "text": "strongest" },
+            { "id": "d", "text": "more strong" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE915",
+        "questionText": "She reacted ______ than I expected.",
+        "options": [
+            { "id": "a", "text": "calm" },
+            { "id": "b", "text": "calmer" }, // Informal comparative adverb
+            { "id": "c", "text": "calmly" }, // Adverb
+            { "id": "d", "text": "more calmly" } // Comparative adverb
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE916",
+        "questionText": "The ______ you leave, the ______ you will arrive.",
+        "options": [
+            { "id": "a", "text": "early / early" },
+            { "id": "b", "text": "earlier / earlier" }, // Correlative comparative structure
+            { "id": "c", "text": "earliest / earliest" },
+            { "id": "d", "text": "more early / more early" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE917",
+        "questionText": "He is the ______ member of the board.",
+        "options": [
+            { "id": "a", "text": "influential" },
+            { "id": "b", "text": "influentieller" },
+            { "id": "c", "text": "more influential" },
+            { "id": "d", "text": "most influential" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE918",
+        "questionText": "My score was ______ than yours.",
+        "options": [
+            { "id": "a", "text": "low" },
+            { "id": "b", "text": "lower" },
+            { "id": "c", "text": "lowest" },
+            { "id": "d", "text": "less low" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE919",
+        "questionText": "This brand is ______ expensive than that one.",
+        "options": [
+            { "id": "a", "text": "much" }, // Intensifier
+            { "id": "b", "text": "more" }, // Comparative
+            { "id": "c", "text": "most" },
+            { "id": "d", "text": "many" }
+        ],
+        "correctOptionId": "b" // Simple comparison
+    },
+    {
+        "id": "KE920",
+        "questionText": "Which is the ______ of the two evils?",
+        "options": [
+            { "id": "a", "text": "bad" },
+            { "id": "b", "text": "worse" }, // Often used, but 'lesser' is the idiomatic choice
+            { "id": "c", "text": "worst" },
+            { "id": "d", "text": "lesser" } // Idiomatic expression: the lesser of two evils
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE921",
+        "questionText": "The view from the top is ______.",
+        "options": [
+            { "id": "a", "text": "spectacular" },
+            { "id": "b", "text": "more spectacular" },
+            { "id": "c", "text": "most spectacular" },
+            { "id": "d", "text": "spectacularer" }
+        ],
+        "correctOptionId": "a" // 'spectacular' can stand alone as a strong adjective
+    },
+    {
+        "id": "KE922",
+        "questionText": "He needs to be ______ with his spending.",
+        "options": [
+            { "id": "a", "text": "careful" },
+            { "id": "b", "text": "carefuller" },
+            { "id": "c", "text": "more careful" }, // Comparative implies comparison, not needed here
+            { "id": "d", "text": "most careful" }
+        ],
+        "correctOptionId": "a" // Simple adjective needed
+    },
+    {
+        "id": "KE923",
+        "questionText": "This soup needs ______ salt.",
+        "options": [
+            { "id": "a", "text": "much" },
+            { "id": "b", "text": "more" }, // Implies comparison to current amount
+            { "id": "c", "text": "most" },
+            { "id": "d", "text": "many" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE924",
+        "questionText": "She is ______ girl I have ever met.",
+        "options": [
+            { "id": "a", "text": "the funnier" },
+            { "id": "b", "text": "the funniest" },
+            { "id": "c", "text": "the more funny" },
+            { "id": "d", "text": "the most funny" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE925",
+        "questionText": "The sequel was ______ than the original film.",
+        "options": [
+            { "id": "a", "text": "exciting" },
+            { "id": "b", "text": "excitinger" },
+            { "id": "c", "text": "more exciting" },
+            { "id": "d", "text": "most exciting" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE926",
+        "questionText": "This phone has ______ features than the old model.",
+        "options": [
+            { "id": "a", "text": "many" },
+            { "id": "b", "text": "more" }, // Countable noun
+            { "id": "c", "text": "most" },
+            { "id": "d", "text": "much" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE927",
+        "questionText": "He is ______ than he looks.",
+        "options": [
+            { "id": "a", "text": "strong" },
+            { "id": "b", "text": "stronger" },
+            { "id": "c", "text": "strongest" },
+            { "id": "d", "text": "more strong" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE928",
+        "questionText": "That is the ______ thing anyone could say.",
+        "options": [
+            { "id": "a", "text": "stupid" },
+            { "id": "b", "text": "stupider" },
+            { "id": "c", "text": "stupidest" },
+            { "id": "d", "text": "most stupid (Both c and d are often accepted)" }
+        ],
+        "correctOptionId": "c" // stupidest is generally preferred
+    },
+    {
+        "id": "KE929",
+        "questionText": "She performed the task ______ than her colleagues.",
+        "options": [
+            { "id": "a", "text": "efficient" },
+            { "id": "b", "text": "efficiently" },
+            { "id": "c", "text": "more efficiently" },
+            { "id": "d", "text": "most efficiently" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE930",
+        "questionText": "It was the ______ moment of the ceremony.",
+        "options": [
+            { "id": "a", "text": "solemn" },
+            { "id": "b", "text": "solemner" },
+            { "id": "c", "text": "more solemn" },
+            { "id": "d", "text": "most solemn" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE931",
+        "questionText": "His condition is ______ serious than we initially thought.",
+        "options": [
+            { "id": "a", "text": "much" }, // Intensifier
+            { "id": "b", "text": "more" }, // Comparative
+            { "id": "c", "text": "most" },
+            { "id": "d", "text": "very" } // Intensifier
+        ],
+        "correctOptionId": "b" // Simple comparison needed
+    },
+    {
+        "id": "KE932",
+        "questionText": "Which is the ______ way to learn a language?",
+        "options": [
+            { "id": "a", "text": "good" },
+            { "id": "b", "text": "better" },
+            { "id": "c", "text": "best" },
+            { "id": "d", "text": "well" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE933",
+        "questionText": "I have ______ interest in politics now than before.",
+        "options": [
+            { "id": "a", "text": "little" },
+            { "id": "b", "text": "less" }, // Uncountable noun
+            { "id": "c", "text": "least" },
+            { "id": "d", "text": "fewer" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE934",
+        "questionText": "This painting is ______ beautiful than the photograph.",
+        "options": [
+            { "id": "a", "text": "much" }, // Intensifier
+            { "id": "b", "text": "more" }, // Comparative
+            { "id": "c", "text": "most" },
+            { "id": "d", "text": "very" } // Intensifier
+        ],
+        "correctOptionId": "b" // Simple comparison
+    },
+    {
+        "id": "KE935",
+        "questionText": "He is the ______ paid athlete in the world.",
+        "options": [
+            { "id": "a", "text": "high" },
+            { "id": "b", "text": "higher" },
+            { "id": "c", "text": "highest" }, // Superlative adjective
+            { "id": "d", "text": "most high" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE936",
+        "questionText": "She felt ______ after a good night's sleep.",
+        "options": [
+            { "id": "a", "text": "energetic" },
+            { "id": "b", "text": "energeticer" },
+            { "id": "c", "text": "more energetic" }, // Comparative implies comparison, not needed here
+            { "id": "d", "text": "most energetic" }
+        ],
+        "correctOptionId": "a" // Simple adjective needed
+    },
+    {
+        "id": "KE937",
+        "questionText": "Your answer is ______ than his.",
+        "options": [
+            { "id": "a", "text": "accurate" },
+            { "id": "b", "text": "accurater" },
+            { "id": "c", "text": "more accurate" },
+            { "id": "d", "text": "most accurate" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE938",
+        "questionText": "This is the ______ hotel in the city.",
+        "options": [
+            { "id": "a", "text": "luxurious" },
+            { "id": "b", "text": "luxuriouser" },
+            { "id": "c", "text": "more luxurious" },
+            { "id": "d", "text": "most luxurious" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE939",
+        "questionText": "He explained the concept ______ than the teacher did.",
+        "options": [
+            { "id": "a", "text": "simple" },
+            { "id": "b", "text": "simply" },
+            { "id": "c", "text": "more simply" },
+            { "id": "d", "text": "most simply" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE940",
+        "questionText": "Who is the ______ person you know?",
+        "options": [
+            { "id": "a", "text": "generous" },
+            { "id": "b", "text": "generouser" },
+            { "id": "c", "text": "more generous" },
+            { "id": "d", "text": "most generous" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE941",
+        "questionText": "The journey took ______ than we expected.",
+        "options": [
+            { "id": "a", "text": "long" },
+            { "id": "b", "text": "longer" },
+            { "id": "c", "text": "longest" },
+            { "id": "d", "text": "more long" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE942",
+        "questionText": "This is the ______ solution possible under the circumstances.",
+        "options": [
+            { "id": "a", "text": "practical" },
+            { "id": "b", "text": "practicaler" },
+            { "id": "c", "text": "more practical" },
+            { "id": "d", "text": "most practical" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE943",
+        "questionText": "She adapted ______ to the new environment than her husband.",
+        "options": [
+            { "id": "a", "text": "quick" },
+            { "id": "b", "text": "quicker" }, // Informal adverb
+            { "id": "c", "text": "quickly" }, // Adverb
+            { "id": "d", "text": "more quickly" } // Comparative adverb
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE944",
+        "questionText": "He is the ______ qualified candidate for the job.",
+        "options": [
+            { "id": "a", "text": "little" },
+            { "id": "b", "text": "less" },
+            { "id": "c", "text": "least" }, // Superlative for uncountable 'qualified' idea
+            { "id": "d", "text": "fewer" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE945",
+        "questionText": "The second half of the game was ______ than the first.",
+        "options": [
+            { "id": "a", "text": "tense" },
+            { "id": "b", "text": "tenser" },
+            { "id": "c", "text": "tensest" },
+            { "id": "d", "text": "more tense" } // 'tenser' is acceptable, but 'more tense' is also common
+        ],
+        "correctOptionId": "d" // Accepting 'more tense' as per original source indication
+    },
+    {
+        "id": "KE946",
+        "questionText": "This is the ______ chocolate cake ever!",
+        "options": [
+            { "id": "a", "text": "delicious" },
+            { "id": "b", "text": "deliciouser" },
+            { "id": "c", "text": "more delicious" },
+            { "id": "d", "text": "most delicious" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE947",
+        "questionText": "He argued his point ______ than his opponent.",
+        "options": [
+            { "id": "a", "text": "forceful" },
+            { "id": "b", "text": "forcefully" },
+            { "id": "c", "text": "more forcefully" },
+            { "id": "d", "text": "most forcefully" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE948",
+        "questionText": "It's the ______ museum in the region.",
+        "options": [
+            { "id": "a", "text": "popular" },
+            { "id": "b", "text": "popularer" },
+            { "id": "c", "text": "more popular" },
+            { "id": "d", "text": "most popular" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE949",
+        "questionText": "She is ______ taller than her mother now.",
+        "options": [
+            { "id": "a", "text": "slight" },
+            { "id": "b", "text": "slightly" }, // Adverb modifying comparative 'taller'
+            { "id": "c", "text": "more slightly" },
+            { "id": "d", "text": "most slightly" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE950",
+        "questionText": "This is the ______ work I have ever done.",
+        "options": [
+            { "id": "a", "text": "hard" },
+            { "id": "b", "text": "harder" },
+            { "id": "c", "text": "hardest" },
+            { "id": "d", "text": "most hard" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE951",
+        "questionText": "He is ______ than I am at solving puzzles.",
+        "options": [
+            { "id": "a", "text": "quick" },
+            { "id": "b", "text": "quicker" },
+            { "id": "c", "text": "quickest" },
+            { "id": "d", "text": "more quick" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE952",
+        "questionText": "That building is ______ than it looks.",
+        "options": [
+            { "id": "a", "text": "old" },
+            { "id": "b", "text": "older" },
+            { "id": "c", "text": "oldest" },
+            { "id": "d", "text": "more old" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE953",
+        "questionText": "She speaks ______ than she writes.",
+        "options": [
+            { "id": "a", "text": "clear" },
+            { "id": "b", "text": "clearer" },
+            { "id": "c", "text": "clearly" },
+            { "id": "d", "text": "more clearly" }
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE954",
+        "questionText": "This is the ______ common mistake students make.",
+        "options": [
+            { "id": "a", "text": "more" },
+            { "id": "b", "text": "most" },
+            { "id": "c", "text": "much" },
+            { "id": "d", "text": "many" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE955",
+        "questionText": "Which plan seems ______ feasible?",
+        "options": [
+            { "id": "a", "text": "much" },
+            { "id": "b", "text": "more" }, // Comparing implicit options
+            { "id": "c", "text": "most" },
+            { "id": "d", "text": "many" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE956",
+        "questionText": "He became ______ famous after his latest film.",
+        "options": [
+            { "id": "a", "text": "far more" }, // Intensifier + comparative
+            { "id": "b", "text": "far most" },
+            { "id": "c", "text": "farther more" },
+            { "id": "d", "text": "further most" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE957",
+        "questionText": "The ______ you practice, the ______ you become.",
+        "options": [
+            { "id": "a", "text": "much / good" },
+            { "id": "b", "text": "more / better" }, // Correlative comparative structure
+            { "id": "c", "text": "most / best" },
+            { "id": "d", "text": "more / good" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE958",
+        "questionText": "This is the ______ of the two designs.",
+        "options": [
+            { "id": "a", "text": "simpler" }, // Comparing two
+            { "id": "b", "text": "simplest" },
+            { "id": "c", "text": "more simple" },
+            { "id": "d", "text": "most simple" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE959",
+        "questionText": "He felt ______ after the argument.",
+        "options": [
+            { "id": "a", "text": "bad" }, // Adjective describing state
+            { "id": "b", "text": "badly" }, // Adverb (less common after 'feel' unless describing action of feeling)
+            { "id": "c", "text": "worse" },
+            { "id": "d", "text": "worst" }
+        ],
+        "correctOptionId": "a"
+    },
+    {
+        "id": "KE960",
+        "questionText": "This requires the ______ amount of effort.",
+        "options": [
+            { "id": "a", "text": "little" },
+            { "id": "b", "text": "less" },
+            { "id": "c", "text": "least" }, // Superlative with uncountable 'amount'
+            { "id": "d", "text": "minimum" } // Also possible, but 'least' fits pattern
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE961",
+        "questionText": "She is ______ known for her acting than her singing.",
+        "options": [
+            { "id": "a", "text": "well" },
+            { "id": "b", "text": "better" }, // Comparative adverb
+            { "id": "c", "text": "best" },
+            { "id": "d", "text": "good" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE962",
+        "questionText": "That is the ______ excuse I have ever heard.",
+        "options": [
+            { "id": "a", "text": "lame" },
+            { "id": "b", "text": "lamer" },
+            { "id": "c", "text": "lamest" },
+            { "id": "d", "text": "most lame" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE963",
+        "questionText": "He completed the race ______ than the others.",
+        "options": [
+            { "id": "a", "text": "slow" },
+            { "id": "b", "text": "slower" }, // Informal adverb
+            { "id": "c", "text": "slowly" }, // Adverb
+            { "id": "d", "text": "more slowly" } // Comparative adverb
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE964",
+        "questionText": "It was the ______ challenging part of the climb.",
+        "options": [
+            { "id": "a", "text": "more" },
+            { "id": "b", "text": "most" },
+            { "id": "c", "text": "much" },
+            { "id": "d", "text": "very" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE965",
+        "questionText": "Of the three brothers, he is the ______.",
+        "options": [
+            { "id": "a", "text": "responsible" },
+            { "id": "b", "text": "responsibler" },
+            { "id": "c", "text": "more responsible" },
+            { "id": "d", "text": "most responsible" } // Superlative for three
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE966",
+        "questionText": "This diamond is ______ than that one.",
+        "options": [
+            { "id": "a", "text": "valuable" },
+            { "id": "b", "text": "valuabler" },
+            { "id": "c", "text": "more valuable" },
+            { "id": "d", "text": "most valuable" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE967",
+        "questionText": "He answered ______ than usual.",
+        "options": [
+            { "id": "a", "text": "abrupt" },
+            { "id": "b", "text": "abruptly" },
+            { "id": "c", "text": "more abruptly" },
+            { "id": "d", "text": "most abruptly" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE968",
+        "questionText": "That is the ______ dog I've ever seen.",
+        "options": [
+            { "id": "a", "text": "friendly" },
+            { "id": "b", "text": "friendlier" },
+            { "id": "c", "text": "friendliest" },
+            { "id": "d", "text": "most friendly" } // friendliest is standard
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE969",
+        "questionText": "The Amazon River carries ______ water than any other river.",
+        "options": [
+            { "id": "a", "text": "much" },
+            { "id": "b", "text": "more" }, // Uncountable noun
+            { "id": "c", "text": "most" },
+            { "id": "d", "text": "many" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE970",
+        "questionText": "This jacket is ______ warm than the blue one.",
+        "options": [
+            { "id": "a", "text": "much" }, // Intensifier
+            { "id": "b", "text": "more" }, // Comparative adjective
+            { "id": "c", "text": "most" },
+            { "id": "d", "text": "very" } // Intensifier
+        ],
+        "correctOptionId": "b" // Need comparative form 'warmer', intensified by 'much'. Since 'warmer' isn't an option, 'more warm' might be intended contextually, but 'much warmer' is standard. Retaining 'more' as base comparison.
+    },
+    {
+        "id": "KE971",
+        "questionText": "Which is the ______ way to get there? By train or by bus?",
+        "options": [
+            { "id": "a", "text": "quick" },
+            { "id": "b", "text": "quicker" }, // Comparing two
+            { "id": "c", "text": "quickest" },
+            { "id": "d", "text": "most quick" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE972",
+        "questionText": "That was the ______ performance of the night.",
+        "options": [
+            { "id": "a", "text": "outstanding" },
+            { "id": "b", "text": "more outstanding" },
+            { "id": "c", "text": "most outstanding" },
+            { "id": "d", "text": "outstandinger" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE973",
+        "questionText": "She speaks ______ Spanish than English.",
+        "options": [
+            { "id": "a", "text": "little" },
+            { "id": "b", "text": "less" }, // Uncountable idea of proficiency/amount
+            { "id": "c", "text": "least" },
+            { "id": "d", "text": "fewer" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE974",
+        "questionText": "He is ______ person for the job.",
+        "options": [
+            { "id": "a", "text": "the perfect" },
+            { "id": "b", "text": "the perfectest" },
+            { "id": "c", "text": "the most perfect" },
+            { "id": "d", "text": "a perfect" } // Perfect is usually absolute
+        ],
+        "correctOptionId": "d" // Or 'the perfect' if context implies uniqueness
+    },
+    {
+        "id": "KE975",
+        "questionText": "The ______ we get to the station, the better.",
+        "options": [
+            { "id": "a", "text": "soon" },
+            { "id": "b", "text": "sooner" }, // Correlative comparative
+            { "id": "c", "text": "soonest" },
+            { "id": "d", "text": "more soon" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE976",
+        "questionText": "This box is the ______ of the three.",
+        "options": [
+            { "id": "a", "text": "heavy" },
+            { "id": "b", "text": "heavier" },
+            { "id": "c", "text": "heaviest" }, // Superlative for three
+            { "id": "d", "text": "most heavy" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE977",
+        "questionText": "He recovered ______ than the doctors predicted.",
+        "options": [
+            { "id": "a", "text": "fast" },
+            { "id": "b", "text": "faster" }, // Comparative adverb ('fast' also functions as adverb)
+            { "id": "c", "text": "fastest" },
+            { "id": "d", "text": "more fast" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE978",
+        "questionText": "It was the ______ news we could have received.",
+        "options": [
+            { "id": "a", "text": "bad" },
+            { "id": "b", "text": "worse" },
+            { "id": "c", "text": "worst" },
+            { "id": "d", "text": "baddest" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE979",
+        "questionText": "I need ______ information before I can decide.",
+        "options": [
+            { "id": "a", "text": "far" },
+            { "id": "b", "text": "farther" },
+            { "id": "c", "text": "further" }, // Metaphorical extent/more
+            { "id": "d", "text": "more" } // Also correct and simpler
+        ],
+        "correctOptionId": "c" // Often used for 'more' information
+    },
+    {
+        "id": "KE980",
+        "questionText": "This explanation is the ______ I've heard so far.",
+        "options": [
+            { "id": "a", "text": "clear" },
+            { "id": "b", "text": "clearer" },
+            { "id": "c", "text": "clearest" },
+            { "id": "d", "text": "most clear" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE981",
+        "questionText": "She felt ______ confident after passing the first interview.",
+        "options": [
+            { "id": "a", "text": "much" }, // Intensifier
+            { "id": "b", "text": "more" }, // Comparative
+            { "id": "c", "text": "most" },
+            { "id": "d", "text": "very" } // Intensifier
+        ],
+        "correctOptionId": "b" // Comparative implies 'than before'
+    },
+    {
+        "id": "KE982",
+        "questionText": "That is the ______ structure in the ancient city.",
+        "options": [
+            { "id": "a", "text": "old" },
+            { "id": "b", "text": "older" },
+            { "id": "c", "text": "eldest" }, // Only for people/family
+            { "id": "d", "text": "oldest" } // For things
+        ],
+        "correctOptionId": "d"
+    },
+    {
+        "id": "KE983",
+        "questionText": "He plays chess ______ than his father.",
+        "options": [
+            { "id": "a", "text": "good" },
+            { "id": "b", "text": "better" }, // Comparative adverb
+            { "id": "c", "text": "well" },
+            { "id": "d", "text": "best" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE984",
+        "questionText": "This is the ______ comfortable chair in the house.",
+        "options": [
+            { "id": "a", "text": "more" },
+            { "id": "b", "text": "most" },
+            { "id": "c", "text": "much" },
+            { "id": "d", "text": "many" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE985",
+        "questionText": "Which of these two colours do you like ______?",
+        "options": [
+            { "id": "a", "text": "good" },
+            { "id": "b", "text": "better" }, // Comparing two
+            { "id": "c", "text": "best" },
+            { "id": "d", "text": "well" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE986",
+        "questionText": "It was a ______ journey than we anticipated.",
+        "options": [
+            { "id": "a", "text": "tiring" },
+            { "id": "b", "text": "tiringer" },
+            { "id": "c", "text": "more tiring" },
+            { "id": "d", "text": "most tiring" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE987",
+        "questionText": "He is the ______ runner I know.",
+        "options": [
+            { "id": "a", "text": "slow" },
+            { "id": "b", "text": "slower" },
+            { "id": "c", "text": "slowest" },
+            { "id": "d", "text": "more slow" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE988",
+        "questionText": "This is the ______ advanced technology available.",
+        "options": [
+            { "id": "a", "text": "more" },
+            { "id": "b", "text": "most" },
+            { "id": "c", "text": "much" },
+            { "id": "d", "text": "very" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE989",
+        "questionText": "She arrived ______ than anyone else.",
+        "options": [
+            { "id": "a", "text": "early" },
+            { "id": "b", "text": "earlier" },
+            { "id": "c", "text": "earliest" },
+            { "id": "d", "text": "more early" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE990",
+        "questionText": "That is the ______ story he tells.",
+        "options": [
+            { "id": "a", "text": "funny" },
+            { "id": "b", "text": "funnier" },
+            { "id": "c", "text": "funniest" },
+            { "id": "d", "text": "most funny" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE991",
+        "questionText": "This car is ______ reliable than the older model.",
+        "options": [
+            { "id": "a", "text": "much" }, // Intensifier
+            { "id": "b", "text": "more" }, // Comparative
+            { "id": "c", "text": "most" },
+            { "id": "d", "text": "many" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE992",
+        "questionText": "He is the ______ respected member of the community.",
+        "options": [
+            { "id": "a", "text": "much" },
+            { "id": "b", "text": "more" },
+            { "id": "c", "text": "most" },
+            { "id": "d", "text": "very" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE993",
+        "questionText": "She works ______ than her colleagues.",
+        "options": [
+            { "id": "a", "text": "efficient" },
+            { "id": "b", "text": "efficiently" },
+            { "id": "c", "text": "more efficiently" },
+            { "id": "d", "text": "most efficiently" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE994",
+        "questionText": "This is the ______ solution we could find.",
+        "options": [
+            { "id": "a", "text": "cheap" },
+            { "id": "b", "text": "cheaper" },
+            { "id": "c", "text": "cheapest" },
+            { "id": "d", "text": "most cheap" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE995",
+        "questionText": "He looks ______ than he did yesterday.",
+        "options": [
+            { "id": "a", "text": "tired" },
+            { "id": "b", "text": "tireder" },
+            { "id": "c", "text": "more tired" },
+            { "id": "d", "text": "most tired" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE996",
+        "questionText": "Which dish was ______? The fish or the chicken?",
+        "options": [
+            { "id": "a", "text": "tasty" },
+            { "id": "b", "text": "tastier" }, // Comparing two
+            { "id": "c", "text": "tastiest" },
+            { "id": "d", "text": "more tasty" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE997",
+        "questionText": "That is the ______ mountain I have ever climbed.",
+        "options": [
+            { "id": "a", "text": "steep" },
+            { "id": "b", "text": "steeper" },
+            { "id": "c", "text": "steepest" },
+            { "id": "d", "text": "most steep" }
+        ],
+        "correctOptionId": "c"
+    },
+    {
+        "id": "KE998",
+        "questionText": "He needs to act ______ in the future.",
+        "options": [
+            { "id": "a", "text": "responsible" },
+            { "id": "b", "text": "responsibly" }, // Adverb needed to modify 'act'
+            { "id": "c", "text": "more responsibly" },
+            { "id": "d", "text": "most responsibly" }
+        ],
+        "correctOptionId": "b"
+    },
+    {
+        "id": "KE999",
+        "questionText": "This is the ______ issue we need to address.",
+        "options": [
+            { "id": "a", "text": "urgent" },
+            { "id": "b", "text": "urgenter" },
+            { "id": "c", "text": "more urgent" },
+            { "id": "d", "text": "most urgent" }
+        ],
+        "correctOptionId": "d"
+    }
+
+],
     "GK": [
         // 12 GK Questions (Sample)
     {
