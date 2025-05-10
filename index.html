@@ -73,87 +73,12 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
        /* --- Header Logo Area Modifications --- */
-header .logo { /* This is the main container for all logo-related elements */
-    display: flex;
-    align-items: center; /* Vertically aligns NEB logo, text, and collaborator section */
-    gap: 12px; /* Adjust spacing between items: YourLogo - Text - CollaboratorBlock */
-}
-
-/* Styles for your existing NEB ASSIST logo */
-header .logo .neb-assist-logo {
-    max-height: 45px; /* Your original logo size */
-    width: auto;
-    display: block; /* Good practice, though flex item behavior might override */
-}
-
-/* Styles for the "in collaboration with" text */
-header .logo .collaboration-text {
-    font-size: 0.8em; /* Adjust size as needed */
-    color: #E0E0E0; /* Light grey, or use var(--accent-secondary) or #FFFFFF */
-    font-style: italic;
-    white-space: nowrap; /* Prevents text from wrapping to a new line */
-    line-height: 1; /* Adjust if vertical alignment with logos seems off */
-}
-
-/* Container for the collaborator's logo and name */
-header .logo .collaborator-section {
-    display: flex;
-    flex-direction: column; /* Stacks collaborator logo above their name */
-    align-items: center;   /* Centers them horizontally */
-    text-align: center;
-}
-
-/* Styles for the collaborator's logo image */
-header .logo .collaborator-logo-img {
-    max-height: 35px; /* Example: make it slightly smaller or same as your logo */
+header .logo img {
+    max-height: 45px;
     width: auto;
     display: block;
-    margin-bottom: 3px; /* Space between collaborator logo and their name */
 }
 
-/* Styles for the collaborator's name text */
-header .logo .collaborator-name-text {
-    font-size: 0.7em; /* Adjust size as needed */
-    color: #FFFFFF;   /* Or var(--accent-secondary) for emphasis */
-    font-weight: 500;
-    line-height: 1.2;
-}
-
-/* --- Responsive Adjustments for Logo Area (Optional, but recommended) --- */
-@media (max-width: 768px) {
-    /* When header stacks, the logo group is already centered by parent header styles */
-    header .logo {
-        /* You might want to adjust gap or text sizes if it's too condensed */
-        gap: 8px;
-    }
-    header .logo .collaboration-text {
-        font-size: 0.75em;
-    }
-    header .logo .neb-assist-logo {
-        max-height: 40px;
-    }
-    header .logo .collaborator-logo-img {
-        max-height: 30px;
-    }
-    header .logo .collaborator-name-text {
-        font-size: 0.65em;
-    }
-}
-
-@media (max-width: 480px) {
-    header .logo {
-        /* If the horizontal layout is still too wide, stack everything */
-        /* flex-direction: column; */ /* Uncomment this if needed */
-        /* align-items: center;   */ /* Uncomment this if needed */
-        /* gap: 5px;              */ /* Uncomment this if needed */
-    }
-    /* Further shrink elements if stacking the whole logo group */
-    /*
-    header .logo .neb-assist-logo { max-height: 35px; }
-    header .logo .collaboration-text { margin-top: 5px; margin-bottom: 5px; }
-    header .logo .collaborator-logo-img { max-height: 28px; }
-    */
-}
         header .user-status {
             display: flex;
             align-items: center;
@@ -596,19 +521,12 @@ header .logo .collaborator-name-text {
 
     <!-- Header (SECOND PRIORITY) -->
     <header>
-       <div class="logo">
-            <!-- Your NEB ASSIST Logo -->
-            <img src="images/image.jpg" alt="NEB ASSIST Logo" class="neb-assist-logo">
+               <div class="logo">
+            <!-- Using max-height in CSS to control size -->
+            <img src="images/image.jpg" alt="NEB ASSIST Logo">
+               </div>
 
-            <!-- "In collaboration with" text -->
-            <span class="collaboration-text">in collaboration with</span>
-
-            <!-- Collaborator's Logo and Name Section -->
-            <div class="collaborator-section">
-                <img src="images/reti_logo.png" alt="Collaborator Logo" class="collaborator-logo-img">
-                <span class="collaborator-name-text">Reti Institute</span>
-            </div>
-        </div>
+        
         <div class="user-status">
                         <!-- Heart Button - Always Visible -->
             <button id="heart-btn" class="auth-button heart-icon-button" aria-label="View Local Quizzes">
